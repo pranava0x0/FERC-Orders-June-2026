@@ -1,0 +1,992 @@
+[
+ {
+  "accession": "20260826-5137",
+  "dockets": [
+   "EL25-49-000",
+   "ER26-1479-002"
+  ],
+  "filed": "2026-08-26",
+  "filer": "PJM Interconnection, L.L.C.",
+  "description": "PJM Interconnection, L.L.C. submits notice of Compliance Filing submitted on 08/17/2026 in compliance with the directives in the 06/18/2026 Order under ER26-1479, et al.",
+  "title": "PJM Interconnection, L.L.C. submits notice of Compliance Filing submitted on 08/17/2026 in compliance with the directives in the 06/18/2026 Order",
+  "kind": "notice",
+  "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20260826-5137",
+  "files": [
+   {
+    "label": "Notice of August Compliance Filing.pdf",
+    "bytes": 223071,
+    "sha256": "9c51cb967b605f89e517291c8ad98a6a41b05e0e1edd7b2f212393327c42d3d6",
+    "text": "sources/filings/text/20260826-5137_001.txt",
+    "pages": 3
+   }
+  ]
+ },
+ {
+  "accession": "20260908-5326",
+  "dockets": [
+   "EL25-49-000",
+   "EL25-49-002",
+   "ER26-1479-000",
+   "ER26-1479-002"
+  ],
+  "filed": "2026-09-08",
+  "filer": "Constellation Energy Generation, LLC",
+  "description": "Limited Protest and Comments of Constellation Energy Generation, LLC in response to PJM Interconnection, L.L.C.'s 08/17/2026 Compliance Filing under EL25-49 et al.",
+  "title": "Limited Protest and Comments of Constellation Energy Generation, LLC in response to PJM Interconnection, L.L.C.'s 08/17/2026 Compliance Filing",
+  "kind": "protest",
+  "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20260908-5326",
+  "files": [
+   {
+    "label": "Constellation Limited Protest and Comments.pdf",
+    "bytes": 269142,
+    "sha256": "7e427e4752eb0f83d5d07e7e8ac27bebd1914198ae1e905ef33dadc9559cd41e",
+    "text": "sources/filings/text/20260908-5326_001.txt",
+    "pages": 11
+   }
+  ]
+ },
+ {
+  "accession": "20260908-5328",
+  "dockets": [
+   "ER26-1479-002"
+  ],
+  "filed": "2026-09-08",
+  "filer": "American Municipal Power, Inc.",
+  "description": "Limited Protest of American Municipal Power, Inc. to PJM Interconnection, L.L.C.'s 08/17/2026 Compliance Filing under ER26-1479.",
+  "title": "Limited Protest of American Municipal Power, Inc. to PJM Interconnection, L.L.C.'s 08/17/2026 Compliance Filing",
+  "kind": "protest",
+  "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20260908-5328",
+  "files": [
+   {
+    "label": "AMP_Limited_Protest_ER26-1479-002.pdf",
+    "bytes": 38711,
+    "sha256": "cf7017db03f9e8b0e59149faa7fbf283318c372d2f3572dd2c72642d9f0d4982",
+    "text": "sources/filings/text/20260908-5328_001.txt",
+    "pages": 9
+   }
+  ]
+ },
+ {
+  "accession": "20261116-5105",
+  "dockets": [
+   "ER27-499-000"
+  ],
+  "filed": "2026-11-16",
+  "filer": "Citizens Sunrise Transmission LLC",
+  "description": "Citizens Sunrise Transmission LLC submits tariff filing per 35.13(a)(2)(iii: Tariff Revisions to Address Commission's EL26-71 Order to Show Cause to be effective 1/15/2027 under ER27-499 Filing Type : 10",
+  "title": "Citizens Sunrise Transmission LLC: Tariff Revisions to Address Commission's EL26-71 Order to Show Cause to be effective 1/15/2027",
+  "kind": "tariff filing",
+  "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261116-5105",
+  "files": [
+   {
+    "label": "Sunrise Show Cause Order Response Transmittal Letter.pdf",
+    "bytes": 175704,
+    "sha256": "837ee55209e15cd1f765f54083b5dd14e8837dd364af53c58aaae77b9ddb7d21",
+    "text": "sources/filings/text/20261116-5105_001.txt",
+    "pages": 5
+   },
+   {
+    "label": "Att A Cit Sunrise TO Tariff- Show Cause (Clean).pdf",
+    "bytes": 3636233,
+    "sha256": "c1fe0e30c07074d2e97fc4593afd24622e36d1878570a64164be599a203880c6",
+    "skipped": "tariff sheet or service list; read it on eLibrary"
+   },
+   {
+    "label": "Att B Cit Sunrise TO Tariff- Show Cause (Redline).pdf",
+    "bytes": 5054653,
+    "sha256": "496feaa88f9434af166d134e928189ca7aedc34459a030d270e94a62a273616b",
+    "skipped": "tariff sheet or service list; read it on eLibrary"
+   },
+   {
+    "label": "Sunrise Show Cause Response Certificate of Service.pdf",
+    "bytes": 89157,
+    "sha256": "656a35ddd17648c9cfc46c397f9d2a0fa962c7264e03b24cfbd6e27d9a2c602e",
+    "skipped": "tariff sheet or service list; read it on eLibrary"
+   },
+   {
+    "label": "FERC GENERATED TARIFF FILING.PDF",
+    "bytes": 2060999,
+    "sha256": "61dd64efa2475636243e01e7c9addf4863ce982e05c220d480ec9e485d6ae2f5",
+    "skipped": "tariff sheet or service list; read it on eLibrary"
+   }
+  ]
+ },
+ {
+  "accession": "20261116-5109",
+  "dockets": [
+   "ER27-500-000"
+  ],
+  "filed": "2026-11-16",
+  "filer": "Citizens Sycamore-Penasquitos Transmission LLC",
+  "description": "Citizens Sycamore-Penasquitos Transmission LLC submits tariff filing per 35.13(a)(2)(iii: Tariff Revisions to Address Commission's ER26-71 Order to Show Cause to be effective 1/15/2027 under ER27-500 Filing Type : 10",
+  "title": "Citizens Sycamore-Penasquitos Transmission LLC: Tariff Revisions to Address Commission's ER26-71 Order to Show Cause to be effective 1/15/2027",
+  "kind": "tariff filing",
+  "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261116-5109",
+  "files": [
+   {
+    "label": "Sycamore Show Cause Order Response Transmittal Letter.pdf",
+    "bytes": 178267,
+    "sha256": "a1e051552cf64261aeb9bd5885fd0afaeb99c4d08d0dadab04c579ab248eba76",
+    "text": "sources/filings/text/20261116-5109_001.txt",
+    "pages": 6
+   },
+   {
+    "label": "Att A Cit Sycamore TO Tariff Show Cause Response Clean.pdf",
+    "bytes": 3050675,
+    "sha256": "54ee8b375fb2f144a5af691c5bec28f63e18f8ecd33bcccb8855cbaec034355c",
+    "skipped": "tariff sheet or service list; read it on eLibrary"
+   },
+   {
+    "label": "Att B Cit Sycamore TO Tariff Show Cause Response Redline.pdf",
+    "bytes": 3259758,
+    "sha256": "e2ebad2266c984bccc942bd871a72b67d7f3eb3edb8d5a808e605bb61edc05c1",
+    "skipped": "tariff sheet or service list; read it on eLibrary"
+   },
+   {
+    "label": "Sycamore Show Cause Response Certificate of Service.pdf",
+    "bytes": 90720,
+    "sha256": "f534eb60c28ad7aec37c792550093267c11b32c16494aad9da44a948011bb769",
+    "skipped": "tariff sheet or service list; read it on eLibrary"
+   },
+   {
+    "label": "FERC GENERATED TARIFF FILING.PDF",
+    "bytes": 2302364,
+    "sha256": "d0aedea19594ba8bc7d20cb78ef16e5cec34e0c874cebe5e42552f5c885617c8",
+    "skipped": "tariff sheet or service list; read it on eLibrary"
+   }
+  ]
+ },
+ {
+  "accession": "20261116-5110",
+  "dockets": [
+   "ER27-501-000"
+  ],
+  "filed": "2026-11-16",
+  "filer": "Citizens S-Line Transmission LLC",
+  "description": "Citizens S-Line Transmission LLC submits tariff filing per 35.13(a)(2)(iii: Tariff Revisions to Address Commission's EL26-71 Order to Show Cause to be effective 1/15/2027 under ER27-501 Filing Type : 10",
+  "title": "Citizens S-Line Transmission LLC: Tariff Revisions to Address Commission's EL26-71 Order to Show Cause to be effective 1/15/2027",
+  "kind": "tariff filing",
+  "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261116-5110",
+  "files": [
+   {
+    "label": "S-Line Show Cause Order Response Transmittal Letter.pdf",
+    "bytes": 171560,
+    "sha256": "3d0dc86a8807f738e37305b782d5a921dc13b8d3c09417a605dfc620275216d5",
+    "text": "sources/filings/text/20261116-5110_001.txt",
+    "pages": 6
+   },
+   {
+    "label": "Att A Cit S-Line TO Tariff Show Cause Order Clean.pdf",
+    "bytes": 11244830,
+    "sha256": "b054e971ffdfc0565c5d22065fcd914b0511a8d7cfcc031c7c5dc98718f3c986",
+    "skipped": "tariff sheet or service list; read it on eLibrary"
+   },
+   {
+    "label": "Att B Cit S-Line TO Tariff Show Cause Order Redline.pdf",
+    "bytes": 11362118,
+    "sha256": "fa77528e8cfd070c16a0e5d1393b9b515eb7c9ec62584cb11f2aa247732c627f",
+    "skipped": "tariff sheet or service list; read it on eLibrary"
+   },
+   {
+    "label": "S-Line Show Cause Response Certificate of Service.pdf",
+    "bytes": 88836,
+    "sha256": "538ae291727b7580969c666cd2db247a88b50b0f3f5140ab8bf8d404a1c60fb7",
+    "skipped": "tariff sheet or service list; read it on eLibrary"
+   },
+   {
+    "label": "FERC GENERATED TARIFF FILING.PDF",
+    "bytes": 1783024,
+    "sha256": "99ba496e0c1b7e207e386968e7643535c1b1b69212d0daa36189106753c8ad4c",
+    "skipped": "tariff sheet or service list; read it on eLibrary"
+   }
+  ]
+ },
+ {
+  "accession": "20261116-5210",
+  "dockets": [
+   "ER27-508-000"
+  ],
+  "filed": "2026-11-16",
+  "filer": "Southern California Edison Company",
+  "description": "Southern California Edison Company submits tariff filing per 35.13(a)(2)(iii: SCE OSC - Large Load, TOT Revisions to be effective 2/16/2027 under ER27-508 Filing Type : 10",
+  "title": "Southern California Edison Company: SCE OSC - Large Load, TOT Revisions to be effective 2/16/2027",
+  "kind": "tariff filing",
+  "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261116-5210",
+  "files": [
+   {
+    "label": "SCE OSC Large Load-Sect 205_FL-Att. A-B_11-16-26.pdf",
+    "bytes": 1464548,
+    "sha256": "f5d7ac378d4dff75714cebbca3d204e03c8dc84d535d093491e178972e5b4777",
+    "text": "sources/filings/text/20261116-5210_001.txt",
+    "pages": 294
+   },
+   {
+    "label": "SCE TO Tariff Revisions-New LLIP_Sect205-OSC LL_CLEAN.pdf",
+    "bytes": 1151039,
+    "sha256": "0150523b07b5f9bd20f6cd4fc0ebe5e4ef29ae67069a19abb01457520af3fa17",
+    "text": "sources/filings/text/20261116-5210_002.txt",
+    "pages": 199
+   },
+   {
+    "label": "SCE TO Tariff Revisions_Sect205-OSC LL_MARKED.pdf",
+    "bytes": 246032,
+    "sha256": "c9feea20cfafe47f17304810831585e52fdb9fe8f6062b8ee3d0e021107ad052",
+    "text": "sources/filings/text/20261116-5210_003.txt",
+    "pages": 58
+   },
+   {
+    "label": "FERC GENERATED TARIFF FILING.PDF",
+    "bytes": 2737417,
+    "sha256": "cc062e2862e1ed2252f33e73dbe9bb56b6a2fc087989ac83bf32ac11e4d8208c",
+    "skipped": "tariff sheet or service list; read it on eLibrary"
+   }
+  ]
+ },
+ {
+  "accession": "20261116-5249",
+  "dockets": [
+   "ER27-512-000"
+  ],
+  "filed": "2026-11-16",
+  "filer": "DCR Transmission, L.L.C.",
+  "description": "DCR Transmission, L.L.C. submits tariff filing per 35.13(a)(2)(iii: Proposed TO Tariff Revisions to be effective 2/15/2027 under ER27-512 Filing Type : 10",
+  "title": "DCR Transmission, L.L.C.: Proposed TO Tariff Revisions to be effective 2/15/2027",
+  "kind": "tariff filing",
+  "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261116-5249",
+  "files": [
+   {
+    "label": "DCRT - Large Load Compliance Filing (Final).pdf",
+    "bytes": 2075056,
+    "sha256": "b116947ffb9036139313d20dbc2fc835aca99c9ccb1bfb06fe18f925680dcb51",
+    "text": "sources/filings/text/20261116-5249_001.txt",
+    "pages": 307
+   },
+   {
+    "label": "FERC GENERATED TARIFF FILING.PDF",
+    "bytes": 2172195,
+    "sha256": "a85ebee468d94912a18272d508e4bbf78fa3d76693ca73b9bdc9107935ab5c2a",
+    "skipped": "tariff sheet or service list; read it on eLibrary"
+   }
+  ]
+ },
+ {
+  "accession": "20261116-5250",
+  "dockets": [
+   "ER26-1479-002"
+  ],
+  "filed": "2026-11-16",
+  "filer": "PJM Interconnection, L.L.C.",
+  "description": "PJM Interconnection, L.L.C. submits tariff filing per 35.17(a): Motion to Withdraw Filing and Terminate Docket in Deference to New Proceeding to be effective N/A under ER26-1479 Filing Type : 90",
+  "title": "PJM Interconnection, L.L.C.: Motion to Withdraw Filing and Terminate Docket in Deference to New Proceeding to be effective N/A",
+  "kind": "motion",
+  "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261116-5250",
+  "files": [
+   {
+    "label": "ER26-1479-002 Motion to Withdraw Filing.pdf",
+    "bytes": 158328,
+    "sha256": "5756503814e03a6bdee11b2e77e7840560c54fbfb2d60030173939aacee5d54f",
+    "text": "sources/filings/text/20261116-5250_001.txt",
+    "pages": 4
+   }
+  ]
+ },
+ {
+  "accession": "20261116-5257",
+  "dockets": [
+   "ER27-513-000"
+  ],
+  "filed": "2026-11-16",
+  "filer": "Pacific Gas and Electric Company",
+  "description": "Pacific Gas and Electric Company submits tariff filing per 35.13(a)(2)(iii: TO: Response to Large Load Order to Show Cause in EL26-71-000 to be effective 2/16/2027 under ER27-513 Filing Type : 10",
+  "title": "Pacific Gas and Electric Company: TO: Response to Large Load Order to Show Cause in EL26-71-000 to be effective 2/16/2027",
+  "kind": "tariff filing",
+  "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261116-5257",
+  "files": [
+   {
+    "label": "OSC response Transmittal Letter.pdf",
+    "bytes": 601657,
+    "sha256": "26f1e93cfbb843d25e6de86490f52d40c8dfc153e0dd242fdb9c1650c80da184",
+    "text": "sources/filings/text/20261116-5257_001.txt",
+    "pages": 53
+   },
+   {
+    "label": "Clean, OSC response TO Tariff revisions.pdf",
+    "bytes": 895102,
+    "sha256": "9ed684fe2959353491f64e6661389830b40f4c6610a6bd042e62a6ce474a812c",
+    "skipped": "tariff sheet or service list; read it on eLibrary"
+   },
+   {
+    "label": "Redline, OSC response TO Tariff revisions.pdf",
+    "bytes": 390309,
+    "sha256": "6855b140f833f31b47bcce253755bdf9d74e122855fb0a12e330a2206b4ad3b0",
+    "skipped": "tariff sheet or service list; read it on eLibrary"
+   },
+   {
+    "label": "Exhibit No. PGE-0001 - Application Process Virani.pdf",
+    "bytes": 267678,
+    "sha256": "8df1f54c932b56e1f61fcfc1fe80b9dbb569cf23a7b31b3483feb3919134d179",
+    "text": "sources/filings/text/20261116-5257_004.txt",
+    "pages": 21
+   },
+   {
+    "label": "Exhibit No. PGE-0002 - Study Process Nedrud.pdf",
+    "bytes": 333467,
+    "sha256": "13643e5fe968c862f3810248ba0aed7118f58f7e00c49c10aa6bb111a7bde75b",
+    "text": "sources/filings/text/20261116-5257_005.txt",
+    "pages": 37
+   },
+   {
+    "label": "FERC GENERATED TARIFF FILING.PDF",
+    "bytes": 10695321,
+    "sha256": "a4b1ee2165cd5c28e756a9b9199b9f70447694d0c11c8eb0d1c3c9048eb46b75",
+    "skipped": "tariff sheet or service list; read it on eLibrary"
+   }
+  ]
+ },
+ {
+  "accession": "20261116-5274",
+  "dockets": [
+   "ER27-515-000"
+  ],
+  "filed": "2026-11-16",
+  "filer": "SunZia Transmission, LLC",
+  "description": "SunZia Transmission, LLC submits tariff filing per 35.13(a)(2)(iii: SunZia Transmission - Trans. Owner Tariff Response to Show Cause Order EL26-71- to be effective 12/31/9998 under ER27-515 Filing Type : 10",
+  "title": "SunZia Transmission, LLC: SunZia Transmission - Trans. Owner Tariff Response to Show Cause Order EL26-71- to be effective 12/31/9998",
+  "kind": "tariff filing",
+  "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261116-5274",
+  "files": [
+   {
+    "label": "SunZia Trans. - Response to EL21-71 - Transmittal Letter.pdf",
+    "bytes": 210635,
+    "sha256": "96ae06c3d15bacf7f3c0439774e651e070a8c7b4caf7c6c30909e7af896a28fa",
+    "text": "sources/filings/text/20261116-5274_001.txt",
+    "pages": 7
+   },
+   {
+    "label": "Clean Tariff.pdf",
+    "bytes": 150929,
+    "sha256": "996e42d5c4fa4bbfc4f71c5e5346cd5ef4416c2118b50a1e57d72f6de1aae8d4",
+    "skipped": "tariff sheet or service list; read it on eLibrary"
+   },
+   {
+    "label": "Clean Change to SunZia Trans. TOT Entire Tariff.pdf",
+    "bytes": 393565,
+    "sha256": "b779240a5ca2d32d5b393d61c2ffdf3f3fd38b7483529a9f6b5aff5597346842",
+    "skipped": "tariff sheet or service list; read it on eLibrary"
+   },
+   {
+    "label": "Marked Tariff.pdf",
+    "bytes": 152044,
+    "sha256": "e77280e9453b1b0c911b048e6bf71813748a53be888d0cbea45cf8d08fbf8b68",
+    "skipped": "tariff sheet or service list; read it on eLibrary"
+   },
+   {
+    "label": "Redline - Changes to SunZia Trans. TOT Entire Taifff.pdf",
+    "bytes": 247768,
+    "sha256": "935e5905a52f3e0726ad7eaa7c9470f568d3fa8ce00c976d02f3d8f68c8253c6",
+    "skipped": "tariff sheet or service list; read it on eLibrary"
+   },
+   {
+    "label": "SunZia Trans. Large Load Compliance Filing.pdf",
+    "bytes": 597879,
+    "sha256": "e40db66eb90a5f255a84dcbf80b64d8fc14edfe4c8fe457b076d87036bcbd04c",
+    "text": "sources/filings/text/20261116-5274_006.txt",
+    "pages": 47
+   },
+   {
+    "label": "FERC GENERATED TARIFF FILING.PDF",
+    "bytes": 272748,
+    "sha256": "11e7b0d2374c89464ac2028bc37be7adb0a4d46cb2b03e2b977d0479c0cf7e12",
+    "skipped": "tariff sheet or service list; read it on eLibrary"
+   }
+  ]
+ },
+ {
+  "accession": "20261116-5286",
+  "dockets": [
+   "ER27-518-000"
+  ],
+  "filed": "2026-11-16",
+  "filer": "LS Power Grid New York Corporation INew York Independent System Operator, Inc.",
+  "description": "New York Independent System Operator, Inc. submits tariff filing per 35.13(a)(2)(iii: LSPGNY 205: Proposed Revisions re: RS10 Large Load-Driven Upgrade Cost Recovery to be effective 1/16/2027 under ER27-518 Filing Type : 10",
+  "title": "New York Independent System Operator, Inc.: LSPGNY 205: Proposed Revisions re: RS10 Large Load-Driven Upgrade Cost Recovery to be effective 1/16/2027",
+  "kind": "tariff filing",
+  "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261116-5286",
+  "files": [
+   {
+    "label": "20261116_LSPGNYFlngLtr_LargeLoads.pdf",
+    "bytes": 252910,
+    "sha256": "5066b78c9fce11ad7bc4a27d95dbf2a73febc0eee583b1743b7a796dabac0e16",
+    "text": "sources/filings/text/20261116-5286_001.txt",
+    "pages": 13
+   },
+   {
+    "label": "Clean Tariff.pdf",
+    "bytes": 1761234,
+    "sha256": "11ed45a6250be3f17767246af2a440b278659a1bed83601b78e09a32c6f86d73",
+    "skipped": "tariff sheet or service list; read it on eLibrary"
+   },
+   {
+    "label": "Marked Tariff.pdf",
+    "bytes": 1852768,
+    "sha256": "edd08f33a304deab0ab7ca3e0257a62bee64c151b1bb94b13d946d4532fd8339",
+    "skipped": "tariff sheet or service list; read it on eLibrary"
+   },
+   {
+    "label": "Hayes Testimony (Exhibit No. GNY-100).pdf",
+    "bytes": 270115,
+    "sha256": "2c05f52efd032a1ffe9ac459b36c76b2f01079b4ae69f9a26dcd5bd4fa7bf8b8",
+    "text": "sources/filings/text/20261116-5286_004.txt",
+    "pages": 34
+   },
+   {
+    "label": "Exhibit No. GNY-102 to Hayes Testimony.pdf",
+    "bytes": 267865,
+    "sha256": "756a2186b8451c9e17628a697bbe914e3556c7d2a455957a952677c3f5213bfc",
+    "text": "sources/filings/text/20261116-5286_006.txt",
+    "pages": 2
+   },
+   {
+    "label": "Exhibit No. GNY-103 to Hayes Testimony.pdf",
+    "bytes": 281060,
+    "sha256": "88ffacaa878e84c90851f1a926a95e1e3fb519e466250dca18b016f9c0807e82",
+    "text": "sources/filings/text/20261116-5286_007.txt",
+    "pages": 4
+   },
+   {
+    "label": "Arzola Testimony (Exhibit No. GNY-200).pdf",
+    "bytes": 263821,
+    "sha256": "c6f9f7207a8369626e4b3174ce106e23be7bec8a3bc7a961f5e8d3d931ce67ff",
+    "text": "sources/filings/text/20261116-5286_008.txt",
+    "pages": 21
+   },
+   {
+    "label": "Exhibit No. GNY-201 to Arzola Testimony.pdf",
+    "bytes": 272693,
+    "sha256": "8e38dd5b0a4ba819cc77b26dccdfe88b2e823352242aeaec48f0759088cf8a73",
+    "text": "sources/filings/text/20261116-5286_009.txt",
+    "pages": 36
+   },
+   {
+    "label": "Exhibit No. GNY-202 to Arzola Testimony.pdf",
+    "bytes": 278373,
+    "sha256": "ad868f4c4c0add75f66003542f58f96679ac2e13d51519c99012782e29d65bcc",
+    "text": "sources/filings/text/20261116-5286_010.txt",
+    "pages": 36
+   },
+   {
+    "label": "Exhibit No. GNY-206 to Arzola Testimony.pdf",
+    "bytes": 202381,
+    "sha256": "adf49cb5baa3984e422a0d2a0edda7f167375cd54497f25383e7d5ac05c46bfb",
+    "text": "sources/filings/text/20261116-5286_014.txt",
+    "pages": 22
+   },
+   {
+    "label": "Exhibit No. GNY-207 to Arzola Testimony.pdf",
+    "bytes": 312217,
+    "sha256": "5666d99fbd8bdce4ff7b56b3c4c38129a58b56a3121947478d0a81b9f526c951",
+    "text": "sources/filings/text/20261116-5286_015.txt",
+    "pages": 22
+   },
+   {
+    "label": "FERC GENERATED TARIFF FILING.PDF",
+    "bytes": 1919461,
+    "sha256": "d388220713cd3c9a4374aa308fd499334f7fa1d49b41f81a064a1aa3bdcdf6ac",
+    "skipped": "tariff sheet or service list; read it on eLibrary"
+   },
+   {
+    "label": "Exhibit No. GNY-101 to Hayes Testimony.xlsx",
+    "skipped": "other format"
+   },
+   {
+    "label": "Exhibit No. GNY-203 to Arzola Testimony.xlsx",
+    "skipped": "other format"
+   },
+   {
+    "label": "Exhibit No. GNY-204 to Arzola Testimony.xlsx",
+    "skipped": "other format"
+   },
+   {
+    "label": "Exhibit No. GNY-205 to Arzola Testimony.xlsx",
+    "skipped": "other format"
+   }
+  ]
+ },
+ {
+  "accession": "20261116-5311",
+  "dockets": [
+   "ER27-521-000"
+  ],
+  "filed": "2026-11-16",
+  "filer": "San Diego Gas & Electric",
+  "description": "San Diego Gas & Electric submits tariff filing per 35.13(a)(2)(iii: ER26-71 Order to Show Cause Tariff Revisions to be effective 2/16/2027 under ER27-521 Filing Type : 10",
+  "title": "San Diego Gas & Electric: ER26-71 Order to Show Cause Tariff Revisions to be effective 2/16/2027",
+  "kind": "tariff filing",
+  "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261116-5311",
+  "files": [
+   {
+    "label": "SCO_Transmittal_Letter_Final.pdf",
+    "bytes": 522941,
+    "sha256": "ba53fcd334660c18a045b25c33254b770838a019faeb155b0be2e0eed1f34883",
+    "text": "sources/filings/text/20261116-5311_001.txt",
+    "pages": 108
+   },
+   {
+    "label": "FERC GENERATED TARIFF FILING.PDF",
+    "bytes": 1690414,
+    "sha256": "582617119f11685ec17a353d9833a331855f14ecb244671d95ea10f34a422bb7",
+    "skipped": "tariff sheet or service list; read it on eLibrary"
+   }
+  ]
+ },
+ {
+  "accession": "20261116-5312",
+  "dockets": [
+   "ER27-523-000"
+  ],
+  "filed": "2026-11-16",
+  "filer": "Viridon Path 15 LLC",
+  "description": "Viridon Path 15 LLC submits tariff filing per 35.13(a)(2)(iii: Viridon Path 15 - Trans. Owner Tariff Response to Show Cause Order EL26-71 to be effective 2/16/2027 under ER27-523 Filing Type : 10",
+  "title": "Viridon Path 15 LLC: Viridon Path 15 - Trans. Owner Tariff Response to Show Cause Order EL26-71 to be effective 2/16/2027",
+  "kind": "tariff filing",
+  "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261116-5312",
+  "files": [
+   {
+    "label": "VP15 Large Load Tariff Transmittal_11_16_FINAL.pdf",
+    "bytes": 413863,
+    "sha256": "14924880bdf547312eef93fe885c0333aa3ea1ccc96055257f2577823ae2e359",
+    "text": "sources/filings/text/20261116-5312_001.txt",
+    "pages": 23
+   },
+   {
+    "label": "Clean Tariff.pdf",
+    "bytes": 408646,
+    "sha256": "4367911836947b0f72f1bcfce1b0056ed40ecc0992d4b3e679a1fcde609801e7",
+    "skipped": "tariff sheet or service list; read it on eLibrary"
+   },
+   {
+    "label": "Marked Tariff.pdf",
+    "bytes": 446428,
+    "sha256": "eead20ace655ae4a8a8f15a4203c642e76fb8fb7a9f2a3a7613cf627dfcbcf0a",
+    "skipped": "tariff sheet or service list; read it on eLibrary"
+   },
+   {
+    "label": "FERC GENERATED TARIFF FILING.PDF",
+    "bytes": 790598,
+    "sha256": "a1583024aa4fd87a623a8e9c90df598293e035d754213b1f9bfc17e9f95caa18",
+    "skipped": "tariff sheet or service list; read it on eLibrary"
+   }
+  ]
+ },
+ {
+  "accession": "20261116-5329",
+  "dockets": [
+   "ER27-528-000"
+  ],
+  "filed": "2026-11-16",
+  "filer": "LS Power Grid California, LLC",
+  "description": "LS Power Grid California, LLC submits tariff filing per 35.13(a)(2)(iii: Revisions to TO Tariff to Provide for Large Load Interconnection under EL26-71 to be effective 1/16/2027 under ER27-528 Filing Type : 10",
+  "title": "LS Power Grid California, LLC: Revisions to TO Tariff to Provide for Large Load Interconnection",
+  "kind": "tariff filing",
+  "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261116-5329",
+  "files": [
+   {
+    "label": "FINAL - LS Power Grid - Large Load Cost Recovery.pdf",
+    "bytes": 4783237,
+    "sha256": "2d3d454def2e95c1881f0bd05f5077ca113f8066651bad80a224b03e1d9a99f4",
+    "text": "sources/filings/text/20261116-5329_001.txt",
+    "pages": 387
+   },
+   {
+    "label": "FERC GENERATED TARIFF FILING.PDF",
+    "bytes": 1424460,
+    "sha256": "30258dcb1766b34894289e73d5a82101bca8d1c625ae0423f131a3de8a607bb0",
+    "skipped": "tariff sheet or service list; read it on eLibrary"
+   },
+   {
+    "label": "LSC-101 - MTRC Example.xlsx",
+    "skipped": "other format"
+   },
+   {
+    "label": "LSC-201 - Illustrative Formula Rate Template.xlsx",
+    "skipped": "other format"
+   },
+   {
+    "label": "LSC-202 - Illustrative TRBAA Calculation.xlsx",
+    "skipped": "other format"
+   }
+  ]
+ },
+ {
+  "accession": "20261116-5335",
+  "dockets": [
+   "ER27-529-000"
+  ],
+  "filed": "2026-11-16",
+  "filer": "New York Independent System Operator, Inc.Central Hudson Gas & Electric CorporationNew York State Electric & Gas Corporation ,Rochester Gas and Electric Corporation ,Niagara Mohawk Power Corporation ,Consolidated Edison Company of New York, Inc. ,Orange and Rockland Utilities, Inc. ,",
+  "description": "New York Independent System Operator, Inc. submits tariff filing per 35.13(a)(2)(iii: NYTOs 205: Proposed Revisions re: Integration of Large Loads to be effective 2/1/2027 under ER27-529 Filing Type : 10",
+  "title": "New York Independent System Operator, Inc.: NYTOs 205: Proposed Revisions re: Integration of Large Loads to be effective 2/1/2027",
+  "kind": "tariff filing",
+  "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261116-5335",
+  "files": [
+   {
+    "label": "20261116_NYTOFlngLtr_LL205.pdf",
+    "bytes": 484591,
+    "sha256": "3bc694244184205757ded4e406dafe09a6ee8f60239a1396279aece4c5906cc2",
+    "text": "sources/filings/text/20261116-5335_001.txt",
+    "pages": 37
+   },
+   {
+    "label": "Att A Clean OATT Att LL.pdf",
+    "bytes": 2003398,
+    "sha256": "ed48ecf967755eea208e47964430a124d6c381c50bede027f6e27bb9bc7b0d51",
+    "skipped": "tariff sheet or service list; read it on eLibrary"
+   },
+   {
+    "label": "Att B Redline OATT Att LL.pdf",
+    "bytes": 2065163,
+    "sha256": "1b0a8e59597c4eb1fc45322a282f81e649a3917cc20b9f8265b6ceb68fc8cfd3",
+    "skipped": "tariff sheet or service list; read it on eLibrary"
+   },
+   {
+    "label": "Att C Clean OATT.pdf",
+    "bytes": 929105,
+    "sha256": "041e7042400392483897f05d657b010cb46c28be3b54ce941bc492166ed41aeb",
+    "skipped": "tariff sheet or service list; read it on eLibrary"
+   },
+   {
+    "label": "Att D Redline OATT.pdf",
+    "bytes": 966388,
+    "sha256": "ed401e6009814c8f1503503e00cd3fd24d71f285f3c10ae673a929c3ccd612d6",
+    "skipped": "tariff sheet or service list; read it on eLibrary"
+   },
+   {
+    "label": "Att E Pro Forma LL CRA.pdf",
+    "bytes": 450240,
+    "sha256": "89d0812cfba6bbe2f59edd2946bd4c611cf138aa1de7be377852885e7d906a68",
+    "text": "sources/filings/text/20261116-5335_006.txt",
+    "pages": 26
+   },
+   {
+    "label": "Att F Pro Forma LL Security Agreement.pdf",
+    "bytes": 377793,
+    "sha256": "c8f74d1478cfacecbb20b87c0e315666b4004f701b68634218d4ca2589342c87",
+    "text": "sources/filings/text/20261116-5335_007.txt",
+    "pages": 18
+   },
+   {
+    "label": "Att G Pro Forma Facilities Study Agreement.pdf",
+    "bytes": 361761,
+    "sha256": "ca1287ba75deeb35f2b9493b2e79a5bd9f60c28cbcefa0d724d8808ecbf0dbed",
+    "text": "sources/filings/text/20261116-5335_008.txt",
+    "pages": 17
+   },
+   {
+    "label": "Att H Pro Forma LL Interconnection Agreement.pdf",
+    "bytes": 499775,
+    "sha256": "88f1688e44b0d75c5fba2ac7d3e4b550e2fa38ecc607c9a6f09baefda2024988",
+    "text": "sources/filings/text/20261116-5335_009.txt",
+    "pages": 44
+   },
+   {
+    "label": "Att I Panel Testimony.pdf",
+    "bytes": 19094738,
+    "sha256": "78f1a9a30f61de304a5f2a7e9d812cf614ff9d4f58f0fcbb15b9aa3eca1db630",
+    "text": "sources/filings/text/20261116-5335_010.txt",
+    "pages": 451
+   },
+   {
+    "label": "FERC GENERATED TARIFF FILING.PDF",
+    "bytes": 3387705,
+    "sha256": "2354ad4dd81258b11c84d2c43f4f08941e9d25af30287ddf4051b63dce510f60",
+    "skipped": "tariff sheet or service list; read it on eLibrary"
+   }
+  ]
+ },
+ {
+  "accession": "20261116-5337",
+  "dockets": [
+   "ER27-530-000"
+  ],
+  "filed": "2026-11-16",
+  "filer": "Horizon West Transmission, LLC",
+  "description": "Horizon West Transmission, LLC submits tariff filing per 35.13(a)(2)(iii: Horizon West Transmission - Response to Show Cause Order EL26-71- to be effective 2/16/2027 under ER27-530 Filing Type : 10",
+  "title": "Horizon West Transmission, LLC: Horizon West Transmission - Response to Show Cause Order EL26-71- to be effective 2/16/2027",
+  "kind": "tariff filing",
+  "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261116-5337",
+  "files": [
+   {
+    "label": "2026-11-16-TL-HWT Show Cause Order Compliance Filing.pdf",
+    "bytes": 387965,
+    "sha256": "85d45a1e0ee32c6d39d63a7c37410c2460834bf8007c1523c1b5caeced266fc7",
+    "text": "sources/filings/text/20261116-5337_001.txt",
+    "pages": 24
+   },
+   {
+    "label": "Appendix A - Revised Tariff Sections CLEAN.pdf",
+    "bytes": 500750,
+    "sha256": "caca77da04566c5805a89439b30d9983d703d172960a190a40a06bf973eb258a",
+    "skipped": "tariff sheet or service list; read it on eLibrary"
+   },
+   {
+    "label": "Appendix B-Revised Horizon West Tariff Sections REDLINED.pdf",
+    "bytes": 3656304,
+    "sha256": "d9e523665ee6c198e966d2fbcd5fb27df4b56435a95dfeb39789308dc0fd9d8c",
+    "skipped": "tariff sheet or service list; read it on eLibrary"
+   },
+   {
+    "label": "Appendix C - Attachment A, Horizon West CRA.pdf",
+    "bytes": 266406,
+    "sha256": "f9b6856ccc3dcba265efc6b29ce5103cf29c906f884b7921105186b39d29e7f6",
+    "text": "sources/filings/text/20261116-5337_004.txt",
+    "pages": 21
+   },
+   {
+    "label": "FERC GENERATED TARIFF FILING.PDF",
+    "bytes": 1861401,
+    "sha256": "ca48ff53a50eb68c59454349940d6aedb2c61ae2a69193280c19fac7ac7968c9",
+    "skipped": "tariff sheet or service list; read it on eLibrary"
+   }
+  ]
+ },
+ {
+  "accession": "20261116-5343",
+  "dockets": [
+   "ER27-532-000"
+  ],
+  "filed": "2026-11-16",
+  "filer": "California Independent System Operator Corporation",
+  "description": "California Independent System Operator Corporation submits tariff filing per 35.13(a)(2)(iii: 2026-11-16 Large Load Tariff Amendment: Resubmission under different filing code to be effective 2/16/2027 under ER27-532 Filing Type : 10",
+  "title": "California Independent System Operator Corporation: 2026-11-16 Large Load Tariff Amendment: Resubmission under different filing code to be effective 2/16/2027",
+  "kind": "tariff filing",
+  "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261116-5343",
+  "files": [
+   {
+    "label": "Large Loads OSC - Transmittal Letter.pdf",
+    "bytes": 537211,
+    "sha256": "ca3237a5dfe7cff2a87445b260e851588c138a31b8dbc567f7b489557ee91571",
+    "text": "sources/filings/text/20261116-5343_001.txt",
+    "pages": 48
+   },
+   {
+    "label": "Att-A_Large-Loads_Clean-Tariff.pdf",
+    "bytes": 261736,
+    "sha256": "b9dda850de7019d7fa1be9fe7c7767c8b3d35119fe3862c3bfa3f9f785fba6df",
+    "text": "sources/filings/text/20261116-5343_002.txt",
+    "pages": 19
+   },
+   {
+    "label": "Att-B_Large-Loads_Redlines.pdf",
+    "bytes": 188880,
+    "sha256": "1d55486cbb3cc014df7aa3cabe1fb1176b7b35654855201c2120106cd6dab291",
+    "text": "sources/filings/text/20261116-5343_003.txt",
+    "pages": 19
+   },
+   {
+    "label": "Att-C_Draft-Final-Proposal-Large-Load.pdf",
+    "bytes": 1023186,
+    "sha256": "7e4bf4d2acd236a801ff311a0a4be6a668d37025287a18a74b6b31609f6e16f8",
+    "text": "sources/filings/text/20261116-5343_004.txt",
+    "pages": 72
+   },
+   {
+    "label": "Att-D_Large-Load-Straw-Proposal.pdf",
+    "bytes": 733155,
+    "sha256": "1239690bc860eb78ae7b987c607386a62370abec3d7f1aa42e33d7e9adc43270",
+    "text": "sources/filings/text/20261116-5343_005.txt",
+    "pages": 39
+   },
+   {
+    "label": "Att-E_Board-Memo_Large-Load.pdf",
+    "bytes": 371391,
+    "sha256": "47279bbed51f0113eb5a23f7f0c44e6c59463389e52cd012f63fe44a6711a9b8",
+    "text": "sources/filings/text/20261116-5343_006.txt",
+    "pages": 7
+   },
+   {
+    "label": "FERC GENERATED TARIFF FILING.PDF",
+    "bytes": 2433451,
+    "sha256": "443c552d0be6f8380464f7e7a4d29c8bb51b6dcf51d088173566f6e193c57a4e",
+    "skipped": "tariff sheet or service list; read it on eLibrary"
+   }
+  ]
+ },
+ {
+  "accession": "20261116-5345",
+  "dockets": [
+   "ER27-533-000"
+  ],
+  "filed": "2026-11-16",
+  "filer": "GridLiance West LLC",
+  "description": "GridLiance West LLC submits tariff filing per 35.13(a)(2)(iii: GridLiance West - Response to Show Cause Order EL26-71 to be effective 2/16/2027 under ER27-533 Filing Type : 10",
+  "title": "GridLiance West LLC: GridLiance West - Response to Show Cause Order EL26-71 to be effective 2/16/2027",
+  "kind": "tariff filing",
+  "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261116-5345",
+  "files": [
+   {
+    "label": "2026-11-16 GridLiance West 205 Transmittal Letter FINAL.pdf",
+    "bytes": 708116,
+    "sha256": "4721be916383d5ae05a9b6ff911ea3b7bacbb76b380935b9c3600fee936030a8",
+    "text": "sources/filings/text/20261116-5345_001.txt",
+    "pages": 25
+   },
+   {
+    "label": "Appendix A - GridLiance West Revised Tariff CLEAN.pdf",
+    "bytes": 476037,
+    "sha256": "b992e6496c1bce433573ef744f3385bcd1acee52ed29dae505a4b61c8aef7ae7",
+    "skipped": "tariff sheet or service list; read it on eLibrary"
+   },
+   {
+    "label": "Appendix B - GridLiance West Revised Tariff REDLINED.pdf",
+    "bytes": 3531498,
+    "sha256": "b214be6a549beb514cbc45b27626bd82fadfd5b064b01d856c4526309749955a",
+    "skipped": "tariff sheet or service list; read it on eLibrary"
+   },
+   {
+    "label": "Appendix C - Attachment A - GridLiance West CRA FINAL.pdf",
+    "bytes": 265192,
+    "sha256": "846a6a23c5f0578820c72f107b8cf919ada9e8d5272b3d493a46f83c560cf033",
+    "text": "sources/filings/text/20261116-5345_004.txt",
+    "pages": 21
+   },
+   {
+    "label": "FERC GENERATED TARIFF FILING.PDF",
+    "bytes": 1621284,
+    "sha256": "0e4c6a54e589e9df66b8781bdc89a2c8ef538465c366ebfe0d97ce5f9de0b0e6",
+    "skipped": "tariff sheet or service list; read it on eLibrary"
+   }
+  ]
+ },
+ {
+  "accession": "20261116-5346",
+  "dockets": [
+   "ER27-534-000"
+  ],
+  "filed": "2026-11-16",
+  "filer": "DesertLink, LLC",
+  "description": "DesertLink, LLC submits tariff filing per 35.13(a)(2)(iii: Revisions to TO Tariff to Provide for Large Load Interconnection under EL26-71 to be effective 1/16/2027 under ER27-534 Filing Type : 10",
+  "title": "DesertLink, LLC: Revisions to TO Tariff to Provide for Large Load Interconnection",
+  "kind": "tariff filing",
+  "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261116-5346",
+  "files": [
+   {
+    "label": "DesertLink - Large Load Cost Recovery.pdf",
+    "bytes": 5838947,
+    "sha256": "a9ba306729926eaf370b4a3b56b1caea333262f262c4b17b5a602191637801ec",
+    "text": "sources/filings/text/20261116-5346_001.txt",
+    "pages": 529
+   },
+   {
+    "label": "FERC GENERATED TARIFF FILING.PDF",
+    "bytes": 2741943,
+    "sha256": "63aaa2f3b306bc2cb87fde5024dee1f2c1451bb1ed1aa18e7b31aa63336d54ca",
+    "skipped": "tariff sheet or service list; read it on eLibrary"
+   },
+   {
+    "label": "DLK-101 - MTRC Example.xlsx",
+    "skipped": "other format"
+   },
+   {
+    "label": "DLK-203 - Clean Formula Rate Template in native Excel.xlsx",
+    "skipped": "other format"
+   },
+   {
+    "label": "DLK-204 - Illustrative Formula Rate Template.xlsx",
+    "skipped": "other format"
+   },
+   {
+    "label": "DLK-205 - Illustrative TRBAA Calculation.xlsx",
+    "skipped": "other format"
+   }
+  ]
+ },
+ {
+  "accession": "20261116-5348",
+  "dockets": [
+   "ER27-535-000"
+  ],
+  "filed": "2026-11-16",
+  "filer": "Trans Bay Cable LLC",
+  "description": "Trans Bay Cable LLC submits tariff filing per 35.13(a)(2)(iii: Trans Bay Cable - Respsonse to Show Cause Order EL26-71- to be effective 2/16/2027 under ER27-535 Filing Type : 10",
+  "title": "Trans Bay Cable LLC: Trans Bay Cable - Respsonse to Show Cause Order EL26-71- to be effective 2/16/2027",
+  "kind": "tariff filing",
+  "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261116-5348",
+  "files": [
+   {
+    "label": "2026-11-16-TL-TBC Show Cause Order Compliance Filing.pdf",
+    "bytes": 714850,
+    "sha256": "4cd8850d11b3338d89ebda9646386ff60eb4dbd1685c109318729d694ed2c348",
+    "text": "sources/filings/text/20261116-5348_001.txt",
+    "pages": 25
+   },
+   {
+    "label": "Appendix A - Trans Bay Revised Tariff CLEAN_2.pdf",
+    "bytes": 870239,
+    "sha256": "c6b3f9b7d4894b6a4324c5c472b0c3451b35fd70a4a03de597ff703681d5c703",
+    "text": "sources/filings/text/20261116-5348_002.txt",
+    "pages": 69
+   },
+   {
+    "label": "Appendix B - Trans Bay Revised Tariff REDLINED.pdf",
+    "bytes": 1198454,
+    "sha256": "e18c4ae096ef61e2ecade8ddc7bb58fe15c2feddf1599c9aafe4661c5e5d4234",
+    "skipped": "tariff sheet or service list; read it on eLibrary"
+   },
+   {
+    "label": "Appendix C - Attachment A Trans Bay CRA.pdf",
+    "bytes": 369531,
+    "sha256": "ec26260b090dbc7d6f06709599bdbf98301dfc2cf5ebd3ec72b971d0a7eb0237",
+    "text": "sources/filings/text/20261116-5348_004.txt",
+    "pages": 21
+   },
+   {
+    "label": "FERC GENERATED TARIFF FILING.PDF",
+    "bytes": 984705,
+    "sha256": "3591ca089ccdd18482dad4d1601ff983b4da6472764817356239863d646afe8b",
+    "skipped": "tariff sheet or service list; read it on eLibrary"
+   }
+  ]
+ },
+ {
+  "accession": "20261116-5372",
+  "dockets": [
+   "ER27-513-000"
+  ],
+  "filed": "2026-11-16",
+  "filer": "Pacific Gas and Electric Company",
+  "description": "Response to 11/16/2026, Show Cause Order of Pacific Gas and Electric Company under ER27-513.",
+  "title": "Response to 11/16/2026, Show Cause Order of Pacific Gas and Electric Company",
+  "kind": "filing",
+  "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261116-5372",
+  "files": [
+   {
+    "label": "OSC - Notification of Section 205 Filing in EL26-71.pdf",
+    "bytes": 123347,
+    "sha256": "ed3f2babe6590ce75a62fa6be141f25d33364bc3ce8d64b4435b49236fdf0439",
+    "text": "sources/filings/text/20261116-5372_001.txt",
+    "pages": 2
+   }
+  ]
+ },
+ {
+  "accession": "20261118-5011",
+  "dockets": [
+   "ER27-526-000"
+  ],
+  "filed": "2026-11-18",
+  "filer": "CLEAN ENERGY ADVOCATES",
+  "description": "Motion of Community Organizations and Clean Energy Advocates for a 30-day extension of time to submit comments re Midcontinent Independent System Operator, Inc.’s 11/16/2026 filing under ER27-526.",
+  "title": "Motion of Community Organizations and Clean Energy Advocates for a 30-day extension of time to submit comments re Midcontinent Independent System Operator,…",
+  "kind": "comments",
+  "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261118-5011",
+  "files": [
+   {
+    "label": "ER27_526_MOTION  FOR EXTENSION OF TIME TO SUBMIT COMMENTS.pdf",
+    "bytes": 170248,
+    "sha256": "2c164f112a35f8f102d1d6351c6933eed505fa296fbe3c3d9d6e6f5088c63637",
+    "text": "sources/filings/text/20261118-5011_001.txt",
+    "pages": 8
+   }
+  ]
+ }
+]

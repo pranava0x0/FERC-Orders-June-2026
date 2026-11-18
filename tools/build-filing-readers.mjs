@@ -128,7 +128,8 @@ for(const r of catalog){
  const raw='https://github.com/pranava0x0/ferc-large-load-proceedings/blob/main/'+r.file.split('/').map(encodeURIComponent).join('/');
  const description=short(curated[0]?.take||curated[0]?.title||r.title);
  const summary='<p class="meta">'+esc(r.docket)+' · '+esc(r.issued)+(r.filer?' · '+esc(r.filer):'')+'</p><h1>'+esc(r.title)+'</h1>';
- const sourceNav='<nav class="tools" aria-label="Source material"><a href="'+esc(r.url)+'">Official source</a><a href="'+raw+'">Archived original</a><a href="text.html">Full text</a><a href="source.json">Page data (JSON)</a></nav>';
+ // A record-tier document keeps its original on eLibrary only; the page names the hash the text came from.
+ const sourceNav='<nav class="tools" aria-label="Source material"><a href="'+esc(r.url)+'">Official source</a>'+(r.tier==='record'?'':'<a href="'+raw+'">Archived original</a>')+'<a href="text.html">Full text</a><a href="source.json">Page data (JSON)</a></nav>'+(r.tier==='record'?'<p class="muted">Text extracted from the eLibrary original (SHA-256 <code>'+esc(r.sha256.slice(0,16))+'…</code>). Download the original from the official source.</p>':'');
  const readings=curated.length?'<h2 id="findings">'+evidenceHeading+'</h2>'+ (local.length>3?'<nav class="contents" aria-label="Section readings">'+local.map(c=>'<a href="#'+pin(c.title)+'">'+esc(c.title)+'</a>').join('')+'</nav>':'')+claims:'';
  // Other parties' views stay off this page's text: a reader sees what THIS document says. They are listed
  // as links, by speaker, so the trail to them survives without mixing their words into this reading.

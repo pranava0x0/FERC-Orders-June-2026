@@ -1,0 +1,1790 @@
+--- PAGE 1 ---
+Troutman Pepper Locke LLP 
+401 9th Street, N.W., Suite 1000 
+Washington, D.C. 20004 
+troutman.com 
+November 16, 2026 
+ 
+VIA ETARIFF 
+The Honorable Debbie-Anne A. Reese 
+Secretary 
+Federal Energy Regulatory Commission 
+888 First Street, NE 
+Washington, DC 20426 
+ 
+RE:  New York Transmission Owners 
+Section 205 Filing in Response to the Large Load Show Cause Order1   
+ 
+Docket No. ER27-___-000 
+Dear Secretary Reese: 
+Pursuant to section 205 of the Federal Power Act (“FPA”)2 and Rule 205 of the Federal 
+Energy Regulatory Commission’s (“Commission” or “FERC”) Rules of Practice and Procedure,3 
+Central Hudson Gas & Electric Corporation (“Central Hudson”), Consolidated Edison Company 
+of New York, Inc. (“Con Edison”), New York State Electric & Gas Corporation (“NYSEG”), 
+Niagara Mohawk Power Corporation d/b/a National Grid (“National Grid”), Orange and Rockland 
+Utilities, Inc. (“O&R”), and Rochester Gas and Electric Corporation (“RG&E”) (collectively 
+referred to herein as the “New York Transmission Owners” or “NYTOs”) submit for filing 
+proposed revisions to the New York Independent System Operator, Inc. (“NYISO”) Open Access 
+Transmission Tariff (“OATT” or “Tariff”)4 and certain pro forma agreements to address concerns 
+the Commission raised in its June 18, 2026 Large Load Show Cause Order in Docket No. EL26-
+69-000 that fall within the NYTOs’ responsibilities.5  In particular, the NYTOs submit with this 
+filing letter the following: 
+1. Attachments A (clean) and B (marked): Tariff amendments to new Attachment LL of the 
+OATT.  Attachment LL is being contemporaneously filed by the NYISO, and the NYTOs 
+ 
+1  
+N.Y. Indep. Sys. Operator, Inc., 195 FERC ¶ 61,216 (2026) (“Large Load Show Cause Order” or “Show 
+Cause Order”).   
+2  
+16 U.S.C. § 824d. 
+3  
+18 C.F.R. § 385.205 (2025). 
+4  
+The NYISO is submitting this filing in FERC’s eTariff system on the NYTOs’ behalf solely in the NYISO’s 
+role as the Tariff Administrator.  The burden of demonstrating that the proposed Tariff amendments are just and 
+reasonable rests on the NYTOs, the sponsoring parties.  If the NYISO has any comments on this filing, the NYISO 
+will submit a separate pleading in this proceeding.  Unless otherwise defined herein, capitalized terms used in this 
+transmittal letter shall have the meanings ascribed to them in the NYISO OATT.  
+5  
+See Show Cause Order, 195 FERC ¶ 61,216.
+--- PAGE 2 ---
+November 16, 2026 
+Page 2 
+ 
+ 
+are sponsoring the following revisions to Attachment LL:  Section 44.1; Sections 44.2.2, 
+44.6.8, 44.7.3.1, 44.8.2.4.5, 44.8.3.1.1, 44.8.3.3, 44.10.4.4, 44.12.1.2, 44.12.1.8, 44.14.1, 
+and 44.14.3.2; new Section 44.14.3.5; and new Sections 44.16.8 through 44.16.11 
+(Appendices 8 through 11 to Attachment LL); 
+2. Attachments C (clean) and D (marked): Tariff amendments revising Section 5 of the 
+OATT, the definitions in Sections 1.18 and 1.20, and Attachment B of Section 8 of the 
+OATT;6 
+3. Attachment E: Pro Forma Large Load Cost Recovery Agreement (“CRA”); 
+4. Attachment F: Pro Forma Large Load Security Agreement; 
+5. Attachment G: Pro Forma Facilities Study Agreement; 
+6. Attachment H: Pro Forma Large Load Interconnection Agreement; and  
+7. Attachment I: Panel Testimony and exhibit of Brian McNierney, Carol Teixeira, Yan 
+Flishenbaum, and Stacy Powers.  
+I. 
+EXECUTIVE SUMMARY 
+The NYTOs submit this filing under section 205 of the FPA and their reserved filing rights 
+under section 3.10(a) of the NYISO-TO Agreement7 to address the concerns the Commission 
+identified in the Large Load Show Cause Order that fall within the NYTOs’ responsibilities.  This 
+filing complements, and is submitted in parallel with, the NYISO’s section 205 filing establishing 
+new Large Load Integration Procedures in Attachment LL of the OATT.  The substantial majority 
+of the proposed tariff revisions submitted herewith are amendments to the currently effective 
+NYISO OATT.  In addition, certain amendments submitted in exercise of the NYTOs’ unilateral 
+filing rights propose to amend revisions to the NYISO OATT sponsored by the NYISO in its 
+contemporaneous section 205 filing.8  While the NYISO’s filing establishes the study process, 
+readiness requirements, and new Firm and Non-Firm Withdrawal Services for Large Loads, the 
+NYTOs’ filing addresses the complementary elements necessary to recover the costs of facilities 
+built to serve Large Loads, to protect other customers from cost shifts, and to integrate Large Loads 
+reliably onto the NYTOs’ systems. 
+ 
+6  
+The NYTOs’ proposed revisions to Section 1.20 and Attachment B of Section 8 of the OATT are added to 
+pending tariff changes as proposed by the NYISO’s companion section 205 filing.   
+7  
+NYISO, Foundation Agreements, Agreement Between New York Independent System Operator and 
+Transmission Owners (0.0.0) (“NYISO-TO Agreement”).  
+8  
+These sections include the following: (1) Attachment LL; (2) Attachment B of Section 8; and (3) Section 
+1.20 of the NYISO OATT.  Accordingly, when proposing changes to the NYISO companion filing, the 
+NYTOs accepted the NYISO’s proposed changes and then marked the NYTOs’ proposed changes as though 
+the NYISO’s proposed changes were accepted.
+--- PAGE 3 ---
+November 16, 2026 
+Page 3 
+ 
+ 
+Specifically, the NYTOs propose four pro forma agreements.  First, a pro forma CRA 
+allows each Transmission Owner to recover 100% of the costs of Network Upgrades and 
+Attachment Facilities allocated to a Large Load Customer through a formula rate applicable 
+exclusively to Large Load Customers (“Large Load Formula Rate”) that compresses cost recovery 
+into a 15-year term without accelerated depreciation.  Second, a pro forma Large Load Security 
+Agreement requires the Large Load Customer to post security for those allocated costs, which the 
+Transmission Owner may draw upon in the event of abandonment of a Large Load project, default, 
+or other specified events.  Third, a pro forma Facilities Study Agreement provides a uniform 
+framework, fixed study deposits, and a defined schedule for the Facilities Studies the Transmission 
+Owners perform under Attachment LL.  Fourth, a pro forma Large Load Interconnection 
+Agreement establishes the terms and conditions for interconnecting a Large Load, ties service 
+levels and operating requirements to studied load, and incorporates the CRA and Security 
+Agreement. 
+The NYTOs also propose targeted revisions to Attachment LL that fall within NYTO 
+responsibilities and supplement Attachment LL as proposed by the NYISO.  These revisions:  (i) 
+add definitions, including Franchise Utility, Large Load Customer, and Retail Tariff; (ii) integrate 
+the Facilities Study Agreement into the NYISO’s study timeline through execution, deposit, and 
+withdrawal deadlines; (iii) include a covenant that each NYTO will not recover Large Load 
+upgrade costs from other FERC-jurisdictional customers without explaining the associated rate 
+treatment and revenue credits; (iv) limit Non-Firm Withdrawal Service to thermal and resource 
+adequacy constraints; (v) establish new operating requirements that preserve each Transmission 
+Owner’s authority to maintain bulk and local system reliability, including through requests to the 
+NYISO to reduce Non-Firm withdrawals; and (vi) establish disconnection requirements or 
+capabilities. 
+Finally, the NYTOs propose revisions to Section 5 of the OATT, and conforming 
+definitions in Sections 1.18 and 1.20, to extend the existing retail access framework to Large Loads 
+and Eligible Customers9 serving Large Loads.  The NYTOs do not propose new delivery rates.  
+Instead, consistent with the cooperative federalism framework the Commission has accepted since 
+the NYISO’s existence, and recognizing that the NYTOs’ transmission and distribution rates are 
+bundled, Section 5 will continue to reference the voltage-differentiated delivery rates and service 
+classifications approved by the New York Public Service Commission (“NYPSC”) or the Long 
+Island Power Authority (“LIPA”) Board of Trustees, including optional classifications that allow 
+Large Loads that are dispatched down or otherwise reduce load to reduce their delivery charges.  
+Because the first Large Loads under the NYISO’s new procedures are not expected to complete 
+Facilities Studies until Q3 2028, the NYTOs request that the Commission allow the NYPSC to 
+address any changes to delivery rates serving Large Loads in the NYPSC’s pending proceeding in 
+ 
+9  
+NYISO OATT, Section 1.5 defines “Eligible Customer” as an entity that is engaged, or proposes to engage, 
+in the wholesale or retail electric power business, including any electric utility, power marketer, Federal power 
+marketing agency, or any person generating Energy for sale for resale, is an Eligible Customer under the Tariff.  
+Electric energy sold or produced by such entity may be electric energy produced in the United States, Canada or 
+Mexico.
+--- PAGE 4 ---
+November 16, 2026 
+Page 4 
+ 
+ 
+the first instance, and the NYTOs commit to make any necessary filing with the Commission 
+before those rates take effect.10 
+Together with the NYISO’s filing, these proposals provide a robust framework for the 
+study, interconnection, cost recovery, and operation of Large Loads in New York that is just and 
+reasonable, not unduly discriminatory or preferential, and protective of other transmission 
+customers. 
+This filing is without prejudice to and does not take any position concerning the scope of 
+the NYPSC and FERC jurisdiction over the subject matter contained in this filing.  Rather, since 
+the start of the NYISO’s operations in 1999, the NYTOs have relied on cooperative federalism.  
+The NYPSC has been the sole entity to conduct proceedings to establish retail delivery rates for 
+transmission and distribution services to retail customers unbundled from the supply function.  The 
+NYTOs included references in Section 5 of the NYISO OATT to the delivery rates, terms and 
+conditions contained in their rate schedules authorized by and on file with the NYPSC, as they 
+may be modified or superseded from time to time.   
+As explained in more detail below, the NYTOs propose to continue a system that has 
+worked since the NYISO’s existence (27 years) to produce retail delivery rates without a major 
+dispute that required FERC intervention.  Accordingly, while the NYTOs believe that this 
+cooperative federal-state framework can and should continue to provide solutions to Large Load 
+procedures and rates addressed in this proceeding, they reserve all jurisdictional positions in the 
+hope that they can continue to satisfy both regulators without creating jurisdictional disputes.11  
+The NYTOs respectfully request that the Commission accept the instant filing, effective on the 
+various effective dates described below.  
+II. 
+BACKGROUND 
+A. 
+The Large Load Show Cause Order 
+On June 18, 2026, the Commission issued the Show Cause Order, instituting a proceeding 
+under FPA section 206 based on the Commission’s preliminary finding that the NYISO’s OATT12 
+appears to be unjust, unreasonable, or unduly discriminatory or preferential.13  The Commission 
+issued the Large Load Show Cause Order as part of a suite of six coordinated orders directed to 
+each of the Regional Transmission Organization/Independent System Operator regions subject to 
+the Commission’s jurisdiction. 
+ 
+10  
+NYPSC Case No. 26-E-0045, Proceeding on Motion of the Commission to Address Interconnection Reforms 
+for Large Loads, Order Instituting Proceeding and Soliciting Comments (Feb. 12, 2026).  
+11  
+The NYTOs appreciate that the Commission’s “objective in this proceeding is to respect the cooperative 
+federalism approach established under the FPA.”  Show Cause Order, 195 FERC ¶ 61,216 at P 76.  
+12  
+Capitalized terms not otherwise defined herein have the meanings set forth in the NYISO OATT or Market 
+Administration and Control Area Services Tariff, as applicable.   
+13  
+Show Cause Order, 195 FERC ¶ 61,216 at P 3.
+--- PAGE 5 ---
+November 16, 2026 
+Page 5 
+ 
+ 
+The Large Load Show Cause Order included preliminary findings that the NYISO’s Tariff 
+appears unjust and unreasonable in five principal respects: 
+1.  Transmission Service Study Process for Large Loads.  The Commission 
+preliminarily found that the NYISO’s Tariff lacks sufficiently clear and consistent provisions 
+addressing: (a) a definition of Large Load as a distinct category of load; (b) a mandatory 
+application process, readiness requirements, and study procedures for Eligible Customers seeking 
+transmission service on behalf of Large Loads; (c) study timelines of no more than 60-90 calendar 
+days; (d) ongoing operational requirements – including telemetry, data reporting, remote 
+disconnect capability, ramp rate and ride-through requirements, and protection systems – for 
+transmission customers serving Large Loads; (e) evaluation of alternative transmission 
+technologies as potential solutions in lieu of or in addition to traditional Network Upgrades; and 
+(f) pro forma provisions in transmission service agreements to memorialize operational 
+requirements.14 
+2.  Cost Transparency and Cost Recovery.  The Commission preliminarily found that 
+the NYISO Tariff lacks: (a) robust, centralized, publicly accessible data on its website regarding 
+the Network Upgrades and associated costs needed to provide transmission service to Eligible 
+Customers on behalf of Large Loads; and (b) a pro forma CRA between the NYISO, the relevant 
+Transmission Owner, and the Eligible Customer taking transmission service on behalf of a Large 
+Load, with a minimum financial contribution and credit support requirement sufficient to mitigate 
+the risk of cost shifting among transmission customers.15 
+3.  Co-Location Arrangements and Behind-the-Meter Generation.  The Commission 
+preliminarily found that the NYISO’s Tariff lacks: (a) a definition of co-located load; (b) 
+sufficiently clear and consistent provisions governing the rates, terms, and conditions of service 
+applicable to interconnection customers serving co-located load, including required ancillary 
+service charges (regulation and black start service on a gross demand basis); and (c) provisions 
+addressing netting of behind-the-meter generation from gross load for purposes of calculating 
+applicable Transmission Service Charges in a manner consistent with the cost causation 
+principle.16 
+4.  New Transmission Services for Eligible Load and Flexible Large Loads.  The 
+Commission preliminarily found that the NYISO’s Tariff lacks transmission services that reflect 
+the operational capabilities of Eligible Customers taking transmission service on behalf of Eligible 
+Load (co-located load and load with behind-the-meter generation) and flexible Large Loads that 
+are willing and able to limit their energy withdrawals from the transmission system under certain 
+conditions, specifically:  (a) an interim Non-Firm network transmission service available while 
+ 
+14  
+Id. PP 56-71. 
+15  
+Id. PP 77-91. 
+16  
+Id. PP 101-110.  See, e.g., Tenaska Clear Creek Wind, LLC v. FERC, 108 F.4th 858, 868-69 (D.C. Cir. 2024) 
+(“[T]he cost causation principle requires that ‘all approved rates reflect to some degree the costs actually caused by 
+the customer who must pay them.’”) (quoting S.C. Pub. Serv. Auth. v. FERC, 762 F.3d 41, 88 (D.C. Cir. 2014)).
+--- PAGE 6 ---
+November 16, 2026 
+Page 6 
+ 
+ 
+Network Upgrades are being constructed; and (b) permanent firm and Non-Firm contract demand 
+transmission services.17 
+5.  Generator Interconnection for Electrically Proximate Large Load and Co-Located 
+Load.  The Commission preliminarily found that the NYISO’s Tariff lacks generator 
+interconnection study procedures and generator interconnection services tailored to reflect an 
+interconnection customer’s commitment to limit a generating facility’s output to match the hourly 
+forecast of an electrically proximate Large Load or large co-located load, thereby potentially 
+reducing the need for Network Upgrades and accelerating the interconnection process.18 
+The Commission therefore directed the NYISO and the other named parties,19 within 60 
+days of issuance (i.e., by August 17, 2026), to either:  (1) show cause as to why the Tariff remains 
+just and reasonable and not unduly discriminatory or preferential without provisions addressing 
+the foregoing concerns; or (2) explain what Tariff changes would remedy those concerns were the 
+Commission to determine that the Tariff is in fact unjust and unreasonable and to establish a 
+replacement Tariff.20  Alternatively, the Commission indicated it would consider requests to hold 
+the Show Cause Order proceeding in abeyance for up to 90 days to allow the NYISO and the other 
+named parties time to “work through the stakeholder processes to develop FPA section 205 filings 
+to revise the Tariff to address the issues raised in [the Show Cause Order].”21 
+On August 3, 2026, the NYISO, certain NYTOs, LS Power Grid New York Corporation I, 
+and New York Transco, LLC submitted separate requests to hold the Show Cause Order 
+proceeding in abeyance for 90 days.22  The Commission granted those requests in an August 14, 
+2026, order.23   
+B. 
+The NYTOs’ Independent Filing Rights Under the NYISO-TO Agreement  
+As the NYTOs explained in their motion to hold the Show Cause Order proceeding in 
+abeyance, the NYTOs have explicitly reserved FPA section 205 filing rights in section 3.10(a) of 
+the NYISO-TO Agreement.24  Section 3.10(a) provides, in relevant part, that: 
+ 
+17  
+Show Cause Order, 195 FERC ¶ 61,216 at PP 109, 112-113. 
+18  
+Id. PP 121-127. 
+19  
+The following entities were named as parties to the Show Cause Order: NYISO, Central Hudson, Con Edison, 
+NYSEG, National Grid, O&R, RG&E, LS Power Grid New York Corporation I, New York Transco LLC, and NextEra 
+Energy Transmission New York, Inc.   
+20  
+See, e.g., Show Cause Order, 195 FERC ¶ 61,216 at P 3. 
+21  
+Id. P 42. 
+22  
+New York Power Authority (“NYPA”) and LIPA did not join the abeyance request because they were not 
+named as parties to the Show Cause Order.  
+23  
+N.Y. Indep. Sys. Operator, Inc., 196 FERC ¶ 61,130 (2026). 
+24  
+NYISO-TO Agreement.
+--- PAGE 7 ---
+November 16, 2026 
+Page 7 
+ 
+ 
+Each Transmission Owner shall have the right at any time 
+unilaterally to file pursuant to Section 205 of the Federal Power Act 
+to change the ISO OATT, a Service Agreement under the ISO 
+OATT, or the ISO Agreement to the extent necessary: (i) to recover 
+all of its reasonably incurred costs, plus a reasonable return on 
+investment related to services under the ISO OATT and (ii) to 
+accommodate implementation of, and changes to, a Transmission 
+Owner’s retail access program.25 
+Section 3.10(a) confers upon each Transmission Owner the unilateral right to file with the 
+Commission under FPA section 205 – independent of the NYISO’s concurrence – to the extent 
+necessary to recover reasonably incurred costs associated with services provided under the NYISO 
+OATT and to accommodate changes to the NYTOs’ retail access programs.26 
+The Show Cause Order directly implicates the NYTOs’ ability to recover their reasonably 
+incurred costs through rates filed with the Commission, including rates for recovery of costs of 
+Network Upgrades and Attachment Facilities needed to provide transmission service to Eligible 
+Customers on behalf of Large Loads,27 new study procedures and requirements applicable to Large 
+Load Customers, and new services for Large Load Customers.  Accordingly, the NYTOs’ 
+independent filing rights under section 3.10(a) of the NYISO-TO Agreement are directly 
+exercisable with respect to key issues identified below. 
+Section 3.10(a) also provides an independent, second basis for the NYTOs’ exercise of 
+their unilateral FPA section 205 filing rights that is equally applicable to certain key issues 
+identified below:  the right to file “to accommodate implementation of, and changes to, a 
+Transmission Owner’s retail access program.”  The Show Cause Order’s directives directly affect 
+the NYTOs’ retail access obligations.  Specifically, the Show Cause Order requires that the NYISO 
+OATT address eligibility for Large Load interconnection study procedures, the procedures 
+themselves, terms of transmission service for Large Load Customers, cost transparency 
+requirements, security and related cost recovery agreements, among other things.  Addressing each 
+of these subjects, including through the associated new pro forma agreements submitted with this 
+filing (the pro forma Facilities Study Agreement, Interconnection Agreement, Large Load Security 
+Agreement, and CRA), all of which requires changes to the portion of Section 5 of the NYISO 
+OATT that deals with each Transmission Owner’s retail access program and retail transmission 
+and distribution services. Because the Tariff reforms at issue necessarily affect each NYTO’s retail 
+ 
+25  
+Id. § 3.10(a). 
+26  
+While the NYISO-TO Agreement recognized that OATT revisions are subject to NYISO stakeholder and 
+governance requirements, it also excepted Section 3.10’s reservation of each Transmission Owner’s right to make 
+unilateral section 205 filings.  See id. § 3.03 (providing that “[n]otwithstanding any other provision in this Agreement 
+except for the provisions of Section 3.10,” proposed OATT revisions are subject to certain stakeholder and NYISO 
+governance procedures (including review by the NYISO Board of Directors) before being filed at FERC) (emphasis 
+added). 
+27  
+Show Cause Order, 195 FERC ¶ 61,216 at PP 20, 85.
+--- PAGE 8 ---
+November 16, 2026 
+Page 8 
+ 
+ 
+access obligations, section 3.10(a) provides an additional, independent basis for the NYTOs’ filing 
+authority over the OATT revisions and pro forma agreements proposed in this proceeding. 
+C. 
+Stakeholder Processes 
+The NYTOs participated in the NYISO stakeholder process relating to this proceeding, 
+culminating in the NYISO’s Management Committee’s unanimous approval with abstentions of 
+the extensive FPA section 205 filing the NYISO makes in parallel with this filing.  Once the 
+parameters of the NYISO filing were identified with reasonable particularity, and after extensive 
+negotiations and meetings over the shared and divided responsibilities for Large Load 
+interconnection processes, studies and reports, the NYTOs addressed the elements for which they 
+were responsible and that the NYISO did not include in its filing.  The NYISO first presented its 
+proposed filing at a special joint meeting of its Operating Committee and the Business Issues 
+Committee on October 21, 2026.28  
+The NYTOs have unilateral section 205 filing rights that do not require any particular 
+stakeholder process or votes.  Nevertheless, on October 22, 2026, the NYTOs presented their 
+conceptual proposal to a joint meeting of the NYISO Transmission Planning Advisory 
+Subcommittee, the Electric System Planning Working Group, and the Installed Capacity Working 
+Group, the three bodies responsible for vetting the NYISO’s Large Load procedures.29    
+III. 
+PROPOSED TARIFF REVISIONS AND PRO FORMA AGREEMENTS 
+The NYTOs have worked extensively in a concentrated time frame to develop with the 
+NYISO new interconnection study procedures for Large Loads.  The NYTOs have assumed 
+responsibility for significant aspects of the Large Load interconnection process, including: 
+• physical infeasibility screening; 
+• a preapplication process to lead to better-informed interconnection decisions by 
+Large Loads;  
+• review and updating of NYISO base cases; 
+• identification of non-bulk transmission and distribution reliability violations; 
+• identification of upgrades to solve those violations in addition to the bulk system 
+violations identified by the NYISO; 
+ 
+28  
+With certain revisions, the NYISO’s proposed filing was approved by the Management Committee on 
+October 28, 2026. 
+29  
+See NYTO FPA Section 205 Filing on Certain Large Load Interconnection and Service Matters, NYISO 
+TPAS/ESPWG/ICAP 
+Meeting 
+(Oct. 
+22, 
+2026), 
+available 
+at 
+NYTO_Section_205_Large_Load_Deck_Final_TPAS_10.22.26.pdf.
+--- PAGE 9 ---
+November 16, 2026 
+Page 9 
+ 
+ 
+• identification of Attachment Facilities; and  
+• estimates of the cost and time to construct all of the upgrades.  
+These elements are included in the NYISO FPA section 205 filing but are NYTO 
+commitments to facilitate an improved Large Load interconnection process.  In contrast, this filing 
+addresses complementary and necessary elements within the scope of the NYTOs’ reserved 
+section 205 filing rights.   
+The NYTOs propose Tariff revisions and certain pro forma agreements regarding the 
+following topics addressed in the Show Cause Order:  (1) Network Upgrade cost allocation and 
+recovery and Attachment Facility cost recovery; (2) mechanisms to ensure that payments made 
+pursuant to cost recovery agreements or Tariff provisions are appropriately credited toward each 
+NYTO’s transmission revenue requirement to the extent such costs are included in such revenue 
+requirements consistent with the Commission’s cost-of-service regulations and rates or formula 
+rates accepted or approved by the Commission for each NYTO; (3) rates applicable to transmission 
+services arranged by Eligible Customers on behalf of Large Loads; (4) certain operational 
+requirements for Eligible Customers taking service on behalf of Large Loads and Large Loads 
+themselves; and (5) a pro forma Large Load Interconnection Agreement, along with necessary 
+agreements and Tariff changes to implement the foregoing.30   
+The NYISO Tariff already contains Commission-approved provisions pertaining to cost 
+recovery that explicitly reference the New York Public Service Law, the enabling statute for the 
+NYPSC.  For example, section 31.5.1.6 of the NYISO OATT, Attachment Y, with respect to cost 
+recovery for Regulated Non-Transmission Projects, states in part, “[c]osts related to regulated non-
+transmission projects will be recovered by Responsible Transmission Owners, Transmission 
+Owners, and Other Developers in accordance with the provisions of New York Public Service 
+Law, New York Public Authorities Law, or other applicable state law.”31  Thus, tariff provisions 
+proposed herein that explicitly reference mechanisms that are creatures of the New York Public 
+Service Law are not invoking an unprecedented practice.   
+Overall, the NYTOs’ FPA section 205 filing contains the following tariff additions and pro 
+forma agreements as complements to the NYISO section 205 Large Load filing:  
+• Complementary and necessary amendments to the NYISO’s proposed Attachment 
+LL to its OATT.  
+• Amendments to NYISO OATT Section 5 pertaining to various aspects of 
+Transmission Owners’ service to retail access customers as detailed below, as well 
+ 
+30  
+This is not intended to be an exclusive list of the items within the NYTOs’ unilateral FPA section 205 filing 
+right and does not constitute a waiver of any NYTO filing right.   
+31  
+New York Independent System Operator, Inc. – NYISO Tariffs, Attachment Y, Section 31.5, Cost Allocation 
+and Cost Recovery (32.0.0), § 31.5.1.6.
+--- PAGE 10 ---
+November 16, 2026 
+Page 10 
+ 
+ 
+as revised rates to accommodate the Commission’s rate directives within the 
+context of the NYISO construct. 
+• Amendments to Attachment B of Section 8 of the NYISO OATT, the pro forma 
+Transmission Service Agreement (“TSA”), to add cross-references to Section 5 of 
+the NYISO OATT. 
+In addition, the following three proposed pro forma agreements are intended to work 
+together to ensure appropriate cost recovery and integration of Large Loads in a manner that avoids 
+undue cost shifts to other transmission customers: 
+• A pro forma CRA recovering the allocated costs of Transmission Owner 
+Attachment Facilities and Network Upgrades to Large Load Customers as 
+explained in greater detail below.  
+• A pro forma Large Load Security Agreement, which sets forth the security posting 
+requirements for the Large Load.  
+• A pro forma Large Load Interconnection Agreement which sets forth the terms and 
+conditions for Large Load interconnection between the customer and the 
+Transmission Owner.   
+Finally, to meet its study responsibilities under the proposed Attachment LL construct, the 
+NYTOs propose one additional pro forma agreement:    
+• A pro forma Facilities Study Agreement which establishes the scope of 
+Transmission Owner study work under Attachment LL and at the request of a Large 
+Load Customer. 
+Each of these filing components is discussed in turn below following discussion on the 
+jurisdictional status of this filing:  
+A. 
+Jurisdictional Status of this Filing  
+In the Show Cause Order, in the context of transmission security agreements and 
+construction service agreements, the Commission “declines to preliminarily find that cost 
+recovery agreements between the transmission owner and the large load customer (rather than 
+from the Eligible Customer taking transmission service on behalf of the large load customer) are 
+necessary to ensure just and reasonable transmission rates, … [and] continue[s] to find that such 
+agreements directly affect Commission-jurisdictional transmission rates.  Therefore, to the extent 
+a Transmission Owner and a Large Load Customer enter into a cost recovery agreement 
+(whether voluntary or pursuant to state law) through which the Large Load Customer guarantees
+--- PAGE 11 ---
+November 16, 2026 
+Page 11 
+ 
+ 
+contributions to the transmission owner’s Commission-jurisdictional transmission revenue 
+requirement, we find that such an agreement should be filed with the Commission.”32  
+  
+The NYTOs present in this filing pro forma Large Load Facilities Study, Security, Cost 
+Recovery, and Interconnection Agreements.  While they relate to the NYISO Large Load 
+Integration Process as proposed in new Attachment LL of the NYISO OATT, they are not 
+appropriate agreements for intermediaries between the Large Loads themselves and the NYTOs 
+responsible for interconnection studies, cost recovery, associated security and interconnection, 
+including certain operational reliability requirements.  In each of these contexts, the NYTOs 
+have dealt directly with the Large Load Customers themselves, who are the financially 
+responsible parties, and propose to continue this practice.  
+ 
+Historically, in New York, energy service companies (“ESCOs”) have provided 
+commodity supply unbundled from retail delivery services and have been Eligible Customers for 
+purposes of the NYISO’s energy and capacity market settlements.  ESCOs have been Eligible 
+Customers under the NYISO Tariffs for limited purposes, enabling retail access programs 
+intended to introduce competition for supply, but not for purposes of retail customer 
+interconnection studies and associated agreements to effect retail interconnections with grid 
+owners.  
+ 
+ESCOs or other intermediaries have not functioned as the primary interfaces or 
+contracting parties in the interconnection process for new Large Loads.  This is not by accident; 
+unlike serving as a supply source to enable retail access, ESCOs would serve no legitimate 
+business function as an intermediary in the Large Load Interconnection Process.  In fact, their 
+insertion would only serve to frustrate that process, making it riskier and, not insignificantly, 
+costlier.  
+Until recently, the interconnection process for loads was subject to NYPSC regulation 
+and not FERC regulation.  The interconnection of retail loads has been to facilitate local 
+distribution of electric energy which the Commission found to be involved in every retail 
+transmission transaction33 and to facilitate retail sales of electric energy.  These functions are 
+subject to State jurisdiction, and the NYPSC regulates such functions.   
+ 
+32  
+Show Cause Order, 195 FERC ¶ 61,216 at P 88. 
+33  
+In Order No. 888, FERC stated: “while we believe in most cases there will be identifiable local distribution 
+facilities subject to state jurisdiction, we also believe that even where there are no identifiable local distribution 
+facilities, states nevertheless have jurisdiction in all circumstances over the service of delivering energy to end 
+users.”  In re Promoting Wholesale Competition by Pub. Utilities, Order No. 888, 75 FERC ¶ 61,080 at 21,626 (1996) 
+(subsequent history omitted).   FERC similarly noted in Order No. 888-B:  “We reiterate that we believe there is 
+always a local distribution service element of a retail transaction, through which the state may impose charges on the 
+retail customer.”  Promoting Wholesale Competition Through Open Access Non-Discriminatory Transmission Servs. 
+by Pub. Utilities Recovery of Stranded Costs by Pub. Utilities & Transmitting Utilities, Order No. 888-B, 81 FERC ¶ 
+61,248 at 62,098 (1997).
+--- PAGE 12 ---
+November 16, 2026 
+Page 12 
+ 
+ 
+The NYISO relatively recently has been more involved in considering bulk power system 
+impacts associated with certain large retail load interconnection requests.  The Show Cause 
+Order asks for clear and transparent rules governing the interconnection of Large Loads.  The 
+NYISO will continue to analyze bulk system impacts and violations caused by the 
+interconnection of Large Loads.  The Transmission Owners, however, are responsible for 
+significant aspects of the Large Load interconnection process, including: 
+ 
+• physical infeasibility screening; 
+• a preapplication process to lead to better-informed interconnection decisions by 
+Large Loads;  
+• review and updating of NYISO base cases; 
+• identification of non-bulk transmission and distribution reliability violations; 
+• identification of upgrades to solve those violations in addition to the bulk system 
+violations identified by the NYISO; 
+• identification of Attachment Facilities; and  
+• estimates of the cost and time to construct all of the upgrades.  
+ 
+The Transmission Owners have extensive experience in handling all forms of retail load 
+interconnection studies and entering into appropriate agreements which have not been subject to 
+FERC jurisdiction or filing requirements.  Each of the six NYTOs has its own forms of 
+agreement.  In response to the Show Cause Order, however, the NYTOs have worked to adopt 
+standardized procedures and forms of agreement to make the process more transparent and easier 
+to navigate.  
+ 
+The Transmission Owners, however, do not agree that the interconnection study process, 
+upgrade and attachment facility cost recovery, associated security and interconnection and 
+operational reliability requirements should be subject to the insertion of an intermediary between 
+the Large Load Customer and the Transmission Owners responsible for a substantial majority of 
+the interconnection study process, building upgrades and Attachment Facilities and maintaining 
+system reliability, including through operating and interconnection requirements.  
+ 
+In the compressed time that the NYTOs have to handle the tasks listed above, direct 
+communications with the Large Load Customer will be necessary in order to have an efficient 
+and effective interconnection study process which inevitably involves discussions with many 
+customers simultaneously.  ESCOs or other intermediaries have not played a significant role in 
+these processes, are not the ultimate parties-in-interest (i.e., the transactions and services 
+addressed by the pro forma agreements bear no relationship to the supply services ESCOs are 
+engaged by customers to perform) and FERC should not enter the process now. 
+ 
+Once the Facilities Study is issued, each Large Load Customer will have a short period of 
+time to enter into a Security Agreement on a Transmission Owner-specific basis for each 
+Upgrade that the Transmission Owner has identified and to secure the Attachment Facility and 
+Network Upgrade costs.  Some upgrades will cost tens or even hundreds of millions of dollars.  
+It is not realistic to have ESCOs or intermediaries cover such large security amounts without
+--- PAGE 13 ---
+November 16, 2026 
+Page 13 
+ 
+ 
+relying on the Large Load Customer directly, and expanding such agreements to cover a 
+superfluous party adds risk, delay, and complexity that should be avoided.  
+ 
+Once security is posted, the relevant Transmission Owner(s) will enter into the CRA, 
+Security Agreement, and Large Load Interconnection Agreement with the Large Load Customer 
+(as required by the NYISO’s revisions in proposed Attachment LL section 44.12.1.8) rather than 
+the Eligible Customer.  The CRA as proposed is a long-term agreement and may involve the 
+recovery of tens or even hundreds of millions of dollars in upgrade and attachment facility costs.  
+As noted, ESCOs will be dependent on the Large Load Customers themselves, and if there is a 
+default, the Transmission Owners will be seeking redress directly through the security provided 
+by the Large Load Customer.  Interjecting a third-party intermediary between the Large Load 
+Customer and the Transmission Owners only complicates remedies when needed on short notice 
+and increases risk and costs with high stakes involved.  The goal of avoiding stranded costs 
+being shifted to other customers would not be served by adding intermediaries to the contracting 
+process.  
+ 
+The Interconnection Agreement with Large Load Customers will identify facilities 
+needed to reliably interconnect the customer to the retail franchise utility’s system.  Any special 
+operating conditions that are required will need to be followed by the Large Load Customer, not 
+an ESCO.  The ability to operate a Large Load associated with dispatch instructions, ramping, 
+curtailment, disconnect and restoration will be handled by the Large Load Customer and not by 
+an ESCO or other intermediary, and system reliability will depend on this relationship, direct 
+communication and prompt responsiveness. 
+ 
+The NYTOs do not in this filing or in the companion NYISO filing offer to provide 
+voluntary retail transmission, distribution or delivery services.  They provide such services only 
+as directed by the NYPSC or in accordance with NYPSC policy.  They do not volunteer to enter 
+into Facilities Study, Security, Cost Recovery, and Interconnection Agreements with ESCOs or 
+other intermediaries of Large Load Customers.  It would not be just and reasonable to require 
+such arrangements, and if they were required, it would raise troubling issues associated with 16 
+U.S.C. § 824k(h). 
+ 
+As discussed in the context of the delivery rates identified in Section 5 of the NYISO 
+OATT and as proposed to be modified in this filing, the NYTOs plan to continue the practice in 
+effect since NYISO started applying NYPSC-determined delivery rates for Large Load 
+Customers as well as for other retail customers.  Cooperative federalism, expressly recognized as 
+a goal of the Commission in the large load context,34 has worked for 27 years whereby the 
+Commission accepted NYPSC-determined rates, terms, and conditions for retail delivery 
+services.  If the Commission were to accept this filing, subject to any amendments the NYTOs 
+make in response to further orders of the NYPSC, the NYTOs would once again seek to satisfy 
+both regulators without endangering jurisdictional or preemption disputes.  
+ 
+ 
+34  
+See Show Cause Order, 195 FERC ¶ 61,216 at P 76.
+--- PAGE 14 ---
+November 16, 2026 
+Page 14 
+ 
+ 
+The Commission expressed concerns that the rates the Transmission Owners charge 
+Large Load Customers for Network Upgrades and the associated security agreements may affect 
+other Commission-jurisdictional rates.  The NYTOs have adopted a covenant in the NYISO 
+proposed Section 44.12.1.8 of Attachment LL whereby each NYTO covenants not to include 
+costs recovered through such CRA or Security Agreement in rates for other FERC-jurisdictional 
+transmission customers without an accompanying revenue credit and an explanation of the rate 
+treatment.  This covenant is to directly address the impacts that Large Load Customer 
+interconnections can have on other FERC-jurisdictional rates.  
+ 
+The NYTOs recognize that the Commission may determine that it does not have 
+jurisdiction over some aspects of the Large Load Integration Process, particularly those elements 
+filed herewith.  The NYTOs reserve the right to submit any agreements, rates, terms and 
+conditions associated with Large Loads to the NYPSC.  As noted below in this filing, the 
+NYPSC commenced a proceeding in February 2026 concerning Large Load matters.  The 
+NYTOs reserve the right to amend this filing based on further guidance and direction from the 
+NYPSC.  
+ 
+The NYTOs, however, submit this filing to be responsive to the Show Cause Order and 
+to provide interested stakeholders an integrated process and forms applicable to Large Load 
+Integration Procedures.  
+ 
+B. 
+Network Upgrade Cost Recovery 
+The NYTOs submit with this filing a pro forma CRA to recover the costs of Network 
+Upgrades and Attachment Facilities identified by each Transmission Owner in its Large Load 
+Facilities Studies in accordance with NYISO OATT Attachment LL.  The proposed pro forma 
+CRA may be used by as many as three different types of Transmission Owners with a single Large 
+Load Customer.  First, upgrades required to accommodate a Large Load Customer may be limited 
+to a single Transmission Owner, which is often the Connecting Transmission Owner (“CTO”) that 
+owns the transmission facility at the proposed point of interconnection and which is also the retail 
+distribution utility.  Second, a Transmission Owner that owns the line at the proposed point of 
+interconnection (the CTO) may not have a Certificate of Public Convenience and Necessity under 
+Section 68 of the New York Public Service Law to serve retail load at the requested location.  In 
+such a case, the franchise distribution utility with the right to serve retail load, which is not the 
+CTO, will need to install and/or own the retail meter and appurtenant facilities and the 
+Transmission Owner that owns the facility at the proposed point of interconnection will have to 
+modify its facilities and construct any necessary upgrades on its facilities/system.  Third, in either 
+of these cases, the Large Load Customer may cause reliability violations on another ATO’s system.  
+Accordingly, the CTO that is also the retail distribution utility for the Large Load, a CTO that is 
+not the retail utility, and one or more Affected Transmission Owners (“ATOs”), each would need 
+a CRA to recover its costs of the Network Upgrades and Attachment Facilities to interconnect a 
+Large Load Customer.  
+Under the CRA, each Transmission Owner will recover 100% of its costs of Network 
+Upgrades and Attachment Facilities from Large Load Customers.  For each Network Upgrade or
+--- PAGE 15 ---
+November 16, 2026 
+Page 15 
+ 
+ 
+Attachment Facility that is to mitigate or remedy violations caused by more than one project of a 
+Large Load Cluster, the costs of the associated upgrade shall be allocated in accordance with the 
+Allocation Factors identified in the Facilities Study (see discussion of the Facilities Study below).   
+When the CTOs and ATOs complete the Facilities Studies for a Cluster under the NYISO 
+Large Load Integration Procedure (“LLIP”), each Large Load project will be required to post cash 
+or a letter of credit as security for the Network Upgrades and Attachment Facilities assigned to it 
+in the Facilities Study.  A Large Load’s failure to timely post security will result in removal of the 
+Large Load from the LLIP.  If a Large Load that had responsibility for a Network Upgrade shared 
+with one or more other customers in the Cluster is removed from the Cluster, then either:  (a) the 
+other Large Load(s) with shared responsibility for a Network Upgrade will have new allocations 
+of the cost of the upgrade and new security posting requirements, or (b) the CTO or ATO that 
+identified the Network Upgrade may determine that the Network Upgrade is no longer required, 
+and the remaining Large Load(s) will no longer be responsible for that upgrade.  Prior to the 
+issuance of the first Cluster under the NYISO’s November 16, 2026 FPA section 205 Large Load 
+filing, the NYTOs plan for the NYISO or the NYTOs to make a filing under the FPA to adopt 
+procedures governing a failure of one or more projects in the then-current Cluster to timely post 
+required security and the reallocation of costs of such upgrades, unless the upgrade is no longer 
+needed. 
+Under the CRA, each Transmission Owner would recover the allocable share of the costs 
+of the Network Upgrade(s) and Attachment Facilities over a 15-year period, as described further 
+below.  In each LLIP Cluster, the upgrade costs will be recovered from the Large Load Customer 
+that causes the violation giving rise to the Network Upgrade(s) and Attachment Facilities.  Where 
+more than one Large Load contributes to a violation resulting in an upgrade, costs shall be allocated 
+in accordance with the procedures discussed below. 
+Under the proposed NYISO LLIP, the NYISO is responsible for identifying violations and 
+overloads on the Bulk Power System caused by the interconnection of a Large Load following the 
+LLIP.  When more than one Large Load contributes to a violation, the NYISO provides 
+contribution factors.  Each CTO and ATO is responsible for identifying:  (a) violations on the non-
+Bulk Electric System, including local transmission and distribution systems, (b) the Network 
+Upgrades to address both bulk system and non-bulk violations (subject to consultation with the 
+NYISO), (c) cost estimates and time to construct the Network Upgrades, (d) the allocation of costs 
+among the Large Loads following the LLIP Cluster based on the NYISO- and NYTO-determined 
+contribution factors, (e) Attachment Facilities, and (f) estimates of Attachment Facility costs and 
+time to construct.  
+Consistent with the Show Cause Order, the NYTOs provide with this filing a pro forma 
+CRA pursuant to which each Large Load Customer would compensate the applicable CTO or ATO 
+for its allocable share of the Network Upgrade costs and all of the Transmission Owner Attachment
+--- PAGE 16 ---
+November 16, 2026 
+Page 16 
+ 
+ 
+Facility costs.35  The CRA would appear in the NYISO OATT as Appendix 9 to Attachment LL 
+(Section 44.16.9), and the pro forma Security Agreement as Appendix 10 (Section 44.16.10).  
+In its orders related to Large Load Network Upgrade cost allocation, the Commission has 
+been clear that it seeks to avoid shifting upgrade costs from Large Loads to other customers and 
+to avoid upgrade costs being stranded if a Large Load does not cover its share of such costs before 
+ceasing compensation for the upgrades.  In the Show Cause Order, the Commission stated that it 
+“must act to address the risk of cost shifting among transmission customers” to address, inter alia, 
+costs associated with facilities needed to serve Large Loads as well as the risk of speculative 
+requests associated with Large Load Customers.36  
+In the Show Cause Order, FERC expressly noted the risk for transmission customers to 
+“pay for potentially unnecessary Network Upgrades that they neither caused the need for nor 
+benefit commensurately from” if a Large Load fails to materialize as anticipated.37  The 
+Commission has otherwise noted that transmission customers should be protected from paying for 
+transmission facilities to serve Large Load Customers or otherwise bear the costs of a Large Load 
+failing to achieve planned commercial operations.38  
+The NYTOs have addressed the Commission’s concerns in the CRA and a pro forma Large 
+Load Security Agreement.  The pro forma CRA includes a Large Load Formula Rate to recover 
+each Large Load Customer’s Allocable Network Upgrade Costs and Attachment Facilities costs 
+from the customer.39  The useful life of many Network Upgrades will be 40 years or longer.  
+Entering into a CRA of such a long duration increases performance and financial security/collateral 
+risks that can result in stranded costs and cost shifts to other customers.  Accordingly, the CRA 
+ 
+35  
+For ease of reference, we refer to “upgrades” and “Network Upgrades” in discussing the Large Load CRA, 
+but the terms are intended also to apply to Attachment Facilities as noted above.  
+36  
+Show Cause Order, 195 FERC ¶ 61,216 at P 74; see also Midcontinent Indep. Sys. Operator, Inc., 195 FERC 
+¶ 61,212 at PP 78-82 (2026) (discussing the need for a cost recovery agreement among other requirements to ensure 
+cost shifting risks to other transmission customers are mitigated).  
+37  
+Show Cause Order, 195 FERC ¶ 61,216 at P 85.  
+38 
+See Duke Energy Carolinas, LLC, 193 FERC ¶ 61,237 at P 20 (2025) (FERC rejecting a proposed Amended 
+Network Integration Transmission Service Agreement and noting no explanation for how the proposed transmission 
+rate would not shift costs of necessary transmission facilities to other customers); PECO Energy Co., 193 FERC ¶ 
+61,148 at P 32 (2025) (FERC noting an applicant’s representation that a filed Transmission Security Agreement 
+includes “safeguards to protect customers” by requiring that the Large Load make a minimum contribution to the 
+transmission revenue requirement regardless of whether the Large Load ever achieved operation); The Dayton Power 
+& Light Co., 192 FERC ¶ 61,103 at P 13 (2025) (FERC noting the filed Construction Service Agreement “includes 
+customer protection provisions designed to prevent AES Ohio’s other customers from bearing ultimately cost 
+responsibility if the Data Center fails to achieve commercial operations”).  
+39  
+In some circumstances, the NYPSC, a CTO, or ATO may determine that an alternate cost allocation and/or 
+recovery mechanism is justified.  Nothing in the default mechanism of the CRA is intended to limit the NYPSC’s 
+authority to determine an alternative cost allocation methodology pursuant to its own procedures or a CTO or ATO’s 
+right to file an alternative agreement, pro forma agreement or non-conforming agreement governing cost allocation 
+and recovery under FPA section 205.
+--- PAGE 17 ---
+November 16, 2026 
+Page 17 
+ 
+ 
+provides for a term of 15 years over which the Transmission Owner that constructs the upgrade 
+would be fully compensated for the cost of the upgrade.  
+Accelerating depreciation of the assets to correspond to their repayment term, however, 
+would raise accounting and rate-making issues that should be avoided.  For example, accelerated 
+depreciation may conflict with how depreciation rates are established pursuant to the FERC chart 
+of accounts.  Further, certain utility software that marks asset classes for a variety of purposes may 
+not be able to implement separate project-specific depreciation rates.  Accordingly, rather than 
+depreciating the upgrade over 15 years, the risk of cost shifts to other customers and avoids the 
+pitfalls of accelerated depreciation.  The Large Load Upgrade Charge under the CRA compresses 
+cost recovery into the CRA term but does not accelerate depreciation on the Transmission Owner’s 
+books.  Rather, for accounting purposes, the Transmission Owner would depreciate each upgrade 
+over its full economic life on a composite straight-line basis, as usual.  The Large Load, however, 
+pays the full cost within the 15-year term rather than over the decades the equipment will be in 
+service.  This substantially mitigates the risk of cost shifts to other customers and avoids the pitfalls 
+of accelerated depreciation. 
+ 
+As a result, the Large Load’s yearly payments during the term are higher than the 
+equipment’s normal yearly straight-line depreciation cost.  The Transmission Owner will defer in 
+its accounts that excess (the “Annual Deferred Revenue”).  Starting in Year 16 and continuing for 
+the rest of the upgrade’s economic life, the Transmission Owner will credit the deferred amounts 
+back to its cost of service in its bundled T&D rates, or, if unbundled, in its transmission rates, 
+thereby protecting other customers from upgrade costs. 
+ 
+The annual revenue requirement for each upgrade is calculated as if the upgrade were 
+recovered over its Average Service Life, using the Transmission Owner’s approved depreciation 
+rates, and the Transmission Owner earns its return on the depreciated, not the original, cost of the 
+upgrade.  That is, the investment balance used in the annual calculation is the original cost reduced 
+by accumulated depreciation and amortization.  As the equipment depreciates each year, the 
+remaining balance on which the Transmission Owner earns a return reduces in amount, so the 
+return portion of the charge declines over the term, while the depreciation portion stays level under 
+straight-line depreciation.  That annual revenue requirement is then multiplied by the Average 
+Service Life and divided by the 15-year contract term to produce the compressed charge. 
+ 
+1. How the Charge Is Calculated 
+The Transmission Owner calculates the charge in four steps: 
+ 
+1. Start with upgrade cost.  The Transmission Owner uses estimated costs at first.  
+After construction, it substitutes actual, prudently incurred costs and corrects all prior 
+bills, with interest, back to the start of payments. 
+ 
+2. Apply the carrying charge.  The annual costs associated with the Large Load 
+Upgrade shall consist of two components:  (1) the Large Load Upgrade-specific 
+return of and return on investment, including associated income taxes; and (2) an
+--- PAGE 18 ---
+November 16, 2026 
+Page 18 
+ 
+ 
+estimate of O&M, A&G, property tax, payroll tax, and other applicable expenses 
+associated with the Large Load Upgrade, excluding depreciation, amortization, 
+return, and associated income taxes.  This second component shall be calculated using 
+an Annual Ongoing Charge Factor equal to the applicable system-wide expenses, 
+excluding depreciation, amortization, return, and associated income taxes, divided by 
+total gross plant in service.  The Annual Ongoing Charge Factor shall be applied to 
+the Large Load Upgrade-specific gross plant in service. 
+ 
+3. Compress into the contract term.  The Transmission Owner multiplies that yearly 
+cost by the equipment’s average service life and divides by the number of years in the 
+contract term. 
+ 
+4. Bill monthly.  The Large Load pays one-twelfth of the resulting yearly amount each 
+month. 
+ 
+2. How the Carrying Charge Is Adjusted Each Year 
+ 
+The carrying charge percentage (the “Annual On-going Charge Factor”) changes from 
+year to year.  It equals the Transmission Owner’s total yearly transmission and distribution costs, 
+excluding depreciation, amortization, return, and associated income taxes, divided by total gross 
+plant in service.  Those costs are municipal and payroll taxes, operations and maintenance, and 
+administrative and general expenses, minus rents received.  Because these system-wide figures 
+change, the percentage changes too. 
+ 
+Annual update.  No later than August 1 of each year, the Transmission Owner 
+recalculates the carrying charge percentage using the most recent rate data from NYPSC sources:  
+the Transmission Owner’s NYPSC rate order, its annual and compliance reports to the NYPSC, 
+and its books and records, with FERC Form No. 1 data used only if an input cannot be derived 
+from those NYPSC sources.  All inputs must cover the same reporting period and be measured 
+the same way.  The update calculation reflects changes in the Transmission Owner’s approved 
+return on equity, capital structure, and depreciation rates.  The Transmission Owner then resets 
+the yearly charge, the Annual Deferred Revenue, and the monthly billing schedule for the 
+coming year.  The NYTOs propose using NYPSC data because the NYPSC establishes rates for 
+all retail customer classes in utility-specific, comprehensive rate cases which review 
+transmission, distribution, common costs and overheads, cost allocation and rate design on a 
+regular basis.  
+ 
+True-up.  Each year’s carrying charge percentage relies on prior-year data, so each year’s 
+bills are estimates of actual charges.  The next year, the Transmission Owner compares what it 
+billed with what it would have billed using actual data for that period.  The Transmission Owner
+--- PAGE 19 ---
+November 16, 2026 
+Page 19 
+ 
+ 
+refunds any overcharge, or collects any undercharge, with interest at the FERC rate,40 in equal 
+monthly installments over the next rate year. 
+ 
+Transparency and disputes.  With each update, the Transmission Owner provides to the 
+Large Load a written statement showing every input and its source, the true-up calculation, and 
+supporting workpapers.  The Large Load may challenge the calculation under the Agreement’s 
+dispute resolution provisions. 
+ 
+Implementation of formula.  Once the Large Load Formula Rate is accepted or approved 
+by FERC, a change to an NYPSC-approved input will flow through the annual update of the 
+Large Load Formula Rate and will not require a new FERC filing.  A change to the Large Load 
+Formula Rate itself will require a filing with the Commission for acceptance or approval. 
+ 
+3. Relationship to Large Load Security Agreement and Proposed 
+Effective Date 
+ 
+Even with the shorter term of 15 years, it is possible that some Large Loads will default.  
+To avoid cost shifts and consistent with Commission guidance,41 the NYTOs are submitting a 
+pro forma Large Load Security Agreement for Commission acceptance or approval to secure the 
+NYTOs’ cost recovery in the event of a default or early termination by the Large Load Customer 
+(discussed in the next section of this transmittal). 
+ 
+C. 
+Large Load Security Agreement 
+In the Show Cause Order, the Commission stated, “[w]e further preliminarily find that 
+the cost recovery agreement should include a credit support (or other financial security) 
+requirement …”42  The proposed pro forma Large Load Security Agreement would require the 
+Large Load Customer to post security to cover the allocated costs of Network Upgrades and 
+Transmission Owner Attachment Facilities.  The initial security amount is based on the Facilities 
+Study cost estimates, is subject to adjustment through the cost allocation process when other 
+projects in the Cluster fail to post security, and, once the CRA is executed, is adjusted annually 
+to cover the Large Load Customer’s remaining obligations under the CRA.  The CRA and Large 
+Load Security Agreement are related agreements (along with the Large Load Interconnection 
+Agreement) and these related agreements work to address the Commission’s concerns regarding 
+risks to other customers associated with loads that do “not materialize as planned or is not 
+developed at all.”43  The Large Load Security Agreement allows the Transmission Owner to 
+draw on security, which would be provided by the Large Load Customer in the form of cash or 
+ 
+40  
+See 18 C.F.R. § 35.19a (2026). 
+41  
+See Show Cause Order, 195 FERC ¶ 61,216 at P 85 (noting FERC’s concern that “speculative transmission 
+service requests by Eligible Customers on behalf of large loads that could result in cost shifting among transmission 
+customers, which may lead to unjust and unreasonable increases in jurisdictional transmission rates”).  
+42  
+Id. P 89. 
+43  
+Id. PP 87, 89.
+--- PAGE 20 ---
+November 16, 2026 
+Page 20 
+ 
+ 
+an irrevocable standby letter of credit from a qualifying bank, for such events as abandonment of 
+the project, events of default under the related agreements after any applicable cure period, 
+notification by the customer that it is ceasing to negotiate the CRA or Large Load 
+Interconnection Agreement where the facilities must still be completed, failure to renew or 
+replace a letter of credit, and other events as listed in the Large Load Security Agreement that 
+create undue risks of cost shifts for the Transmission Owner or other customers.  The CRA links 
+to the Large Load Security Agreement by specifying that the Transmission Owner can draw 
+upon the security in the amount and manner specified under the Large Load Security Agreement 
+in order to protect other customers against stranded asset risks in the case of such events as 
+abandonment or customer default, including to satisfy the Net Present Value Residual Charge 
+owed upon early termination.    
+ 
+ 
+Overall, the NYTOs respectfully submit that the CRA and the Large Load Security 
+Agreement mitigate undue risks to other customers and Transmission Owners consistent with 
+Commission guidance as set forth in the Show Cause Order.  
+ 
+D. 
+Revenue Crediting 
+The Commission expressed concern that to the extent Large Load Customers paid for 
+Network Upgrades, the Transmission Owner building and owning the upgrades should provide 
+revenue credits in rates applicable to other customers to avoid double recovery.44  The NYTOs 
+have proposed an addition to Section 44.12.1.8 of Attachment LL of the NYISO OATT that 
+provides a restrictive covenant whereby each NYTO agrees not to recover any costs of Large Load 
+Network Upgrades from any other FERC-jurisdictional transmission customer without a separate 
+section 205 filing explaining the rate treatment and any revenue credit(s) associated with the 
+upgrade costs, or, if the costs of such a Large Load Upgrade are already includable in a formula 
+rate on file with the Commission, the Transmission Owner will explain the costs and revenue 
+credits associated with the Large Load Upgrade in any update to the formula that includes Large 
+Load Upgrade costs.  
+E. 
+Transmission Service Charges  
+1. 
+Development and Evolution of Current Delivery Rates Applicable to 
+Retail Access and Large Load Customers 
+ 
+The NYISO FPA section 205 filing proposes rules governing the market settlements 
+applicable to each Large Load Customer.  In particular, Eligible Customers obtaining Non-Firm 
+Transmission Service for Large Loads will be required to bid into the NYISO Day-Ahead Market 
+and to settle deviations in the Real-Time Market.  The NYISO will apply Transmission Usage 
+Charges for Transmission Congestion and Marginal Losses.  The NYISO will also apply certain 
+Ancillary Service Charges.  
+ 
+44  
+Id. P 38.
+--- PAGE 21 ---
+November 16, 2026 
+Page 21 
+ 
+ 
+The NYISO charges do not address the embedded cost delivery charges (bundled 
+transmission and distribution rates discussed below) that the utility with the retail franchise to serve 
+retail customers in each service area applies under its NYPSC-authorized retail tariff service 
+classification.  As explained in the attached Panel Testimony, the NYPSC adopted retail access 
+programs in 1996, before the NYISO was operational in late 1999, whereby electric commodity 
+supply was unbundled from transmission and distribution delivery rates applicable to this form of 
+“retail wheeling” or “retail transmission service” – i.e., deliveries of third-party supplied energy 
+to retail customers in New York.45  Since before the NYISO’s inception, the NYPSC has 
+established through many proceedings the retail delivery charges that retail customers in New York 
+pay to NYPSC-jurisdictional distribution companies.  In the spirit of cooperative federalism, the 
+NYTOs identified, in Section 5 of the NYISO OATT, the NYPSC-jurisdictional retail service 
+classifications, and incorporated the rates, terms and conditions applicable to retail delivery service 
+by reference as those NYPSC service classifications may be amended or superseded from time to 
+time.  The Commission accepted these tariff provisions.46  
+As explained in the attached Panel Testimony, this system has been in place for 27 years, 
+through which the NYPSC has determined voltage-differentiated delivery rates that unbundle 
+supply and apply to delivery service by the jurisdictional Transmission Owners (excluding the 
+NYPA and LIPA).47  While the NYTOs recover almost all of their transmission and distribution 
+costs through “bundled” delivery rates set by the NYPSC,48 some delivery rates are not fully 
+bundled because they are voltage-differentiated based on cost allocations that intentionally remove 
+certain distribution costs from the rates developed for transmission-level customers.49   
+These voltage-differentiated rates generally provide demand charges that are considerably 
+lower for higher voltage customers, as compared to the rates applicable to lower voltage, 
+distribution-level interconnecting customers.  For example, for NYSEG’s NYPSC service 
+classification SC 7, Large General Service with Time-of-Use Metering, there are three applicable 
+voltages:   
+• 7-1 – Secondary, 120–480 volts;  
+ 
+45  
+Prepared Testimony of Brian McNierney, Carol Teixeira, Yan Flishenbaum, and Stacy Powers, Attachment 
+I at 7 (“Panel Testimony”).  See also In the Matter of Competitive Opportunities Regarding Electric Service, Case 94-
+E-0952, et al., Opinion No. 96-12 (1996). 
+46  
+Cent. Hudson Gas & Elec. Corp., 86 FERC ¶ 61,062, order on reh’g and compliance, 88 FERC ¶ 61,138 
+(1999). 
+47  
+Panel Testimony at 9. 
+48  
+Certain transmission rates recovered under NYISO OATT Schedules 10 and 19 are facility-specific formula 
+rates for such projects as Public Policy Transmission Projects identified by the NYPSC with cost recovery permitted 
+under the NYISO’s Order No. 1000 Public Policy Transmission Planning Process (Attachment Y of the NYISO 
+OATT).  
+49  
+Panel Testimony at 10.
+--- PAGE 22 ---
+November 16, 2026 
+Page 22 
+ 
+ 
+• 7-2 – Primary, 2.4–34.5 kV or regulated 46 kV; and  
+• 7-4 – Transmission, 115 kV and above.   
+The applicable demand charge (per kW) for each one of those voltage classifications is:  
+• 7-1 – $14.55;  
+• 7-2 – $13.76; and  
+• 7-4 – $2.07.   
+These rates make clear that the demand charge applicable to the highest transmission level 
+customer is one-seventh of the demand charge applicable to the lowest distribution level customer 
+based in part on the exclusion of certain distribution and lower voltage system costs from the 
+demand charge applicable to transmission level customers.  
+The Panel Testimony also provides a hypothetical savings example that illustrates how 
+substantially lower the rate and charges would be under the transmission level rate compared to 
+the distribution rate.50 
+The NYPSC-approved retail tariffs for the franchise distribution utilities provide Large 
+Load Customers an alternative optional rate under which they may take delivery service.  In 
+particular, each utility has “time-of-day” demand delivery rates in which the monthly demand 
+charges will reflect the customer’s metered load for each daily peak or super peak period thereby 
+calculating “as used” demand charges for that day based on actual withdrawals.    
+A Large Load having selected the time-of-use delivery rate would pay less as-used demand 
+when curtailed during the relevant period by the NYISO.  Each Large Load Customer will have 
+the option of determining whether a standard delivery rate or time-of-use rate makes the most 
+sense to that customer, thereby providing the opportunity to reduce costs.  The Panel Testimony 
+provides another example in which a Large Load is curtailed by the NYISO or a utility to zero on 
+five days in which on-peak daily as-used demand is measured, which shows how a flexible Large 
+Load can lower its monthly delivery bill under NYPSC optional demand service if it is subject to 
+persistent curtailments and dispatch during peak or off-peak hours on any given day.51 
+In the supporting Panel Testimony, NYTO witnesses describe in further detail both the 
+manner in which the retail delivery rates were formed through NYPSC proceedings and the rate 
+options that Large Load Customers have for delivery service.  These NYPSC-approved rates and 
+service classifications are referenced in the proposed revised NYISO OATT Section 5.  These 
+NYPSC-approved delivery rates have evolved significantly through many NYPSC proceedings 
+that have addressed many cost allocation and rate design issues.  The delivery rates applicable to 
+ 
+50  
+Id. at 17-18. 
+51  
+Id. at 21-22.
+--- PAGE 23 ---
+November 16, 2026 
+Page 23 
+ 
+ 
+delivery service allocate costs across many classes of customers.  Among other things, the 
+NYPSC-established delivery rates provide for revenue neutrality and are specifically designed to 
+avoid cost shifting among customer classes that would deviate from the NYPSC’s determination 
+of just and reasonable rates.  As the Panel Testimony explains, any changes in rates applicable to 
+one or a few classes in isolation from the others could potentially result in cost shifting and/or 
+violate revenue neutrality, potentially causing unjust and unreasonable rates.52  
+ 
+The NYISO has explained in its FPA section 205 filing how the NYISO system uniquely 
+does not provide for Non-Firm Point-to-Point or Non-Firm Services.  The NYISO is adopting Non-
+Firm Service that will be available to Large Load Customers under certain circumstances.  For 
+such customers taking Non-Firm Service, the NYISO will dispatch the amount of withdrawal that 
+can be accommodated under economic security constrained dispatch.  There also may be instances 
+of bulk system reliability concerns in which the NYISO, including at the request of the CTO or 
+ATO, may reduce the dispatched withdrawals of a Large Load in whole or in part.  For instance, a 
+Large Load that takes Interim Non-Firm Service prior to completion of bulk upgrades may be 
+dispatched by the NYISO to withdraw only a portion of its requested withdrawal due to conditions 
+on the bulk system despite having requested firm retail service under the utility’s retail service 
+tariff.  For example, if a Large Load requests firm service, and the CTO can provide firm service, 
+but the NYISO requires Non-Firm Service pending new capacity additions because the Large Load 
+fails a Resource Adequacy Screen, then the CTO may still be providing Firm Service on its system 
+and treating the Large Load as a firm load so far as its system is concerned.  The NYISO would 
+have the ability to interrupt the load if the NYISO system was approaching resource deficiency, 
+but this has nothing to do with the CTO’s ability to provide Firm Service and the treatment of the 
+Large Load for purposes of providing service. 
+As another example, if a CTO can provide Firm Service to a Large Load, but an ATO 
+requires an upgrade before Firm Service is available, then the CTO is still going to provide Firm 
+Service on its system.  The pendency of the Firm Service awaiting another Transmission Owner’s 
+non-local upgrade may be completely unrelated to the manner in which the retail utility provides 
+service and plans its bulk or local system to be able to provide reliable service prospectively.  
+Consequently, the reason that Non-Firm Service is required is relevant to which Transmission 
+Owners are providing Non-Firm Service.  It is not a one-size-fits-all dynamic.  
+The NYISO worked diligently to define the terms of new Non-Firm Withdrawal Services.  
+Until these terms were developed, it was not reasonable to establish new retail delivery rates for 
+these services.  The terms of this new service were evolving until very recently.  Moreover, as 
+discussed in the Panel Testimony, changes in rates applicable to some retail service classifications 
+in isolation from the establishment and updating of rates for other service classifications, a function 
+that has always been overseen by the NYPSC and still is, would create risks of undue cost shifts 
+between Large Load and non-Large Load Customers.  The NYPSC commenced a proceeding in 
+February 2026 to consider changes in Large Load services and associated rates, terms and 
+ 
+52  
+Id. at 23-24.
+--- PAGE 24 ---
+November 16, 2026 
+Page 24 
+ 
+ 
+conditions.53  Any proposed changes to the rates paid by Large Loads should be considered in this 
+broader context before the Commission accepts or approves such changes.  
+Under the NYISO’s proposal, the earliest that new Non-Firm Withdrawal Services would 
+be available for projects is after the first Cluster has proceeded under the proposed LLIP.  As filed, 
+the NYISO process would result in Facilities Study completion and security posting in or after 
+July 2028.  This time frame should precede service to the new Large Loads.  In the meantime, the 
+NYTOs have updated Section 5 of the NYISO OATT to better address Large Load delivery rates 
+and to include the flexibility of the Large Load Customers to choose among the NYPSC service 
+classifications for which they are eligible that best meet their needs.  
+The Commission’s acceptance of the NYTOs’ reliance on NYPSC rate proceedings and 
+cross-references in the NYISO OATT represents cooperative federalism as envisioned by the 
+Commission and the U.S. Supreme Court.  FERC has repeatedly deferred to the states’ respective 
+role pertaining to retail facilities used in “local distribution.”54  Thus, deferring to the NYPSC rate 
+proceedings is consistent with the Commission’s recognition of enabling cooperative federalism 
+as an objective of its regulation.55  Further, the U.S. Supreme Court has expressly recognized 
+cooperative federalism as a guiding principle for FERC’s regulation.56 
+The NYTOs respectfully urge the Commission to permit the NYTOs to work with the 
+NYPSC in the first instance on any new rates that may be appropriate and then, if necessary, to 
+make appropriate filings with the Commission.  Subject to their jurisdictional reservations, the 
+NYTOs request that the Commission accept the proposed changes to Section 5 to the extent they 
+are subject to the Commission’s jurisdiction.   
+ 
+53   
+NYPSC Case No. 26-E-0045, Proceeding on Motion of the Commission to Address Interconnection Reforms 
+for Large Loads, Order Instituting Proceeding and Soliciting Comments (Feb. 12, 2026). 
+54  
+See Am. Elec. Power Serv. Corp., 153 FERC ¶ 61,167 at P 16 (2015) (FERC recognizing that section 201 of 
+the FPA demonstrates “the authority of the states over retail sales and facilities used in ‘local distribution’”); Bldg. for 
+the Future Through Elec. Reg’l Transmission Plan. & Cost Allocation, Order No. 1920, 187 FERC ¶ 61,068 at P 254 
+(2024) (FERC’s Order No. 1920 recognizing that it does not “regulate, aim at, or otherwise attempt to influence … 
+decisions related to the siting and construction transmission facilities … or any other matters reserved to states under 
+FPA section 201”). 
+55  
+ Bldg. for the Future Through Elec. Reg’l Transmission Plan. & Cost Allocation, Order No. 1920-B, 191 
+FERC ¶ 61,026 at P 91 (2025) (FERC noting that the U.S. Supreme Court’s holding that a state’s “veto power” in the 
+Commission’s regulation of demand response ensured “the Commission’s compliance with principles of cooperative 
+federalism”); Show Cause Order, 195 FERC ¶ 61,216 at P 76 (noting the Commission’s objective in this FPA section 
+206 proceeding is “to respect the cooperative federalism approach established under the FPA”). 
+56  
+New York v. F.E.R.C., 535 U.S. 1, 28 (2002) (holding that “a federal order claiming jurisdiction over all retail 
+transmission would have even greater implications for the States’ regulation of retail sales—a state regulatory power 
+recognized by the same statutory provision that authorizes FERC’s transmission jurisdiction”); F.E.R.C. v. Elec. 
+Power Supply Ass’n, 577 U.S. 260, 288 (2016) (holding that wholesale demand response “is a program of cooperative 
+federalism, in which the States retain the last word”); Hughes v. Talen Energy Mktg., LLC, 578 U.S. 150, 151 (2016) 
+(recognizing that “[s]tates may regulate within their assigned domain even when their laws incidentally affect areas 
+within FERC’s domain”).
+--- PAGE 25 ---
+November 16, 2026 
+Page 25 
+ 
+ 
+2. 
+Changes to Section 5 of the NYISO OATT (Retail Access) 
+     
+The NYTOs do not propose new rates in Section 5 of the NYISO OATT.  Instead, the 
+NYTOs’ rates continue the existing practice of referencing the applicable NYPSC-approved 
+delivery service classifications, as they may be amended or superseded from time to time.  The 
+proposed revisions to Section 5 clarify that its terms apply to Large Loads and to Eligible 
+Customers serving Large Loads and reference currently applicable NYPSC-approved, or LIPA 
+Board of Trustees-approved, service classifications and delivery rates.57  Revisions to the 
+Preamble clarify that Section 5 applies to all retail access service, delivery service unbundled 
+from commodity supply, irrespective of whether the retail Large Load Customer takes 
+commodity supply from an ESCO or the Transmission Owner that is the franchise utility to serve 
+the Large Load Customer.58 
+ 
+More specifically, revised Section 5.1.1 requires each retail access customer, including 
+Eligible Customers serving Large Loads, to pay the Retail Transmission Service Charge to the 
+Transmission Owner that is the retail franchise utility authorized under state law to serve at retail 
+in the service area in which the Large Load is located, consistent with the rates, terms, and 
+conditions of that Transmission Owner’s retail tariff, as approved by the NYPSC and referenced 
+in Sections 5.2 and 5.3.59  Revised Section 5.1.3 allows each Transmission Owner to collect the 
+Retail Transmission Service Charge from customers that take service under its retail tariffs, 
+including Eligible Customers serving Large Loads, and these retail tariffs are approved by the 
+NYPSC or the LIPA Board of Trustees.60  
+ 
+Revised Section 5.2 now contains references to the current NYPSC tariffs and notes the 
+applicability to Eligible Customers serving Large Loads under Attachment LL.61  Newly created 
+Section 5.2.8 sets out the rates, terms, and conditions of service for Eligible Customers taking 
+service on behalf of Large Loads and lists the applicable service classifications for each 
+Transmission Owner.62  Newly created Section 5.2.9 reserves each Transmission Owner’s right 
+to modify its rates, terms, and conditions, subject to required filings under the New York Public 
+ 
+57  
+Panel Testimony at 25.  Historically, Section 5 of the NYISO OATT has included language addressing 
+LIPA’s service in support of retail choice programs, on an informational basis.  Consistent with that process, the 
+NYTOs requested, and LIPA has provided, information on the service classifications within the LIPA Tariff for 
+Electric Service which are applicable to large loads.  As a non-jurisdictional utility, the LIPA service classifications 
+referenced in the proposed changes to NYISO OATT, Section 5 are subject to review and approval by the LIPA’s 
+Board of Trustees under applicable state law.  Inclusion of the LIPA service classification references in NYISO OATT 
+Section 5 is for informational purposes and shall in no way be considered to be a waiver of LIPA's non-jurisdictional 
+status pursuant to Section 201(f) of the FPA, including with respect to the Commission's exercise of its FPA general 
+ratemaking authority. 
+58  
+Id. 
+59  
+Id. at 26.  
+60  
+Id.   
+61  
+Id.   
+62  
+Id.
+--- PAGE 26 ---
+November 16, 2026 
+Page 26 
+ 
+ 
+Service Law, the New York Public Authorities Law, or the FPA.63  Section 5.2.9 also requires 
+Eligible Customers both to satisfy certain interconnection requirements established in 
+Attachments HH and LL and to execute the Transmission Service Agreement attached to the 
+OATT.64   
+ 
+Newly created Section 5.3 references cost responsibilities for Large Loads as described in 
+the CRA in the NYISO OATT.65  Newly created Section 5.4.1 requires Transmission Owners to 
+apply revenue credits or adjustments to prevent double recovery of costs recovered under CRAs 
+through FERC-jurisdictional wholesale transmission rates.66  Finally, newly created Section 5.4.2 
+requires Transmission Owners to file an annual informational report with FERC and the NYPSC 
+to identify CRA revenues received by upgrade(s) during the following year and demonstrate that 
+appropriate revenue credits have been or will be applied.67 
+ 
+The NYTOs also propose conforming changes to the definitions in Sections 1.18 and 
+1.20 of the NYISO OATT to support the revised Section 5.  First, the NYTOs propose to add to 
+Section 1.18 a new defined term, “Retail Transmission Service Charge,” meaning a charge 
+incurred by a retail access customer, including a Large Load or an Eligible Customer on behalf 
+of a Large Load, for Transmission Service and/or delivery service, as appropriate, pursuant to 
+Section 5 of the NYISO OATT, as defined therein.  Second, the NYTOs propose to revise the 
+definition of “Transmission Service Charge” (“TSC”) in Section 1.20 to clarify that, for the 
+avoidance of doubt, the TSC is separate and apart from the Retail Transmission Service Charge.  
+Together, these changes distinguish the wholesale TSC from the retail delivery charges that all 
+retail customers, including Eligible Customers serving Large Loads, pay under the NYPSC- or 
+LIPA Board of Trustees-approved retail tariffs referenced in Section 5.  Finally, the NYTOs 
+propose cross-references to Section 5 of the NYISO OATT in the pro forma TSA. 
+ 
+3. 
+Request for Relief 
+ 
+The NYTOs respectfully urge the Commission: 
+ 
+• To accept the proposed revisions to Section 5 of the NYISO OATT to update the NYPSC 
+rate designations incorporated by reference and applicable to retail access delivery 
+service, including service for Large Loads, as amended from time to time;  
+ 
+• To provide the NYPSC time to work within its Large Load proceeding commenced in 
+February 2026, with a white paper including recommendations from DPS Staff due no 
+ 
+63  
+Panel Testimony at 24.  
+64  
+Id. at 26-27. 
+65  
+Id. at 27; see NYISO Companion Filing, proposed § 44.16.9 – Appendix 9.  
+66  
+Panel Testimony at 27.  
+67  
+Id.
+--- PAGE 27 ---
+November 16, 2026 
+Page 27 
+ 
+ 
+later than February 2027, to determine whether any of the Large Load embedded cost 
+delivery rates should be modified in the first instance;  
+ 
+• To provide the NYTOs time to consider and act on any such NYPSC determinations if 
+changes to the currently effective delivery rates are warranted and to make an amendment 
+filing under Section 205 of the FPA with this Commission if any is deemed necessary or 
+appropriate.  In undertaking that review, the NYTOs will also consider whether relevant 
+NYPSC determinations warrant changes to the default Network Upgrade cost allocation 
+and recovery methodology proposed in the CRA and, where appropriate, may pursue 
+such changes through a subsequent filing under Section 205; and 
+ 
+The NYTOs commit to make an informational or Section 205 filing with the Commission 
+concerning any changes in rates that would apply to Large Load Customers, depending on the 
+rates established or approved by the NYPSC or any guidance the NYPSC provides.  The NYTOs 
+commit to make any necessary filing with the Commission before the Facilities Studies for Large 
+Load Customers in the first LLIP Cluster under the NYISO’s new rules are issued and intend to 
+make the filing at least 60 days before the proposed effective date of any new rates. 
+ 
+F. 
+Operating Terms Applicable to Non-Firm Transmission Withdrawal 
+Service and Paired or Behind-the-Meter Generation Supplies 
+The NYTOs propose revisions to the NYISO’s proposed Attachment LL to establish 
+operating requirements that apply to Large Loads interconnected under the LLIP, including Large 
+Loads that take Non-Firm Transmission Withdrawal Service at a level below their maximum 
+potential withdrawal and Large Loads paired with Co-Located or Partner Resources.  The NYISO 
+section 205 filing establishes how Non-Firm Transmission Withdrawal Service is studied, 
+scheduled, and dispatched in the NYISO-administered markets.  It does not, however, fully address 
+the operating authority the NYTOs need to maintain bulk and local system reliability, including 
+on non-Bulk Electric System facilities and in conditions outside the NYISO’s operational visibility 
+or direct control.  The proposed revisions fill that gap.  They complement the NYISO section 205 
+filing and do not displace the NYISO’s scheduling and dispatch authority under the NYISO 
+Services Tariff. 
+First, the NYTOs propose to limit the circumstances in which Non-Firm Transmission 
+Withdrawal Service may be offered.  Under proposed Section 44.8.2.4.5, Non-Firm Transmission 
+Withdrawal Service may be offered only where thermal transmission constraints on Business 
+Management System-secured facilities under N-1 and N-1-1 conditions, and/or resource adequacy 
+violations, prevent the offering of Firm Transmission Withdrawal Service.  In order to maintain 
+reliability, Non-Firm Service may not be used to mitigate voltage, stability, oscillatory stability, 
+short-circuit, cascading, or other non-thermal reliability concerns, and may not rely on a Special
+--- PAGE 28 ---
+November 16, 2026 
+Page 28 
+ 
+ 
+Protection System or Remedial Action Scheme.68  This limitation ensures that Non-Firm Service 
+is used only for constraints that economic scheduling and dispatch can reliably manage. 
+Second, the NYTOs propose new Section 44.14.3.5, which sets out the operating 
+requirements that apply to each Large Load from initial energization through disconnection, under 
+normal, abnormal, and emergency conditions, whether the Large Load takes Firm Transmission 
+Withdrawal Service, Non-Firm Transmission Withdrawal Service, or both.69  The NYTOs also 
+propose a new defined term, “Large Load Operating Action,” to describe the actions a 
+Transmission Owner may take under that section.  Section 44.14.3.5 confirms that nothing in 
+Attachment LL or the NYISO Services Tariff limits a Transmission Owner’s retained authority to 
+address bulk and local system reliability.  It also requires each CTO to set out in its procedures the 
+applicable communications requirements, operator authority, curtailment and restoration 
+procedures, loss-of-telemetry and loss-of-communications actions, and performance enforcement 
+measures.70 
+Under proposed Section 44.14.3.5.2, under normal conditions the NYISO will continue to 
+schedule and dispatch economically a Large Load’s Non-Firm Transmission Withdrawal Service.  
+Under abnormal conditions, a Transmission Owner may request that the NYISO reduce the 
+dispatch of a Large Load’s Non-Firm withdrawals using the NYISO’s existing Out-of-Merit and 
+Day-Ahead Reliability Unit procedures, in the same manner that Transmission Owners request 
+such actions for Generators.  A CTO may directly order a Large Load to ramp down or curtail its 
+Non-Firm withdrawals only if a NYISO-implemented reduction cannot be achieved in time, or if 
+economic dispatch does not reduce withdrawals enough, to address an actual or imminent 
+reliability condition.  In that case, the Large Load must comply within ten (10) minutes, the CTO 
+must notify the NYISO immediately, and the order must be limited in extent and duration to what 
+is reasonably necessary.71 
+Proposed Sections 44.14.3.2 and 44.14.3.5.3 provide that the CTO or, where the Franchise 
+Utility is not the CTO, the Franchise Utility may disconnect a Large Load in whole or in part where 
+necessary to maintain or restore bulk or local system reliability.  The NYTOs also propose new 
+defined terms for “Franchise Utility” and “Retail Tariff” to reflect that retail service to a Large 
+Load may be provided by an entity other than the CTO.72  Disconnections must be coordinated in 
+advance with the NYISO and the Franchise Utility for non-urgent situations, such as maintenance 
+outages, and in all other cases must be reported as soon as practicable.  Each disconnection must 
+follow defined communication protocols.  If a CTO determines, consistent with Good Utility 
+Practice, that a requested disconnection would create or worsen a reliability problem, it may defer 
+or modify the request only to the extent necessary while the NYISO and the affected Transmission 
+ 
+68  
+See Attachment A, § 44.8.2.4.5.   
+69  
+See Attachment A, § 44.14.3.5.   
+70  
+See Attachment A, § 44.14.3.5.1(ii).  
+71  
+See Attachment A, § 44.14.3.5.2(iv).  
+72  
+See Attachment A, § 44.1.
+--- PAGE 29 ---
+November 16, 2026 
+Page 29 
+ 
+ 
+Owners coordinate an alternative.  A disconnection directed by the NYISO in an Emergency State 
+must still be implemented unless it would endanger persons or equipment. 
+The proposed revisions also:  (i) set out the actions to be taken upon loss of telemetry or 
+communications (Section 44.14.3.5.4); (ii) state each Large Load’s obligations, including 
+compliance with dispatch and operator instructions, maintaining a 24-hour operating contact, 
+observing ramp and step limits, and providing timely notice of unplanned changes in withdrawal, 
+including transfers to on-site generation (Section 44.14.3.5.5); (iii) require restoration to be 
+coordinated with the CTO and, for Non-Firm Service, to be consistent with NYISO dispatch 
+(Section 44.14.3.5.6); (iv) provide for performance enforcement, cost reimbursement, and possible 
+review of repeated non-compliance through a Load Modification Request (Section 44.14.3.5.7); 
+(v) preserve a Franchise Utility’s rights under its Retail Tariff (Section 44.14.3.5.8); (vi) establish 
+a process for Transmission Owners and Franchise Utilities to ask the NYISO to act on a Large 
+Load that is not meeting applicable performance requirements, including ramp rate requirements, 
+and allow the CTO to order a Large Load to hold, limit, or ramp its withdrawals when ramp or 
+step limits are exceeded or reliability is threatened (Section 44.14.3.5.9); and (vii) allow a 
+Transmission Owner to ask the NYISO to model local transmission constraints, including 
+constraints on non-Bulk Electric System facilities, in its scheduling and dispatch (Section 
+44.14.3.5.10). 
+The NYTOs also propose conforming changes.  Section 44.14.1 is revised to cross-
+reference the new operating requirements in the interconnection agreement provisions.  Section 
+44.8.3.3 is revised to clarify that the normal operating procedures that may allow a Large Load to 
+enter service before Network Upgrades are complete include the Large Load Operating Actions, 
+and that the Large Load must comply with any interim operating limitations set by the NYISO, 
+the CTO, or the ATO as a condition of entering service.  In addition, Section 44.8.3.1.1 is revised 
+to clarify that the withdrawal of Energy by a retail load in the Long Island Transmission District 
+remains subject to the LIPA Tariff for Electric Service.  Non-Firm Transmission Withdrawal 
+Service will not be available to Large Loads taking service under that tariff unless and until the 
+tariff is amended under applicable law.73 
+The proposed operating provisions are just and reasonable and not unduly discriminatory 
+or preferential.  Large Loads that take less-than-firm transmission service, or that rely on paired or 
+behind-the-meter supply, can change their withdrawals quickly and in large amounts.  Those 
+changes can affect transmission facilities that the NYISO does not monitor or control.  The 
+proposed provisions give the NYTOs clear, transparent, and limited authority to manage those 
+effects, consistent with their reliability obligations under North American Electric Reliability 
+Corporation, Northeast Power Coordinating Council, Inc., and New York State Reliability 
+Council, L.L.C. reliability standards.  The provisions rely on the NYISO’s market procedures 
+wherever practicable, apply on the same terms to Large Loads taking Firm and Non-Firm Service, 
+and give Eligible Customers clear notice, before they interconnect, of the operating conditions that 
+apply to their service. 
+ 
+73  
+See Attachment A, § 44.8.3.1.1.
+--- PAGE 30 ---
+November 16, 2026 
+Page 30 
+ 
+ 
+G. 
+Interconnection Study Provisions and Pro Forma Facilities Study and 
+Interconnection Agreements 
+In its filing under section 205, the NYISO proposes to retain the existing structure of the 
+Facilities Study for new Firm Withdrawal Service and Non-Firm Withdrawal Service.  
+Specifically, the Facilities Study will remain a bilateral study outside the NYISO’s study 
+procedures, performed under separate two-party agreements between the Large Load Customer 
+and the CTO and, as needed, each ATO.  The NYISO will not be a party to the Facilities Study.  
+Further, under the NYISO’s proposal, the NYTOs will continue to be responsible for determining 
+the cost allocation of Network Upgrades identified through the study process.  In doing so, the 
+NYTOs may use the impact allocation findings developed in the NYISO’s studies to determine 
+the appropriate cost allocation for Network Upgrades during the Facilities Study. 
+The NYTOs also propose two definitional changes to Section 44.1 of Attachment LL to 
+support the Facilities Study and the related agreements.  First, the definition of “Connecting 
+Transmission Owner” is revised to make clear that the CTO includes a Franchise Utility that meets 
+the definition’s ownership and Transmission Service criteria.  Second, the NYTOs propose a new 
+defined term, “Large Load Customer,” meaning the Eligible Customer acting as agent for the Large 
+Load, or the Large Load customer itself, that is responsible for the Large Load Project under 
+Attachment LL, including for purposes of the Facilities Study, the posting of security, and the 
+interconnection and construction agreements.  Because an Eligible Customer may act as agent for 
+a Large Load, the new term identifies the entity that is contractually and financially responsible 
+for the project, so that the Transmission Owners can tender study, cost recovery, security, and 
+interconnection agreements to that entity.74 
+Because the NYISO section 205 filing leaves the Facilities Study as a bilateral process 
+outside the NYISO’s study procedures, the NYTOs are proposing, as part of this filing, a pro forma 
+Facilities Study Agreement to govern that process.  The pro forma Facilities Study Agreement 
+may be used by each Transmission Owner acting as the CTO or an ATO, and provides a uniform 
+framework for the Facilities Study performed in two parts:  Part 1, which addresses Transmission 
+Owner Attachment Facilities and local Network Upgrades and proceeds in parallel with the 
+NYISO’s Assessment of Load Integration (“ALI”), and, as needed, Part 2, which addresses non-
+local Network Upgrades and alignment with the ALI results once the NYISO provides them.  
+Under Section 44.8.2.4.1 of Attachment LL of the NYISO OATT, the NYISO is responsible for 
+identifying bulk system violations associated with each LLIP Cluster and for each violation to 
+which more than one Large Load contributes, each Large Load’s contribution to the violation.  
+Each CTO and ATO shall determine violations on non-bulk system facilities and each Large 
+Load’s contribution to each violation.  Each CTO and ATO shall identify upgrades to address all 
+such violations identified by the NYISO or the CTO or ATO itself and provide non-binding cost 
+estimates and estimates of time to construct the upgrades and each CTO or ATO shall identify and 
+estimate the cost of Attachment Facilities and Upgrades and estimates of the time to construct.  
+Such cost estimates shall include the cost of the equipment, engineering, procurement, and 
+ 
+74  
+See Attachment A, § 44.1.
+--- PAGE 31 ---
+November 16, 2026 
+Page 31 
+ 
+ 
+construction work (including overheads) for the Attachment Facilities and Network Upgrades 
+needed to implement the conclusions of the ALI.  Because the Facilities Study proceeds in parallel 
+with the ALI, the pro forma Facilities Study Agreement permits the study to be updated, at the 
+Large Load Customer’s expense and with a commensurate schedule extension, to incorporate 
+additional Network Upgrades and Attachment Facilities identified as the ALI progresses. 
+Among other things, the pro forma Facilities Study Agreement:  (i) establishes the scope 
+of the Facilities Study and the data the Large Load Customer must provide, and confirms that the 
+study is for planning and estimation purposes only and does not reserve capacity, queue position, 
+or priority; (ii) requires the Large Load Customer to post a fixed Study Deposit based on the size 
+of the Large Load Project ($300,000 for projects of 50 MW to 199 MW, $350,000 for projects of 
+200 MW to 499 MW, and $400,000 for projects of 500 MW and above) within ten (10) business 
+days of execution, subject to withdrawal of the project without a cure period if the deposit is not 
+timely posted, and to pay the Transmission Owner’s actual, documented, and reasonably incurred 
+study costs, with notice if costs are expected to exceed the Study Deposit by more than 30%; (iii) 
+provides that the Transmission Owner will use reasonable efforts to complete the Facilities Study 
+within twelve (12) months (six (6) months for Attachment Facilities and local Network Upgrades 
+and six (6) months for non-local Network Upgrades), beginning on the later of receipt of the Study 
+Deposit or a complete study data package; (iv) sets out a process for a draft report, a results 
+meeting, Large Load Customer comments for the Transmission Owner’s consideration, and 
+issuance of a final report; (v) provides for refunds of any excess deposit and the resolution of 
+disputed invoices; (vi) permits changes required by changes in Good Utility Practice, Applicable 
+Laws and Regulations, Transmission Owner procedures and standards, or Governmental Authority 
+directives; (vii) permits termination for, among other things, the Large Load Customer’s failure to 
+pay, to provide required information, or to post the security required under Attachment LL based 
+on the Facilities Study; and (viii) makes clear that it is an agreement to perform a study only, with 
+any engineering, procurement, construction, or interconnection to be governed by separate 
+agreements, which may include a Security Agreement, a transmission service agreement, a cost 
+recovery agreement, an engineering and procurement agreement, and/or an interconnection 
+agreement.  
+The NYTOs also propose conforming revisions to Attachment LL to integrate the Facilities 
+Study Agreement into the NYISO’s study timeline.  Under revised Section 44.12.1.2, the CTO and 
+each ATO will tender a Facilities Study Agreement in the form set forth in Appendix 8 of 
+Attachment LL to the Eligible Customer acting as agent for the Large Load, or to the Large Load 
+Customer itself.  In the Facilities Study Agreement, the Large Load Customer agrees to reimburse 
+the Transmission Owner(s) for performing the Facilities Study and to provide the study deposit 
+each Transmission Owner requires.  The Large Load Customer must execute a Facilities Study 
+Agreement with each applicable Transmission Owner and return it within ten (10) calendar days 
+of the Transmission Owner’s tender, and must pay the study deposit required by each applicable 
+Transmission Owner within ten (10) business days after execution of the agreement.75 
+ 
+75  
+See Attachment A, § 44.12.1.2.
+--- PAGE 32 ---
+November 16, 2026 
+Page 32 
+ 
+ 
+If the Large Load Customer fails to timely execute and return the agreement or to timely 
+pay the study deposit, the applicable Transmission Owner will notify the NYISO, and the NYISO 
+will withdraw the Large Load Project from the Load Queue and from the Group for the ALI and 
+Facilities Study pursuant to Section 44.7.3, without a withdrawal cure period.  Section 44.7.3.1 is 
+revised to confirm that the general fifteen (15) Business Day cure period does not extend these 
+deadlines.  Section 44.10.4.4 is revised to provide for withdrawal where the Large Load Customer 
+fails to satisfy these Transmission Owner requirements, and to require the Transmission Owner to 
+notify the NYISO in writing within [two (2)] Business Days of the failure.76 
+In addition, Section 44.6.8 is revised to confirm that the information the NYISO, a CTO, 
+or an ATO may request from an Eligible Customer includes information needed to perform the 
+Facilities Study, which the Eligible Customer must submit within five (5) business days of the 
+request.  Where a CTO or ATO requested the information and the Eligible Customer fails to 
+provide it on time, the Transmission Owner may notify the NYISO in writing, identifying the 
+request, the information not provided, and any resulting delay to the study of other Large Load 
+Projects in the Group.  The NYISO will then, within five (5) business days, confirm the failure, 
+deem the Large Load Integration Request withdrawn, and remove the Large Load Project from the 
+Group.  Together, these provisions keep a Large Load Project that does not timely commit to the 
+Facilities Study from delaying the study of other projects in the same Group. 
+For each Upgrade associated with a violation to which more than one Large Load in an 
+LLIP cluster of projects (a group of projects analyzed together under the LLIP or an “LLIP 
+Cluster”) contributes, the applicable Transmission Owner shall use the contribution factors for 
+[BES] violations the NYISO identified in the ALI and the contribution factors the Transmission 
+Owner itself determined for non-BES violations in determining allocation of upgrade costs on an 
+upgrade-specific and Large Load-specific basis.  A pro forma Facilities Study Agreement will 
+provide Eligible Customers with transparency and consistency across the NYTOs’ service 
+territories, ensure that the costs of Network Upgrades are allocated in a manner consistent with 
+cost causation principles, and coordinate with the NYISO’s study process so that Eligible 
+Customers can proceed to security posting (under a Security Agreement discussed above) and 
+execution of the Interconnection Agreement in a timely manner.  
+Following completion of the Facilities Study, the NYISO section 205 filing provides that 
+the Eligible Customer may elect to proceed with the interconnection of its Large Load Project by:  
+(i) entering into an interconnection agreement with the CTO to whose system the Eligible 
+Customer proposes to interconnect, and (ii) as applicable, entering into construction agreement(s) 
+for Network Upgrades with any ATO(s) or Affected System Operator(s) on whose system a 
+Network Upgrade is required in connection with the Large Load Project.77  The NYTOs propose 
+to revise Section 44.14.1 to provide that the interconnection agreement will be in the form set forth 
+in Appendix 11 of Attachment LL, and that these agreements must identify any required 
+Attachment Facilities and Network Upgrades and specify the Large Load Project’s cost 
+ 
+76  
+See Attachment A, § 44.10.4.4. 
+77  
+See NYISO Companion Filing, proposed OATT Section 44.14.1.
+--- PAGE 33 ---
+November 16, 2026 
+Page 33 
+ 
+ 
+responsibility for those facilities consistent with the terms of the applicable Transmission Owner’s 
+CRA and Security Agreement in the forms set forth in Appendices 9 and 10 of Attachment LL, 
+respectively.78  Conforming revisions to Sections 44.2.2 and 44.12.1.8 likewise reference these 
+pro forma forms, and new Sections 44.16.8 through 44.16.11 add the pro forma Facilities Study 
+Agreement, CRA, Security Agreement, and pro forma Large Load Interconnection Agreement 
+(“Interconnection Agreement”) as Appendices 8 through 11 to Attachment LL.79  The NYISO does 
+not intend to be a signatory to the interconnection agreement. 
+The NYISO section 205 filing requires the Eligible Customer and the CTO to enter into an 
+interconnection agreement.  The NYTOs are proposing, as part of this filing, a pro forma 
+Interconnection Agreement to govern the interconnection of Large Load Projects following the 
+Facilities Study because it implicates the costs the NYTOs are entitled to recover pursuant to their 
+reserved rights under the NYISO-TO Agreement and directly affects retail access.  The pro forma 
+Interconnection Agreement is a two-party agreement between the Transmission Owner and the 
+Large Load Customer, which must be the same legal entity that executes the pro forma CRA and 
+the separate pro forma Large Load Security Agreement, and it operates together with those 
+agreements as Related Agreements. 
+Among other things, the pro forma Interconnection Agreement:  (i) conditions construction 
+and interconnection activities on completion of the System Impact Study and Facilities Study and 
+other required engineering, design and special studies, execution of the CRA, the Large Load 
+Security Agreement, any related construction or cost reimbursement agreements, and any required 
+transmission service agreement, receipt of required deposits and advance payments, receipt of all 
+required regulatory approvals, and completion of the initial operating documents; (ii) provides load 
+interconnection service at the Point of Interconnection up to a Maximum Load Facility Peak 
+Demand that may not exceed the amount studied in the System Impact Study and Facilities Study, 
+and requires additional study and Transmission Owner approval before any Material Modification; 
+(iii) requires the Large Load Customer to provide a monthly Load Ramp Projection and to update 
+it every five years within limits, and sets out mechanisms to reduce interconnection rights where 
+the load fails to meet a Minimum Committed Load and to address Exceedance Events in which 
+the load exceeds its studied load limits; (iv) identifies the Attachment Facilities and Network 
+Upgrades determined in the Facilities Study and addresses their engineering, procurement, and 
+construction; (v) provides that the Large Load Customer’s responsibility for, and the recovery of, 
+the costs of the Network Upgrades and the Transmission Owner Attachment Facilities will be 
+governed exclusively by the CRA, and that the posting and maintenance of security will be 
+governed exclusively by the Large Load Security Agreement; (vi) establishes conditions to 
+energization and Permission to Operate, together with operational, metering, telemetry, insurance 
+and cyber-security requirements and the Transmission Owner’s rights to interrupt or disconnect 
+service for safety, reliability, and emergencies; (vii) establishes an initial term of fifteen (15) years 
+(or, if longer, the term of the CRA) and provides that early termination by the Large Load 
+Customer triggers the Net Present Value Residual Charge under the CRA; and (viii) makes clear 
+ 
+78  
+Id.  
+79  
+Id.
+--- PAGE 34 ---
+November 16, 2026 
+Page 34 
+ 
+ 
+that it does not provide Transmission Service or the sale of energy, which remain subject to the 
+applicable Tariff and the Transmission Owner’s retail tariff. 
+The proposed pro forma Interconnection Agreement provides Large Load Customers 
+transparency and consistency to the extent of interconnection terms and conditions common to the 
+NYTOs.  Because the Interconnection Agreement ties service levels to studied load and defers 
+Network Upgrade and Transmission Owner Attachment Facility cost responsibility and security 
+to the CRA and Large Load Security Agreement, it also protects against the risk of shifting costs 
+to other transmission customers that the Commission identified in the Show Cause Order.  
+IV. 
+EFFECTIVE DATE AND REQUESTS FOR WAIVER 
+The NYISO (on the NYTOs’ behalf) is submitting the enclosed Tariff revisions in eTariff 
+format in accordance with the requirements of Order No. 714 and a requested effective date of 
+February 1, 2027, though many tariff sheets apply to only those customers and activities under the 
+NYISO’s new LLIP and will not affect prior and pending interconnection processes.80  
+The NYTOs request an effective date for the revisions to Attachment LL and Attachment 
+B of Section 8 of the NYISO OATT of February 1, 2027, as consistent with the NYISO section 
+205 Filing.  
+The NYTOs request an effective date for the amendments to Section 5 of the NYISO 
+OATT of February 1, 2027, while recognizing that the first LLIP Cluster under the NYISO’s new 
+rules contained in Attachment LL will not complete Facilities Studies until Q3 2028.  Accordingly, 
+the rates, terms and conditions of Section 5 will not apply to new Large Loads going through the 
+first LLIP Cluster applying the new rules until some time after Q3 2028. 
+The NYTOs request an effective date for the Pro Forma Facilities Study Agreement, 
+applicable to the first Cluster under the NYISO’s new LLIP, of February 1, 2027.   
+The NYTOs request an effective date for the Pro Forma Large Load Security Agreement, 
+Pro Forma Interconnection Agreement and Pro Forma Large Load Cost Recovery Agreement of 
+May 1, 2028, a date at least 60 days in advance of completion of the first Facilities Study under 
+the NYISO’s new LLIP and to allow the NYPSC time to advance its ongoing proceeding on Large 
+Loads so that the NYTOs may consider how best to try to satisfy both the NYPSC and this 
+Commission with respect to the content of those pro forma agreements.    
+To the extent that any of these effective dates are more than 120 days in the future, the 
+NYTOs seek waiver, for good cause, of the requirement in section 35.3(a)(1) of the Commission’s 
+regulations that rate schedules be filed no more than 120 days prior to the date on which service is 
+to commence.   
+ 
+80  
+Elec. Tariff Filings, Order No. 714, 124 FERC ¶ 61,270 (2008), clarified, Order No. 714-A, 147 FERC ¶ 
+61,115 (2014).
+--- PAGE 35 ---
+November 16, 2026 
+Page 35 
+ 
+ 
+Finally, the NYTOs request waiver of any other applicable requirement of 18 C.F.R. Part 
+35 that is found not to be completely satisfied by this filing. 
+V. 
+COMMUNICATIONS 
+All communications and correspondence regarding this filing should be forwarded to the 
+following individuals, whose names should be placed on the Commission’s service list:81 
+William R. Derasmo 
+Miles H. Kiger  
+Antonia M. Douglas 
+Benjamin L. Duwve 
+TROUTMAN PEPPER LOCKE LLP 
+401 9th Street, N.W., Suite 1000 
+Washington, D.C. 20004 
+(202) 274-2886 
+william.derasmo@troutman.com 
+miles.kiger@troutman.com 
+antonia.douglas@troutman.com 
+benjamin.duwve@troutman.com 
+ 
+Marina Chu 
+Regulatory Attorney – Regulatory Affairs 
+Central Hudson Gas & Electric Corporation 
+284 South Avenue 
+Poughkeepsie, NY 12601 
+mchu@cenhud.com 
+ 
+Phillip D. Demanchick Jr. 
+Senior Counsel 
+New York State Electric & Gas Corporation 
+Rochester Gas and Electric Corporation 
+180 South Clinton Avenue 
+Rochester, NY 14604 
+phillip.demanchick@avangrid.com 
+ 
+Christopher J. Novak 
+Senior Counsel 
+National Grid USA 
+170 Data Drive 
+Waltham, MA 02451 
+chris.novak@nationalgrid.com 
+ 
+ 
+Susan J. Kimball 
+Associate Counsel 
+Joshua A. Kirstein 
+Senior Attorney 
+Consolidated Edison Co. of New York, Inc. 
+Orange and Rockland Utilities, Inc. 
+4 Irving Place 
+New York, NY 10003 
+kimballs@coned.com 
+kirsteinj@coned.com 
+VI. 
+CONTENTS OF THE FILING 
+In addition to this transmittal letter, this filing includes the following components: 
+1. Attachments A (clean) and B (marked): Tariff amendments to new Attachment LL of the 
+OATT.  Attachment LL is being contemporaneously filed by the NYISO, and the NYTOs 
+ 
+81  
+The NYTOs respectfully request waiver of 18 C.F.R. § 385.203(b)(3) to allow more than two individuals to 
+be designated for service on the official service list in this proceeding.
+--- PAGE 36 ---
+November 16, 2026 
+Page 36 
+ 
+ 
+are sponsoring the following revisions to Attachment LL:  Section 44.1; Sections 44.2.2, 
+44.6.8, 44.7.3.1, 44.8.2.4.5, 44.8.3.1.1, 44.8.3.3, 44.10.4.4, 44.12.1.2, 44.12.1.8, 44.14.1, 
+and 44.14.3.2; new Section 44.14.3.5; and new Sections 44.16.8 through 44.16.11 
+(Appendices 8 through 11 to Attachment LL); 
+2. Attachments C (clean) and D (marked): Tariff amendments revising Section 5 of the 
+OATT, the definitions in Sections 1.18 and 1.20 of the OATT, and Attachment B of Section 
+8 of the OATT; 
+3. Attachment E: Pro Forma Large Load Cost Recovery Agreement; 
+4. Attachment F: Pro Forma Large Load Security Agreement; 
+5. Attachment G: Pro Forma Large Load Facilities Study Agreement; 
+6. Attachment H: Pro Forma Large Load Interconnection Agreement; and 
+7. Attachment I: Panel Testimony and exhibit of Brian McNierney, Carol Teixeira, Yan 
+Flishenbaum, and Stacy Powers.  
+ 
+VII. 
+SERVICE 
+Copies of this filing have been served on all customers under the NYISO OATT and the 
+NYPSC.82  This filing also will be posted in conformance with the Commission’s regulations.83 
+VIII. CONCLUSION 
+WHEREFORE, for the foregoing reasons, the NYTOs respectfully request that the 
+Commission accept as just and reasonable and not unduly discriminatory or preferential the Tariff 
+provisions and pro forma agreements proposed herein with the above-specified effective dates. 
+[Signatures on following page] 
+ 
+82  
+18 C.F.R. § 35.13(b)(3) (2025). 
+83  
+Id. § 35.2(e).
+--- PAGE 37 ---
+November 16, 2026 
+Page 37 
+ 
+ 
+Respectfully submitted, 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+/s/ William R. Derasmo  
+William R. Derasmo 
+Miles H. Kiger  
+Antonia M. Douglas 
+Benjamin L. Duwve 
+TROUTMAN PEPPER LOCKE LLP 
+ 
+Counsel to the New York Transmission Owners 
+ 
+ 
+ 
+ 
+ 
+        
+/s/ Marina Chu 
+Marina Chu 
+Central 
+Hudson 
+Gas 
+& 
+Electric 
+Corporation 
+ 
+/s/ Phillip D. Demanchick Jr. 
+Phillip D. Demanchick Jr. 
+New 
+York 
+State 
+Electric 
+& 
+Gas 
+Corporation 
+Rochester Gas and Electric Corporation 
+ 
+/s/ Christopher J. Novak 
+Christopher J. Novak 
+National Grid USA 
+ 
+ 
+/s/ Susan J. Kimball 
+Susan J. Kimball  
+Joshua A. Kirstein 
+Consolidated Edison Co. of New York, Inc. 
+Orange and Rockland Utilities, Inc. 
+ 
+ 
+Dated: November 16, 2026
