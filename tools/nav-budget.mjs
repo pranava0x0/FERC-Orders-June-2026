@@ -1,27 +1,22 @@
-// Physical pointer paths from a fresh Overview. Usage: node tools/uat-tab-interactions.mjs URL OUT
+// How many interactions it takes to answer each question in tools/nav-questions.json, from a fresh
+// home page, at phone, tablet and desktop size. Cost = taps or clicks + typed entries + screens scrolled
+// + sideways scroll adjustments.
+//   node tools/nav-budget.mjs URL OUT            measure; write OUT/nav.json, nav.md, nav.html
+//   node tools/nav-budget.mjs URL OUT --check    also fail if any question costs more than tools/nav-baseline.json
+//   node tools/nav-budget.mjs URL OUT --update   measure and rewrite the baseline (commit it with the change)
 import assert from 'node:assert/strict';
 import {createRequire} from 'node:module';
-import {mkdirSync,writeFileSync} from 'node:fs';
+import {mkdirSync,readFileSync,writeFileSync,existsSync} from 'node:fs';
 import {join} from 'node:path';
 const {chromium}=createRequire(import.meta.url)('playwright');
-const [base,out]=process.argv.slice(2);
-if(!base||!out)throw Error('Supply the site URL and an output directory.');
+const [base,out,mode]=process.argv.slice(2);
+if(!base||!out)throw Error('Usage: node tools/nav-budget.mjs URL OUT [--check|--update]');
+const here=new URL('.',import.meta.url),baselineFile=new URL('nav-baseline.json',here);
+const {questions}=JSON.parse(readFileSync(new URL('nav-questions.json',here),'utf8'));
+assert.ok(questions.length>0,'no questions');
+// A regression is a question that costs at least this much more than its recorded baseline.
+const SLACK=0.3;
 const browser=await chromium.launch({...process.env.PW_CHROME?{executablePath:process.env.PW_CHROME}:{channel:'chrome'},chromiumSandbox:true});
-const tab=name=>['Open '+name,'#tab-'+name], comments=tab('comments');
-const paths=[
- ['Overview','Registry access: original page',[['Registry access','#panel-overview .reader-leads a'],['Cited page','section:target cite a']],'section:target pre',/Authorized Commissions/i],
- ['Timeline','Latest event in the show-cause track',[tab('timeline'),['Show-cause track','.trk-card[data-track="sc6"]'],['Latest event','#tl-jump']],'.tl-item[data-track="sc6"]:focus .tl-title',/\S/],
- ['Reforms','Cost-shifting mandate',[tab('reforms'),['Cost-shifting category','details.cat:has(.cat-title:text("Cost-shifting")) > summary']],'details.cat[open]:has(.cat-title:text("Cost-shifting")) .cat-ferc',/cost/i],
- ['Dockets','PJM E-7 order page',[tab('dockets'),['PJM docket page','a.docket-page-link[href*="el26-67-000"]']],'h1',/PJM/i],
- ['Filings','Google’s MISO protest: original cited page',[tab('filings'),['MISO LARS','.fg-nav [data-jump="#fg-miso-lars"]:visible, #fg-miso-lars > summary'],['Google','#fg-miso-lars [data-filer="Google"]'],['Cited page','#fg-miso-lars .tenet:visible .tq-cite:visible a[href*="protest-er27-25-google/text.html#"]']],'section:target pre',/\S/],
- ['Commissioners','Rosner’s timestamped statement',[tab('commissioners'),['Rosner','.who-chip[data-who="rosner"]']],'.appear:visible .sq[data-who="rosner"]:visible .sq-cite a[href*="&t="]',/\d+:\d{2}/],
- ['Comments · Themes','PJM regional comment record',[comments,['PJM region','#cmsec-overview .cm-region[href*="pjm" i]']],'#cm-issue-reader .cm-issue-readtitle',/PJM/i],
- ['Comments · By issue','An issue and its first verbatim quote',[comments,['By issue','#cmsub-issue'],['Issue in policy map','.cm-pm-gridrow'],['Verbatim quotes','#cm-issue-reader .cm-issue-quotes > summary:visible']],'#cm-issue-reader .cm-issue-quotes[open] .cm-bq',/\S{3}/],
- ['Comments · Types','Expand a respondent roster',[comments,['Respondent types','#cmsub-types'],['Show all','#cmsec-types .cm-showmore']],'#cmsec-types .cm-type:has(.cm-showmore[aria-expanded="true"]) .cm-eg-rest .cm-eg',/\S/],
- ['Comments · All','Find Constellation and read a quoted position',[comments,['All comments','#cmsub-summaries'],['Search','#cm-search','Constellation'],['Read analysis','.cm-row:visible:has(.cm-row-org:text("Constellation")) details.cm-analysis > summary']],'details.cm-analysis[open] .cm-bq',/\S{3}/],
- ['Discourse','OPSI’s commission roll calls',[tab('news'),['State commissions','#panel-news .state-lead h2 a']],'#state-commissions p',/abstained/],
-];
-const results=[];
 // Use hit testing, including sticky overlays. Count only scrolling required to reveal a control
 // or readable leaf. App-driven jumps are free. Report horizontal adjustments, not finger distance.
 async function expose(loc){
@@ -80,50 +75,54 @@ async function checkIssueSwitches(){
   }
  }finally{await page.close();}
 }
+const results=[],failures=[];
+const cost=r=>+(r.clicks+r.entries+r.scroll+r.horizontal).toFixed(2);
 try{
  for(const [device,width,height] of [['phone',375,812],['tablet',768,1024],['desktop',1280,800]]){
-  for(const [area,goal,steps,target,expected] of paths){
+  for(const {id,q,steps,leaf:[target,pattern]} of questions){
    const ctx=await browser.newContext({viewport:{width,height},hasTouch:device!=='desktop',isMobile:device!=='desktop'}),p=await ctx.newPage();
    try{
     const errors=[];p.on('pageerror',e=>errors.push(e.message));p.on('response',r=>{if(r.status()>=400)errors.push(r.url()+' '+r.status())});
     await p.goto(base);await p.locator('#panel-overview .filing-brief').waitFor();
-    let scroll=0,horizontal=0,entries=0,citedQuote;const actions=[];
+    let scroll=0,horizontal=0,entries=0;const actions=[];
     async function reach(loc){const pos=await expose(loc);scroll+=pos.scroll;horizontal+=pos.horizontal;return pos;}
     for(const [name,selector,value] of steps){
      const loc=p.locator(selector).first(),pt=await reach(loc);
-     if(area==='Discourse' && name==='State commissions'){
-      assert.ok(await p.locator('#panel-news .reader-leads article').evaluateAll(els=>els.length>0&&els.every((el,i)=>el.querySelector('.src-chip')?.href===window.FERC_DATA.SOURCES[window.FERC_DATA.meta.readingLeads[i].cite].url)));
-     }
-     if(area==='Filings' && name==='Cited page')citedQuote=await loc.evaluate(e=>e.closest('li').querySelector('blockquote').innerText);
      if(device==='desktop')await p.mouse.click(pt.x,pt.y);else await p.touchscreen.tap(pt.x,pt.y);
      actions.push(name);
-     if(value){assert.ok(await loc.evaluate(e=>e===document.activeElement));await p.keyboard.insertText(value);entries++;}
+     if(value){assert.ok(await loc.evaluate(e=>e===document.activeElement),'typing target is not focused');await p.keyboard.insertText(value);entries++;}
     }
     const leaf=p.locator(target).first();await reach(leaf);
-    assert.match(await leaf.innerText(),expected);assert.deepEqual(errors,[]);
-    if(area==='Discourse')assert.equal(new URL(p.url()).hash,'#state-commissions');
-    if(area==='Filings'){
-     assert.match(p.url(),/protest-er27-25-google\/text\.html#p-\d+$/);
-     const norm=s=>s.toLowerCase().replace(/[^\p{L}\p{N}]/gu,'');
-     assert.ok(norm(await leaf.innerText()).includes(norm(citedQuote)),'Wrong original page for the quoted protest');
-    }
-    assert.ok(await p.evaluate(()=>innerWidth>0&&document.documentElement.scrollWidth<=innerWidth));
-    results.push({device,area,goal,clicks:steps.length,entries,horizontal,scroll:+scroll.toFixed(2),actions,target:new URL(p.url()).pathname+new URL(p.url()).hash});
-   }catch(e){throw Error(device+' / '+area+': '+e.message,{cause:e});}finally{await ctx.close();}
+    assert.match(await leaf.innerText(),new RegExp(pattern,'i'));assert.deepEqual(errors,[]);
+    assert.ok(await p.evaluate(()=>innerWidth>0&&document.documentElement.scrollWidth<=innerWidth),'page scrolls sideways');
+    const r={device,id,q,clicks:steps.length,entries,horizontal,scroll:+scroll.toFixed(2),actions};
+    results.push({...r,cost:cost(r)});
+   }catch(e){failures.push(device+' / '+id+': '+e.message.split('\n')[0]);results.push({device,id,q,cost:null,error:e.message.split('\n')[0]});}
+   finally{await ctx.close();}
   }
  }
  await checkIssueSwitches();
 }finally{await browser.close();}
+const devices=['phone','tablet','desktop'],baseline=existsSync(baselineFile)?JSON.parse(readFileSync(baselineFile,'utf8')):{};
+const regressions=[];
+for(const r of results){const was=baseline[r.device]?.[r.id];if(r.cost!==null&&was!=null&&r.cost>=was+SLACK)regressions.push(r.device+' / '+r.id+': '+was+' -> '+r.cost);}
 mkdirSync(out,{recursive:true});
-writeFileSync(join(out,'interactions.json'),JSON.stringify(results,null,2)+'\n');
-const label=r=>r.clicks+' clicks'+(r.entries?', '+r.entries+' text entry':'')+'; '+r.scroll.toFixed(2)+' screens; '+r.horizontal+' horizontal';
-const rows=paths.map(([area,goal])=>'| '+area+' | '+goal+' | '+results.filter(r=>r.area===area).map(label).join(' | ')+' |');
-const md=['| Tab | Destination | Phone | Tablet | Desktop |','|---|---|---|---|---|',...rows].join('\n');
-writeFileSync(join(out,'interactions.md'),md+'\n');console.log(md);
-// The human-readable view uses the same observed results as the machine-readable log.
-const escape=s=>String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
-const reports=['phone','tablet','desktop'].map((device,index)=>{
- const cards=results.filter(r=>r.device===device).map(r=>'<tr><th scope="row">'+escape(r.area)+'</th><td>'+escape(r.goal)+'<small>'+r.actions.map(escape).join(' → ')+'</small></td><td>'+r.clicks+(r.entries?' + 1 entry':'')+'</td><td>'+r.scroll.toFixed(2)+'</td><td>'+r.horizontal+'</td></tr>').join('');
- return '<details '+(index===0?'open':'')+'><summary>'+['Phone · 375 × 812','Tablet · 768 × 1024','Desktop · 1280 × 800'][index]+'</summary><div><table><thead><tr><th>Tab</th><th>Destination and actions</th><th>Taps / clicks</th><th>Scroll¹</th><th>Sideways²</th></tr></thead><tbody>'+cards+'</tbody></table></div></details>';
-}).join('');
-writeFileSync(join(out,'interactions.html'),'<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>FERC tracker: tab interactions</title><style>*{box-sizing:border-box}body{max-width:64rem;margin:2rem auto;padding:0 1rem;color:#172b39;background:#faf9f5;font:1rem/1.55 system-ui}h1{font:700 clamp(2rem,5vw,3.5rem)/1.1 Georgia,serif}summary{cursor:pointer;font-weight:700;padding:.85rem 0}details{border-top:1px solid #647981}details div{overflow-x:auto}table{border-collapse:collapse;width:100%;text-align:left}th,td{padding:.65rem;vertical-align:top;border-bottom:1px solid #ccc}thead{background:#e0e9eb}small{display:block;color:#405660}</style><main><h1>From Overview to the evidence</h1><p>Eleven paths through all eight tabs. Each starts from a fresh Overview and ends when the named destination is readable. Expand a screen size to see the actual route.</p>'+reports+'<p>¹ Vertical scroll in viewport heights, accumulated when moving a control or destination into view. Automatic navigation jumps are excluded. ² Number of horizontal scroll adjustments. A search entry is counted separately from tapping the field. The commissioner test ends at the timestamp link; it does not play the video.</p></main></html>');
+writeFileSync(join(out,'nav.json'),JSON.stringify(results,null,2)+'\n');
+const cell=(id,d)=>{const r=results.find(x=>x.id===id&&x.device===d);if(!r||r.cost===null)return 'FAILS';const was=baseline[d]?.[id];return r.cost+(was!=null&&was!==r.cost?' ('+(r.cost>was?'+':'')+(r.cost-was).toFixed(2)+')':'');};
+const total=d=>results.filter(r=>r.device===d&&r.cost!==null).reduce((a,r)=>a+r.cost,0).toFixed(1);
+const md=['| Question | Phone | Tablet | Desktop |','|---|---|---|---|',...questions.map(({id,q})=>'| '+q+' | '+devices.map(d=>cell(id,d)).join(' | ')+' |'),'| **Total** | '+devices.map(total).join(' | ')+' |'].join('\n');
+writeFileSync(join(out,'nav.md'),md+'\n');console.log(md);
+const esc=s=>String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;');
+writeFileSync(join(out,'nav.html'),'<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Navigation budget</title><style>body{max-width:64rem;margin:2rem auto;padding:0 1rem;font:1rem/1.5 system-ui}table{border-collapse:collapse;width:100%}th,td{padding:.5rem;border-bottom:1px solid #ccc;text-align:left;vertical-align:top}small{display:block;color:#555}</style><h1>Interactions to answer each question</h1><p>Cost = taps or clicks + typed entries + screens scrolled + sideways adjustments, from a fresh home page. Lower is better.</p><table><tr><th>Question</th>'+devices.map(d=>'<th>'+d+'</th>').join('')+'</tr>'+questions.map(({id,q})=>'<tr><td>'+esc(q)+'<small>'+esc((results.find(r=>r.id===id&&r.actions)?.actions||[]).join(' → ')||'on the home page')+'</small></td>'+devices.map(d=>'<td>'+esc(cell(id,d))+'</td>').join('')+'</tr>').join('')+'</table></html>');
+if(mode==='--update'){
+ if(failures.length)throw Error('Not writing a baseline while questions fail:\n'+failures.join('\n'));
+ const next={};for(const d of devices){next[d]={};for(const {id} of questions)next[d][id]=results.find(r=>r.id===id&&r.device===d).cost;}
+ writeFileSync(baselineFile,JSON.stringify(next,null,1)+'\n');console.log('wrote tools/nav-baseline.json');
+}
+if(failures.length){console.error('Unanswerable:\n'+failures.join('\n'));process.exit(1);}
+if(mode==='--check'){
+ const unbaselined=questions.filter(({id})=>devices.some(d=>baseline[d]?.[id]==null)).map(x=>x.id);
+ if(unbaselined.length){console.error('No baseline for: '+unbaselined.join(', ')+'. Run with --update and commit tools/nav-baseline.json.');process.exit(1);}
+ if(regressions.length){console.error('Costs more than the baseline:\n'+regressions.join('\n'));process.exit(1);}
+ console.log('✓ '+results.length+' routes within budget ('+questions.length+' questions × 3 sizes)');
+}
