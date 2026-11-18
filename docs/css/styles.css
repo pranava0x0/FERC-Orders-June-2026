@@ -1561,3 +1561,4 @@ details.acc { margin-top: 6px; }
 .fg-link, .fd-link { margin: 6px 0 4px; }
 .fg-docs-h { margin: 10px 0 2px; padding-top: 8px; }
 .fg-sec, .tl-sec { margin: 14px 0 6px; }
+@media (pointer: coarse) { .acc-sum { min-height: 44px; } }
