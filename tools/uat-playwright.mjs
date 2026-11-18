@@ -41,7 +41,7 @@ const JSON_OUT = argv.includes("--json");
 const WAIT = 700;
 
 
-const EXPECTED_TABS = ["overview", "dockets", "filings", "news", "timeline", "commissioners", "comments"];
+const EXPECTED_TABS = ["overview", "dockets", "filings", "timeline", "comments", "news", "commissioners"];
 const VIEWPORTS = [
   { name: "mobile", width: 375, height: 812, isMobile: true, hasTouch: true, deviceScaleFactor: 2 },
   { name: "tablet", width: 768, height: 1024, isMobile: true, hasTouch: true, deviceScaleFactor: 2 },
@@ -63,7 +63,8 @@ const GOALS = [
   ] },
   { id: "c", goal: "Filing matrix (procedural board, what has been filed)", candidates: [
     { steps: [{ label: "open 'The 60-day clock'", open: "__accWith('#fm-h')" }], target: Q("#fm-h") },
-    { steps: [{ label: "masthead deadline chip", click: Q("#masthead-fresh a") }], target: Q("#fm-h"), note: "chip opens the clock" },
+    { steps: [{ label: "Coming up: 60-day clock link", click: Q('.now-next-card a[href="#overview/clock"]') }], target: Q("#fm-h"), note: "Coming up card links the clock" },
+    { steps: [{ label: "jump '60-day clock'", click: Q('#panel-overview .jump-btn[data-jump="#acc-clock"]') }], target: Q("#fm-h"), note: "jump row" },
   ] },
   { id: "d", goal: "Commissioner June 18 statements", candidates: [
     { steps: [{ label: "tab Commissioners", click: Q("#tab-commissioners") }], target: Q(".commish-list .commish-rowcard") },
@@ -113,12 +114,29 @@ const GOALS = [
     { steps: [{ label: "tab Filings", click: Q("#tab-filings") }, { label: "open PJM Large Load registry", open: Q("#fg-pjm-large-load-definition") }, { label: "open FERC's order", open: Q("#fd-order-er26-3515-pjm-large-load") }],
       target: Q("#fd-order-er26-3515-pjm-large-load .pts li") },
   ] },
-  { id: "o", goal: "What ISO-NE filed Nov 13", candidates: [
-    { steps: [], target: Q('.filing-brief a[href^="#filings/isone-large-load/"]') },
+  { id: "o", goal: "What PJM filed Nov 16", candidates: [
+    { steps: [], target: Q('.filing-brief a[href^="#filings/pjm-large-load/"]') },
   ] },
-  { id: "p", goal: "ISO-NE’s filing with a page citation", candidates: [
-    { steps: [{ label: "ISO-NE filing", click: Q('.filing-brief a[href^="#filings/isone-large-load/"]') }],
-      target: Q("#fd-filing-er27-484-isone-large-loads .pq-pg"), note: "spotlight link opens the document" },
+  { id: "p", goal: "PJM’s Nov 16 filing with a page citation", candidates: [
+    { steps: [{ label: "PJM filing", click: Q('.filing-brief a[href^="#filings/pjm-large-load/"]') }],
+      target: Q("#fd-filing-er27-531-pjm-large-loads .pq-pg"), note: "spotlight link opens the document" },
+    { steps: [{ label: "operator table: Read the filing", click: Q('.ot a[href$="/filing-er27-531-pjm-large-loads"]') }],
+      target: Q("#fd-filing-er27-531-pjm-large-loads .pq-pg"), note: "operator row opens the document" },
+  ] },
+  { id: "p2", goal: "ISO-NE’s Nov 13 filing with a page citation", candidates: [
+    { steps: [{ label: "operator table: Read the filing", click: Q('.ot a[href$="/filing-er27-484-isone-large-loads"]') }],
+      target: Q("#fd-filing-er27-484-isone-large-loads .pq-pg"), note: "operator row opens the document" },
+    { steps: [{ label: "jump 'Each operator'", click: Q('#panel-overview .jump-btn[data-jump="#ops-h"]') }, { label: "operator table: Read the filing", click: Q('.ot a[href$="/filing-er27-484-isone-large-loads"]') }],
+      target: Q("#fd-filing-er27-484-isone-large-loads .pq-pg"), note: "jump row, then the operator row" },
+  ] },
+  { id: "x", goal: "How PJM answered the June order on who pays (quote with page)", candidates: [
+    { steps: [{ label: "open 'Who pays'", open: Q("#xw-cost") }], target: Q("#xw-cost .xw-ans .xw-q a") },
+    { steps: [{ label: "jump 'By reform'", click: Q('#panel-overview .jump-btn[data-jump="#xw-h"]') }, { label: "open 'Who pays'", open: Q("#xw-cost") }], target: Q("#xw-cost .xw-ans .xw-q a"), note: "jump row" },
+  ] },
+  { id: "y", goal: "What DOE's ANOPR proposed on flexible service", candidates: [
+    { steps: [{ label: "open 'Flexible service'", open: Q("#xw-flex") }], target: Q("#xw-flex .xw-doe li") },
+    { steps: [{ label: "jump 'By reform'", click: Q('#panel-overview .jump-btn[data-jump="#xw-h"]') }, { label: "open 'Flexible service'", open: Q("#xw-flex") }], target: Q("#xw-flex .xw-doe li"), note: "jump row" },
+    { steps: [{ label: "tab Orders", click: Q("#tab-dockets") }, { label: "open the five reforms", open: "__accWith('.cat-doe')" }], target: Q(".cat[open] .cat-doe li") },
   ] },
   { id: "r", goal: "How a filing connects to the June orders (the order directive it bears on)", candidates: [
     { steps: [{ label: "tab Filings", click: Q("#tab-filings") }, { label: "open MISO LARS", open: Q("#fg-miso-lars") }, { label: "open MISO's LARS filing", open: Q("#fd-filing-er27-25-miso-lars") }],
@@ -131,7 +149,7 @@ const GOALS = [
     { steps: [{ label: "tab Orders", click: Q("#tab-dockets") }], target: Q(".om-chips a") },
   ] },
   { id: "q", goal: "What Valley Electric asked FERC for", candidates: [
-    { steps: [{ label: "Valley Electric motion", click: Q('.filing-brief a[href^="#filings/sc-caiso/"]') }],
+    { steps: [{ label: "Latest in the record: Valley Electric", click: Q('.now-latest a[href*="valley-electric"]') }],
       target: Q("#fd-motion-el26-71-valley-electric-rescind .fd-sum") },
   ] },
   { id: "u", goal: "What one filer said, found by name (Google)", candidates: [

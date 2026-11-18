@@ -16,32 +16,38 @@
   {
    "point": "A new Large Load Project Review would study every large-load service request, with deposits and milestones to deter speculative ones.",
    "quote": "The LLPR also includes deposits, project milestones, and other safeguards designed to discourage speculative Large Load requests.",
-   "pg": 5
+   "pg": 5,
+   "reform": "study"
   },
   {
    "point": "Applicants pay a $250,000 non-refundable fee.",
    "quote": "a non-refundable application fee of $250,000",
-   "pg": 14
+   "pg": 14,
+   "reform": "study"
   },
   {
    "point": "Large-load customers would bear the cost of the upgrades built for them through cost recovery agreements.",
    "quote": "designed to ensure that the costs incurred to provide Transmission Service to Large Load Transmission Customers, including the costs of Large Load Upgrades (defined herein), are born by such customers",
-   "pg": 5
+   "pg": 5,
+   "reform": "cost"
   },
   {
    "point": "MISO would publish the location and estimated costs of large loads on a dashboard.",
    "quote": "The results of the LLPR periodically will be published to provide transparency into the location and estimated costs associated with Large Load facilities in the MISO region",
-   "pg": 5
+   "pg": 5,
+   "reform": "cost"
   },
   {
    "point": "Two new services, Firm Service Step Up and Interim NITS, would let customers take service in stages as they build out.",
    "quote": "The new Transmission Services available to Large Loads include Firm Service Step Up and Interim Non-Firm NITS service.",
-   "pg": 5
+   "pg": 5,
+   "reform": "flex"
   },
   {
    "point": "Loads of 200 MW or more partnered with a generator for at least 15 years go through the resource study instead.",
    "quote": "If the Large Load is greater than or equal to 200 MW and has formally partnered with a generator for a minimum of fifteen years, then the applicants will go through the LARS study process.",
-   "pg": 15
+   "pg": 15,
+   "reform": "proximate"
   },
   {
    "point": "MISO says states and stakeholders did not agree on everything.",

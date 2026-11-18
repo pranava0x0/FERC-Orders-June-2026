@@ -11,17 +11,20 @@
   {
    "point": "Generator interconnection requests and large-load service requests would be studied together in one 12-month process.",
    "quote": "which will study together New Service Requests, including Generation Interconnection Requests, and requests from Eligible Customers seeking transmission service on behalf of Eligible Load",
-   "pg": 6
+   "pg": 6,
+   "reform": "study"
   },
   {
    "point": "PJM says the new process should take half the time of today's cycle process.",
    "quote": "The process will take half the time of the Cycle process.",
-   "pg": 66
+   "pg": 66,
+   "reform": "study"
   },
   {
    "point": "The first Fast Energization submission window would not open until late November 2027.",
    "quote": "the Submission Window for the first Cycle under the Fast Energization Process would open in late November 2027",
-   "pg": 9
+   "pg": 9,
+   "reform": "study"
   },
   {
    "point": "PJM says full acceptance within ten months is likely needed to use the process for Cycle 02.",
@@ -41,12 +44,14 @@
   {
    "point": "Customers with retail behind-the-meter generation could net no more than 50 MW of it from their load, as the co-location order directed.",
    "quote": "PJM is proposing revisions to Part III, section 34.2 and Schedule 8 of the RAA to implement the 50 MW netting limit.",
-   "pg": 28
+   "pg": 28,
+   "reform": "colo"
   },
   {
    "point": "Interim NITS would let large and co-located loads use spare capacity on an interruptible basis.",
    "quote": "Interim NITS is a transmission service that allows Eligible Customers serving Eligible Load or Large Load to utilize head room on the system as-available on an interruptible basis",
-   "pg": 38
+   "pg": 38,
+   "reform": "flex"
   },
   {
    "point": "PJM's transmission owners file cost allocation, the cost recovery framework and rates for the new services separately.",

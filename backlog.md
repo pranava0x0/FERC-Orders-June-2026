@@ -665,3 +665,10 @@ Recommended next steps, in order:
 - **Low:** All comments search stays at 4 interactions (tab, sub-tab, tap, type). A global search box in the masthead would make it 2.
 - **Low:** remove the duplicate legacy `.fgroup` rules in `docs/css/styles.css` (around lines 1148 to 1167).
 - **Low:** verify and ship the three queued items in REFRESH.md (Market Monitor Nov 12 statement, RTO Insider NEPOOL and NYISO pieces, Latitude on CHILLS).
+
+- **Medium (2026-11-18): phone depth for documents found by browsing a long proceeding.** UAT goals m, n and r cost
+  7 to 8 on a phone (open a proceeding, scroll its list, open the document). Options: a per-proceeding find box, or
+  collapsing a proceeding's older documents behind "N earlier". The Overview links and the find box already reach
+  the newest documents in 1 to 3.
+- **Low (2026-11-18): tag reform keys on the remaining Nov 16 transmission owner filings** (NYTOs ER27-529, LSPGNY
+  ER27-518, the 15 California TOs) once their readings exist, so the crosswalk counts them.

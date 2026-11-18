@@ -11,17 +11,20 @@
   {
    "point": "It proposes Firm and Non-Firm Withdrawal Service rather than the three services FERC created for PJM.",
    "quote": "“Firm Withdrawal Service” and “Non-Firm Withdrawal Service”",
-   "pg": 2
+   "pg": 2,
+   "reform": "flex"
   },
   {
    "point": "NYISO explains why it will not adopt the three PJM co-location services.",
    "quote": "Part V explains why the NYISO is not proposing to adopt the three new transmission services that the Commission established in the PJM Co-Location Order",
-   "pg": 3
+   "pg": 3,
+   "reform": "colo"
   },
   {
    "point": "Non-firm service would be curtailed when the local price reaches $200 per megawatt-hour.",
    "quote": "establish a rule under which Non-Firm Withdrawal Service would be curtailed when the applicable nodal Locational- Based Marginal Price (“LBMP”) for a Large Load reaches $200 MW/h",
-   "pg": 3
+   "pg": 3,
+   "reform": "flex"
   },
   {
    "point": "A State Exempt Load Project exception is meant to respect the New York PSC's resource adequacy authority.",
@@ -31,7 +34,8 @@
   {
    "point": "The New York transmission owners file a separate two-party cost recovery agreement.",
    "quote": "the NYTOs will submit a new two-party pro forma cost recovery agreement to address the cost- shifting issues discussed in the Show Cause Order",
-   "pg": 3
+   "pg": 3,
+   "reform": "cost"
   },
   {
    "point": "NYISO asks FERC to keep the show cause case in abeyance and end it for NYISO if the filing is accepted.",

@@ -1069,6 +1069,26 @@ window.FERC_DATA = (function () {
       url: "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261113-5007", published: "2026-11-13", captured: "2026-11-15",
       text: "sources/text/abeyance/filing-er27-484-isone-large-loads.txt", note: "Transmittal letter read in full; FERC eLibrary accession 20261113-5007. The testimony, affidavit and tariff sheets filed with it are on the eLibrary file list and are not committed here.",
     },
+    pjm1116: {
+      label: "PJM, large load additions and co-location tariff revisions in ER27-531-000", short: "PJM filing", org: "PJM Interconnection", tier: "secondary",
+      url: "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261116-5340", published: "2026-11-16", captured: "2026-11-17",
+      text: "sources/text/abeyance/filing-er27-531-pjm-large-loads.txt", note: "Transmittal letter read in full; FERC eLibrary accession 20261116-5340. Attachments are on the eLibrary file list and are not committed here.",
+    },
+    miso1116: {
+      label: "MISO and the MISO Transmission Owners, large load tariff revisions in ER27-526-000", short: "MISO filing", org: "MISO", tier: "secondary",
+      url: "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261116-5323", published: "2026-11-16", captured: "2026-11-17",
+      text: "sources/text/abeyance/filing-er27-526-miso-large-loads.txt", note: "Transmittal letter read in full; FERC eLibrary accession 20261116-5323. Attachments are on the eLibrary file list and are not committed here.",
+    },
+    caiso1116: {
+      label: "CAISO, large load tariff revisions in ER27-506-000", short: "CAISO filing", org: "California ISO", tier: "secondary",
+      url: "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261116-5179", published: "2026-11-16", captured: "2026-11-17",
+      text: "sources/text/abeyance/filing-er27-506-caiso-large-loads.txt", note: "Transmittal letter read in full; FERC eLibrary accession 20261116-5179. Attachments are on the eLibrary file list and are not committed here.",
+    },
+    nyiso1116: {
+      label: "NYISO, large load integration tariff revisions in ER27-517-000", short: "NYISO filing", org: "New York ISO", tier: "secondary",
+      url: "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261116-5282", published: "2026-11-16", captured: "2026-11-17",
+      text: "sources/text/abeyance/filing-er27-517-nyiso-large-loads.txt", note: "Transmittal letter read in full; FERC eLibrary accession 20261116-5282. Attachments are on the eLibrary file list and are not committed here.",
+    },
     pjmtos1116: {
       label: "PJM Transmission Owners, tariff revisions for service to co-located and large loads in ER27-520-000", short: "PJM TOs filing", org: "PJM Transmission Owners", tier: "secondary",
       url: "https://www.pjm.com/-/media/DotCom/documents/ferc/filings/2026/20261116-er27-520-000.pdf", published: "2026-11-16", captured: "2026-11-17",
@@ -1178,14 +1198,17 @@ window.FERC_DATA = (function () {
       sources: ["opsirbp0821", "opsiiras0903"],
     },
     spotlight: {
-      title: "What did ISO-NE file on Nov 13?",
-      answer: "ISO-NE filed large-load tariff rules in a new docket, ER27-484-000, three days before the Nov 16 deadline, and asked FERC to end its show cause case. A Large Load is 50 MW or more at one site. Firm service requires new capacity. Service would start June 1, 2028. NEPOOL did not support the cost recovery agreement. Comments are due Dec 4.",
+      title: "What did the grid operators file on Nov 16?",
+      answer: "PJM, MISO, CAISO and NYISO each filed large-load tariff rules under section 205 in new dockets, and PJM’s transmission owners filed the cost terms. Each says its filing answers its June order. PJM would study generators and large loads together in one 12-month process. MISO adds a project review with a $250,000 fee. CAISO offers interim service to flexible loads. NYISO offers firm and non-firm withdrawal service. SPP’s response is due Nov 20.",
       links: [
-        { label: "ISO-NE filing", group: "isone-large-load", doc: "filing-er27-484-isone-large-loads", source: "isone1113", page: 2 },
-        { label: "Valley Electric motion", group: "sc-caiso", doc: "motion-el26-71-valley-electric-rescind", source: "vea1113" },
+        { label: "PJM", group: "pjm-large-load", doc: "filing-er27-531-pjm-large-loads", source: "pjm1116", page: 1 },
+        { label: "PJM transmission owners", group: "pjm-tos-large-load", doc: "filing-er27-520-pjm-tos-large-loads", source: "pjmtos1116", page: 1 },
+        { label: "MISO", group: "miso-large-load", doc: "filing-er27-526-miso-large-loads", source: "miso1116", page: 1 },
+        { label: "CAISO", group: "caiso-large-load", doc: "filing-er27-506-caiso-large-loads", source: "caiso1116", page: 1 },
+        { label: "NYISO", group: "nyiso-large-load", doc: "filing-er27-517-nyiso-large-loads", source: "nyiso1116", page: 1 },
       ],
     },
-    newsCapture: "2026-11-15",
+    newsCapture: "2026-11-17",
     // Newest Discourse sweep (themes, media lines, reception, voices). Distinct from newsCapture, the
     // filings and proceedings cutoff, so a commentary-only sweep never overstates when dockets were checked.
     commentaryCapture: "2026-11-12",
@@ -1196,7 +1219,7 @@ window.FERC_DATA = (function () {
       "On October 23, 2025, the Department of Energy invoked its rarely used § 403 authority to direct FERC to open a rulemaking on connecting large loads (data centers, AI, advanced manufacturing) to the interstate grid (Docket RM26-4-000), and asked for final action by April 30, 2026.",
       "Rather than run a multi-year rulemaking, FERC answered on June 18, 2026 with six tailored § 206 show cause orders, one to each RTO/ISO. Each makes a threshold finding that the region’s tariff may be unjust and unreasonable for lack of clear, consistent large-load rules, then puts the market on a 30/60-day clock to defend the status quo or file a fix across the same five reform categories.",
       "The through-line is cost causation made visible: the large load that triggers a network upgrade should bear its cost and spare ordinary ratepayers, with new transparency into how those costs are identified and allocated. The same morning, FERC issued Item E-2 (EL25-49-002), the order on rehearing that finalizes the rates and terms for the three new transmission services its PJM co-location proceeding created, the same services the six orders extend to every other region.",
-      "Where it stands on November 15, 2026: one respondent has filed a tariff it says answers its order. On Nov 13 ISO New England, NEPOOL and the region’s transmission owners filed large-load tariff revisions in ER27-484-000 and asked FERC to end their show cause case. Comments are due Dec 4. The other five proceedings are unchanged on the docket through Friday, Nov 13: responses are due Nov 16 (Nov 20 for SPP). PJM’s own planning matrix says it will make several §205 filings on or about Nov 16, and the PJM Transmission Owners and CAISO have said they will file by that date. MISO is filing in pieces in separate dockets and NYISO’s target is December. Morongo Transmission, a CAISO transmission owner, answered on Aug 12, and Valley Electric asked on Nov 13 to be dropped from CAISO’s order. FERC indexes weekend filings on Monday, so this page cannot yet show anything filed after Nov 13.",
+      "Where it stands on November 17, 2026: five of the six respondents have filed tariffs they say answer their orders, each in a new section 205 docket rather than the show cause docket. ISO-NE filed on Nov 13 in ER27-484-000 (comments due Dec 4). On Nov 16 PJM filed in ER27-531-000 and ER27-522-000, the PJM Transmission Owners in ER27-520-000, MISO in ER27-526-000 and ER27-527-000, CAISO in ER27-506-000 and NYISO in ER27-517-000. Comments on the CAISO, NYISO and PJM Transmission Owners filings are due Dec 7; PJM’s and MISO’s comment dates were not yet read. SPP’s response is due Nov 20. Valley Electric asked on Nov 13 to be dropped from CAISO’s order.",
       "The Timeline tab holds the dated record: the August 3 and August 9 answer periods, the August 14 abeyance orders, the August 17 partial co-location compliance, the August 21 governance comments and backstop protests, and everything since. Each entry cites the document it was read from.",
     ],
   };

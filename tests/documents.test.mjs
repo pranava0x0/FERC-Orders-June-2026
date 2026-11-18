@@ -106,3 +106,22 @@ test("review round 1 regressions: #reforms routes, and a theme filter keeps its 
   assert.match(app, /filtering = !!\(filingTheme \|\| filingQuery\.length >= FQ_MIN\)/, "a theme or a typed query both count as filtering");
   assert.match(app, /num\.textContent = docs\.filter\(/, "each theme chip's count is recomputed against the typed query");
 });
+
+// The Overview's "Asked and answered" crosswalk reads data/answers.json. Each entry must be a point a reading
+// actually tagged, under the June order that reading says it answers, so a cell can never claim an answer
+// that is not quoted on its page.
+test("answers.json carries every reform-tagged point of a reading that answers E-7 to E-12, and nothing else", () => {
+  const ctx = loadContext();
+  const ans = JSON.parse(read("docs", "data", "answers.json")).answers;
+  assert.ok(ans.length >= 20, "the crosswalk lost its answers: " + ans.length);
+  const items = new Set(["E-7", "E-8", "E-9", "E-10", "E-11", "E-12"]);
+  const want = new Set();
+  for (const { doc } of loadReadings([])) {
+    const order = doc.throughLine.anchors.map((a) => a.match(/^e-(\d+)-/)).find((m) => m && items.has("E-" + m[1]));
+    if (!order) continue;
+    doc.points.forEach((p, i) => { if (p.reform) want.add(doc.slug + "#" + (i + 1) + "#" + p.reform + "#E-" + order[1]); });
+  }
+  const got = new Set(ans.map((a) => a.slug + "#" + a.n + "#" + a.reform + "#" + a.item));
+  assert.deepEqual([...got].sort(), [...want].sort());
+  for (const a of ans) assert.ok(ctx.reforms.has(a.reform), a.slug + " tags a non-reform theme " + a.reform);
+});

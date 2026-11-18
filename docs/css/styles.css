@@ -7,23 +7,26 @@
   --font-serif: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --font-mono: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
 
-  --bg: #f7f8f9;          /* cool off-white */
+  --bg: #f6f8f8;          /* FERC pale teal-grey */
   --surface: #ffffff;
-  --surface-2: #eef1f4;
-  --masthead: #0f1720;    /* ink, used for headings and the header bar */
-  --masthead-2: #0f1720;
-  --ink: #111820;
-  --text-muted: #56616d;
-  --text-secondary: #3d4752;
-  --rule: #dfe3e8;
-  --rule-strong: #c3cad3;
+  --surface-2: #ebf1f1;    /* FERC wash */
+  --masthead: #08524c;    /* FERC deep teal: header bar and footer */
+  --masthead-2: #0a6b63;
+  --ink: #1d242c;
+  --text-muted: #555c66;
+  --text-secondary: #323a45; /* FERC slate */
+  --rule: #d8e0e0;
+  --rule-strong: #b9c7c6;
 
-  --accent: #0b6477;      /* deep teal: links, selection, focus */
-  --accent-ink: #074a59;
-  --accent-wash: #e5f1f3;
+  --accent: #0a6b63;      /* FERC teal: links, selection, focus */
+  --accent-ink: #08524c;
+  --accent-wash: #e3efee;
   --deadline: #b3261e;    /* deadlines only */
   --deadline-bg: #fcebea;
   --on-accent: #ffffff;
+  --gold: #f9d073;         /* FERC gold: the next-deadline chip and the header rule only */
+  --gold-ink: #3a2c05;
+  --font-display: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
   --ok: #1e6b3a;
   --ok-wash: #e6f4ea;
   --warn: #7a5a12;
@@ -40,7 +43,7 @@
   --stance-negative: #9a3412;
 
   /* provenance tiers */
-  --tier-ferc: #0b2545;
+  --tier-ferc: #0a6b63;
   --tier-doe: #5b3a8a;
   --tier-analysis: #1a4480;
   --tier-order: #6b7280;
@@ -1437,3 +1440,92 @@ details.tl-item .srcs { padding: 0 0 10px 128px; }
 .tl-doc { padding: 0 0 6px 128px; font-size: 14.5px; }
 @media (max-width: 640px) { .tl-doc { padding-left: 0; } }
 @media (pointer: coarse) { .tl-doc a { display: inline-flex; align-items: center; min-height: 44px; } }
+
+/* =====================================================================================
+   2026-11-18 FERC identity: teal header bar with a gold rule, serif display headings (system
+   serif stack, no web font), gold next-deadline chip. Red stays reserved for deadline dates.
+   ===================================================================================== */
+.masthead { background: var(--masthead); color: #fff; border-bottom: 3px solid var(--gold); }
+.masthead-inner { padding-block: 14px 12px; }
+.masthead h1 { font-family: var(--font-display); font-weight: 700; color: #fff; font-size: clamp(21px, 2.6vw, 28px); letter-spacing: 0; }
+.masthead h1 a:hover { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 4px; }
+.masthead-sub { color: #d5e6e4; font-size: 14.5px; }
+.masthead-fresh .mh-next { background: var(--gold); color: var(--gold-ink); border-radius: 999px; padding: 4px 12px; font-weight: 600; }
+.masthead-fresh .mh-next .mono { color: var(--gold-ink); font-weight: 700; }
+.mh-lbl { text-transform: uppercase; font-size: 11px; letter-spacing: 0.06em; font-weight: 700; margin-right: 2px; }
+.mh-days { font-weight: 500; opacity: 0.85; }
+.masthead :focus-visible { outline-color: var(--gold); }
+.skip-link { background: var(--gold); color: var(--gold-ink); }
+
+.section-head h2, .acc-h2, .now-h, .filing-brief h2, .now-card h2 { font-family: var(--font-display); letter-spacing: 0; }
+.now-h { color: var(--accent-ink); }
+.tab[aria-selected="true"] { color: var(--accent-ink); border-bottom-color: var(--accent); }
+.tab:hover { color: var(--accent-ink); }
+
+.now-card { border-top: 3px solid var(--accent); box-shadow: 0 1px 2px rgba(8, 82, 76, 0.06); }
+.now-next-card { border-top-color: var(--gold); }
+.filing-brief { background: var(--surface); border: 1px solid var(--rule); border-left: 4px solid var(--accent); border-radius: 0 8px 8px 0; padding: 12px 16px; }
+.filing-brief div a { font-weight: 600; }
+.ot thead th { background: var(--accent-wash); color: var(--accent-ink); }
+.footer { background: var(--masthead); color: #cfe2e0; border-top: 3px solid var(--gold); }
+.footer-meta { color: #b9d3d0; }
+
+/* Asked and answered: one row per reform, a marker per operator, a three-step chain inside. */
+.xw-lede { color: var(--text-secondary); font-size: 15px; margin: -4px 0 10px; }
+.xw-cat { background: var(--surface); border: 1px solid var(--rule); border-radius: 8px; margin: 0 0 8px; scroll-margin-top: 60px; }
+@media (max-width: 1060px) { .xw-cat { scroll-margin-top: 104px; } }
+.xw-cat > summary { list-style: none; cursor: pointer; display: grid; grid-template-columns: 28px minmax(0, 1fr) auto 18px; gap: 4px 12px; align-items: center; padding: 12px 14px; min-height: 44px; }
+.xw-cat > summary::-webkit-details-marker { display: none; }
+.xw-cat[open] > summary { border-bottom: 1px solid var(--rule); }
+.xw-cat[open] > summary .acc-chev { transform: rotate(90deg); }
+.xw-no { width: 26px; height: 26px; border-radius: 50%; background: var(--accent); color: #fff; font-weight: 700; font-size: 13px; display: inline-flex; align-items: center; justify-content: center; }
+.xw-title { font-weight: 700; font-size: 16px; color: var(--ink); }
+.xw-sub { display: block; font-weight: 400; font-size: 13.5px; color: var(--text-muted); }
+.xw-dots { display: flex; gap: 4px; flex-wrap: wrap; justify-content: flex-end; }
+.xw-dot { font-size: 11.5px; font-weight: 600; padding: 2px 7px; border-radius: 999px; border: 1px solid var(--rule-strong); color: var(--text-muted); background: var(--bg); }
+.xw-dot.on { background: var(--accent); border-color: var(--accent); color: #fff; }
+@media (max-width: 640px) {
+  .xw-cat > summary { grid-template-columns: 28px minmax(0, 1fr) 18px; }
+  .xw-dots { grid-column: 2 / 3; justify-content: flex-start; }
+  .xw-cat > summary .acc-chev { grid-row: 1; grid-column: 3; }
+}
+.xw-body { padding: 12px 14px 14px; }
+.xw-step { flex-wrap: wrap; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-ink); margin: 0 0 6px; display: flex; align-items: center; gap: 6px; }
+.xw-n { width: 18px; height: 18px; border-radius: 50%; background: var(--accent-wash); color: var(--accent-ink); display: inline-flex; align-items: center; justify-content: center; font-size: 11px; }
+.xw-cite { font-weight: 500; text-transform: none; letter-spacing: 0; color: var(--text-muted); }
+.xw-doe { background: var(--bg); border-radius: 6px; padding: 10px 12px; margin-bottom: 12px; }
+.xw-doe ul { margin: 0 0 0 18px; font-size: 14.5px; }
+.xw-rows { display: grid; gap: 0; }
+.xw-row { display: grid; grid-template-columns: minmax(0, 1fr); gap: 8px; padding: 12px 0; border-top: 1px solid var(--rule); }
+@media (min-width: 900px) { .xw-row { grid-template-columns: 120px minmax(0, 1fr) minmax(0, 1.3fr); gap: 16px; } }
+.xw-rto { font-size: 15px; margin: 0; }
+.xw-rto .mono { display: block; font-size: 12px; font-weight: 400; color: var(--text-muted); }
+.xw-q { margin: 0; font-size: 14px; color: var(--text-secondary); border-left: 3px solid var(--rule-strong); padding-left: 10px; }
+.xw-ans .xw-q { border-left-color: var(--accent); }
+.xw-q a { font-size: 12px; white-space: nowrap; }
+.xw-a + .xw-a { margin-top: 10px; }
+.xw-pt { font-weight: 600; font-size: 14.5px; margin: 0 0 4px; }
+.xw-open { display: inline-block; font-size: 13px; margin-top: 4px; }
+@media (pointer: coarse) { .xw-open, .xw-q a, .xw-rto a { display: inline-flex; align-items: center; min-height: 44px; } }
+.xw-none { color: var(--text-muted); font-size: 14px; font-style: italic; margin: 0; }
+
+/* Footer site map: one line per tab, so where everything lives is stated once, in plain words. */
+.sitemap { padding-bottom: 16px; margin-bottom: 16px; border-bottom: 1px solid rgba(255, 255, 255, 0.18); }
+.sitemap-h { font-family: var(--font-display); font-size: 17px; color: #fff; margin: 0 0 8px; }
+.sitemap ul { list-style: none; display: grid; grid-template-columns: minmax(0, 1fr); gap: 6px 28px; font-size: 13.5px; color: #cfe2e0; }
+@media (min-width: 760px) { .sitemap ul { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.sitemap a { font-weight: 700; margin-right: 6px; color: #fff; }
+@media (pointer: coarse) { .sitemap a { display: inline-flex; align-items: center; min-height: 44px; } }
+.xw-more { font-size: 13px; margin: 8px 0 0; }
+@media (pointer: coarse) { .xw-more a { display: inline-flex; align-items: center; min-height: 44px; } }
+
+/* Overview jumps and phone density (UAT 2026-11-18). */
+#ops-h, #xw-h, #tg-h { scroll-margin-top: 60px; }
+@media (max-width: 1060px) { #ops-h, #xw-h, #tg-h { scroll-margin-top: 104px; } }
+#panel-overview > .jump-row { margin: 0 0 12px; }
+@media (max-width: 640px) {
+  .ot-gist { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+  .masthead-fresh .mh-next { display: block; max-width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+}
+.filing-brief { margin: 0 0 14px; }
+.now-grid + section .now-h, .now-grid + section > .now-h { margin-top: 22px; }

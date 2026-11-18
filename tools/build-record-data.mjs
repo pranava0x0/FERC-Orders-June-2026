@@ -83,6 +83,10 @@ export function build() {
   };
   let readings = 0, points = 0;
   const pointsBySlug = new Map();
+  // Points a respondent tagged with a June-order reform category, for the Overview crosswalk
+  // (ANOPR principle -> June directive -> what each operator filed). The order item comes from the
+  // reading's own order anchors, so a filing counts for E-7 to E-12 only if its reading says it answers one.
+  const answers = [];
   for (const c of catalog) {
     if (c.parent || /^e-\d+-/.test(c.slug)) continue;
     const cur = curated.get(c.slug) || {};
@@ -101,8 +105,11 @@ export function build() {
       url: c.url || null,
       ...(r ? { summary: r.summary, ask: r.ask ?? null, npoints: r.points.length, link: r.throughLine, themes: r.themes, ...(r.figures?.length ? { figures: r.figures } : {}) } : {}),
     };
-    byId.get(groupOf(c)).docs.push(doc);
+    const gid = groupOf(c);
+    byId.get(gid).docs.push(doc);
     if (r) pointsBySlug.set(c.slug, r.points);
+    const order = r && r.throughLine.anchors.map((a) => anchorIndex.get(a)).find((a) => /^E-(7|8|9|10|11|12)$/.test(a.item));
+    if (order) r.points.forEach((p, i) => { if (p.reform) answers.push({ item: order.item, rto: order.rto, reform: p.reform, slug: c.slug, group: gid, filer: doc.filer, date: doc.date, docket: c.docket, n: i + 1, point: p.point, quote: p.quote, pg: p.pg ?? null }); });
   }
   const order = proceedings.map((g) => g.id);
   const groups = [...byId.values()].filter((g) => g.docs.length).map((g) => {
@@ -126,7 +133,8 @@ export function build() {
 
   // Each proceeding's quoted points ship in their own file, fetched when the reader opens it.
   const pointFiles = Object.fromEntries(groups.map((g) => [g.id, Object.fromEntries(g.docs.filter((d) => pointsBySlug.has(d.slug)).map((d) => [d.slug, pointsBySlug.get(d.slug)]))]));
-  return { data: { asOf: filings.asOf, videosAsOf: chapters.asOf, themes, anchors, groups, videos }, pointFiles, stats: { readings, points } };
+  answers.sort((a, b) => (a.item === b.item ? (a.date < b.date ? 1 : a.date > b.date ? -1 : a.slug.localeCompare(b.slug) || a.n - b.n) : +a.item.slice(2) - +b.item.slice(2)));
+  return { data: { asOf: filings.asOf, videosAsOf: chapters.asOf, themes, anchors, groups, videos }, pointFiles, answers: { asOf: filings.asOf, answers }, stats: { readings, points } };
 }
 
 function render(data) {
@@ -143,10 +151,11 @@ function main() {
   const out = render(data);
   const pfDir = join(ROOT, "docs", "data", "filings");
   const pf = Object.entries(built.pointFiles).map(([id, v]) => [join(pfDir, id + ".json"), JSON.stringify(v) + "\n"]);
+  const ansFile = join(ROOT, "docs", "data", "answers.json"), ansText = JSON.stringify(built.answers) + "\n";
   if (process.argv.includes("--check")) {
     const want = new Set(pf.map(([f]) => f));
     const orphans = existsSync(pfDir) ? readdirSync(pfDir).filter((f) => !want.has(join(pfDir, f))) : [];
-    const same = existsSync(OUT) && readFileSync(OUT, "utf8") === out && pf.every(([f, t]) => existsSync(f) && readFileSync(f, "utf8") === t) && !orphans.length;
+    const same = existsSync(OUT) && readFileSync(OUT, "utf8") === out && pf.every(([f, t]) => existsSync(f) && readFileSync(f, "utf8") === t) && existsSync(ansFile) && readFileSync(ansFile, "utf8") === ansText && !orphans.length;
     if (orphans.length) console.error("✗ orphan point files: " + orphans.join(", "));
     console.log(same ? `✓ record-data.js is current (${data.groups.length} proceedings, ${data.videos.length} videos)` : "✗ record-data.js is stale: run node tools/build-record-data.mjs");
     process.exit(same ? 0 : 1);
@@ -154,6 +163,7 @@ function main() {
   writeFileSync(OUT, out);
   mkdirSync(pfDir, { recursive: true });
   for (const [f, t] of pf) writeFileSync(f, t);
+  writeFileSync(ansFile, ansText);
   for (const f of readdirSync(pfDir)) if (!pf.some(([p]) => p === join(pfDir, f))) unlinkSync(join(pfDir, f));
   const q = built.stats.points, docs = data.groups.reduce((n, g) => n + g.docs.length, 0);
   const vq = data.videos.reduce((n, v) => n + v.quotes.length, 0);

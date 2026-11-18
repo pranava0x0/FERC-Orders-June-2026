@@ -11,37 +11,44 @@
   {
    "point": "Large Load customers would make a minimum contribution to transmission revenue requirements, backed by shortfall payments and financial security.",
    "quote": "to make a minimum contribution towards transmission owners’ revenue requirements, along with a shortfall payment and crediting mechanism and financial security obligations",
-   "pg": 2
+   "pg": 2,
+   "reform": "cost"
   },
   {
    "point": "The committed contribution is 80% to 100% of a full firm transmission service benchmark.",
    "quote": "which percentage shall be no less than 80% and no greater than 100%",
-   "pg": 77
+   "pg": 77,
+   "reform": "cost"
   },
   {
    "point": "Initial credit support equals the projected charges on the full initial load commitment over the agreement’s term.",
    "quote": "equals the aggregate projected charges associated with 100 percent of the Initial Load Commitment over the CRA term",
-   "pg": 18
+   "pg": 18,
+   "reform": "cost"
   },
   {
    "point": "The cost recovery agreement runs at least ten years after the first service date.",
    "quote": "the date that is at least ten (10) years after the first Service Date as specified in Exhibit A",
-   "pg": 80
+   "pg": 80,
+   "reform": "cost"
   },
   {
    "point": "Owners may keep using existing or new customer protections instead of the pro forma agreement if FERC accepts them.",
    "quote": "as alternatives to the pro forma CRA, so long as those arrangements result in comparable protections and are accepted for filing by the Commission",
-   "pg": 2
+   "pg": 2,
+   "reform": "cost"
   },
   {
    "point": "Upgrade costs from Fast Energization go to the zones with large loads for 15 years, then to regional allocation.",
    "quote": "this allocation methodology will apply to each portfolio of IRRs identified through PJM’s Fast Energization Process for 15 years",
-   "pg": 3
+   "pg": 3,
+   "reform": "cost"
   },
   {
    "point": "Rates for the three new transmission services largely repeat those FERC approved in the co-location order.",
    "quote": "The rates for these services are largely identical to those proposed by the PJM Transmission Owners and approved by the Commission in the Co-Located Load Paper Hearing Order",
-   "pg": 3
+   "pg": 3,
+   "reform": "colo"
   },
   {
    "point": "The owners say FERC should accept their proposal whatever it decides on PJM’s companion filing.",

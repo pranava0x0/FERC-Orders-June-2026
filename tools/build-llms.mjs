@@ -30,7 +30,7 @@ export function buildLlmsTxt(D) {
   out.push(`> ${m.subtitle}`, "");
   const f = m.spotlight;
   out.push(`## ${f.title}`, "", f.answer, "");
-  for (const l of f.links) out.push(`- [${l.label}](${D.SOURCES[l.source].url}${l.page ? "#page=" + l.page : ""}) · [Page-cited positions](${SITE}#filings/${l.group}/${l.filer})`);
+  for (const l of f.links) out.push(`- [${l.label}](${D.SOURCES[l.source].url}${l.page ? "#page=" + l.page : ""}) · [Page-cited positions](${SITE}#filings/${l.group}/${l.doc})`);
   out.push("");
   out.push("## Questions in the filings", "");
   for (const s of m.readingLeads) out.push(`- [${s.title}](${SITE}${s.href}) ${s.text} [Source](${D.SOURCES[s.cite].url})`);
