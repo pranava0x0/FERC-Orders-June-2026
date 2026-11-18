@@ -100,10 +100,14 @@ export function build() {
       filer: (r && r.filer) || cur.filer || filerLabel(list) || (c.slug.startsWith("pjm-") ? "PJM" : /^S\. Hrg/.test(c.docket) ? "Senate Energy and Natural Resources Committee" : c.docket),
       ...(list.length > 2 ? { filers: list } : {}),
       kind: (r && r.kind) || cur.kind || c.kind, title: c.title, docket: c.docket, pages: c.pages ?? cur.pages ?? null,
-      ...(cur.side ? { side: cur.side } : {}),
+      // A curated side wins; otherwise a title that says "in support of" or "in opposition to" (or is a
+      // protest) states the side itself. Anything else stays unlabeled rather than guessed.
+      ...(cur.side ? { side: cur.side } : titleSide(c.title) ? { side: titleSide(c.title), sideFrom: "title" } : {}),
       ...(cur.pdfUrl || dm.source_url ? { pdfUrl: cur.pdfUrl || dm.source_url } : {}),
       url: c.url || null,
       ...(r ? { summary: r.summary, ask: r.ask ?? null, npoints: r.points.length, link: r.throughLine, themes: r.themes, ...(r.figures?.length ? { figures: r.figures } : {}) } : {}),
+      // Unread filings carry keyword matches from tools/index-filing-text.py, labeled as such.
+      ...(!r && c.textThemes?.length ? { themes: c.textThemes, themesFrom: "text" } : {}),
     };
     const gid = groupOf(c);
     byId.get(gid).docs.push(doc);
@@ -142,6 +146,14 @@ export function build() {
 function reformMatrix() {
   const f = join(ROOT, "sources", "filings", "reform-matrix.json");
   return existsSync(f) ? JSON.parse(readFileSync(f, "utf8")).cells : null;
+}
+
+function titleSide(t) {
+  // "Protest" counts only when the document is one ("Protest of…", "Comments and Limited Protest…"),
+  // not when it answers one ("Answer … to the Protest of …").
+  if (/\bin opposition to\b/i.test(t || "") || /^(?:(?:joint |limited )?protest|(?:comments|motion to intervene) and (?:limited )?protest)\b/i.test(t || "")) return "against";
+  if (/\bin support of\b/i.test(t || "")) return "for";
+  return null;
 }
 
 function render(data) {
