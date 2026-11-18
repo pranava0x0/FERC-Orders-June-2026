@@ -542,7 +542,7 @@
   function xwSummaryDots(key) {
     return '<span class="xw-dots">' + xwOrders().map(function (o) {
       var n = xwFor(o.item, key).length;
-      return '<span class="xw-dot' + (n ? " on" : "") + '" title="' + esc(o.rto + (n ? ": " + n + (n === 1 ? " point" : " points") + " quoted" : ": none quoted")) + '"><span class="xw-dot-l">' + esc(xwShort(o.rto)) + "</span></span>";
+      return '<span class="xw-dot' + (n ? " on" : "") + '" title="' + esc(o.rto + (n ? ": " + n + (n === 1 ? " point" : " points") + " quoted" : ": none quoted")) + '"><span class="xw-dot-l">' + esc(xwShort(o.rto)) + '</span><span class="sr-only">' + (n ? ", answered" : ", not quoted") + "</span></span>";
     }).join("") + "</span>";
   }
   function xwBody(c) {
@@ -560,9 +560,10 @@
       var answered = got.length ? got.slice(0, 2).map(function (a) {
         return '<div class="xw-a"><p class="xw-pt">' + esc(a.point) + '</p><blockquote class="xw-q">“' + esc(a.quote) + '” <a class="mono" href="reading/' + esc(a.slug) + "/text.html#p-" + (a.pg || 1) + '">' + esc(a.docket.replace(/-000$/, "")) + (a.pg ? " p. " + a.pg : "") + "</a></blockquote>" +
           '<a class="xw-open" href="#filings/' + esc(a.group) + "/" + esc(a.slug) + '">Open ' + esc(a.filer) + "’s filing</a></div>";
-      }).join("") + (more > 0 ? '<p class="xw-more"><a href="#filings/' + esc(got[2].group) + "/" + esc(got[2].slug) + '">' + more + (more === 1 ? " more point" : " more points") + " on this in " + esc(got[2].filer) + "’s filing</a></p>" : "")
+      }).join("") + (more > 0 ? '<p class="xw-more"><a href="#filings/' + esc(got[2].group) + "/" + esc(got[2].slug) + '">' + more + (more === 1 ? " more point" : " more points") +
+        (got.slice(2).every(function (a) { return a.slug === got[2].slug; }) ? " on this in " + esc(got[2].filer) + "’s filing" : " on this in its filings") + "</a></p>" : "")
         : '<p class="xw-none">' + (cell.status === "filed-verified" ? "None of the points read from its filing names this reform." : "No filing yet" + (o.abeyance && o.abeyance.due ? "; due " + esc(fmtISO(o.abeyance.due).replace(/, \d{4}$/, "")) : "") + ".") + "</p>";
-      return '<div class="xw-row"><h4 class="xw-rto"><a href="#dockets/' + esc(docketKey(o.docket)) + '">' + esc(o.rto) + '</a> <span class="mono">' + esc(o.item) + "</span></h4>" +
+      return '<div class="xw-row"><h3 class="xw-rto"><a href="#dockets/' + esc(docketKey(o.docket)) + '">' + esc(o.rto) + '</a> <span class="mono">' + esc(o.item) + "</span></h3>" +
         '<div class="xw-asked"><p class="xw-step"><span class="xw-n">2</span> June order</p>' + asked + "</div>" +
         '<div class="xw-ans"><p class="xw-step"><span class="xw-n">3</span> Filed</p>' + answered + "</div></div>";
     }).join("");

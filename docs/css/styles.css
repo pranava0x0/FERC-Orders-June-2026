@@ -1528,4 +1528,3 @@ details.tl-item .srcs { padding: 0 0 10px 128px; }
   .masthead-fresh .mh-next { display: block; max-width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 }
 .filing-brief { margin: 0 0 14px; }
-.now-grid + section .now-h, .now-grid + section > .now-h { margin-top: 22px; }
