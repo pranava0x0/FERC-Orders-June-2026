@@ -375,7 +375,7 @@
    ],
    "flex": [
     {
-     "t": "Interim Contract Demand Service up to 7 years, or until upgrades are in service",
+     "t": "Interim Contract Demand Service for up to 7 years, or longer if the upgrades take longer",
      "slug": "filing-er27-484-isone-large-loads",
      "pg": 27,
      "quote": "Interim Contract Demand Service shall be available for a term of no more than seven years, or the length of time required to place the required Large Load Network Upgrades in-service, whichever is longer"
@@ -480,11 +480,11 @@
      "quote": "Non-Firm Withdrawal Service would be curtailed when the applicable nodal Locational- Based Marginal Price (“LBMP”) for a Large Load reaches $200 MW/h"
     },
     {
-     "t": "Non-firm curtailment limited to thermal and resource adequacy constraints",
+     "t": "Non-firm offered only where thermal or resource adequacy limits rule out firm service",
      "by": "NY TOs",
      "slug": "rec-20261116-5335",
-     "pg": 3,
-     "quote": "limit Non-Firm Withdrawal Service to thermal and resource adequacy constraints"
+     "pg": 27,
+     "quote": "Non-Firm Transmission Withdrawal Service may be offered only where thermal transmission constraints on Business Management System-secured facilities under N-1 and N-1-1 conditions, and/or resource adequacy violations, prevent the offering of Firm Transmission Withdrawal Service"
     }
    ],
    "proximate": [
