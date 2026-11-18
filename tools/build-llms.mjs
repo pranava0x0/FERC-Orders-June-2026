@@ -11,7 +11,7 @@ import vm from "node:vm";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, "..");
-const SITE = "https://pranava0x0.github.io/FERC-Orders-June-2026/";
+const SITE = "https://pranava0x0.github.io/ferc-large-load-proceedings/";
 const LEAN = { right: "right of center", left: "left of center", nonpartisan: "nonpartisan" };
 
 export function loadData() {

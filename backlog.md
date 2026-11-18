@@ -594,7 +594,7 @@ Recommended next steps, in order:
   built because it adds site architecture and deserves a design decision, not a late-session sprint.
 
 - **done (2026-07-28)** — **Google Search Console: property created, verified, sitemap submitted.**
-  Property is the URL-prefix `https://pranava0x0.github.io/FERC-Orders-June-2026/`, verified by HTML
+  Property is the URL-prefix `https://pranava0x0.github.io/ferc-large-load-proceedings/`, verified by HTML
   file with the meta tag as a second method. `sitemap.xml` submitted (15 URLs) and the homepage sent to
   the priority crawl queue via URL inspection. Baseline worth remembering: before this, URL inspection
   reported **"URL is not on Google"** and "no referring sitemaps detected" — the site had never been
@@ -607,7 +607,7 @@ Recommended next steps, in order:
   un-verifies the property and reporting just stops.
 
 - **MEDIUM (2026-07-28)** — **`robots.txt` on a Pages project site is at the wrong path.** It is
-  served at `/FERC-Orders-June-2026/robots.txt`, but crawlers read `pranava0x0.github.io/robots.txt`
+  served at `/ferc-large-load-proceedings/robots.txt`, but crawlers read `pranava0x0.github.io/robots.txt`
   (the user-site root), which this repo does not control. The file documents intent and the `<meta
   name="robots">` tag does the actual work, so nothing is broken; worth knowing that the `Sitemap:`
   line in it is largely decorative. Submitting the sitemap directly in Google Search Console is the

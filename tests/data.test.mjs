@@ -651,7 +651,7 @@ test("SEO + accessibility essentials are present in the deployed shell", () => {
   // robots.txt + sitemap.xml
   assert.ok(existsSync(join(docs, "robots.txt")), "robots.txt present");
   assert.match(readFileSync(join(docs, "robots.txt"), "utf8"), /Sitemap:/, "robots.txt references the sitemap");
-  assert.match(readFileSync(join(docs, "sitemap.xml"), "utf8"), /pranava0x0\.github\.io\/FERC-Orders-June-2026/, "sitemap uses the canonical host");
+  assert.match(readFileSync(join(docs, "sitemap.xml"), "utf8"), /pranava0x0\.github\.io\/ferc-large-load-proceedings/, "sitemap uses the canonical host");
   // The lazy comment-detail cache key must track the deployed app.js token. It used to be a hardcoded
   // literal kept in sync by hand; the tokens are content hashes now, so a literal could not hold
   // app.js's own hash without being circular. It reads its own <script src> instead, which cannot drift.
@@ -1109,7 +1109,7 @@ test("each docket page is unique, self-canonical, and substantial", () => {
     titles.add(title);
     descs.add(desc);
 
-    assert.ok(html.includes(`<link rel="canonical" href="https://pranava0x0.github.io/FERC-Orders-June-2026/dockets/${slug}/" />`),
+    assert.ok(html.includes(`<link rel="canonical" href="https://pranava0x0.github.io/ferc-large-load-proceedings/dockets/${slug}/" />`),
       `${slug} canonical points at itself`);
     assert.ok(html.includes(d.docket), `${slug} names its docket number`);
     assert.ok(html.includes(`../../${d.pdf}`), `${slug} links its committed order PDF`);
@@ -1139,7 +1139,7 @@ test("docket pages quote only text the order corpus actually carries", () => {
 test("the sitemap lists every page, and every listed page exists", () => {
   const xml = readFileSync(join(here, "..", "docs", "sitemap.xml"), "utf8");
   const locs = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
-  const SITE = "https://pranava0x0.github.io/FERC-Orders-June-2026/";
+  const SITE = "https://pranava0x0.github.io/ferc-large-load-proceedings/";
   assert.ok(locs.includes(SITE), "root URL is listed");
   for (const d of allDockets(D)) {
     assert.ok(locs.includes(`${SITE}dockets/${slugFor(d)}/`), `${slugFor(d)} is in the sitemap`);

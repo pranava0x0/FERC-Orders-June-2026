@@ -274,7 +274,7 @@ FINISH: update REFRESH.md (queue, When-to-run table, Learned), issues.md and age
 ## Search Console
 
 The site is a verified URL-prefix property at
-`https://pranava0x0.github.io/FERC-Orders-June-2026/` (Google account: the repo owner's).
+`https://pranava0x0.github.io/ferc-large-load-proceedings/` (Google account: the repo owner's).
 `sitemap.xml` is submitted and regenerates from `data.js`, so a refresh that adds pages needs no
 resubmission; Google re-reads the same URL.
 

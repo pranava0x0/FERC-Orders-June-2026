@@ -8,7 +8,7 @@ import {loadData} from './build-seo.mjs';
 const root=join(dirname(fileURLToPath(import.meta.url)),'..'), out=join(root,'docs/reading');
 const read=p=>JSON.parse(readFileSync(p,'utf8')), seed=f=>read(join(root,'sources/filings',f));
 const catalog=read(join(out,'catalog.json')), groups=seed('tenets.json').groups;
-const SITE='https://pranava0x0.github.io/FERC-Orders-June-2026/reading/';
+const SITE='https://pranava0x0.github.io/ferc-large-load-proceedings/reading/';
 const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const norm=s=>s.normalize('NFKC').toLowerCase().replace(/[^\p{L}\p{N}]/gu,'');
 const slug=s=>s.normalize('NFKD').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
@@ -27,7 +27,7 @@ const css=readFileSync(join(root,'docs/css/reading.css'));
 const ver=createHash('sha256').update(css).digest('hex').slice(0,10);
 function frame(title,desc,content,sub='',extra=''){
   const url=SITE+sub,b=sub.includes('/')?'../../':'../';
-  return '<!doctype html>\n<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>'+esc(title)+' | Large Load Interconnection</title><meta name="description" content="'+esc(desc)+'"><link rel="canonical" href="'+esc(url)+'"><meta property="og:title" content="'+esc(title)+'"><meta property="og:description" content="'+esc(desc)+'"><link rel="stylesheet" href="'+b+'css/reading.css?v='+ver+'">'+extra+'</head><body><a class="skip" href="#main">Skip to content</a><header><nav aria-label="Site"><a href="'+b+'">Large Load Interconnection</a><a href="'+b+'#filings">Filings</a><a href="'+(sub.includes('/')?'../':'./')+'">Reading room</a></nav></header><main id="main">'+content+'</main><footer>Independent analysis of public records. <a href="https://pranavaraparla.com" target="_blank" rel="noopener noreferrer">Pranava Raparla</a> · <a href="https://github.com/pranava0x0/FERC-Orders-June-2026" target="_blank" rel="noopener noreferrer">Source repository</a></footer></body></html>\n';
+  return '<!doctype html>\n<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>'+esc(title)+' | Large Load Interconnection</title><meta name="description" content="'+esc(desc)+'"><link rel="canonical" href="'+esc(url)+'"><meta property="og:title" content="'+esc(title)+'"><meta property="og:description" content="'+esc(desc)+'"><link rel="stylesheet" href="'+b+'css/reading.css?v='+ver+'">'+extra+'</head><body><a class="skip" href="#main">Skip to content</a><header><nav aria-label="Site"><a href="'+b+'">Large Load Interconnection</a><a href="'+b+'#filings">Filings</a><a href="'+(sub.includes('/')?'../':'./')+'">Reading room</a></nav></header><main id="main">'+content+'</main><footer>Independent analysis of public records. <a href="https://pranavaraparla.com" target="_blank" rel="noopener noreferrer">Pranava Raparla</a> · <a href="https://github.com/pranava0x0/ferc-large-load-proceedings" target="_blank" rel="noopener noreferrer">Source repository</a></footer></body></html>\n';
 }
 const topics=[
  ['Cost allocation',/\bcost (?:allocation|causation|shift)|\bratepayers?|\bRBP Charges?\b|network upgrade costs?/gi],
@@ -125,7 +125,7 @@ for(const r of catalog){
  }).join('');
  const links=catalog.filter(x=>x.parent===r.slug);
  const evidenceHeading=curated.length?'What the document says':'Passages from the original';
- const raw='https://github.com/pranava0x0/FERC-Orders-June-2026/blob/main/'+r.file.split('/').map(encodeURIComponent).join('/');
+ const raw='https://github.com/pranava0x0/ferc-large-load-proceedings/blob/main/'+r.file.split('/').map(encodeURIComponent).join('/');
  const description=short(curated[0]?.take||curated[0]?.title||r.title);
  const summary='<p class="meta">'+esc(r.docket)+' · '+esc(r.issued)+(r.filer?' · '+esc(r.filer):'')+'</p><h1>'+esc(r.title)+'</h1>';
  const sourceNav='<nav class="tools" aria-label="Source material"><a href="'+esc(r.url)+'">Official source</a><a href="'+raw+'">Archived original</a><a href="text.html">Full text</a><a href="source.json">Page data (JSON)</a></nav>';

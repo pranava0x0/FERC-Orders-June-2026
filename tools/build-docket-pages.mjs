@@ -18,7 +18,7 @@ import vm from "node:vm";
 import { stampAssets } from "./stamp-assets.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
-const SITE = "https://pranava0x0.github.io/FERC-Orders-June-2026/";
+const SITE = "https://pranava0x0.github.io/ferc-large-load-proceedings/";
 
 export function loadData(root = ROOT) {
   const ctx = { window: {} };
@@ -289,7 +289,7 @@ ${commentSection}${briefPage ? `\n    <h2>Section IV briefing questions</h2>\n  
   <footer role="contentinfo" class="footer">
     <div class="wrap footer-inner">
       <p><strong>Not affiliated with FERC or DOE.</strong> An independent analysis of public documents by <a href="https://pranavaraparla.com" target="_blank" rel="noopener noreferrer">Pranava Raparla</a> (<a href="https://pranavaraparla.com" target="_blank" rel="noopener noreferrer">pranavaraparla.com</a>). Primary sources are linked inline; consult the official orders in FERC eLibrary for any citation of record.</p>
-      <p class="footer-meta mono">Order record as of ${esc(D.meta.capture)}${D.meta.newsCapture ? ` · news and filings swept ${esc(D.meta.newsCapture)}` : ""} · Static site, zero dependencies · <a href="https://github.com/pranava0x0/FERC-Orders-June-2026" target="_blank" rel="noopener noreferrer">Source on GitHub</a></p>
+      <p class="footer-meta mono">Order record as of ${esc(D.meta.capture)}${D.meta.newsCapture ? ` · news and filings swept ${esc(D.meta.newsCapture)}` : ""} · Static site, zero dependencies · <a href="https://github.com/pranava0x0/ferc-large-load-proceedings" target="_blank" rel="noopener noreferrer">Source on GitHub</a></p>
     </div>
   </footer>
 </body>
