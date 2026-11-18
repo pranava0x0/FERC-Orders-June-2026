@@ -1929,8 +1929,9 @@
         '<span class="fc-l">' + esc(r.f.label) + '</span><span class="fc-bar"><span style="width:' + Math.max(1.5, 100 * c.mw / max).toFixed(1) + '%"></span></span>' +
         '<span class="fc-v mono">' + v + '</span><span class="fc-n">' + docs.length + (docs.length === 1 ? " filing" : " filings") + "</span></a></li>";
     }).join("");
-    return accSection("The numbers the filings cite", "Capacity figures of 1,000 MW or more stated in the documents, each verified on its page.",
-      '<ol class="fc">' + bars + "</ol>", false, clusters.length);
+    // A subtab of its own, so no disclosure: the list shows as soon as the tab opens.
+    return '<section class="fc-sec" aria-labelledby="fc-h"><h2 class="now-h" id="fc-h">Megawatts in the filings</h2>' +
+      '<p class="lede">Figures of 1,000 MW or more, each checked on its page.</p><ol class="fc">' + bars + "</ol></section>";
   }
   function pointItems(d, points) {
     return points.map(function (p) {
@@ -2383,7 +2384,7 @@
       ["reforms", "By reform", ".xw"], ["background", "Background", "details.acc"]],
     dockets: [["june", "June 18 orders", "#reforms-h"], ["reforms", "Five reforms", "details.acc"], ["dockets", "Dockets", ".section-head", 1], ["follow", "File or follow", ".section-head", 2]],
     filings: [["pjm", "PJM", ".fg-mkt[data-mkt=pjm]"], ["miso", "MISO", ".fg-mkt[data-mkt=miso]"], ["spp", "SPP", ".fg-mkt[data-mkt=spp]"], ["caiso", "CAISO", ".fg-mkt[data-mkt=caiso]"],
-      ["isone", "ISO-NE", ".fg-mkt[data-mkt=isone]"], ["nyiso", "NYISO", ".fg-mkt[data-mkt=nyiso]"], ["other", "Other", ".fg-mkt[data-mkt=other]"], ["numbers", "Numbers cited", "details.acc"]],
+      ["isone", "ISO-NE", ".fg-mkt[data-mkt=isone]"], ["nyiso", "NYISO", ".fg-mkt[data-mkt=nyiso]"], ["other", "Other", ".fg-mkt[data-mkt=other]"], ["mw", "Megawatts", ".fc-sec"]],
     timeline: [["ahead", "Ahead", ".tl-sec", 0], ["sofar", "So far", "#tl-latest"], ["background", "Background", "details.acc"]],
     commissioners: [["appearances", "Appearances", "section#appears"], ["june", "June 18 statements", "#commish-h"]]
   };
