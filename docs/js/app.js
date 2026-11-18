@@ -772,6 +772,10 @@
         b.setAttribute("aria-pressed", on ? "true" : "false");
         b.classList.toggle("is-active", on);
       });
+      // A track with nothing ahead (or nothing past) must not leave the open subtab empty.
+      var shown = function (k) { var pn = document.getElementById("stp-timeline-" + k); return pn ? pn.querySelectorAll(".tl-item:not([hidden])").length : 0; };
+      var cur = subtabPick.timeline || "ahead";
+      if ((cur === "ahead" || cur === "sofar") && !shown(cur)) { var other = cur === "ahead" ? "sofar" : "ahead"; if (shown(other)) pickSubtab("timeline", other); }
       var live = panel.querySelector("#tl-filterstatus");
       if (live) {
         var n = panel.querySelectorAll(".tl-item:not([hidden])").length;
@@ -1826,7 +1830,7 @@
   function themeLabel(R, k) { var t = (R.themes || []).filter(function (x) { return x.key === k; })[0]; return t ? t.label : k; }
   // FERC's document type says what form a filing takes, not what it does. Readers see what it does.
   var KIND_ROLE = {
-    "answer": "Replies to another filing", "answer supporting extension": "Supports a delay", "reply letter": "Replies to another filing",
+    "answer": "Answer", "answer supporting extension": "Supports a delay", "reply letter": "Replies to another filing",
     "motion": "Procedural motion", "motion for abeyance": "Asks FERC to pause the case", "conditional motion for abeyance": "Asks FERC to pause the case, conditionally",
     "motion to rescind": "Asks FERC to withdraw the order", "motion for extension of time": "Asks for more time",
     "request": "Asks FERC for a fix", "rehearing request": "Asks FERC to reconsider", "request for rehearing": "Asks FERC to reconsider",
@@ -1835,7 +1839,20 @@
     "compliance filing": "Complies with an order", "order": "FERC order", "errata": "Correction", "informational report": "Report to FERC",
     "congressional letter": "Letter from Congress"
   };
-  function kindRole(k) { return KIND_ROLE[k] || (k ? k.charAt(0).toUpperCase() + k.slice(1) : ""); }
+  // An answer can respond to FERC's order or to another party; the type alone does not say which, so read
+  // the document's own title and summary, and fall back to the neutral "Answer".
+  function kindRole(k, d) {
+    if (k === "answer" && d) {
+      // Read the title first: it names what the answer responds to. "Motion for Leave to Answer and" is procedure.
+      var title = (d.title || "").replace(/^motion for leave to answer and (?:second )?/i, "");
+      var reply = /\b(?:to|on|in response to|responding to|in support of|answers?)\b.{0,140}?\b(?:answers?|motions?|protests?|comments|requests?|complaint|responses?|filings?)\b/i;
+      var order = /(?:order to show cause|show cause order|order instituting (?:the )?proceeding|in response to the order)/i;
+      if (reply.test(title)) return "Replies to another filing";
+      if (order.test(title)) return "Answers FERC’s order";
+      if (order.test(d.summary || "")) return "Answers FERC’s order";
+    }
+    return KIND_ROLE[k] || (k ? k.charAt(0).toUpperCase() + k.slice(1) : "");
+  }
   function docCard(R, g, d) {
     var body = d.summary
       ? '<p class="fd-sum">' + esc(d.summary) + "</p>" +
@@ -1846,7 +1863,7 @@
     var tags = (d.themes || []).map(function (t) { return '<span class="tag">' + esc(themeLabel(R, t)) + "</span>"; }).join("");
     var hay = [d.filer, (d.filers || []).join(" "), d.kind, d.title, d.docket, d.accession, g.title, g.short, d.summary].join(" ").toLowerCase();
     return '<details class="fdoc" id="fd-' + esc(d.slug) + '" data-themes="' + esc((d.themes || []).join(" ")) + '" data-q="' + esc(hay) + '"><summary>' +
-      '<span class="fd-date mono">' + esc(fmtISO(d.date)) + '</span><span class="fd-who">' + esc(d.filer) + '</span><span class="fd-kind">' + esc(kindRole(d.kind)) +
+      '<span class="fd-date mono">' + esc(fmtISO(d.date)) + '</span><span class="fd-who">' + esc(d.filer) + '</span><span class="fd-kind">' + esc(kindRole(d.kind, d)) +
       (d.side ? ' · <span class="side-tag side-' + esc(d.side) + '">' + esc(SIDE_LABEL[d.side] || d.side) + "</span>" : "") + "</span>" +
       (d.summary ? '<span class="fd-tease">' + esc(d.summary) + "</span>" : '<span class="fd-unread">not yet read</span>') + "</summary>" +
       '<div class="fd-body">' + body + '<p class="fd-tools">' + tags +
@@ -1934,7 +1951,7 @@
     all.sort(function (a, b) { return a.d.date < b.d.date ? 1 : a.d.date > b.d.date ? -1 : 0; });
     var newest = all.length ? '<section class="fl" aria-labelledby="fl-h"><h3 class="fg-sec" id="fl-h">Newest documents</h3><ol class="fl-list">' + all.slice(0, FL_MAX).map(function (x) {
       return '<li><a href="#filings/' + esc(x.g.id) + "/" + esc(x.d.slug) + '"><span class="fl-date mono">' + esc(fmtISO(x.d.date).replace(/, \d{4}$/, "")) + '</span><span class="fl-who">' + esc(x.d.filer) +
-        '</span><span class="fl-what">' + esc(kindRole(x.d.kind)) + " · " + esc(x.g.short || x.g.title) + "</span></a></li>";
+        '</span><span class="fl-what">' + esc(kindRole(x.d.kind, x.d)) + " · " + esc(x.g.short || x.g.title) + "</span></a></li>";
     }).join("") + "</ol></section>" : "";
     var group = function (g) {
       return '<details class="fgroup" id="fg-' + esc(g.id) + '"><summary class="fg-sum"><span class="fg-h" role="heading" aria-level="3">' + esc(g.title) +
