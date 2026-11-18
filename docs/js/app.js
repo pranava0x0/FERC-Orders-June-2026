@@ -2122,7 +2122,8 @@
       if (!active) pickSubtab("filings", subtabPick.filings || SUBTABS.filings[0][0]);
     }
     // A chip's number is what tapping it would show, so it counts against the typed query.
-    var docs = [].slice.call(panel.querySelectorAll(".fdoc")).filter(function (d) { return !q || d.getAttribute("data-q").indexOf(q) >= 0; });
+    // Same word-by-word test as the filter above, so a count never disagrees with what the chip shows.
+    var docs = [].slice.call(panel.querySelectorAll(".fdoc")).filter(function (d) { return words.every(function (w) { return d.getAttribute("data-q").indexOf(w) >= 0; }); });
     var hasTheme = function (d, k) { return (" " + d.getAttribute("data-themes") + " ").indexOf(" " + k + " ") >= 0; };
     panel.querySelectorAll(".th-chips .who-chip").forEach(function (c) {
       var k = c.getAttribute("data-theme"), num = c.querySelector(".mono");
