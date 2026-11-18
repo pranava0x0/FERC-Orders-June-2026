@@ -597,14 +597,23 @@
     }).join("");
     if (xwPending) { var k = xwPending; xwPending = null; openAt("xw-" + k); }
   }
+  document.addEventListener("click", function (ev) {
+    var b = ev.target.closest && ev.target.closest(".xw-retry");
+    if (!b) return;
+    document.querySelectorAll(".xw-compare, #xwalk").forEach(function (el) { el.innerHTML = '<p class="cm-loading" role="status">Loading the comparison…</p>'; });
+    loadCrosswalk();
+  });
   function loadCrosswalk() {
     if (xwAnswers) { renderCrosswalk(); return; }
     fetch("data/answers.json?v=" + ASSET_VER).then(function (r) { if (!r.ok) throw Error(r.status); return r.json(); }).then(function (j) {
       xwAnswers = j.answers || []; xwMatrix = j.matrix || null; renderCrosswalk();
     }).catch(function (err) {
       console.error("answers.json failed to load", err);
+      // Every place that waits on this file hears about the failure and can try again.
+      var msg = '<p class="xw-none" role="status">The comparison did not load. <button type="button" class="xw-retry">Try again</button></p>';
       var host = document.getElementById("xwalk");
-      if (host) host.innerHTML = '<p class="xw-none" role="status">The comparison did not load. <a href="#dockets">The orders, by reform</a> and <a href="#filings">every filing</a> still work.</p>';
+      if (host) host.innerHTML = msg;
+      document.querySelectorAll(".xw-compare").forEach(function (el) { el.innerHTML = msg; });
     });
   }
 
