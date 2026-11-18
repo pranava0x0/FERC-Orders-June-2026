@@ -1977,7 +1977,7 @@
       '<h3 class="fg-sec">Related proceedings</h3>' + rel.map(group).join("") +
       '<p class="fg-none" hidden>No document matches. Clear the filter to see every proceeding.</p>' +
       figureChart(R) +
-      '<p class="reader-entry"><a href="reading/">All documents in the reading room</a></p>';
+      '<p class="reader-entry"><a href="reading/">Full document list</a></p>';
   }
   var FL_MAX = 6;          // "Newest documents" rows
   var FQ_MIN = 2;          // a one-letter query matches nearly every document
