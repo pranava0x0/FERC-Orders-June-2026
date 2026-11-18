@@ -5335,6 +5335,45 @@
   ]
  },
  {
+  "accession": "20260817-5124",
+  "dockets": [
+   "ER26-3531-000"
+  ],
+  "filed": "2026-08-17",
+  "filer": "Midcontinent Independent System Operator, Inc.American Transmission Company LLC",
+  "description": "American Transmission Company LLC submits tariff filing per 35.13(a)(2)(iii: 2026-08-17_Revisions to Attachment FF-ATCLLC re: Show Cause Order to be effective 10/17/2026 under ER26-3531 Filing Type : 10",
+  "title": "2026-08-17_Revisions to Attachment FF-ATCLLC re: Show Cause Order",
+  "kind": "tariff filing",
+  "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20260817-5124",
+  "files": [
+   {
+    "label": "Transmittal Letter ATCLLC Attachment FF.pdf",
+    "bytes": 359541,
+    "sha256": "ec2836d68aebaf23789dbd9921259996d34c8000d258dadb452d6f89abef070d",
+    "text": "sources/filings/text/20260817-5124_001.txt",
+    "pages": 20
+   },
+   {
+    "label": "Tab A - Redline Tariff ATCLLC.pdf",
+    "bytes": 355691,
+    "sha256": "ad9468cc83847f4a58db977377da3dea44defc4d15a04f80ef7d9bac30f7a5d5",
+    "skipped": "tariff sheet or service list; read it on eLibrary"
+   },
+   {
+    "label": "Tab B - Clean Tariff ATCLLC.pdf",
+    "bytes": 244363,
+    "sha256": "6c38777f9d15145f76d8057ed6d669d4f9206bf4c66498607d6c4b35d3eb454f",
+    "skipped": "tariff sheet or service list; read it on eLibrary"
+   },
+   {
+    "label": "FERC GENERATED TARIFF FILING.PDF",
+    "bytes": 415220,
+    "sha256": "7b91790e28ac1679d17496d06e953c36a56bdf87ddb57fa3eea1df9f47a76378",
+    "skipped": "tariff sheet or service list; read it on eLibrary"
+   }
+  ]
+ },
+ {
   "accession": "20260818-5146",
   "dockets": [
    "EL25-49-000",
@@ -8875,6 +8914,27 @@
   ]
  },
  {
+  "accession": "20260908-5320",
+  "dockets": [
+   "ER26-3531-000"
+  ],
+  "filed": "2026-09-08",
+  "filer": "Microsoft Corporation",
+  "description": "Protest of Microsoft Corporation re American Transmission Company LLC's 08/17/2026 tariff filing under ER26-3531.",
+  "title": "Protest of Microsoft Corporation re American Transmission Company LLC's 08/17/2026 tariff filing",
+  "kind": "protest",
+  "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20260908-5320",
+  "files": [
+   {
+    "label": "Protest of Microsoft Corporation (ER26-3531).pdf",
+    "bytes": 224022,
+    "sha256": "3fc2c3cd0ae41f8e4dee85822733f9c755e6608b691ac4e9c6a583bcd5354d7f",
+    "text": "sources/filings/text/20260908-5320_001.txt",
+    "pages": 14
+   }
+  ]
+ },
+ {
   "accession": "20260908-5321",
   "dockets": [
    "ER26-3552-000"
@@ -8958,6 +9018,27 @@
     "sha256": "d560b04146f87179e8934188cc2d0929b4370ccacc8cbf11229b821820d99adf",
     "text": "sources/filings/text/20260908-5332_001.txt",
     "pages": null
+   }
+  ]
+ },
+ {
+  "accession": "20260908-5340",
+  "dockets": [
+   "ER26-3531-000"
+  ],
+  "filed": "2026-09-08",
+  "filer": "Midcontinent Independent System Operator Inc.",
+  "description": "Comments and Protest of Midcontinent Independent System Operator Inc. in response to American Transmission Company LLC’s tariff filing under ER26-3531.",
+  "title": "Comments and Protest of Midcontinent Independent System Operator Inc. in response to American Transmission Company LLC’s tariff filing",
+  "kind": "protest",
+  "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20260908-5340",
+  "files": [
+   {
+    "label": "MISO Comments and Limited Protest ER26-3531-000.pdf",
+    "bytes": 254013,
+    "sha256": "3a3f1a71e476fb80c39f45146f570869ea28488de106a08a16da8f1696c179f5",
+    "text": "sources/filings/text/20260908-5340_001.txt",
+    "pages": 16
    }
   ]
  },
@@ -9404,6 +9485,27 @@
   ]
  },
  {
+  "accession": "20260923-5140",
+  "dockets": [
+   "ER26-3531-000"
+  ],
+  "filed": "2026-09-23",
+  "filer": "American Transmission Company LLC (ATC)",
+  "description": "Motion for Leave to Answer and Answer of American Transmission Company LLC to the Comments and Protests filed by Midcontinent Independent System Operator, Inc. and Microsoft Corporation under ER26-3531.",
+  "title": "Motion for Leave to Answer and Answer of American Transmission Company LLC to the Comments and Protests filed by Midcontinent Independent System Operator,…",
+  "kind": "protest",
+  "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20260923-5140",
+  "files": [
+   {
+    "label": "AnswertoProtestsandComments ER26-3531 4908-3292-7699 v.5.pdf",
+    "bytes": 258428,
+    "sha256": "8df4a6d529fbdc08a97ead70b06d9336332b8f854675d5c8f88c3b3f8a83f5d4",
+    "text": "sources/filings/text/20260923-5140_001.txt",
+    "pages": 17
+   }
+  ]
+ },
+ {
   "accession": "20260923-5148",
   "dockets": [
    "ER26-3552-000"
@@ -9797,6 +9899,48 @@
   ]
  },
  {
+  "accession": "20261009-5158",
+  "dockets": [
+   "ER26-3531-000"
+  ],
+  "filed": "2026-10-09",
+  "filer": "Midcontinent Independent System Operator Inc.",
+  "description": "Motion for Leave to Answer and Answer of Midcontinent Independent System Operator Inc. to the Motion for Leave to Answer and Answer filed by American Transmission Company LLC under ER26-3531.",
+  "title": "Motion for Leave to Answer and Answer of Midcontinent Independent System Operator Inc. to the Motion for Leave to Answer and Answer filed by American…",
+  "kind": "answer",
+  "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261009-5158",
+  "files": [
+   {
+    "label": "MISO Answer to ATC Answer ER26-3531.pdf",
+    "bytes": 250104,
+    "sha256": "028d6af855e5b390d42fea0928244243434bf1993b0e90d1537fc7f07e7d6401",
+    "text": "sources/filings/text/20261009-5158_001.txt",
+    "pages": 10
+   }
+  ]
+ },
+ {
+  "accession": "20261013-5331",
+  "dockets": [
+   "ER26-3531-000"
+  ],
+  "filed": "2026-10-13",
+  "filer": "American Transmission Company LLC",
+  "description": "Motion for Reply and Reply of American Transmission Company LLC to Midcontinent Independent System Operator, Inc.'s 10/09/2026 Motion for Leave to Answer and Answer under ER26-3531.",
+  "title": "Motion for Reply and Reply of American Transmission Company LLC to Midcontinent Independent System Operator, Inc.'s 10/09/2026 Motion for Leave to Answer…",
+  "kind": "answer",
+  "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261013-5331",
+  "files": [
+   {
+    "label": "ATC LLC Reply ER26-3531.pdf",
+    "bytes": 215171,
+    "sha256": "6d12a7ea519a9f93a9e91b608627f03d9b4499e3d63d703a351cb97999495f2b",
+    "text": "sources/filings/text/20261013-5331_001.txt",
+    "pages": 10
+   }
+  ]
+ },
+ {
   "accession": "20261014-5184",
   "dockets": [
    "EL26-108-000",
@@ -9815,6 +9959,27 @@
     "sha256": "06909a8a38c1bce592d4646532e418cc9c69d20e77e96629645cddf061c4fbe1",
     "text": "sources/filings/text/20261014-5184_001.txt",
     "pages": 3
+   }
+  ]
+ },
+ {
+  "accession": "20261015-3058",
+  "dockets": [
+   "ER26-3531-000"
+  ],
+  "filed": "2026-10-15",
+  "filer": "OFFICE OF ENERGY MARKET REGULATION",
+  "description": "Letter informing American Transmission Company LLC that the 08/17/2026 filing is deficient and requesting additional information within 60 days under ER26-3531.",
+  "title": "Letter informing American Transmission Company LLC that the 08/17/2026 filing is deficient and requesting additional information within 60 days",
+  "kind": "filing",
+  "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261015-3058",
+  "files": [
+   {
+    "label": "ER26-3531-000.docx",
+    "bytes": 82725,
+    "sha256": "90632f64ab8b3c6a846ad81ea892dbffb28d125ee51a1be9c60d647376fc46a5",
+    "text": "sources/filings/text/20261015-3058_001.txt",
+    "pages": null
    }
   ]
  },

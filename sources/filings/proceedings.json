@@ -303,6 +303,25 @@
    }
   },
   {
+   "id": "atc-large-load",
+   "kind": "related",
+   "title": "ATC large-load planning revisions (Attachment FF-ATCLLC)",
+   "short": "ATC large loads",
+   "docket": "ER26-3531-000",
+   "match": [
+    "ER26-3531"
+   ],
+   "about": "American Transmission Company, which plans its own local system inside MISO, filed large-load interconnection criteria for loads of 100 MW or more in its Wisconsin, Illinois, Minnesota and Michigan footprint. Microsoft protested that large retail customers are left out of the process; MISO filed comments and a limited protest. ATC agreed in its answer to apply some criteria from 50 MW.",
+   "status": "FERC staff sent a deficiency letter on Oct 15, 2026 asking about load aggregation, storage charging load and which reliability rules govern when ATC's and MISO's differ. No response on the docket sheet as of Nov 18.",
+   "link": {
+    "relation": "responds",
+    "anchors": [
+     "e-8-show-cause"
+    ],
+    "text": "ATC filed under paragraph 36 of the E-8 order, which lets MISO transmission owners make their own section 205 filings."
+   }
+  },
+  {
    "id": "spp-chills",
    "kind": "related",
    "title": "SPP conditional large-load service credits (CHILLS)",
