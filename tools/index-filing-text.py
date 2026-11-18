@@ -54,7 +54,7 @@ def inventory() -> list[dict]:
                 rows.append(dict(slug=slug,title=e["title"] if i==0 else re.sub(r"\.(pdf|docx)$","",f["label"],flags=re.I),issued=e["filed"],
                                  accession=e["accession"],docket=e["dockets"][0],group=proceeding(e["dockets"][0]),filer=e["filer"],
                                  kind=e["kind"] if i==0 else "attachment",file=f["text"],url=e["url"],tier="record",originalSha256=f["sha256"],
-                                 **({} if i==0 else {"parent":"rec-"+e["accession"]})))
+                                 **({"ocr":True} if f.get("ocr") else {}),**({} if i==0 else {"parent":"rec-"+e["accession"]})))
     parents = {d["slug"]:d for d in rows}
     for f in [SRC/"attachments.json", SRC/"regional-attachments.json"]:
         if not f.exists():

@@ -15,10 +15,14 @@ The original bytes stay out of git (161 MB for 33 Nov 16 filings). Each file's s
 reader can confirm a copy fetched from eLibrary is the one the text came from. Re-running merges with the
 existing record-tier.json (append-only by accession) and rewrites nothing that is unchanged.
 """
+from __future__ import annotations
+
 import argparse
 import json
 import logging
 import re
+import shutil
+import subprocess
 import sys
 from pathlib import Path
 
@@ -32,6 +36,7 @@ ELI = "https://elibrary.ferc.gov/eLibrary/filelist?accession_number="
 # Tariff sheets duplicate the transmittal's explanation at hundreds of pages each; the eLibrary copy
 # remains the source for them. A file is skipped only when its accession keeps at least one other file.
 SKIP = re.compile(r"\b(?:clean|redline[ds]?|marked)\b|FERC GENERATED TARIFF|certificate of service|^Clean Tariff|^Marked Tariff", re.I)
+WORDS = re.compile(r"[A-Za-z]{3,}")
 TOPIC = re.compile(r"large[- ]load|show cause|co-locat|EL2[56]-(?:49|6[7-9]|7[0-2])|\bOSC\b", re.I)
 
 
@@ -71,6 +76,18 @@ def pdf_pages(path: Path) -> list[str]:
         return [p.get_text().strip() for p in doc]
 
 
+def ocr_pages(path: Path) -> list[str] | None:
+    """OCR a scanned PDF with macOS Vision (tools/ocr-pdf.swift). None when unavailable or it fails."""
+    if not shutil.which("swift"):
+        return None
+    run = subprocess.run(["swift", str(ROOT / "tools/ocr-pdf.swift"), str(path)], capture_output=True, text=True)
+    if run.returncode:
+        logging.error("OCR failed for %s: %s", path.name, run.stderr.strip()[:200])
+        return None
+    pages = [t.strip() for t in re.split(r"^--- PAGE \d+ ---\n", run.stdout, flags=re.M)[1:]]
+    return pages if WORDS.search("\n".join(pages)) else None
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("sheets", type=Path)
@@ -91,7 +108,7 @@ def main() -> int:
             rows.setdefault(r["acc"], {**r, "dockets": []})["dockets"].append(sheet["docket"])
     base = tracked()
     existing = {e["accession"]: e for e in json.loads(OUT.read_text())} if OUT.exists() else {}
-    kept = skipped = failed = 0
+    kept = skipped = failed = textless = 0
     for inv in sorted(a.capture.glob("*/inventory.json")):
         cap = json.loads(inv.read_text())
         acc = cap["accession"]
@@ -111,7 +128,22 @@ def main() -> int:
         files = []
         for f in captured:
             entry = {"label": f["label"], "bytes": f["bytes"], "sha256": f["sha256"]}
-            if f in main_files:
+            if f in main_files and not WORDS.search("\n".join(texts[f["file"]])) and f["file"].lower().endswith(".pdf"):
+                ocr = ocr_pages(inv.parent / f["file"])
+                if ocr:
+                    logging.warning("%s: %s has no text layer; text is OCR from macOS Vision", acc, f["label"])
+                    texts[f["file"]] = ocr
+                    entry["ocr"] = "macOS Vision; the original has no text layer, so quotes may carry recognition errors"
+            if f in main_files and not WORDS.search("\n".join(texts[f["file"]])):
+                # A scanned PDF with no text layer extracts as blank pages. Recording it as text would count
+                # it as read; record the gap instead, so the reader links to eLibrary and nothing claims coverage.
+                logging.warning("%s: %s has no text layer; recorded as a gap", acc, f["label"])
+                entry["skipped"] = "no text layer (scanned image); read it on eLibrary"
+                textless += 1
+                old = TEXT / f"{acc}_{f['file'][:3]}.txt"
+                if old.exists() and not a.dry_run:
+                    old.unlink()
+            elif f in main_files:
                 name = f"{acc}_{f['file'][:3]}.txt"
                 pdf = f["file"].lower().endswith(".pdf")
                 body = "".join(f"--- PAGE {i} ---\n{t}\n" for i, t in enumerate(texts[f["file"]], 1)) if pdf else texts[f["file"]][0] + "\n"
@@ -135,9 +167,10 @@ def main() -> int:
         if not OUT.exists() or OUT.read_text() != data:
             OUT.write_text(data)
     total = sum(1 for _ in a.capture.glob("*/inventory.json"))
-    print(f"✓ {kept} kept · − {skipped} not about large loads · ✗ {failed} failed · of {total} captured; {len(existing)} in the record tier")
+    logging.info("✓ %d kept · − %d not about large loads · ∅ %d files with no text layer · ✗ %d failed · of %d captured; %d in the record tier",
+                 kept, skipped, textless, failed, total, len(existing))
     if not total:
-        print("nothing captured: check CAPTURE_DIR", file=sys.stderr)
+        logging.error("nothing captured: check CAPTURE_DIR")
         return 1
     return 1 if failed else 0
 

@@ -8,7 +8,7 @@ const tier=new Map(JSON.parse(readFileSync(new URL('../../sources/filings/record
 test('every inventory row maps to its original bytes; sections and pages cover all tokens',()=>{
  const hub=read('index.html'),sitemap=read('../sitemap.xml'); assert.ok(catalog.length>0);
  for(const r of catalog){assert.ok(hub.includes('href="'+r.slug+'/"')&&sitemap.includes('/reading/'+r.slug+'/'),r.slug);
- const src=JSON.parse(read(r.slug+'/source.json'));assert.deepEqual(src.document,r);if(r.tier==='record'){const e=tier.get(r.accession),f=e&&e.files.find(f=>f.text===r.file);assert.ok(f&&f.sha256===r.sha256&&/^[0-9a-f]{64}$/.test(r.sha256),r.slug+' record-tier hash');assert.ok(readFileSync(new URL('../../'+r.file,base)).length,r.slug);assert.match(r.url,/^https:\/\/elibrary\.ferc\.gov\//);}
+ const src=JSON.parse(read(r.slug+'/source.json'));assert.deepEqual(src.document,r);if(r.tier==='record'){const e=tier.get(r.accession),f=e&&e.files.find(f=>f.text===r.file);assert.ok(f&&f.sha256===r.sha256&&/^[0-9a-f]{64}$/.test(r.sha256),r.slug+' record-tier hash');assert.match(readFileSync(new URL('../../'+r.file,base),'utf8').replace(/--- PAGE \d+ ---/g,''),/[A-Za-z]{3}/,r.slug+' has words, not blank page markers');assert.equal(Boolean(r.ocr),Boolean(f.ocr),r.slug+' OCR flag');assert.match(r.url,/^https:\/\/elibrary\.ferc\.gov\//);}
  else assert.equal(createHash('sha256').update(readFileSync(new URL('../../'+r.file,base))).digest('hex'),r.sha256);
  for(const part of [src.pages,src.sections]){let at=0;assert.ok(part.length);
  for(const row of part){assert.equal(row.startToken,at,r.slug);assert.ok(row.endToken>=at,r.slug);at=row.endToken;}assert.equal(at,r.tokens,r.slug);}
