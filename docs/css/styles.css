@@ -1545,3 +1545,5 @@ details.tl-item .srcs { padding: 0 0 10px 128px; }
 .acc-sum:hover { background: var(--accent-wash); }
 .acc-sum:hover .acc-h2 { color: var(--accent-ink); }
 .fg-docs-h { font-size: 14px; font-weight: 700; color: var(--text-secondary); margin: 18px 0 4px; padding-top: 12px; border-top: 1px solid var(--rule); }
+#xw-compare .xw-t-wrap { margin: 16px 0 0; }
+.xw-t td, .xw-t thead th { min-width: 7.5rem; }

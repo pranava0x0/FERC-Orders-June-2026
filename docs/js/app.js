@@ -587,7 +587,9 @@
   function renderCrosswalk() {
     var host = document.getElementById("xwalk");
     if (!host || !xwAnswers) return;
-    host.innerHTML = xwTable() + D.categories.map(function (c) {
+    // The comparison table sits under the Nov 16 brief; the reform-by-reform detail stays in By reform.
+    var cmp = document.getElementById("xw-compare"); if (cmp) cmp.innerHTML = xwTable();
+    host.innerHTML = D.categories.map(function (c) {
       return '<details class="xw-cat" id="xw-' + esc(c.key) + '"><summary><span class="xw-no">' + c.n + '</span><span class="xw-title">' + esc(XW_LABEL[c.key] || c.title) +
         '<span class="xw-sub">' + esc(c.ferc) + "</span></span>" + xwSummaryDots(c.key) + '<span class="acc-chev" aria-hidden="true">›</span></summary>' +
         '<div class="xw-body">' + xwBody(c) + "</div></details>";
@@ -633,8 +635,8 @@
     var jumps = '<nav class="jump-row" aria-label="On this page">' + [["#ops-h", "Each operator"], ["#xw-h", "By reform"], ["#tg-h", "Record so far"], ["#acc-clock", "60-day clock"]].map(function (j) {
       return '<button type="button" class="jump-btn" data-jump="' + j[0] + '">' + j[1] + "</button>";
     }).join("") + "</nav>";
-    // The Nov 16 brief is the fixed start of the page, above the subtabs; Status by operator is the first subtab.
-    return jumps + '<section class="filing-brief" aria-labelledby="latest-filing"><h2 id="latest-filing">' + esc(f.title) + "</h2><p>" + esc(f.answer) + "</p><div>" + links + "</div></section>" +
+    // Subtab order follows page order: the Nov 16 brief (the default), then Status by operator.
+    return jumps + '<section class="filing-brief" aria-labelledby="latest-filing"><h2 id="latest-filing">' + esc(f.title) + "</h2><p>" + esc(f.answer) + "</p><div>" + links + '</div><div id="xw-compare"></div></section>' +
       '<section aria-labelledby="ops-h"><span id="stand-h" class="jump-anchor"></span><h2 class="now-h" id="ops-h">Status by operator</h2>' + operatorTable() + "</section>" +
       '<section class="now-card now-next-card" aria-labelledby="now-next-h"><h2 id="now-next-h">Deadlines</h2>' + nextList + "</section>" +
       '<section class="xw" aria-labelledby="xw-h"><h2 class="now-h" id="xw-h">Filings by reform</h2>' +
@@ -2343,7 +2345,7 @@
   // element (a direct child of the panel, [selector, index among matches]) to the next pane's start;
   // anything before the first pane stays visible above the bar. Comments has its own bar already.
   var SUBTABS = {
-    overview: [["operators", "Status by operator", "section[aria-labelledby=ops-h]"], ["next", "Deadlines", ".now-next-card"],
+    overview: [["filed", "Nov 16 filings", ".filing-brief"], ["operators", "Status by operator", "section[aria-labelledby=ops-h]"], ["next", "Deadlines", ".now-next-card"],
       ["reforms", "By reform", ".xw"], ["background", "Background", "details.acc"]],
     dockets: [["june", "June 18 orders", "#reforms-h"], ["reforms", "Five reforms", "details.acc"], ["dockets", "Dockets", ".section-head", 1], ["follow", "File or follow", ".section-head", 2]],
     filings: [["showcause", "Show cause dockets", ".fg-sec", 0], ["related", "Related proceedings", ".fg-sec", 1], ["numbers", "Numbers cited", "details.acc"]],
