@@ -4,16 +4,6 @@
  "ask": "Accept the revisions effective February 14, 2027, 90 days after filing, with a 30-day comment period.",
  "points": [
   {
-   "point": "MISO says this filing, the companion GRITS filing and its pending large-load filings together answer FERC's concerns.",
-   "quote": "MISO’s other pending Large Load filings fully addresses the concerns identified by the Commission",
-   "pg": 5
-  },
-  {
-   "point": "It builds on earlier filings already pending: zero-injection agreements, reliability requirements and the resource study.",
-   "quote": "MISO has already filed several proposals responsive to the Show Cause Order that are currently pending before the Commission",
-   "pg": 4
-  },
-  {
    "point": "A new Large Load Project Review would study every large-load service request, with deposits and milestones to deter speculative ones.",
    "quote": "The LLPR also includes deposits, project milestones, and other safeguards designed to discourage speculative Large Load requests.",
    "pg": 5,
@@ -22,8 +12,7 @@
   {
    "point": "Applicants pay a $250,000 non-refundable fee.",
    "quote": "a non-refundable application fee of $250,000",
-   "pg": 14,
-   "reform": "study"
+   "pg": 14
   },
   {
    "point": "Large-load customers would bear the cost of the upgrades built for them through cost recovery agreements.",
@@ -50,14 +39,27 @@
    "reform": "proximate"
   },
   {
-   "point": "MISO says states and stakeholders did not agree on everything.",
-   "quote": "While full alignment was not achieved on every aspect of the proposals",
-   "pg": 4
+   "point": "Transmission owners' study reports filed with a large-load application must say which alternative transmission technologies were considered and what was decided.",
+   "quote": "requires Large Load Transmission Customers to include with their LLLPR Application the applicable Transmission Owner’s Interconnection Study Report, specifically identifying what ATTs and GETs were considered",
+   "pg": 44,
+   "reform": "study"
   },
   {
-   "point": "MISO asks for a February 14, 2027 effective date and a 30-day comment period.",
-   "quote": "MISO requests that the Commission accept the proposed revisions effective 90 days from the date of this filing (i.e., February 14, 2027).",
-   "pg": 3
+   "point": "The application also carries the owner's cost estimate, which MISO says gives the cost transparency the order sought.",
+   "quote": "This information will enable MISO to verify any analyses performed by the Transmission Owner and provide the cost transparency sought by the Show Cause Order.",
+   "pg": 16
+  },
+  {
+   "point": "A load that wants to co-locate with generation must first have an interconnection agreement, such as a zero-injection agreement, in place for the generator.",
+   "quote": "if the applicants are looking to co-locate the Load with the generation, then they will need to ensure that an appropriate Interconnection Agreement e.g. “ZGIA” has already been executed for the generator",
+   "pg": 15,
+   "reform": "colo"
+  },
+  {
+   "point": "Paired generation can ask for up to 150 percent of the load's peak demand and must sit in the same resource zone.",
+   "quote": "limits the requested interconnection service to 150 percent of the paired load’s peak demand, and requires the load and generation to be located in the same Local Resource Zone",
+   "pg": 45,
+   "reform": "proximate"
   }
  ],
  "throughLine": {

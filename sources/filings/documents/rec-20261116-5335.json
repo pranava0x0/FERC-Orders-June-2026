@@ -6,8 +6,7 @@
   {
    "point": "NYISO's filing sets the study process and services. The owners' filing covers cost recovery and operations.",
    "quote": "While the NYISO’s filing establishes the study process, readiness requirements, and new Firm and Non-Firm Withdrawal Services for Large Loads, the NYTOs’ filing addresses the complementary elements necessary to recover the costs of facilities built to serve Large Loads",
-   "pg": 2,
-   "reform": "cost"
+   "pg": 2
   },
   {
    "point": "Each owner recovers all allocated upgrade and facility costs from the large load customer.",
@@ -18,8 +17,7 @@
   {
    "point": "Recovery runs over 15 years, without accelerated depreciation.",
    "quote": "that compresses cost recovery into a 15-year term without accelerated depreciation",
-   "pg": 3,
-   "reform": "cost"
+   "pg": 3
   },
   {
    "point": "The customer posts security that the owner can draw on if the project is abandoned or the customer defaults.",
@@ -47,6 +45,18 @@
    "point": "Most revisions would take effect February 1, 2027, matching NYISO's filing.",
    "quote": "request an effective date for the revisions to Attachment LL and Attachment B of Section 8 of the NYISO OATT of February 1, 2027",
    "pg": 34
+  },
+  {
+   "point": "The owners' agreement for facilities studies sets fixed deposits and a schedule inside NYISO's study timeline.",
+   "quote": "a pro forma Facilities Study Agreement provides a uniform framework, fixed study deposits, and a defined schedule for the Facilities Studies the Transmission Owners perform under Attachment LL",
+   "pg": 3,
+   "reform": "study"
+  },
+  {
+   "point": "The owners add operating requirements for large loads paired with co-located or partner generation.",
+   "quote": "operating requirements that apply to Large Loads interconnected under the LLIP, including Large Loads that take Non-Firm Transmission Withdrawal Service at a level below their maximum potential withdrawal and Large Loads paired with Co-Located or Partner Resources",
+   "pg": 27,
+   "reform": "colo"
   }
  ],
  "throughLine": {
