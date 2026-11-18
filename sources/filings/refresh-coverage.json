@@ -743,6 +743,112 @@
         "20261113-5007",
         "20261113-5086"
       ]
+    },
+    {
+      "docket": "ER27-520-000",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=ER27-520&sub_docket=000",
+      "scope": "related",
+      "status": "sheet listed in full on Nov 17; rows not individually reviewed",
+      "totalRows": 4,
+      "rowsRead": 4,
+      "classificationCounts": {
+        "procedural notice": 1,
+        "for review": 1,
+        "documentless": 2
+      },
+      "recordAccessions": [
+        "20261116-5300"
+      ]
+    },
+    {
+      "docket": "ER27-506-000",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=ER27-506&sub_docket=000",
+      "scope": "related",
+      "status": "sheet listed in full on Nov 18; rows not individually reviewed",
+      "totalRows": 2,
+      "rowsRead": 2,
+      "classificationCounts": {
+        "procedural notice": 1,
+        "for review": 1
+      },
+      "recordAccessions": [
+        "20261116-5179"
+      ]
+    },
+    {
+      "docket": "ER27-517-000",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=ER27-517&sub_docket=000",
+      "scope": "related",
+      "status": "sheet listed in full on Nov 18; rows not individually reviewed",
+      "totalRows": 2,
+      "rowsRead": 2,
+      "classificationCounts": {
+        "procedural notice": 1,
+        "for review": 1
+      },
+      "recordAccessions": [
+        "20261116-5282"
+      ]
+    },
+    {
+      "docket": "ER27-522-000",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=ER27-522&sub_docket=000",
+      "scope": "related",
+      "status": "sheet listed in full on Nov 18; rows not individually reviewed",
+      "totalRows": 2,
+      "rowsRead": 2,
+      "classificationCounts": {
+        "for review": 1,
+        "documentless": 1
+      },
+      "recordAccessions": [
+        "20261116-5309"
+      ]
+    },
+    {
+      "docket": "ER27-526-000",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=ER27-526&sub_docket=000",
+      "scope": "related",
+      "status": "sheet listed in full on Nov 18; rows not individually reviewed",
+      "totalRows": 7,
+      "rowsRead": 7,
+      "classificationCounts": {
+        "for review": 1,
+        "documentless": 6
+      },
+      "recordAccessions": [
+        "20261116-5323"
+      ]
+    },
+    {
+      "docket": "ER27-527-000",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=ER27-527&sub_docket=000",
+      "scope": "related",
+      "status": "sheet listed in full on Nov 18; rows not individually reviewed",
+      "totalRows": 8,
+      "rowsRead": 8,
+      "classificationCounts": {
+        "for review": 1,
+        "documentless": 7
+      },
+      "recordAccessions": [
+        "20261116-5326"
+      ]
+    },
+    {
+      "docket": "ER27-531-000",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=ER27-531&sub_docket=000",
+      "scope": "related",
+      "status": "sheet listed in full on Nov 18; rows not individually reviewed",
+      "totalRows": 4,
+      "rowsRead": 4,
+      "classificationCounts": {
+        "for review": 1,
+        "documentless": 3
+      },
+      "recordAccessions": [
+        "20261116-5340"
+      ]
     }
   ],
   "records": {
@@ -4386,6 +4492,83 @@
       "original": "20261109-5139_01.pdf",
       "text": "sources/text/abeyance/answer-el27-11-exelon-extension.txt",
       "scope": "individual original retrieved"
+    },
+    "20261116-5300": {
+      "description": "PJM Transmission Owners file tariff revisions for service to co-located and large loads under section 205",
+      "filed": "2026-11-16",
+      "sourceUrl": "https://www.pjm.com/-/media/DotCom/documents/ferc/filings/2026/20261116-er27-520-000.pdf",
+      "status": "primary text captured",
+      "slug": "filing-er27-520-pjm-tos-large-loads",
+      "original": "20261116-5300_01.pdf",
+      "text": "sources/text/abeyance/filing-er27-520-pjm-tos-large-loads.txt",
+      "scope": "individual original retrieved",
+      "additionalFiles": []
+    },
+    "20261116-5340": {
+      "description": "PJM files large-load tariff revisions and co-location compliance changes under section 205",
+      "filed": "2026-11-16",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20261116-5340",
+      "status": "primary text captured",
+      "slug": "filing-er27-531-pjm-large-loads",
+      "original": "20261116-5340_01.pdf",
+      "text": "sources/text/abeyance/filing-er27-531-pjm-large-loads.txt",
+      "scope": "individual original retrieved",
+      "additionalFiles": []
+    },
+    "20261116-5309": {
+      "description": "PJM files ride-through and operating requirements for large computational loads under section 205",
+      "filed": "2026-11-16",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20261116-5309",
+      "status": "primary text captured",
+      "slug": "filing-er27-522-pjm-ride-through",
+      "original": "20261116-5309_01.pdf",
+      "text": "sources/text/abeyance/filing-er27-522-pjm-ride-through.txt",
+      "scope": "individual original retrieved",
+      "additionalFiles": []
+    },
+    "20261116-5323": {
+      "description": "MISO and its transmission owners file large-load review, cost recovery and transmission service revisions under section 205",
+      "filed": "2026-11-16",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20261116-5323",
+      "status": "primary text captured",
+      "slug": "filing-er27-526-miso-large-loads",
+      "original": "20261116-5323_01.pdf",
+      "text": "sources/text/abeyance/filing-er27-526-miso-large-loads.txt",
+      "scope": "individual original retrieved",
+      "additionalFiles": []
+    },
+    "20261116-5326": {
+      "description": "MISO files the Grid Responsive Integration Transmission Service under section 205",
+      "filed": "2026-11-16",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20261116-5326",
+      "status": "primary text captured",
+      "slug": "filing-er27-527-miso-grits",
+      "original": "20261116-5326_01.pdf",
+      "text": "sources/text/abeyance/filing-er27-527-miso-grits.txt",
+      "scope": "individual original retrieved",
+      "additionalFiles": []
+    },
+    "20261116-5179": {
+      "description": "CAISO files large-load tariff revisions under section 205 in response to the show cause order",
+      "filed": "2026-11-16",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20261116-5179",
+      "status": "primary text captured",
+      "slug": "filing-er27-506-caiso-large-loads",
+      "original": "20261116-5179_01.pdf",
+      "text": "sources/text/abeyance/filing-er27-506-caiso-large-loads.txt",
+      "scope": "individual original retrieved",
+      "additionalFiles": []
+    },
+    "20261116-5282": {
+      "description": "NYISO files large-load integration procedures and market rules under section 205",
+      "filed": "2026-11-16",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20261116-5282",
+      "status": "primary text captured",
+      "slug": "filing-er27-517-nyiso-large-loads",
+      "original": "20261116-5282_01.pdf",
+      "text": "sources/text/abeyance/filing-er27-517-nyiso-large-loads.txt",
+      "scope": "individual original retrieved",
+      "additionalFiles": []
     }
   },
   "applicantSearch": [
@@ -4500,6 +4683,9 @@
     "From about 22:00 ET on November 10, the public eLibrary returned HTTP 500 for 62 of 100 related-docket file-list requests. For the other 38 the metadata was available, but the normal public download did not yield a file. Nine signer-hosted copies were retrieved independently. The 12 show-cause and rehearing sheets had already been reconciled before these errors.",
     "Nov 15 read: 31 sheets from Nov 9 on, plus full sheets for 14 related dockets (EL25-49-000 and -002, EL27-11, ER27-25, ER27-454, ER27-330-000 and -001, ER27-484, ER26-3515-000 to -002, AD26-7, EL26-108, ER26-3380-001) so that later sweeps can compare them by accession. Rows on those related sheets are listed, not individually reviewed. FERC indexes weekend filings on Monday, so nothing filed after Friday Nov 13 can appear here.",
     "ISO-NE’s Nov 13 filing (20261113-5007) has the transmittal letter committed. Its testimony, affidavit, marked and clean tariff sheets and list of governors are on the eLibrary file list and were not committed.",
-    "Nov 15 general search by filed date, Nov 10 to Nov 15: “large load” in full text (133 results), “tariff filing” in descriptions (69), “co-located load” in full text (111) and issuances mentioning large load (10). The only new section 205 large-load tariff filing by a show cause respondent in those results was ISO-NE’s ER27-484-000. No per-applicant search was run this time."
+    "Nov 15 general search by filed date, Nov 10 to Nov 15: “large load” in full text (133 results), “tariff filing” in descriptions (69), “co-located load” in full text (111) and issuances mentioning large load (10). The only new section 205 large-load tariff filing by a show cause respondent in those results was ISO-NE’s ER27-484-000. No per-applicant search was run this time.",
+    "The PJM Transmission Owners’ Nov 16 filing (20261116-5300, ER27-520-000) was added Nov 17 from PJM’s posted copy of the full submission (336 pages: transmittal letter, testimony, pro forma agreement and tariff sheets). FERC’s combined notice for it (20261116-3055) sets a Dec 7 comment date.",
+    "Nov 17 general search by filed date, Nov 16 to Nov 17: “large load” in full text (32 results) and a second query for “show cause” or the show cause docket numbers, Nov 13 to Nov 17 (45 results, the rest gas-pipeline matches). New respondent filings found: PJM ER27-531 and ER27-522 and its motion to withdraw in ER26-1479-002; MISO ER27-526 and ER27-527; CAISO ER27-506 and its resubmission ER27-532; NYISO ER27-517, the New York Transmission Owners ER27-529 and LS Power Grid New York ER27-518; and fifteen California transmission owners (SCE ER27-508, PG&E ER27-513, SDG&E ER27-521, Citizens Sunrise ER27-499, Citizens Sycamore-Penasquitos ER27-500, Citizens S-Line ER27-501, DCR ER27-512, SunZia ER27-515, Viridon Path 15 ER27-523, LS Power Grid California ER27-528, Horizon West ER27-530, GridLiance West ER27-533, DesertLink ER27-534, Trans Bay Cable ER27-535). NERC filed a petition for large-load reliability standards in RD27-3 (dated Nov 16, indexed Nov 17), and Valley Electric Association moved Nov 13 to rescind the EL26-71 order. SPP’s deadline is Nov 20.",
+    "Nov 17 originals: the transmittal letters of PJM (20261116-5340, -5309), MISO (-5323, -5326), CAISO (-5179) and NYISO (-5282) were downloaded from eLibrary and committed; their tariff sheets, testimony and attachments were downloaded but not committed. The California, New York and Citizens transmission-owner filings, CAISO’s ER27-532 resubmission, PJM’s withdrawal motion and NERC’s petition are known from eLibrary descriptions only. None of these new dockets’ sheets has been listed in full, FERC’s combined notice #1 for Nov 16 (20261116-3055) was read: comments on ER27-506, ER27-517, ER27-518, ER27-520 and the California owners’ dockets through ER27-515 are due Dec 7. The later notice covering PJM’s and MISO’s filings was not read."
   ]
 }

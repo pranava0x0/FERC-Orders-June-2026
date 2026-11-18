@@ -149,7 +149,7 @@
    "short": "PJM co-location",
    "docket": "EL25-49",
    "about": "Co-location means a large load, usually a data center, built at a power plant and served partly by it. FERC set rules for it in PJM; these filings carry them out.",
-   "status": "PJM filed partial compliance Aug 17, 2026 and answered three limited protests Oct 14. The rest of its compliance is due Nov 16.",
+   "status": "PJM filed partial compliance Aug 17, 2026 and answered three limited protests Oct 14. On Nov 16 PJM moved to withdraw that filing and refiled revised changes in ER27-531; the PJM Transmission Owners say their Nov 16 filing in ER27-520 also meets their compliance obligation here.",
    "kind": "related",
    "match": [
     "EL25-49",
@@ -412,6 +412,131 @@
      "e-11-show-cause"
     ],
     "text": "The section 205 filing ISO-NE and its transmission owners promised on Oct 9 in answer to E-11. It was made in a new docket, ER27-484, and asks FERC to terminate the show cause proceeding."
+   }
+  },
+  {
+   "id": "pjm-tos-large-load",
+   "kind": "related",
+   "title": "PJM Transmission Owners’ large-load tariff revisions",
+   "short": "PJM TOs large loads",
+   "docket": "ER27-520-000",
+   "match": [
+    "ER27-520"
+   ],
+   "about": "The PJM Transmission Owners filed rates, a pro forma cost recovery agreement and a cost allocation method for upgrades serving large and co-located loads. PJM’s own companion filings are separate.",
+   "status": "Filed Nov 16, 2026. Comments are due Dec 7 at 5 p.m. Eastern. The Maryland Office of People’s Counsel and the PJM Power Providers Group moved to intervene Nov 17.",
+   "link": {
+    "relation": "responds",
+    "anchors": [
+     "e-7-show-cause",
+     "e-7-cost-recovery-agreement",
+     "e-2-one-of-three-new-co-location"
+    ],
+    "text": "The section 205 filing the PJM Transmission Owners promised on Oct 9. It answers the E-7 show cause order and, the owners say, meets their E-2 co-location compliance obligation in EL25-49."
+   }
+  },
+  {
+   "id": "pjm-large-load",
+   "kind": "related",
+   "title": "PJM large-load tariff revisions",
+   "short": "PJM large loads",
+   "docket": "ER27-531-000",
+   "match": [
+    "ER27-531",
+    "ER27-522"
+   ],
+   "about": "PJM filed a 12-month Fast Energization Process that studies generators and large loads together, three new transmission services, a 50 MW cap on netting behind-the-meter generation, and, in a second filing, ride-through and operating requirements for large computational loads.",
+   "status": "Filed Nov 16, 2026. PJM asked for a 60-day comment period on ER27-531; FERC had not set comment dates in the records read. The Maryland Office of People’s Counsel, the PJM Power Providers Group and the Market Monitor moved to intervene in ER27-531 Nov 17.",
+   "link": {
+    "relation": "responds",
+    "anchors": [
+     "e-7-show-cause",
+     "e-7-application-study-process",
+     "e-7-service-for-flexible-loads",
+     "e-2-one-of-three-new-co-location"
+    ],
+    "text": "PJM’s section 205 answer to the E-7 show cause order. ER27-531 also refiles PJM’s E-2 co-location compliance changes, replacing the Aug 17 filing it withdrew the same day."
+   }
+  },
+  {
+   "id": "miso-large-load",
+   "kind": "related",
+   "title": "MISO large-load tariff revisions",
+   "short": "MISO large loads",
+   "docket": "ER27-526-000",
+   "match": [
+    "ER27-526",
+    "ER27-527"
+   ],
+   "about": "MISO and its transmission owners filed a Large Load Project Review study process, two cost recovery agreements, a large-load dashboard and two new services. A separate MISO filing creates GRITS, a permanent firm and non-firm contract demand service that cannot start before 2029.",
+   "status": "Filed Nov 16, 2026. MISO asked for a 30-day comment period on ER27-526; FERC had not set comment dates in the records read.",
+   "link": {
+    "relation": "responds",
+    "anchors": [
+     "e-8-show-cause",
+     "e-8-cost-recovery-agreement",
+     "e-8-services-for-flexible-co-located"
+    ],
+    "text": "MISO’s section 205 answer to the E-8 show cause order, filed with its earlier LARS, zero-injection and reliability-requirements filings."
+   }
+  },
+  {
+   "id": "caiso-large-load",
+   "kind": "related",
+   "title": "CAISO and California transmission owners’ large-load tariff revisions",
+   "short": "CAISO large loads",
+   "docket": "ER27-506-000",
+   "match": [
+    "ER27-506",
+    "ER27-532",
+    "ER27-508",
+    "ER27-513",
+    "ER27-521",
+    "ER27-499",
+    "ER27-500",
+    "ER27-501",
+    "ER27-512",
+    "ER27-515",
+    "ER27-523",
+    "ER27-528",
+    "ER27-530",
+    "ER27-533",
+    "ER27-534",
+    "ER27-535"
+   ],
+   "about": "CAISO filed a 50 MW large-load definition, co-location disclosure and a Flexible Interim Load Interconnection service, then refiled the same documents under a different filing code (ER27-532). Fifteen California transmission owners filed their own tariff revisions in separate dockets, where deposits, security and cost recovery sit.",
+   "status": "Filed Nov 16, 2026. Comments are due Dec 7 at 5 p.m. Eastern under FERC’s Nov 16 notice; CAISO had asked for 30 days. Only CAISO’s own letter has been read; the transmission owners’ filings are known from eLibrary descriptions.",
+   "link": {
+    "relation": "responds",
+    "anchors": [
+     "e-10-show-cause",
+     "e-10-cost-recovery-agreement",
+     "e-10-service-for-flexible-loads"
+    ],
+    "text": "The section 205 answers of CAISO and its participating transmission owners to the E-10 show cause order."
+   }
+  },
+  {
+   "id": "nyiso-large-load",
+   "kind": "related",
+   "title": "NYISO and New York transmission owners’ large-load tariff revisions",
+   "short": "NYISO large loads",
+   "docket": "ER27-517-000",
+   "match": [
+    "ER27-517",
+    "ER27-529",
+    "ER27-518"
+   ],
+   "about": "NYISO filed Large Load Integration Procedures, Firm and Non-Firm Withdrawal Service in place of the three PJM-style services, and market rules for large loads. The New York transmission owners (ER27-529) and LS Power Grid New York (ER27-518) filed cost recovery terms separately.",
+   "status": "Filed Nov 16, 2026. Comments are due Dec 7 at 5 p.m. Eastern under FERC’s Nov 16 notice; NYISO had asked for 28 days and for the show cause case to stay in abeyance. Only NYISO’s own letter has been read.",
+   "link": {
+    "relation": "responds",
+    "anchors": [
+     "e-12-show-cause",
+     "e-12-define-large-load",
+     "e-12-timely-study-window"
+    ],
+    "text": "NYISO’s section 205 answer to the E-12 show cause order, with the transmission owners’ companion filings."
    }
   },
   {

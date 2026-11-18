@@ -521,10 +521,73 @@
       var n = daysUntil(due);
       return '<tr><th scope="row"><a href="#dockets/' + esc(docketKey(d.docket)) + '">' + esc(d.rto) + '</a> <span class="ot-item">' + esc(d.item) + " · " + esc(d.docket.replace(/-000$/, "")) + "</span></th>" +
         '<td class="ot-due">' + (due ? '<span class="mono">' + esc(fmtISO(due).replace(/, \d{4}$/, "")) + "</span>" + (n >= 0 ? ' <span class="ot-days">' + inDays(n) + "</span>" : "") : '<span class="na">Not dated</span>') + "</td>" +
-        '<td><span class="ot-status st-' + esc(c.status) + '">' + esc(STATUS[c.status] || c.status) + "</span> " + esc(firstSentence(gist)) + "</td>" +
-        '<td class="ot-go"><a href="#filings/sc-' + esc(d.rto.toLowerCase().replace(/[^a-z]/g, "")) + '">Filings</a></td></tr>';
+        '<td><span class="ot-status st-' + esc(c.status) + '">' + esc(STATUS[c.status] || c.status) + '</span> <span class="ot-gist">' + esc(firstSentence(gist)) + "</span></td>" +
+        // A filed row opens the filing itself (routeFiling finds a document in whichever group holds it).
+        '<td class="ot-go"><a href="#filings/sc-' + esc(d.rto.toLowerCase().replace(/[^a-z]/g, "")) + (c.obs && c.obs.reader ? "/" + esc(c.obs.reader) + '">Read the filing' : '">Filings') + "</a></td></tr>";
     }).join("");
     return '<div class="table-wrap"><table class="ot"><thead><tr><th>Operator and order</th><th>Response due</th><th>What it has said or filed</th><th></th></tr></thead><tbody>' + rows + "</tbody></table></div>";
+  }
+
+  /* ---- Asked and answered: DOE's ANOPR principle -> the June order's words -> what each operator filed ---- */
+  // data/answers.json is written by tools/build-record-data.mjs from the reform key a reading puts on
+  // each point. A blank cell means none of the points read from that filing names the reform. It is
+  // not a finding that the filing is silent on it, and the copy says so.
+  var xwAnswers = null, xwPending = null;
+  var XW_LABEL = { study: "Study process", cost: "Who pays", colo: "Co-location", flex: "Flexible service", proximate: "Nearby generation" };
+  function xwOrders() {
+    return (D.dockets || []).slice().sort(function (a, b) { return +a.item.slice(2) - +b.item.slice(2); });
+  }
+  function xwShort(rto) { return rto === "ISO-NE" ? "ISO-NE" : rto; }
+  function xwFor(item, key) { return (xwAnswers || []).filter(function (a) { return a.item === item && a.reform === key; }); }
+  function xwSummaryDots(key) {
+    return '<span class="xw-dots">' + xwOrders().map(function (o) {
+      var n = xwFor(o.item, key).length;
+      return '<span class="xw-dot' + (n ? " on" : "") + '" title="' + esc(o.rto + (n ? ": " + n + (n === 1 ? " point" : " points") + " quoted" : ": none quoted")) + '"><span class="xw-dot-l">' + esc(xwShort(o.rto)) + '</span><span class="sr-only">' + (n ? ", answered" : ", not quoted") + "</span></span>";
+    }).join("") + "</span>";
+  }
+  function xwBody(c) {
+    var ps = procStatus();
+    var doe = '<div class="xw-doe"><p class="xw-step"><span class="xw-n">1</span> DOE proposed, Oct 2025 <span class="xw-cite">ANOPR, RM26-4</span></p><ul>' +
+      c.doe.map(function (d) { return "<li>" + esc(d) + "</li>"; }).join("") + "</ul></div>";
+    var rows = xwOrders().map(function (o) {
+      var dir = (o.dir || []).filter(function (x) { return x.reform === c.key; })[0];
+      var asked = dir ? '<blockquote class="xw-q">“' + esc(dir.q) + '” <a class="mono" href="' + esc(o.pdf) + "#page=" + dir.pg + '" target="_blank" rel="noopener noreferrer">' + esc(o.item + " " + dir.p) + "</a></blockquote>"
+        : '<p class="xw-none">No directive on this reform is quoted from ' + esc(o.item) + ".</p>";
+      var got = xwFor(o.item, c.key);
+      var cell = filingCell(o.docket, "showcause", ps);
+      // Two quotes per operator keep a reform readable on a phone; the rest are one tap away in the filing.
+      var more = got.length - 2;
+      var answered = got.length ? got.slice(0, 2).map(function (a) {
+        return '<div class="xw-a"><p class="xw-pt">' + esc(a.point) + '</p><blockquote class="xw-q">“' + esc(a.quote) + '” <a class="mono" href="reading/' + esc(a.slug) + "/text.html#p-" + (a.pg || 1) + '">' + esc(a.docket.replace(/-000$/, "")) + (a.pg ? " p. " + a.pg : "") + "</a></blockquote>" +
+          '<a class="xw-open" href="#filings/' + esc(a.group) + "/" + esc(a.slug) + '">Open ' + esc(a.filer) + "’s filing</a></div>";
+      }).join("") + (more > 0 ? '<p class="xw-more"><a href="#filings/' + esc(got[2].group) + "/" + esc(got[2].slug) + '">' + more + (more === 1 ? " more point" : " more points") +
+        (got.slice(2).every(function (a) { return a.slug === got[2].slug; }) ? " on this in " + esc(got[2].filer) + "’s filing" : " on this in its filings") + "</a></p>" : "")
+        : '<p class="xw-none">' + (cell.status === "filed-verified" ? "None of the points read from its filing names this reform." : "No filing yet" + (o.abeyance && o.abeyance.due ? "; due " + esc(fmtISO(o.abeyance.due).replace(/, \d{4}$/, "")) : "") + ".") + "</p>";
+      return '<div class="xw-row"><h3 class="xw-rto"><a href="#dockets/' + esc(docketKey(o.docket)) + '">' + esc(o.rto) + '</a> <span class="mono">' + esc(o.item) + "</span></h3>" +
+        '<div class="xw-asked"><p class="xw-step"><span class="xw-n">2</span> June order</p>' + asked + "</div>" +
+        '<div class="xw-ans"><p class="xw-step"><span class="xw-n">3</span> Filed</p>' + answered + "</div></div>";
+    }).join("");
+    return doe + '<div class="xw-rows">' + rows + "</div>";
+  }
+  function renderCrosswalk() {
+    var host = document.getElementById("xwalk");
+    if (!host || !xwAnswers) return;
+    host.innerHTML = D.categories.map(function (c) {
+      return '<details class="xw-cat" id="xw-' + esc(c.key) + '"><summary><span class="xw-no">' + c.n + '</span><span class="xw-title">' + esc(XW_LABEL[c.key] || c.title) +
+        '<span class="xw-sub">' + esc(c.ferc) + "</span></span>" + xwSummaryDots(c.key) + '<span class="acc-chev" aria-hidden="true">›</span></summary>' +
+        '<div class="xw-body">' + xwBody(c) + "</div></details>";
+    }).join("");
+    if (xwPending) { var k = xwPending; xwPending = null; openAt("xw-" + k); }
+  }
+  function loadCrosswalk() {
+    if (xwAnswers) { renderCrosswalk(); return; }
+    fetch("data/answers.json?v=" + ASSET_VER).then(function (r) { if (!r.ok) throw Error(r.status); return r.json(); }).then(function (j) {
+      xwAnswers = j.answers || []; renderCrosswalk();
+    }).catch(function (err) {
+      console.error("answers.json failed to load", err);
+      var host = document.getElementById("xwalk");
+      if (host) host.innerHTML = '<p class="xw-none" role="status">The comparison did not load. <a href="#dockets">The orders, by reform</a> and <a href="#filings">every filing</a> still work.</p>';
+    });
   }
 
   function renderOverview() {
@@ -556,13 +619,23 @@
       "<div><dt>Commission</dt><dd>" + esc(m.commissioners) + "</dd></div>" +
       '<div><dt>Order record as of</dt><dd class="mono">' + esc(m.capture) + "</dd></div>" +
       "</dl>";
-    return '<div class="now-grid">' +
-      '<section class="now-card now-next-card" aria-labelledby="now-next-h"><h2 id="now-next-h">Coming up</h2>' + nextList + "</section>" +
+    // One row of jumps, so every Overview section is one tap from the top on a phone (UAT 2026-11-18:
+    // the reform crosswalk sat 5 to 6 screens down at 375 px).
+    var jumps = '<nav class="jump-row" aria-label="On this page">' + [["#ops-h", "Each operator"], ["#xw-h", "By reform"], ["#tg-h", "Record so far"], ["#acc-clock", "60-day clock"]].map(function (j) {
+      return '<button type="button" class="jump-btn" data-jump="' + j[0] + '">' + j[1] + "</button>";
+    }).join("") + "</nav>";
+    // The headline answer comes first: what changed, then the dates around it.
+    return jumps + '<section class="filing-brief" aria-labelledby="latest-filing"><h2 id="latest-filing">' + esc(f.title) + "</h2><p>" + esc(f.answer) + "</p><div>" + links + "</div></section>" +
+      '<div class="now-grid">' +
+      '<section class="now-card now-next-card" aria-labelledby="now-next-h"><h2 id="now-next-h">Coming up</h2>' + nextList +
+      '<p class="now-more"><a href="#overview/clock">The 60-day clock and who has filed</a></p></section>' +
       '<section class="now-card" aria-labelledby="now-latest-h"><h2 id="now-latest-h">Latest in the record</h2>' + latestList +
       '<p class="now-more"><a href="#filings">Every filing, by proceeding</a> · <a href="#timeline">Full timeline</a></p></section>' +
       "</div>" +
-      '<section class="filing-brief" aria-labelledby="latest-filing"><h2 id="latest-filing">' + esc(f.title) + "</h2><p>" + esc(f.answer) + "</p><div>" + links + "</div></section>" +
       '<section aria-labelledby="ops-h"><span id="stand-h" class="jump-anchor"></span><h2 class="now-h" id="ops-h">Where each operator stands</h2>' + operatorTable() + "</section>" +
+      '<section class="xw" aria-labelledby="xw-h"><h2 class="now-h" id="xw-h">Asked and answered, by reform</h2>' +
+      '<p class="xw-lede">For each of the five reforms: what DOE proposed, what each June order says, and what each operator filed. A filled marker means a point read from that operator’s filing addresses the reform.</p>' +
+      '<div id="xwalk"><p class="cm-loading" role="status">Loading the comparison…</p></div></section>' +
       '<section aria-labelledby="tg-h"><h2 class="now-h" id="tg-h">The record so far</h2>' + timelineGraphic() + "</section>" +
       accSection("Status by proceeding", "One line per proceeding, as of the last sweep.", renderStandStrip(), false, Object.keys(D.tracks || {}).length) +
       accSection("The 60-day clock and who has filed", "The procedural steps every order set, and what each operator filed against them.", renderProcedural(), false, null, "acc-clock") +
@@ -2080,9 +2153,9 @@
 
   /* ---- tablist ---- */
   // Reforms has no tab of its own: the five reform categories open the Orders (dockets) tab. "#reforms" still routes there.
-  var TABS = ["overview", "dockets", "filings", "news", "timeline", "commissioners", "comments"];
+  var TABS = ["overview", "dockets", "filings", "timeline", "comments", "news", "commissioners"];
   var renderers = { overview: renderOverview, timeline: renderTimeline, dockets: function () { return renderReforms() + renderDockets(); }, filings: renderFilings, commissioners: renderCommissioners, comments: renderComments, news: renderNews };
-  var afterRender = { news: wireNews, comments: wireComments, timeline: wireTimeline, filings: wireFilings, commissioners: wireCommissioners };
+  var afterRender = { overview: loadCrosswalk, news: wireNews, comments: wireComments, timeline: wireTimeline, filings: wireFilings, commissioners: wireCommissioners };
   // Overview jump row: delegated once, so it works whichever render pass drew the buttons. Buttons, not
   // hash links, because the router owns location.hash and would read "#fm-h" as a tab name.
   document.addEventListener("click", function (ev) {
@@ -2193,7 +2266,8 @@
       activate(tab, focus);
       // "#dockets/EL26-67" opens that order card; "#overview/clock" opens the procedural board.
       var landed = tab === "dockets" && rest ? openAt("dk-" + docketKey(rest))
-        : tab === "overview" && rest === "clock" ? openAt("acc-clock") : false;
+        : tab === "overview" && rest === "clock" ? openAt("acc-clock")
+        : tab === "overview" && /^reform\/[a-z]+$/.test(rest) ? (xwAnswers ? openAt("xw-" + rest.slice(7)) : (xwPending = rest.slice(7), true)) : false;
       if (!landed) scrollToTabsTop();
     }
   }
@@ -2255,7 +2329,7 @@
 
   // "You are here": tab › proceeding › document (Filings) or tab › track (Timeline). Each step links back
   // up one level, so a reader deep in a filing is one tap from the proceeding and two from the list.
-  var TAB_LABEL = { overview: "Now", dockets: "Orders", filings: "Filings", news: "Discourse", timeline: "Timeline", commissioners: "Commissioners", comments: "Comments" };
+  var TAB_LABEL = { overview: "Now", dockets: "Orders", filings: "Filings", news: "Discourse", timeline: "Timeline", commissioners: "Commissioners", comments: "ANOPR comments" };
   function setCrumbs(name, rest) {
     var el = document.getElementById("crumbs");
     if (!el) return;
@@ -2332,19 +2406,19 @@
     }
   }
 
-  // masthead chip: the soonest upcoming procedural deadline, so the clock is visible before any tab click
+  // Masthead chip: the soonest dated deadline on the timeline, the same list the Overview's "Coming up"
+  // card draws, so the two never disagree. The §206 board alone used to feed it, and once Nov 16 passed it
+  // skipped SPP's Nov 20 date and the Dec 7 comment deadlines to announce Dec 16.
   function setMastheadDeadline() {
     var el = document.getElementById("masthead-fresh");
     if (!el) return;
-    var ps = procStatus();
-    if (!ps || !ps.next) return;
-    var n = ps.next.s;
-    // stepWhen, not n.date: procStatus PICKS `next` by the operative date, so reading the raw `date`
-    // back off the step announces the superseded one. With Aug 17 reset to Nov 16 this chip was
-    // rendering a date six days in the PAST as "Next deadline", above every tab.
-    var days = daysUntil(stepWhen(n));
-    el.innerHTML = '<a class="mh-next" href="#overview/clock">Next: <span class="mono">' + esc(fmtISO(stepWhen(n)).replace(/, \d{4}$/, "")) + "</span> · " + esc(n.label) +
-      (days >= 0 ? ", " + (days === 0 ? "today" : days === 1 ? "tomorrow" : "in " + days + " days") : "") + "</a>";
+    var today = todayISO();
+    var n = (D.timeline || []).filter(function (e) { return e.kind === "deadline" && /^\d{4}-\d{2}-\d{2}/.test(e.iso || "") && isoOf(e) >= today; })
+      .sort(function (a, b) { return a.iso < b.iso ? -1 : 1; })[0];
+    if (!n) return;
+    var days = daysUntil(isoOf(n));
+    el.innerHTML = '<a class="mh-next" href="#timeline/at/' + esc(n.iso) + '"><span class="mh-lbl">Next</span> <span class="mono">' + esc(fmtISO(isoOf(n)).replace(/, \d{4}$/, "")) + "</span> " + esc(n.title) +
+      (days >= 0 ? ' <span class="mh-days">' + (days === 0 ? "today" : days === 1 ? "tomorrow" : "in " + days + " days") + "</span>" : "") + "</a>";
     el.hidden = false;
   }
 

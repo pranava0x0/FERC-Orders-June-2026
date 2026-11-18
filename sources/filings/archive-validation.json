@@ -2,7 +2,7 @@
   "counts": {
     "juneOrders": 7,
     "junePdfPages": 951,
-    "postOrderFilings": 168,
+    "postOrderFilings": 175,
     "archivedHTML": 4,
     "commentAccessions": 273,
     "commentAttachmentsListed": 281,
@@ -1767,6 +1767,76 @@
       "textSha256": "cc4b85966c8db2a43e372e85d37b93d5208fa9982493376d2a6e1597d401a234",
       "status": "matches",
       "pages": 6
+    },
+    {
+      "accession": "20261116-5300",
+      "slug": "filing-er27-520-pjm-tos-large-loads",
+      "file": "sources/originals/20261116-5300_01.pdf",
+      "text": "sources/text/abeyance/filing-er27-520-pjm-tos-large-loads.txt",
+      "sha256": "13a9774395aacc74eb8ece2aa111029e886faabeb1a1494fe5c81f1d246c917b",
+      "textSha256": "d144da22e563b19db00b5532c581e93d5b8e0d4f744408cde03a7f58f931367f",
+      "status": "matches",
+      "pages": 336
+    },
+    {
+      "accession": "20261116-5340",
+      "slug": "filing-er27-531-pjm-large-loads",
+      "file": "sources/originals/20261116-5340_01.pdf",
+      "text": "sources/text/abeyance/filing-er27-531-pjm-large-loads.txt",
+      "sha256": "816478c587a2668626547b6ece6d63a6504be0156ec6a2ed4175af0f4169485d",
+      "textSha256": "b5a5d8a0eddb8746b6e700a831566cf2ad7460bcb162e0765101f076549f0579",
+      "status": "matches",
+      "pages": 91
+    },
+    {
+      "accession": "20261116-5309",
+      "slug": "filing-er27-522-pjm-ride-through",
+      "file": "sources/originals/20261116-5309_01.pdf",
+      "text": "sources/text/abeyance/filing-er27-522-pjm-ride-through.txt",
+      "sha256": "4fd2bb8c85194eae383a571c67dcf6b82e3ff555ec7401a0cebf3dc5b4125396",
+      "textSha256": "48bb31b71debfeb0944d04644918638fb699d261e5419f4e45c1ed2d5355d2d2",
+      "status": "matches",
+      "pages": 27
+    },
+    {
+      "accession": "20261116-5323",
+      "slug": "filing-er27-526-miso-large-loads",
+      "file": "sources/originals/20261116-5323_01.pdf",
+      "text": "sources/text/abeyance/filing-er27-526-miso-large-loads.txt",
+      "sha256": "3cda4ad54863190c7fdfa4ad76bf92c64948f31fff7bf781166a9abb7b8a15d0",
+      "textSha256": "ecb568338e1ed2598bd128e9d7fc37bef9639542ef5b4d1fa9747121fa931433",
+      "status": "matches",
+      "pages": 67
+    },
+    {
+      "accession": "20261116-5326",
+      "slug": "filing-er27-527-miso-grits",
+      "file": "sources/originals/20261116-5326_01.pdf",
+      "text": "sources/text/abeyance/filing-er27-527-miso-grits.txt",
+      "sha256": "78dbd6e4e171f7e033521d948b5bcd0b7f935954d9cd3c9957428bec9e086239",
+      "textSha256": "93fe590477dda01b77f69b4dfc79724e862f0a48a06bae8898757d6f2b76951c",
+      "status": "matches",
+      "pages": 18
+    },
+    {
+      "accession": "20261116-5179",
+      "slug": "filing-er27-506-caiso-large-loads",
+      "file": "sources/originals/20261116-5179_01.pdf",
+      "text": "sources/text/abeyance/filing-er27-506-caiso-large-loads.txt",
+      "sha256": "ca3237a5dfe7cff2a87445b260e851588c138a31b8dbc567f7b489557ee91571",
+      "textSha256": "0e719943f1c941e797793d5c14cfa8e5f12dba3e218e3451dedaccf1c1b89466",
+      "status": "matches",
+      "pages": 48
+    },
+    {
+      "accession": "20261116-5282",
+      "slug": "filing-er27-517-nyiso-large-loads",
+      "file": "sources/originals/20261116-5282_01.pdf",
+      "text": "sources/text/abeyance/filing-er27-517-nyiso-large-loads.txt",
+      "sha256": "e613db4b957ab1140ad166915a4429846f592cba8bc7dad98b222c1270e5f347",
+      "textSha256": "5a787943f0d489143d8a10b223e434e7d88182676cd70bd7d1a0acc2b502b5e2",
+      "status": "matches",
+      "pages": 130
     }
   ],
   "archivedHTML": [

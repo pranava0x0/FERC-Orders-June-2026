@@ -48,10 +48,13 @@ const digits = (v) => String(v).replace(/[^0-9.]/g, "").replace(/\.0+$/, "");
 
 export function loadContext() {
   const catalog = read(join(ROOT, "docs", "reading", "catalog.json"));
-  const themes = new Set(read(join(ROOT, "sources", "filings", "themes.json")).themes.map((t) => t.key));
+  const themeList = read(join(ROOT, "sources", "filings", "themes.json")).themes;
+  const themes = new Set(themeList.map((t) => t.key));
+  // A point may name the one June-order reform category it answers; the Overview crosswalk reads it.
+  const reforms = new Set(themeList.filter((t) => t.reform).map((t) => t.key));
   const anchorsFile = read(join(ROOT, "sources", "filings", "order-anchors.json"));
   const anchors = new Map(anchorsFile.orders.flatMap((o) => o.anchors.map((a) => [a.id, { ...a, slug: o.slug }])));
-  return { catalog, bySlug: new Map(catalog.map((c) => [c.slug, c])), themes, anchors };
+  return { catalog, bySlug: new Map(catalog.map((c) => [c.slug, c])), themes, reforms, anchors };
 }
 
 const pageCache = new Map();
@@ -103,7 +106,8 @@ export function validateReading(doc, ctx, file = doc.slug + ".json") {
   pts.forEach((p, i) => {
     const w = `${at} point ${i + 1}`;
     if (!p || typeof p.point !== "string" || typeof p.quote !== "string") { errs.push(`${w}: needs point and quote`); return; }
-    for (const k of Object.keys(p)) if (!["point", "quote", "pg", "pgEnd"].includes(k)) errs.push(`${w}: unknown key ${k}`);
+    for (const k of Object.keys(p)) if (!["point", "quote", "pg", "pgEnd", "reform"].includes(k)) errs.push(`${w}: unknown key ${k}`);
+    if (p.reform !== undefined && !ctx.reforms.has(p.reform)) errs.push(`${w}: reform must be one of ${[...ctx.reforms].join(", ")}`);
     if (words(p.point) > 28) errs.push(`${w}: point runs ${words(p.point)} words (max 28)`);
     if (words(p.quote) < 5 || words(p.quote) > 70) errs.push(`${w}: quote should be 5-70 words`);
     errs.push(...proseErrors(p.point, w));

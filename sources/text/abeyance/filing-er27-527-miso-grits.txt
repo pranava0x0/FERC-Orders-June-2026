@@ -1,0 +1,974 @@
+FERC filing — MISO — Docket ER27-527-000 — accession 20261116-5326 — MISO files the Grid Responsive Integration Transmission Service under section 205 — Issued 2026-11-16 — 18 pp
+Extracted locally with PyMuPDF (fitz) from the document downloaded from https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20261116-5326. Verbatim; source text layer preserved.
+
+
+--- PAGE 1 ---
+
+Midcontinent Independent
+System Operator, Inc.
+317.249-5400
+www.misoenergy.org
+720 City Center Drive
+Carmel, Indiana 46032
+2985 Ames Crossing Road
+Eagan, Minnesota 55121
+1700 Centerview Drive
+Little Rock, AR 72211
+
+Michael Kessler
+Managing Assistant General Counsel
+Direct Dial:  317-753-9434
+Email:  mkessler@misoenergy.org
+November 16, 2026
+VIA ELECTRONIC FILING
+The Honorable Debbie-Anne Reese
+Secretary
+Federal Energy Regulatory Commission
+888 First Street, NE
+Washington, DC  20426
+Re:
+Midcontinent Independent System Operator, Inc.’s
+Grid Responsive Integration Transmission Service for Large Loads
+Docket No. ER27-___-000
+
+Dear Secretary Reese:
+The Midcontinent Independent System Operator, Inc.  (“MISO”), through this filing,1
+submits proposed revisions to its Open Access Transmission, Energy and Operating Reserve
+Markets Tariff (“Tariff”),2 establishing the Grid Responsive Integration Transmission Service
+(“GRITS”).  GRITS provides a permanent firm and non-firm contract demand-based,
+Transmission Service option for Large Loads willing and able to limit their withdrawals under
+specified price and reliability conditions.
+
+MISO is submitting GRITS as a separate FPA section 205 filing from the Large Load
+Project Review (“LLPR”) process, cost recovery agreements, Firm Service Step Up (“FSSU”),
+and Interim Network Integration Transmission Service (“Interim NITS”).3  These initiatives are
+addressed in MISO’s separate large load omnibus filing submitted concomitantly.  The GRITS
+proposal is a stand-alone proposal and MISO describes the proposals contained in the omnibus
+filing here only as necessary to explain the interfaces with GRITS.
+
+MISO requests that the Commission accept the proposed revisions effective 120-days from
+the date of this filing (i.e., March 16, 2027) in order to facilitate MISO’s development of software
+
+1
+This filing is made pursuant to section 205 of the Federal Power Act (“FPA”), 16 U.S.C.  § 824d, and Part 35 of
+the regulations of the Federal Energy Regulatory Commission (“FERC” or “Commission”), 18 C.F.R.  § 35.1,
+et seq.
+2
+Unless otherwise indicated by the text or context of this transmittal letter, all terms used herein have the definitions
+set forth in Module A of the Tariff.
+3
+These filings are being submitted contemporaneously in response to the associated concerns set forth in the Show
+Cause Order.
+
+--- PAGE 2 ---
+The Honorable Debbie-Anne Reese
+November 16, 2026
+Page 2
+
+systems and related process modifications necessary to implement GRITS in early 2029, and to
+continue the development of rates applicable to GRITS in concert with the MISO Transmission
+Owners.  The GRITS proposal responds to the Commission’s concerns regarding the need for an
+ongoing firm and non-firm contract demand service option for flexible Large Loads, including,
+but not limited to, co-located arrangements.  The specific relationship to the proceeding in Docket
+No.  EL26-70-000 is addressed below.
+I.
+EXECUTIVE SUMMARY
+MISO appreciates the collaborative efforts of its stakeholder community and the
+Transmission Owners in developing proposals for the reliable integration of Large Loads on an
+expedited basis, consistent with the urgency created by the timelines established in the Show Cause
+Order.
+
+This filing provides the GRITS framework, which addresses the concerns raised by the
+Commission in the Show Cause Order with respect to the need for a permanent contract demand
+transmission service in the MISO region.  As discussed in more detail below, the earliest MISO
+will be able to implement GRITS is January 1, 2029.  This implementation timeline is driven by
+the need for significant modifications to MISO’s software systems and processes to  facilitate the
+reservation, scheduling, market systems, and billing services for GRITS, which is a new
+transmission service that does not conform with the transmission services offered today under
+MISO’s Tariff.  MISO recognizes the desire for the proposed service as noted by certain
+stakeholders and agrees that GRITS must provide a reliable and workable path for customers that
+elect permanent contract demand-based firm and/or non-firm transmission service and is
+committed to implementation of GRITS consistent with Commission acceptance and on a timeline
+that is technically feasible.
+
+Given the extended timeline for implementing GRITS, MISO and the Transmission
+Owners,  prioritized their efforts on solutions that can be delivered in the near term, including the
+Zero Injection Generator Interconnection Agreement (“ZGIA”) proposal, Interconnection
+Reliability Requirements (“IRR”), Load Addition Resource Study (“LARS”) proposal, Firm
+Service Step Up, Interim NITS and LLPR, including the development of pro forma cost recovery
+agreements to prevent unjust cost shifts related to upgrades identified through the LLPR process.
+This prioritization was necessary given the competing priorities of MISO’s proposals in response
+to the Show Cause Order and the abbreviated time frame during which the multiple issues
+identified in the Show Cause order needed to be addressed.  Moreover, GRITS is a novel and
+complex market-dependent approach to transmission service that was conceived later in the
+abeyance period (i.e., October 2026) and has necessitated greater stakeholder outreach and
+education.  As stated above, considerable work remains including significant modifications to
+MISO’s, and as may be required, the Transmission Owner’s and other Market Participants’,
+software systems and processes to accommodate GRITS.  As such, MISO requests Commission
+acceptance of the proposed GRITS framework to begin software development consistent with the
+Commission’s order and further requests the Commission permit MISO and the Transmission
+Owners to continue to develop a new rate structure applicable to GRITS and work with
+
+--- PAGE 3 ---
+The Honorable Debbie-Anne Reese
+November 16, 2026
+Page 3
+
+stakeholders to continue to refine the proposal on a timeline that will facilitate GRITS
+implementation in early 2029.
+
+II.
+BACKGROUND
+The scale and pace of large load development require transmission service options that
+reflect how a Large Load customer intends to use the Transmission System.  Some Large Load
+Transmission Customers may seek full firm service and need an interim arrangement while
+necessary supporting upgrades are completed.  MISO is proposing in its omnibus filing both an
+Interim NITS product and Firm Service Step Up process that will be implemented within its
+existing NITS framework to address these transmission service needs.  Other Large Load
+Transmission Customers may be able to accept continuing interruption of some or all of their
+demand and seek an ongoing allocation between firm and non-firm service on a permanent basis.
+GRITS addresses both of these needs as it provides the Large Load Transmission Customer the
+option to determine the appropriate combination of firm and non-firm contract demand
+transmission services needed to meet its operational needs, but does not require the Large Load
+Transmission Customer to progress toward firm service for any or all of its GRITS Load Limit.4
+
+In the June 18, 2026, Show Cause Order, the Commission examined whether MISO’s
+Tariff adequately addresses large and co-located load development, including service for loads
+willing and able to limit their withdrawals under certain conditions.  The Commission identified a
+permanent contract-demand-like service option, treatment of regulation and black start service,
+and controls needed to enforce withdrawal limits among the matters requiring attention.5
+
+The Commission permitted respondents to develop regional solutions through section 205
+filings and subsequently held the proceeding in abeyance.  MISO has advanced related proposals
+through separate filings, including Zero Injection Generator Interconnection Agreements
+(“ZGIA”), Interconnection Reliability Requirements for Large Loads (“IRR”), and the Large Load
+Addition Resource Study (“LARS”) and the Large Load omnibus filing submitted separately
+pursuant to FPA section 205.  GRITS provides a distinct Transmission Service option that can
+operate with the applicable study, interconnection, and reliability requirements.  Generator
+Interconnection Service does not itself provide the Transmission Service needed for associated
+load.6
+
+4
+GRITS Load Limit: The maximum amount of Load specified in the Form of Service Agreement for GRITS by
+the Large Load Transmission Customer taking GRITS that may be scheduled at a Point(s) of Delivery pursuant
+to Module B of this Tariff.
+5
+Midcontinent Indep.  Sys.  Operator, Inc., 195 FERC ¶ 61,212, PP 98–105 (2026), errata notice, 196 FERC ¶
+61,123 (2026) (“Show Cause Order”).
+6
+Show Cause Order P 37; Midcontinent Indep. Sys. Operator, Inc., 196 FERC ¶ 61,133, PP 8-11 (2026)
+(“Abeyance Order”); ZGIA Transmittal at 1-2, 6-7.
+
+--- PAGE 4 ---
+The Honorable Debbie-Anne Reese
+November 16, 2026
+Page 4
+
+III.
+  PROPOSED GRITS SERVICE
+A.
+Eligibility, service quantities, and agreements.
+
+GRITS provides an ongoing service arrangement for a Large Load Transmission Customer
+serving a Large Load that may desire a combination of both firm and non-firm contract demand-
+like transmission service and, with respect to any non-firm service, is willing and able to limit its
+withdrawals under specified price and reliability conditions.  For example, a Large Load
+Transmission Customer representing a Large Load of 500 MW may desire to only take 200 MW
+of firm transmission service, allowing the remaining 300 MW to be served on a non-firm basis.
+Under Network Integration Transmission Service this participation model is not available while
+GRITS provides a pathway for such an arrangement.
+
+GRITS will only be made available to a Large Load Transmission Customer, cannot be
+combined with any other NITS transmission service, and is not limited to Large Load being served
+by a co-located generator.  GRITS Service requires that a Large Load Transmission Customer
+establish a GRITS Load Limit and a Firm GRITS quantity that may range from zero to the full
+Load Limit in the pro forma GRITS service agreement (“GRITS Service Agreement”), which
+cannot be exceeded without execution of a new pro forma GRITS Service Agreement.  Non-Firm
+GRITS may be reserved within the difference between those quantities as needed and as available.
+The GRITS Load Limit defines the maximum approved Load in the GRITS Service Agreement;
+it does not guarantee that the entire non-firm quantity will be available in every period.
+
+GRITS contains the firm and non-firm components within one GRITS Service Agreement.
+MISO does not propose combining NITS and GRITS for the same load to create that allocation,
+and a change to the GRITS Load Limit or Firm GRITS quantity requires a new GRITS Service
+Agreement.  Where both firm and non-firm quantities are present, separate Commercial Pricing
+Nodes (“CPNodes”) represent those components.  This representation supports the different
+reservation, interruption, billing, capacity, and Auction Revenue Rights (“ARR”) treatment
+applicable to each GRITS service component.
+
+For example, a 300 MW GRITS Load Limit with 60 MW of Firm GRITS permits a
+maximum non-firm quantity of 240 MW.  At 200 MW of operating demand, the proposed
+allocation assigns the first 60 MW to the CPNode representing the firm component and the
+remaining 140 MW to the CPNode representing the non-firm component.  That allocation is
+subject to an available reservation and the applicable operating limit; the agreement’s 240 MW
+non-firm maximum does not itself establish that 240 MW will be available for every hour.
+
+As noted above, GRITS accommodates both stand-alone Large Loads and qualifying co-
+located arrangements.  A Large Load Transmission Customer must request GRITS through the
+applicable LLPR process and will be required to execute a GRITS Service Agreement and a
+GRITS Operating Agreement specifying the quantities, operational limits, communications, and
+control requirements.  Service commences after Network Upgrades, Large Load Network
+Upgrades and/or Impacted Transmission Owner Large Load Network Upgrades identified through
+
+--- PAGE 5 ---
+The Honorable Debbie-Anne Reese
+November 16, 2026
+Page 5
+
+the LLPR process are complete and the applicable service and operating prerequisites are satisfied.
+As explained by Ms. Xie, Firm Service Step-up, which is proposed in MISO’s Omnibus Filing,
+cannot be combined with GRITS because GRITS establishes its own ongoing allocation of firm
+and non-firm service within the GRITS Service Agreement.
+
+B.
+Reservations and service priority.
+
+Non-Firm GRITS will be reserved through the Open Access Same-Time Information
+System (“OASIS”) for periods ranging from one Day to one month.  The reservation rules use the
+existing Point-To-Point Transmission Service framework, including priority for longer requested
+service periods within the permitted range and the order of competing equal-duration requests.  A
+new reservation receives its applicable position in that process.  The underlying Form of GRITS
+Service Agreement does not reserve non-firm service indefinitely, and reservation priority of non-
+firm service remains distinct from the priority applied when existing service must be curtailed.
+
+Firm GRITS is reserved for at least one year within the ongoing arrangement.  Reservation
+priority determines the order in which requests are evaluated; curtailment priority determines
+which existing service is reduced when the system cannot support scheduled use.  A customer’s
+continuing GRITS agreement does not establish an indefinite reservation of non-firm capability.
+The following depicts the priority of Firm and Non-Firm GRITS:
+
+C.
+Transmission charges and gross-load billing.
+
+GRITS will use reservation-based Transmission Service charges benchmarked to the rates
+for GRITS service that will be filed in a subsequent FPA section 205 filing.  MISO notes that it
+
+--- PAGE 6 ---
+The Honorable Debbie-Anne Reese
+November 16, 2026
+Page 6
+
+will continue working with its Transmission Owners specifically,7 and the broader stakeholder
+community, to develop the rates applicable to GRITS transmission services.  MISO and the
+Transmission Owners intend to either submit the proposed GRITS transmission service rates prior
+to the proposed implementation date requested herein (i.e., March 16, 2027) or provide the
+Commission with a status report detailing the progress that has been made to establish such rates
+as well a revised date to propose such rates.
+
+Given the expansive scope of issues that need to be addressed in the Show Cause Order,
+and the relatively limited amount of time to consider and address those issues, there has simply
+not yet been sufficient opportunity for MISO and MISO Transmission Owners to finalize a rate
+design for GRITS.  Notwithstanding the lack of such rates being included in this filing, MISO has
+developed a sufficiently detailed and robust transmission service that both complies with the intent
+of the Show Cause Order and merits Commission acceptance, subject to further compliance.  This
+is particularly the case because GRITS cannot be provided until January 2029.
+
+The GRITS proposal also applies gross-basis treatment to applicable service-related
+charges, including regulation and black start, so that a co-located arrangement does not avoid
+charges for services it receives merely because its net withdrawal is below its gross load.  These
+reservation-based charges and gross-basis billing serve different functions and apply through the
+billing determinants established for the particular service.
+
+A reservation-based charge, such as that used for the existing Point-To-Point Transmission
+Service rates, reflects the amount of Transmission Service reserved, rather than actual
+consumption alone.  The applicable schedules govern any billing adjustment or credit for
+interrupted service.  Co-located generation serving a Large Load receiving GRITS service must
+be registered as a Generation Resource, and the Large Load Transmission Customer must procure
+Transmission Service to receive service from the co-located resource.  Co-location therefore does
+not eliminate the obligation to procure Transmission Service or permit the customer to “net away”
+gross load relevant to regulation and black start billing.
+
+D.
+Price-based interruption.
+
+Non-Firm GRITS will be interrupted when the Locational Marginal Price at its CPNode
+exceeds the GRITS Offer Cap, which is $100/MWh.  Ms. Xie explains that historical data,
+including the 2025 State of the Market Report, indicates that historical data indicates this price
+permits service more than 95% of all Hours.8  To effectuate the GRITS Offer Cap in the Day-
+Ahead Energy and Operating Reserve Market, the Market Participant representing the Large Load
+will be required to submit a Price Sensitive Demand Bid for the CPNode representing the non-
+
+7
+MISO’s Transmission Owners have filing rights with respect to the rates for transmission service pursuant
+Appendix K to the Agreement of Transmission Facilities Owners to Organize the Midcontinent Independent
+System Operator, Inc., Rate Schedule No. 1 of the Tariff (“Transmission Owners Agreement").
+8
+2025 STATE OF THE MARKET REPORT FOR THE MISO ELECTRICITY MARKETS available at:
+https://www.potomaceconomics.com/wp-content/uploads/2026/07/2025-MISO-SOM_Appendix_Final.pdf.
+
+--- PAGE 7 ---
+The Honorable Debbie-Anne Reese
+November 16, 2026
+Page 7
+
+firm portion of the GRITS Load that is no greater than $100/MWh.  The GRITS Offer Cap will be
+effectuated in both the Day-Ahead and Real-Time Energy and Operating Reserve Markets by
+incorporating the Non-Firm GRITS portion of the GRITS Load into the Security Constrained Unit
+Commitment (“SCUC”) and Security Constrained Economic Dispatch (“SCED”) processes.  As
+such, Ms. Xie explains that the Large Load Transmission Customer’s election of Non-Firm GRITS
+therefore includes the ability to comply with both the price condition and the resulting operating
+directive.
+
+Ms. Xie further explains that the GRITS Offer Cap serves two complementary objectives.9
+First, by establishing the GRITS Offer Cap, MISO can use the Security Constrained Economic
+Commitment (“SCUC”) and Security Constrained Economic Dispatch (“SCED”) processes to
+efficiently issue Interruption directives to the Non-Firm GRITS Load without relying upon
+administrative Emergency procedures. Requiring Non-Firm GRITS Loads to be included in the
+SCUC/SCED processes provides an automated and transparent way of curtailing these Loads as
+the system conditions experienced reduced transmission or generation capacity.  Second,
+establishing the GRITS Offer Cap at the first non-zero step of the Market-Wide Short-Term
+Reserve Demand Curve prevents reliability being degraded for all Transmission Customers by
+ensuring the Non-Firm GRITS Load is offline before a shortfall of operating reserves occurs.  This
+limitation reflects the “as-available” nature of Non-Firm GRITS and is consistent with the
+reliability rationale underlying the Tariff’s authorization to curtail Non-Firm Point-To-Point
+Transmission Service when an Emergency or other unforeseen condition threatens to impair or
+degrade Transmission System reliability.
+
+E.
+Reliability based Curtailment and enforcement.
+
+Non-Firm GRITS Load is also subject to reliability-based Curtailment directives, including
+Curtailment upon the declaration of a Capacity Advisory in the same Local Balancing Authority
+(“LBA”).  During Transmission Emergencies, Non-Firm GRITS Load is curtailed with the same
+priority as Loads served using Non-Firm Point-To-Point Transmission Service of equal service
+duration and before Loads served through Interim NITS and Firm Transmission Service.  Ms. Xie
+explains how Resource Adequacy is maintained if the Non-Firm GRITS Load is excluded from
+the Planning Resource Auction because the GRITS Offer Cap will ensure these Loads are curtailed
+whenever LMP rises above the GRITS Offer Cap.10  In the event a Capacity Advisory declaration
+is made while LMP is below the GRITS Offer Cap, MISO will issue the Curtailment directive for
+the entire Non-Firm GRITS Load.11  Accordingly, Resource Adequacy is assured because these
+Loads will not be competing with other types of Load at the times when Resource Adequacy is
+under pressure.  The portion of a Large Load served through Firm GRITS remains in the
+Coincident Peak Demand forecast and retains the corresponding capacity responsibility to procure
+Zonal Resource Credits.
+
+9
+Xie at 9.
+10   Xie at 16.
+11   Id.
+
+--- PAGE 8 ---
+The Honorable Debbie-Anne Reese
+November 16, 2026
+Page 8
+
+GRITS depends on observable and enforceable withdrawal limits.  Metering, telemetry,
+model representation, communications, and operating controls support MISO’s administration of
+those limits.  The Transmission Owner will determine additional control technologies or protection
+systems required for the arrangement.  MISO will communicate Interruption and Curtailment
+directives through the Market Participant representing the Load in MISO’s Energy and Operating
+Reserve Markets, and applicable operating procedures will govern restoration.
+
+Ms. Xie explains that if the Large Load Transmission Customer with Non-Firm GRITS
+fails to interrupt when directed, the applicable Transmission Owner has the authority implement
+remote disconnect procedures, and the Large Load Transmission Customer will be subject to
+unreserved use penalties, additional financial penalties for repeated failure, and possible
+termination of Transmission Service.12  These consequences support the operating limitations the
+customer accepts in electing GRITS.
+
+F.
+Resource Adequacy, ARR Entitlements, and market participation.
+
+Firm GRITS remains subject to the applicable Resource Adequacy and capacity obligations
+established in Module E of the Tariff and is eligible to register as a Load Modifying Resource.
+Ms. Xie explains, the portion of a Large Load served through Non-Firm GRITS service may be
+excluded from the obligation to procure Zonal Resource Credits.13  This means this portion of the
+Large Load will not be included in the Coincident Peak Demand forecast and a Market Participant
+is not eligible to enroll the Non-Firm GRITS portion of the Large Load as a Load Modifying
+Resource. The portion of a Large Load served through Firm GRITS is required to procure Zonal
+Resource Credits and is eligible to participate as a Load Modifying Resource.
+
+MISO is not proposing changes to the eligibility requirements for a Load to receive Auction
+Revenue Rights (“ARR”).  The Tariff changes proposed herein clarify that ARR Entitlements are
+limited to Firm GRITS Load only, and the non-firm component of GRITS Load is excluded from
+acquiring ARRs and from the Peak Usage determination.
+
+The proposal prohibits Non-Firm GRITS Load from participating as a Demand Response
+Resource (“DRR”), Load Modifying Resource (“LMR”), or Emergency Demand Response
+(“EDR”) resource.  As explained by Ms. Xie, prohibition of Non-Firm GRITS Load from
+participating as a DRR is consistent with Order No. 745.  Prohibiting enrollment as a Load
+Modifying Resource also follows from these Loads not having an obligation to procure Zonal
+Resource Credits.14
+
+12  Xie at 20.
+13  Xie at 16.
+14  Xie at 16.
+
+--- PAGE 9 ---
+The Honorable Debbie-Anne Reese
+November 16, 2026
+Page 9
+
+G.
+Planning and commercial model treatment.
+
+The firm component of GRITS Load is included in ongoing MISO Transmission
+Expansion Plan (“MTEP”) planning, while the total GRITS Load remains subject to applicable
+Interconnection Reliability Requirements (“IRR”) and stability review.  The requirement to
+establish separate CPNodes for Firm and Non-Firm GRITS Load respectively, and corresponding
+Elemental Pricing Nodes allow the service allocation to be reflected in operations, forecasts,
+bidding, billing, and ARR treatment.  Actual  Energy Withdrawals associated with GRITS service
+are assigned first to the firm component, up to the Firm GRITS service quantity, with remaining
+withdrawals assigned to the Non-Firm GRITS quantity.  This representation does not authorize
+withdrawals beyond a valid Transmission Service Reservation or the applicable operating limit.
+
+IV.
+RESPONSE TO THE SHOW CAUSE ORDER
+
+Section 205 requires jurisdictional rates and practices to be just and reasonable and
+prohibits undue preferences and unreasonable differences in service.15  GRITS ties the
+Transmission Customer’s rights to the service it requests: firm quantities retain firm treatment and
+corresponding capacity obligations, while non-firm quantities receive as-needed and as-available
+service, lower priority for reliability interruptions, and a price-based interruption condition.16
+Separate reservation requirements and model treatment for Firm and Non-Firm GRITS makes
+those distinctions administrable.
+
+The GRITS proposal responds to the ongoing flexible-service concerns in paragraphs 100
+through 105 of the Show Cause Order by establishing a defined Load Limit, an elected firm
+quantity, separately reserved non-firm service, and enforceable operating conditions.17  The
+proposal’s gross-load treatment prohibits netting and addresses the regulation and black start
+concerns identified in Paragraphs 98–100 of the Show Cause Order.  In addition, the proposal’s
+metering and control requirements address the withdrawal-limit concerns in paragraph 102 of the
+Show Cause Order.  Those features connect the service received with the obligations accepted by
+the customer.18
+
+The planning provisions of the GRITS proposal, which require requests for GRITS to be
+evaluated through the LLPR process consistent with all other requests for Transmission Service
+made by Large Load Transmission Customers, also address the issue identified in Paragraph 124
+of the Show Cause Order.19  Through this process requests for Firm GRITS will be subject to the
+analysis for ongoing firm service, which reflects the Firm GRITS quantity, while total GRITS
+
+15  16 U.S.C. § 824d(a)–(b).
+16  Show Cause Order at PP 100-105; Xie at 6, 20.
+17  Xie at 18-21.
+18  Show Cause Order at PP 98–105.
+19  Xie at 7; Show Cause Order at P 124.
+
+--- PAGE 10 ---
+The Honorable Debbie-Anne Reese
+November 16, 2026
+Page 10
+
+Load remains subject to reliability and stability assessment.20  The GRITS accreditation provisions
+for co-located ZG Resources addresses the portion of paragraph 127 of the Show Cause Order
+concerning the relationship between capacity recognition and the associated load’s service.21
+These provisions supplement the separately proposed study and generator-interconnection
+frameworks.22
+
+Reservation-based charges, gross-load ancillary service billing, price-based interruption,
+and firm-only ARR eligibility address different aspects of cost responsibility.23  The separately
+proposed cost recovery agreements submitted in the omnibus filing are required for all address
+obligations associated with covered Large Load Network Upgrades and Impacted Transmission
+Owner Network Upgrades.  Because requests for GRITS are required to be evaluated through the
+LLPR, all Large Load Transmission Customers granted GRITS will be required to enter into the
+Form of Agreement for Large Load Cost Recovery Agreement (proposed Attachment LLL) and
+Form of Agreement for Large Load Impacted Transmission Owner Cost Recovery Agreement
+(proposed Attachment MMM).24
+
+GRITS service is only available to Large Load Transmission Customers capable of meeting
+operational requirements for GRITS and these enforcement mechanisms ensure that the approved
+service quantities are not merely contractual limits but are limits that MISO can enforce in real
+time.25  Large Load Transmission Customers electing GRITS are subject to the same applicable
+service conditions.  The distinct treatment of Firm and Non-Firm GRITS quantities reflects the
+unique characteristics, firmness, curtailment and interruption obligations of each respective
+service.
+
+V.
+DESCRIPTION OF PROPOSED TARIFF REVISIONS
+
+As discussed, GRITS is an independent, stand-alone proposal that can be accepted and
+implemented separate from MISO’s other FPA section 205 filing submitted in response to the
+Show Cause Order.  Because MISO’s omnibus filing has been submitted prior to this filing, MISO
+has built the GRITS Tariff revisions to include (i.e., on top of) the proposed revisions to the Tariff
+submitted in the omnibus filing.  MISO has highlighted all Tariff language pending Commission
+acceptance in the Tariff records submitted in Tab A hereto.
+
+The proposed Tariff records establish GRITS eligibility and defined quantities; application,
+establish a Form of GRITS Service Agreement, and Operating Agreement requirements;
+
+20  Xie at 7, 19-21.
+21  Xie at 17-18.
+22  Show Cause Order at PP 124, 127.
+23  Xie at 15-16, 19-20.
+24  Xie at 7.
+25  Xie at 20-21.
+
+--- PAGE 11 ---
+The Honorable Debbie-Anne Reese
+November 16, 2026
+Page 11
+
+reservation duration and priority; price and reliability interruption; control, enforcement, and
+restoration requirements; and changes to the Load Limit or firm quantity.  Conforming revisions
+to Module C of the Tariff implement separate commercial model representation requirements,
+establish ARR eligibility only for Firm GRITS, establish Resource Adequacy treatment,
+participation restrictions, and the co-located ZG Resource accreditation interface.
+
+A.
+Definitions
+
+MISO proposes the following, new definitions for GRITS:
+
+Firm Grid Response Integration Transmission Service (Firm GRITS):  The amount of
+firm Transmission Service that is reserved and/or scheduled to a specific Point(s) of
+Delivery pursuant to the Form of Service Agreement for GRITS.  A Large Load
+Transmission Customer taking Firm GRITS may reserve and/or schedule between 0 MW
+and the GRITS Load Limit.
+
+Grid Response Integration Transmission Service (GRITS):  A Transmission Service
+provided under Module B of this Tariff that permits a Large Load Transmission Customers
+to take Transmission Service.  GRITS permits the reservation of Capacity and of Energy
+on either a firm or non-firm basis from Network Resources to the Point(s) of Delivery.
+GRITS is comprised of three components; GRITS Load Limit, Firm GRITS, and Non-Firm
+GRITS.  A Transmission Customer may not change the GRITS Load Limit or the amount
+of Firm GRITS without a new Form of Service Agreement for GRITS.
+
+GRITS Load Limit:  The maximum amount of Load specified in the Form of Service
+Agreement for GRITS by the Large Load Transmission Customer taking GRITS that may
+be scheduled at a Point(s) of Delivery pursuant to Module B of this Tariff.
+
+GRITS Offer Cap:  The maximum Locational Marginal Price at the Commercial Pricing
+Node associated with a Large Load taking Non-Firm GRITS service that a Market
+Participant may submit in a Bid.  Non-Firm GRITS may be Interrupted if the Locational
+Marginal Price rises above the GRITS Offer Cap.
+
+Non-Firm GRITS:  The amount of Non-Firm Transmission Service that is reserved and
+scheduled on an as-available basis and is subject to Curtailment or Interruption as set forth
+in Section 37B of this Tariff.  Non-Firm GRITS is available only to Large Load
+Transmission Customers for periods ranging from one (1) Day to one (1) Month.  A Large
+Load Transmission Customer taking Grid Responsive Integration Transmission Service
+may reserve and/or schedule between 0 MW and the difference of GRITS Load Limit and
+Firm GRITS.
+
+--- PAGE 12 ---
+The Honorable Debbie-Anne Reese
+November 16, 2026
+Page 12
+
+B.
+Module B
+
+MISO has revised the introduction of Module B of the Tariff to establish GRITS as a
+service available only to Large Load Transmission Customers.  In addition, MISO has established
+Section 37B of the Tariff to include the terms and conditions of GRITS.  The following table
+provides a brief overview of the proposed GRITS Tariff revisions in addition to the definitions.
+
+The marked and clean Tariff records submitted as Tab A and B respectively, set out the
+revisions.  The following table of Tariff revisions is provided for reference and informational
+purposes only.  The language filed in the proposed Tariff revisions shall control in the event of any
+discrepancies between the information provided in this table and the proposed Tariff revisions.
+
+Tariff Section
+Tariff Section Title
+Brief Description of changes
+Module B
+
+37B.1
+GRITS Term
+Establishes the minimum service
+terms for Firm GRITS and Non-Firm
+Grits
+37B.2
+GRITS Reservation Priority
+Establishes the reservation priority for
+Firm GRITS and Non-Firm GRITS
+relative to other Transmission
+Services under the Tariff
+37B.3
+GRITS Service Agreement
+Establishes the requirement that a
+Large Loat Transmission Customer
+taking GRITS must execute a Form of
+Service Agreement for GRITS.
+37B.4
+GRITS Change in Service Request
+Establishes the requirement that a
+Large| Loat Transmission Customer
+seeking to change the amount of
+GRITS must submit a new application
+for GRITS.
+37B.5
+GRITS Transmission Provider
+Responsibilities
+Establishes MISO’s responsibilities
+for revising GRITS requests.
+37B.6
+Secondary Service to Firm GRITS
+Establishes the treatment of Firm
+GRITS from non-Designated Network
+Resources and the associated priority
+of the service.
+37B.7
+GRITS Restrictions on Use of
+Service
+Requires any Large Load
+Transmission Customer to use Point-
+to-Point Transmission Service for
+third-party sales outside of the MISO
+Region.
+37B.8
+GRITS Application Procedures
+Establishes the application and
+procedures for requesting GRITS, and
+
+--- PAGE 13 ---
+The Honorable Debbie-Anne Reese
+November 16, 2026
+Page 13
+
+provides detail regarding the
+evaluation of a GRITS request.
+37B.9
+GRITS Arrangement to be
+Completed Prior to Service
+Establishes the requirement to
+complete installation of all equipment
+specified under the GRITS Operating
+Agreement prior to service.
+37B.10
+GRITS Transmission Customer
+Facilities
+Establishes responsibility for
+construction, maintenance and
+operation of facilities used to provide
+GRITS.
+37B.11
+GRITS Study Procedures
+Establishes the study procedures for
+requests for Non-Firm GRITS.
+37B.12
+GRITS Procedures
+Requires that procedures for Load
+Shedding, Curtailment and
+Interruption be established by MISO,
+the Transmission Owner and Large
+Load Transmission Customer prior to
+commencement of GRITS.
+37B.13
+GRITS Transmission Constraints
+States that MISO will take actions
+necessary to maintain Transmission
+System reliability if necessary to
+address a transmission constraint.
+37B.14
+GRITS Cost Responsibility for
+Relieving Transmission Constraint
+Establishes that curtailment of
+scheduled deliveries may occur in
+accordance with the applicable
+GRITS Operating Agreement or
+NERC / NAESB TLR procedures.
+37B.15
+GRITS Curtailment of Scheduled
+Deliveries
+Establishes the procedure for
+curtailing Firm GRITS.
+37B.16
+GRITS Load Shedding
+Established the procedures for Load
+Shedding relative to Firm GRITS.
+37B.17
+GRITS System Reliability
+Establishes the provisions for
+curtailment of Firm and Non-Firm
+Grits, and the costs associated with a
+Large Load Transmission Customer’s
+failure to respond to MISO’s
+curtailment directives.
+37B.18
+Classification of Firm GRITS
+Limits the use of FIRM GRITS to the
+levels specific in the applicable
+GRITS Service Agreement.
+37B.19
+Classification of Non-Firm GRITS
+Establishes unreserved use penalties
+for Non-Firm GRITS
+37B.20
+Scheduling of Non-Firm GRITS
+Requires Non-Firm GRITS schedules
+to be submitted consistent with the
+
+--- PAGE 14 ---
+The Honorable Debbie-Anne Reese
+November 16, 2026
+Page 14
+
+requirements of Attachment J to the
+Tariff.
+37B.21
+Non-Firm GRITS Curtailment or
+Interruption of Service
+Establishes the rules for curtailment or
+interruption of Non-Firm GRITS and
+the priority of Non-Firm GRITS in
+relation to other Transmission
+Services.
+37B.22
+GRITS Offer Cap
+Establishes the GRITS Offer Cap of
+$100/MWh.
+37B.23
+GRITS Operating Agreement
+Establishes the components of the
+GRITS Operating Agreement.
+Module C
+
+38.6
+Aggregators of Retail Customers
+Requires an ARC to attest that no part
+of a DRR, LMR, or EDR is being
+served by Non-Firm GRITS.
+39.2.2
+Demand Bid Rules in the Day-
+Ahead Energy and Operating
+Reserve Markets
+Limits the amount of Price Sensitive
+Demand Bid from Large Load taking
+Non-Firm GRITS to the GRITS Offer
+Cap.
+40.2.15.s
+Real-Time Energy and Operating
+Reserve Market Process
+Establishes that Non-Firm GRITS is
+subject to Interruption when the Real-
+Time Ex Ante LMP exceeds the
+GRITS Offer Cap.
+40.2.20
+Capacity Shortage Conditions in
+the Real-Time Energy and
+Operating Reserve Market
+Establishes Step Zero in the priority
+of Interruption for Capacity Shortage
+Conditions in the Real Time market.
+42.6
+Partial-Year FTR Allocation
+Process for New ARR Zones
+Includes Firm GRITS as an eligible
+service for nominations.
+43.2.4
+Nomination and Allocation of
+ARRs and MTPS ARRs
+Includes Firm GRITS as an eligible
+service for nominations.
+69A.1.1
+Forecasted Demand Identification
+Excludes Non-Firm GRITS from
+Coincident Peak Demand forecast.
+69A.1.2
+Daily Assignment of Coincident
+Peak Demand Obligations
+Excludes Demand from a Large Load
+taking Non-Firm GRITS from an
+LSE’s portion of such Demand.
+69A.3.1.G
+Determination of Deliverability
+Makes explicit deliverability of a ZG
+Resource to a ZG Associated Load
+requires Firm Transmission Service or
+Interim NITS Transmission Service.
+69A.3.3
+Load Modifying Resources
+Non-Firm GRITS cannot participate
+as a Load Modifying Resource
+Attachments
+
+--- PAGE 15 ---
+The Honorable Debbie-Anne Reese
+November 16, 2026
+Page 15
+
+Attachment F-1
+Form of Service Agreement for
+Grid Responsive Integration
+Transmission Service
+Form of Service Agreement for
+GRITS and related exhibits including
+specification sheets.
+Attachment G-1
+Form of GRITS Operating
+Agreement for Grid Responsive
+Integration Transmission Service
+Form Operating Agreement for
+GRITS service.
+
+VI.
+STAKEHOLDER ENGAGEMENT
+
+MISO developed the GRITS proposal through successive discussions with the Large Load
+Working Group (“LLWG”).  At the August 12, 2026 LLWG meeting, MISO presented its Flexible
+Large-Load Interconnections and Transmission Service (“FLITS”) concept, which contemplated
+both interim and permanent non-firm service.  MISO requested written feedback by August 19,
+2026, with particular emphasis on resource adequacy.  Stakeholders addressed curtailment,
+capacity obligations, and the implications of offering permanent non-firm service.  The
+environmental sector recommended developing separate interim and permanent products given
+their different purposes and operating requirements.26
+
+At the September 9, 2026 LLWG meeting, MISO presented interim FLITS and a separate
+permanent Contract Demand service and requested written comments by September 16.
+Stakeholders addressed how the proposed services would differ in rates, curtailment priority,
+resource adequacy treatment, and ARR eligibility.  At the September 23, 2026  LLWG meeting,
+MISO focused its presentation on Interim NITS and confirmed during the discussion that it
+continued to develop the permanent service and would return with an update on October 8, 2026.
+The September 23, 2026 feedback request set an October 2, 2026 deadline for comments on the
+Interim NITS design and an October 16 deadline for comments on the anticipated Interim NITS
+Tariff redlines.27
+
+At the October 8, 2026 LLWG meeting, MISO presented the permanent service as GRITS
+and requested written feedback by October 16, 2026.  The proposal allowed customers to combine
+a firm service quantity with short-term, as-available non-firm reservations.  MISO also proposed
+excluding the non-firm portion from the Coincident Peak Demand forecast and requiring
+interruption under specified reliability and price conditions.  Stakeholders commented on the
+proposed price trigger, coordination and enforcement of curtailment, capacity forecasting and
+modeling, and the treatment of co-located resources.  They also asked how a customer could
+increase its firm service quantity after service began.
+
+26   MISO, LLWG, Flexible Large-Load Interconnections and Transmission Service (FLITS) Proposal, LLWG-2026-
+5 (Aug. 12, 2026) (feedback request and submitted comments, including Environmental Sector comments).
+(misoenergy.org, misoenergy.org).
+
+27  MISO, LLWG, Non-Firm Large Load, Item 6 (Sept. 9, 2026), and associated feedback request and comments,
+LLWG-2026-5. See also MISO, LLWG, Conditional Non-Firm Transmission Service, Item 7, slide 2 (Sept. 23,
+2026), and associated Interim NITS feedback request, LLWG-2026-5. (misoenergy.org, cdn.misoenergy.org,
+misoenergy.org).
+
+--- PAGE 16 ---
+The Honorable Debbie-Anne Reese
+November 16, 2026
+Page 16
+
+At the October 29, 2026 LLWG meeting, MISO presented GRITS alongside Interim NITS
+and reviewed the differences in reservation terms, service priority, billing, and resource adequacy
+treatment.  After receiving stakeholder feedback on the October 8, 2026 proposal, MISO reported
+that it was evaluating whether to use a GRITS Offer Cap as a price-based interruption trigger and,
+if so, where to set it.  Stakeholders submitted additional written comments on November 4
+addressing, among other matters, non-firm transmission charges, the proposed price trigger, and
+resource adequacy treatment.28
+
+VII.
+DOCUMENTS SUBMITTED IN THIS FILING
+
+In addition to this Transmittal Letter, this submission includes the following materials, with
+the final tab and exhibit designations identified in the filing index:
+
+Tab A – Redline Tariff29
+
+Tab B – Clean Tariff
+
+Tab C – Testimony of Zhaoxia Xie
+
+VIII.
+EFFECTIVE DATE AND REQUEST FOR CONTINUED ABEYANCE
+
+MISO requests an effective date 120-days from the date of this filing (i.e., March 16, 2027),
+with implementation of GRITS to begin January 1, 2029.  Acceptance of the GRITS proposal by
+the requested effective date is necessary to facilitate the planned implementation timeline because
+such implementation requires significant modifications to MISO’s existing software systems and
+processes, coordinated service agreements, models, market registration, billing arrangements,
+operating controls, and communications.
+
+28  MISO, LLWG, Interim NITS and Grid Responsive Integration Transmission Service, Item 5, slides 2, 8, 20–24
+(Oct. 29, 2026). Antora Energy comments (Nov. 4, 2026, posted Nov. 9, 2026). (cdn.misoenergy.org,
+cdn.misoenergy.org, misoenergy.org, misoenergy.org).
+29  Language currently pending before the Commission in the following, unrelated dockets is highlighted in yellow:
+ER26-3552-000 and ER26-3650-000.  Also highlighted is pending language filed in MISO’s Large Load Omnibus
+filing being submitted contemporaneously.  MISO requests that the Commission treat such highlighted language
+as subject to the outcome of those pending proceedings.  If needed, MISO commits to file any revisions to this
+highlighted language as necessary to comply with any Commission orders in the proceeding.
+In addition, MISO has not included language that has future effective dates of 6/1/2027, 9/1/2027, 6/12/2028,
+6/1/2029, under Docket Nos. ER22-1640-007, ER22-1640-006, and ER22-1640-003, respectively. MISO has also
+removed language that has a future effective date of 9/1/2027 and is pending in Docket No. ER25-1886-000. If
+needed, MISO commits to file any revisions to comply with any Commission orders in these proceedings and
+MISO commits to make subsequent filings with the Commission to reflect the most up-to-date version of the
+then-current Tariff provisions prior to the effective dates of the language.
+
+--- PAGE 17 ---
+The Honorable Debbie-Anne Reese
+November 16, 2026
+Page 17
+
+MISO also moves to extend the existing abeyance period under Rule 212 of the
+Commission’s Rules of Practice and Procedure.30  As the Abeyance Order explained, the
+Commission encouraged MISO, the Transmission Owners, and stakeholder to continue to
+collaborate in order to develop one or more FPA section 205 proposals to address the requirements
+of the Show Cause Order.31  The GRITS proposal is one output from this ongoing stakeholder
+process.  As stated, MISO cannot implement GRITS until January 1, 2029, subject to the
+Commission accepting a rate, which as explained above will be submitted in for Commission
+review in a future filing.  MISO, therefore, moves to extend the abeyance period until the
+Commission accepts the GRITS proposal and applicable rate for Firm and Non-Firm GRITS.
+MISO respectfully submits that this extension to the abeyance is necessary to avoid a lapse in the
+existing abeyance period while the GRITS rate is determined.  Moreover, granting the continued
+abeyance is reasonable, especially in light of the limited scope of request as compared to the
+significant proposals filed in response to the Show Cause Order.
+
+IX.
+COMMUNICATIONS
+MISO respectfully requests waiver of Rule 203(b)(3) of the Commission’s Rules of
+Practice and Procedure, 18 C.F.R. § 385.203(b)(3) (2026), to the extent necessary to permit the
+designation of more than two persons for service on behalf of MISO in this proceeding and requests
+all communications related to this filing be directed to:
+Michael Kessler
+Managing Assistant General Counsel
+Midcontinent Independent System
+Operator, Inc.
+720 City Center Drive
+Carmel, Indiana 46032
+Telephone: (317) 753-9434
+mkessler@misoenergy.org
+
+James C. Holsclaw
+Lauren A. Stenger
+Calfee, Halter & Griswold LLP
+3900 Salesforce Tower
+111 Monument Circle
+Indianapolis, Indiana 46204
+Telephone: (317) 308-4266
+jholsclaw@calfee.com
+lastenger@calfee.com
+
+X.
+NOTICE AND SERVICE
+MISO has served a copy of this filing electronically, including attachments, upon all Tariff
+customers, MISO Members, Member representatives of Transmission Owners and non-
+Transmission Owners, as well as all state commissions within the MISO Region and the
+Organization of MISO States.  The filing has been posted electronically on MISO’s website at
+https://www.misoenergy.org/legal/ferc-filings/ for other interested parties in this matter.
+
+30  See 18 C.F.R.  § 385.212 (2026).
+31  Midcontinent Indep.  Sys.  Operator, Inc., 196 FERC P 61,133, at PP 8-9 (2026) (“Abeyance Order”).
+
+--- PAGE 18 ---
+The Honorable Debbie-Anne Reese
+November 16, 2026
+Page 18
+
+XI.
+CONCLUSION
+For all of the foregoing reasons, MISO respectfully requests that the Commission accept
+this filing and grant waiver of any Commission regulations the Commission deems in order for the
+Commission to accept it as proposed.
+Respectfully submitted,
+
+/s/ Michael Kessler
+Michael Kessler
+Managing Assistant General Counsel
+Midcontinent Independent System
+Operator, Inc.
+720 City Center Drive
+Carmel, Indiana 46032
+Telephone: (317) 753-9434
+mkessler@misoenergy.org
+
+James C. Holsclaw
+Lauren A. Stenger
+Calfee, Halter & Griswold LLP
+3900 Salesforce Tower
+111 Monument Circle
+Indianapolis, Indiana 46204
+Telephone: (317) 308-4266
+jholsclaw@calfee.com
+lastenger@calfee.com
+
+Attorneys for the Midcontinent Independent
+System Operator, Inc.
+Attachments

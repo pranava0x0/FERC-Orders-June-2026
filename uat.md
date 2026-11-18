@@ -9,6 +9,30 @@ _Last run: 2026-11-11_
 
 ## Learned pathways log
 
+### Run 2026-11-18 (FERC identity, tab order, asked-and-answered crosswalk, Overview jumps)
+
+33 panel checks and 78 goal measurements at 375x812, 768x1024 and 1280x800: zero failures, zero console
+errors, zero failed requests, no horizontal overflow. Cost is clicks + typed fields + horizontal swipes +
+scroll in viewport heights; phone / tablet / desktop.
+
+| Goal | Before | Now | Path |
+|---|---|---|---|
+| x · how PJM answered the June order on who pays | not reachable | 2.64 / 2 / 2 | jump "By reform", open Who pays |
+| y · what DOE's ANOPR proposed on flexible service | 5.65 / 2.85 / 2.23 (Orders accordion) | 2.27 / 2 / 2 | jump "By reform", open Flexible service |
+| p · PJM's Nov 16 filing with a page | 2.95 / 1.27 / 1 | 1.62 / 1 / 1 | spotlight now leads the Overview |
+| p2 · ISO-NE's filing with a page | 5.09 / 2.05 / 1.45 | 3.42 / 2 / 1.49 | jump "Each operator", "Read the filing" opens the document |
+| c · the 60-day clock | 2.31 / 1.23 / 1.23 | 2.18 / 1.16 / 1.17 | jump "60-day clock" (the masthead chip now opens the next dated deadline) |
+| m, n, r · a document by browsing | 7.84, 7.15, 8.27 phone | unchanged | backlog: long proceedings on a phone |
+
+- **Found and fixed:** the masthead chip read "Next: Dec 16 · Response window opens" while SPP's Nov 20 date and
+  the Dec 7 comment dates were still ahead; it now reads the timeline's next deadline, the same list as "Coming up".
+  The operator table's link opened the show cause docket group, which holds none of the Nov 16 filings; a filed
+  row now says "Read the filing" and opens it. Phone: the crosswalk sat 6 screens down; a jump row fixes it.
+- **Found and reverted:** hiding "Latest in the record" rows past the fourth on phones dropped the Valley Electric
+  link (goal q failed). All rows stay.
+- **Harness changes:** goals o and p follow the Nov 16 spotlight; new goals p2, x and y; c takes the jump row.
+  EXPECTED_TABS follows the new tab order.
+
 ### Run 2026-11-15 (interaction depth: find box, Newest list, deep links; phone chip row)
 
 33 panel checks and 69 goal measurements at 375x812, 768x1024 and 1280x800: zero failures, zero console

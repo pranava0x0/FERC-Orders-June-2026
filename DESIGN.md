@@ -99,6 +99,14 @@ Toggle light/dark via the CSS variable swap plus a JS pass over any canvas/SVG l
 
 ---
 
+### 3.4 This site's palette follows FERC's own (2026-11-18)
+
+ferc.gov uses a deep teal (`#0A6B63`), slate (`#323A45`), gold (`#F9D073`) and a pale teal wash (`#EBF1F1`). The
+site takes the teal for links, focus and the header bar (`#08524C` for white-on-teal contrast), the slate for
+secondary text and the gold for two things only: the rule under the header and the next-deadline chip. Red stays
+reserved for deadline dates. Display headings use the system serif stack (`--font-display`), no web font. The site
+is still independent; the colors are context, not a claim of affiliation, and the footer says so.
+
 ## 4. Spacing scale
 
 A 4 / 8 px ladder covers ~99% of cases:
