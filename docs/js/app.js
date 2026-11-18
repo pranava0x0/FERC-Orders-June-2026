@@ -1519,6 +1519,12 @@
       });
       groups.forEach(function (g) { g.hidden = !g.querySelector(".cm-row:not([hidden])"); });
       count.textContent = shown + " of " + rows.length;
+      // A search that names a filer opens that filer's first letter, so it lands on the positions without
+      // another tap. Only one opens, and only when nothing in the list is already open.
+      if (q.length >= 3 && !document.querySelector("#panel-comments .cm-row:not([hidden]) details.cm-analysis[open]")) {
+        var hitRow = rows.filter(function (r) { var o = r.querySelector(".cm-row-org"); return !r.hidden && o && o.textContent.toLowerCase().indexOf(q) >= 0; })[0];
+        var det = hitRow && hitRow.querySelector("details.cm-analysis"); if (det) det.open = true;
+      }
       if (empty) empty.hidden = shown !== 0; // explicit empty state — never leave a blank panel
     };
     var renderTokens = function () {
@@ -1997,6 +2003,8 @@
     filingTheme = key && R0 && R0.themes.some(function (t) { return t.key === key; }) ? key : "";
     panel.querySelectorAll(".th-chips .who-chip").forEach(function (c) { c.setAttribute("aria-pressed", String(c.getAttribute("data-theme") === filingTheme)); });
     var q = filingQuery.length >= FQ_MIN ? filingQuery : "", active = !!(filingTheme || q), shown = 0;
+    // Filtering shows the matches per proceeding, without each proceeding's intro text.
+    panel.classList.toggle("fg-filtering", active);
     var box = panel.querySelector("#fg-q");
     if (box && box.value.trim().toLowerCase() !== filingQuery) box.value = filingQuery;
     panel.querySelectorAll(".fgroup").forEach(function (g) {

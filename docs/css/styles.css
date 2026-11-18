@@ -1547,3 +1547,17 @@ details.tl-item .srcs { padding: 0 0 10px 128px; }
 .fg-docs-h { font-size: 14px; font-weight: 700; color: var(--text-secondary); margin: 18px 0 4px; padding-top: 12px; border-top: 1px solid var(--rule); }
 #xw-compare .xw-t-wrap { margin: 16px 0 0; }
 .xw-t td, .xw-t thead th { min-width: 7.5rem; }
+/* Filtering Filings: matching documents per proceeding, without the proceeding intros. */
+.fg-filtering .fg-link, .fg-filtering .fg-about, .fg-filtering .fg-docs-h { display: none; }
+.fg-filtering .fg-body { padding-top: 4px; }
+/* Tighter vertical rhythm. */
+.panel { padding-top: 10px; }
+.section-head { margin: 14px 0 8px; }
+.now-h { margin: 14px 0 8px; }
+.cm-subtabs { margin-bottom: 10px; }
+details.acc { margin-top: 6px; }
+.acc-sum { padding: 8px 8px 6px; }
+.acc-lede { margin: 0 0 8px; }
+.fg-link, .fd-link { margin: 6px 0 4px; }
+.fg-docs-h { margin: 10px 0 2px; padding-top: 8px; }
+.fg-sec, .tl-sec { margin: 14px 0 6px; }

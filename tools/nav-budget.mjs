@@ -16,6 +16,8 @@ const {questions}=JSON.parse(readFileSync(new URL('nav-questions.json',here),'ut
 assert.ok(questions.length>0,'no questions');
 // A regression is a question that costs at least this much more than its recorded baseline.
 const SLACK=0.3;
+// No question may take more than this many taps, typed entries and screens, at any size.
+const MAX_COST=6;
 const browser=await chromium.launch({...process.env.PW_CHROME?{executablePath:process.env.PW_CHROME}:{channel:'chrome'},chromiumSandbox:true});
 // Use hit testing, including sticky overlays. Count only scrolling required to reveal a control
 // or readable leaf. App-driven jumps are free. Report horizontal adjustments, not finger distance.
@@ -106,6 +108,7 @@ try{
 const devices=['phone','tablet','desktop'],baseline=existsSync(baselineFile)?JSON.parse(readFileSync(baselineFile,'utf8')):{};
 const regressions=[];
 for(const r of results){const was=baseline[r.device]?.[r.id];if(r.cost!==null&&was!=null&&r.cost>=was+SLACK)regressions.push(r.device+' / '+r.id+': '+was+' -> '+r.cost);}
+for(const r of results)if(r.cost!==null&&r.cost>MAX_COST)regressions.push(r.device+' / '+r.id+': '+r.cost+' is over the cap of '+MAX_COST);
 mkdirSync(out,{recursive:true});
 writeFileSync(join(out,'nav.json'),JSON.stringify(results,null,2)+'\n');
 const cell=(id,d)=>{const r=results.find(x=>x.id===id&&x.device===d);if(!r||r.cost===null)return 'FAILS';const was=baseline[d]?.[id];return r.cost+(was!=null&&was!==r.cost?' ('+(r.cost>was?'+':'')+(r.cost-was).toFixed(2)+')':'');};
@@ -115,7 +118,7 @@ writeFileSync(join(out,'nav.md'),md+'\n');console.log(md);
 const esc=s=>String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;');
 writeFileSync(join(out,'nav.html'),'<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Navigation budget</title><style>body{max-width:64rem;margin:2rem auto;padding:0 1rem;font:1rem/1.5 system-ui}table{border-collapse:collapse;width:100%}th,td{padding:.5rem;border-bottom:1px solid #ccc;text-align:left;vertical-align:top}small{display:block;color:#555}</style><h1>Interactions to answer each question</h1><p>Cost = taps or clicks + typed entries + screens scrolled + sideways adjustments, from a fresh home page. Lower is better.</p><table><tr><th>Question</th>'+devices.map(d=>'<th>'+d+'</th>').join('')+'</tr>'+questions.map(({id,q})=>'<tr><td>'+esc(q)+'<small>'+esc((results.find(r=>r.id===id&&r.actions)?.actions||[]).join(' → ')||'on the home page')+'</small></td>'+devices.map(d=>'<td>'+esc(cell(id,d))+'</td>').join('')+'</tr>').join('')+'</table></html>');
 if(mode==='--update'){
- if(failures.length)throw Error('Not writing a baseline while questions fail:\n'+failures.join('\n'));
+ if(failures.length||results.some(r=>r.cost>MAX_COST))throw Error('Not writing a baseline while questions fail:\n'+failures.join('\n'));
  const next={};for(const d of devices){next[d]={};for(const {id} of questions)next[d][id]=results.find(r=>r.id===id&&r.device===d).cost;}
  writeFileSync(baselineFile,JSON.stringify(next,null,1)+'\n');console.log('wrote tools/nav-baseline.json');
 }

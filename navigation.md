@@ -8,7 +8,7 @@ adjustments. That sum is the question's **cost**.
 
 `tools/nav-baseline.json` records the accepted costs. CI (`.github/workflows/ci.yml`) runs
 `node tools/nav-budget.mjs URL OUT --check` on every pull request. The run fails if any question costs 0.3 or
-more above its baseline, or can no longer be answered. The table is in the run summary. A PR that lowers
+more above its baseline, or can no longer be answered. It also fails if any question costs more than **6** at any screen size (`MAX_COST`): no answer should take more than six taps, typed entries and screens combined. The table is in the run summary. A PR that lowers
 costs re-records the baseline with `--update` and commits it, so the bar only moves down.
 
 ```bash

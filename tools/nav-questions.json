@@ -214,10 +214,6 @@
      "Search",
      "#cm-search",
      "Constellation"
-    ],
-    [
-     "Read analysis",
-     ".cm-row:visible:has(.cm-row-org:text(\"Constellation\")) details.cm-analysis > summary"
     ]
    ],
    "leaf": [
