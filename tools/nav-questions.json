@@ -24,8 +24,8 @@
    "q": "What did PJM propose on Nov 16?",
    "steps": [
     [
-     "Read PJM's filing",
-     "#panel-overview table.ot tbody tr:first-child .ot-go a"
+     "PJM's filing",
+     "#panel-overview .filing-brief a[href*=\"er27-531\"]"
     ]
    ],
    "leaf": [
