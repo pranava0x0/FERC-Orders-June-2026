@@ -1,0 +1,173 @@
+{
+ "note": "One line per operator and reform from the Nov 13 and Nov 16, 2026 filings. Each cell cites a reading and page with a verbatim quote. null means the filing does not address the reform. SPP's response is due Nov 20, 2026.",
+ "asOf": "2026-11-18",
+ "cells": {
+  "PJM": {
+   "study": {
+    "gist": "Fast Energization Process completes studies in 12 months",
+    "slug": "filing-er27-531-pjm-large-loads",
+    "pg": 8,
+    "quote": "The Fast Energization Process proposes key reforms to the existing process to complete studies in 12 months"
+   },
+   "cost": {
+    "gist": "Minimum contribution, shortfall payments and financial security from large loads",
+    "slug": "filing-er27-520-pjm-tos-large-loads",
+    "pg": 2,
+    "quote": "to make a minimum contribution towards transmission owners’ revenue requirements, along with a shortfall payment and crediting mechanism and financial security obligations"
+   },
+   "colo": {
+    "gist": "Netting of behind-the-meter generation capped at 50 MW",
+    "slug": "filing-er27-531-pjm-large-loads",
+    "pg": 28,
+    "quote": "PJM is proposing revisions to Part III, section 34.2 and Schedule 8 of the RAA to implement the 50 MW netting limit"
+   },
+   "flex": {
+    "gist": "Adopts the three new transmission services FERC put forward",
+    "slug": "filing-er27-531-pjm-large-loads",
+    "pg": 8,
+    "quote": "PJM also proposes implementing the three new transmission services the Commission put forward in a way that will ensure reliability"
+   },
+   "proximate": {
+    "gist": "Generation and large-load requests studied together in one cycle",
+    "slug": "filing-er27-531-pjm-large-loads",
+    "pg": 73,
+    "quote": "Generation and load studied together in one Cycle; IRRs optimized for the whole cohort; interim deliverability schedules"
+   }
+  },
+  "MISO": {
+   "study": {
+    "gist": "Large Load Project Review studies applications three times a year",
+    "slug": "filing-er27-526-miso-large-loads",
+    "pg": 15,
+    "quote": "MISO will complete the LLPR study process three times in each 365-day period based on any Large Load Applications received by the deadline"
+   },
+   "cost": {
+    "gist": "Large loads bear their upgrade costs through cost recovery agreements",
+    "slug": "filing-er27-526-miso-large-loads",
+    "pg": 5,
+    "quote": "including the costs of Large Load Upgrades (defined herein), are born by such customers and thereby avoid unfair cost shifts among Transmission Customers"
+   },
+   "colo": {
+    "gist": "Contract demand service open to co-located and other large loads",
+    "slug": "filing-er27-527-miso-grits",
+    "pg": 4,
+    "quote": "is not limited to Large Load being served by a co-located generator"
+   },
+   "flex": {
+    "gist": "Permanent firm and non-firm contract demand service for curtailable loads",
+    "slug": "filing-er27-527-miso-grits",
+    "pg": 1,
+    "quote": "GRITS provides a permanent firm and non-firm contract demand-based, Transmission Service option for Large Loads willing and able to limit their withdrawals under specified price and reliability conditions"
+   },
+   "proximate": {
+    "gist": "Paired generation limited to 150% of load peak, same resource zone",
+    "slug": "filing-er27-526-miso-large-loads",
+    "pg": 45,
+    "quote": "limits the requested interconnection service to 150 percent of the paired load’s peak demand, and requires the load and generation to be located in the same Local Resource Zone"
+   }
+  },
+  "CAISO": {
+   "study": {
+    "gist": "Transmission owners keep studying all load requests under their tariffs",
+    "slug": "filing-er27-506-caiso-large-loads",
+    "pg": 28,
+    "quote": "the PTOs will continue to govern and study all load interconnection requests pursuant to their tariffs"
+   },
+   "cost": {
+    "gist": "Cost allocation rules sit in transmission owner tariffs, not CAISO's",
+    "slug": "filing-er27-506-caiso-large-loads",
+    "pg": 25,
+    "quote": "the CAISO believes it is prudent for cost allocation rules to be set forth in the PTO tariffs rather than the CAISO tariff"
+   },
+   "colo": {
+    "gist": "Some co-location arrangements need no CAISO resource interconnection request",
+    "slug": "filing-er27-506-caiso-large-loads",
+    "pg": 28,
+    "quote": "co-location arrangements that would not require a CAISO resource interconnection request and could be accommodated through applicable PTO or State-jurisdictional retail interconnection tariffs"
+   },
+   "flex": {
+    "gist": "Flexible Interim Load Interconnection allows earlier energization before upgrades finish",
+    "slug": "filing-er27-506-caiso-large-loads",
+    "pg": 3,
+    "quote": "The CAISO’s Flexible Interim Load Interconnection (FILI) can permit earlier energization while network upgrades are pending"
+   },
+   "proximate": {
+    "gist": "Does not adopt generation-linked mechanisms used in other regions",
+    "slug": "filing-er27-506-caiso-large-loads",
+    "pg": 7,
+    "quote": "does not propose to replicate generation-linked mechanisms developed or proposed in other ISO/RTO regions"
+   }
+  },
+  "ISO-NE": {
+   "study": {
+    "gist": "Large Load study procedures; final impact study report within 120 days",
+    "slug": "filing-er27-484-isone-large-loads",
+    "pg": 39,
+    "quote": "publish a final Large Load System Impact Study report within 120 days of publishing the preliminary Large Load System Impact Study report"
+   },
+   "cost": {
+    "gist": "Large load pays a cost recovery charge for its network upgrades",
+    "slug": "filing-er27-484-isone-large-loads",
+    "pg": 55,
+    "quote": "so that there is no increase in transmission rates for other transmission customers caused by the interconnection of the Large Load Facility to the transmission system, the Large Load Entity will pay a Cost Recovery Charge"
+   },
+   "colo": {
+    "gist": "No netting of behind-the-meter generation against large loads",
+    "slug": "filing-er27-484-isone-large-loads",
+    "pg": 12,
+    "quote": "Effectively, the Tariff Revisions prohibit the netting of a Large Load with Behind-the-Meter Generation for settlement of wholesale services."
+   },
+   "flex": {
+    "gist": "Non-firm service re-dispatched when price exceeds $250/MWh",
+    "slug": "filing-er27-484-isone-large-loads",
+    "pg": 13,
+    "quote": "service will be re-dispatched when the Large Load’s applicable Locational Marginal Price (“LMP”) exceeds a Large Load Re-Dispatch Price of $250/MWh"
+   },
+   "proximate": {
+    "gist": "Defines electrically proximate large load for tightly networked New England grid",
+    "slug": "filing-er27-484-isone-large-loads",
+    "pg": 13,
+    "quote": "the Tariff Revisions include a definition of Electrically Proximate Large Load, which is appropriately tailored to New England’s tightly networked transmission system"
+   }
+  },
+  "NYISO": {
+   "study": {
+    "gist": "Study process of one and a half to two years",
+    "slug": "filing-er27-517-nyiso-large-loads",
+    "pg": 14,
+    "quote": "between one year and six months and two years, including a 90-day period for the performance of the System Impact Study"
+   },
+   "cost": {
+    "gist": "Transmission owners recover 100% of allocated upgrade costs from the large load",
+    "slug": "rec-20261116-5335",
+    "pg": 3,
+    "quote": "recover 100% of the costs of Network Upgrades and Attachment Facilities allocated to a Large Load Customer"
+   },
+   "colo": {
+    "gist": "Co-Located Arrangement lets a load take firm withdrawal service",
+    "slug": "filing-er27-517-nyiso-large-loads",
+    "pg": 2,
+    "quote": "enter into a “Co-Located Arrangement” or “Partner Resource Arrangement” so that the Large Load may be served via some amount of Firm Withdrawal Service"
+   },
+   "flex": {
+    "gist": "Non-firm withdrawal service curtailed at $200 local price",
+    "slug": "filing-er27-517-nyiso-large-loads",
+    "pg": 3,
+    "quote": "Non-Firm Withdrawal Service would be curtailed when the applicable nodal Locational- Based Marginal Price (“LBMP”) for a Large Load reaches $200 MW/h"
+   },
+   "proximate": {
+    "gist": "Partner resource must sit in same capacity region as the load",
+    "slug": "filing-er27-517-nyiso-large-loads",
+    "pg": 42,
+    "quote": "for a Partner Resource Arrangement, the Resource must be located in the same Capacity Region as the given Large Load."
+   }
+  },
+  "SPP": {
+   "study": null,
+   "cost": null,
+   "colo": null,
+   "flex": null,
+   "proximate": null
+  }
+ }
+}

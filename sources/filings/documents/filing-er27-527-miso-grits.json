@@ -9,7 +9,8 @@
   {"point": "Example: a 500 MW load could take 200 MW firm and 300 MW non-firm.", "quote": "a Large Load Transmission Customer representing a Large Load of 500 MW may desire to only take 200 MW of firm transmission service", "pg": 4, "reform": "flex"},
   {"point": "Customers need not move toward firm service.", "quote": "does not require the Large Load Transmission Customer to progress toward firm service for any or all of its GRITS Load Limit", "pg": 3},
   {"point": "GRITS is not limited to loads served by a co-located generator.", "quote": "is not limited to Large Load being served by a co-located generator", "pg": 4, "reform": "colo"},
-  {"point": "Rates are still being developed with the transmission owners.", "quote": "to continue the development of rates applicable to GRITS in concert with the MISO Transmission Owners", "pg": 2}
+  {"point": "Rates are still being developed with the transmission owners.", "quote": "to continue the development of rates applicable to GRITS in concert with the MISO Transmission Owners", "pg": 2},
+  {"point": "A customer must request GRITS through the Large Load Project Review, the same study route as other large-load service.", "quote": "A Large Load Transmission Customer must request GRITS through the applicable LLPR process", "pg": 4, "reform": "study"}
  ],
  "throughLine": {
   "relation": "responds",

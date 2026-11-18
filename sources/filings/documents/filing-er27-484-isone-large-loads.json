@@ -12,8 +12,7 @@
     {
       "point": "A load becomes a Large Load when its gross peak demand rises 50 MW or more above its exempt demand.",
       "quote": "when its gross peak demand increases by 50 MW or more relative to its exempt demand",
-      "pg": 24,
-      "reform": "study"
+      "pg": 24
     },
     {
       "point": "Interim Contract Demand Service would last up to seven years, or until the required network upgrades are in service if that takes longer.",
@@ -52,15 +51,16 @@
       "reform": "cost"
     },
     {
-      "point": "The new tariff text requires a Large Load Eligible Customer to designate enough new capacity resources to cover the Firm Contract Demand Service it requests.",
-      "quote": "To receive the requested amount of Firm Contract Demand Service for a Large Load, the Large Load Eligible Customer shall designate, or cause to be designated, sufficient new capacity resources to meet the requested amount of Firm Contract Demand Service for the Large Load.",
-      "pg": 85
-    },
-    {
       "point": "Co-located and proximate generators on the expedited path would not count toward regional capacity or take part in the capacity market.",
       "quote": "will not be counted towards the region’s capacity for resource adequacy purposes, will not participate in the capacity market, and will not be accredited using the same method as other ISO-NE generating facilities.",
       "pg": 92,
       "reform": "proximate"
+    },
+    {
+      "point": "ISO-NE would post a list of the network upgrades identified for each large load, with a cost estimate for each, on its website.",
+      "quote": "post on its website, in an easily accessible, searchable and fillable format: (1) a cumulative list reflecting the Large Load Network Upgrades identified for each Large Load, categorized by upgrade type",
+      "pg": 13,
+      "reform": "cost"
     }
   ],
   "throughLine": {

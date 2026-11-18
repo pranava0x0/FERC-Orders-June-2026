@@ -134,7 +134,14 @@ export function build() {
   // Each proceeding's quoted points ship in their own file, fetched when the reader opens it.
   const pointFiles = Object.fromEntries(groups.map((g) => [g.id, Object.fromEntries(g.docs.filter((d) => pointsBySlug.has(d.slug)).map((d) => [d.slug, pointsBySlug.get(d.slug)]))]));
   answers.sort((a, b) => (a.item === b.item ? (a.date < b.date ? 1 : a.date > b.date ? -1 : a.slug.localeCompare(b.slug) || a.n - b.n) : +a.item.slice(2) - +b.item.slice(2)));
-  return { data: { asOf: filings.asOf, videosAsOf: chapters.asOf, themes, anchors, groups, videos }, pointFiles, answers: { asOf: filings.asOf, answers }, stats: { readings, points } };
+  return { data: { asOf: filings.asOf, videosAsOf: chapters.asOf, themes, anchors, groups, videos }, pointFiles, answers: { asOf: filings.asOf, answers, matrix: reformMatrix() }, stats: { readings, points } };
+}
+
+// The Now tab's comparison table: one plain line per market and reform, each backed by a page-cited
+// quote (sources/filings/reform-matrix.json; tests/filing-readers checks the quotes against the page text).
+function reformMatrix() {
+  const f = join(ROOT, "sources", "filings", "reform-matrix.json");
+  return existsSync(f) ? JSON.parse(readFileSync(f, "utf8")).cells : null;
 }
 
 function render(data) {

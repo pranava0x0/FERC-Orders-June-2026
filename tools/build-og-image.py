@@ -72,7 +72,7 @@ def main() -> None:
     y += 56
 
     title_f = font("Georgia Bold.ttf", 82)
-    for line in wrap(d, "Large Load Interconnection", title_f, W - pad * 2):
+    for line in wrap(d, "FERC Large Load Proceedings", title_f, W - pad * 2):
         d.text((pad, y), line, font=title_f, fill=CREAM)
         y += 92
 
