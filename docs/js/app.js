@@ -1790,15 +1790,17 @@
     }).join("") + "</ul>";
 
     document.getElementById("provenance-body").innerHTML =
-      "<p>Three evidence tiers are kept visibly distinct so a confident-sounding synthesis never reads as quoted order text:</p>" + legend +
-      "<h4>What is primary</h4>" +
-      "<p>The <strong>DOE §403 letter</strong> (16 pp.) was downloaded from energy.gov and text-extracted directly. FERC's <strong>news release, fact sheet, meeting summaries, and the RM26-4 docket page</strong> are official FERC text, posted at the June 18, 2026 open meeting and live on ferc.gov; quoted here against Internet Archive snapshots dated June 18 to 20, 2026 so the citations stay fixed to a specific capture even as the live pages change.</p>" +
-      "<h4>The six order PDFs, retrieved &amp; OCR’d</h4>" +
-      "<p>Automated clients (curl, server-side fetch, the PDF-fetch tool, the Wayback crawler) are all blocked by Cloudflare on <span class='mono'>ferc.gov/media/e-7…e-12</span>. The six orders were therefore opened in a real browser that passes the challenge, downloaded, and text-extracted (OCR) on 2026-06-22. Each one's <strong>page-1 caption was verified</strong> (FERC reporter cite, respondent RTO, docket number, the title “Order Instituting Proceeding Under Section 206,” and the issued date) before any of its text was used. The per-order directives in Tab 2 are quoted from those PDFs with paragraph cites (e.g. “P 77”); the structured extract is committed at <span class='mono'>sources/orders-extract.json</span>. Each cite offers two links to that page: <strong>PDF</strong> (the committed copy under <span class='mono'>docs/orders/</span>, served with the site so it opens inline and jumps reliably) and <strong>gov</strong> (the official ferc.gov source, page-precise when the browser opens it inline past Cloudflare). FERC's published PDFs drop paragraph numbers from their text layer, so a link is anchored to the page where the quoted language appears, not to a paragraph index. A test checks every link lands on a page that carries its quote. All six orders are 195 FERC ¶ 61,211 to 61,216, 92 to 119 pp, issued June 18, 2026.</p>" +
-      "<h4>The RM26-4 public comments, summarized</h4>" +
-      "<p>Every comment on the DOE ANOPR was scraped from FERC eLibrary; the bodies were downloaded and text-extracted, then summarized the auditable way (PNNL's “CommentNEPA” method). Verbatim quotes are pulled from each filing, binned to the reform principles, ANOPR questions, and regions (plus emergent topics), and each bin carries the <strong>filer's own stance</strong> and a plain description built from its quotes. A validator confirms every quote appears verbatim in its source, and a flagged minority get a second, independent LLM check. These per-comment summaries are <strong>AI-generated and provisional</strong> (not yet human-verified) so each is shown with its positions traceable to the quotes; the quotes, extracted text, and structured summary are committed under <span class='mono'>sources/comments/</span>. A handful of image-only scans and one filing eLibrary serves inline are not yet summarized.</p>" +
-      "<h4>Derived dates</h4>" +
-      "<p>The 30-day and 60-day periods are stated by FERC. The specific calendar due-dates are derived from the June 18, 2026 issuance (business-day-adjusted figures attributed to the National Law Review analysis).</p>" +
+      "<p>Colors mark the source of each quote:</p>" + legend +
+      "<h4>Orders</h4>" +
+      "<p>The six June 18, 2026 orders (195 FERC ¶ 61,211 to 61,216) were downloaded from ferc.gov on 2026-06-22 and checked against their page-1 captions. Copies are under <span class='mono'>docs/orders/</span>. Cites link to the page, not the paragraph, because FERC’s PDFs drop paragraph numbers from their text. A test checks that each linked page carries its quote.</p>" +
+      "<h4>Filings</h4>" +
+      "<p>Filings are read from eLibrary. Quotes are checked word for word against the page they cite. A few scanned filings have no text layer; their text comes from OCR and the page says so.</p>" +
+      "<h4>DOE letter and FERC releases</h4>" +
+      "<p>The DOE §403 letter is from energy.gov. FERC’s news release, fact sheet and meeting summaries are quoted from Internet Archive captures of June 18 to 20, 2026.</p>" +
+      "<h4>ANOPR comments</h4>" +
+      "<p>Each comment’s summary is written by an AI model from verbatim quotes and is provisional. A validator checks every quote against the filing. A few image-only scans are not summarized.</p>" +
+      "<h4>Dates</h4>" +
+      "<p>FERC states the 30- and 60-day periods. Calendar due dates are derived from the issuance date, following the National Law Review’s business-day count.</p>" +
       "<h4>All sources</h4>" + srcList +
       "<p style='margin-top:10px'><em>Last updated: order record as of " + esc(D.meta.capture) + "; Discourse updated " + esc(D.meta.commentaryCapture || D.meta.discourseCapture) +
       (D.meta.newsCapture ? "; news and filings swept " + esc(D.meta.newsCapture) : "") +
