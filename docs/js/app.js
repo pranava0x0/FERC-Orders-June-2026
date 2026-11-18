@@ -2084,9 +2084,20 @@
     // Opening a proceeding or document writes its address, so the URL and the trail always match the page.
     panel.addEventListener("toggle", function (ev) {
       var el = ev.target;
-      if (!el.open || !el.classList) return;
+      if (!el.classList) return;
       var g = el.classList.contains("fgroup") ? el : el.classList.contains("fdoc") ? el.closest(".fgroup") : null;
       if (!g) return;
+      // Closing what the address points at steps the address back up: a document to its proceeding, a
+      // proceeding to the bare tab. Otherwise the URL and the trail keep naming something no longer open.
+      if (!el.open) {
+        var gid = g.id.slice(3), here = el === g ? gid : gid + "/" + el.id.slice(3);
+        if (filingHash === here || (el === g && filingHash.indexOf(gid + "/") === 0)) {
+          filingHash = el === g ? "" : gid;
+          if (history.replaceState) history.replaceState(null, "", "#filings" + (filingHash ? "/" + filingHash : ""));
+          setCrumbs("filings", filingHash);
+        }
+        return;
+      }
       var isGroup = el === g, filtering = !!(filingTheme || filingQuery.length >= FQ_MIN);
       // A typed query can open every proceeding at once; its points wait for a document to open.
       if (!(isGroup && filtering && !filingTheme)) loadPoints(g);
@@ -2391,6 +2402,15 @@
   function pickSubtab(name, key) {
     subtabPick[name] = key;
     var panel = panelFor(name);
+    // Leaving the pane that holds the addressed proceeding drops it from the URL and the trail.
+    if (name === "filings" && filingHash && !/^theme\//.test(filingHash)) {
+      var held = document.getElementById("fg-" + filingHash.split("/")[0]);
+      if (!held || !held.closest("#stp-filings-" + key)) {
+        filingHash = "";
+        if (history.replaceState) history.replaceState(null, "", "#filings");
+        setCrumbs("filings", "");
+      }
+    }
     panel.querySelectorAll(".st-tab").forEach(function (b) { var on = b.id === "st-" + name + "-" + key; b.setAttribute("aria-selected", on ? "true" : "false"); b.tabIndex = on ? 0 : -1; });
     panel.querySelectorAll(".st-pane").forEach(function (p) { p.hidden = p.id !== "stp-" + name + "-" + key; });
   }
