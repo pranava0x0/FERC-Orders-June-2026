@@ -587,7 +587,9 @@
   function renderCrosswalk() {
     var host = document.getElementById("xwalk");
     if (!host || !xwAnswers) return;
-    host.innerHTML = xwTable() + D.categories.map(function (c) {
+    // The comparison table sits under the Nov 16 brief; the reform-by-reform detail stays in By reform.
+    var cmp = document.getElementById("xw-compare"); if (cmp) cmp.innerHTML = xwTable();
+    host.innerHTML = D.categories.map(function (c) {
       return '<details class="xw-cat" id="xw-' + esc(c.key) + '"><summary><span class="xw-no">' + c.n + '</span><span class="xw-title">' + esc(XW_LABEL[c.key] || c.title) +
         '<span class="xw-sub">' + esc(c.ferc) + "</span></span>" + xwSummaryDots(c.key) + '<span class="acc-chev" aria-hidden="true">›</span></summary>' +
         '<div class="xw-body">' + xwBody(c) + "</div></details>";
@@ -633,14 +635,13 @@
     var jumps = '<nav class="jump-row" aria-label="On this page">' + [["#ops-h", "Each operator"], ["#xw-h", "By reform"], ["#tg-h", "Record so far"], ["#acc-clock", "60-day clock"]].map(function (j) {
       return '<button type="button" class="jump-btn" data-jump="' + j[0] + '">' + j[1] + "</button>";
     }).join("") + "</nav>";
-    // Status by operator comes first (the default subtab), then the Nov 16 brief and the dates.
-    return jumps + '<section aria-labelledby="ops-h"><span id="stand-h" class="jump-anchor"></span><h2 class="now-h" id="ops-h">Status by operator</h2>' + operatorTable() + "</section>" +
-      '<section class="filing-brief" aria-labelledby="latest-filing"><h2 id="latest-filing">' + esc(f.title) + "</h2><p>" + esc(f.answer) + "</p><div>" + links + "</div></section>" +
+    // Subtab order follows page order: the Nov 16 brief (the default), then Status by operator.
+    return jumps + '<section class="filing-brief" aria-labelledby="latest-filing"><h2 id="latest-filing">' + esc(f.title) + "</h2><p>" + esc(f.answer) + "</p><div>" + links + '</div><div id="xw-compare"></div></section>' +
+      '<section aria-labelledby="ops-h"><span id="stand-h" class="jump-anchor"></span><h2 class="now-h" id="ops-h">Status by operator</h2>' + operatorTable() + "</section>" +
       '<section class="now-card now-next-card" aria-labelledby="now-next-h"><h2 id="now-next-h">Deadlines</h2>' + nextList + "</section>" +
       '<section class="xw" aria-labelledby="xw-h"><h2 class="now-h" id="xw-h">Filings by reform</h2>' +
       '<p class="xw-lede">Filled marker: the filing addresses the reform.</p>' +
       '<div id="xwalk"><p class="cm-loading" role="status">Loading the comparison…</p></div></section>' +
-      '<section aria-labelledby="tg-h"><h2 class="now-h" id="tg-h">The record so far</h2>' + timelineGraphic() + "</section>" +
       accSection("Status by proceeding", "", renderStandStrip(), false, Object.keys(D.tracks || {}).length) +
       accSection("The 60-day clock and who has filed", "The procedural steps every order set, and what each operator filed against them.", renderProcedural(), false, null, "acc-clock") +
       accSection("Background: from the DOE directive to the June orders", "", paras(m.summary) + glance, false, null);
@@ -749,7 +750,7 @@
     var top = '<div class="cards cols-3">' + D.toplines.map(function (c) {
       return '<div class="card analysis"><h3>' + esc(c.h) + "</h3>" + paras(c.body) + srcChips(c.src) + "</div>";
     }).join("") + "</div>";
-    return head("Timeline", "") +
+    return head("Timeline", "") + timelineGraphic() +
       trackChips() +
       '<span class="sr-only" role="status" aria-live="polite" id="tl-filterstatus"></span>' +
       (ahead.length ? '<h3 class="tl-sec">Ahead</h3><div class="timeline">' + ahead.map(function (x) { return row(x, true); }).join("") + "</div>" : "") +
@@ -1518,6 +1519,12 @@
       });
       groups.forEach(function (g) { g.hidden = !g.querySelector(".cm-row:not([hidden])"); });
       count.textContent = shown + " of " + rows.length;
+      // A search that names a filer opens that filer's first letter, so it lands on the positions without
+      // another tap. Only one opens, and only when nothing in the list is already open.
+      if (q.length >= 3 && !document.querySelector("#panel-comments .cm-row:not([hidden]) details.cm-analysis[open]")) {
+        var hitRow = rows.filter(function (r) { var o = r.querySelector(".cm-row-org"); return !r.hidden && o && o.textContent.toLowerCase().indexOf(q) >= 0; })[0];
+        var det = hitRow && hitRow.querySelector("details.cm-analysis"); if (det) det.open = true;
+      }
       if (empty) empty.hidden = shown !== 0; // explicit empty state — never leave a blank panel
     };
     var renderTokens = function () {
@@ -1790,15 +1797,17 @@
     }).join("") + "</ul>";
 
     document.getElementById("provenance-body").innerHTML =
-      "<p>Three evidence tiers are kept visibly distinct so a confident-sounding synthesis never reads as quoted order text:</p>" + legend +
-      "<h4>What is primary</h4>" +
-      "<p>The <strong>DOE §403 letter</strong> (16 pp.) was downloaded from energy.gov and text-extracted directly. FERC's <strong>news release, fact sheet, meeting summaries, and the RM26-4 docket page</strong> are official FERC text, posted at the June 18, 2026 open meeting and live on ferc.gov; quoted here against Internet Archive snapshots dated June 18 to 20, 2026 so the citations stay fixed to a specific capture even as the live pages change.</p>" +
-      "<h4>The six order PDFs, retrieved &amp; OCR’d</h4>" +
-      "<p>Automated clients (curl, server-side fetch, the PDF-fetch tool, the Wayback crawler) are all blocked by Cloudflare on <span class='mono'>ferc.gov/media/e-7…e-12</span>. The six orders were therefore opened in a real browser that passes the challenge, downloaded, and text-extracted (OCR) on 2026-06-22. Each one's <strong>page-1 caption was verified</strong> (FERC reporter cite, respondent RTO, docket number, the title “Order Instituting Proceeding Under Section 206,” and the issued date) before any of its text was used. The per-order directives in Tab 2 are quoted from those PDFs with paragraph cites (e.g. “P 77”); the structured extract is committed at <span class='mono'>sources/orders-extract.json</span>. Each cite offers two links to that page: <strong>PDF</strong> (the committed copy under <span class='mono'>docs/orders/</span>, served with the site so it opens inline and jumps reliably) and <strong>gov</strong> (the official ferc.gov source, page-precise when the browser opens it inline past Cloudflare). FERC's published PDFs drop paragraph numbers from their text layer, so a link is anchored to the page where the quoted language appears, not to a paragraph index. A test checks every link lands on a page that carries its quote. All six orders are 195 FERC ¶ 61,211 to 61,216, 92 to 119 pp, issued June 18, 2026.</p>" +
-      "<h4>The RM26-4 public comments, summarized</h4>" +
-      "<p>Every comment on the DOE ANOPR was scraped from FERC eLibrary; the bodies were downloaded and text-extracted, then summarized the auditable way (PNNL's “CommentNEPA” method). Verbatim quotes are pulled from each filing, binned to the reform principles, ANOPR questions, and regions (plus emergent topics), and each bin carries the <strong>filer's own stance</strong> and a plain description built from its quotes. A validator confirms every quote appears verbatim in its source, and a flagged minority get a second, independent LLM check. These per-comment summaries are <strong>AI-generated and provisional</strong> (not yet human-verified) so each is shown with its positions traceable to the quotes; the quotes, extracted text, and structured summary are committed under <span class='mono'>sources/comments/</span>. A handful of image-only scans and one filing eLibrary serves inline are not yet summarized.</p>" +
-      "<h4>Derived dates</h4>" +
-      "<p>The 30-day and 60-day periods are stated by FERC. The specific calendar due-dates are derived from the June 18, 2026 issuance (business-day-adjusted figures attributed to the National Law Review analysis).</p>" +
+      "<p>Colors mark the source of each quote:</p>" + legend +
+      "<h4>Orders</h4>" +
+      "<p>The six June 18, 2026 orders (195 FERC ¶ 61,211 to 61,216) were downloaded from ferc.gov on 2026-06-22 and checked against their page-1 captions. Copies are under <span class='mono'>docs/orders/</span>. Cites link to the page, not the paragraph, because FERC’s PDFs drop paragraph numbers from their text. A test checks that each linked page carries its quote.</p>" +
+      "<h4>Filings</h4>" +
+      "<p>Filings are read from eLibrary. Quotes are checked word for word against the page they cite. A few scanned filings have no text layer; their text comes from OCR and the page says so.</p>" +
+      "<h4>DOE letter and FERC releases</h4>" +
+      "<p>The DOE §403 letter is from energy.gov. FERC’s news release, fact sheet and meeting summaries are quoted from Internet Archive captures of June 18 to 20, 2026.</p>" +
+      "<h4>ANOPR comments</h4>" +
+      "<p>Each comment’s summary is written by an AI model from verbatim quotes and is provisional. A validator checks every quote against the filing. A few image-only scans are not summarized.</p>" +
+      "<h4>Dates</h4>" +
+      "<p>FERC states the 30- and 60-day periods. Calendar due dates are derived from the issuance date, following the National Law Review’s business-day count.</p>" +
       "<h4>All sources</h4>" + srcList +
       "<p style='margin-top:10px'><em>Last updated: order record as of " + esc(D.meta.capture) + "; Discourse updated " + esc(D.meta.commentaryCapture || D.meta.discourseCapture) +
       (D.meta.newsCapture ? "; news and filings swept " + esc(D.meta.newsCapture) : "") +
@@ -1846,7 +1855,16 @@
   var TITLE_ROLE = [[/petition for review/i, "Court appeal"], [/rehearing/i, "Asks FERC to reconsider"], [/clarification/i, "Asks FERC to clarify"],
     [/extension of time/i, "Asks for more time"], [/\babeyance\b/i, "Asks FERC to pause the case"], [/deficien/i, "FERC asks for more information"],
     [/\bprotest\b/i, "Opposes"], [/informational report/i, "Report to FERC"]];
+  var FERC_FILER = /^(?:secretary of the commission|ferc\b|federal energy regulatory commission|commissioners and immediate staff|office of energy market regulation)/i;
   function kindRole(k, d) {
+    // FERC's own notices are not requests to FERC, whatever eLibrary's type says.
+    if (d && FERC_FILER.test(d.filer || "") && k !== "order") {
+      var ft = d.title || "";
+      if (/denial of rehearing by operation of law/i.test(ft)) return "FERC: rehearing denied by operation of law";
+      if (/errata/i.test(ft)) return "FERC correction";
+      if (/deficien/i.test(ft)) return "FERC asks for more information";
+      return "FERC notice";
+    }
     // The title is the surer signal for what a document does: "filing" and "request" cover protests, appeals and letters.
     var tt = d && d.title || "";
     if (k !== "answer" && k !== "order") for (var r = 0; r < TITLE_ROLE.length; r++) if (TITLE_ROLE[r][0].test(tt)) return TITLE_ROLE[r][1];
@@ -1954,57 +1972,68 @@
         return '<button type="button" class="who-chip" data-theme="' + esc(t.key) + '" aria-pressed="false" title="' + esc(t.gloss) + '">' + esc(t.label) + "</button>";
       }).join("") + '</div><p class="fg-live" role="status" aria-live="polite"></p>';
     var find = '<div class="fg-find"><label for="fg-q">Find a document</label><input type="search" id="fg-q" placeholder="Filer, docket or any word" autocomplete="off" /></div>';
-    var all = [];
-    R.groups.forEach(function (g) { g.docs.forEach(function (d) { if (d.summary) all.push({ g: g, d: d }); }); });
-    all.sort(function (a, b) { return a.d.date < b.d.date ? 1 : a.d.date > b.d.date ? -1 : 0; });
-    var newest = all.length ? '<section class="fl" aria-labelledby="fl-h"><h3 class="fg-sec" id="fl-h">Newest documents</h3><ol class="fl-list">' + all.slice(0, FL_MAX).map(function (x) {
-      return '<li><a href="#filings/' + esc(x.g.id) + "/" + esc(x.d.slug) + '"><span class="fl-date mono">' + esc(fmtISO(x.d.date).replace(/, \d{4}$/, "")) + '</span><span class="fl-who">' + esc(x.d.filer) +
-        '</span><span class="fl-what">' + esc(kindRole(x.d.kind, x.d)) + " · " + esc(x.g.short || x.g.title) + "</span></a></li>";
-    }).join("") + "</ol></section>" : "";
     var group = function (g) {
       return '<details class="fgroup" id="fg-' + esc(g.id) + '"><summary class="fg-sum"><span class="fg-h" role="heading" aria-level="3">' + esc(g.title) +
         ' <span class="fg-docket mono">' + esc(g.docket) + '</span></span><span class="fg-n">Latest' +
         ' <span class="mono">' + esc(fmtISO(g.newest).replace(/, \d{4}$/, "")) + "</span></span></summary>" +
         '<div class="fg-body">' + linkLine(R, g.link, "fg-link") +
         (g.about ? '<p class="fg-about">' + esc(g.about) + "</p>" : "") + (g.status ? '<p class="fg-status">' + esc(g.status) + "</p>" : "") +
+        // A heading says what the rows are: the documents on this proceeding's docket sheet.
+        '<h4 class="fg-docs-h">Filings in ' + esc(g.docket) + "</h4>" +
         '<div class="fdocs">' + g.docs.map(function (d) { return docCard(R, g, d); }).join("") + "</div></div></details>";
     };
     var sc = R.groups.filter(function (g) { return g.kind === "show-cause"; }), rel = R.groups.filter(function (g) { return g.kind !== "show-cause"; });
     return head("Filings since the June 18 orders",
       "") +
-      find + chips + newest +
-      '<h3 class="fg-sec">The six show cause dockets</h3>' + sc.map(group).join("") +
-      '<h3 class="fg-sec">Related proceedings</h3>' + rel.map(group).join("") +
+      // Filings land in batches, so a "newest" list says little; the full list is one link away.
+      '<p class="reader-entry"><a href="reading/">Full document list</a></p>' + find + chips +
+      FG_MARKETS.map(function (m) {
+        var gs = sc.concat(rel).filter(function (g) { return marketOf(g) === m[0]; });
+        return gs.length ? '<h3 class="fg-sec fg-mkt" data-mkt="' + m[0] + '" hidden>' + esc(m[1]) + "</h3>" + gs.map(group).join("") : "";
+      }).join("") +
       '<p class="fg-none" hidden>No document matches. Clear the filter to see every proceeding.</p>' +
-      figureChart(R) +
-      '<p class="reader-entry"><a href="reading/">All documents in the reading room</a></p>';
+      figureChart(R);
   }
-  var FL_MAX = 6;          // "Newest documents" rows
   var FQ_MIN = 2;          // a one-letter query matches nearly every document
   var filingTheme = "", filingQuery = "";
   // The theme chip and the typed query are one filter: a document shows when it passes both. Matching
   // proceedings open so the documents are on the page; clearing the filter folds back the ones it opened
   // (marked data-auto), except one the reader has a document open in. Quoted points load when a document opens, or for a theme, where
   // the match set is small enough to fetch at once.
+  // Filings is browsed by market: one subtab per grid operator, show cause docket first, then the
+  // proceedings around it. ATC plans inside MISO; Exelon's complaint concerns PJM's auction.
+  var FG_MARKETS = [["pjm", "PJM"], ["miso", "MISO"], ["spp", "SPP"], ["caiso", "CAISO"], ["isone", "ISO-NE"], ["nyiso", "NYISO"], ["other", "Other"]];
+  function marketOf(g) {
+    var id = g.id.replace(/^sc-/, ""), m = id.split("-")[0];
+    if (m === "atc") return "miso";
+    if (m === "exelon") return "pjm";
+    return FG_MARKETS.some(function (x) { return x[0] === m; }) ? m : "other";
+  }
   function applyTheme(panel, key) {
     var R0 = window.FERC_RECORD;
     filingTheme = key && R0 && R0.themes.some(function (t) { return t.key === key; }) ? key : "";
     panel.querySelectorAll(".th-chips .who-chip").forEach(function (c) { c.setAttribute("aria-pressed", String(c.getAttribute("data-theme") === filingTheme)); });
     var q = filingQuery.length >= FQ_MIN ? filingQuery : "", active = !!(filingTheme || q), shown = 0;
+    // Filtering shows the matches per proceeding, without each proceeding's intro text.
+    panel.classList.toggle("fg-filtering", active);
     var box = panel.querySelector("#fg-q");
     if (box && box.value.trim().toLowerCase() !== filingQuery) box.value = filingQuery;
+    // Every typed word must appear: "google lars" finds Google's filing in the LARS proceeding.
+    var words = q ? q.split(/\s+/).filter(Boolean) : [];
     panel.querySelectorAll(".fgroup").forEach(function (g) {
       var n = 0;
       g.querySelectorAll(".fdoc").forEach(function (d) {
         var on = (!filingTheme || (" " + d.getAttribute("data-themes") + " ").indexOf(" " + filingTheme + " ") >= 0) &&
-          (!q || d.getAttribute("data-q").indexOf(q) >= 0);
+          (!q || words.every(function (w) { return d.getAttribute("data-q").indexOf(w) >= 0; }));
         d.hidden = !on; if (on) n++;
       });
       g.hidden = n === 0; shown += n;
       if (active && n) { if (!g.open) { g.setAttribute("data-auto", ""); g.open = true; } if (filingTheme) loadPoints(g); }
       else if (!active && g.hasAttribute("data-auto")) { g.removeAttribute("data-auto"); if (!g.querySelector(".fdoc[open]")) g.open = false; }
     });
-    panel.querySelectorAll(".fl, .fg-sec").forEach(function (el) { el.hidden = active; });
+    panel.querySelectorAll(".fg-mkt").forEach(function (el) { el.hidden = !active; });
+    // A search that leaves one document opens it: the answer, not a list of one.
+    if (q && shown === 1) { var only1 = panel.querySelector(".fdoc:not([hidden])"); if (only1 && !only1.open) only1.open = true; }
     // A search or theme filter looks across every pane, not only the open one.
     // While filtering, every pane shows and the bar steps aside; clearing the filter restores the picked pane.
     var bar = panel.querySelector(".st-bar");
@@ -2063,10 +2092,6 @@
   function wireFilings() {
     var panel = panelFor("filings");
     panel.addEventListener("click", function (ev) {
-      // "Newest documents": route directly, so a second tap on the same row still opens it (the address
-      // has not changed, and an unchanged hash fires no hashchange).
-      var a = ev.target.closest && ev.target.closest(".fl-list a");
-      if (a) { ev.preventDefault(); routeFiling(a.getAttribute("href").slice(9)); if (history.replaceState) history.replaceState(null, "", "#filings/" + filingHash); return; }
       var b = ev.target.closest && ev.target.closest(".th-chips .who-chip");
       if (!b) return;
       var k = b.getAttribute("data-theme");
@@ -2082,9 +2107,20 @@
     // Opening a proceeding or document writes its address, so the URL and the trail always match the page.
     panel.addEventListener("toggle", function (ev) {
       var el = ev.target;
-      if (!el.open || !el.classList) return;
+      if (!el.classList) return;
       var g = el.classList.contains("fgroup") ? el : el.classList.contains("fdoc") ? el.closest(".fgroup") : null;
       if (!g) return;
+      // Closing what the address points at steps the address back up: a document to its proceeding, a
+      // proceeding to the bare tab. Otherwise the URL and the trail keep naming something no longer open.
+      if (!el.open) {
+        var gid = g.id.slice(3), here = el === g ? gid : gid + "/" + el.id.slice(3);
+        if (filingHash === here || (el === g && filingHash.indexOf(gid + "/") === 0)) {
+          filingHash = el === g ? "" : gid;
+          if (history.replaceState) history.replaceState(null, "", "#filings" + (filingHash ? "/" + filingHash : ""));
+          setCrumbs("filings", filingHash);
+        }
+        return;
+      }
       var isGroup = el === g, filtering = !!(filingTheme || filingQuery.length >= FQ_MIN);
       // A typed query can open every proceeding at once; its points wait for a document to open.
       if (!(isGroup && filtering && !filingTheme)) loadPoints(g);
@@ -2343,10 +2379,11 @@
   // element (a direct child of the panel, [selector, index among matches]) to the next pane's start;
   // anything before the first pane stays visible above the bar. Comments has its own bar already.
   var SUBTABS = {
-    overview: [["operators", "Status by operator", "section[aria-labelledby=ops-h]"], ["filed", "Nov 16 filings", ".filing-brief"], ["next", "Deadlines", ".now-next-card"],
-      ["reforms", "By reform", ".xw"], ["record", "Record so far", "section[aria-labelledby=tg-h]"], ["background", "Background", "details.acc"]],
+    overview: [["filed", "Nov 16 filings", ".filing-brief"], ["operators", "Status by operator", "section[aria-labelledby=ops-h]"], ["next", "Deadlines", ".now-next-card"],
+      ["reforms", "By reform", ".xw"], ["background", "Background", "details.acc"]],
     dockets: [["june", "June 18 orders", "#reforms-h"], ["reforms", "Five reforms", "details.acc"], ["dockets", "Dockets", ".section-head", 1], ["follow", "File or follow", ".section-head", 2]],
-    filings: [["newest", "Newest", ".fl"], ["showcause", "Show cause dockets", ".fg-sec", 0], ["related", "Related proceedings", ".fg-sec", 1], ["numbers", "Numbers cited", "details.acc"]],
+    filings: [["pjm", "PJM", ".fg-mkt[data-mkt=pjm]"], ["miso", "MISO", ".fg-mkt[data-mkt=miso]"], ["spp", "SPP", ".fg-mkt[data-mkt=spp]"], ["caiso", "CAISO", ".fg-mkt[data-mkt=caiso]"],
+      ["isone", "ISO-NE", ".fg-mkt[data-mkt=isone]"], ["nyiso", "NYISO", ".fg-mkt[data-mkt=nyiso]"], ["other", "Other", ".fg-mkt[data-mkt=other]"], ["numbers", "Numbers cited", "details.acc"]],
     timeline: [["ahead", "Ahead", ".tl-sec", 0], ["sofar", "So far", "#tl-latest"], ["background", "Background", "details.acc"]],
     commissioners: [["appearances", "Appearances", "section#appears"], ["june", "June 18 statements", "#commish-h"]]
   };
@@ -2389,6 +2426,15 @@
   function pickSubtab(name, key) {
     subtabPick[name] = key;
     var panel = panelFor(name);
+    // Leaving the pane that holds the addressed proceeding drops it from the URL and the trail.
+    if (name === "filings" && filingHash && !/^theme\//.test(filingHash)) {
+      var held = document.getElementById("fg-" + filingHash.split("/")[0]);
+      if (!held || !held.closest("#stp-filings-" + key)) {
+        filingHash = "";
+        if (history.replaceState) history.replaceState(null, "", "#filings");
+        setCrumbs("filings", "");
+      }
+    }
     panel.querySelectorAll(".st-tab").forEach(function (b) { var on = b.id === "st-" + name + "-" + key; b.setAttribute("aria-selected", on ? "true" : "false"); b.tabIndex = on ? 0 : -1; });
     panel.querySelectorAll(".st-pane").forEach(function (p) { p.hidden = p.id !== "stp-" + name + "-" + key; });
   }
