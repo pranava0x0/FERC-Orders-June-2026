@@ -759,6 +759,96 @@
       "recordAccessions": [
         "20261116-5300"
       ]
+    },
+    {
+      "docket": "ER27-506-000",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=ER27-506&sub_docket=000",
+      "scope": "related",
+      "status": "sheet listed in full on Nov 18; rows not individually reviewed",
+      "totalRows": 2,
+      "rowsRead": 2,
+      "classificationCounts": {
+        "procedural notice": 1,
+        "for review": 1
+      },
+      "recordAccessions": [
+        "20261116-5179"
+      ]
+    },
+    {
+      "docket": "ER27-517-000",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=ER27-517&sub_docket=000",
+      "scope": "related",
+      "status": "sheet listed in full on Nov 18; rows not individually reviewed",
+      "totalRows": 2,
+      "rowsRead": 2,
+      "classificationCounts": {
+        "procedural notice": 1,
+        "for review": 1
+      },
+      "recordAccessions": [
+        "20261116-5282"
+      ]
+    },
+    {
+      "docket": "ER27-522-000",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=ER27-522&sub_docket=000",
+      "scope": "related",
+      "status": "sheet listed in full on Nov 18; rows not individually reviewed",
+      "totalRows": 2,
+      "rowsRead": 2,
+      "classificationCounts": {
+        "for review": 1,
+        "documentless": 1
+      },
+      "recordAccessions": [
+        "20261116-5309"
+      ]
+    },
+    {
+      "docket": "ER27-526-000",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=ER27-526&sub_docket=000",
+      "scope": "related",
+      "status": "sheet listed in full on Nov 18; rows not individually reviewed",
+      "totalRows": 7,
+      "rowsRead": 7,
+      "classificationCounts": {
+        "for review": 1,
+        "documentless": 6
+      },
+      "recordAccessions": [
+        "20261116-5323"
+      ]
+    },
+    {
+      "docket": "ER27-527-000",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=ER27-527&sub_docket=000",
+      "scope": "related",
+      "status": "sheet listed in full on Nov 18; rows not individually reviewed",
+      "totalRows": 8,
+      "rowsRead": 8,
+      "classificationCounts": {
+        "for review": 1,
+        "documentless": 7
+      },
+      "recordAccessions": [
+        "20261116-5326"
+      ]
+    },
+    {
+      "docket": "ER27-531-000",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=ER27-531&sub_docket=000",
+      "scope": "related",
+      "status": "sheet listed in full on Nov 18; rows not individually reviewed",
+      "totalRows": 4,
+      "rowsRead": 4,
+      "classificationCounts": {
+        "for review": 1,
+        "documentless": 3
+      },
+      "recordAccessions": [
+        "20261116-5340"
+      ]
     }
   ],
   "records": {
