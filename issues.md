@@ -822,3 +822,10 @@ Format: date · area · description · root cause (code/test/data/source) · sta
 ## 2026-11-15 (PR 33 review round 2)
 - **Theme chip counts ignored a typed query** (code, found by Codex). With "google" typed, the cost chip read 74 and showed one document. Fixed: `applyTheme` recounts every chip against the query; checked in a browser that each chip's number equals what it shows.
 
+
+## 2026-11-18 · Record tier · six substantive filings have no public text
+- **Area:** docket record. **What:** of 502 substantive filings in the 71 swept dockets, 496 were captured and 486 entered the
+  record tier (10 unrelated filings in the swept ER27-499..535 range excluded). Five are filed privileged or restricted on
+  eLibrary (20251208-5344, 20260325-5230 IMM reply brief, 20260414-5247, 20260624-5017, 20260821-5290 EKPC protest);
+  20250423-5217 (ACEG, co-location) timed out twice. **Root cause:** source-side (restricted) and environment (timeout).
+  **Status:** Open for 20250423-5217 (retry); the five restricted files are a known structural gap, do not re-fetch.

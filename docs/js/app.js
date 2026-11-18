@@ -2346,10 +2346,11 @@
       var tk = parseTimelineRest(rest);
       if (tk !== "all") parts.push(["#timeline/track/" + tk, D.tracks[tk].label]);
     } else if (name === "commissioners" && rest && rest !== "all") parts.push(["#commissioners/" + rest, commishName(rest)]);
-    el.hidden = name === "overview";
-    el.innerHTML = '<ol><li><a href="#overview">Now</a></li>' + (name === "overview" ? "" : parts.map(function (p, i) {
+    // The tab bar already says which tab is open, so a trail is shown only below tab level.
+    el.hidden = parts.length < 2;
+    el.innerHTML = el.hidden ? "" : "<ol>" + parts.map(function (p, i) {
       return "<li>" + (i === parts.length - 1 ? '<span aria-current="page">' + esc(p[1]) + "</span>" : '<a href="' + esc(p[0]) + '">' + esc(p[1]) + "</a>") + "</li>";
-    }).join("")) + "</ol>";
+    }).join("") + "</ol>";
   }
 
   function activate(name, focus) {

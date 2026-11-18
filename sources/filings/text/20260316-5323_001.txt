@@ -1,0 +1,301 @@
+--- PAGE 1 ---
+UNITED STATES OF AMERICA 
+BEFORE THE 
+FEDERAL ENERGY REGULATORY COMMISSION 
+ 
+ 
+PJM Interconnection, L.L.C.​ ​
+​
+)​
+​
+Docket No. ER26-1479-000 
+​
+​
+​
+​
+​
+​
+)​
+ 
+ 
+COMMENTS OF THE DATA CENTER COALITION 
+Pursuant to Rule 211 of the Rules of Practice and Procedure of the Federal Energy 
+Regulatory Commission’s (“Commission”)1, the Data Center Coalition (“DCC”), respectfully 
+submits these formal comments in response to PJM Interconnection, L.L.C.’s (“PJM”) February 
+23, 2026 tariff filing in compliance (“PJM’s Compliance Filings”) to the Commission's 
+December 18, 2025 order.2  
+I.​
+Introduction  
+DCC respectfully submits these comments on PJM’s proposed revisions to the PJM Open 
+Access Transmission Tariff to comply with the Commission’s directives in its Order to Show 
+Cause to (1) revise its behind-the-meter generation Tariff provisions, (2) establish three new 
+transmission services for Eligible Customers seeking to take service on behalf of Co- Located 
+Load, and (3) revise its necessary studies processes, among other changes. This proceeding arises 
+at a pivotal moment for the nation’s energy grid and digital infrastructure, as regional grid 
+operators face rising demand, constrained transmission capacity, increased local opposition to 
+infrastructure development, and growing uncertainty around supply adequacy. 
+2  PJM Interconnection, L.L.C., 193 FERC   61,217, (2025) (Order to Show Cause). 
+1 18 C.F.R. § 385.211 (2025). 
+1
+--- PAGE 2 ---
+DCC is the membership organization for the U.S. data center industry, representing 
+leading data center owners and operators with infrastructure and employees across the country.3 
+DCC member companies are making significant, multi-billion dollar investments in America’s 
+infrastructure. These investments support hundreds of thousands of quality jobs across the nation 
+and contribute billions of dollars in local, state, and federal tax revenue, providing consistent 
+funding for important community priorities like public safety, education, and transportation.  
+Between 2017 and 2023, the data center industry’s total contribution to U.S. GDP was 
+$3.5 trillion. In 2023, the U.S. data center industry directly employed more than 600,000 workers 
+and supported 4.7 million jobs in total. The sector generated $404 billion in total labor income 
+and contributed $162.7 billion in federal, state, and local taxes in 2023.4 
+Data centers are foundational to the modern economy and the digital services on which it 
+depends. They support essential services across nearly every sector, including finance, 
+healthcare, education, communications, manufacturing, defense, and government. As the 
+backbone of the nation’s digital infrastructure, data centers host the computing platforms that 
+power artificial intelligence and machine learning workloads, cybersecurity systems that protect 
+critical institutions, and data processing capabilities relied upon by federal agencies and national 
+security entities. These facilities support real-time digital operations that are now inseparable 
+from the functioning of core public and private systems. 
+In recent years, energy demand has accelerated—driven by Artificial Intelligence (“AI”) 
+development, cloud computing, electrification of buildings, industry and transportation, 
+hydrogen fuel production, and the reshoring of U.S. advanced manufacturing. This has created a 
+4 PwC, “Economic Contributions of Data Centers in the United States,” February 2025. 
+3 The Data Center Coalition is a membership organization of leading data center owners and operators. Public 
+testimony and written comments submitted by DCC do not necessarily reflect the views of each individual DCC 
+member. A list of current DCC Members is accessible at https://www.datacentercoalition.org/members.  
+2
+--- PAGE 3 ---
+step change in electricity needs, particularly in regions like PJM, where demand is outpacing 
+outdated planning frameworks. Data center operators are responding with urgency—but face 
+growing constraints from generator interconnection delays, opaque infrastructure planning, and 
+limited transparency into available capacity. 
+In this context, co-location of load with generation—whether front-of-the-meter or 
+behind-the-meter—is a pragmatic, common, and commercially legitimate strategy to secure 
+timely access to power as markets grapple with years-long interconnection queue backlogs. 
+These arrangements provide critical flexibility and efficiency, enabling data center developers to 
+meet emerging needs on faster timelines and without undue reliance on already-congested grid 
+infrastructure should they pursue this option. 
+The Commission has the opportunity in this proceeding to ensure PJM is complying with 
+its Order to Show Cause and ensure co-location arrangements are a viable pathway in the future 
+for large load customers. To assist in that effort, these comments: (1) provide an overview of 
+PJM’s Compliance Filing; and (2) point to the unworkable nature of PJM’s compliance filing and 
+recommend solutions.  
+II.​
+PJM’s Compliance Filing 
+In response to the Order to Show Cause, PJM filed revisions to its Tariff addressing 
+Retail Behind-the-Meter Generation (BTMG) and transmission service for large loads. The 
+proposal establishes a 50 MW materiality threshold for Retail BTMG, under which facilities with 
+a cumulative nameplate rating of 50 MW or less may qualify for retail netting treatment. PJM 
+indicated this threshold aligns with its definition of large load additions and reflects stakeholder 
+feedback. The filing also includes an emergency generation exemption, which excludes on-site 
+backup generators from the BTMG calculation so that facilities such as data centers can maintain 
+3
+--- PAGE 4 ---
+diesel or natural gas backup generation for reliability purposes, provided those units are not used 
+for routine retail netting. 
+PJM also proposes grandfathering provisions intended to protect existing arrangements. 
+Facilities with BTMG capacity exceeding 50 MW may be permanently grandfathered if they 
+operate under a contractual arrangement that was in effect before December 18, 2025. In 
+addition, the proposal exempts certain Qualifying Facilities that achieved operational status 
+before that date under the Public Utility Regulatory Policies Act of 1978. PJM stated these 
+provisions are designed to avoid disrupting existing investments while establishing clearer limits 
+for future projects. 
+Finally, PJM proposed three new transmission service options for Eligible Customers. 
+Firm Contract Demand Transmission Service would allow customers to receive service up to a 
+defined maximum megawatt level. Non-Firm Contract Demand Transmission Service would 
+allow co-located loads to withdraw power from the grid on an as-needed and as-available basis. 
+PJM also proposed Interim Network Integration Transmission Service (“Interim NITS”), which 
+would allow customers that have requested full Network Integration Transmission Service 
+(“NITS”) to begin operations on a non-firm, interruptible basis while transmission upgrades 
+necessary for long-term firm service are constructed. These proposed service options form the 
+basis of DCC’s concerns discussed below. 
+III.​
+DCC Comments  
+Co-location is a commercial arrangement that enables load and generation to be sited 
+together in ways that facilitate timely power delivery, reduce dependence on constrained 
+transmission systems, and enhance investment certainty. These arrangements involve 
+sophisticated engineering, contractual, and regulatory compliance components. When properly 
+4
+--- PAGE 5 ---
+structured, they can preserve and improve overall grid reliability while expanding the set of 
+viable options available to new large loads. 
+DCC has previously urged the Commission to direct PJM to develop clear, enforceable 
+tariff language that affirms the permissibility of multiple co-location configurations, including 
+those where load is served directly from a generation resource located on or near the same site. 
+The Commission did just that with its Order to Show Cause. Tariff clarity is essential to reduce 
+unnecessary disputes, avoid case-by-case confusion, and enable transmission providers to 
+process interconnection and load addition requests efficiently and predictably. The Commission 
+provided clear guidance to PJM on how PJM should implement the Commission’s co-location 
+order and facilitate the interconnection of new large loads such as data centers.  
+In its filing, PJM states it “understands the importance of, and remains committed to, 
+advancing our nation’s leadership in connecting large loads, including supporting the 
+development of Artificial Intelligence (“AI”) infrastructure. PJM continues to work with its 
+members to support efforts to accelerate the speed and increase the scale with which the United 
+States can build the next generation of AI infrastructure, especially the necessary capacity to 
+support this load while also ensuring reliability and fair treatment for all users of the grid.” 5 
+However, PJM’s proposal falls short of the Commission’s clear directive and the goals 
+PJM itself identifies. As a result, the data center industry is left without viable pathways to bring 
+solutions that accelerate the interconnection of critical load and generation and address the 
+ongoing capacity shortfalls in PJM. FERC’s direction to provide a materiality threshold, which 
+PJM set at 50 MW for BTMG, was to coincide with a suite of changes that also included a viable 
+and efficient co-location path that is not BTMG. But PJM’s compliance filing leaves several core 
+operational questions unanswered. For example, PJM’s proposed Interim NITS will be difficult 
+5 PJM’s Compliance Filing at 2. 
+5
+--- PAGE 6 ---
+for customers to rely upon unless several key issues are resolved. As proposed, the framework 
+leaves significant uncertainty regarding how the service would operate in practice, including the 
+interaction between Interim NITS and co-located generation arrangements. This uncertainty 
+creates substantial risk for customers considering major infrastructure investments and may 
+render the service largely unusable in its current form.  
+a.​ Interim NITS Is Not Workable If Customers Cannot Use Co-Located 
+Generation During Curtailment 
+The proposal leaves unresolved a critical question regarding whether customers receiving 
+Interim NITS may take energy from a co-located generator when their network service is 
+curtailed. Interim NITS is intended to provide an incentive for load to bring generation behind 
+the meter in exchange for getting energized more quickly while awaiting for transmission 
+upgrades. However, PJM has proposed to prohibit customers from relying on co-located 
+generation during curtailment events. In its January 23, 2026 Preliminary Proposal, PJM outlined 
+its curtailment procedures for Interim NITS. As part of those procedures, PJM stated “[i]f 
+curtailed, EC cannot take energy from co-located generator.”6 This is unworkable because 
+curtailment should limit use of the grid, not prevent the customer from using the co-located 
+resource it supplied, which supports Interim NITS in the first place. If the customer cannot use 
+that generation during curtailment, Interim NITS provides no practical value.  
+Maintaining such a limitation would significantly undermine the operational value of 
+co-located generation arrangements. If co-located customers are expected to bring new resources 
+to market, they should have access to those resources in time of curtailment.   
+Further, PJM must define the trigger, scope, and sequence of Interim NITS curtailment 
+with respect to the operational limitations identified in the study and should not be able to curtail 
+6PJM Staff Preliminary/Working Draft of Concepts as of January 23, 2026.  
+6
+--- PAGE 7 ---
+load for unrelated broader resource adequacy concerns, particularly where the colocated load has 
+brought sufficient new supply to meet its demand. Curtailment direction unrelated to the result of 
+the NITS studies should be outside the scope of this proceeding.  
+b.​ PJM Must Establish a Defined Process and Timeline for Necessary Studies 
+and CIR Review 
+In its filing PJM also provides guidance on interconnection rules for existing generators. 
+PJM proposes any existing power plant seeking to serve co-located load must now go through a 
+formal Necessary Studies process, reduce its Capacity Interconnection Rights (CIRs) 
+accordingly, and execute a new Generation Interconnection Agreement before a single megawatt 
+of co-located load can be served. However, clearer interconnection rules for existing generators 
+also require more concrete timelines to review and approve these Necessary Studies and CIR 
+revisions. PJM also needs to account for CIRs going to the specific co-located customer in a 
+manner that doesn't force a generator to reduce more CIRs than necessary, which may happen 
+when this is done on a 3-year look ahead. Clarity on the timeline for these reviews is needed so 
+large load customers can plan their investment accordingly.   
+c.​ PJM’s Effective Date Should Be Earlier   
+PJM has proposed an effective date of June 1, 2029 for these new transmission services. 
+Given the immediate need to connect new generation and load in PJM, this presumably means 
+that PJM cannot start studying these innovative solutions for over three years. PJM should work 
+with stakeholders to implement workable solutions in a timely manner that ensures these services 
+can meet the immediate need within the PJM region. As discussed, PJM still has much work 
+to-do to refine these services, but the goal should be to implement needed reforms earlier than 
+2029.  
+7
+--- PAGE 8 ---
+d.​ PJM Should Provide Greater Transparency Regarding how Customers Will 
+Transition from Interim NITS to NITS 
+While Interim NITS is intended to function as a temporary solution, the proposal does not 
+provide clear timelines to co-location customers to expect to be transitioned to NITS or how long 
+customers may be required to rely on the interim framework. Without clear timelines, Interim 
+NITS could persist indefinitely, creating regulatory and operational uncertainty for customers 
+making long-term investments in load and generation resources.  
+IV.​
+Conclusion 
+DCC appreciates FERC’s leadership and innovation in pushing forward new transmission 
+services in PJM. At this pivotal moment in the global AI race and America’s economic growth, 
+FERC has a critical role to play in ensuring these services are not simply theoretical, but can 
+actually be implemented in practice in a timely manner. In light of the significant policy and 
+operational questions, several issues require further clarification and development. Accordingly, 
+the Commission should require PJM to further clarify and revise its proposal to: (1) confirm that 
+an Interim NITS customer may continue to use co-located generation when network service is 
+curtailed; (2) establish a defined process and timeline for Necessary Studies and associated CIR 
+revisions, and to ensure that any CIR reductions are tailored to the co-located service actually 
+being provided; (4) PJM should endeavor to implement needed reforms in a timely manner; and 
+(5) provide greater transparency regarding how customers will transition from Interim NITS to 
+full NITS. These matters, as well as additional concerns that may arise through stakeholder 
+engagement, should be more fully addressed by PJM to ensure that the resulting framework is 
+workable and provides sufficient certainty for customers considering major infrastructure 
+investments. 
+8
+--- PAGE 9 ---
+DCC looks forward to actively participating in the paper hearing proceeding and 
+contributing to the development of a comprehensive record on these issues. Given the 
+consequential nature of these issues and the scale of investments that will be affected, the 
+Commission should take the time to get the framework right. A thoughtful and well-developed 
+record will help ensure that any resulting policies provide regulatory certainty while maintaining 
+the reliability and integrity of the regional transmission system. 
+Respectfully submitted, 
+/s/ Aaron Tinjum 
+Aaron Tinjum 
+Vice President, Energy 
+Data Center Coalition 
+1250 H Street, NW, Suite 880 
+Washington, DC, 20005 
+aaron@datacentercoalition.org 
+ 
+/s/ Cy McNeill 
+Cy McNeill 
+Senior Director, Federal Affairs 
+Data Center Coalition 
+1250 H Street, NW, Suite 880 
+Washington, DC, 20005 
+cy@datacentercoalition.org 
+ 
+/s/ Lucas Fykes 
+Lucas Fykes 
+Senior Director, Energy Policy  
+& Regulatory Counsel 
+1250 H Street, NW, Suite 880 
+Washington, DC, 20005 
+lucas@datacentercoalition.org 
+ 
+ 
+ 
+ 
+9
+--- PAGE 10 ---
+CERTIFICATE OF SERVICE 
+​
+I hereby certify that I have this day served the foregoing document upon each person 
+designated on the official service list compiled by the Secretary in this proceeding. Dated at 
+Washington, DC this 16th day of March 2026. 
+ 
+/s/ Lucas Fykes 
+Lucas Fykes 
+Senior Director, Energy Policy  
+& Regulatory Counsel 
+1250 H Street, NW, Suite 880 
+Washington, DC, 20005 
+lucas@datacentercoalition.org 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+10

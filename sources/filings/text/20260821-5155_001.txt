@@ -1,0 +1,915 @@
+--- PAGE 1 ---
+1 
+UNITED STATES OF AMERICA 
+BEFORE THE 
+FEDERAL ENERGY REGULATORY COMMISSION 
+ 
+ 
+PJM Interconnection, L.L.C.  
+ 
+ 
+ 
+ 
+Docket No. ER26-3380-000 
+ 
+ 
+COMMENTS OF THE INSTITUTE FOR POLICY INTEGRITY  
+AT NEW YORK UNIVERSITY SCHOOL OF LAW ON  
+PJM INTERCONNECTION, L.L.C. SECTION 205 FILING  
+TO IMPLEMENT RELIABILITY BACKSTOP PROCUREMENT 
+ 
+ 
+ 
+The Institute for Policy Integrity at New York University School of Law (Policy 
+Integrity)1 respectfully submits the following comments to the Federal Energy Regulatory 
+Commission (FERC) regarding PJM Interconnection, L.L.C. (PJM)’s Federal Power Act (FPA) 
+Section 205 proposed tariff implementing Reliability Backstop Procurement (RBP). Policy 
+Integrity is a non-partisan think tank dedicated to improving the quality of government 
+decisionmaking through advocacy and scholarship in the fields of administrative law, economics, 
+and public policy.  
+On July 31, 2026, pursuant to Section 205 of the FPA, PJM filed for revisions to its Open 
+Access Transmission Tariff to implement RBP, which will include a Reliability Backstop 
+Auction (Backstop Auction). These revisions are designed to address the capacity shortfall in the 
+2028/2029 Base Residual Auction (BRA, or Legacy Capacity Market) and future BRA shortfalls 
+that PJM anticipates will occur.2 Part I of these comments provides context for PJM’s proposed 
+tariff revisions. Part II explains that FERC should reject PJM’s proposed tariff because PJM has 
+ 
+1 This document does not purport to present the views, if any, of New York University School of Law.  
+2 PJM Interconnection, L.L.C., Reliability Backstop Procurement to Address Resource Adequacy Concerns 
+Stemming from Large Loads, 7-8, 27-28 (filed July 31, 2026) (hereinafter, Tariff Filing).
+--- PAGE 2 ---
+2 
+failed, for multiple reasons, to meet its burden to show that the Backstop Auction is just and 
+reasonable. These reasons include: 
+1) PJM cannot sufficiently determine whether long-term, systemic problems exist in the 
+capacity market before three consecutive BRA shortfalls occur; 
+2) The Backstop Auction will not isolate the Legacy Capacity Market from the costs of 
+large load growth; 
+3) PJM can address its resource adequacy problems at lower cost and with less risk of 
+cost-shifting through other means. 
+Part III asserts, in the alternative, that FERC should find that PJM can demonstrate its 
+proposed tariff is just and reasonable only if PJM amends the design of the Backstop Auction to 
+mitigate the likelihood that it will result in unjust and unreasonable rates.3 Part III sets out tariff 
+amendments that PJM can adopt to reduce the risk that its tariff will result in unjust and 
+unreasonable rates. 
+I. 
+BACKGROUND 
+On December 17, 2025, PJM announced that the 2027/2028 BRA cleared 6,623 MW 
+short of its procurement target.4 In a report investigating the causes of this shortfall, PJM 
+ 
+3 In its tariff filing, PJM notes that it “consents to the Commission’s exercise of authority to modify and/or sever any 
+element of the proposed Tariff . . . to the extent necessary and permitted under section 205 of the FPA and NRG 
+Power Marketing, LLC v. FERC, where such modification and/or severance is consistent with PJM’s overarching 
+objectives in this filing.” Tariff Filing, supra n. 2, 5. While NRG Marketing limits FERC’s ability to unilaterally 
+propose modifications to section 205 tariff filings, PJM has the authority to consent to accept FERC’s proposed 
+modifications. 862 F.3d 108, 114 (D.C. Cir. 2017).  
+4 PJM Interconnection, L.L.C., 2027/2028 BASE RESIDUAL AUCTION TARGET SHORTFALL REPORT 1-2 (Feb. 9, 
+2026), https://perma.cc/Z5A7-GYJ2 (hereinafter, BRA Shortfall Report); PJM Auction Procures 13,479 MW of 
+Generation Resources, PJM INSIDE LINES (Dec. 17, 2025), https://perma.cc/2P3E-4Z75. PJM’s procurement target 
+for the BRA is based on load forecasts submitted by Electric Distribution Companies (EDCs) for each zone. PJM 
+Manual 19: Load Forecasting and Analysis, Section 1.1 (June 30, 2026), https://perma.cc/7KMP-FY3K (hereinafter, 
+PJM Manual 19). PJM may implement future BRAs with more reliable load forecasts, since the PJM Board recently 
+directed PJM Staff to implement a host of reforms to the load forecasting process, including state review of large 
+load additions, addressing duplicative requests, and the use of additional third-party review and increased 
+transparency. PJM Board Decisional Letter on Critical Issue Fast Path - Large Load Additions, 2 (Jan. 16, 2026), 
+https://perma.cc/3HXP-SYJF.
+--- PAGE 3 ---
+3 
+predicted that capacity market shortfalls would likely continue over the next decade, driven by 
+forecasted demand growth from data centers and other customers.5 PJM’s report also found that 
+the administrative price collar imposed on the capacity market likely exacerbated the deficit.6 
+On January 15, 2026, the White House Natural Energy Dominance Council and the PJM 
+Governors’ Coalition signed a “Statement of Principles Regarding PJM” (Statement of 
+Principles), which directed PJM to “[p]rovide 15-year price certainty for new capacity 
+resources.”7 The Statement of Principles suggested PJM could provide price certainty by 
+“holding a Reliability Backstop Auction to procure new capacity resources commencing no later 
+than September 2026.”8 In response, the PJM Board initiated a Critical Issue Fast Path (CIFP) 
+process to develop an RBP proposal and PJM subsequently convened a series of stakeholder 
+meetings to solicit feedback.9 In the same CIFP, PJM also solicited stakeholder feedback on 
+Interim Resource Adequacy Service (IRAS), formerly denoted “Connect and Manage,” a 
+program that would require new large loads to bring their own new capacity to the grid, or be 
+subject to interruptible service under certain emergency conditions.10 On July 14, 2026, in the 
+midst of the RBP stakeholder process, PJM announced that the 2028/2029 BRA cleared short of 
+its procurement target by 6,831 MW.11 
+ 
+5 If FERC approves the IRAS proposal that PJM recently submitted, then PJM’s predictions of future capacity 
+market shortfalls become significantly less likely. See infra § II.D.1 for further discussion.  
+6 See generally BRA Shortfall Report, supra n. 4. 
+7 White House National Energy Dominance Council & PJM Governors’ Coalition, Statement of Principles 
+Regarding PJM (Jan. 15, 2026), https://perma.cc/8U3F-U79Q (hereinafter, Statement of Principles).  
+8 Id. 
+9 PJM Interconnection, L.L.C., Reliability Backstop Procurement Issue Charge, 1 (Apr. 10, 2026), 
+https://perma.cc/MQ3E-ZFN9; PJM Interconnection, L.L.C., Critical Issue Fast Path - Reliability Backstop 
+Procurement / Connect & Manage Landing Page (accessed Aug. 11, 2026), https://perma.cc/ZU49-2CRA.  
+10 PJM Interconnection, L.L.C., Reliability Backstop Procurement Issue Charge (May 22, 2026), 
+https://perma.cc/RTH7-95HT.  
+11 PJM Capacity Auction Procures 138,318 MW of Generation Resources as Work Continues to Address Growing 
+Electricity Demand, PJM INSIDE LINES (July 14, 2026), https://perma.cc/3THF-LHPQ.
+--- PAGE 4 ---
+4 
+ 
+PJM’s final RBP proposal comprises two elements to occur in parallel, only one of which 
+requires FERC approval. First, PJM will facilitate matching between customers and suppliers 
+who want to enter bilateral capacity contracts. PJM’s consultant issued a Request for Proposals 
+on June 9, 2026, and the matching process will occur over the course of six to nine months, 
+expected to start in late August.12 PJM need not amend the tariff for this private contracting 
+process because PJM will merely facilitate voluntary negotiations and not participate as a party. 
+Second, PJM proposes to run a Backstop Auction, starting on September 30, 2026, to procure 
+enough capacity to cover the 2028/2029 BRA shortfall.13 That Backstop Auction would be 
+subject to the following proposed rules: 
+● The Backstop Auction would accept supply bids only from “new”14 capacity resources, 
+which can have an in-service date any time after the 2028/2029 DY and before June 
+2032; 
+● The Backstop Auction would secure capacity for 15-year terms. If a supplier bids 
+capacity that will begin service later than 2028/2029 DY, the contract term would extend 
+to the remainder of the 15-year term (e.g., a generator coming online in 2032 would only 
+have a ten-year contract); 
+ 
+12 Tariff Filing, supra n. 2, 30-31; PJM Interconnection, L.L.C., CIFP Reliability Backstop Procurement - PJM 
+Board Decision, 1 (July 31, 2026), https://perma.cc/EA2Q-X5JD (hereinafter, RBP Board Decision); Charles River 
+Associates, PJM Reliability Backstop Procurement Bilateral Request for Proposal (June 9, 2026), 
+https://perma.cc/BN29-2UAF.  
+13 PJM will target September 30, 2026 to begin bid solicitation, which would close three weeks later (October 21, 
+2026). The subsequent clearing and selection process would conclude six weeks after the offer submission window 
+closes, and the sellers would be notified as soon as practicable once the backstop auction ends. Tariff Filing, supra 
+n. 2, 27, 48. The initial target for the backstop auction is approximately 6.8 GW, which PJM will reduce based on 
+evidence of bilateral contracts for new capacity. See infra fn. 16. 
+14 PJM defines “new” capacity to determine which supply qualifies to bid into the backstop auction more narrowly 
+than PJM defines “new” capacity to determine what qualifies to decrement the procurement target. Tariff Filing, 
+supra n. 2, 36, 51.
+--- PAGE 5 ---
+5 
+● Each Backstop Auction contract would work as a “contract for differences” against future 
+capacity auction prices with PJM as the counterparty;15  
+● The procurement target would be set as the amount of the 2028/29 BRA shortfall, less 
+any capacity secured in bilateral contracts prior to the Backstop Auction or subject to 
+state peak shaving laws;16 
+● The auction mechanism would be “pay-as-bid”17 with a price cap set at $555/MW-day 
+UCAP (1.5 x Net Cost of New Entry) for the volume-weighted average of the levelized 
+cost of all selected offers;18 
+● PJM would allocate Backstop Auction costs to zones based on each zone’s pro rata share 
+of the total costs. PJM would then allocate costs within zones to Load Serving Entities 
+(LSEs) based on cost allocation methodologies submitted by the state or Relevant 
+Electric Retail Regulatory Authority (RERRA);      
+● If states or RERRAs do not provide PJM with a cost allocation methodology, PJM would 
+revert to using Peak Load Contribution to allocate Backstop Auction costs among 
+LSEs.19  
+ 
+15 E.g. For any capacity contracted in the RBP for 2030, suppliers will bid that capacity into the 2030 BRA at $0, 
+and either suppliers or Load Serving Entities (LSEs) will pay the difference between the RBP price and the BRA 
+price, depending on which is higher. So, for example, if the BRA clears at $100/MW-day, but PJM accepts a 
+supplier’s bid for capacity at $200/MW-day in the backstop auction, that supplier would receive $100/MW-day in 
+the BRA, and PJM would compensate that supplier with an additional $100/MW-day, so the supplier receives a total 
+of $200/MW-day. Conversely, if the BRA clears at $200/MW-day, and the backstop auction clears at $100/MW-
+day, the suppliers would have to pay back $100/MW-day to the LSEs and would effectively receive a total of 
+$100/MW-day.  
+16 The window for suppliers to submit bids will run three weeks after the auction opening date (PJM proposes that 
+this will start on September 30, 2026, but acknowledges that there may be delays). If the auction opens on 
+September 30, as proposed, the window for bid solicitation will close on October 21, 2026. At any time during this 
+window, LSEs can submit evidence of bilateral contracts and PJM will subtract these contracts from the 
+procurement target.  
+17 Under a pay-as-bid system, suppliers are paid the amount of the bid they offer, as opposed to the clearing price.  
+18 For example, a supplier could bid in an offer over $555/MW-day and its bid may still be accepted if enough other 
+suppliers bid in below the price cap, such that the overall average of all bids remains below $555/MW-day.  
+19 Tariff Filing, supra n. 2, 97-99. There are limited opt-out provisions for (1) zones that can demonstrate an 
+inability to allocate costs to large loads; and (2) states that demonstrate they have peak-shaving programs codified in
+--- PAGE 6 ---
+6 
+II. 
+FERC should reject the proposed tariff revisions because PJM has failed to 
+demonstrate that the Backstop Auction is just and reasonable. 
+ 
+PJM has not met its burden to demonstrate that the Backstop Auction is just and 
+reasonable for the following reasons:  
+1) PJM has not adequately explained why it is appropriate to run the Backstop 
+Auction before three consecutive BRA shortfalls indicate long-term, systemic 
+market problems;  
+2) PJM has not adequately explained why the Backstop Auction is appropriate given 
+that it will not isolate the capacity market from the impacts of large load growth; 
+and  
+3) PJM has not adequately explained why the Backstop Auction is warranted given 
+that other alternatives will address the same problems at lower cost and with less 
+risk of cost-shifting.  
+Because PJM cannot demonstrate that its proposed tariff is within the zone of 
+reasonableness and has not provided substantial evidence showing that the revisions will result in 
+just and reasonable rates, FERC should reject the proposed tariff revisions.20  
+A. PJM must prove that its proposed tariff revisions are just and reasonable 
+and supported by substantial evidence.  
+ 
+Under FPA section 205, a party seeking to revise its tariff bears the burden of proof to 
+demonstrate that its revisions will result in “just and reasonable” rates.21 The just and reasonable 
+ 
+state law. Id. at 44-45. PJM indicates that the first category is “designed to address a limited regulatory gap faced by 
+cooperatives and municipal utilities whose rates are not regulated by the states.” Id.  
+20 16 U.S.C. § 824d(e); New York Pub. Serv. Comm’n v. FERC, 104 F.4th 886, 890 (D.C. Cir. 2024) (NYPSC v. 
+FERC). 
+21 See id.
+--- PAGE 7 ---
+7 
+standard requires “a balancing of investor and consumer interests.”22 Rates must be high enough 
+to allow utilities to recover their costs and maintain financial integrity, but they must be low 
+enough to avoid imposing excessive costs on consumers.23 Rates may also be unjust and 
+unreasonable if they fail to ensure reliable service, or do not assign costs to customers “roughly 
+commensurate” according to who benefits from such costs.24 FERC must find that a rate 
+proponent has provided “substantial evidence” that its filing is just and reasonable before FERC 
+can approve the revised tariff.25 This inquiry is equivalent to “arbitrary and capricious” review 
+under the Administrative Procedure Act.26  
+PJM filed its revised tariff pursuant to section 205, which requires PJM to prove that its 
+proposed revisions are just and reasonable, i.e., that its rates will not excessively burden 
+consumers, unfairly allocate costs, or lead to reliability problems. If FERC finds that PJM has 
+not provided substantial evidence supporting its assertion that the proposed tariff revisions are 
+just and reasonable, FERC must reject the filing.27    
+ 
+22 Federal Power Comm’n v. Hope Natural Gas Co., 320 U.S. 591, 603 (1944) (finding that the just and reasonable 
+standard requires a balancing of investor and consumer interests); Jersey Cent. Power & Light v. FERC, 810 F.2d 
+1168, 1172 (D.C. Cir. 1987) (applying the Hope holding to electric rates).  
+23 Id.; NYPSC v. FERC, 104 F.4th at 890 (“[T]here is not a single ‘just and reasonable rate’ but rather a “zone of 
+reasonableness” bounded “on one end by investor interest and [on] the other by the public interest against excessive 
+rates.”). 
+24 Advanced Energy Mgmt. All. v. FERC, 860 F.3d 656, 661 (D.C. Cir. 2017) (finding that failure to provide reliable 
+service is relevant to the just and reasonable standard); Old Dominion Elec. Coop. v. FERC, 898 F.3d 1254, 1255 
+(D.C. Cir. 2018) (Old Dominion) (establishing the cost causation principle); Ill. Commerce Comm’n v. FERC, 576 
+F.3d 470, 477 (7th Cir. 2009) (finding that the cost causation principle requires benefits to be “roughly 
+commensurate” with costs) (ICC v. FERC).  
+25 16 U.S.C. § 824l(b); New Jersey Bd. of Public Utils. v. FERC, 744 F.3d 74, 93 (3rd Cir. 2014) (finding that the 
+substantial evidence standard requires “more than a scintilla, but . . . less than a preponderance of the evidence.”) 
+(NJBPU v. FERC).  
+26 Maryland People’s Counsel v. FERC, 761 F.2d 768, 774 (D.C. Cir. 1985) (finding that the “substantial evidence” 
+standard is equivalent to “arbitrary and capricious” review under the Administrative Procedure Act); Ass’n of Data 
+Processing Service Orgs. v. Bd. of Governors of the Fed. Reserve Sys., 745 F.2d 677, 681-86 (D.C. Cir. 1984).  
+27 See NJBPU v. FERC, 744 F.3d at 93 (elaborating on the “substantial evidence” standard).
+--- PAGE 8 ---
+8 
+B. FERC should reject the proposed tariff because PJM has not adequately 
+explained why it is appropriate to run the Backstop Auction before three 
+consecutive BRA shortfalls indicate long-term, systemic market problems.  
+ 
+PJM’s current tariff authorizes PJM to hold a reliability backstop auction when three 
+consecutive BRAs clear short of the procurement target.28 It is important that PJM can run a 
+backstop auction only when there are long-term systemic issues in the BRA, not based on short-
+term market dynamics, because consistent and stable market rules are critical for investment. 
+FERC should reject the revised tariff because PJM has not provided substantial evidence to 
+justify its decision to depart from the backstop provisions in its existing tariff, particularly given 
+rapid and substantial reform occurring at the state and federal levels.29  
+Although the BRA cleared short of its target two years in a row, these shortfalls do not 
+provide sufficient evidence that revising PJM’s current tariff is warranted. First, it is unclear 
+whether the two BRA shortfalls would count towards triggering a backstop auction. The current 
+tariff triggers a backstop auction only after three consecutive BRA shortfalls.30 But the tariff 
+contemplates that BRAs will acquire capacity three years in advance of the targeted delivery 
+year. PJM has strayed from the auction schedule stipulated in the tariff and held the last two 
+auctions to acquire capacity for delivery years closely proximate to the auction year.31 Because 
+of these delays, PJM has demonstrated evidence for only two near-term years of capacity 
+shortfalls.32 PJM has not adequately explained why two years of near-term predicted capacity 
+shortfalls are sufficient to identify systemic problems in the BRA, when the current tariff 
+ 
+28 PJM Interconnection, L.L.C., Open Access Transmission Tariff, Attachment DD, section 16 (effective July 31, 
+2026) (hereinafter, Tariff). 
+29 16 U.S.C. § 824l(b); NJBPU v. FERC, 744 F.3d at 93 (establishing the “substantial evidence” standard).   
+30 Tariff, supra n. 28, Attachment DD, section 16.  
+31 FERC Order Delays Capacity Auction to Allow for Consideration of Resource Adequacy Reform, PJM INSIDE 
+LINES (June 12, 2023), https://perma.cc/9QVK-YF3G.  
+32 See id.
+--- PAGE 9 ---
+9 
+requires PJM to establish a showing of long-term resource adequacy issues (i.e., shortfalls 
+expected in three, four, and five years in the future) before authorizing a backstop auction.  
+Second, PJM has not adequately explained why tariff revisions are appropriate 
+considering recent efforts to encourage more investment in capacity resources and to accelerate 
+resource interconnections. PJM and its member states initiated a slew of reforms after the 
+2027/2028 BRA shortfall specifically designed to bring more supply online. These reforms need 
+time to work. PJM recently implemented comprehensive interconnection reform to clear its 
+queue backlog and substantially reduce waiting times.33 The window for the first group of 
+applicants under PJM’s new “first ready, first served” interconnection process concluded in April 
+2026 with over 800 projects representing 220 GW of capacity.34 PJM recently filed tariff 
+revisions to reform its interconnection process even further to comply with Order 2023.35 These 
+reforms are pending before the Commission and PJM will likely implement them soon.36 FERC 
+also recently approved PJM’s proposal for an Expedited Interconnection Track, a temporary 
+process to quickly advance large projects that address urgent capacity needs.37 This new program 
+took effect July 31, 2026, so PJM would not be able to judge its effectiveness before running the 
+Backstop Auction.  
+PJM member states are also acting to attract investment in capacity. Virginia passed a 
+law in April 2026 that comprehensively reformed the solar siting process, creating a uniform 
+ 
+33 PJM Interconnection, L.L.C., New, Faster Generation Interconnection Process Fact Sheet (May 21, 2026), 
+https://perma.cc/T79X-RQAP.  
+34 Over 800 New Generation Projects Seek to Connect Under PJM’s Reformed Process, PJM INSIDE LINES (Apr. 29, 
+2026) https://perma.cc/4DAR-4RQP.  
+35 PJM Interconnection, L.L.C., Order Nos. 2023 and 2023-A Further Compliance Filing of PJM Interconnection, 
+L.L.C., Accession No. 20260615-5149 (filed June 15, 2026). 
+36 See id.  
+37 PJM Interconnection, L.L.C., Order Accepting Tariff Revisions, 195 FERC ¶ 61,197, P 1 (2026); see also Order 
+Accepting Tariff Revisions re PJM Interconnection, L.L.C., 190 FERC ¶ 61,084, (2025) (approving PJM’s one-time 
+Reliability Resource Initiative to open an interconnection transition cycle to 50 additional shovel-ready projects).
+--- PAGE 10 ---
+10 
+statewide process that exempts larger solar projects from certain local regulations.38 Virginia also 
+created a task force to advance energy affordability and distributed energy, and passed a law 
+increasing battery storage targets for state utilities.39 In New Jersey, Governor Mikie Sherrill 
+signed legislation to launch a new procurement process for nuclear generation.40 In 
+Pennsylvania, the legislature passed a bill to improve load forecast transparency, which may 
+impact PJM’s demand growth projections.41  
+PJM has not explained how or why the proposed tariff revisions are appropriate given 
+these recent developments, including its own efforts to get new resources online more quickly.  
+PJM has not adequately explained why it is appropriate to lock in new capacity contracts for 15-
+year terms when state and regional reforms will likely result in more abundant supply for future 
+BRAs. Accordingly, FERC should not approve the tariff revisions because PJM has not 
+adequately explained or provided substantial evidence that its departure from the terms of the 
+current tariff is just and reasonable.  
+C. The Backstop Auction will not isolate the Legacy Capacity Market from the 
+impacts of large load growth.  
+ 
+ 
+PJM has not adequately justified its decision to run the Backstop Auction given that the 
+Backstop Auction will not shield the Legacy Capacity Market from the rate impacts of large load 
+growth. Running a backstop auction, regardless of how PJM designs it, will inevitably impact the 
+ 
+38 Code of Virginia §§ 15.2-2288.7-8.  
+39 Virginia Acts of Assembly, 2026 Reconvened Session, Chapter 997, S 223 (approved Apr. 22, 2026) (establishing 
+the task force); Code of Virginia § 56-585.5 (enacting increased storage targets for Virginia utilities).  
+40 State of New Jersey Governor Mikie Sherrill, Governor Sherrill Signs Legislation Launching Procurement 
+Process for New Nuclear Energy & Setting Strong Safeguards to Protect Ratepayers from Costs (July 13, 2026), 
+https://perma.cc/9S98-WZGB.  
+41 Diana DiGangi, Pennsylvania data centers face increased oversight under new law, UTILITYDIVE (July 14, 2026), 
+https://perma.cc/EF3J-BQQQ. PJM has taken additional measures to reform load forecasting, such as contracting 
+consultant Charles River Associates to conduct a third-party verification of large load forecasts. Emmanuel Bobbio, 
+PJM INTERCONNECTION, L.L.C., Third-Party Review of Large Load Adjustments (June 5, 2026), 
+https://perma.cc/M2CF-PE9P.
+--- PAGE 11 ---
+11 
+Legacy Capacity Market. As proposed, the Backstop Auction and the Legacy Capacity Market 
+are tied together by a contract-for-differences structure. Each supplier who clears a bid in the 
+Backstop Auction would also have to bid its committed capacity into the Legacy Capacity 
+Market at $0.42 Suppliers would then receive the BRA clearing price, either topped up or 
+subtracted, to match the price they received in the Backstop Auction.43 Under this structure, the 
+results of the Backstop Auction would inevitably affect prices in the Legacy Capacity Market. 
+And these effects would persist for the next 15 years because capacity committed through the 
+Backstop Auction must also bid into the BRA for each year of its contract. Even if PJM did not 
+opt to run the Backstop Auction as a contract-for-differences, any version of a backstop auction 
+would still affect the Legacy Capacity Market. PJM would still have to account for capacity 
+committed through a backstop auction by adjusting the BRA procurement target.44  
+ 
+The exact relationship between the Backstop Auction and the Legacy Capacity Market 
+would change depending on how accurately PJM sets the procurement target for the Backstop 
+Auction. PJM sets the procurement target for the Legacy Capacity Market based on load 
+forecasts submitted by Electric Distribution Companies (EDCs), and PJM proposes to set the 
+procurement target for the Backstop Auction as the amount of shortfall in the 2028/2029 BRA, 
+approximately 6.8 GW.45 If PJM has set the target too high and procures more capacity in the 
+Backstop Auction than is actually necessary to serve data centers, the offer requirement for new 
+backstop resources will depress clearing prices in the Legacy Capacity Market. The BRA 
+clearing price would fall because capacity committed through the Backstop Auction would flood 
+ 
+42 Tariff Filing, supra n. 2, 56.  
+43 See supra n. 15 for example and explanation. Capacity committed through bilateral contracts also must bid into 
+the Legacy Capacity Market. Tariff, supra n. 28, § 6.6.  
+44 In its tariff filing, PJM argued that the contract-for-differences structure is just and reasonable, but it did not 
+provide any reason for choosing the contract-for-differences structure over any alternatives. Tariff Filing, supra n. 2, 
+80-81.  
+45 PJM Manual 19, supra n. 4, Section 1.1.
+--- PAGE 12 ---
+12 
+the Legacy Capacity Market with supply priced at $0. If the Backstop Auction depresses the 
+prices in the Legacy Capacity Market enough, prices may not be high enough to compensate 
+existing suppliers, and they may retire, leading to resource adequacy problems. If enough 
+generators retire, it could force PJM to rely on expensive emergency procedures, such as 
+Reliability Must Run (RMR) agreements or requesting the Department of Energy (DOE) to issue 
+emergency orders under FPA section 202(c).46 Even if the market eventually responds to these 
+retirements with price increases, PJM would still be forced to rely in the short-term on costly, 
+and inefficient reliability fixes may impose excessive burden on consumers, which could result 
+in unjust and unreasonable rates. 
+ 
+If PJM has set the procurement target too low, and procures less capacity than data 
+centers need, it could lead to similar outcomes. In a tight market for supply, there may not be 
+enough capacity to meet the procurement target for both the Backstop Auction and the Legacy 
+Capacity Market. A tight supply market is not an unlikely scenario, since supply is scarce in 
+PJM, due to a variety of problems including supply chain shortages and interconnection queue 
+delays.47 When there is not enough supply to go around, suppliers will be more likely to offer 
+their resources into the Backstop Auction, which has a higher price cap than the upcoming 
+2029/2030 BRA.48 The Backstop Auction may also be appealing to resources that are further 
+ 
+46 RMRs are short-term contracts which transmission providers use to retain generators that are necessary to address 
+immediate reliability problems until a long-term solution is implemented. Transmission providers can also request 
+that the DOE issue an FPA 202(c) emergency order, which mandates certain power plants to continue running past 
+their planned retirement dates. A recent report found that DOE 202(c) mandates could cost ratepayers between $3.1 
+billion and $5.9 billion per year, depending on how many plants DOE mandates to remain open. MICHAEL GOGGIN, 
+GRID STRATEGIES LLC, THE COST OF FEDERAL MANDATES TO RETAIN FOSSIL-BURNING POWER PLANTS 9 (Aug. 
+2025) https://perma.cc/94M2-HQUD (hereinafter, 202(c) Report).  
+47 BRA Shortfall Report, supra n. 4, 5.  
+48 Tariff Filing, supra n. 2, 61. Even though suppliers must bid capacity committed through the backstop auction 
+into the BRA, the BRA price cap does not apply to backstop auction resources. The backstop auction is likely to be 
+more attractive to suppliers than the BRA as long as the BRA has a price cap lower than the backstop auction. But 
+even if the BRA price collar expires, suppliers may still prefer to bid into the backstop auction because it has a 
+flexible “soft cap” which may accept offers above the $555/MW-day price cap, as long as the average cost per MW-
+hour is less than $555/MW-day. By contrast, even without the $325/MW-day price collar imposed on the BRA, the
+--- PAGE 13 ---
+13 
+advanced in the interconnection queue, such as projects approved under the Reliability Resource 
+Initiative (RRI), because the Backstop Auction offers price certainty for 15 years, whereas the 
+Legacy Capacity Market offers one-year contracts.49  
+If enough suppliers opt for the Backstop Auction instead of the Legacy Capacity Market, 
+the Legacy Capacity Market may not be able to maintain resource adequacy as large loads come 
+online. Thus, the Backstop Auction would not insulate non-large load ratepayers from the 
+impacts of large load growth. If PJM implements IRAS, more new large load growth than 
+expected will not cause problems for the Legacy Capacity Market, since the new large loads 
+would be interruptible unless they bring their own new capacity. But if FERC does not approve 
+IRAS, the Backstop Auction would likely lead to resource adequacy issues in the Legacy 
+Capacity Market, which may require PJM to implement costly short-term reliability fixes.50 
+Allowing the costs of new large load growth to bleed into the Legacy Capacity Market would be 
+inconsistent with the Statement of Principles, which instructed PJM to “allocate the cost of any 
+new capacity through the . . . Reliability Backstop Auction to load serving entities (LSEs) with 
+new data centers that have not self-procured new capacity or agreed to be curtailable.”51 The 
+Backstop Auction may also be unjust and unreasonable if it cannot isolate the impacts of large 
+load growth from the Legacy Capacity Market because the auction would not allocate costs 
+“roughly commensurate” to the customers which incurred those costs.52 
+ 
+BRA typically has a “hard cap” reflecting the maximum price that demand is willing to pay for new capacity, set at 
+the cost of new entry, which varies from region to region. CONGR. RSCH. SERV., PJM’S ELECTRIC CAPACITY 
+MARKET: BACKGROUND AND CURRENT ISSUES 5 (June 2025), https://www.congress.gov/crs-product/R48553 
+(hereinafter, CRS Report). 
+49 PJM Chooses 51 Generation Resource Projects to Address Near-Term Electricity Demand Growth, PJM INSIDE 
+LINES (May 2, 2025), https://perma.cc/A48B-UY7N.  
+50 See 202(c) Report, supra n. 46, 9.  
+51 Statement of Principles, supra n. 8.  
+52 Old Dominion, 898 F.3d at 1255 (establishing the cost causation principle); ICC v. FERC, 576 F.3d at 477.
+--- PAGE 14 ---
+14 
+D. FERC should reject the tariff revisions because PJM can address its resource 
+adequacy mechanisms through other means at lower cost and with less risk 
+of cost-shifting. 
+ 
+There is no single just and reasonable rate, and PJM may choose from a range of options 
+within the “zone of reasonableness.”53 Nevertheless, PJM must adequately explain and support 
+its decisions with substantial evidence in order to meet its burden to demonstrate that the 
+proposed tariff is just and reasonable.54 Here, PJM has failed to carry its burden because PJM has 
+not adequately explained its decision to amend the tariff. While PJM’s tariff filing cites demand 
+growth and generator retirements as reasons to run the Backstop Auction earlier than the current 
+tariff authorizes, PJM does not explain why it is opting to hold the Backstop Auction given that 
+existing or forthcoming resource adequacy mechanisms would solve the same problems at lower 
+cost and with less risk of resulting in unjust and unreasonable rates.55  
+PJM is more likely to achieve just and reasonable rates by implementing IRAS, 
+encouraging the bilateral trading process among sophisticated large loads, and focusing on its 
+capacity market redesign efforts than by implementing a Backstop Auction with fixed, 15-year 
+terms. Considering this alternative, PJM has not adequately explained its decision to resolve its 
+resource adequacy problems through the Backstop Auction.  
+1. Implementing IRAS is more likely to result in just and reasonable 
+rates. 
+ 
+PJM has not adequately explained why tariff revisions are appropriate considering that 
+the IRAS proposal is still pending before FERC. If accepted, IRAS would be a significant step 
+toward resolving the resource adequacy and affordability problems posed by large load growth. 
+A mandatory IRAS system would incentivize new large loads to bring their own new capacity, 
+ 
+53  NYPSC v. FERC, 104 F.4th at 890 (finding that rates must fall within a zone of reasonableness). 
+54 16 U.S.C. § 824l(b); NJBPU v. FERC, 744 F.3d at 93 (elaborating on the “substantial evidence” standard).  
+55 Tariff Filing, supra n. 2, 28.
+--- PAGE 15 ---
+15 
+because they will be subject to interruptible service if they do not do so.56 If large loads do not 
+bring their own capacity, IRAS would mitigate the need for PJM to procure expensive capacity 
+resources for large loads, because they will be interruptible under certain conditions when the 
+grid is stressed.57 IRAS advances affordability because PJM would not have to procure as much 
+capacity (costs that may be difficult to allocate perfectly to large loads). IRAS advances resource 
+adequacy because PJM would be less likely to face capacity shortfalls if large load customers 
+were interruptible. Both benefits are likely to result in just and reasonable rates because 
+increased affordability and reliability reduce the likelihood that large load growth will burden 
+customers who are not responsible for the capacity deficits caused by large loads. PJM has not 
+adequately explained why the Backstop Auction is appropriate given that its IRAS proposal 
+would solve the same problems at a lower cost and with less risk of cost-shifting. 
+2. Bilateral trading for sophisticated large loads is less likely to result in 
+unjust and unreasonable rates than the Backstop Auction.  
+ 
+PJM has not adequately explained why the Backstop Auction is appropriate given that 
+available alternatives, such as the bilateral trading process, are less likely to result in unjust and 
+unreasonable rates. PJM can and should act to further encourage bilateral trading among 
+sophisticated large load customers.   
+a) Bilateral trading for sophisticated large load customers is less 
+likely to result in unjust and unreasonable rates. 
+      
+ Bilateral trading for sophisticated large loads, in conjunction with IRAS, is less likely to 
+result in unjust and unreasonable rates because bilateral trading will address PJM’s resource 
+adequacy issues at lower cost and with less risk of cost-shifting than the Backstop Auction. 
+ 
+56 PJM Interconnection, L.L.C., Proposal of PJM Interconnection, L.L.C. to Establish Interim Resource Adequacy 
+and a Large Load Registry to Address System Reliability, 21-22, Accession No. 20260813-5118 (filed Aug. 13, 
+2026) (hereinafter, IRAS Filing).  
+57 Id.
+--- PAGE 16 ---
+16 
+Unlike the Backstop Auction, bilateral trading (1) avoids the need to develop artificial proxies 
+for demand, (2) allows sophisticated parties to reach greater efficiencies through customized 
+contracts, and (3) more precisely allocates costs to the parties responsible for incurring greater 
+capacity needs.  
+First, bilateral contracting is less likely to result in unjust and unreasonable rates because 
+it does not require PJM to develop artificial indicators of demand. Under any version of the 
+Backstop Auction, PJM must select proxies for demand. Demand includes the quantity of 
+capacity customers wish to purchase (the procurement target) and customers’ “willingness-to-
+pay” for that capacity (the price cap, usually derived from the net cost of new entry). PJM 
+proposes to approximate willingness-to-pay by creating a “soft cap” on the levelized cost per 
+MW of capacity at $555/MW-day.58 As opposed to a “hard cap,” like a price collar or a price 
+cap, the soft cap would allow bids over the limit as long as the total average paid per MW does 
+not surpass $555/MW-day.59 While centralized auctions are generally considered to result in 
+more efficient price discovery than private contracts, it is less likely that the Backstop Auction 
+will accurately and efficiently balance the dynamics of supply and demand since PJM has to 
+select artificial proxies for demand and willingness-to-pay.  
+Additionally, the Backstop Auction may not result in efficient price signals because the 
+auction, as designed, encourages participants to place speculative bids not based on actual 
+marginal costs. For example, PJM proposes to run the Backstop Auction under a pay-as-bid 
+format, as opposed to the single-clearing price format. Under this design, suppliers may try to 
+maximize profit and their odds of clearing by guessing the clearing price and the offer 
+ 
+58 Tariff Filing, supra n. 2, 61.  
+59 In the absence of a price collar, PJM generally applies a price cap based on a proxy for demand’s maximum 
+“willingness-to-pay” which is based on regional net cost of new entry. See CRS Report, supra n. 48, 5.
+--- PAGE 17 ---
+17 
+distribution (i.e., the various prices at which other suppliers will bid into the auction). This 
+design is not ideal because a market which encourages bidders to speculate may not strike the 
+right balance between keeping prices affordable and compensating suppliers enough to make a 
+reasonable return on investment.60  
+It is not clear that PJM would achieve improved market efficiencies even by running the 
+auction with a hard cap. With a hard cap and a pay-as-bid format, suppliers may be incentivized 
+to bid right at the cap regardless of their marginal costs, raising prices for customers. Regardless 
+of the market design, running a backstop auction would force PJM to make administrative 
+decisions to approximate real-world market forces. Making these decisions is particularly 
+difficult in the context of large load growth, since so much of this demand is speculative.61 And 
+if PJM incorrectly gauges its proxies, the Backstop Auction will either not procure enough 
+capacity, leading to potential reliability problems, or procure too much capacity, leading to 
+affordability problems and excessive consumer burden.62 Conversely, bilateral trading does not 
+require PJM to make artificial design choices under rapidly evolving conditions. PJM can avoid 
+the design choices required by centralized auctions by relying on bilateral contracts, which are 
+thus less likely to result in unjust and unreasonable rates.  
+ 
+60 Single clearing price auctions are typically more efficient than pay-as-bid, but the combination of pay-as-bid and 
+the soft cap makes the outcomes difficult to predict. See ALFRED E. KHAN, ET AL., BLUE RIBBON PANEL REPORT, 
+PRICING IN THE CALIFORNIA POWER EXCHANGE ELECTRICITY MARKET: SHOULD CALIFORNIA SWITCH FROM A 
+UNIFORM PRICING TO PAY-AS-BID PRICING? 3 (Jan. 2001), https://perma.cc/YJ6P-XJPV.  
+61 Even when data center loads materialize, their energy consumption can be less than anticipated. E3, FORECASTING 
+LARGE LOADS IN THE AGE OF AI AND DATA CENTERS 3 (Dec. 2025) https://perma.cc/F8FU-WUCR (hereinafter, 
+Large Load Forecasting White Paper). Or they may increasingly favor behind the meter bilateral, private supply 
+arrangements with resources that are not grid-connected. See Disha Raychaudhuri & Valerie Volcovici, Pollution 
+from Musk’s unpermitted xAI power project hits hardest in Black communities, REUTERS (July 14, 2026) 
+https://perma.cc/P3E5-5BCD; Marlene Wilden, Texas approves AI data center co-location next to wind farm, with 
+curtailment caveats, UTILITYDIVE (July 30, 2026), https://perma.cc/A7WB-BPFA.  
+62 NYPSC v. FERC, 104 F.4th at 890 (finding that just and reasonable rates cannot impose “excessive burden” on 
+consumers).
+--- PAGE 18 ---
+18 
+Second, bilateral contracting is less likely to result in unjust and unreasonable rates 
+because it allows for customization. All contracts in the Backstop Auction would have the same 
+terms and product definitions, aside from some variation in term length.63 But matching data 
+centers with supply can involve complex, non-standard transactions. Some data centers may 
+prefer to contract for higher or lower reliability standards.64 Other companies may be interested 
+in nontraditional supply options that cannot easily bid into the market. For example, Google 
+recently contracted with Voltus, Inc., a virtual power plant operator, to purchase capacity in the 
+form of aggregated distributed energy resources.65 Bilateral contracts can also include complex 
+risk hedging provisions such as price indexing, which can benefit consumers if prices drop years 
+after the contract is executed.66 For these types of complex transactions, centralized auctions may 
+inhibit communication between buyers and sellers and preclude efficiencies from creative 
+contract design that could lower prices and benefit both suppliers and customers.67 Because 
+centralized auctions cannot capture the efficiencies likely to arise in bilateral contracts between 
+sophisticated large loads and energy resources, the backstop is more likely to result in unjust and 
+unreasonable rates. 
+Third, bilateral contracts are less likely to result in unjust and unreasonable rates because 
+they are more likely to allocate data center costs to LSEs that actually serve data centers, or to 
+ 
+63 Tariff Filing, supra n. 2, 54.  
+64 Herman K. Trabish, Data centers are ready to negotiate flexibility for speed, UTILITYDIVE (June 26, 2026), 
+https://perma.cc/EMG2-CJX2.  
+65 Voltus and Google to Deliver Grid Capacity and Local Economic Benefits Through Bring Your Own Capacity 
+Agreement, VOLTUS (June 2, 2026), https://perma.cc/P25B-28LM. Although PJM’s proposed tariff revisions would 
+allow DER to participate in the backstop auction, its requirement for DER providers to provide agreements with 
+each of its providers up front, for a 15-year auction, is an onerous disincentive and may be prohibitive for this type 
+of supply. See infra § III.C.  
+66 See e.g., Nicola Bartolini, Silvia Romagnoli & Amia Santini, Renewing Reliability: Valuation and Credit Risk 
+Adjustments for Renewable Power Purchase Agreements 2-3 (arXiv, Working Paper No. 2607.04781v1, 2026) 
+https://perma.cc/QS8N-7Q49.  
+67 NYPSC v. FERC, 104 F.4th at 890 (finding that just and reasonable rates cannot impose “excessive burden” on 
+consumers).
+--- PAGE 19 ---
+19 
+the data centers themselves. Precise cost allocation is consistent with the Statement of Principles 
+and the White House Ratepayer Protection Pledge, in which leading data center companies in the 
+United States committed to paying for their own capacity and infrastructure costs.68 PJM would 
+require all LSEs to participate in the Backstop Auction, unless they qualify for one of the two 
+limited opt-out categories, and would allocate costs to each zone based on the zone’s pro rata 
+share of the procurement target. Within each zone, PJM would allocate costs to LSEs based on a 
+cost allocation method provided by the relevant state or RERRA.69 But it is not likely that PJM 
+will be able to accurately predict how large load growth will develop in each zone over the next 
+15 years.70  
+While PJM does not have to ensure perfect cost causation to achieve just and reasonable 
+rates, PJM does have to demonstrate that it allocates rate burdens “roughly commensurate” with 
+benefit.71 Given that the Backstop Auction is acquiring capacity so far in advance and for such 
+long contract terms, it is likely that new large load demand will materialize much differently than 
+forecasts predict.72 If this is the case, PJM’s cost allocation for the Backstop Auction is unlikely 
+to even be “roughly commensurate” with the participants who receive the benefit of that 
+capacity. Bilateral contracts, on the other hand, directly allocate capacity costs to LSEs serving 
+large loads, or to the large loads themselves. While bilateral contracts may not perfectly isolate 
+residential ratepayers from data center costs, this allocation is more likely to result in just and 
+ 
+68 White House Ratepayer Protection Pledge (Mar. 4, 2026), https://perma.cc/TW4A-3UMN (hereinafter, Ratepayer 
+Protection Pledge).  
+69 Tariff Filing, supra n. 2, 97-99.  
+70 See generally Large Load Forecasting White Paper, supra n. 61. For example, AEP Ohio cut its large load 
+forecast by more than 50% after regulators approved a new large load tariff. Ethan Howland, Manufacturers say 
+AEP Ohio still inflating data center demand after halving forecast, UTILITYDIVE (Feb. 6, 2026), 
+https://perma.cc/UT57-LYLQ.  
+71 Old Dominion, 898 F.3d at 1255; ICC v. FERC, 576 F.3d at 477. 
+72 See generally Large Load Forecasting White Paper, supra n. 61.
+--- PAGE 20 ---
+20 
+reasonable wholesale rates because the parties who incur the need for new capacity will be the 
+only ones paying for it.73 
+b) PJM can play a valuable role in facilitating more bilateral 
+trades among sophisticated large load customers.  
+ 
+PJM can play a valuable role in the bilateral trading process by serving as a matchmaker 
+between supply and demand, setting clear rules for interruptible service, and providing 
+transparent information about the expected cost of network upgrades. First, PJM can add value 
+through the facilitated bilateral matchmaking program it has proposed to operate in parallel with 
+the Backstop Auction. This approach, preferred by most PJM members, may speed up the 
+contracting process and lower overall costs, since PJM’s service as a facilitator may reduce 
+transaction costs associated with these negotiations.74  
+Second, PJM will encourage more bilateral contracts by setting clear rules implementing 
+IRAS. If FERC approves it, IRAS will make service to new large loads interruptible under 
+certain conditions if they do not commit to bringing their own new capacity before connecting to 
+the grid.75 Finalizing the rules and operating procedures will reduce uncertainty for market 
+participants, which will further expedite bilateral negotiations by setting out clear rules of the 
+road. 
+Third, PJM can add value and reduce uncertainty in the bilateral trading process by 
+increasing transparency on the cost of transmission network upgrades necessary to serve new 
+ 
+73  Old Dominion, 898 F.3d at 1255 (establishing the cost causation principle). If an LSE serving data centers 
+executes a bilateral contract with a supplier, the LSE may still spread the cost of that capacity to its non-data center 
+customers. But this is a matter of retail cost allocation, which is outside FERC’s jurisdiction. 16 U.S.C. § 824(a). 
+Additionally, even if LSEs do not perfectly allocate costs to data centers, allocating costs to LSEs with data center 
+load is an improvement over the backstop auction, which may allocate backstop auction costs to LSEs with no data 
+centers at all. 
+74 Critical Issue Fast Path - Reliability Backstop Procurement PJM Proposal 3, PJM INTERCONNECTION, L.L.C. 
+(Apr. 16, 2026), https://perma.cc/2RSW-J9EL.  
+75 CIFP Framework for Service During Periods of Insufficient Resource Adequacy - PJM Proposal, PJM 
+INTERCONNECTION, L.L.C. (July 31, 2026), https://perma.cc/CP8R-UVKH.
+--- PAGE 21 ---
+21 
+supply. Transmission costs are a significant element of the cost of providing power.76 Suppliers 
+must pay for the cost of network upgrades to serve their new supply, but it can be difficult to 
+predict what these costs will be.77 The resulting uncertainty makes it difficult to include these 
+costs upfront in long-term bilateral contracts and forces many projects to drop out of the 
+interconnection queue altogether. PJM is in the best position to predict these costs, and it can 
+reduce uncertainty in bilateral negotiations by providing this information to developers. PJM 
+could provide this information by implementing something similar to the Consolidated Planning 
+Process (CPP), which is being pioneered by Southwest Power Pool Inc. (SPP), or develop a plan 
+to improve network upgrade transparency that is more tailored to the PJM region.78  
+PJM should encourage more bilateral trading and rely on its existing resource adequacy 
+mechanisms because PJM has failed to demonstrate that the Backstop Auction will yield a just 
+and reasonable rate. The bilateral trading process would move more quickly and have greater 
+benefits for ratepayers if PJM served as a matchmaker between supply and demand, finalized a 
+mandatory IRAS framework, and increased transparency around the cost of network upgrades.  
+3. The capacity market redesign is likely to result in just and reasonable 
+rates.  
+ 
+PJM has not adequately explained why the Backstop Auction is appropriate given that it 
+may disrupt PJM’s efforts to holistically redesign the capacity market. PJM is in the process of 
+reconsidering the fundamentals of its market design.79 Depending on how the process goes, PJM 
+may transition to an energy-only market or adopt some other mechanism(s) to better ensure 
+resource adequacy. PJM’s reformed capacity market may also include a larger role for the states 
+ 
+76 U.S. ENERGY INFO. ADMIN., Annual Energy Outlook 2026, Reference Case, Table 8 (Apr. 2026), 
+https://perma.cc/RK7V-28PN.  
+77 Southwest Power Pool, Inc., 194 FERC ¶ 61,192, P 11 (2026) (CPP Order).  
+78 CPP Order, 194 FERC ¶ 61,192, at P 11.  
+79 See generally POWERING RELIABILITY THROUGH MARKET DESIGN, PJM INTERCONNECTION, L.L.C. (May 2026), 
+https://perma.cc/3MHN-CGMU.
+--- PAGE 22 ---
+22 
+to ensure resource adequacy. For example, New Jersey has indicated interest in directing its 
+LSEs to procure a fixed percentage of long-term capacity as a hedge against future price 
+volatility.80 PJM may adopt tariff revisions that support state-level efforts to operationalize the 
+Ratepayer Protection Pledge and ensure just and reasonable rates at the wholesale level.81 
+Implementing the Backstop Auction would complicate efforts to reform PJM’s resource 
+adequacy mechanisms because the Backstop Auction, as proposed, is structurally tied to the 
+Legacy Capacity Market. It is possible that PJM may be able to find some way to structure 
+payments for Backstop Auction capacity commitments that replaces the role of Legacy Capacity 
+Market, such as developing a proxy for capacity market prices if the BRA no longer exists at 
+some point in the next 15 years. But such a structure would add another layer of administrative 
+complexity both to the implementation of the Backstop Auction, and to PJM’s efforts to reform 
+its capacity market. PJM’s long-term efforts to reform its markets are critical to PJM’s ability to 
+achieve just and reasonable rates. For this reason, FERC should reject the proposed tariff 
+revisions.  
+Once PJM implements IRAS, takes further steps to encourage bilateral trading among 
+sophisticated large loads, and fully commits to its capacity market redesign efforts, PJM will 
+have the necessary tools in place to meet its resource adequacy problems through just and 
+reasonable rates. PJM’s return to its normal three-year forward schedule for BRAs, and the 
+ongoing implementation of Order 2023 interconnection reforms will also contribute to improved 
+resource adequacy. Each of these reforms is close to implementation. For this reason, FERC 
+should reject the proposed tariff revisions.  
+ 
+80 MAHALA LAHVIS, ET AL., NEW JERSEY BD. OF PUB. UTIL., AN INVESTIGATION OF PJM’S CAPACITY MARKET 72 
+(Aug. 2026), https://perma.cc/847T-995D.  
+81 Ratepayer Protection Pledge, supra n. 68.
+--- PAGE 23 ---
+23 
+III. 
+If FERC permits PJM to implement the Backstop Auction, FERC should require 
+PJM to adjust its proposed market design to mitigate the risk that the Backstop 
+Auction will result in unjust and unreasonable rates.  
+ 
+FERC should reject the proposed tariff revisions because the Backstop Auction is not just 
+and reasonable. But if FERC permits PJM to implement the Backstop Auction, it should require 
+PJM to implement adjustments to the proposed market design which reduce the risk that the 
+Backstop Auction will result in unjust and unreasonable rates.82 FERC should require PJM to 
+adjust its proposed market design to mitigate the risks of over-procurement, unfair cost 
+allocation, and overpaying for capacity.  
+A. FERC should require PJM to adjust the Backstop Auction design to mitigate 
+the risk of over-procuring capacity. 
+ 
+ 
+The Backstop Auction, as filed, is likely to result in unjust and unreasonable rates 
+because it does not contain sufficient measures to protect against the risk of procuring too much 
+capacity. Over-procuring capacity can lead to unjust and unreasonable rates because it can 
+impose an excessive burden on ratepayers without providing commensurate reliability benefits.83 
+FERC should find that PJM cannot meet its burden to demonstrate its proposed tariff revisions 
+are just and reasonable unless PJM adopts amendments that mitigate the risk of capacity over-
+procurement. To that end, FERC should instruct PJM to amend its filing to set the procurement 
+target by soliciting voluntary commitments from large loads (i.e., the large load opt-in or 
+“subscription” model) and to delay the auction start date after the bilateral matching process 
+ 
+82 In its tariff filing, PJM notes that it “consents to the Commission’s exercise of authority to modify and/or sever 
+any element of the proposed Tariff . . . to the extent necessary and permitted under section 205 of the FPA and NRG 
+Power Marketing, LLC v. FERC, where such modification and/or severance is consistent with PJM’s overarching 
+objectives in this filing.” Tariff Filing, supra n. 2, 5. While NRG Marketing limits FERC’s ability to unilaterally 
+propose modifications to section 205 tariff filings, PJM has the authority to consent to accept FERC’s proposed 
+modifications. NRG Power Mktg., LLC v. FERC, 862 F.3d at 114. 
+83 NextEra Energy Resources, LLC v. FERC, 898 F.3d 14, 20 (D.C. Cir. 2018) (finding that a tariff which leads to 
+overprocurement of capacity may be considered in the just and reasonable standard).
+--- PAGE 24 ---
+24 
+concludes. At a minimum, FERC should request that PJM clarify that orders from state public 
+utility commissions suffice to meet the Backstop Auction peak-shaving exemption.  
+First, FERC should find that PJM cannot use the 2028/2029 BRA shortfall as the 
+Backstop Auction procurement target because it is an arbitrary quantity not based on any long-
+term load growth forecasts. PJM proposes to set the procurement target for the Backstop Auction 
+as the 2028/2029 BRA capacity shortfall.84 PJM chose this number based on forecasts for one 
+delivery year and did not forecast capacity needs over the next 15 years. Given that large load 
+demand forecasts vary dramatically, an artificial target set by PJM is likely less efficient than a 
+target based on large load’s actual willingness-to-pay.85 
+FERC should direct PJM to adopt the subscription model proposed by the Joint Electric 
+Distribution Companies and the Data Center Coalition. The subscription model was the only 
+proposal to garner a majority of stakeholder votes in the CIFP–and for good reason.86 Under the 
+subscription model, large loads would voluntarily report how much capacity they want procured 
+on their behalf and PJM would use that number to set the procurement target for the Backstop 
+Auction.87 If PJM does not have to rely on speculative demand growth forecasts, it would reduce 
+the risk of over-procurement. Data centers would likely be more realistic about their capacity 
+needs if they have to put down collateral. The subscription model would also simplify the cost 
+allocation process because PJM would directly allocate costs to the large loads that opt into the 
+Backstop Auction. The subscription model would mitigate the significant risk that the Backstop 
+ 
+84 Tariff Filing, supra n. 2, 31.  
+85 See generally Large Load Forecasting White Paper, supra n. 61.  
+86 CIFP – Reliability Backstop Procurement/Connect & Manage Summarized Poll Results, PJM INTERCONNECTION, 
+L.L.C. (July 2026), https://perma.cc/Q4A7-7PQ6.  
+87 Joint EDCs & Data Center Coalition, Reliability Backstop Procurement Package (July 2026), 
+https://perma.cc/HNN2-YK8R.
+--- PAGE 25 ---
+25 
+Auction would result in unjust and unreasonable rates since each of these benefits would lead to 
+more precise cost allocation and lower capacity costs for wholesale customers.88 
+ 
+Second, if FERC does not instruct PJM to adopt the subscription model, FERC should, at 
+a minimum, instruct PJM to mitigate over-procurement risk by clarifying that the opt-out 
+provision for states with peak-shaving programs applies broadly. FERC should direct PJM to 
+clarify that the tariff provision which allows states to opt out of the Backstop Auction if they 
+have peak-shaving programs “codified in state law” applies to state statutes and orders issued by 
+a state public utility commission. Some states have passed legislation codifying peak-shaving 
+programs, but it is also common for states to implement these types of programs through orders 
+issued by the public utility commission.89 Public utility commission orders are enforceable and 
+binding, so PJM must recognize their validity for the purpose of the limited exception to 
+participation in the Backstop Auction. This clarification can mitigate the risk that the Backstop 
+Auction would over-procure capacity and excessively burden consumers, resulting in unjust and 
+unreasonable rates.  
+Third, regardless of whether FERC directs PJM to adopt the subscription model or clarify 
+the peak-shaving exemption, FERC should also direct PJM to delay the start of the Backstop 
+Auction to allow time for companies to execute bilateral contracts and for states to implement 
+peak-shaving programs. According to PJM’s own survey, most market participants would prefer 
+ 
+88 See Old Dominion, 898 F.3d at 1255 (establishing the cost causation principle); NYPSC v. FERC, 104 F.4th at 890 
+(finding that just and reasonable rates cannot pose “excessive burden” on consumers). 
+89 See California Emergency Load Reduction Program, CAL. PUB. UTIL. COMM’N (accessed Aug. 21, 2026), 
+https://perma.cc/CGV7-ZW53; New York State Dept. Pub. Service, Commission Improves Customer-Centered 
+Electric Demand Response Programs (Apr. 2026), https://dps.ny.gov/news/commission-improves-customer-
+centered-electric-demand-response-programs; Pub. Util. Comm’n of Texas, Project No. 56966, 16 TAC § 25.186, 
+https://perma.cc/C2KF-62S3.
+--- PAGE 26 ---
+26 
+to purchase capacity through bilateral trades rather than through a centralized auction.90 PJM is 
+facilitating a bilateral matchmaking program to encourage these types of contracts, but the 
+matchmaking process will not conclude until February 2027 at the earliest. PJM should allow 
+time for parties to reach these agreements, which will offset the procurement target for the 
+Backstop Auction. Offsetting the procurement target will help protect against the unjust and 
+unreasonable rates that would result from over-procuring capacity for 15-year terms.  
+Delaying the auction start date would also allow time for states to implement peak-
+shaving programs. PJM filed the tariff revisions on July 31, 2026, which only leaves states with 
+two months' notice if they wish to take advantage of the exception and do not already have 
+statutorily mandated peak-shaving programs in place. Pushing back the start date would allow 
+time for states and market participants to take actions that offset the procurement target, reducing 
+the risk that the Backstop Auction would lock in expensive long-term contracts that burden 
+consumers unnecessarily.  
+B. FERC should require PJM to adjust Backstop Auction design to mitigate the 
+risk of unfair cost allocation.  
+ 
+PJM proposes to assign the costs of the Backstop Auction to zones based on their pro rata 
+share of the procurement target, and then to allocate costs to LSEs based cost allocation 
+mechanisms submitted by the relevant state or RERRA. Within each zone, PJM has stated that 
+EDCs will have to create mechanisms to allocate costs to individual retail customers prior to the 
+ 
+90 CIFP – Reliability Backstop Procurement Proposal, PJM INTERCONNECTION, L.L.C. (July 2026), 
+https://www.pjm.com/-/media/DotCom/committees-groups/cifp-rbp/2026/20260630/20260630-item-02a---pjm-
+reliability-backstop-procurement-proposal---paper.pdf.
+--- PAGE 27 ---
+27 
+date on which the capacity acquired in the Backstop Auction will bid into the BRA for the 
+delivery year it will be operational.91  
+Applying this cost allocation methodology to the Backstop Auction would not be just and 
+reasonable because it entails serious risk that customers will pay for benefits that they do not 
+receive. For the BRA, assigning capacity obligations to zones based on their pro rata share of the 
+procurement target works well because PJM can reasonably predict an LSE’s capacity needs 
+three years forward by extrapolating from the LSE’s existing customer base. But predictions are 
+more difficult for the Backstop Auction, which would obtain capacity for 15-year terms. EDCs 
+cannot reasonably predict an LSE’s over such a long time horizon. Also, it is difficult to 
+extrapolate capacity needs from an LSE’s existing customer base because the Backstop Auction 
+serves large load growth, much of which may be speculative and has not contracted with an LSE 
+for service.  
+Although states and electric distributors may be able to reallocate costs among retail 
+customers, this does not resolve the problem that large loads may not materialize as expected on 
+the zonal level. If large load growth is expected in the Mid-Atlantic zone, but it actually 
+materializes in the Western Region, LSEs in the Mid-Atlantic zone would still have to bear those 
+costs. This cost allocation problem sits squarely within PJM’s jurisdiction because incorrectly 
+assigning capacity costs at the zonal level affects wholesale customers, not just retail 
+customers.92  
+To mitigate this cost-shifting problem, PJM should allow LSEs to trade capacity credits 
+with each other across different zones to serve load growth as needed. This provision was part of 
+ 
+91 Tariff Filing, supra n. 2, at 96.  
+92 16 U.S.C. § 824(a); FERC v. Elec. Power Supply Ass’n, 577 U.S. 260, 277 (2016) (elaborating on the extent of 
+FERC’s jurisdiction over wholesale rates).
+--- PAGE 28 ---
+28 
+an earlier iteration of the Backstop Auction and has since been removed. Without taking steps to 
+account for the speculative nature of large load growth forecasts over the next 15 years, PJM’s 
+proposed tariff revisions are unjust and unreasonable because there is a strong possibility that 
+wholesale non-large load customers may have to pay for capacity costs from which they do not 
+benefit.93  
+C. FERC should require PJM to adjust the Backstop Auction design to avoid 
+overpaying for capacity.  
+ 
+FERC should instruct PJM that it cannot demonstrate its proposed market design is just 
+and reasonable unless PJM adopts measures to mitigate the risk that the Backstop Auction will 
+impose excessive burden on consumers. To do this, FERC should require PJM to eliminate the 
+requirement that demand response resources must have a 15-year agreement in place to 
+participate in the Backstop Auction.94 Demand response resources are some of the least 
+expensive capacity resources available and imposing onerous restrictions on their participation 
+will artificially increase costs.95 PJM allows other resources to place bids for capacity service 
+beginning in 2032, so requiring demand response suppliers to commit starting in 2028/2029 DY 
+is unduly discriminatory.96  
+IV. 
+Conclusion 
+ 
+ 
+FERC should reject PJM’s proposed tariff revisions because the Backstop Auction is not 
+just and reasonable. In the alternative, if FERC is inclined to permit PJM to implement some 
+version of the Backstop Auction, FERC should require PJM to refile its proposed tariff with 
+ 
+93 See Old Dominion, 898 F.3d at 1255 (establishing the cost causation principle). 
+94 Tariff Filing, supra n. 2, 54. 
+95 See generally ACEE, FASTER AND CHEAPER: DEMAND RESPONSE SOLUTIONS FOR RAPID LOAD GROWTH (Feb. 
+2026), (Feb. 2026), https://perma.cc/4SQM-CU37 (report finding that demand response is one of the lowest cost 
+resources to serve electricity demand). 
+96 16 U.S.C. § 824d(b).
+--- PAGE 29 ---
+29 
+adjustments that will mitigate the substantial risk that the rates resulting from the Backstop 
+Auction will be unjust and unreasonable.  
+ 
+Respectfully submitted, 
+/s/ Jennifer Danis 
+Jennifer Danis 
+Federal Energy Policy Director 
+Institute for Policy Integrity 
+139 MacDougal Street 
+New York, NY 10012 
+jennifer.danis@nyu.edu 
+ 
+/s/ Christoph Graf 
+Christoph Graf 
+Senior Economist 
+Institute for Policy Integrity 
+139 MacDougal Street 
+New York, NY 10012 
+ 
+/s/ Natalie Friedberg 
+Natalie Friedberg 
+Legal Fellow 
+Institute for Policy Integrity 
+139 MacDougal Street 
+New York, NY 10012 
+ 
+ 
+Dated: August 21, 2026

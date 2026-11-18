@@ -1,0 +1,392 @@
+--- PAGE 1 ---
+1
+UNITED STATES OF AMERICA 
+BEFORE THE 
+FEDERAL ENERGY REGULATORY COMMISSION 
+ 
+PJM Interconnection, L.L.C. 
+Allegheny Electric Cooperative, Inc. 
+American Transmission Systems, 
+Incorporated 
+Atlantic City Electric Company 
+Baltimore Gas and Electric Company 
+Delmarva Power & Light Company 
+Duke Energy Ohio, Inc. 
+Duke Energy Kentucky, Inc. 
+East Kentucky Power Cooperative, Inc. 
+Essential Power Rock Springs, LLC 
+Hudson Transmission Partners, LLC 
+Jersey Central Power & Light Company 
+Mid-Atlantic Interstate Transmission, LLC 
+Neptune Regional Transmission System, LLC 
+Old Dominion Electric Cooperative 
+PECO Energy Company 
+PPL Electric Utilities Corporation 
+Potomac Electric Power Company 
+Public Service Electric and Gas Company 
+Rockland Electric Company 
+Trans-Allegheny Interstate Line Company 
+Transource West Virginia, LLC 
+UGI Utilities, Inc. 
+Monongahela Power Company 
+The Potomac Edison Company 
+Commonwealth Edison Company 
+Commonwealth Edison Company of Indiana, 
+Inc. 
+The Dayton Power and Light Company  
+AEP Appalachian Transmission Company, 
+Inc. 
+AEP Indiana Michigan Transmission 
+Company, Inc. AEP Kentucky Transmission 
+Company, Inc. 
+AEP Ohio Transmission Company, Inc. 
+AEP West Virginia Transmission Company, 
+Inc. Appalachian Power Company 
+Indiana Michigan Power Company 
+Kentucky Power Company 
+Kingsport Power Company 
+Ohio Power Company 
+     )             Docket Nos.  
+    EL25-49-000 
+) 
+ 
+ 
+ 
+EL25-49-001
+--- PAGE 2 ---
+2
+Wheeling Power Company 
+Duquesne Light Company 
+Virginia Electric and Power Company 
+Linden VFT, LLC 
+City of Cleveland, Department of Public 
+Utilities, Division of Cleveland Public Power 
+City of Hamilton, OH 
+Southern Maryland Electric Cooperative, Inc. 
+Ohio Valley Electric Corporation 
+AMP Transmission, LLC 
+Silver Run Electric, LLC 
+NextEra Energy Transmission MidAtlantic 
+Indiana, Inc. 
+Wabash Valley Power Association, Inc. 
+Keystone Appalachian Transmission 
+Company 
+ 
+Large Loads Co-Located at Generating 
+Facilities  
+ 
+AD24-11-000 
+Constellation Energy Generation, LLC 
+ 
+v.  
+ 
+PJM Interconnection, L.L.C. 
+EL25-20 
+(Consolidated) 
+ 
+ 
+ 
+Request for Clarification of Eolian LP, Antora Energy LLC, and Verrus LLC 
+Pursuant to Rule 212 of the Rules of Practice and Procedure of the Federal Energy 
+Regulatory Commission (“Commission” or “FERC”),1 Eolian L.P. (Eolian), Antora Energy LLC, 
+and Verrus LLC request clarification of the Commission’s December 18 Order in the above-
+captioned proceeding (Order). Specifically, the undersigned parties ask the Commission to 
+clarify that where the Order provides that a Co-Located load may “request only the minimum 
+level of interconnection service it deems necessary to effectuate its Co-Location Arrangement,”2 
+that it means the Co-Located Load may nominate a net withdrawal limit in the same manner that 
+ 
+1 18 C.F.R. § 385.212. 
+2 Order at P 232.
+--- PAGE 3 ---
+3
+it may nominate a net injection limit. Making this clarification will ensure that Co-Located loads 
+paired with energy storage can use their full technical capabilities to avoid unnecessary network 
+upgrades, thereby advancing the Commission’s twin goals of protecting ratepayers and 
+advancing speed-to-power within PJM.  
+The Commission’s order is a big step forward in delivering a commonsense solution to 
+growing demand. As Commissioner Rosner explains, it does so by “enabl[ing] large loads to 
+reduce how much they lean on the grid, while ensuring that they pay their fair share.”3 In the 
+Order, the Commission found PJM’s tariff unjust and unreasonable because it does not include 
+transmission service reflecting that some Co-Located Loads “are willing and able to limit their 
+energy withdrawals from the transmission system.”4 The Commission found that extending new 
+transmission service options is necessary to ensure that Co-Located Loads pay only for the 
+services they use, and also to ensure that Co-Located Loads use their ability to limit withdrawals 
+to avoid “costly and inefficient transmission system buildout.”5 The Commission’s logic should 
+compel complementary reforms to the generator interconnection process, because that process 
+also may evaluate withdrawals from the Co-Located Load and therefore may also result – absent 
+clarification – in “costly and inefficient transmission system buildout.”  
+The Commission should make clear that PJM must enable interconnection customers to 
+nominate withdrawal limits in the interconnection process, just as it requires PJM to allow 
+generators to limit their proposed output. Accurate modeling of withdrawals is particularly 
+critical to the ability of Co-Located Loads incorporating energy storage to connect without 
+triggering transmission upgrade needs. Due to their unique technical capabilities and ability to 
+ 
+3 Id. at P 4. 
+4 Id. at P 177. 
+5 Id.
+--- PAGE 4 ---
+4
+deploy quickly, energy storage is an essential piece of the solution to enabling timely connection 
+of large electricity customers. While energy storage currently comprises a small portion of the 
+overall resource mix in PJM, there are many projects in development and storage is an integral 
+piece of multi-technology solutions for large customers. The Commission’s Order is an important 
+step in enabling such solutions but without clarification, ambiguity in how such solutions are to 
+be studied in the interconnection process could continue to stymie their development.  
+I. 
+BACKGROUND 
+A. 
+Energy storage resources are critical for meeting data center loads quickly 
+ 
+and reliably 
+ 
+Energy storage resources are positioned to play a critical role in meeting demand from 
+new large loads, especially co-located data center loads. A key reason is that batteries are 
+uniquely well suited to respond to the minute-to-minute volatility of data center loads. Natural 
+gas turbines and reciprocating engines can play an important role in providing energy to a Co-
+Located Load, but are not capable of following the highly volatile load profiles of AI data 
+centers, and risk damage when they do.6 For these reasons, battery storage is being deployed 
+across a range of data center applications, including many that also incorporate thermal 
+generation. 
+Energy storage resources are also faster to deploy and can meet the aggressive schedules 
+of data center loads. For example, 7,722 MW of the 26,618 MW selected in PJM’s RRI were 
+ 
+6 Authors from Siemens Energy note” “In large data centers, demand swings can reach 100 MW or more, occurring 
+multiple times per minute on sub-second timescales. . . The unpredictable demand profile created by these transients 
+can be challenging for gas turbines or reciprocating engines, which are designed for relatively stable baseload 
+operation. . . .Even the most advanced droop control governing in gas turbines cannot handle the rapid changes in 
+frequency. If left unmitigated over time, severe damage can occur, shortening the lifespan of gas turbine units.” 
+Danny Clayton and Nico Jansen van Rensburg, Pipeline & Gas Journal (Dec. 1, 2025).
+--- PAGE 5 ---
+5
+from batteries.7 And, of the “new” projects selected in the RRI (as opposed to uprates), all but 
+one of the projects scheduled to deploy this decade are batteries.8 Market rules that do not utilize 
+storage to its full capabilities will necessarily slow progress. 
+The Order is premised in no small part on the concept that Co-Located loads can manage 
+their total withdrawals from the grid, and that their capability to do so should be enabled to 
+reduce overall system costs. Energy storage resources are better positioned than any other 
+resource to manage the total withdrawals from a Co-Located load quickly and reliably. As 
+Constellation explained in this docket, using battery energy storage systems to provide backup 
+service at data centers “can supply a consistent level of energy for several hours,” allowing a 
+developer to “minimize costs related to system design.”9  
+B. 
+Request for Clarification 
+Clarification is necessary to realize the Commission’s intent of ensuring that Co-Located 
+Loads do not pay for services that they do not use and do not trigger network upgrades that they 
+do not need. The Commission’s order requires PJM to establish rules for Interconnection 
+Customers serving co-located load,10 both for new service requests,11 and for modifications to 
+existing facilities through the necessary study process.12 For both processes, we seek clarification 
+that interconnection customers serving co-located load must be permitted to nominate net 
+ 
+7 PJM, Reliability Resource Initiative Results Summary (May 6, 2025), available at https://www.pjm.com/-
+/media/DotCom/committees-groups/committees/pc/2025/20250506/20250506-item-06---reliability-resource-
+initiative---summary-results.pdf.  
+8 The lone exception is the Three Mile Island restart, which was in planning well before selected in the RRI. See, 
+PJM, Reliability Resource Initiative Additional Summaries (May 6, 2025) at 6 – 8, available at 
+https://www.pjm.com/-/media/DotCom/committees-groups/committees/pc/2025/20250506/20250506-rri-addendum-
+--post-meeting.pdf.  
+9 Answer of Constellation Energy Generation, LLC, at 98-99 (April 23, 2025). 
+10 Order at P 187. 
+11 Id. at PP 231-236. 
+12 Id. at PP 225-230.
+--- PAGE 6 ---
+6
+withdrawal limitations for purposes of these interconnection study processes.13 The 
+Commission’s order requires PJM to develop transmission service frameworks that allow 
+customers to take curtailable service based on the use of special protection schemes that enable 
+reliable, curtailable service based on technical and engineering requirements set by PJM,14 and 
+requires PJM to enable an interconnection customer to request the “minimum level of 
+interconnection service it deems necessary.”15 We seek clarification that, as applied to an 
+interconnection request by a Co-Located Load that includes energy storage components, this 
+means that to the extent PJM performs study steps involving withdrawal assumptions from both 
+the storage facility components and the co-located load components, these study steps must 
+allow the interconnection customer to provide for limits to the injection and withdrawal rights for 
+the generation and co-located load facilities reflecting the proposed integration of those facilities. 
+1. 
+The order’s requirements and necessary clarification 
+The Commission’s Order finds that “the PJM Tariff is unjust and unreasonable because it 
+lacks sufficient clarity and consistency with respect to the rules for Co-Location Arrangements” 
+and on this basis directs changes to the new service request process, as well as the necessary 
+study process for modifications to existing facilities. With regard to “Interconnection Customers 
+seeking to use new generating facilities to serve Co-Located Load,” the Commission requires 
+PJM to clarify that it “shall consider requests for interconnection service below the full 
+generating capability of the generating facility, so that an Interconnection Customer may request 
+interconnection service at a level below its maximum facility output to serve Co-Located 
+ 
+13 See Comments of Bloom Energy Corporation at 11 (requesting an interconnection study process that limits net 
+load impacts to “the nominated net grid withdrawal” of the co-located facilities). 
+14 Order at P 212. 
+15 Id. at P 232.
+--- PAGE 7 ---
+7
+Load.”16 The Order specifies that “[t]his revision will clarify that an Interconnection Customer 
+seeking to use a new generating facility to serve a Co-Located Load may request only the 
+minimum level of interconnection service it deems necessary to effectuate its Co-Location 
+Arrangement.”17 With regard to the necessary study process, the Commission requires PJM “to 
+add to the Tariff a description of the scope of the analysis that it will perform as part of the 
+necessary study process when an Interconnection Customer seeks to use its existing generating 
+facility to serve Co-Located Load,” which must include a description of “the information that the 
+Interconnection Customer must provide about the Co-Located Load for purposes of the 
+necessary study.”18 
+While these directives from the Commission make clear that an interconnection customer 
+must be able to request service below a generator’s full output capability, they do not explicitly 
+address how PJM must modify its tariff with regard to the study assumptions used for 
+interconnection requests involving energy storage resources co-located with loads. With energy 
+storage resources, the assumptions that PJM uses for purposes of the resource’s withdrawals 
+from the grid are an important part of the study process. PJM’s study process sets forth rules for 
+how withdrawals from energy storage facilities will be modeled, and PJM recently submitted a 
+compliance filing in Docket No. ER24-2045 to effectuate the Commission’s requirement in 
+Order No. 2023 to use operating assumptions in interconnection studies that reflect the proposed 
+charging behavior of electric storage resources.19 Missing from that framework, however, is a 
+description of whether and how such studies may factor in co-located load when a co-located 
+generation facility is proposed. To fill that gap, the Commission should require that, to the extent 
+ 
+16 Order at P 232. 
+17 Id. 
+18 Id. at P 227.  
+19 See PJM Transmittal Letter, Docket No. ER24-2045, at 39-42 (Oct. 22, 2025).
+--- PAGE 8 ---
+8
+that PJM includes the co-located load in such studies,20 it must allow the interconnection 
+customer to provide withdrawal limits for both the energy storage resource components and the 
+co-located load. This clarification should apply to both new interconnection service request study 
+processes, as well as the necessary study process. Further, just as the Commission requires “PJM 
+to describe the information that the Interconnection Customer must provide about the Co-
+Located Load for purposes of the necessary study,”21 the Commission should also require PJM to 
+specify what information about the Co-Located Load is required for purposes of the new service 
+request study process. As Antora previously explained, without such information, any process 
+that includes the impact of the proposed load may not capture the proposed “load shape and 
+flexibility,” or account for special protection schemes proposed to be integrated into the co-
+located facilities.22 In other words, the Commission should clarify that PJM must not include 
+overlapping load and energy storage withdrawal impacts in its generator interconnection study 
+process unless it does so accurately, based on information about both the load and storage 
+components of the facility, and the proposed net withdrawal limits of the facility. Without such 
+direction, there is a risk that imprecise or inaccurate modeling assumptions will identify network 
+upgrades that are not needed to integrate the proposed facilities with the grid. 
+ 
+20 We recommend that the Commission avoid necessarily requiring the co-located load to be modeled as part of such 
+studies, as the decision whether to include load may depend on the timing of the load interconnection request study 
+processes vis-à-vis the generation interconnection request; and the question of whether and how the load is modeled 
+may implicate complex questions concerning the interaction between the load and generation interconnection 
+processes. However, the Commission should require that, to the extent that load is included within the generation 
+interconnection study assumptions, it must be incorporated in a manner that allows for the interconnection customer 
+to provide for joint withdrawal limits between the storage and load components, based on the facility’s capabilities 
+and plan for operation, as supported by information about the generation resource and load submitted by the 
+interconnection customer. 
+21 Order at P 227. 
+22 Motion to Intervene Out of Time and Comments of Antora Energy LLC In Response to the Commission’s Co-
+location Order, at 9-10 (April 23, 2025).
+--- PAGE 9 ---
+9
+2. 
+Clarification is required in order to ensure just and reasonable rates 
+The Order finds the existing PJM tariff unjust and unreasonable because it lacks clear 
+provisions to govern the “rates, terms, and conditions of service that apply to Interconnection 
+Customers serving Co-Located Load and Eligible Customers taking transmission service on 
+behalf of Co-Located Load.”23 The requested clarification aims to address precisely this defect: 
+the absence of clear rules that govern how co-located load paired with storage will be studied in 
+the generator interconnection process. The PJM tariff, as currently drafted, does not specify how 
+storage withdrawals will be modeled when a storage facility is seeking to co-locate with a large 
+load. 
+This absence of clear tariff provisions means that without clarification, there is a risk that 
+the interconnection study process could include assumptions that the load and the charging load 
+of the storage resource create bluntly overlapping grid impacts (e.g. coincident withdrawals at 
+peak), when in fact the storage resources and co-located load could be managed to limit the 
+overall withdrawal of the co-located resource and to avoid withdrawal when doing so would 
+create grid impacts necessitating network upgrades. The record demonstrates that interconnection 
+customers can build facilities that integrate a variety of “onsite self-supply resources—such as 
+fuel cells, gas turbines, or battery storage” and use “controls and protection mechanisms” such 
+that the integrated facility “can limit maximum flows into and out of” co-located facilities.24 Yet 
+as Bloom Energy Corporation explains, PJM’s tariff has “no existing protocols” for studying new 
+generation (including energy storage) together with load.25  
+ 
+23 Order at P 175. 
+24 Comments of Bloom Energy Corporation, Attachment, Brattle Report at 9, 27 (April 23, 2025). 
+25 Comments of Bloom Energy Corporation at 10.
+--- PAGE 10 ---
+10 
+The Order recognizes that co-located resources can be integrated so as to “limit [the] 
+energy withdrawals” of co-located loads so as to prevent “inefficient and costly transmission 
+buildout.”26 But it does so in the context of requiring PJM to offer non-firm transmission service, 
+without expressly applying this reasoning to the interconnection study context. In requiring PJM 
+to offer co-located loads a menu of transmission service options, the Order ensures that such 
+loads have the opportunity to receive service that “reflect[s] their actual impact on the 
+transmission system.”27 But the value presented by the option to obtain non-firm transmission 
+service would be substantially diminished if the generator interconnection process separately 
+forces the co-located load to bear the cost and delay of unnecessary network upgrades that do not 
+“reflect[s] their actual impact on the transmission system.”28 The Commission should clarify that 
+its findings in requiring non-firm service also apply with regard to PJM’s interconnection study 
+processes, as this is the process that directly identifies necessary transmission upgrades. The 
+Commission must require PJM to allow for non-firm withdrawal and integrated operation of co-
+located facilities including net withdrawal limits to be integrated into interconnection study 
+assumptions because failing to do so “could necessitate inefficient and costly transmission 
+buildout.”29  
+While the Order’s clear intent is to protect customers from unnecessary upgrade costs,30 
+the path to realizing billions in transmission infrastructure savings enabled by facilities that 
+incorporate “controls and protection mechanisms used to limit physical withdrawals” is to reflect 
+the controllable nature of those withdrawals in interconnection studies that identify the need for 
+ 
+26 Order at P 199. 
+27 Id. at P 162. 
+28 Id.  
+29 Id. at P 199. 
+30 See id. at P 162.
+--- PAGE 11 ---
+11
+transmission upgrades.31 By expressly requiring PJM to allow interconnection customers seeking 
+to use new generating facilities to serve Co-Located Load to nominate net withdrawal limits, the 
+Commission will enable the avoidance of unnecessary upgrades and allow for the faster 
+integration of new customers and a more affordable grid. 
+The Order permits a co-located generator to nominate an injection limit that is less than 
+its total capacity.32 The requested clarification is the logical extension of that principle to 
+withdrawals and would result in the same benefits of avoided costs and faster interconnection 
+times. Conversely, study assumptions that ignore the joint capabilities of energy storage 
+resources paired with co-located loads paired would frustrate the objectives of the Order and 
+render its replacement rate ineffectual for those resources. Allowing co-located loads paired with 
+storage to nominate withdrawal limits will encourage innovation that will bring down these 
+costs. It will allow developers to optimize the configuration of load, generation and storage in a 
+way that internalizes impacts to the transmission system, bringing down overall system costs and 
+accelerating speed to power. 
+. 
+ 
+ 
+ 
+ 
+ 
+ 
+31 Comments of Bloom Energy Corporation at 2, 5, 11-12. 
+32 See Order at P 232.
+--- PAGE 12 ---
+12 
+Respectfully submitted, 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Ariel Horowitz 
+Head of Market Strategy 
+Eolian, L.P. 
+ 
+ 
+Noah Long 
+Director, State and Regulatory Affairs 
+Antora Energy LLC 
+ 
+ 
+Jeff Bladen 
+Head of Energy 
+Verrus LLC
+--- PAGE 13 ---
+CERTIFICATE OF SERVICE 
+ 
+I hereby certify that I have this day served the foregoing document upon each person 
+designated on the official service list compiled by the Secretary of the Commission in this 
+proceeding. 
+ 
+Dated: January 20, 2026 
+Ariel Horowitz 
+Head of Market Strategy 
+Eolian, L.P.

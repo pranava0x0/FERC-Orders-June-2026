@@ -1,0 +1,287 @@
+--- PAGE 1 ---
+UNITED STATES OF AMERICA 
+BEFORE THE 
+FEDERAL ENERGY REGULATORY COMMISSION 
+ 
+ 
+ 
+Midcontinent Independent System Operator 
+Inc. 
+ 
+) 
+) 
+) 
+) 
+) 
+ 
+Docket No. ER26-3650-000 
+ 
+COMMENTS OF GOOGLE LLC 
+ 
+Pursuant to Rule 211 of the Rules of Practice and Procedure of the Federal Energy 
+Regulatory Commission (“Commission”),1 Google LLC (“Google”) submits these comments on 
+Midcontinent Independent System Operator Inc.’s (“MISO”) Interconnection Reliability 
+Requirements for Large Loads Proposal (“IRR Proposal”).  Google supports the proposal as a 
+reasonable and responsible step to bolster the near-term reliability of the nation’s electric grid.   
+ 
+Ensuring electric reliability must continue to be job number one.  That responsibility has 
+become increasingly complex, in large part due to the addition of large loads that may exhibit 
+different operating characteristics than other loads.  Google therefore commends MISO for 
+prioritizing the reliability of the transmission system and working proactively to identify and 
+mitigate the risks that certain Large Loads can pose to the power grid.  In addition, Google supports 
+MISO’s pragmatic approach to these issues, including its reasonable grandfathering of existing 
+customers in a manner that respects reliance interests and investments made under the rules in 
+effect at the time.  An approach along the lines proposed in this proceeding is consistent with 
+Google’s approach to responsible energy growth.2   
+ 
+1 18 C.F.R. § 385.211 (2026). 
+2 See Amanda Peterson Corio, Supporting the White House Ratepayer Protection Pledge: Google's Approach for 
+Responsible Energy Growth, Google: The Keyword (Mar. 4, 2026), https://blog.google/innovation-and-
+ai/infrastructure-and-cloud/global-network/affordability-pledge-responsible-energy-growth.
+--- PAGE 2 ---
+-2- 
+At the same time, while Google supports this filing, additional work is needed to further 
+refine MISO’s approach to reliability issues associated with new Large Loads.  For example, the 
+best way to ensure the reliability of the system is to tie any regulations or requirements to the 
+electrical characteristics of the load rather than the specific type of end use they constitute.  In 
+other words, regulators should focus on imposing obligations based on the reliability challenges 
+associated with a particular load (e.g., ramp rate, voltage sensitivity, etc.) rather than the nature of 
+the retail customer (e.g., data center, arc furnace, etc.).  In addition, several aspects of the IRR 
+Proposal have yet to come into focus, either because they will be specified in the MISO Business 
+Practice Manuals (“BPM”) or because the proposed tariff language gives MISO significant 
+discretion over how it will implement the IRR Proposal.  Those implementation questions will go 
+a long way in determining the effectiveness and administrability of the IRR Proposal. 
+I. 
+COMMENTS 
+As noted, Google supports the IRR Proposal.  It offers the following observations and 
+suggestions as MISO and the Commission continue to refine their approach to addressing the 
+reliability implications of load growth driven by new Large Loads.    
+A. Grandfathering Existing Loads Is Important and Consistent with Commission 
+Policy 
+Google supports the grandfathering provisions in the IRR Proposal, which provide 
+important commercial certainty to entities seeking to invest in the MISO region.  The 
+grandfathering paradigm is also consistent with Commission policy and analogous large load 
+regulatory frameworks for other Independent System Operators (“ISOs”)/Regional Transmission 
+Organizations (“RTOs”).  Under the IRR Proposal, the extent to which MISO will regulate Large 
+Loads varies depending on the date on which service to the Large Load begins, whether 
+transmission projects or upgrades associated with the Large Load have been approved by the
+--- PAGE 3 ---
+-3- 
+MISO Board in MTEP, and when transmission projects or upgrades associated with the Large 
+Load are submitted to the MISO EPR process.3  For example, Large Loads with a transmission 
+service commencement date on or prior to December 4, 2026—i.e., the proposed effective date of 
+the IRR Proposal—will not be subject to certain IRR regulations.4 
+Data centers have operated safely and reliably within the MISO footprint for years (and in 
+some cases, decades).  Google applauds MISO for crafting regulations that reflect its considerable 
+experience operating a grid that has long provided service to data center loads, rather than imposing 
+on those loads a new regulatory regime meant to mitigate risks that those loads have never 
+presented.   
+The grandfathering provisions do more than just reflect MISO’s experience to date; they 
+also provide commercial certainty for parties that have already invested in electrical and digital 
+infrastructure in MISO and send an important signal to prospective investors that they can rely on 
+the regulatory landscape to remain predictable.  This, in turn, creates the certainty necessary to 
+deploy capital needed to upgrade digital and electrical infrastructure, including through 
+investments that help make data centers better grid citizens.  As Google has emphasized, during 
+this time of rapid transformation, regulations that create uncertainty or raise the risk that 
+investments made in reliance on the rules in effect at the time will be rendered obsolete decrease 
+companies’ appetite to make those investments voluntarily.5  As such, greater regulatory 
+uncertainty can lead to impaired reliability if it prevents companies from making the investments 
+ 
+3 Midcontinent Indep. Sys. Operator, Inc., Reliability Requirements for Large Loads, Docket No. ER26-3650-
+000, 13-14 (filed Aug. 28, 2026) (“Transmittal”). 
+4 Id. at 14. 
+5 See generally PJM Interconnection, L.L.C., Protest of Google LLC, Docket No. ER26-3515-000 (filed Sept. 3, 
+2026).
+--- PAGE 4 ---
+-4- 
+that will go above and beyond to ensure that the grid remains safe and reliable.  Grandfathering 
+provisions, like the ones in the IRR Proposal, respect existing reliance interests and signal to 
+investors and developers that the regulatory ground beneath them is less likely to shift 
+unexpectedly.   
+Moreover, respecting reliance interests, including through existing contracts and 
+commercial arrangements, is consistent with the Commission’s guidance in the MISO Large Load 
+Show Cause Order where the Commission encouraged MISO to “(a) propose a reasonable 
+implementation period to ensure minimal disruption to such existing commercial arrangements, 
+and (b) allow a reasonable amount of time to finalize ongoing agreements that are nearing 
+completion as of the date such Tariff provisions are filed with the Commission. Such proposed 
+Tariff revisions should include a reasonable effective date that accommodates such considerations 
+regarding these existing commercial arrangements.”6  The IRR Proposal grandfathering provisions 
+do just that.  Projects that begin operating before the effective date of the IRR Proposal will be 
+subject to the regulations in effect when those projects were conceived, not the entirely new IRR 
+regulatory regime, and projects that are verifiably in progress will only be subject to a subset of 
+the IRR regulations, thus ensuring minimal disruption.   
+The grandfathering provisions in the IRR Proposal are also consistent with transition 
+mechanisms that the Commission has approved for similar regulations in SPP.  SPP’s HILLS 
+construct imposes reliability requirements on large loads, which include load forecasting 
+provisions, remote capability to disconnect load from the transmission system, installation of 
+phasor measurement units for real-time load data, and ride-through requirements.7  SPP’s large 
+ 
+6 Midcontinent Indep. Sys. Operator, Inc., 195 FERC ¶ 61,212, at P 5 (2026).  
+7 Sw. Power Pool, Inc., 194 FERC ¶ 61,031, at PP 18-20, 63 (2026).
+--- PAGE 5 ---
+-5- 
+load reliability requirements similarly do not apply to existing loads.8  Google urges the 
+Commission to note the importance of this approach and encourage any other regions considering 
+similar measures to follow suit and adopt an approach that, as noted above, facilitates the 
+investment in the reliability measures that the country badly needs. 
+At the same time, as noted above, ensuring electric reliability must remain job number 
+one.  To that end, MISO has included important “notwithstanding” language in the grandfathering 
+provisions of the IRR Proposal,9 which allows it to continue monitoring the operational risks 
+introduced by certain large loads and modify its approach where necessary to address reliability 
+risks.  In so doing, MISO has struck an important balance that preserves reliance interests while 
+also preserving its ability to adjust its approach as needed to ensure reliability.    
+B. Large Loads Should Be Classified and Regulated Based on Their Objective 
+Electrical Characteristics Rather than the Function they Perform 
+The IRR Proposal regulates Large Loads based on the function they perform—e.g., 
+computation—rather than their operational characteristics and their effects on the grid.  This means 
+that MISO may end up regulating some Large Loads that do not pose a reliability risk to the 
+transmission system while excluding non-data center loads that pose some of the same risks.  
+Under the IRR Proposal, MISO would subject Computational Loads, which it defines as “Large 
+Load comprised of 25 MW or more of Demand from information technology equipment, such as 
+servers, storage, and networking hardware,”10 to more onerous regulatory requirements than Large 
+Loads, which MISO defines as loads over 50 MW at a single substation behind one or more 
+ 
+8 Id. P 10 (“A load may be categorized as a HILL after the initial effective date of Attachment BA of the Tariff.”);  
+id. P 10 n.23 (“Existing loads will not be considered HILLs or be subject to the requirements of Attachment BA unless 
+they seek to increase load and otherwise meet the definitional requirements.”). 
+9 Filing, Proposed MISO Tariff Revisions, § 37A(II)(3). 
+10 Transmittal at 11.
+--- PAGE 6 ---
+-6- 
+Point(s) of Withdrawal from the Transmission System.11  Specifically, Large Loads would need to 
+comply with visibility requirements while Computational Loads would also need to comply with 
+ramp, PMU, and ride-through requirements.  As MISO explains, “[d]efining Computational Load 
+supports a more targeted and risk-informed approach, rather than applying the same requirements 
+to all Large Loads regardless of facility type or operating behavior.”12 
+As noted above, Google believes reliability requirements like those in this proposal are 
+important and need to be implemented promptly.  Nevertheless, by proposing a scheme that turns 
+on the function that a facility performs rather than on its electrical behavior, MISO has, in fact, 
+created an approach that “appl[ies] the same requirements . . . regardless of . . . operating behavior.”  
+To see why this is the case, consider industrial loads beyond data centers (e.g., arc furnaces, 
+cryogenic facilities, hydrogen electrolyzers, etc.), which can exhibit identical electrical behaviors 
+as certain data centers but would escape the ramp, PMU, and ride-through requirements in the IRR 
+Proposal.  At the same time, data centers that do not exhibit high-risk behaviors—e.g., because 
+they have made investments or adopted operational protocols to reduce impact on the grid—would 
+be regulated as Computational Loads.  An approach that regulates loads based on their risks to and 
+effects on the grid would not only be a more efficient system of regulation; it would also 
+incentivize data center operators to make additional investments needed to mitigate or eliminate 
+those effects entirely—a win-win situation for both customers and grid operators more generally.   
+ 
+11 Id. at 10. 
+12 Id. at 11 (emphasis added).
+--- PAGE 7 ---
+-7- 
+C. The Success of the IRR Proposal Will Depend on Details that Will Be Included in 
+MISO’s Manuals 
+MISO has deferred critical details of the IRR regulatory paradigm—e.g., the 30 
+MW/minute ramp calculation methodology, voltage ride-through curve specifications, and 
+deviation penalties—to its Business Practice Manuals.  As such, the IRR Proposal is best described 
+as a high-level framework rather than a comprehensive regulatory regime, which makes it difficult 
+to evaluate whether the IRR Proposal will achieve its stated goals and, relatedly, the extent to 
+which Large Loads will be able to comply with its requirements.  Google recognizes that some of 
+the terms and requirements that MISO has left unspecified are technical implementation details 
+that should be set forth in the Business Practice Manuals.  We urge MISO to work closely with 
+stakeholders in fleshing out those details.   
+At the same time, the IRR Proposal gives MISO open-ended authority to impose what 
+amounts to penalties on Large Loads that fail to comply with various new requirements (e.g., 
+modeling, data, telemetry, etc.), which raises a particular risk of running afoul of the rule of reason.  
+Under the rule of reason, practices that “affect rates and service significantly,” “are realistically 
+susceptible of specification,” and “are not so generally understood in any contractual arrangement 
+as to render recitation superfluous” must be filed with the Commission, not housed in Business 
+Practice Manuals and the like.13  The Commission has previously found that penalty provisions 
+that significantly affect the conditions of transmission service must be included in a transmission 
+provider’s tariff.14    
+ 
+13 City of Cleveland v. FERC, 773 F.2d 1368, 1376 (D.C. Cir. 1985) (emphasis removed). 
+14 See California Indep. Sys. Operator Corp., 175 FERC ¶ 61,245, at P 166 (2021), order on reh’g, 178 FERC 
+¶ 61,180 (2022).
+--- PAGE 8 ---
+-8- 
+The penalty authority in the IRR Proposal could do just that.  Specifically, for transmission 
+customers that do not comply with the regulatory requirements in the IRR Proposal, MISO will 
+have unbounded discretion to delay the commencement date for transmission service to the new 
+Large Loads, impose operational limitations, or impose other remediation actions necessary to 
+maintain the reliability of the transmission system.15  In other words, MISO is reserving to itself 
+the power to penalize customers by imposing conditions on transmission service.  While MISO 
+itself acknowledges, “clarity is required as to potential consequences in the event a party fails to 
+comply with applicable requirements,”16 it has yet to provide such clarity, and Google urges MISO 
+to do so promptly and with the predictability necessary to avoid rule of reason concerns.   
+D. The Breadth of Certain Provisions Could Make it Difficult for Entities to Comply 
+with the IRR Proposal 
+Finally, Google is concerned that some provisions in the IRR Proposal are framed so 
+broadly that it will be difficult, if not impossible, for regulated entities to comply.  Most notably, 
+the IRR Proposal gives MISO the right to audit information “including, but not limited to, 
+information related to the registration, claimed capacity, operations, modeling, inverter settings, 
+metering, settlements, Large Load Equipment, and/or any other information related to the 
+participation of the Large Load under this Tariff.”17  While Google believes that MISO should 
+have the audit rights necessary to ensure that entities are complying with its tariff—after all, the 
+reliability of the grid depends on it—giving MISO such unbounded and undefined powers could 
+complicate compliance for Large Loads in the region.  In the absence of limits on the information 
+that MISO can request, Large Loads will be required to retain a nearly limitless amount of 
+ 
+15 Transmittal at 23. 
+16 Id. 
+17 Filing, Proposed MISO Tariff Revisions, § 37A.8 (emphasis added).
+--- PAGE 9 ---
+-9- 
+information.  MISO should be able to access any information it needs to ensure that Large Loads 
+(and the transmission customers taking service on their behalf) are complying with reliability 
+requirements.  That said, a regime under which entities need to retain everything because MISO 
+can ask for anything will become unduly burdensome, unworkable in practice, and actually 
+complicate the process of complying with these critical regulations.   
+II. 
+Conclusion 
+Google supports the IRR Proposal, which will help MISO ensure reliability in this era of 
+rapid load growth.  But the work cannot end here.  Eventually, the Commission should ensure that, 
+where appropriate, the reliability requirements imposed by ISOs/RTOs align with the large load 
+reliability standards that it has directed the North American Electric Reliability Corporation to 
+develop.18  This will help to avoid a patchwork of reliability requirements across ISOs/RTOs, 
+improving reliability and reducing compliance costs.   
+ 
+ 
+Respectfully submitted, 
+ 
+/s/ Brian George 
+Brian George 
+Sr. Lead, US Energy Markets 
+Stephen Lindeman 
+Lead, Energy Market Development 
+Google LLC 
+655 New York Ave., NW 
+Washington, DC 20001 
+(202) 999-0990 
+briangeorge@google.com 
+lindemans@google.com  
+ 
+Matt Christiansen 
+Bryan Shpall 
+Wilson Sonsini Goodrich & Rosati 
+1700 K Street NW 
+Fifth Floor 
+Washington, DC 20006 
+(617) 598-7871 
+mchristiansen@wsgr.com  
+bshpall@wsgr.com 
+ 
+Counsel for Google LLC 
+ 
+Dated:  September 18, 2026 
+ 
+18 See Reliability Standard(s) Pertaining to Computational Load Integration, 196 FERC ¶ 61,031 (2026).
+--- PAGE 10 ---
+CERTIFICATE OF SERVICE 
+ 
+I hereby certify that I have this day served the foregoing document upon each person 
+designated on the official service lists compiled by the Secretary of the Commission in these 
+proceedings. 
+ 
+Dated:  September 18, 2026 
+Washington, D.C. 
+ 
+ 
+/s/ Bryan Shpall 
+Bryan Shpall 
+Wilson Sonsini Goodrich & Rosati 
+1700 K Street NW 
+Fifth Floor 
+Washington, DC 20006

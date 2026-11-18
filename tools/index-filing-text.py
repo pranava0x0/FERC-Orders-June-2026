@@ -41,6 +41,20 @@ def inventory() -> list[dict]:
                          file=str(path.relative_to(ROOT)), url="https://www.ferc.gov/media/"+(d["item"].replace("-","") if d["item"] in ("E-11","E-12") else d["item"]).lower()+"-"+d["docket"].lower()))
     for d in read(SRC/"other-originals.json"):
         rows.append(dict(**d, file="sources/originals/"+d["filename"],kind="stakeholder document"))
+    # Record tier: page text of a filing whose original stays on eLibrary (tools/ingest-record-tier.py).
+    if (SRC/"record-tier.json").exists():
+        procs=read(SRC/"proceedings.json")["groups"]
+        def proceeding(docket: str) -> str:
+            hit=next((g for g in procs if any(docket.startswith(m) for m in g.get("match",[]))),None)
+            return hit["title"] if hit else docket+" filings"
+        for e in read(SRC/"record-tier.json"):
+            kept=[f for f in e["files"] if f.get("text")]
+            for i,f in enumerate(kept):
+                slug="rec-"+e["accession"]+("" if i==0 else "-"+str(i+1))
+                rows.append(dict(slug=slug,title=e["title"] if i==0 else re.sub(r"\.(pdf|docx)$","",f["label"],flags=re.I),issued=e["filed"],
+                                 accession=e["accession"],docket=e["dockets"][0],group=proceeding(e["dockets"][0]),filer=e["filer"],
+                                 kind=e["kind"] if i==0 else "attachment",file=f["text"],url=e["url"],tier="record",originalSha256=f["sha256"],
+                                 **({"ocr":True} if f.get("ocr") else {}),**({} if i==0 else {"parent":"rec-"+e["accession"]})))
     parents = {d["slug"]:d for d in rows}
     for f in [SRC/"attachments.json", SRC/"regional-attachments.json"]:
         if not f.exists():
@@ -113,6 +127,12 @@ def source_pages(rec: dict) -> tuple[list[str],list[tuple[int,str]]]:
     path=ROOT/rec["file"]
     if path.suffix.lower()==".docx":
         return [docx_text(path)],[]
+    if path.suffix.lower()==".txt":
+        raw=path.read_text()
+        if not raw.startswith("--- PAGE 1 ---"): return [raw.strip()],[]
+        chunks=re.split(r"^--- PAGE (\d+) ---\n",raw,flags=re.M)
+        if [int(n) for n in chunks[1::2]]!=list(range(1,len(chunks)//2+1)): raise ValueError(f"{path}: pages out of order")
+        return [t.strip() for t in chunks[2::2]],[]
     with fitz.open(path) as pdf:
         pages=[p.get_text().strip() for p in pdf]
         marks=[(n,clean(t)) for _,t,n in pdf.get_toc() if 1<=n<=len(pages) and clean(t)]
@@ -136,11 +156,16 @@ def sections(pages: list[str], bookmarks: list[tuple[int,str]], paginated: bool)
             key=r"\s+".join(map(re.escape,title.split()))
             m=re.search(key,text,re.I)
             if m: starts[(pg,m.start())]=(title,"PDF bookmark")
+        absorbed=-1
         for m in re.finditer(r"[^\n]+",text):
             line=clean(m[0])
+            # A heading printed as "I." on one line and its title on the next is one heading. The title
+            # line was absorbed into it, so it must not open a second, duplicate section.
+            if m.start()<=absorbed<m.end(): continue
             if re.fullmatch(r"(?:[IVX]{1,6}|[A-H])\.",line):
-                rest=text[m.end():].lstrip().splitlines()
-                if rest: line+=" "+clean(rest[0])
+                nxt=re.search(r"\S[^\n]*",text[m.end():])
+                if nxt:
+                    line+=" "+clean(nxt[0]); absorbed=m.end()+nxt.start()
             if not paginated and line in ("Footnotes","Endnotes"):
                 starts[(pg,m.start())]=(line,"Word notes")
             if (HEADING.fullmatch(line) or LABEL.fullmatch(line)) and not re.search(r"\.{2,}|\s\d+$",line):
@@ -167,8 +192,9 @@ def generate(rec: dict) -> tuple[dict,dict]:
     starts=[]; total=0
     for count in ns:
         starts.append(total);total+=count
-    paginated=path.suffix.lower()==".pdf"
-    row=dict(rec,sha256=sha256(path.read_bytes()).hexdigest(),pages=len(pages) if paginated else None,
+    paginated=path.suffix.lower()==".pdf" or (path.suffix.lower()==".txt" and path.read_text().startswith("--- PAGE 1 ---"))
+    # A record-tier row hashes the eLibrary original it was extracted from, not the committed text.
+    row=dict({k:v for k,v in rec.items() if k!="originalSha256"},sha256=rec.get("originalSha256") or sha256(path.read_bytes()).hexdigest(),pages=len(pages) if paginated else None,
              tokens=total,emptyPages=[i+1 for i,n in enumerate(ns) if not n])
     parts=sections(pages,marks,paginated)
     for i,s in enumerate(parts):

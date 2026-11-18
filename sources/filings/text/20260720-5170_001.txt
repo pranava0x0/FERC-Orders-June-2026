@@ -1,0 +1,526 @@
+--- PAGE 1 ---
+UNITED STATES OF AMERICA 
+BEFORE THE 
+FEDERAL ENERGY REGULATORY COMMISSION 
+PJM Interconnection, L.L.C., et al. 
+Large Loads Co-Located at Generating Facilities 
+Constellation Energy Generation, LLC 
+v. 
+PJM Interconnection, L.L.C. 
+PJM Interconnection, L.L.C. 
+)
+)
+)
+)
+)
+)
+)
+)
+)
+)
+)
+)
+Docket Nos. EL25-49-002 
+                     EL25-49-000 
+Docket No. AD24-11-001 
+Docket No. EL25-20-001 
+                  (consolidated) 
+Docket No. ER26-1479-000 
+REQUEST FOR CLARIFICATION OR, IN THE ALTERNATIVE, REHEARING  
+OF VISTRA CORP. 
+Pursuant to Section 313 of the Federal Power Act (“FPA”)1 and Rules 212 and 713 of the 
+Rules of Practice and Procedure of the Federal Energy Regulatory Commission (“Commission” or 
+“FERC”),2 Vistra Corp. (“Vistra”) requests clarification, or in the alternative, rehearing, of the 
+order issued by the Commission on June 18, 2026, in the above-captioned dockets (“June 2026 
+Order”).3  The Commission should clarify one narrow issue:  when a secondary generator4 in a 
+Co-Location Arrangement will continue to be available to PJM as a capacity resource and comply 
+with its Day-Ahead Market offer requirement, that unit should not be required to delist its Capacity 
+1 16 U.S.C. § 825l(a). 
+2 18 C.F.R. §§ 385.212, 385.713. 
+3 PJM Interconnection, L.L.C., 195 FERC ¶ 61,209 (2026) (“June 2026 Order”). 
+4 In this context, a “secondary generator” refers to a generation unit that will serve the Co-Located Load only if 
+the unit dedicated to providing primary service to the Co-Located Load is on an outage and only if the secondary 
+generator is not committed in PJM’s energy market.  However, Vistra notes that the same principles apply where the 
+service to the Co-Located Load does not come entirely from a single unit, but instead comes from portions of each 
+generation unit with the remaining MW from each unit being offered in PJM’s energy market.
+--- PAGE 2 ---
+-2- 
+Interconnection Rights (“CIRs”).  This clarification is necessary because the Commission’s June 
+2026 Order’s findings on CIR treatment did not address the circumstance in which the secondary 
+generator complies with the Day-Ahead Market offer requirement.  To the extent this clarification 
+is denied, we seek rehearing. 
+SPECIFICATION OF ERRORS & STATEMENT OF ISSUES 
+1. The PJM tariff is ambiguous as to whether an Interconnection Customer must delist the CIRs 
+of a secondary, interruptible unit that serves a Co-Located Load only when not committed in 
+the PJM market.  The Commission should clarify that the PJM tariff does not require an 
+Interconnection Customer to delist the CIRs of a unit of a capacity resource that is capable of 
+meeting both the emergency performance and the Day-Ahead Market must-offer requirements 
+applicable to capacity resources, if the unit provides secondary, interruptible service to a Co-
+Located Load only when the unit is not committed in PJM’s energy market.  Without 
+clarification, the PJM tariff violates the FPA requirement that rates, terms, and conditions of 
+Commission-jurisdictional service be just and reasonable and not unduly discriminatory or 
+preferential.  See 16 U.S.C. §§ 824d(a), 824d(b), 824e. 
+2. If the Commission declines to provide the clarification requested above, the June 2026 Order 
+is arbitrary and capricious, in violation of the Administrative Procedure Act, because the 
+Commission failed to engage in reasoned decisionmaking by failing to respond to Vistra’s 
+objections to PJM’s proposal and failing to consider the important issues that Vistra raised.  
+See 5 U.S.C. § 706(2)(A); Motor Vehicle Mfrs. Ass’n v. State Farm Mutual Automobile Ins. 
+Co., 463 U.S. 29 (1983) (“State Farm”); Michigan v. EPA, 576 U.S. 743 (2015); Del. Div. of 
+Pub. Advoc. v. FERC, 3 F.4th 461 (D.C. Cir. 2021); New England Power Generators Ass’n v. 
+FERC, 881 F.3d 202 (D.C. Cir. 2018); TransCanada Power Mktg. Ltd. v. FERC, 811 F.3d 1 
+(D.C. Cir. 2015); Pub. Serv. Comm’n of Ky. v. FERC, 397 F.3d 1004 (D.C. Cir. 2005); 
+Canadian Ass’n of Petroleum Producers v. FERC, 254 F.3d 289, 299 (D.C. Cir. 2001). 
+3. If the Commission declines to provide the clarification requested above, the June 2026 Order 
+is arbitrary and capricious, in violation of the Administrative Procedure Act, because the 
+Commission accepted tariff provisions that did not comply with its directive to clarify its 
+interconnection procedures and agreements to increase certainty and consistency.  See 5 U.S.C. 
+§ 706(2)(A); State Farm, 463 U.S. 29; FCC v. Fox Television Stations, Inc., 556 U.S. 502 
+(2009); PJM Interconnection, L.L.C., 193 FERC ¶ 61,217, at P 159 (2025). 
+4. If the Commission declines to provide the clarification requested above, the June 2026 Order 
+is arbitrary and capricious, in violation of the Administrative Procedure Act and the Federal 
+Power Act, to the extent the Commission accepted unjust, unreasonable, and unduly 
+discriminatory tariff provisions that require a secondary, interruptible unit serving Co-Located 
+Load only when not committed in PJM’s market (and only when the primary unit is not serving 
+the Co-Located Load) to delist its CIRs to implement a Co-Location Arrangement.  See 
+5 U.S.C. § 706(2)(A); 16 U.S.C. §§ 824d, 824e; State Farm, 463 U.S. 29.
+--- PAGE 3 ---
+-3- 
+I.
+Background 
+Last December, the Commission found that the PJM tariff is unjust and unreasonable 
+because it lacks sufficient clarity and consistency regarding how interconnection customers can 
+serve Co-Located Load using existing generating facilities.5  The Commission directed PJM to 
+propose tariff revisions to clarify that existing generators can use the necessary study process to 
+modify their interconnection to reflect the addition of new Co-Located Loads.6  In connection with 
+the addition of those Co-Located Loads, the Commission explained that “an existing generating 
+facility may not begin serving Co-Located Load that is not Network Load until it has delisted its 
+CIRs for the portion of the generating facility to be designated to serve any Co-Located Load that 
+is not receiving [Network Integration Transmission Service (“NITS”)].”7
+PJM proposed, on compliance, to require existing generators that seek to serve Co-Located 
+Load to submit to PJM “the amount of reduction to [CIRs] to facilitate the Co-Located Load 
+configuration.”8  PJM would then “assess the impact of the reduction in [CIRs]” in the necessary 
+study process.9
+Vistra filed a protest to PJM’s compliance filing, expressing concern that this tariff 
+language remained ambiguous and therefore did not address the Commission’s directive to 
+“clarify” its interconnection procedures to ensure that it is clear to existing generators how to 
+5 PJM Interconnection, L.L.C., 193 FERC ¶ 61,217, at P 225 (2025) (“December 2025 Order”). 
+6 Id. P 226. 
+7 Id. P 230 (emphasis added). 
+8 PJM Interconnection, L.L.C., Transmittal Letter, Docket No. ER26-1479-000, at 26 (filed Feb. 23, 2026) (“PJM 
+Transmittal Letter”); PJM, Open Access Transmission Tariff, pt. VIII, subpt. A, § 401 (Applications for Cycle Process 
+Introduction) (5.0.0), § H(3)(b)(i)(c); id., pt. IX, subpt. G (Form of Necessary Studies Agreement) (3.0.0), attach. 1 
+(Planned Modifications). 
+9 PJM, Open Access Transmission Tariff, pt. VIII, subpt. A, § 401 (5.0.0), § H(3)(b)(ii).
+--- PAGE 4 ---
+-4- 
+interconnect in a Co-Location Arrangement.10  Specifically, Vistra explained, PJM’s proposed 
+tariff language was ambiguous with regards to how a generator should calculate the amount by 
+which its CIRs should be reduced.  Vistra expressed concern that the tariff could be read to require 
+generators to delist CIRs associated with any facility that would ever provide power to Co-Located 
+Load, not just the portion of the facility designated to serve the Co-Located Load.  Under this 
+broad reading, an existing, two-unit generator with one 50 MW unit serving Co-Located Load on 
+a firm basis and one 50 MW unit serving Co-Located Load on an interruptible, secondary basis 
+only when the unit is not committed in PJM’s energy market would need to delist 100 MWs of 
+CIRs.  In other words, the generator would need to delist more CIRs than the portion the facility 
+designated to serve the Co-Located Load on a firm basis.11
+Vistra explained that this overly broad reading would be unduly discriminatory.  There is 
+no principled basis to treat a secondary unit in a Co-Location Arrangement differently from a 
+generator with a non-firm or recallable commitment to sell power outside of PJM where both types 
+of generators comply with all capacity resource obligations, including the Day-Ahead Market 
+must-offer requirement.12  And as a matter of policy, there is no reason to ignore the valuable 
+contribution secondary units can make to resource adequacy.  Doing so would unnecessarily 
+deprive the PJM region of available capacity.13
+10 Vistra Protest at 9-11. 
+11 Id. at 9-10. 
+12 Id. at 11-12. 
+13 Id. at 10, 12.
+--- PAGE 5 ---
+-5- 
+In the June 2026 Order, the Commission summarized some of Vistra’s arguments14 but did 
+not meaningfully respond to them.  It simply “disagree[d] with Vistra and Constellation that 
+capacity resources should not have to reduce their CIRs to serve Co-Located Load.”15  Its sole 
+support for this conclusion was a cross-reference to its reasoning in an earlier section of the June 
+2026 Order, where it had addressed Constellation’s argument—which was distinct from any of 
+Vistra’s arguments in critical ways.  Specifically, Constellation argued that a generator serving 
+Co-Located Load should retain its CIRs if “PJM can verify that the Co-Located Load has no 
+contractual right to energy from the generator during a capacity emergency and that the Co-
+Located Load has the ability either to curtail or draw on back-up power.”16  In that earlier section 
+of the June 2026 Order, the Commission rejected Constellation’s argument, explaining that under 
+the scenario Constellation laid out, “the Co-Located Generator would not be capable of meeting 
+its entire capacity requirement,” which includes the requirement to offer its energy into the Day-
+Ahead Market throughout the delivery year.  It found that Constellation’s proposal would allow 
+the capacity resource to violate the must-offer requirement and thus provide an inferior capacity 
+product for the same payment.17
+14 June 2026 Order, 195 FERC ¶ 61,209 at P 278 (“Vistra claims that PJM’s proposal would require existing 
+generators to provide PJM with the amount of reduction to CIRs to facilitate the Co-Located Load configuration, 
+which Vistra argues is vague and potentially overbroad because it could be read to require that generators include in 
+their CIR reduction any portion of a facility that will ever provide power to a Co-Located Load.  Vistra and DCC 
+express concern that PJM’s proposal could require generators to delist more CIRs than necessary.  Vistra further 
+contends that allowing secondary units to provide occasional, interruptible service to Co-Located Load and to retain 
+their CIRs would be consistent with the Tariff.  Vistra and Constellation argue that capacity resources that serve Co-
+Located Load on an interruptible basis should not be required to delist CIRs.” (internal citations omitted)).
+15 Id. P 288 (citing id. PP 159-162); see also id. P 279 (accepting PJM’s proposed revisions to its Necessary Study 
+process in part).  The Commission rejected PJM’s proposed Form of Necessary Studies Agreement on different 
+grounds.  Id. P 288. 
+16 Id. P 157.  
+17 Id. P 161.
+--- PAGE 6 ---
+-6- 
+II.
+Request for Clarification 
+Clarification of the June 2026 Order is necessary because it accepted unclear tariff 
+language and failed to explain how that tariff language applies to the issue Vistra raised in its 
+protest.  Specifically, the December 2025 Order found that existing generators need only delist 
+CIRs “for the portion of the generating facility to be designated to serve any Co-Located Load that 
+is not receiving NITS.”18  PJM’s compliance filing failed to account for this specific Commission 
+directive, instead generally leaving it to generators to submit “the amount of reduction to [CIRs] 
+to facilitate the Co-Located Load configuration,”19 without specifying how that CIR reduction 
+should be calculated.  Rather than direct PJM to remedy that ambiguity in a manner consistent 
+with the December 2025 Order, the Commission accepted PJM’s vague language and did not 
+respond to the nuances of how that language should apply.  
+PJM’s tariff revisions—and the Commission order accepting them—are ambiguous on the 
+critical point of how customers should calculate the reduction in CIRs.  PJM’s tariff language risks 
+being interpreted far too broadly, to require an Interconnection Customer to delist the CIRs for a 
+capacity resource that is capable of meeting both the emergency performance and the Day-Ahead 
+Market must-offer requirements, and that provides secondary, interruptible service to a Co-
+Located Load only when the unit is not committed in PJM’s energy market.  Vistra respectfully 
+requests that the Commission clarify that PJM’s tariff revisions should not be read in that manner.  
+The Commission should clarify that an Interconnection Customer is not required to delist the 
+18 December 2025 Order, 193 FERC ¶ 61,217 at P 230 (emphasis added). 
+19 PJM Transmittal Letter at 26; PJM, Open Access Transmission Tariff, pt. VIII, subpt. A, § 401 (5.0.0), 
+§ H(3)(b)(i)(c); id. pt. IX, subpt. G, attach. 1.
+--- PAGE 7 ---
+-7- 
+portion of the CIRs that meet the specifications described above when implementing a Co-
+Location Arrangement.   
+As discussed below, Vistra’s requested interpretation is consistent with the December 2025 
+Order.  It is also consistent with the rest of the PJM tariff.  Moreover, allowing this ambiguity to 
+persist (or adopting a contrary interpretation) would be unjust and unreasonable and unduly 
+discriminatory or preferential.  
+A. Vistra’s Requested Clarification Is Consistent With the December 2025 Order 
+and the Reasoning in the June 2026 Order  
+The Commission’s December 2025 Order set a clear standard: an existing generator must 
+delist CIRs “for the portion of the generating facility to be designated to serve any Co-Located 
+Load that is not receiving NITS.”20  PJM’s compliance proposal did not clearly implement that 
+standard.   
+To “designate” something is “to indicate and set [it] apart for a specific purpose, office, or 
+duty.”21  In the configuration Vistra described in its protest, a portion of the generating facility is 
+clearly “set apart for [the] specific purpose” of serving the Co-Located Load.  The remainder of 
+the facility is not.  The facility will continue offering the remaining generation into the Day-Ahead 
+Market and injecting power onto the PJM grid when it receives a Day-Ahead Market award.  
+Accordingly, the remaining capacity is not “designated” to serve the Co-Located Load, which 
+means that under the December 2025 Order, it need not delist its CIRs. 
+20 December 2025 Order, 193 FERC ¶ 61,217 at P 230 (emphasis added). 
+21 Designate, Merriam-Webster, https://www.merriam-webster.com/dictionary/designate (last visited July 20, 
+2026); accord Designate, Black’s Law Dictionary (12th ed. 2024) (“To choose (someone or something) for a particular 
+job or purpose.”).
+--- PAGE 8 ---
+-8- 
+The Commission’s June 2026 Order did not address this issue.  Rather, it addressed 
+Constellation’s (different) argument that a capacity resource serving Co-Located Load that can 
+supply power to the grid during emergencies should not be required to delist its CIRs.  The 
+Commission’s reason for rejecting Constellation’s argument was that such a resource would be 
+incapable of meeting its Day-Ahead Market must-offer obligation.22  That reasoning simply does 
+not apply to the scenario Vistra presented, where the secondary, interruptible unit would meet its 
+Day-Ahead Market must-offer obligation and would only serve Co-Located Load if doing so did 
+not conflict with its commitment in PJM’s market (and would only do so as backup to the primary 
+unit which is designated to serve the Co-Located Load).  The Commission should clarify that these 
+types of secondary units—that meet Day-Ahead Market must-offer requirements—should retain 
+their CIRs. 
+B. Clarification Will Ensure that the PJM Tariff Is Just and Reasonable and Not 
+Unduly Discriminatory or Preferential 
+Vistra’s requested clarification will ensure compliance with the FPA.  As Vistra explained 
+in its protest, requiring a secondary, interruptible unit that serves Co-Located Load only when it is 
+not committed in PJM’s market (and only when the primary unit is not serving the Co-Located 
+Load) to delist its CIRs would be unjust and unreasonable and unduly discriminatory or 
+preferential.23
+PJM already permits a class of resources with non-firm, non-network commitments to 
+participate as capacity resources: generators with a non-firm or recallable commitments to external 
+sales of capacity.  While the tariff excuses capacity resources with firm commitments to external 
+22 See June 2026 Order, 195 FERC ¶ 61,209 at P 161. 
+23 16 U.S.C. § 824
+--- PAGE 9 ---
+-9- 
+sales of their capacity from the capacity market must-offer requirement,24 it does not excuse 
+capacity resources with non-firm or recallable commitments to external sales from that 
+requirement.25  The tariff thus recognizes that firm external sales pose unique concerns for meeting 
+capacity market commitments, while non-firm or recallable external sales do not: generators with 
+non-firm or recallable external sale commitments can be expected to perform normally in the 
+capacity market.  The same distinction applies here.  Primary units that provide firm energy to a 
+Co-Located Load clearly cannot also meet the obligations of PJM capacity resources, but 
+secondary units that provide interruptible, backup energy to a Co-Located Load can.  
+There is no principled basis to treat a secondary, interruptible unit in a Co-Location 
+Arrangement differently from an external resource with a non-firm capacity commitment.  Like 
+generators with non-firm or recallable external sale commitments, secondary interruptible units 
+can fulfill capacity resource obligations.26  Accordingly, the two classes of generators are similarly 
+situated with respect to their ability to serve as capacity resources.  Subjecting the two categories 
+to different rules—specifically, allowing one to maintain CIRs while requiring the other to delist 
+them—would amount to undue discrimination.  
+Further, it would be unjust and unreasonable to require a secondary, interruptible unit 
+serving Co-Located Load only when not committed in PJM’s market (and only when the primary 
+unit is not serving the Co-Located Load) to delist its CIRs to implement a Co-Location 
+24 See Vistra Protest at 10 (citing PJM, Open Access Transmission Tariff, attach. DD.6, § 6.6 (Offer Requirement 
+for Capacity Resources) (3.0.0), §§ 6.6(a), (g); PJM Interconnection L.L.C., Constellation Request for Clarification 
+or, in the Alternative, Rehearing, Docket Nos. EL25-49-000, et al., at 4 (filed Jan. 20, 2026)). 
+25 See id. at 10-11 (citing PJM Interconnection, L.L.C., Mot. for Leave to Answer & Answer of PJM, Docket No. 
+EL25-49-000, at 6 (filed Mar. 9, 2026)). 
+26 See also PJM Interconnection, L.L.C., 190 FERC ¶ 61,088, at P 47 (2025) (accepting PJM proposal to account 
+for reliability must-run resources as capacity resources because they “can reasonably be expected to perform, similar 
+to capacity resources”).
+--- PAGE 10 ---
+-10- 
+Arrangement.  Just like resources with non-firm external capacity commitments, this type of 
+secondary unit would be fully capable of meeting PJM’s capacity commitment requirements—
+including both the emergency performance requirement and the Day-Ahead Market must-offer 
+obligation.   
+Requiring that secondary, interruptible unit to delist its CIRs would deprive the PJM 
+capacity market of available capacity for no conceivable reason.27  For the vast majority of hours, 
+the secondary, interruptible unit could offer into the Day-Ahead Market and provide energy when 
+economic.  In the remaining hours, the secondary, interruptible unit could offer into the Day-Ahead 
+Market with an offer that reasonably reflects its non-firm commitment to the Co-Located Load 
+such that the unit would be available to the system during emergencies.  Such a resource has all 
+the hallmarks of a capacity resource.  It is patently unjust and unreasonable to deprive the capacity 
+market of such a resource at a time when capacity market supply is tight, demand is rising, and 
+PJM and the Commission face unprecedented pressure to address rising prices.28
+In addition, forcing the secondary unit to delist its CIRs would disincentivize the Co-
+Located Load from providing demand response to the grid.  Because the Co-Located Load would 
+have to pay for the secondary unit’s capacity, there would be no reason for the Co-Located Load 
+to choose to switch to its own back-up generator and make the secondary unit’s capacity available 
+to the grid. 
+* * * 
+27 See PJM Interconnection, L.L.C., 190 FERC ¶ 61,088 at P 47 (finding that including reliability must-run 
+resources in the capacity market supply stack would “reflect the actual availability of resources in the PJM Region”). 
+28 See id.
+--- PAGE 11 ---
+-11- 
+The Commission should grant clarification that secondary, interruptible units in the 
+scenario Vistra has outlined are not required to delist their CIRs.  This clarification would comport 
+with the December 2025 Order, and it would ensure that the PJM tariff remains just and reasonable 
+and not unduly discriminatory or preferential. 
+III.
+Alternative Request for Rehearing 
+To the extent the Commission denies the clarification Vistra seeks above, Vistra requests 
+rehearing of the June 2026 Order.  In the absence of Vistra’s requested clarification, the 
+Commission’s decision in the June 2026 Order was arbitrary, capricious, and otherwise not in 
+accordance with law for three reasons.29  First, the Commission failed to respond to any of the 
+objections Vistra raised on this issue in its protest.  Second, the Commission erred in accepting a 
+proposal that failed to comply with the Commission’s directive to “clarify” procedures for entering 
+Co-Location Arrangements.  Third, the Commission erred in accepting PJM’s proposal because it 
+is unjust and unreasonable and unduly discriminatory or preferential in violation of the Federal 
+Power Act to the extent it requires secondary, interruptible units to delist their CIRs.  For those 
+reasons, the Commission’s acceptance of PJM’s proposal violated its obligation to engage in 
+reasoned decisionmaking and its duty under the FPA to ensure that the rates, terms, and conditions 
+of transmission service are just and reasonable and not unduly discriminatory.  To remedy these 
+flaws, the Commission should grant rehearing and direct PJM to revise its tariff to specify that a 
+secondary, interruptible unit serving a Co-Located Load only when not committed in PJM’s 
+markets is not required to delist its CIRs to implement a Co-Location Arrangement. 
+29 5 U.S.C. § 706(2)(A).
+--- PAGE 12 ---
+-12- 
+A. The Commission’s Failure to Respond to Vistra’s Objections Was Arbitrary and 
+Capricious 
+The June 2026 Order does not reflect the type of reasoned decisionmaking required by the 
+Administrative Procedure Act.30  “It is well established” that the Administrative Procedure Act’s 
+reasoned decisionmaking standard means that the “Commission must respond meaningfully to the 
+arguments raised before it.”31  In responding to those arguments, the Commission may not “fail[] 
+to consider an important aspect of the problem” it addresses.32  The June 2026 Order summarily 
+dismissed Vistra’s arguments, without responding to them, by citing an inapposite discussion 
+about an entirely distinct argument.  That is squarely in the zone of arbitrary and capricious 
+action.33
+As detailed above,34 Vistra’s protest raised four distinct arguments about PJM’s proposal 
+regarding reduction of CIRs.  First, Vistra argued that PJM’s vague tariff language did not meet 
+the directive in the December 2025 Order to “clarify” its interconnection procedures and 
+agreements to ensure that existing generators know how to enter a Co-Location Arrangement.35
+Rather than provide clarity, PJM’s proposal introduced ambiguity as to how CIR reductions should 
+30 See Motor Vehicle Mfrs. Ass’n v. State Farm Mutual Automobile Ins. Co., 463 U.S. 29, 43-44 (1983) (“State 
+Farm”); Michigan v. EPA, 576 U.S. 743, 750 (2015). 
+31 New England Power Generators Ass’n v. FERC, 881 F.3d 202, 210 (D.C. Cir. 2018) (cleaned up) (citing 
+TransCanada Power Mktg. Ltd. v. FERC, 811 F.3d 1, 12 (D.C. Cir. 2015); Pub. Serv. Comm’n of Ky. v. FERC, 397 
+F.3d 1004, 1008 (D.C. Cir. 2005)); Canadian Ass’n of Petroleum Producers v. FERC, 254 F.3d 289, 299 (D.C. Cir. 
+2001) (“Unless the Commission answers objections that on their face seem legitimate, its decision can hardly be 
+classified as reasoned.”). 
+32 Del. Div. of Pub. Advoc. v. FERC, 3 F.4th 461, 469 (D.C. Cir. 2021) (citing State Farm, 463 U.S. at 43).  
+33 See New England Power Generators Ass’n, 881 F.3d at 211 (“FERC’s responses to Petitioners' arguments 
+below amounted to conclusory statements that dismissed Petitioners’ concerns without providing reasoned analysis.”); 
+TransCanada Power Mktg., 811 F.3d at 12 (finding that Commission order that “simply never addressed the matter” 
+raised by a party, and instead provided a “perplexing response” that did not actually address the party’s concern, was 
+arbitrary and capricious).
+34 See supra Part I. 
+35 Vistra Protest at 9-11.
+--- PAGE 13 ---
+-13- 
+be calculated.  Second, Vistra argued that requiring secondary, interruptible units that can meet the 
+Day-Ahead Market must-offer requirement to delist their CIRs would be unduly discriminatory, 
+treating those units differently from similarly situated capacity resources with non-firm or 
+recallable commitments to sell power outside of PJM.36  Third, Vistra argued that allowing such 
+secondary, interruptible units to maintain their CIRs is consistent with provisions of the PJM tariff 
+distinguishing between generators with firm versus non-firm external capacity commitments for 
+purposes of capacity market must-offer obligations.37  Fourth, Vistra argued that requiring 
+secondary, interruptible units that can meet the Day-Ahead Market must-offer requirement to delist 
+their CIRs would deprive ratepayers of generation that is generally available and could increase 
+capacity prices.38
+The Commission did not respond to a single one of these objections.  It simply stated that 
+it “disagree[d] with Vistra and Constellation that capacity resources should not have to reduce their 
+CIRs to serve Co-Located Load.”39  As a threshold matter, Vistra did not argue in its protest that 
+capacity resources, writ large, should not have to reduce their CIRs to serve Co-Located Load.40
+The Commission’s only support for this “conclusory statement”41 was its cross-reference 
+to an irrelevant discussion addressing Constellation’s request for rehearing of the December 2025 
+Order.  In that irrelevant discussion, the Commission found that a resource that “would not be 
+capable of meeting its entire capacity requirement,” including both its emergency performance 
+36 Vistra Protest at 11-12. 
+37 Id. at 10-11. 
+38 Id. at 10, 12. 
+39 June 2026 Order, 195 FERC ¶ 61,209 at P 288. 
+40 See TransCanada Power Mktg., 811 F.3d at 12 (finding that a Commission order was arbitrary and capricious 
+where it did not actually address the concern raised in a comment it claimed to address). 
+41 New England Power Generators Ass’n, 881 F.3d at 211.
+--- PAGE 14 ---
+-14- 
+requirement and its Day-Ahead Market must-offer requirement, must delist its CIRs to serve Co-
+Located Load.42  The Commission’s reasoning there does not address Vistra’s protest because 
+Vistra raised the issue with regards to a capacity resource that can meet both the emergency and 
+its Day-Ahead Market obligations.   
+By declining to engage with or respond to Vistra’s objections, and by instead citing 
+reasoning addressing a distinct issue, the Commission failed to “respond meaningfully to the 
+arguments raised before it.”43  And in doing so, the Commission also entirely failed to consider 
+several important aspects of the issues the June 2026 Order addressed.44
+B. PJM’s Tariff Revisions Do Not Satisfy the Directive to “Clarify” its 
+Interconnection Procedures 
+In accepting PJM’s tariff revisions, the Commission departed from its directive in the 
+December 2025 Order to “clarify” its interconnection procedures.  The Commission must 
+acknowledge and provide a reasoned explanation for a change in position.45  Because the 
+Commission failed to do so here, it erred in accepting PJM’s proposal. 
+The fundamental problem that the Commission ordered PJM to remedy in the December 
+2025 Order was the tariff’s failure to address “with sufficient clarity or consistency” the rates, 
+terms, and conditions of service applicable to interconnection customers serving Co-Located Load.  
+These defects left customers “unable to determine what steps they must take to effectuate Co-
+Location Arrangements,” leading to “uncertainty,” “disparate treatment,” and “no consistent 
+42 June 2026 Order, 195 FERC ¶ 61,209 at P 161. 
+43 New England Power Generators Ass’n, 881 F.3d at 210. 
+44 See State Farm, 463 U.S. at 43. 
+45 See FCC v. Fox Television Stations, Inc., 556 U.S. 502, 515-16 (2009).
+--- PAGE 15 ---
+-15- 
+understanding” of customers’ responsibilities.46  The Commission thus directed PJM to “clarify its 
+interconnection procedures and agreements to ensure that it is clear to both new and existing 
+Interconnection Customers how to interconnect in a Co-Location Arrangement.”47
+As discussed above, PJM’s tariff language governing reduction of CIRs does not satisfy 
+this directive.48  It continues to leave customers in the dark about how to calculate the CIR 
+reduction necessary to effectuate Co-Location Arrangements.  Indeed, this vague language risks 
+being read far too broadly, to require generators to include in their CIR reduction calculation even 
+the CIRs associated with a secondary, interruptible unit, an unjust and unreasonable and unduly 
+discriminatory result.49  In other words, the lack of clarity in the tariff will lead to precisely the 
+types of problems the December 2025 Order told PJM to fix: uncertainty, disparate treatment, and 
+inconsistent understandings of customers’ responsibilities.   
+Elsewhere in the June 2026 Order, the Commission rejected PJM’s proposed tariff 
+provisions when they contained insufficient detail to provide clarity to customers to ensure that 
+rates would be just and reasonable and not unduly discriminatory or preferential.50  But PJM’s 
+tariff provisions addressing CIR reductions suffer from the same defect.  The Commission 
+therefore erred in not directing PJM to address that defect with respect to CIRs.51
+46 December 2025 Order, 193 FERC ¶ 61,217 at P 159. 
+47 December 2025 Order, 193 FERC ¶ 61,217 at P 161. 
+48 See supra section II.A.  
+49 See supra section II. 
+50 See June 2026 Order, 195 FERC ¶ 61,209 at PP 283, 370; cf. id. P 280. 
+51 See Fox Television Stations, 556 U.S. at 515-16.
+--- PAGE 16 ---
+-16- 
+C. It Is Unjust and Unreasonable and Unduly Discriminatory to Require a 
+Secondary, Interruptible Unit to Delist its CIRs 
+The FPA requires the Commission to ensure that rates, terms, and conditions for 
+jurisdictional services are just and reasonable and not unduly discriminatory or preferential.52  The 
+Commission erred when it accepted PJM’s proposed tariff provisions because they violate that 
+foundational standard.  
+As Vistra has explained, requiring a secondary, interruptible unit serving Co-Located Load 
+only when not committed in PJM’s market (and only when the primary unit is not serving the Co-
+Located Load) to delist its CIRs to implement a Co-Location Arrangement is unjust and 
+unreasonable and unduly discriminatory or preferential, in violation of the FPA.  
+First, as explained above,53 it is unduly discriminatory for PJM to require secondary, 
+interruptible units to delist their CIRs.  The PJM tariff permits generators with non-firm, recallable 
+external sale commitments to serve as capacity resources.54  There is no principled distinction 
+between those resources and secondary, interruptible units that would justify prohibiting 
+secondary, interruptible units from also serving as capacity resources.  Both types of generators 
+are similarly situated with respect to their ability to fulfill all capacity resource obligations and 
+their ability to perform when needed.55  Subjecting them to different rules—specifically, allowing 
+one to maintain CIRs but requiring the other to delist them—is impermissible undue 
+discrimination. 
+52 16 U.S.C. §§ 824d(a), 824d(b), 824e(a). 
+53 See supra section II.B. 
+54 See Vistra Protest at 10-11 (citing PJM Interconnection, L.L.C., Mot. for Leave to Answer & Answer of PJM, 
+Docket No. EL25-49-000, at 6 (filed Mar. 9, 2026)). 
+55 See PJM Interconnection, L.L.C., 190 FERC ¶ 61,088 at P 47 (accepting PJM proposal to account for reliability 
+must-run resources as capacity resources because they “can reasonably be expected to perform, similar to capacity 
+resources”).
+--- PAGE 17 ---
+-17- 
+Second, as explained above,56 it is unjust and unreasonable to require a secondary, 
+interruptible unit serving Co-Located Load only when not committed in PJM’s market (and only 
+when the primary unit is not serving the Co-Located Load) to delist its CIRs to implement a Co-
+Location Arrangement.  This unit would be fully capable of meeting all of the performance 
+requirements applicable to a capacity resource—including both the emergency performance 
+requirement and the Day-Ahead Market must-offer obligation.  Requiring it to delist its CIRs 
+would deprive the PJM capacity market of available capacity at a time when PJM has no capacity 
+to spare.  Doing so would deprive the generation resource owner of its ability to provide capacity 
+to PJM—and harm resource adequacy in PJM—for no conceivable reason, resulting in unjust and 
+unreasonable rates.
+IV.
+Conclusion 
+At a time when PJM’s capacity market is increasingly tight on supply, demand is rising 
+rapidly, and PJM and the Commission face an affordability imperative, there is no reason to ignore 
+the valuable contributions that secondary, interruptible units can make to resource adequacy and 
+to affordability.  Prohibiting these resources from supplying capacity to the PJM grid, when there 
+is no technical or commercial limit on their ability to do so, will force PJM to procure unnecessary 
+capacity.  
+The Commission can readily prevent that outcome by granting clarification on the narrow 
+issue Vistra presents.  Thus, the Commission can and should grant clarification that PJM’s tariff 
+should not be read to require an Interconnection Customer to delist the CIRs of a unit that provides 
+56 See supra section II.B.
+--- PAGE 18 ---
+-18- 
+secondary, interruptible service to a Co-Located Load only when it is not committed in PJM’s 
+energy market. 
+In the alternative, the Commission should grant rehearing of its acceptance of PJM’s tariff 
+revisions regarding CIR reductions in the June 2026 Order.  For the reasons discussed above, 
+requiring such a unit to delist its CIRs would be unjust and unreasonable and unduly 
+discriminatory.  Accordingly, the Commission should grant rehearing and direct PJM to revise its 
+tariff to specify that a secondary, interruptible unit serving a Co-Located Load only when not 
+committed in PJM’s markets is not required to delist its CIRs to implement a Co-Location 
+Arrangement. 
+Respectfully submitted, 
+/s/ J. Arnold Quinn
+J. Arnold Quinn
+SVP of Regulatory Policy 
+Andrew Weinstein
+Vice President, FERC Market Policy
+Vistra Corp.
+325 7th Street NW
+Suite 520
+Washington, DC 20004
+arnie.quinn@vistracorp.com 
+andrew.weinstein@vistracorp.com
+________________
+Nicholas M. Gladd
+Sarah Greenberg
+Rachel Neuburger
+Wilson Sonsini Goodrich & Rosati
+1700 K Street NW
+Fifth Floor
+Washington, DC 20006
+(617) 598-7871
+ngladd@wsgr.com
+sgreenberg@wsgr.com
+rneuburger@wsgr.com
+Counsel for Vistra Corp.
+Dated:  July 20, 2026
+--- PAGE 19 ---
+CERTIFICATE OF SERVICE
+I hereby certify that I have this day served the foregoing document upon each person 
+designated on the official service lists compiled by the Secretary of the Commission in these 
+proceedings. 
+Dated:  July 20, 2026 
+Washington, D.C. 
+/s/ Rachel Neuburger 
+Wilson Sonsini Goodrich & Rosati 
+1700 K Street NW 
+Fifth Floor 
+Washington, DC 20006

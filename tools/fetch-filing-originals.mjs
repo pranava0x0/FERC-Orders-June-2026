@@ -27,19 +27,20 @@ try {
           return a.getAttribute('aria-disabled')==='true'||a.hasAttribute('disabled')||a.classList.contains('disabled')||/\b(?:CEII|privileged|non.public|restricted)\b/i.test(row);
         });
         if(restricted){files.push({label,status:"restricted or disabled"});continue;}
-        if (!/\.(pdf|docx)$/i.test(label)) { files.push({label,status:"other format"}); continue; }
+        // eLibrary e-comments are plain text files; they are filings like any other.
+        if (!/\.(pdf|docx|txt)$/i.test(label)) { files.push({label,status:"other format"}); continue; }
         const file = String(i+1).padStart(3,"0") + "-" + label.replace(/[^a-zA-Z0-9._-]+/g,"_");
         const temp = join(out, file + ".part");
         try {
           const [dl] = await Promise.all([page.waitForEvent("download",{timeout:45000}),links.nth(i).click()]);
           await dl.saveAs(temp);
-          const bytes = await readFile(temp), pdf = /\.pdf$/i.test(file);
-          if (!(pdf ? bytes.subarray(0,1024).includes(Buffer.from("%PDF-")) : bytes.subarray(0,2).toString()==="PK")) throw Error("file signature does not match extension");
+          const bytes = await readFile(temp), pdf = /\.pdf$/i.test(file), txt = /\.txt$/i.test(file);
+          if (!(pdf ? bytes.subarray(0,1024).includes(Buffer.from("%PDF-")) : txt ? !bytes.subarray(0,4096).includes(0) : bytes.subarray(0,2).toString()==="PK")) throw Error("file signature does not match extension");
           const hash = createHash("sha256").update(bytes).digest("hex");
           await rename(temp,join(out,file)); files.push({label,file,bytes:bytes.length,sha256:hash,status:"captured"});
         } catch(e) { await rm(temp,{force:true}); files.push({label,status:"failed",reason:String(e)});process.exitCode=1; }
       }
-      if (!files.some(f=>f.status==="captured")) throw Error("no PDF or DOCX captured");
+      if (!files.some(f=>f.status==="captured")) throw Error("no PDF, DOCX or text file captured");
     } catch(e) {files.push({status:"failed",reason:String(e)});process.exitCode=1;}
     finally {await page.close(); await writeFile(join(out,"inventory.json"),JSON.stringify({accession:acc,url,files},null,2)+"\n");}
     console.log(acc,files.filter(f=>f.status==="captured").length,"captured of",files.length,"listed");

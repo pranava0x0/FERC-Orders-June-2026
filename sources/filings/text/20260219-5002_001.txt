@@ -1,0 +1,429 @@
+--- PAGE 1 ---
+1 
+ 
+UNITED STATES OF AMERICA 
+BEFORE THE 
+FEDERAL ENERGY REGULATORY COMMISSION 
+ 
+ 
+) 
+PJM Interconnection, L.L.C., et al. 
+) 
+Docket No. EL25-49-000 
+ 
+)  
+ 
+Large Loads Co-Located at Generating 
+) 
+Docket No. AD24-11-000 
+Facilities 
+) 
+ 
+) 
+Constellation Energy Generation, LLC 
+) 
+Docket No. EL25-20-000 
+ 
+) 
+v. 
+) 
+ 
+) 
+PJM Interconnection, L.L.C. 
+) 
+(Consolidated) 
+ 
+) 
+ 
+ 
+MOTION FOR LEAVE TO ANSWER AND ANSWER OF THE PENNSYLVANIA 
+OFFICE OF CONSUMER ADVOCATE 
+ 
+ 
+The Pennsylvania Office of Consumer Advocate (PA OCA) moves for leave to answer 
+(Motion) and submits this Answer1 in support of the PJM Industrial Customer Coalition and the 
+Industrial Energy Consumers of America’s (collectively, ICC) Request for Clarification or 
+Rehearing (ICC’s Request) filed on January 20, 2026, to the Commission’s December 18 Order 
+issued in the above-captioned docket (Order). Good cause exists for the Commission to accept this 
+Answer because it contributes an end-use consumer voice2 to the Commission’s decision-making 
+to clarify the Order according to its consumer-protective intent regarding behind-the-meter 
+ 
+1 18 C.F.R. §§ 385.212 and 385.213 (listing Commission rules for Motions and Answers; Section 385.212(a)(2) 
+provides that “[a]n answer may not be made to . . . a request for rehearing, unless otherwise ordered by the 
+decisional authority.”); Alaska Gasline Dev. Corp., 171 FERC ¶ 61,134, at P 7 (2020) (accepting answers that 
+“clarify the concerns raised and provide information that has assisted in [the Commission’s] decision making”). 
+2 See Xcel Energy Services, Inc. v. FERC, 815 F.3d 947, 952 (D.C. Cir. 2016) (“It is long-established that the ‘primary 
+aim [of the FPA] is the protection of consumers from excessive rates and charges.’” (quoting Mun. Light Bds. Of 
+Reading & Wakefield v. FPC, 450 F.2d 1341, 1348 (D.C. Cir. 1971))); Nat’l Ass’n of Regulatory Util. Comm’rs v. 
+FERC, 964 F.3d 1177, 1186 (D.C. Cir. 2020) (noting FPA’s “‘core purposes’ of ‘curb[ing] prices and enhanc[ing] 
+reliability in the wholesale electricity market’” (quoting FERC v. Elec. Power Supply Ass’n, 577 U.S. 260, 273 
+(2016))).
+--- PAGE 2 ---
+2 
+ 
+generation (BTMG) and co-located load.3 In support of the ICC’s Request, because the proceeding 
+did not develop a legally sufficient record on BTMG, FERC and PJM should approach BTMG by 
+continuing to focus where FERC and PJM have been focusing: on “the scale of large data centers” 
+and “very large loads like data centers” trying to evade or manipulate the Co-Location rules in 
+ways that create a “potential transmission and resource adequacy planning problem” and “raise 
+cost shifting concerns.”4  
+I. 
+Summary of Answer to the ICC’s Request 
+For context, in Pennsylvania, certain existing industrial customers have invested 
+significantly in combined heat and power (CHP) cogeneration facilities that support their 
+manufacturing processes and offset their electricity consumption. The cogeneration facilities 
+generate combined electrical and thermal energy. Thermal energy, or heat, is used in the 
+manufacturing process and the electricity byproduct is used to power their business. These CHP 
+cogeneration facilities are BTMG, are not used in PJM’s energy or capacity markets, and do not 
+use the PJM transmission system because when the generation trips offline, the load connected to 
+the BTMG (or almost all of the load) automatically trips offline. Such a configuration ensures that 
+the load with BTMG does not materially “lean” on PJM.5 
+In addressing PJM’s BTMG rule, FERC should adhere to the jurisdictional limits expressed 
+in the Order to preserve exclusive state retail authority and protect consumers from cost shifts, 
+because doing so will improve the Order’s legal durability and effectuate its purpose. Furthermore, 
+FERC should evaluate whether and how to set an appropriate threshold(s) with continued attention 
+to the distinction between unique new large loads—primarily data center large loads—and existing 
+ 
+3 PJM Interconnection, L.L.C., 193 FERC ¶ 61,217, at P 186 (2025) (December 18 Order) (expressing consumer-
+protective intent).  
+4 Id. (quoting PJM March 24 Response at 13, 36). 
+5 See ICC’s Request, at pp. 28, 32 (identifying potential effects on Combined Heat and Power Units).
+--- PAGE 3 ---
+3 
+ 
+BTMG facilities, like Pennsylvania industrial consumers with CHP cogeneration facilities, that 
+FERC explicitly sought to protect through the threshold. Alternatively, a qualitative distinction 
+based on reliability implications can be used to separate existing BTMG facilities within PJM from 
+data center large loads because the existing CHP cogeneration facilities in Pennsylvania, for 
+example, do not use PJM’s energy or capacity markets and do not use the PJM transmission system, 
+and these particular qualities could be a way to ensure appropriate treatment of these existing CHG 
+cogeneration facilities.  Throughout this proceeding, the Commission should continue its vital 
+focus on addressing new data center large load configurations that shift costs and create 
+transmission and resource adequacy planning problems. 
+II. 
+Background on the Order’s BTMG Provisions 
+In the Order, the Commission found PJM’s existing BTMG rules to be no longer just and 
+reasonable because “loads with BTMG are not fully accounted for in resource adequacy planning,” 
+which creates a “potential transmission and resource adequacy planning problem” and “raise[s] 
+cost shifting concerns.”6 FERC reasoned that the existing rules may present “both reliability and 
+resource adequacy risks because PJM, per its Tariff, is obligated to serve transmission customers 
+using BTMG but does not consider such customers in transmission and resource adequacy 
+planning.”7 On that basis, FERC directed “PJM to revise its BTMG rules.”8  
+In recognition of “concerns raised in the record about the potential impacts on existing 
+BTMG customers of the Commission changing PJM’s BTMG rules, however, [the Commission] 
+direct[ed] PJM to maintain the current BTMG rules for customers that fall below a new [megawatt] 
+[(MW)] materiality threshold for the amount of load at a particular electrical location that Network 
+ 
+6 December 18 Order, at PP 179, 186. 
+7 Id. at 179. 
+8 Id.
+--- PAGE 4 ---
+4 
+ 
+Customers may net using BTMG.”9 Furthermore, FERC directed  “PJM to implement a two-part 
+transition process for retail BTMG . . . including: (1) the establishment of a three-year transition 
+period; and (2) the ability to grandfather certain entities with existing contracts . . . .”10 
+In making these decisions, FERC noted that “PJM explains that the BTMG rules were 
+‘conceived for, and [have] been implemented for, substantially smaller loads (like a warehouse 
+with solar panels) and not on the scale of large data centers.’”11 Moreover, FERC identified that 
+“PJM’s existing BTMG rules do not limit the amount of qualifying load that a Network Customer 
+may net by using BTMG and do not provide any protections against this potential transmission 
+and resource adequacy planning problem or against the costs of maintaining sufficient resources 
+to serve these loads being shifted onto other customers.”12 For these reasons, FERC determined 
+that large load BTMG arrangements violate cost causation principles because “large loads 
+configured in a BTMG arrangement with significant generation will raise cost shifting concerns 
+compared to loads pursuing smaller amounts of netting.”13 FERC applied this finding that the PJM 
+Tariff’s BTMG provisions are unjust and unreasonable “to all Network Load.”14 
+In directing PJM’s Tariff revisions, FERC carefully noted that “not all loads using BTMG 
+are large loads that create the reliability and resource adequacy risks” that caused FERC’s finding.15 
+FERC posited that electricity output in MW is an essential variable in distinguishing BTMG that 
+creates reliability and resource adequacy risks from BTMG that does not. On this basis, FERC 
+directed PJM “to propose a new MW threshold for the amount of load at a particular electrical 
+ 
+9 Id. 
+10 Id. 
+11 December 18 Order, at P 186. 
+12 Id. at P 186 (citing PJM, Intra-PJM Tariffs, OATT, § III.34.2 Netting of Behind the Meter Generation (0.0.0)). 
+13 Id. 
+14 Id. 
+15 Id. at P 221.
+--- PAGE 5 ---
+5 
+ 
+location that Network Customers may net by using BTMG.”16 The threshold seeks to “reduce the 
+reliability and resource adequacy risks” from large loads identified in the Order “while also 
+allowing for Network Customers to reduce their transmission charges in a transparent, not unduly 
+discriminatory fashion.”17 
+FERC’s BTMG determination concerns only retail BTMG, not non-retail BTMG.18 “PJM 
+defines Non-Retail BTMG as BTMG that is ‘used by municipal electric systems, electric 
+cooperatives, or electric distribution companies to serve load.’”19 FERC defined Co-Located Load, 
+the true focus of the Order, as “a configuration that refers to end-use customer load that is 
+physically connected to the facilities of an existing or planned Customer Facility on the 
+Interconnection Customer’s side of the Point of Interconnection to the PJM Transmission 
+System.”20 In adopting this definition, FERC limited the Order’s jurisdictional scope to 
+“jurisdiction to oversee the interconnection of generating facilities, including the generators that 
+are used to serve Co-Located Load, to the interstate transmission system, as well as jurisdiction 
+over the provision of transmission service in interstate commerce used by an Eligible Customer to 
+serve Co-Located Load.”21 FERC framed this discussion in terms of its statutorily limited 
+jurisdictional role in the federalist system,22 highlighting “that the FPA’s jurisdictional divide ‘was 
+ 
+16 December 18 Order, at P 221. 
+17 Id. 
+18 Id. at P 222. 
+19 Id. at P 222 n. 456 (quoting PJM, Intra-PJM Tariffs, OATT, § I.1 Definitions – L-M-N (51.0.1) (defining Non-
+Retail BTMG)), 
+20 Id. at P 164 (citation omitted). “PJM defines Interconnection Customer as a Generation Interconnection Customer 
+and/or a Transmission Interconnection Customer.” Id. at P 2 n.5 (citing PJM, Intra-PJM Tariffs, OATT, § I.1 
+Definitions – I – J - K (15.0.0)). 
+21 December 18 Order, at P 170. 
+22 Id. at P 166.
+--- PAGE 6 ---
+6 
+ 
+drawn with meticulous regard for the continued exercise of state power, not to handicap or dilute 
+it in any way.’”23 
+III. 
+FERC Should Adhere to the Jurisdictional Limits Expressed in the Order to Preserve 
+Exclusive State Retail Authority and Protect Consumers from Cost Shifts, Because Doing So 
+Will Improve the Order’s Legal Durability and Effectuate Its Purpose. 
+ 
+The ICC’s Request correctly notes that “the Order does not sufficiently explain the legal 
+basis for asserting jurisdiction over retail customers with [BTMG] that is not otherwise used in 
+PJM’s energy or capacity markets and does not use the PJM transmission system.”24 In accordance 
+with FERC’s jurisdictional analysis in the Order, the ICC identifies that “any regulations the 
+Commission fashions must be based on its statutory authority over interstate transmission and 
+wholesale sales.”25 
+In evaluating PJM’s tariff revisions, FERC should ensure that PJM has clarified exactly 
+how it interprets the definitions of BTMG and Co-Located Load, especially in relation to 
+jurisdiction. The Order “clarif[ied] that, consistent with the definition in 159, provided above, 
+supra P 164, BTMG is not Co-Located Load.”26 But the exact relationship between them remains 
+unclear. 
+FERC should ensure that PJM’s Tariff reaffirms and clearly demarcates distinctions 
+between (1) retail BTMG, (2) retail BTMG that directly affects interstate transmission or interstate 
+wholesale sales but retains an exclusively state-jurisdictional retail component, and (3) the FERC-
+jurisdictional aspects of Co-Located Load configurations—which FERC carefully explained are 
+ 
+23 Id. (quoting Oneok, Inc. v. Learjet, Inc., 575 U.S. 373, 384-85 (2015) (discussing the analogous provisions in the 
+Natural Gas Act) (quoting Panhandle E. Pipe Line Co. v. Pub. Serv. Comm’n of Ind., 332 U.S. 507, 517-18 (1947))). 
+24 ICC Request, at p. 21. 
+25 Compare ICC Request at p. 39 with December 18 Order, at P 166 (identifying FERC’s statutory limits). 
+26 December 18 Order, at P 221 n.453.
+--- PAGE 7 ---
+7 
+ 
+its wholesale generator interconnection and interstate transmission aspects. These are three distinct 
+categories. 
+(1) Retail BTMG under PJM’s existing Tariff is, by definition, exclusively state 
+jurisdictional and therefore outside the scope of federal jurisdiction, including outside FERC’s 
+jurisdiction in the Co-Location Order.27 
+(2) Assuming that FERC has asserted jurisdiction over a narrow class of retail BTMG 
+related to “very large loads like data centers,”28 or some interstate transmission aspect of a larger 
+class of retail BTMG, that jurisdiction would be valid only to the extent that it preserves states’ 
+exclusive jurisdiction over retail sales and all other reserved state authority under the Federal 
+Power Act.29  An overly broad reading of FERC’s assertion would appear to extend beyond the 
+record and the scope of the proceeding on Co-Location. Because the proceeding did not develop a 
+legally sufficient record on BTMG, PJM should continue to focus where PJM and FERC have 
+been focusing: on “the scale of large data centers” and “very large loads like data centers” that 
+“raise cost shifting concerns” by trying to evade or manipulate the Co-Location rules.30 
+(3) FERC defined Co-Located Load as “a configuration that refers to end-use customer 
+load that is physically connected to the facilities of an existing or planned Customer Facility on 
+the Interconnection Customer’s side of the Point of Interconnection to the PJM Transmission 
+System.”31 In adopting this definition, FERC limited the Order’s jurisdictional scope to 
+“jurisdiction to oversee the interconnection of generating facilities, including the generators that 
+ 
+27 See ICC Request at pp. 40-42 (noting potential jurisdictional confusion); PJM Tariff, Section 1 (Definitions). 
+28 December 18 Order, at P 186 (citation omitted). 
+29 Id. at PP 165-170; see also Interconnection of Large Loads to the Interstate Transmission System, Joint Comments 
+of the Pennsylvania Office of Consumer Advocate and Delaware Division of the Public Advocate, at pp. 5-16, Docket 
+No. RM26-4-000 (November 21, 2025) (commenting on large load jurisdiction); Tri-State Generation and 
+Transmission Ass’n, Inc., 193 FERC ¶ 61,070, at PP 45-50 (2025) (discussing jurisdiction and states’ exclusive retail 
+authority). 
+30 December 18 Order, at P 186 (citations omitted). 
+31 Id. at P 164 (citation omitted).
+--- PAGE 8 ---
+8 
+ 
+are used to serve Co-Located Load, to the interstate transmission system, as well as jurisdiction 
+over the provision of transmission service in interstate commerce used by an Eligible Customer to 
+serve Co-Located Load.”32 FERC should ensure that PJM clarifies which, if any, configurations 
+under this definition may implement BTMG as a source of generation distinct from the 
+Interconnection Customer, with a continued focus on “the scale of large data centers” and “very 
+large loads like data centers” that create “potential transmission and resource adequacy planning 
+problem” and “raise cost shifting concerns.”33 
+IV. 
+FERC Should Evaluate Whether and How to Set a MW Threshold(s) with Continued 
+Attention to the Distinction Between New Large Loads—Primarily data center large loads—
+and Existing BTMG Facilities. 
+ 
+In determining the threshold for load being served by BTMG, FERC should keep in mind 
+its choice to highlight PJM’s comments expressing concern specifically about “the scale of large 
+data centers.”34 The Commission remarked that “PJM has persuasively explained the problems that 
+could occur if Network Customers with large loads were allowed to use the existing BTMG rules 
+in the Tariff. For example, PJM explains that ‘[a]llowing very large loads like data centers to net 
+is problematic because loads in this configuration do not carry reserves.’”35 
+PJM did not support “PJM option 3,” a configuration in which Network Load may Co-
+Locate and use BTMG to engage in netting, because “historically, BTMG has supported relatively 
+small loads, not on the scale of large data centers.”36  Furthermore, PJM commented that “charging 
+load for its net use of the grid under the BTMG rules may not capture the costs caused by co-
+ 
+32 Id. at P 170. 
+33 Id. at P 186 (citations omitted). 
+34 Id. at P 186 (quoting PJM March 24 Response at 13). 
+35 December 18 Order, at P 186 (citations omitted). 
+36 Id. at P 16 (citation omitted).
+--- PAGE 9 ---
+9 
+ 
+located data center arrangements because such arrangements could avoid all costs by netting to 
+zero if the entire data center load is supplied by the associated generator.”37 
+FERC framed its discussion of BTMG in these terms, sharing PJM’s clear focus on “the 
+scale of large data centers.”38 FERC stated “that, while the order is limited to Co-Located Loads, 
+this finding [that PJM’s existing BTMG rules may lead to both reliability and resource adequacy 
+risks because PJM, per its Tariff, is obligated to serve transmission customers using BTMG but 
+does not consider such customers in transmission and resource adequacy planning] applies to all 
+Network Load.”39 But an overly broad reading of this assertion would appear to extend beyond the 
+record and the scope of the proceeding on Co-Location. Because the proceeding has not yet 
+developed a legally sufficient record on BTMG, FERC and PJM should approach the threshold by 
+continuing to focus where FERC and PJM have been focusing: on “the scale of large data centers” 
+and “very large loads like data centers” that “raise cost shifting concerns” and create “potential 
+transmission and resource adequacy planning problem[s].”40 
+Moreover, due to the clear focus on new large load configurations—primarily new large 
+data center large loads—FERC and PJM should consider whether the load threshold should be 
+different and higher for existing BTMG configurations and lower for new BTMG configurations. 
+While this would be correctly categorized as “discriminatory,” the Federal Power Act only 
+prohibits a “rate, charge, classification, rule, regulation, practice, or contract” that is “unduly 
+discriminatory.”41 The best, most natural reading of the plain text is that Congress, by modifying 
+“discriminatory” with the word “unduly,” acknowledged the need to duly discriminate when 
+ 
+37 Id. 
+38 Id. at P 186 (quoting PJM March 24 Response at 13). 
+39 Id. 
+40 December 18 Order, at P 186. 
+41 16 U.S.C. § 824e(a).
+--- PAGE 10 ---
+10 
+ 
+appropriate.42 New large loads—primarily data center large loads—have unique effects on the grid 
+at a unique time for the PJM market that requires due discrimination to ensure that their integration 
+does harm consumers and other grid users.43 
+The White House National Energy Dominance Council and a bipartisan group of all 
+thirteen Governors of the PJM states have jointly expressed that “today’s data centers [are] 
+unique.”44 Specifically, they jointly asserted that the “size and the risks they pose to resource 
+adequacy make today’s data centers unique.”45 Moreover, the PJM Independent Market Monitor 
+(IMM) has asserted that “the PJM Capacity Market is currently actually significantly short as a 
+result of data center load.”46 These statements from the White House, all thirteen bipartisan PJM 
+governors, the IMM, and consumer advocates support the notion that “cost shifting concerns” and 
+“potential transmission and resource adequacy planning problem[s]” due to the unique challenges 
+associated with large data center loads justify treating those challenges on the unique terms that 
+they pose to the overall system.47 
+FERC, in the Order, made such a due discrimination about large data center loads. Because 
+of the “concerns raised in the record about the potential impacts on existing BTMG customers of 
+the Commission changing PJM’s BTMG rules, . . . [the Commission] direct[ed] PJM to maintain 
+the current BTMG rules for customers that fall below a new MW materiality threshold for the 
+ 
+42 Cf. ANTONIN SCALIA & BRYAN A. GARNER, READING LAW: THE INTERPRETATION OF LEGAL TEXTS 107-08 (2012) 
+(explaining expressio unius est exclusio alterius, the negative-implication canon of statutory interpretation). 
+43 Interconnection of Large Loads to the Interstate Transmission System, Reply Comments of the Pennsylvania Office 
+of Consumer Advocate, Delaware Division of the Public Advocate, and People of the State of Illinois by the Office of 
+the Illinois Attorney General, at pp. 8-11, Docket No. RM26-4-000 (Dec. 5, 2025). 
+44 Statement of Principles Regarding PJM, (Jan. 16, 2026), https://www.energy.gov/documents/statement-principles-
+regarding-pjm. 
+45 Id. 
+46 IMM Answer to CEG, at p. 6 (first citing Analysis of the 2026/2027 RPM Base Residual Auction–Part A, 
+MONITORING ANALYTICS (Oct., 1, 2025), https://www.monitoringanalytics.com/reports/Reports/2025.shtml; and then 
+citing Analysis of the 2027/2028 RPM Base Residual Auction – Part A, MONITORING ANALYTICS (Jan. 5, 2026), 
+https://www.monitoringanalytics.com/reports/Reports/2026.shtml). 
+47 See December 18 Order, at P 186. As an aside, the Commission should regard with serious skepticism efforts to 
+remove existing capacity from the PJM market to serve new data centers. See IMM Answer to CEG, at p. 6.
+--- PAGE 11 ---
+11 
+ 
+amount of load at a particular electrical location that Network Customers may net using BTMG.”48 
+The threshold’s primary purpose is to protect “existing BTMG customers.”49 
+FERC should continue to effectuate this intent by ensuring that new rules for BTMG due 
+to this unique situation do not unjustly harm other grid users and consumers. For example, BTMG 
+units that are CHP cogeneration facilities are longstanding facilities whose operations may be 
+severely disrupted if required to fundamentally change how they supply and procure electricity. 
+Furthermore, some existing BTMGs that have CHP cogeneration facilities are configured such that 
+when the generation trips offline, the load connected to the BTMG (or almost all of the load) 
+automatically trips offline. Such a configuration ensures that the load with BTMG does not 
+materially “lean” on PJM. 50 Additionally, a Qualifying Facility (QF) under the Public Utility 
+Regulatory Policies Act of 1978 (PURPA) occupies particular statutory and regulatory terrain that 
+may merit distinct consideration.51 For CHP cogeneration facilities and QFs, especially, FERC 
+should ensure that PJM’s selection of threshold(s) is accompanied by analysis regarding the 
+threshold’s reliability implications to PJM from disrupting these existing arrangements. Indeed, a 
+qualitative distinction based on reliability implications can be used to separate existing BTMG 
+facilities within PJM from data center large loads because the existing CHP cogeneration facilities 
+in Pennsylvania, for example, do not use PJM’s energy or capacity markets and do not use the PJM 
+transmission system, and these particular qualities could be a way to ensure appropriate treatment 
+of these existing CHG cogeneration facilities.   
+And in general, FERC should ensure that PJM accompanies its selection of threshold(s) 
+with analyses regarding the thresholds’ reliability—including operational reliability and resource 
+ 
+48 Id. 
+49 Id. 
+50 See ICC Request, at pp. 28, 32 (identifying potential effects on Combined Heat and Power Units). 
+51 See ICC Request, at pp. 5-6, 10-13 (addressing the unique situation of PURPA QFs).
+--- PAGE 12 ---
+12 
+ 
+adequacy—implications to PJM and the number of BTMG facilities that are above the 
+threshold(s). This information would help stakeholders to assess the threshold(s) and help to avoid 
+extensive interconnection studies and other interference with existing BTMG that offer little 
+improvement to the Order’s goals of clarifying permissible Co-Located Load configurations and 
+addressing “cost shifting concerns” and “potential transmission and resource adequacy planning 
+problem[s]” due to large loads that should configure as Co-Located Loads manipulating BTMG to 
+avoid paying their fair share of overall system costs.52 
+V. 
+Conclusion 
+The PA OCA respectfully requests that the Commission accept this Answer in support of 
+the ICC’s Request because it should assist the Commission in determining appropriate, end-use-
+consumer-protective BTMG rules in PJM. 
+ 
+Counsel for: 
+Darryl Lawrence 
+Consumer Advocate 
+ 
+Pennsylvania Office of Consumer Advocate 
+555 Walnut Street 
+5th Floor, Forum Place 
+Harrisburg, PA 17101-1923 
+717-783-5048 
+ 
+Dated: February 18, 2026 
+Respectfully submitted, 
+ 
+ 
+/s/ Josiah B. Harmar 
+  
+Josiah Harmar 
+Assistant Consumer Advocate 
+PA Attorney ID # 338426 
+JHarmar@paoca.org 
+ 
+Melanie Joy El Atieh 
+Deputy Consumer Advocate  
+PA Attorney ID # 209323 
+MElAtieh@paoca.org 
+ 
+ 
+ 
+ 
+ 
+ 
+52 See December 18 Order, at P 186.
+--- PAGE 13 ---
+13 
+ 
+CERTIFICATE OF SERVICE 
+I certify that today I served this document on this proceeding’s official service list.  
+Harrisburg, Pennsylvania; February 18, 2026. 
+ 
+ 
+/s/ Josiah B. Harmar 
+  
+Josiah Harmar 
+Assistant Consumer Advocate 
+Pennsylvania Office of Consumer Advocate 
+PA Attorney ID # 338426 
+JHarmar@paoca.org

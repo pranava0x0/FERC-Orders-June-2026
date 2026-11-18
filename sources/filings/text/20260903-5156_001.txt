@@ -1,0 +1,597 @@
+--- PAGE 1 ---
+UNITED STATES OF AMERICA 
+BEFORE THE  
+FEDERAL ENERGY REGULATORY COMMISSION 
+PJM Interconnection, L.L.C. 
+)
+Docket No. ER26-3515-000
+ 
+COMMENTS AND LIMITED PROTEST OF THE NRG COMPANIES 
+ 
+Pursuant to Rule 211 of the Federal Energy Regulatory Commission’s (“Commission”) 
+Rules of Practice and Procedures,1 the NRG Companies2 (“NRG”) respectfully submit these 
+comments and limited protest in response to PJM Interconnection, L.L.C.’s (“PJM”) August 13, 
+2026, filing proposing to establish interim resource adequacy service (“IRAS”) and a large load 
+registry to address system reliability (“PJM IRAS Filing” or “IRAS Filing”). 
+In general, NRG supports PJM’s efforts to provide certainty and clarity to market 
+participants and New Large Loads3 that do not bring new supply into the PJM market. NRG also 
+supports PJM’s efforts to articulate rules pertaining to the curtailment of New Large Loads that 
+ 
+1 18 C.F.R. § 385.211 (2026).  
+2 The NRG Companies include the following subsidiaries of NRG Energy, Inc. (“NRG”): 
+NRG Business Marketing LLC, Aspen Gen Funding, LLC, Direct Energy Business, LLC, 
+Doswell, LLC, Energy Plus Holdings LLC, Enerwise Global Technologies, LLC d/b/a CPower, 
+Green Mountain Energy Company, Helix Ironwood, LLC, Independence Energy Group LLC, 
+LSP University Park, LLC, Midwest Generation LLC, NRG Curtailment Solutions, Inc., Reliant 
+Energy Northeast LLC, Riverside Generating Company, LLC, Stream Energy Pennsylvania, 
+LLC, University Park Energy, LLC and XOOM Energy, LLC. The NRG Companies have 
+separately moved to intervene in this proceeding. See (doc-less) Motion to Intervene of NRG 
+Business Marketing LLC, et al., Docket No. ER26-3515-000 (filed Aug. 31, 2026). 
+3 Terms utilized herein that are not otherwise defined have the meaning ascribed by the 
+PJM IRAS Filing’s proposed definitions or the PJM Tariff.
+--- PAGE 2 ---
+2 
+do not bring new supply where such customers are curtailed before existing pre-emergency and 
+emergency customers. 
+However, PJM’s proposal contains elements that are unjust, unreasonable, unduly 
+discriminatory, and must be revised. These consist of (i) PJM’s permanent exclusion of every 
+Demand Resource4 that has ever supported a capacity commitment in any prior Delivery Year 
+and (ii) the requirement for new capacity serving New Large Loads to bid into the capacity 
+market as a price-taker for 10 years without certain necessary protections for asset owners. 
+Finally, there are a number of clarifications NRG seeks related to the IRAS requirements around 
+Demand Resources.  
+ 
+I. 
+ABOUT NRG 
+Through various subsidiaries, NRG owns or controls over 9 GW of generation in PJM as 
+well as generation in adjacent markets that can be imported into the PJM market. Additionally, 
+NRG subsidiaries provide retail power throughout PJM and two NRG subsidiaries provide 
+Demand Resources in PJM. Thus, NRG actively participates in the organized markets 
+administered by PJM, including the PJM capacity market.  
+ 
+II. 
+BACKGROUND 
+The PJM IRAS Filing creates a new supplemental capacity product through which New 
+Large Loads may provide a load reduction service during periods of insufficient capacity instead 
+ 
+4 This limited protest refers to Demand Resources and Distributed Energy Resources 
+(“DER”) Capacity Aggregation Resources, as the terms are defined by the PJM OATT, as 
+“Demand Resources” to improve readability, but is not intended to refer only to Demand 
+Resources with the term unless the context requires otherwise.
+--- PAGE 3 ---
+3 
+of participating in the Base Residual Auction (“BRA”). IRAS resources will be issued 
+curtailment instructions prior to PJM calling on Pre-Emergency Load Management. For 
+providing the reduction, PJM proposes an IRAS rate equal to 50% of the Non-Performance 
+Charge Rate, with flexibility for Electric Distributors and states to reduce the rate or for eligible 
+New Large Loads to waive compensation entirely.  
+Instead of participating as an IRAS resource, New Large Loads may instead meet their 
+capacity obligations through a Bring Your Own New Capacity (“BYONC”) option. BYONC is 
+defined as megawatts of new Unforced Capacity (“UCAP”) that meet the eligibility criteria set 
+forth in Tariff, Attachment DD-4, section VI.5 A single physical resource may support multiple 
+BYONC arrangements with different New Large Loads, and a New Large Load may enter into 
+BYONC arrangements with discrete resources.6 BYONC must be supported by: (1) a new-build 
+generation resource (including resources obtaining Capacity Interconnection Rights transferred 
+from deactivated resources); (2) incremental capacity from an uprate; (3) incremental capacity 
+from Surplus Interconnection Service; (4) repowering of a deactivated resource that deactivated 
+prior to April 10, 2026; or (5) incremental capacity from a fuel-type change.7 BYONC may also 
+be supported by Planned Demand Resources or Planned DER Capacity Aggregation 
+Resources. However, PJM has proposed to only permit BYONC to be supported by Demand 
+Resources if those resources “did not previously support a capacity commitment or reduce the 
+amount of capacity needed to meet the PJM Reliability Requirement … for or prior to the 
+ 
+5 Proposed Tariff, Definitions (“Bring Your Own New Capacity”).  
+6 Proposed Tariff, Attach. DD-4, section VII(f). 
+7 Proposed Tariff, Attach. DD-4, section VI(b)(i).
+--- PAGE 4 ---
+4 
+2026/27 Delivery Year” 8 – thus permanently excluding every Demand Resource that has ever 
+supported a capacity commitment in any prior Delivery Year.  
+Each BYONC must participate as a price taker ($0/MW offer) in BRAs for 10 
+consecutive Delivery Years, starting with the first Delivery Year of the arrangement. BYONC is 
+also subject to the capacity must-offer requirement and is prohibited from seeking an exception 
+to provide an external sale during the 10-year period. BYONC supported by a Demand Resource 
+or DER Capacity Aggregation Resource also has a 10-year commitment, but the seller may 
+replace its BYONC obligation with a different qualifying resource, subject to conditions. This 
+provides a “bridge to power” allowing near-term demand-supported capacity to be eventually 
+replaced with new generation. Additionally, beginning with the 2029/30 Delivery Year, PJM 
+proposes to exclude from the VRR Curve the MW of New Large Loads that have not entered 
+into BYONC arrangements and do not have allocated capacity (IRAS resources), above and 
+beyond the MW included in the 2028/29 Delivery Year load forecast.  
+BYONC BRA participation requirements (including the price-taker obligation) are 
+extinguished if IRAS is not needed for three consecutive Delivery Years. At that point, BYONC 
+resources become regular Capacity Resources, though still subject to the general capacity must-
+offer requirement. If the PJM Region meets its reliability requirements for three consecutive 
+Delivery Years and then re-enters shortage, the “new” benchmark resets. Demand-side capacity 
+would then be measured against registration “in the Delivery Year prior to the first Delivery 
+Year” in which PJM is again short of capacity. 
+ 
+8 Proposed Tariff, Attach. DD-4, section VI(b)(ii).
+--- PAGE 5 ---
+5 
+III. 
+COMMENTS IN SUPPORT OF THE PJM IRAS FILING 
+In general, NRG supports PJM’s IRAS Filing. PJM proposes to require Load Serving 
+Entities (“LSEs”) to “bring new capacity in an amount that equals or exceeds its New Large 
+Loads’ peak load or be subject to load reduction requests during Emergencies prior to Pre-
+Emergency Load Management Response.”9 PJM notes that it is “currently short of capacity and 
+looking to reestablish healthy capacity reserve margin.”10 PJM’s approach is commonsense: New 
+Large Loads must be supported by Capacity Resources. Furthermore, NRG supports the 
+requirement that the BYONC capacity be “new” generation.  
+NRG also supports PJM’s proposal to curtail New Large Loads before existing 
+customers, including Pre-Emergency and Emergency Demand Response customers. Specifically, 
+the PJM IRAS Filing provides that “PJM can call on IRAS load reductions prior to calling on 
+Pre-Emergency Load Management Reductions Actions when needed to avoid a capacity 
+shortage.”11 As PJM notes, this provision does not identify the specific load that an Electric 
+Distributor must reduce.12 Rather, the Electric Distributor, in coordination with the appropriate 
+states and/or Relevant Electric Retail Regulatory Authorities, LSEs, and LSE customers, will 
+determine which loads should ultimately be curtailed.13 The proposed curtailment obligation 
+ 
+9 PJM IRAS Filing at 3-4, 49.  
+10 Id. at 52.  
+11 PJM IRAS Filing at 25 (citing Proposed Tariff, Attach. DD-4, Section 1(b)).  
+12 PJM IRAS Filing at 26.  
+13 Id. Nonetheless, PJM should consider clarifying that if Electric Distributors, in 
+coordination with these entities, do not take action, PJM will use the registry to curtail New 
+Large Loads ahead of all other loads.
+--- PAGE 6 ---
+6 
+gives states and LSEs latitude to curtail efficiently and, in particular, to prioritize customers that 
+curtail voluntarily. The construct also provides a “bridge to power” that protects existing 
+customers.  
+ 
+IV. 
+LIMITED PROTEST 
+Pursuant to the Commission’s Rule 211,14 NRG provides the following limited protest. 
+As written, the tariff proposed by PJM fails to be just and reasonable and is unduly 
+discriminatory because it (i) excludes otherwise capable Demand Resources based on an 
+unwarranted permanent bar to such resources that have participated in any prior BRA; and 
+(ii) imposes an overly broad and unjust and unreasonable ten-year price-taker obligation on all 
+BYONC resources. 
+PJM has consented to the Commission’s exercise of authority to modify or sever any 
+element of the filing to the extent necessary, so long as the modification is consistent with PJM’s 
+overarching objectives.15 Thus, the Commission has authority to modify PJM’s proposed tariff in 
+the manner proposed by NRG by directing a compliance filing.16 NRG’s modest proposals do not 
+ 
+14 18 C.F.R. § 385.211. 
+15 PJM IRAS Filing at 9 (citing NRG Power Marketing LLC v. FERC, 862 F.3d 108 (D.C. 
+Cir. 2017)). 
+16 N.Y. Indep. Sys. Operator, Inc., 188 FERC ¶ 61,051, at P 22 n.36 (2024) (citing NRG 
+Power Mktg., LLC v. FERC, 862 F.3d 108, 114-15 (D.C. Cir. 2017)) (“the Commission has 
+‘authority to propose modifications to a utility’s [FPA section 205] proposal if the utility consents 
+to the modifications.’ ”).
+--- PAGE 7 ---
+7 
+conflict with PJM’s Board Directive, or with the objectives reflected in the Critical Issue Fast 
+Path’s (“CIFP”) accelerated stakeholder process related to the PJM IRAS Filing.17 
+A. New Demand Resources Should Be Permitted to Bid into the Market to Support 
+New Large Loads Regardless of Prior Market Participation 
+PJM states that new capacity, BYONC, is at a basic level, “megawatts of Unforced 
+Capacity” and thus is “consistent with how Capacity Resources under PJM’s capacity market 
+design are also MW and not the underlying physical resource.”18 PJM explains that BYONC is 
+“designed to offset the capacity need presented by the New Large Load.”19 PJM further explains 
+that “new capacity may be supported by generation, storage, or demand-side resources that meet 
+certain gating criteria.”20 
+However, PJM’s “gating criteria” for BYONC applicable to Demand Resources include a 
+requirement that Planned Demand Resources “did not previously support a capacity commitment 
+or reduce the amount of capacity needed to meet the PJM Region Reliability Requirement … for 
+or prior to the 2026/2027 Delivery Year.”21 This means that PJM has permanently excluded 
+every Demand Resource that has ever supported a capacity commitment in any prior Delivery 
+ 
+17 See PJM IRAS Filing at 17-18 (citing Letter from Paula Conboy, Chair, PJM Board of 
+Managers, Board Decisional Letter on Critical Issue Fast Path – Reliability Backstop 
+Procurement and Connect and Manage, 1 (July 27, 2026), https://www.pjm.com/-
+/media/DotCom/about-pjm/who-we-are/public-disclosures/2026/20260727-board- 
+decisional-letter-on-cifp-reliability-backstop-procurement-and-connect-and-manage.pdf (“PJM 
+Board Directive”).  
+18 PJM IRAS Filing at 51.  
+19 Id.  
+20 Id. at 53.  
+21 PJM IRAS Filing at 54 (emphasis supplied) (citing Proposed Tariff, Attach. DD-4, 
+Sections VI(b)(i)(1)-(5)).
+--- PAGE 8 ---
+8 
+Year even though Demand Resources have proven their value in PJM. They have been critical in 
+mitigating emergencies and have helped to “avoid the cost of dispatching [or building] additional 
+generation or involuntarily curtailing load.”22 In 2025 alone, PJM successfully relied on Demand 
+Resources that provided more than 4,000 MW of capacity during emergencies.23  
+Under PJM’s proposal, a customer location that participated as a Demand Resource as far 
+back as 200624 and later ceased participation would be ineligible to participate as a BYONC 
+capacity resource. The ban on eligibility applies even if the ownership or occupancy at the 
+customer location has changed or if there are new flexibility capabilities. For example, a 
+customer location that ceased participation as a Demand Resource in 2010 and was no longer in 
+any way considered an existing capacity resource would be banned from participation in 
+BYONC. This exclusion is patently unjust, unreasonable, and unduly discriminatory.25 
+First, this restriction applies only to Demand Resources, not to retired generators or 
+storage resources that exited the market but could reactivate their Capacity Interconnection 
+Rights.26 Deactivated generators also may be “repower[ed]” if they were deactivated before April 
+ 
+22 Fed. Energy Reg. Comm’n, 2025 Assessment of Demand Response and Advanced 
+Metering, 16 (Dec. 2025) https://www.ferc.gov/news-events/news/ferc-staff-issues-2025-
+assessment-demand-response-and-advanced-metering.  
+23 Id. at 17.  
+24 PJM Interconnection, L.L.C., 115 FERC ¶ 61,079, at P 84 (2006). 
+25 Xcel Energy Servs. Inc. v. FERC, 41 F.4th 548, 559 (D.C. Cir. 2022) (explaining 
+discriminatory standards and referencing the Commission policy that “the Commission can 
+promote market entry by ensuring that all generators compete on a level playing field”).  
+26 IRAS Filing at 53-54 (citing Proposed Tariff, Attach. DD-4, Sections VI(b)(i)(1)-(5)).
+--- PAGE 9 ---
+9 
+10, 2026 and be considered “new” capacity that can qualify as BYONC.27 PJM has provided no 
+explanation or support for allowing deactivated generation that had once participated in a prior 
+BRA to participate as BYONC, while excluding Demand Resources that also had participated in 
+a prior BRA from qualifying as BYONC.28 The fact that “new” Demand Resources can qualify 
+for BYONC just like new generation necessarily means that the nature of the Capacity Resource 
+is not a relevant factor to discriminate or differentiate for inclusion as BYONC.29 Therefore, this 
+inconsistent treatment of retired generation and Demand Resources that had participated in prior 
+BRAs is de facto unjust, unreasonable, and unduly discriminatory. 
+Second, there is no justification for such discriminatory treatment.30 The discriminatory 
+treatment of previously enrolled Demand Resource locations excludes gigawatts of potential 
+Demand Resources from qualifying as BYONC. As noted, generation that has deactivated can 
+ 
+27 Id.  
+28 West Deptford Energy, LLC v. FERC, 766 F.3d 10, 20-22 (D.C. Cir. 2014) (“the 
+Commission would have to provide a reasoned analysis, resting on articulated objective, 
+nondiscriminatory, and evenhanded criteria, that would justify treating [one generator] 
+differently than the generators in all those other cases.”); FERC v. Elec. Power Supply Ass’n, 577 
+U.S. 260, 292 (2016), as revised (Jan. 28, 2016) (noting FERC’s position that demand response 
+and other generators should be treated equally because “both provide the same value to a 
+wholesale market”).  
+29 Tenaska Clear Creek Wind, LLC v. FERC, 108 F.4th 858, 868 (D.C. Cir. 2024) (citation 
+omitted) (“[U]ndue discrimination occurs when similarly situated entities are charged different 
+rates for no good reason.”); Black Oak Energy, LLC v. FERC, 725 F.3d 230, 239 (D.C. Cir. 2013) 
+(allowing FERC to rely upon “differences between parties that are relevant to the achievement of 
+permissible policy goals”). 
+30 PJM Interconnection, L.L.C., 115 FERC ¶ 61,079, at P 72-73 (2006) (“We encourage 
+PJM to examine and incorporate reasonable accommodations to maximize demand response 
+participation in the capacity market.”); 16 U.S.C. § 824d; Wisconsin Pub. Power, Inc. v. FERC, 
+493 F.3d 239, 246 (D.C. Cir. 2007) (“Section 205 … prohibits undue discrimination in rates, 
+charges, or terms of service.”).
+--- PAGE 10 ---
+10 
+repower or obtain new interconnection rights and participate as BYONC. By contrast, a Demand 
+Resource that once participated in a BRA as a Capacity Resource does not need to be repowered 
+or obtain new interconnection rights to participate. Allowing such Demand Resources to qualify 
+as BYONC can add meaningful capacity immediately by improving the utilization of existing 
+resources,31 while aiding PJM in reestablishing the “healthy capacity reserve margins” it seeks 
+through the IRAS Filing.32 Moreover, unlike generators or storage resources, Demand Resources 
+can grow or shrink in response to price signals. That flexibility is a feature, not a flaw; when 
+power prices are high due to demand, Demand Resources can offer greater participation.33 And 
+unlike physical generation facilities, Demand Resources can respond with little delay to changes 
+in demand signals.34  
+Third, allowing Demand Resources that have ceased participation in BRAs in prior 
+Delivery Years to qualify as BYONC is consistent with limiting BYONC eligibility for 
+generation to new resources. Existing generation resources in PJM are required to offer their 
+available unforced capacity into the capacity market. Therefore, existing generation in PJM 
+already participates in the BRA and should not be allowed to withdraw from the capacity market 
+in order to qualify as BYONC as discussed herein. Demand Resources voluntarily participate in 
+the capacity market. Thus, Demand Resources that have participated in past Delivery Years, but 
+ 
+31 New York Indep. Sys. Operator, Inc., 147 FERC ¶ 61,152, at P 20 (2014) (noting 
+resources “such as demand response and repowering options” provide “shorter term capacity 
+responses” to meet capacity needs). 
+32 PJM IRAS Filing at 52. 
+33 Dept. of Energy, Benefits of Demand Response in Electricity Markets and 
+Recommendations for Achieving Them, at 13-15 (Feb. 2006).  
+34 Id.
+--- PAGE 11 ---
+11 
+ceased participation as Capacity Resources prior to 2026/27, should be allowed to qualify as 
+BYONC, as allowing such participation has no negative implications on future BRAs. 
+Taken together, these factors contradict how PJM proposes treating these resources. 
+Indeed, the flexible and voluntary nature of Demand Resource participation in the PJM capacity 
+market supports inclusion of Demand Resources as BYONC, as Demand Resources can provide 
+significant immediate capacity to help serve New Large Load rather than relying on IRAS.  
+NRG further notes that PJM’s IRAS Filing is inconsistent with the proposal approved by 
+the PJM Board. PJM’s July 31, 2026, version of the IRAS proposal – the final public version 
+before the PJM IRAS Filing that was approved by the PJM Board – would only restrict Demand 
+Resources that had participated in the 2026/27 or 2027/28 Delivery Year.35 This three-year 
+limited lookback is just, reasonable, and not unduly discriminatory because it treats all Capacity 
+Resources equally.36 As proposed, the PJM Board has not reviewed the issue herein to deem it 
+non-discriminatory.37 However, in the IRAS Filing, PJM bars participation by Demand 
+ 
+35 PJM, PJM Interim Resource Adequacy Service Detailed Proposal, at 7 (July 31, 2026) 
+https://www.pjm.com/-/media/DotCom/committees-groups/cifp-rbp/2026/20260731/20260731-
+item-02b---cifp-framework-for-service-during-periods-of-insufficient-resource-adequacy---
+executive-summary---redline.pdf.  
+36 Alabama Elec. Co-op., Inc. v. FERC, 684 F.2d 20, 29 (D.C. Cir. 1982) (“In the typical 
+case, where the section 205(b) challenge is raised against a rate design calling for different rates 
+to customer classes which are similarly situated.”); New York Pub. Serv. Comm’n v. New York 
+Indep. Sys. Op., Inc., 153 FERC ¶ 61,022, at P 79 (2015) (finding a narrowly tailored exemption 
+was appropriate).  
+37 PJM Operating Agreement § 7.7(vii) (requiring the PJM Board to “review for 
+consistency with the creation and operation of a robust, competitive and non-discriminatory 
+electric power market in the PJM Region any change to rate design or to non-rate terms and 
+conditions proposed by Transmission Owners for filing under section 205 of the Federal 
+Power Act”).
+--- PAGE 12 ---
+12 
+Resources that had ever been Capacity Resources in any prior BRA, without explaining the 
+departure from the proposal submitted to the Board.  
+The IRAS Filing contemplates that, if the PJM Region meets its reliability requirements 
+for three consecutive Delivery Years and then re-enters shortage, the “new” benchmark resets. At 
+that point, the demand-side gating criterion measures against registration “in the Delivery Year 
+prior to the first Delivery Year” in which the PJM Region is short of capacity.38 Here, PJM itself 
+recognizes a lookback-window approach is workable and reasonable. There is no principled 
+justification for the asymmetry of applying a lookback in one context but not in the related 
+Demand Resources context. To address this unjust, unreasonable, and unduly discriminatory 
+treatment, NRG requests that the Commission adopt a three-year lookback window rather than a 
+permanent exclusion.39 Namely, PJM should permit Demand Resources that have not 
+participated in the three most recent BRAs to qualify for BYONC.  
+The overly broad ineligibility is inconsistent with the policy announced by the Secretary 
+of Energy to leverage available backup generation to address the United States’ reliability 
+challenges and other grid challenges.40 There are gigawatts of backup generation that were once 
+eligible and did participate in demand response but subsequently discontinued participation. 
+Demand response participation by backup generators may become economically viable through 
+ 
+38 PJM IRAS Filing at 55 (citing Proposed Tariff, Attach. DD-4, Section VI(b)(ii)(1)). 
+39 Id.  
+40 Letter from Sec. of Energy Christopher Wright to Reliability Coordinators, Leveraging 
+Backup Generation Facilities During Energy Emergencies (Jan. 22, 2026) 
+https://www.energy.gov/documents/leveraging-backup-generation-facilities-during-energy-
+emergencies (suggesting reliability coordinators “deliberately prioritize the dispatch order of 
+backup generation to achieve the greatest benefit to the bulk power system while balancing 
+mission-essential functions”).
+--- PAGE 13 ---
+13 
+BYONC arrangements and should be considered as new resources. The BYONC mechanism 
+would present a powerful means to leverage this latent backup generation capacity to meet 
+today’s reliability challenges and foster economic growth. PJM’s ban on prior customer location 
+eligibility to participate in BYONC undermines the Secretary of Energy’s directive to develop 
+and encourage backup generation resources. 
+In short, a Demand Resource that chooses to re-enter the market still provides new 
+capacity to the system, just as a generator that undertakes an uprate project adds new capacity. To 
+arbitrarily exclude a Demand Resource from participating solely because it had participated in 
+past BRAs, while simultaneously permitting reactivated or repowered generators to qualify, is 
+unjust, unreasonable, and unduly discriminatory.41 
+B. Capacity Serving New Large Loads Should Not Be Required to Bid into the BRA as 
+a Price Taker for 10 Years Without a Replacement Mechanism 
+PJM proposes that “BYONC must participate, as a price taker (i.e. $0/MW offer) in RPM 
+Auctions for 10 consecutive Delivery Years.”42 PJM states that the BYONC arrangement “serves 
+as the commitment to provide [] capacity.”43 PJM further states that because the “resource is 
+already obligated to provide the capacity, its incremental, going-forward avoidable costs to 
+secure the RPM commitment are zero.”44 The ten-year price-taker obligation is not just and 
+reasonable as applied to all Capacity Resources, including generation, storage, and demand-side 
+resources. NRG’s protest on this point is not limited to Demand Resources. NRG requests that 
+ 
+41 See n.29, supra.  
+42 PJM IRAS Filing at 55-56. 
+43 Id. at 57.  
+44 Id. at 58-59.
+--- PAGE 14 ---
+14 
+the Commission direct PJM to provide opportunities to reflect costs in offers for unknown and/or 
+unknowable costs imposed upon the Capacity Resource owner and not otherwise recoverable 
+under the terms of the asset owner’s bilateral contracts with large loads. 
+A ten-year capacity obligation for a resource is significant.45 Participation as an existing 
+Capacity Resource in PJM is subject to a must-offer requirement for capacity auctions only three 
+years into the future.46 A ten-year must-offer commitment with a mandatory zero-dollar offer 
+compounds the significance of the commitment.47 Circumstances may change materially during a 
+ten-year bilateral agreement between third parties, potentially altering a facility’s operating costs 
+in unpredictable ways. For instance, new environmental obligations may arise that require capital 
+expenditures, a facility may suffer a catastrophic loss, or fuel may become prohibitively 
+expensive in a constrained region. Given the corresponding requirement to offer into the BRA at 
+zero-cost for 10 years, a BYONC resource cannot be economically replaced as operating and 
+market conditions evolve. As a result, this market construct is effectively designed to keep 
+ 
+45 Though hypothetically, a BYONC price-taker obligation may cease if PJM has met the 
+Reliability Requirement for three years, the practical reality is that the obligation will remain 
+through several additional BRAs, which occur three years in advance of performance. For 
+instance, if PJM has thrice met its Reliability Requirement in 2032 – the last date that Reliability 
+Backstop Procurement resources are eligible for market entry under a parallel tariff proposal by 
+PJM – BYONC resources will not know whether they retain an obligation until 2034. By that 
+time, BRAs will have occurred through 2037/38. In this plausible scenario, a BYONC resource 
+would be required to offer as a price taker well past when PJM demonstrates sufficient capacity 
+to meet all load.   
+46 PJM Capacity Manual 18 § 5.7 (rev. 62, Dec. 17, 2025).  
+47 The Commission has previously found that even a five-year must-offer obligation may 
+be unjust and unreasonable because it ultimately undercompensated sellers. See, e.g., California 
+Indep. Sys. Operator Corp., 118 FERC ¶ 61,097, at P 5 (2007) (discussing the Commission’s 
+finding that a must-offer obligation lasting five years to be unjust and unreasonable and 
+undercompensated sellers), vacating on other grounds, City of Anaheim, Cal. v. FERC, 558 F.3d 
+521, 526 (D.C. Cir. 2009).
+--- PAGE 15 ---
+15 
+economically inefficient generators operating, potentially at a loss, rather than allowing more 
+efficient resources to displace them. 
+The Commission should direct PJM to include the opportunity for such costs to be 
+reflected in subsequent capacity auctions should conditions such as those described above arise. 
+The PJM Tariff already has mechanisms for other resources to reflect their costs through unit 
+specific Avoidable Cost Rate (“ACR”) offers.48 NRG proposes a similar approach here. This 
+would ensure in the limited cases where otherwise unforeseen circumstances are unaddressed or 
+are at issue in bilateral transactions, the resource owner has an opportunity (but not the 
+guarantee) to recover such unforeseen costs.49 The ACR approach also offers benefits to PJM 
+customers: (1) the market receives the benefit of the zero-offer price for ten years in most cases, 
+absent detailed showings; (2) in extraordinary circumstances, the Capacity Resource serving a 
+New Large Load is able to continue doing so while recovering exceptional and unforeseen costs; 
+(3) more economic resources are able to enter the market and replace highly inefficient Capacity 
+Resources; and (4) reliability is improved over the course of the IRAS-imposed commitments.50   
+Additionally, to the extent PJM imposes a price-taker requirement on BYONC resources, 
+the requirement should not apply to excess capacity beyond the BYONC commitment. If a 
+1,200-MW generation facility has committed 700 MW as BYONC, the remaining 500 MW 
+ 
+48 PJM Tariff, Attach. DD §§ 6.4(b) & 6.7. Specifically, the proposed ACR, and all “data 
+and documentation” shall be submitted to the IMM for consideration. 
+49 If these costs are inframarginal, there is no impact on auction outcomes, but provides 
+significant assurances for the resource owner. If the resource is extramarginal as a result of these 
+costs, the large load will bear the responsibility to replace it or be subject to IRAS service. 
+50 The alternative may be generator bankruptcy that will benefit neither PJM, its 
+customers nor the generator.
+--- PAGE 16 ---
+16 
+should be permitted to bid economically into the BRA. PJM’s own filing acknowledges that a 
+physical resource may support multiple BYONC arrangements, each of which may be in an 
+arrangement with different New Large Loads.51 PJM provides no justification for requiring non-
+BYONC MW to offer at zero when those MW are not committed to any New Large Load and 
+would otherwise compete in the market on economic terms. To the extent PJM disagrees with 
+this clarification, NRG requests that the Commission direct non-BYONC MW from the same 
+Capacity Resource be permitted to offer economically into the RPM Auction. 
+   
+V. 
+NRG SEEKS CLARIFICATION, OR IN THE ALTERNATIVE, TARIFF 
+MODIFICATIONS, PERMITTING EXPANDED DEMAND RESPONSE 
+CAPACITY TO BE TREATED AS NEW CAPACITY 
+NRG has identified four areas in the IRAS Filing that lack clarity, and to the extent these 
+areas are inconsistent with NRG’s requested clarification, are unjust and unreasonable because 
+they are discriminatory. First, existing Demand Resources should be permitted to offer BYONC 
+in excess of prior capacity offers as “new” capacity. Second, any resource that would qualify as 
+“new” capacity can also be eligible to serve as replacement capacity for Demand Resources. 
+Third, curtailment-based Demand Resources should be eligible for BYONC without requiring 
+generation or storage assets at the location. Fourth, the methodology used to determine eligibility 
+of Demand Resources must be defined. 
+ 
+51 See Proposed Tariff, Attach. DD-4, section VII(f).
+--- PAGE 17 ---
+17 
+First, NRG seeks clarification, or an amendment of the proposed tariff, that an existing 
+Demand Resource could offer BYONC in excess of prior capacity offers,52 consistent with other 
+Capacity Resources that may include uprates and Surplus Interconnection Service capacity.53 
+With this clarification, additional investments may be encouraged at an existing “registered 
+location” such as construction of behind-the-meter generation, on-site battery storage, or other 
+customer-site enhancements, even if that resource previously supported a capacity 
+commitment.54 Similarly, treating increased Demand Resource capacity as “new” capacity 
+provides a comparable benefit to PJM customers.55 Thus, this clarification would ensure that 
+Demand Resources are treated the same as other Capacity Resources and ensure that Demand 
+Resources are available to offset New Large Loads.  
+Second, the IRAS Filing does not clearly define what may serve as replacement capacity 
+for BYONC Demand Resources, except that it would “need to be supported by the certification 
+required by Tariff, Attachment DD-4, section VII(a)(ii)”, that circularly requires compliance with 
+Attachment DD-4, Section VIII.56 NRG seeks clarification, or an amendment to the tariff, that 
+any resource that would qualify as “new” capacity can also be eligible to serve as replacement 
+ 
+52 NRG seeks this clarification for the PJM proposed permanent bar or the NRG proposed 
+modification that would limit the restriction to 2026/27 BRA participation, whichever is adopted 
+by the Commission.  
+53 See Proposed Tariff, Attach. DD-4, section VI(b)(i)(2) & (3).  
+54 See PJM IRAS Filing at 54. 
+55 See FERC v. Elec. Power Supply Ass’n, 577 U.S. 260, 292 (2016), as revised (Jan. 28, 
+2016). 
+56 See IRAS Filing at 56-67; see also Proposed Tariff, Attach. DD-4, section VIII(e).
+--- PAGE 18 ---
+18 
+capacity for Demand Resources committed to an existing BYONC arrangement under 
+Attachment DD-4, section VIII(e). 
+Third, NRG seeks clarification that Demand Resources achieving load reductions through 
+curtailment alone, without the installation of new generation or storage assets, are eligible for 
+BYONC. As proposed, the IRAS tariff requires that demand-side BYONC be composed of 
+locations “at which an incremental amount at that location is the result of the registration of new 
+generation or storage assets at the location.”57 This language appears to compound the historical-
+participation exclusion with a separate requirement for new physical assets at the location. If so, 
+this would exclude the vast majority of curtailment-based Demand Resources, which achieve 
+reductions through operational adjustments rather than new “generation or storage assets.” 
+Curtailment-based Demand Resources provide the same reliability value as a generator obtaining 
+new Capacity Interconnection Rights. Their exclusion would be unjust and discriminatory. 
+Fourth, the methodology used to determine eligibility of Demand Resources must be 
+defined. NRG recognizes that the demand-side BYONC replacement mechanism was developed 
+through the CIFP stakeholder process and supports the concept of permitting replacement 
+capacity for demand-side BYONC. However, the Commission must require PJM to provide 
+clarity on how a Curtailment Service Provider (“CSP”) will be required to demonstrate each year 
+of a 10-year period for a Demand Resource.58 Matters that significantly affect the rates, terms 
+and conditions of service must be specified in the tariff.59 PJM’s proposed tariff states: 
+ 
+57 See Proposed Tariff, Attach. DD-4, section VI(b)(ii)(1). 
+58 See PJM IRAS Filing at 66; Proposed Tariff, Attachment DD-4, section VII(i)(ii) 
+59 See, e.g., PJM Interconnection, L.L.C., 171 FERC ¶ 61,145 at P 20 (2020) (finding 
+PJM’s inclusion of threshold criteria in a manual insufficient, and directing inclusion in the 
+tariff); see also City of Cleveland, Ohio v. FERC, 773 F.2d 1368, 1376 (D.C. Cir. 1985) (holding
+--- PAGE 19 ---
+19 
+Demand Resources or DER Capacity Aggregation Resources, the 
+Accredited UCAP shall be the Accredited UCAP for the RPM Auction in 
+which the BYONC cleared for the initial Delivery Year the BYONC is in 
+an arrangement with the New Large Load and must be demonstrated 
+each year for a 10-year period using the Demand Response or DER 
+Capacity Aggregation Resources installed capacity for the first Delivery 
+Year after the BYONC is in an arrangement with the New Large Load. For 
+Demand Resources or DER Capacity Aggregation Resources that are also 
+the actual New Large Load, there is no demonstration required for the 
+initial Delivery Year only to not be an Eligible New Large Load.60  
+NRG seeks clarification that the 10-year demonstration is made by showing the “installed 
+capacity for the first Delivery Year after the BYONC is in an arrangement with the New Large 
+Load.”61 More specifically, that PJM’s proposed language does not mean that incremental 
+customers that make up an aggregation must have a 10-year commitment to make this 
+demonstration. If PJM disagrees with this interpretation, that would be unjust and unreasonable 
+and unduly discriminatory, and NRG requests the Commission direct amendments.  
+It must be recognized that a Demand Resource is typically an aggregated portfolio that 
+may be composed of many Demand Resource registrations, each representing an individual 
+customer location. Such aggregations are composed of heterogeneous and highly variable 
+customers, each having different negotiated contract length and expirations and each of them 
+experiencing changes in the way they consume electricity over time. Aggregation activities by 
+CSPs are what allows a diverse, evolving group of customers to provide a firm capacity resource. 
+ 
+that under Section 205, a party must file “those practices that affect rates and service 
+significantly, that are realistically susceptible of specification, and that are not so generally 
+understood in any contractual arrangement as to render recitation superfluous.”). 
+60 Proposed Tariff, Attachment DD-4, section VII(i)(ii) (emphasis added). 
+61 Id. (emphasis added).
+--- PAGE 20 ---
+20 
+In PJM, the quantum of Demand Resources that a customer can provide is capped at its 
+Peak Load Contribution (“PLC”).62 Individual contributions to an aggregator’s portfolio change 
+annually and may be difficult to predict more than one year into the future. Individual customer 
+volumes of participating demand response expands and contracts based upon PLC as well as 
+customer usage patterns. Businesses and homes change owners/tenants and new occupants may 
+decide to start or stop participation in demand response. Technology evolves. Equipment gets old 
+and may be replaced. Batteries, distributed generation, electric vehicles, etc., all can change 
+customer PLC and load reduction capabilities. This diversity and the ebb and flow of customer 
+demand response capabilities is managed by aggregators – who can add new customers to 
+replace customers who depart or whose flexible capability declines. However, in the aggregate, 
+the volume of the Demand Resource is reliable. 
+PJM’s proposal, if interpreted inconsistently with NRG’s approach, would mandate 
+individual customer locations to make the required eligibility showing for the full 10-year period. 
+This is anathema to long-standing Commission-approved approaches for demand response 
+portfolio management.63 The Commission should specify that Demand Resources may 
+ 
+62 PJM Capacity Market, Manual 18 § 4.3.7 (rev. 62, Dec. 17, 2025). 
+63 Participation of Distributed Energy Res. Aggregations in Markets Operated by Reg’l 
+Transmission Organizations & Indep. Sys. Operators, Order No. 2222, 172 FERC ¶ 61,247, at P 
+337 (2020) (“We find that the incremental impacts on RTO/ISO markets and operations that 
+would result from the addition or removal of individual distributed energy resources from a 
+distributed energy resource aggregation, after the initial registration, are likely to be minimal and 
+thus individual distributed energy resources should generally be able to enter and exit distributed 
+energy resource aggregations participating in RTO/ISO markets without impairing safety and 
+reliability”) reh’g granted, Order No. 2222-A, 174 FERC ¶ 61,197 at P 71, reh’g granted, Order 
+No. 2222-B,  175 FERC ¶ 61,227 (2021).
+--- PAGE 21 ---
+21 
+participate at the aggregator level and need not show individual contracts with each sub-resource 
+within a CSP contain a 10-year commitment. 
+ 
+VI. 
+CONCLUSION 
+NRG respectfully requests that the Commission order PJM to make a compliance filing, 
+based on this protest and any responsive pleadings filed by PJM, to revise PJM’s tariff consistent 
+with the changes proposed herein, thus ensuring that PJM’s tariff is just and reasonable and not 
+unduly discriminatory.  
+Respectfully submitted, 
+/s/ Michael A. Yuffee 
+Michael A. Yuffee 
+Joe Bower 
+BAKER BOTTS LLP 
+700 K Street NW 
+Washington, DC 20001 
+ 
+Cortney Madea Slager  
+Vice President & Assistant General Counsel 
+Brianna Anderson  
+Regulatory Counsel  
+NRG Energy, Inc.  
+804 Carnegie Center  
+Princeton, NJ 08540 
+ 
+Counsel for the NRG Companies 
+ 
+Dated September 3, 2026
+--- PAGE 22 ---
+CERTIFICATE OF SERVICE 
+I hereby certify that I have this day served the foregoing document on each person 
+designated on the official service list compiled by the Secretary in the above-captioned 
+proceeding. 
+Dated at Washington, D.C., this 3rd day of September 2026. 
+ 
+ 
+Joe Bower 
+ 
+ 
+ 
+Joe Bower
