@@ -102,7 +102,7 @@ export function build() {
       kind: (r && r.kind) || cur.kind || c.kind, title: c.title, docket: c.docket, pages: c.pages ?? cur.pages ?? null,
       // A curated side wins; otherwise a title that says "in support of" or "in opposition to" (or is a
       // protest) states the side itself. Anything else stays unlabeled rather than guessed.
-      ...(cur.side ? { side: cur.side } : titleSide(c.title) ? { side: titleSide(c.title), sideFrom: "title" } : {}),
+      ...(cur.side ? { side: cur.side } : titleSide(c.title) ? { side: titleSide(c.title), sideFrom: "title" } : titleStance(c.title) ? { stance: titleStance(c.title) } : {}),
       ...(cur.pdfUrl || dm.source_url ? { pdfUrl: cur.pdfUrl || dm.source_url } : {}),
       url: c.url || null,
       ...(r ? { summary: r.summary, ask: r.ask ?? null, npoints: r.points.length, link: r.throughLine, themes: r.themes, ...(r.figures?.length ? { figures: r.figures } : {}) } : {}),
@@ -148,12 +148,19 @@ function reformMatrix() {
   return existsSync(f) ? JSON.parse(readFileSync(f, "utf8")).cells : null;
 }
 
+// A filing that is itself a protest opposes the filing it protests: that side is safe to show.
 function titleSide(t) {
-  // "Protest" counts only when the document is one ("Protest of…", "Comments and Limited Protest…"),
-  // not when it answers one ("Answer … to the Protest of …").
-  if (/\bin opposition to\b/i.test(t || "") || /^(?:(?:joint |limited )?protest|(?:comments|motion to intervene) and (?:limited )?protest)\b/i.test(t || "")) return "against";
-  if (/\bin support of\b/i.test(t || "")) return "for";
-  return null;
+  return /^(?:(?:joint |limited )?protest|(?:comments|motion to intervene) and (?:limited )?protest)\b/i.test(t || "") ? "against" : null;
+}
+// "in support of" / "in opposition to" says nothing on its own: supporting a protest is opposing the
+// proposal. So the stance names its target, as the title states it ("Supports AEP's protest…"), and is
+// never reduced to a bare side.
+function titleStance(t) {
+  const m = /\bin (support of|opposition to)\s+(.+?)(?:\s+(?:under|re|in Docket)\b|$)/i.exec(t || "");
+  if (!m) return null;
+  let target = m[2].replace(/\s+/g, " ").replace(/[.,;]\s*$/, "");
+  if (target.length > 70) target = target.slice(0, 70).replace(/\s+\S*$/, "") + "…";
+  return (/^support/i.test(m[1]) ? "Supports " : "Opposes ") + target;
 }
 
 function render(data) {

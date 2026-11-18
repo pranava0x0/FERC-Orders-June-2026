@@ -1891,7 +1891,7 @@
     var hay = [d.filer, (d.filers || []).join(" "), d.kind, d.title, d.docket, d.accession, g.title, g.short, d.summary].join(" ").toLowerCase();
     return '<details class="fdoc" id="fd-' + esc(d.slug) + '" data-themes="' + esc((d.themes || []).join(" ")) + '" data-q="' + esc(hay) + '"><summary>' +
       '<span class="fd-date mono">' + esc(fmtISO(d.date)) + '</span><span class="fd-who">' + esc(d.filer) + '</span><span class="fd-kind">' + esc(kindRole(d.kind, d)) +
-      (d.side ? ' · <span class="side-tag side-' + esc(d.side) + '">' + esc(SIDE_LABEL[d.side] || d.side) + "</span>" : "") + "</span>" +
+      (d.side ? ' · <span class="side-tag side-' + esc(d.side) + '">' + esc(SIDE_LABEL[d.side] || d.side) + "</span>" : d.stance ? " · " + esc(d.stance) : "") + "</span>" +
       (d.summary ? '<span class="fd-tease">' + esc(d.summary) + "</span>" : '<span class="fd-unread">' + (d.themesFrom === "text" ? "not yet read · themes matched by keyword" : "not yet read") + "</span>") + "</summary>" +
       '<div class="fd-body">' + body + '<p class="fd-tools">' + tags +
       '<a href="reading/' + esc(d.slug) + '/">Read the document</a>' +
