@@ -240,6 +240,24 @@ window.FERC_DATA = (function () {
       note: "First-party. Creates a data-center ratepayer class, requires large loads to curtail before residential customers when the grid is strained, and creates a retail program letting large loads offset capacity obligations by funding demand reduction elsewhere.",
     },
 
+    udsee1116: {
+      label: "“FERC’s Lindsay See on large loads, Western markets and affordability”",
+      org: "Utility Dive",
+      tier: "secondary",
+      url: "https://www.utilitydive.com/news/ferc-lindsay-see-large-loads-western-markets-affordability/874736/",
+      published: "2026-11-16",
+      captured: "2026-11-18",
+      note: "Q&A with Commissioner See. The site quotes only her answers as printed; the article’s framing of her views is the reporter’s.",
+    },
+    ee0724: {
+      label: "“FERC warns PJM’s power market players against inaction”",
+      org: "E&E News",
+      tier: "secondary",
+      url: "https://www.eenews.net/articles/ferc-warns-pjms-power-market-players-against-inaction/",
+      published: "2026-07-24",
+      captured: "2026-11-18",
+      note: "Coverage of the Jul 23 AD26-7-000 conference; quotes Swett and LaCerte directly.",
+    },
     udlacerte: {
       label: "\u201cFERC\u2019s LaCerte says PJM stakeholder process is broken\u201d",
       org: "Utility Dive (Ethan Howland)",
@@ -1399,8 +1417,8 @@ window.FERC_DATA = (function () {
     {
       date: "Jul 23, 2026", iso: "2026-07-23", kind: "ferc", track: "gov",
       title: "FERC holds the PJM governance conference and sets a September deadline",
-      body: "At the AD26-7-000 technical conference, Chairman Laura Swett says “PJM is facing a grave legitimacy crisis” and that “Some transmission owners are openly discussing leaving the RTO altogether.” Commissioner David LaCerte calls the board’s weakened independence “a cultural quagmire.” Commissioners, state officials, PJM leadership and market participants converge on board independence, an expanded state role, and limits on §205 filing rights as the levers; whether the stakeholder process should become purely advisory stays contested. FERC says it will issue a post-conference notice seeking written comments and convene a time-bound dispute-resolution forum in September, and that it will impose reforms itself if no credible package is agreed by the end of September.",
-      src: ["udgov", "frAD267"],
+      body: "At the AD26-7-000 technical conference, Chairman Laura Swett says “PJM is facing a grave legitimacy crisis” and that “Some transmission owners are openly discussing leaving the RTO altogether.” Commissioner David LaCerte calls the board’s weakened independence “a cultural quagmire” and says “The players should not be able to fire the referees if they don't like their calls.” Swett closes: “This conference was not an academic exercise.” Commissioners, state officials, PJM leadership and market participants converge on board independence, an expanded state role, and limits on §205 filing rights as the levers; whether the stakeholder process should become purely advisory stays contested. FERC says it will issue a post-conference notice seeking written comments and convene a time-bound dispute-resolution forum in September, and that it will impose reforms itself if no credible package is agreed by the end of September.",
+      src: ["udgov", "frAD267", "ee0724"],
     },
     {
       date: "Jul 27, 2026", iso: "2026-07-27", kind: "milestone", track: "context",
@@ -1827,6 +1845,12 @@ window.FERC_DATA = (function () {
       body: "A notice in EL27-11 grants PJM’s request for four more weeks. The answer, comments and interventions are due Dec 21. PJM said the time would let it reflect the outcome of its Board’s Nov 17 meeting. Exelon had supported an extension to Dec 7 only and asked for an order well before the May 2027 Base Residual Auction.",
       doc: "exelon-prompt-auction/notice-el27-11-comment-period",
       src: ["fercnotice1113", "exelonans1109", "exelon1103"],
+    },
+    {
+      date: "Nov 16, 2026", iso: "2026-11-16", kind: "milestone", track: "context",
+      title: "Commissioner See: PJM’s demand growth is not a normal spike",
+      body: "In a Utility Dive Q&A, Commissioner Lindsay See says PJM “has significant challenges ahead. This is not a normal demand spike that we're seeing. The market was not designed for the circumstances we have with such large-load growth.”",
+      src: ["udsee1116"],
     },
     {
       date: "Nov 16, 2026", iso: "2026-11-16", kind: "deadline", track: "sc6",

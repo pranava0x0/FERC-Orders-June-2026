@@ -1468,6 +1468,11 @@ details.tl-item .srcs { padding: 0 0 10px 128px; }
 .ot thead th { background: var(--accent-wash); color: var(--accent-ink); }
 .footer { background: var(--masthead); color: #cfe2e0; border-top: 3px solid var(--gold); }
 .footer-meta { color: #b9d3d0; }
+/* Dark footer: links and emphasis must stay readable on --masthead (the light-footer overrides above
+   left links at about 1.4:1 and the hover color equal to the background). */
+.footer a { color: #f3e6b8; text-decoration: underline; }
+.footer a:hover { color: #ffffff; }
+.footer strong { color: #ffffff; }
 
 /* Asked and answered: one row per reform, a marker per operator, a three-step chain inside. */
 .xw-lede { color: var(--text-secondary); font-size: 15px; margin: -4px 0 10px; }

@@ -13,12 +13,7 @@
   {
    "id": "operator-status",
    "q": "Where does each grid operator stand on its order?",
-   "steps": [
-    [
-     "Status by operator subtab",
-     "#st-overview-operators"
-    ]
-   ],
+   "steps": [],
    "leaf": [
     "#panel-overview table.ot tbody tr:last-child td:nth-child(2)",
     "\\S"
@@ -41,12 +36,7 @@
   {
    "id": "pjm-comment-deadline",
    "q": "When are comments due on PJM's Nov 16 filing?",
-   "steps": [
-    [
-     "Status by operator subtab",
-     "#st-overview-operators"
-    ]
-   ],
+   "steps": [],
    "leaf": [
     "#panel-overview table.ot tbody tr:first-child td:nth-child(3)",
     "ER27-531"
@@ -55,7 +45,12 @@
   {
    "id": "pjm-cost-answer",
    "q": "How does PJM answer the order on who pays for upgrades?",
-   "steps": [],
+   "steps": [
+    [
+     "By reform subtab",
+     "#st-overview-reforms"
+    ]
+   ],
    "leaf": [
     "#panel-overview .xw-t tbody tr:nth-child(2) td:nth-child(2)",
     "contribution|security|shortfall"
@@ -64,7 +59,12 @@
   {
    "id": "cost-across-markets",
    "q": "How does each market handle who pays for upgrades?",
-   "steps": [],
+   "steps": [
+    [
+     "By reform subtab",
+     "#st-overview-reforms"
+    ]
+   ],
    "leaf": [
     "#panel-overview .xw-t tbody tr:nth-child(2)",
     "Who pays[\\s\\S]*recover"
@@ -74,10 +74,6 @@
    "id": "pjm-june-order",
    "q": "What did the June order require of PJM?",
    "steps": [
-    [
-     "Status by operator subtab",
-     "#st-overview-operators"
-    ],
     [
      "PJM in the status table",
      "#panel-overview table.ot tbody tr:first-child th a"
@@ -156,6 +152,10 @@
    "id": "original-page",
    "q": "Show me the original page behind a quote",
    "steps": [
+    [
+     "By reform subtab",
+     "#st-overview-reforms"
+    ],
     [
      "Cited page",
      "#panel-overview .xw-t tbody tr:first-child td a"

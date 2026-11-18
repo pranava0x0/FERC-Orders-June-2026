@@ -184,6 +184,26 @@ def sections(pages: list[str], bookmarks: list[tuple[int,str]], paginated: bool)
         ordered.append(dict(p=pg,at=off,title=title,method=method))
     return ordered
 
+# Keyword tags for filings nobody has read yet, so the Filings theme filter still reaches them. Shown as text
+# matches, never as a reading: a theme counts only when its terms appear at least TEXT_THEME_MIN times, and a
+# document keeps its four most frequent themes. Keys are the controlled vocabulary in sources/filings/themes.json.
+TEXT_THEME_MIN=4
+TEXT_THEMES={
+ "study":r"\b(?:study|studies|queue|interconnection requests?|cluster)\b",
+ "cost":r"\b(?:cost (?:recovery|allocation|shift\w*|responsibility)|network upgrades?|revenue requirements?|minimum (?:charge|contribution|revenue))\b",
+ "colo":r"\bco-?locat\w*|\bbehind[- ]the[- ]meter\b|\bnetting\b",
+ "flex":r"\b(?:curtail\w*|non-?firm|flexib\w*|interruptib\w*)\b",
+ "proximate":r"\b(?:electrically proximate|proximate generation|partner resources?|paired generation|associated resources?)\b",
+ "registry":r"\b(?:load forecasts?|forecasting|registry|telemetry)\b",
+ "adequacy":r"\b(?:resource adequacy|capacity (?:market|auction|obligations?)|reliability backstop|reserve margins?)\b",
+ "retail":r"\b(?:retail (?:rates?|service|customers?)|state commissions?|state authority|state jurisdiction|section 201)\b",
+ "credit":r"\b(?:collateral|financial security|credit support|exit fees?|letters? of credit)\b",
+ "procedure":r"\b(?:abeyance|extension of time|comment period|procedural schedule)\b",
+}
+def text_themes(text:str)->list[str]:
+    hits={k:len(re.findall(rx,text,re.I)) for k,rx in TEXT_THEMES.items()}
+    return [k for k,n in sorted(hits.items(),key=lambda kv:(-kv[1],kv[0])) if n>=TEXT_THEME_MIN][:4]
+
 def generate(rec: dict) -> tuple[dict,dict]:
     path=ROOT/rec["file"]
     pages,marks=source_pages(rec)
@@ -196,6 +216,7 @@ def generate(rec: dict) -> tuple[dict,dict]:
     # A record-tier row hashes the eLibrary original it was extracted from, not the committed text.
     row=dict({k:v for k,v in rec.items() if k!="originalSha256"},sha256=rec.get("originalSha256") or sha256(path.read_bytes()).hexdigest(),pages=len(pages) if paginated else None,
              tokens=total,emptyPages=[i+1 for i,n in enumerate(ns) if not n])
+    if rec.get("tier")=="record": row["textThemes"]=text_themes("\n".join(pages))
     parts=sections(pages,marks,paginated)
     for i,s in enumerate(parts):
         n=parts[i+1] if i+1<len(parts) else {"p":len(pages),"at":len(pages[-1])}

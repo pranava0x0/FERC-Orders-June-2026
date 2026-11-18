@@ -663,3 +663,28 @@ review agents found disjoint classes (router/tooling vs. regulatory framing), as
 | Code review round 1 | general-purpose | 151K | 18 | 11 findings: 6 router and filter bugs fixed, 2 data gaps fixed, 1 test tightened, 2 left as is |
 
 Inline main loop: the 31-sheet sweep and reconciliation, originals and text extraction, `data.js`, the Filings find box and Newest list, deep links, tests, harness goals, screenshots at three sizes, the copy pass. The session crossed one context compaction; a handoff file in the scratchpad carried the verified facts across it. Evaluation: Sonnet was enough for search, but both agents returned leads whose framing needed correcting (an interview dated a day late, a comment date taken from the filer's request). The readings agent was worth it; the search agents were marginal against two inline searches. The review agent found a class the harness could not: state that disagrees with the URL after a filter. Codex found the one data bug in a generated field (a letter's author falling back to PJM). Walking every string in the data, a third method, found two deadline entries the diff never touched.
+
+## 2026-11-16 to 11-17: Nov 16 filings (sessions before the retro)
+
+Not logged at the time. The retro (`retro-2026-11-18.md`) reconstructs them: scheduled sweeps mostly died on
+permission prompts, so the Nov 16 filings reached the site about 40 hours late, through manual runs. No usage
+figures survive for those sessions.
+
+## 2026-11-18: retro, rename, record tier, question-first layout (PRs 35 to 39)
+
+| Run | Agent | Tokens | Tool uses | Result |
+|---|---|---|---|---|
+| Session retro | general-purpose (Sonnet) | 164K | n/a | `retro-2026-11-18.md`: sweep failures, late Nov 16 landing, no CI, unresolved PR 34 finding |
+| Nov 16 commentary search | general-purpose (Sonnet) | 120K | 25 | Almost nothing published yet; one paywalled NEPOOL lead, unverified |
+| TO filing readings | general-purpose (Sonnet) | 345K | 55 | 19 readings, all quotes page-matched by script |
+| Reform points + matrix lines | general-purpose (Sonnet) | 228K | 49 | Reform coverage for every main Nov 16 filing; 25 matrix lines, quotes verified |
+| Slop sweep of data.js / proceedings | general-purpose (Sonnet) | 171K | 30 | data.js linter 5 FAIL / 57 WARN to 3 / 12, all remaining inside quotes |
+| Independent branch review | general-purpose | 186K | 54 | Roles, two matrix cells, MISO next step, weak nav leaves, #reforms pane; all fixed |
+
+Inline main loop (Opus): the 71-sheet sweep and record-tier ingest (493 filings as page text), OCR fallback,
+repo rename, nav budget and CI, subtabs, status by operator, reform matrix, plain roles, Filings by market,
+keyword theme tags, footer contrast, and four Codex review rounds. Main-loop tokens are not self-observable; the
+session ran past 500K context, which made late turns slow. Evaluation: the reading and matrix agents were worth
+it (both verified by script afterwards); the commentary search was the right call to make once and stop, since
+the record had nothing yet. The biggest waste was layout churn on Now (brief pinned, then unpinned) from acting
+on an instruction before confirming it.

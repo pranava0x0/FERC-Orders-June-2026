@@ -100,10 +100,14 @@ export function build() {
       filer: (r && r.filer) || cur.filer || filerLabel(list) || (c.slug.startsWith("pjm-") ? "PJM" : /^S\. Hrg/.test(c.docket) ? "Senate Energy and Natural Resources Committee" : c.docket),
       ...(list.length > 2 ? { filers: list } : {}),
       kind: (r && r.kind) || cur.kind || c.kind, title: c.title, docket: c.docket, pages: c.pages ?? cur.pages ?? null,
-      ...(cur.side ? { side: cur.side } : {}),
+      // A curated side wins; otherwise a title that says "in support of" or "in opposition to" (or is a
+      // protest) states the side itself. Anything else stays unlabeled rather than guessed.
+      ...(cur.side ? { side: cur.side } : titleSide(c.title) ? { side: titleSide(c.title), sideFrom: "title" } : titleStance(c.title) ? { stance: titleStance(c.title) } : {}),
       ...(cur.pdfUrl || dm.source_url ? { pdfUrl: cur.pdfUrl || dm.source_url } : {}),
       url: c.url || null,
       ...(r ? { summary: r.summary, ask: r.ask ?? null, npoints: r.points.length, link: r.throughLine, themes: r.themes, ...(r.figures?.length ? { figures: r.figures } : {}) } : {}),
+      // Unread filings carry keyword matches from tools/index-filing-text.py, labeled as such.
+      ...(!r && c.textThemes?.length ? { themes: c.textThemes, themesFrom: "text" } : {}),
     };
     const gid = groupOf(c);
     byId.get(gid).docs.push(doc);
@@ -142,6 +146,21 @@ export function build() {
 function reformMatrix() {
   const f = join(ROOT, "sources", "filings", "reform-matrix.json");
   return existsSync(f) ? JSON.parse(readFileSync(f, "utf8")).cells : null;
+}
+
+// A filing that is itself a protest opposes the filing it protests: that side is safe to show.
+function titleSide(t) {
+  return /^(?:(?:joint |limited )?protest|(?:comments|motion to intervene) and (?:limited )?protest)\b/i.test(t || "") ? "against" : null;
+}
+// "in support of" / "in opposition to" says nothing on its own: supporting a protest is opposing the
+// proposal. So the stance names its target, as the title states it ("Supports AEP's protest…"), and is
+// never reduced to a bare side.
+function titleStance(t) {
+  const m = /\bin (support of|opposition to)\s+(.+?)(?:\s+(?:under|re|in Docket)\b|$)/i.exec(t || "");
+  if (!m) return null;
+  let target = m[2].replace(/\s+/g, " ").replace(/[.,;]\s*$/, "");
+  if (target.length > 70) target = target.slice(0, 70).replace(/\s+\S*$/, "") + "…";
+  return (/^support/i.test(m[1]) ? "Supports " : "Opposes ") + target;
 }
 
 function render(data) {
