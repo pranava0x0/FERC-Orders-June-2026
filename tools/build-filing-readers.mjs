@@ -88,21 +88,23 @@ function tidyPage(html,heads,pg){
  const lines=html.split('\n'),out=[];
  const full=(()=>{const ls=lines.map(plainLen).filter(n=>n>40).sort((a,b)=>a-b);return ls.length?ls[Math.floor(ls.length*0.75)]:80;})();
  const marks=new Set([...html.matchAll(MARK)].map(m=>m[2])),found=new Set();
- // A note block sits at the bottom of the page, so when a number starts several lines (testimony line
- // numbers, list items, then the real note), only its LAST such line on the page can be the note.
- const noteNum=(l,i)=>{const m=l.replace(/<[^>]+>/g,'').match(/^\s*(\d{1,3})(?:\s*$|\s+\S|(?=[A-Z“"(§]))/);return m&&marks.has(m[1])&&i>=lines.length*0.25?m[1]:null;};
- // A bare number counts only when note text follows it; a page-number footer ("2" on the last line) does not.
+ // Line-numbered testimony prints 1, 2, 3 … down the margin as bare lines. A run of five or more bare
+ // numbers counting up by one, starting in the top quarter of the page, is line numbering, never a note
+ // start ("5\nQ. …" is not note 5). Notes count up too, but their block starts low on the page.
+ const bareNum=l=>{const m=l.replace(/<[^>]+>/g,'').match(/^\s*(\d{1,3})\s*$/);return m?+m[1]:null;};
+ const lineNo=new Set();{let run=[];const end=()=>{if(run.length>=5&&run[0]<lines.length*0.25)run.forEach(i=>lineNo.add(i));run=[];};
+  lines.forEach((l,i)=>{const v=bareNum(l);if(v===null)return;if(run.length&&v!==bareNum(lines[run[run.length-1]])+1)end();run.push(i);});end();}
  const NOTE_TEXT=/^\s*(?:<[^>]+>)*\s*(?:[A-Z“"‘'(§]|\d+\s+\S)/;
- const lastStart=()=>{const at=new Map();lines.forEach((l,i)=>{const n=noteNum(l,i);if(n&&(!/^\s*\d{1,3}\s*$/.test(l.replace(/<[^>]+>/g,''))||NOTE_TEXT.test(lines[i+1]??'')))at.set(n,i);});return at;};
  // Some PDFs set a note's number on its own line with the text on the next ("2\nPJM Reliability…").
- // Join them, but only for a number that is a mark on this page and a next line that starts with text.
- let last=lastStart();
+ // Join them when the number is a mark on this page and the next line starts like note text (a capital,
+ // quote, § or citation number; never a lowercase word, and never a bare page-number footer).
  for(let i=lines.length-2;i>=Math.ceil(lines.length*0.25);i--){
-  const m=lines[i].replace(/<[^>]+>/g,'').match(/^\s*(\d{1,3})\s*$/);
-  if(m&&marks.has(m[1])&&last.get(m[1])===i&&NOTE_TEXT.test(lines[i+1])){lines[i]=m[1]+' '+lines[i+1].replace(/^\s+/,'');lines.splice(i+1,1);}
+  const v=bareNum(lines[i]);
+  if(v!==null&&!lineNo.has(i)&&marks.has(String(v))&&NOTE_TEXT.test(lines[i+1])){lines[i]=v+' '+lines[i+1].replace(/^\s+/,'');lines.splice(i+1,1);}
  }
- last=lastStart();
- const fnAt=(l,i)=>{const n=noteNum(l,i);return n&&!/^\s*\d{1,3}\s*$/.test(l.replace(/<[^>]+>/g,''))&&!found.has(n)&&last.get(n)===i?n:null;};
+ // The first line on the page that starts with an unclaimed mark number is its note; a later line that
+ // starts with the same number is a continuation ("136 FERC ¶ 61,051", "50 MW threshold)").
+ const fnAt=(l,i)=>{const m=l.replace(/<[^>]+>/g,'').match(/^\s*(\d{1,3})(?:\s+\S|(?=[A-Z“"(§]))/);return m&&marks.has(m[1])&&!found.has(m[1])&&i>=lines.length*0.25?m[1]:null;};
  let para='',merged=0,top=true,inFn=false;
  const flush=gap=>{if(para){out.push(para+(inFn?'</span>':'')+(merged>1&&gap&&!inFn?'\n':''));para='';merged=0;inFn=false;}};
  for(let i=0;i<lines.length;i++){

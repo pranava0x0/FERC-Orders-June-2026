@@ -90,6 +90,9 @@ test('transcription footnotes: every mark and back-link resolves, and identifier
  assert.match(read('filing-20260812-5036/text.html'),/id="fn-1-1"><a class="fnback"/);
  // A chemical formula is not a mark, even when a note 2 sits on the page (PR #43 review).
  assert.ok(read('rec-20250423-5162-2/text.html').includes('CO2 and water savings'));
+ // A continuation line that starts with a note's number ("136 FERC ¶ 61,051", "50 MW threshold)") is not that note.
+ assert.match(read('e-8-miso-el26-70-000/text.html'),/id="fn-31-136"><a class="fnback"[^>]*>136<\/a>\s*See, e\.g\./);
+ assert.match(read('pjm-september-iras-answer/text.html'),/id="fn-15-50"><a class="fnback"[^>]*>50<\/a>\s*IMM Comments/);
  // A quoted ellipsis before a mark is not a table-of-contents leader.
  assert.match(read('e-2-pjm-el25-49-002/text.html'),/\. \. \. \.”<a class="fnref" id="fnref-22-65"/);
  assert.match(read('rec-20260903-5204/text.html'),/id="fn-3-7"><a class="fnback"[^>]*>7<\/a>IRAS Filing/);
