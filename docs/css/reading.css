@@ -70,3 +70,4 @@ blockquote{border-left-color:var(--blue)}
 .toc li.sub{padding-left:1.1rem}
 .toc li a{display:inline-flex;align-items:center;min-height:44px}
 .toc li .meta{white-space:nowrap}
+h2 .pdf-page{font:400 .95rem/1.4 system-ui,sans-serif;margin-left:.6rem;white-space:nowrap}

@@ -1,8 +1,8 @@
 // Rebuild the HTML reading room from the per-document source index and reviewed evidence.
 // node tools/build-filing-readers.mjs [--check]
 import {filerList} from './build-record-data.mjs';
-import {existsSync, readFileSync,writeFileSync} from 'node:fs';
-import {dirname,join} from 'node:path';
+import {existsSync, readFileSync,writeFileSync,copyFileSync,mkdirSync} from 'node:fs';
+import {basename,dirname,join} from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {createHash} from 'node:crypto';
 import {loadData} from './build-seo.mjs';
@@ -96,6 +96,18 @@ function ownReading(r,paginated){
   '<p>'+esc(tl.text)+'</p>'+(chips?'<p class="anchors">'+chips+'</p>':'')+'<h2>Key points</h2><ol class="points">'+pts+'</ol></section>';
 }
 const guide=[],voiceLinks=new Map();
+// The originals the comparison table cites are served beside the site, so a page link in a transcription
+// can open the same page of the PDF itself (#page=N). Other originals stay in the repo and on eLibrary.
+const tableCites=new Set();JSON.stringify(seed('reform-matrix.json'),(k,v)=>{if(v&&v.slug&&v.pg)tableCites.add(v.slug);return v;});
+if(!tableCites.size)throw Error('reform-matrix.json cites no documents');
+const servedPdf=new Map();
+for(const r of catalog){
+ if(!tableCites.has(r.slug)||!/\.pdf$/i.test(r.file||''))continue;
+ const src=join(root,r.file),name=basename(r.file),dst=join(root,'docs/originals',name);
+ if(!existsSync(src))throw Error('missing original '+r.file);
+ if(!existsSync(dst)||!readFileSync(dst).equals(readFileSync(src))){if(check)throw Error('stale docs/originals/'+name);mkdirSync(dirname(dst),{recursive:true});copyFileSync(src,dst);writes.push('../originals/'+name);}
+ servedPdf.set(r.slug,'../../originals/'+name);
+}
 for(const r of catalog){
  const {pages,sections}=read(join(out,r.slug,'source.json')),paginated=r.pages!==null;
  const local=(all[r.slug]||[]).map(x=>({...x})), verified=groups.flatMap(g=>g.tenets.flatMap(t=>t.quotes.filter(q=>q.d===r.slug).map(q=>({title:t.tenet,take:'',quote:q.q,pg:q.pg||1,start:q.pg||1,end:q.pg||1,theme:''}))));
@@ -131,7 +143,9 @@ for(const r of catalog){
  const who=filerList(r.filer||''),byline=who.length>3?who.slice(0,2).join(', ')+' and '+(who.length-2)+' others':who.join(', ');
  const summary='<p class="meta">'+esc(r.docket)+' · '+esc(r.issued)+(byline?' · '+esc(byline):'')+'</p><h1>'+esc(r.title)+'</h1>';
  // A record-tier document keeps its original on eLibrary only; the page names the hash the text came from.
- const sourceNav='<nav class="tools" aria-label="Source material"><a href="'+esc(r.url)+'">Official source</a>'+(r.tier==='record'?'':'<a href="'+raw+'">Archived original</a>')+'<a href="text.html">Full text</a><a href="source.json">Page data (JSON)</a></nav>'+(r.tier==='record'?'<p class="muted">'+(r.ocr?'Text recognized by OCR from a scanned original with no text layer; quotes may carry recognition errors. ':'Text extracted from the eLibrary original ')+'(SHA-256 <code>'+esc(r.sha256.slice(0,16))+'…</code>). Download the original from the official source.</p>':'');
+ const pdf=servedPdf.get(r.slug);
+ const originals='<a href="'+esc(r.url)+'">Official source (FERC eLibrary)</a>'+(pdf?'<a href="'+pdf+'">Original PDF</a>':r.tier==='record'?'':'<a href="'+raw+'">Archived original</a>');
+ const sourceNav='<nav class="tools" aria-label="Source material">'+originals+'<a href="text.html">Full text</a><a href="source.json">Page data (JSON)</a></nav>'+(r.tier==='record'?'<p class="muted">'+(r.ocr?'Text recognized by OCR from a scanned original with no text layer; quotes may carry recognition errors. ':'Text extracted from the eLibrary original ')+'(SHA-256 <code>'+esc(r.sha256.slice(0,16))+'…</code>). Download the original from the official source.</p>':'');
  const readings=curated.length?'<h2 id="findings">'+evidenceHeading+'</h2>'+ (local.length>3?'<nav class="contents" aria-label="Section readings">'+local.map(c=>'<a href="#'+pin(c.title)+'">'+esc(c.title)+'</a>').join('')+'</nav>':'')+claims:'';
  // Other parties' views stay off this page's text: a reader sees what THIS document says. They are listed
  // as links, by speaker, so the trail to them survives without mixing their words into this reading.
@@ -154,9 +168,9 @@ for(const r of catalog){
  });
  const full=pages.map(p=>{
    let body='',at=0;while(count<sections.length && sections[count].p===p.page){let s=sections[count];body+=esc(span(p.text,at,s.at))+'<span id="section-'+(count+1)+'"></span>';at=s.at;count++;}
-   body+=esc(span(p.text,at));return '<section id="p-'+p.page+'"><h2>'+(paginated?'PDF page '+p.page:'Document text')+'</h2><pre>'+ ((!paginated?noteLinks(body):body)||'[No extractable text on this page.]')+'</pre></section>';
+   body+=esc(span(p.text,at));return '<section id="p-'+p.page+'"><h2>'+(paginated?'PDF page '+p.page:'Document text')+(pdf&&paginated?' <a class="pdf-page" href="'+pdf+'#page='+p.page+'">Open this page in the original PDF</a>':'')+'</h2><pre>'+ ((!paginated?noteLinks(body):body)||'[No extractable text on this page.]')+'</pre></section>';
  }).join('');
- emit(r.slug+'/text.html',frame(r.title+' · full text',description,summary+'<a href="./">Back to sections and commentary</a>'+(!paginated?'<p>Word notes use stable document IDs, such as [fn:8], which can differ from printed footnote numbers.</p>':'')+full,r.slug+'/text.html'));
+ emit(r.slug+'/text.html',frame(r.title+' · full text',description,summary+'<nav class="tools" aria-label="Source material"><a href="./">Back to sections and commentary</a>'+originals+'</nav>'+(!paginated?'<p>Word notes use stable document IDs, such as [fn:8], which can differ from printed footnote numbers.</p>':'')+full,r.slug+'/text.html'));
  guide.push({...r,topics:overviewTopics,count:curated.length,viewpoints:docVoices.length});
 }
 const linksFor=g=>g.sort((a,b)=>b.issued.localeCompare(a.issued)||a.title.localeCompare(b.title)).map(x=>'<li><a href="'+x.slug+'/">'+esc(x.title)+'</a><span>'+esc(x.docket)+' · '+esc(x.issued)+(x.count?' · '+x.count+' cited readings':' · source text')+'</span></li>').join('');
