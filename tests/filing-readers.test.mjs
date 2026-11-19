@@ -62,7 +62,7 @@ test('every reform-matrix bullet quotes its reading’s page verbatim, and SPP i
    // The reader's text.html holds each PDF page in <section id="p-N"><pre>…</pre>.
    const m2=read(x.slug+'/text.html').match(new RegExp('<section id="p-'+x.pg+'">[\\s\\S]*?<pre>([\\s\\S]*?)</pre>'));
    assert.ok(m2,rto+' '+k+': no page '+x.pg+' in '+x.slug);
-   const page=m2[1].replace(/&lt;/g,'<').replace(/&gt;/g,'>').replace(/&quot;/g,'"').replace(/&#39;/g,"'").replace(/&amp;/g,'&');
+   const page=m2[1].replace(/<[^>]+>/g,'').replace(/&lt;/g,'<').replace(/&gt;/g,'>').replace(/&quot;/g,'"').replace(/&#39;/g,"'").replace(/&amp;/g,'&');
    assert.ok(norm(page).includes(norm(x.quote)),rto+' '+k+': quote not on p. '+x.pg+': '+x.quote.slice(0,50));
   }
  }

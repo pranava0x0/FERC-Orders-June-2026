@@ -49,6 +49,48 @@ function perspective(v){
  return '<article class="position"><h4>'+esc(v.title)+'</h4><p class="by">'+esc(v.speaker)+' · '+(v.relation==='related'?'Related public statement':'Direct response')+'</p><p>'+esc(v.text)+'</p><a href="'+esc(link.href)+'">'+esc(v.locator)+'</a></article>';
 }
 // Python indexes Unicode code points; JavaScript string offsets normally count UTF-16 units.
+// Display-only cleanup of PDF text. The stored text (source.json) is untouched; quotes are checked
+// against the rendered text with whitespace normalized, so rejoining lines changes no words.
+// 1. Lines repeated near the top of most pages (letterhead, "Page 16", bare page numbers) are muted.
+// 2. A PDF line that runs to the margin is joined to the next one; a short line, a blank line, or a
+//    line before a bullet or numbered item ends a paragraph. Address and signature blocks are all
+//    short lines, so they keep their breaks.
+// 3. A number stuck to the end of a word ("customers.72") is a footnote mark and is raised.
+const lineKey=l=>l.trim().replace(/\d+/g,'#').replace(/\s+/g,' ');
+function runningHeads(pages){
+ const seen=new Map();
+ for(const p of pages){const top=new Set(p.text.split('\n').filter(l=>l.trim()).slice(0,5).map(lineKey));for(const k of top)seen.set(k,(seen.get(k)||0)+1);}
+ const min=Math.max(3,Math.ceil(pages.length*0.4));
+ return new Set([...seen].filter(([k,n])=>n>=min&&k.length<=90).map(([k])=>k));
+}
+const plainLen=l=>l.replace(/<[^>]+>/g,'').replace(/&[#a-z0-9]+;/gi,'x').trim().length;
+const startsItem=l=>/^\s*(?:<[^>]+>)*\s*(?:[•▪◦●■‒–—-]\s|\(?[0-9]{1,2}[.)]\s|\(?[a-z]{1,2}\)\s|\(?[ivx]{1,4}[.)]\s|[A-H]\.\s|[IVX]{1,4}\.\s)/.test(l);
+const supMarks=h=>h.split(/(<[^>]+>)/).map((t,i)=>i%2?t:t.replace(/([a-z]{2}(?:[.,;:)”’]|&quot;|&#39;|\.&quot;|\.”)?)(\d{1,3})(?=\s|$)/g,'$1<sup>$2</sup>')).join('');
+function tidyPage(html,heads){
+ const lines=html.split('\n'),out=[];
+ const full=(()=>{const ls=lines.map(plainLen).filter(n=>n>40).sort((a,b)=>a-b);return ls.length?ls[Math.floor(ls.length*0.75)]:80;})();
+ let para='',merged=0,top=true;
+ const flush=gap=>{if(para){out.push(para+(merged>1&&gap?'\n':''));para='';merged=0;}};
+ for(let i=0;i<lines.length;i++){
+  let l=lines[i].replace(/\s+$/,'');
+  // An outline label alone on its line ("I.", "8.", "(a)") belongs to the heading after it.
+  const bare=l.replace(/<[^>]+>/g,'').trim();
+  if(/^(?:[IVX]{1,4}|[A-H]|\d{1,2}|[a-z]|[ivx]{1,4})[.)]$|^\([a-z0-9ivx]{1,4}\)$/.test(bare)&&plainLen(lines[i+1]??'')){lines[i+1]=l.replace(/\s+$/,'')+' '+lines[i+1].replace(/^\s+/,'');continue;}
+  // A table-of-contents dot leader that wrapped onto its own line stays with its entry.
+  if(/^[.\s…]{3,}\d*$/.test(bare)&&out.length&&!para){out[out.length-1]+=' '+bare;continue;}
+  if(/^[.\s…]{3,}\d*$/.test(bare)&&para){para+=' '+bare;continue;}
+  const n=plainLen(l);
+  if(top&&n&&heads.has(lineKey(l.replace(/<[^>]+>/g,'')))){flush(false);out.push('<span class="rh">'+l.trim()+'</span>');continue;}
+  if(n)top=false;
+  if(!n){flush(false);out.push(l);continue;}
+  if(para&&startsItem(l))flush(true);
+  para=para?para+' '+l.replace(/^\s+/,''):l;merged++;
+  const next=lines[i+1]??'';
+  if(n<full*0.8||!plainLen(next)||startsItem(next))flush(plainLen(next)>0);
+ }
+ flush(false);
+ return supMarks(out.join('\n').replace(/(?:\s*\.){4,}\s*/g,' … ').replace(/\n{3,}/g,'\n\n').replace(/^\n+/,''));
+}
 function span(t,a,b){return /[\uD800-\uDBFF]/.test(t)?Array.from(t).slice(a,b).join(''):t.slice(a,b);}
 function sourceFragment(pages,s){
  const a=s.p-1,b=s.endPage-1;
@@ -168,9 +210,10 @@ for(const r of catalog){
    if(off>0 && html[off-1]==='\n' && html.lastIndexOf(kind==='fn'?'Footnotes\n':'Endnotes\n',off)>=0)return '<span id="note-'+kind+'-'+n+'">'+m+'</span>';
    return '<a href="#note-'+kind+'-'+n+'">'+m+'</a>';
  });
+ const runHeads=paginated?runningHeads(pages):new Set();
  const full=pages.map(p=>{
    let body='',at=0;while(count<sections.length && sections[count].p===p.page){let s=sections[count];body+=esc(span(p.text,at,s.at))+'<span id="section-'+(count+1)+'"></span>';at=s.at;count++;}
-   body+=esc(span(p.text,at));return '<section id="p-'+p.page+'"><h2>'+(paginated?'PDF page '+p.page:'Document text')+(pdf&&paginated?' <a class="pdf-page" href="'+pdf+'#page='+p.page+'">Open this page in the original PDF</a>':'')+'</h2><pre>'+ ((!paginated?noteLinks(body):body)||'[No extractable text on this page.]')+'</pre></section>';
+   body+=esc(span(p.text,at));if(paginated)body=tidyPage(body,runHeads);return '<section id="p-'+p.page+'"><h2>'+(paginated?'PDF page '+p.page:'Document text')+(pdf&&paginated?' <a class="pdf-page" href="'+pdf+'#page='+p.page+'">Open this page in the original PDF</a>':'')+'</h2><pre>'+ ((!paginated?noteLinks(body):body)||'[No extractable text on this page.]')+'</pre></section>';
  }).join('');
  emit(r.slug+'/text.html',frame(r.title+' · full text',description,summary+'<nav class="tools" aria-label="Source material"><a href="./">Back to sections and commentary</a>'+originals+'</nav>'+(!paginated?'<p>Word notes use stable document IDs, such as [fn:8], which can differ from printed footnote numbers.</p>':'')+full,r.slug+'/text.html'));
  guide.push({...r,topics:overviewTopics,count:curated.length,viewpoints:docVoices.length});
