@@ -90,13 +90,15 @@ function tidyPage(html,heads,pg){
  // A note block sits at the bottom of the page, so when a number starts several lines (testimony line
  // numbers, list items, then the real note), only its LAST such line on the page can be the note.
  const noteNum=(l,i)=>{const m=l.replace(/<[^>]+>/g,'').match(/^\s*(\d{1,3})(?:\s*$|\s+\S|(?=[A-Z“"(§]))/);return m&&marks.has(m[1])&&i>=lines.length*0.25?m[1]:null;};
- const lastStart=()=>{const at=new Map();lines.forEach((l,i)=>{const n=noteNum(l,i);if(n)at.set(n,i);});return at;};
+ // A bare number counts only when note text follows it; a page-number footer ("2" on the last line) does not.
+ const NOTE_TEXT=/^\s*(?:<[^>]+>)*\s*(?:[A-Z“"‘'(§]|\d+\s+\S)/;
+ const lastStart=()=>{const at=new Map();lines.forEach((l,i)=>{const n=noteNum(l,i);if(n&&(!/^\s*\d{1,3}\s*$/.test(l.replace(/<[^>]+>/g,''))||NOTE_TEXT.test(lines[i+1]??'')))at.set(n,i);});return at;};
  // Some PDFs set a note's number on its own line with the text on the next ("2\nPJM Reliability…").
  // Join them, but only for a number that is a mark on this page and a next line that starts with text.
  let last=lastStart();
  for(let i=lines.length-2;i>=Math.ceil(lines.length*0.25);i--){
   const m=lines[i].replace(/<[^>]+>/g,'').match(/^\s*(\d{1,3})\s*$/);
-  if(m&&marks.has(m[1])&&last.get(m[1])===i&&/^\s*(?:<[^>]+>)*\s*(?:[A-Z“"‘'(§]|\d+\s+\S)/.test(lines[i+1])){lines[i]=m[1]+' '+lines[i+1].replace(/^\s+/,'');lines.splice(i+1,1);}
+  if(m&&marks.has(m[1])&&last.get(m[1])===i&&NOTE_TEXT.test(lines[i+1])){lines[i]=m[1]+' '+lines[i+1].replace(/^\s+/,'');lines.splice(i+1,1);}
  }
  last=lastStart();
  const fnAt=(l,i)=>{const n=noteNum(l,i);return n&&!/^\s*\d{1,3}\s*$/.test(l.replace(/<[^>]+>/g,''))&&!found.has(n)&&last.get(n)===i?n:null;};
