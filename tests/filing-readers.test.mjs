@@ -93,6 +93,9 @@ test('transcription footnotes: every mark and back-link resolves, and identifier
  // A continuation line that starts with a note's number ("136 FERC ¶ 61,051", "50 MW threshold)") is not that note.
  assert.match(read('e-8-miso-el26-70-000/text.html'),/id="fn-31-136"><a class="fnback"[^>]*>136<\/a>\s*See, e\.g\./);
  assert.match(read('pjm-september-iras-answer/text.html'),/id="fn-15-50"><a class="fnback"[^>]*>50<\/a>\s*IMM Comments/);
+ // A wrapped identifier or URL piece that starts with a note's number ("10A.2", "20DL/NERC…") is not that note.
+ assert.match(read('rec-20261116-5329/text.html'),/id="fn-4-10"><a class="fnback"[^>]*>10<\/a>\s*See Ex\. No\. LSC-100/);
+ assert.match(read('e-9-spp-el26-68-000/text.html'),/id="fn-8-20"><a class="fnback"[^>]*>20<\/a>\s*Id\. P 12/);
  // A quoted ellipsis before a mark is not a table-of-contents leader.
  assert.match(read('e-2-pjm-el25-49-002/text.html'),/\. \. \. \.”<a class="fnref" id="fnref-22-65"/);
  assert.match(read('rec-20260903-5204/text.html'),/id="fn-3-7"><a class="fnback"[^>]*>7<\/a>IRAS Filing/);

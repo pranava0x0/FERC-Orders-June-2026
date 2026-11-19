@@ -103,8 +103,10 @@ function tidyPage(html,heads,pg){
   if(v!==null&&!lineNo.has(i)&&marks.has(String(v))&&NOTE_TEXT.test(lines[i+1])){lines[i]=v+' '+lines[i+1].replace(/^\s+/,'');lines.splice(i+1,1);}
  }
  // The first line on the page that starts with an unclaimed mark number is its note; a later line that
- // starts with the same number is a continuation ("136 FERC ¶ 61,051", "50 MW threshold)").
- const fnAt=(l,i)=>{const m=l.replace(/<[^>]+>/g,'').match(/^\s*(\d{1,3})(?:\s+\S|(?=[A-Z“"(§]))/);return m&&marks.has(m[1])&&!found.has(m[1])&&i>=lines.length*0.25?m[1]:null;};
+ // starts with the same number is a continuation ("136 FERC ¶ 61,051", "50 MW threshold)"). A number fused to
+ // its note ("7IRAS Filing") counts only when a whole word follows, not a wrapped identifier ("10A.2",
+ // "20DL/NERC…").
+ const fnAt=(l,i)=>{const m=l.replace(/<[^>]+>/g,'').match(/^\s*(\d{1,3})(?:\s+\S|(?=[A-Z“"(§][A-Za-z’']*[\s,]))/);return m&&marks.has(m[1])&&!found.has(m[1])&&i>=lines.length*0.25?m[1]:null;};
  let para='',merged=0,top=true,inFn=false;
  const flush=gap=>{if(para){out.push(para+(inFn?'</span>':'')+(merged>1&&gap&&!inFn?'\n':''));para='';merged=0;inFn=false;}};
  for(let i=0;i<lines.length;i++){
