@@ -67,6 +67,11 @@ def inventory() -> list[dict]:
     if f.exists():
         for d in read(f):
             rows.append(dict(**d, file=str((f.parent/d["filename"]).relative_to(ROOT)),kind="hearing transcript",group="Congressional testimony"))
+    # FERC eLibrary is the record of first resort: a document with an accession links there, and a copy
+    # on the filer's own site (pjm.com, opsi.us, ...) stays as a secondary link.
+    for r in rows:
+        if r.get("accession") and not r["url"].startswith("https://elibrary.ferc.gov/"):
+            r["mirror"]=r["url"]; r["url"]=ELI+r["accession"]
     mixed=read(SRC/"image-inserts.json")
     for r in rows:
         if r["slug"] in mixed: r["text_file"]=mixed[r["slug"]]

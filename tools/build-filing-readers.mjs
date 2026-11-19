@@ -55,7 +55,6 @@ function perspective(v){
 // 2. A PDF line that runs to the margin is joined to the next one; a short line, a blank line, or a
 //    line before a bullet or numbered item ends a paragraph. Address and signature blocks are all
 //    short lines, so they keep their breaks.
-// 3. A number stuck to the end of a word ("customers.72") is a footnote mark and is raised.
 const lineKey=l=>l.trim().replace(/\d+/g,'#').replace(/\s+/g,' ');
 function runningHeads(pages){
  const seen=new Map();
@@ -65,12 +64,26 @@ function runningHeads(pages){
 }
 const plainLen=l=>l.replace(/<[^>]+>/g,'').replace(/&[#a-z0-9]+;/gi,'x').trim().length;
 const startsItem=l=>/^\s*(?:<[^>]+>)*\s*(?:[•▪◦●■‒–—-]\s|\(?[0-9]{1,2}[.)]\s|\(?[a-z]{1,2}\)\s|\(?[ivx]{1,4}[.)]\s|[A-H]\.\s|[IVX]{1,4}\.\s)/.test(l);
-const supMarks=h=>h.split(/(<[^>]+>)/).map((t,i)=>i%2?t:t.replace(/([a-z]{2}(?:[.,;:)”’]|&quot;|&#39;|\.&quot;|\.”)?)(\d{1,3})(?=\s|$)/g,'$1<sup>$2</sup>')).join('');
-function tidyPage(html,heads){
+// 3. A number stuck to the end of a word ("customers.72") is a footnote mark. When the footnote's text
+//    is found lower on the same page (a line starting "72 "), the mark links to it and it links back.
+// 4. Web addresses in the text become links.
+const MARK=/([a-z]{2}(?:[.,;:)”’]|&quot;|&#39;|\.&quot;|\.”)?)(\d{1,3})(?=\s|$)/g;
+const URL_RE=/(https?:\/\/[^\s<>"]*[^\s<>".,;:)\]])/;
+function inline(h,pg,found){
+ const linked=new Set();
+ return h.split(/(<[^>]+>)/).map((t,i)=>i%2?t:t.split(URL_RE).map((u,j)=>j%2?'<a href="'+u+'">'+u+'</a>':u.replace(MARK,(m,w,n)=>{
+  if(!found.has(n))return w+'<sup>'+n+'</sup>';
+  const id=linked.has(n)?'':' id="fnref-'+pg+'-'+n+'"';linked.add(n);
+  return w+'<a class="fnref"'+id+' href="#fn-'+pg+'-'+n+'" aria-label="Footnote '+n+'"><sup>'+n+'</sup></a>';
+ })).join('')).join('');
+}
+function tidyPage(html,heads,pg){
  const lines=html.split('\n'),out=[];
  const full=(()=>{const ls=lines.map(plainLen).filter(n=>n>40).sort((a,b)=>a-b);return ls.length?ls[Math.floor(ls.length*0.75)]:80;})();
- let para='',merged=0,top=true;
- const flush=gap=>{if(para){out.push(para+(merged>1&&gap?'\n':''));para='';merged=0;}};
+ const marks=new Set([...html.matchAll(MARK)].map(m=>m[2])),found=new Set();
+ const fnAt=(l,i)=>{const m=l.replace(/<[^>]+>/g,'').match(/^\s*(\d{1,3})\s+\S/);return m&&marks.has(m[1])&&!found.has(m[1])&&i>=lines.length*0.25?m[1]:null;};
+ let para='',merged=0,top=true,inFn=false;
+ const flush=gap=>{if(para){out.push(para+(inFn?'</span>':'')+(merged>1&&gap&&!inFn?'\n':''));para='';merged=0;inFn=false;}};
  for(let i=0;i<lines.length;i++){
   let l=lines[i].replace(/\s+$/,'');
   // An outline label alone on its line ("I.", "8.", "(a)") belongs to the heading after it.
@@ -83,13 +96,17 @@ function tidyPage(html,heads){
   if(top&&n&&heads.has(lineKey(l.replace(/<[^>]+>/g,'')))){flush(false);out.push('<span class="rh">'+l.trim()+'</span>');continue;}
   if(n)top=false;
   if(!n){flush(false);out.push(l);continue;}
-  if(para&&startsItem(l))flush(true);
-  para=para?para+' '+l.replace(/^\s+/,''):l;merged++;
+  const fn=fnAt(l,i);
+  if(fn){flush(true);found.add(fn);para='<span class="fn" id="fn-'+pg+'-'+fn+'"><a class="fnback" href="#fnref-'+pg+'-'+fn+'" aria-label="Back to footnote '+fn+' mark">'+fn+'</a>'+l.replace(/^\s*(?:<[^>]+>)*\s*\d{1,3}/,'');merged=1;inFn=true;}
+  else{
+   if(para&&startsItem(l))flush(true);
+   para=para?para+' '+l.replace(/^\s+/,''):l;merged++;
+  }
   const next=lines[i+1]??'';
-  if(n<full*0.8||!plainLen(next)||startsItem(next))flush(plainLen(next)>0);
+  if((!inFn&&n<full*0.8)||!plainLen(next)||startsItem(next)||fnAt(next,i+1))flush(plainLen(next)>0);
  }
  flush(false);
- return supMarks(out.join('\n').replace(/(?:\s*\.){4,}\s*/g,' … ').replace(/\n{3,}/g,'\n\n').replace(/^\n+/,''));
+ return inline(out.join('\n').replace(/(?:\s*\.){4,}\s*/g,' … ').replace(/\n{3,}/g,'\n\n').replace(/^\n+/,''),pg,found);
 }
 function span(t,a,b){return /[\uD800-\uDBFF]/.test(t)?Array.from(t).slice(a,b).join(''):t.slice(a,b);}
 function sourceFragment(pages,s){
@@ -188,7 +205,7 @@ for(const r of catalog){
  const summary='<p class="meta">'+esc(r.docket)+' · '+esc(r.issued)+(byline?' · '+esc(byline):'')+'</p><h1>'+esc(r.title)+'</h1>';
  // A record-tier document keeps its original on eLibrary only; the page names the hash the text came from.
  const pdf=servedPdf.get(r.slug);
- const originals='<a href="'+esc(r.url)+'">Official source ('+esc(sourceHost(r.url))+')</a>'+(pdf?'<a href="'+pdf+'">Original PDF</a>':r.tier==='record'?'':'<a href="'+raw+'">Archived original</a>');
+ const originals='<a href="'+esc(r.url)+'">Official source ('+esc(sourceHost(r.url))+')</a>'+(pdf?'<a href="'+pdf+'">Original PDF</a>':r.tier==='record'?'':'<a href="'+raw+'">Archived original</a>')+(r.mirror?'<a href="'+esc(r.mirror)+'">Also at '+esc(sourceHost(r.mirror))+'</a>':'');
  const sourceNav='<nav class="tools" aria-label="Source material">'+originals+'<a href="text.html">Full text</a><a href="source.json">Page data (JSON)</a></nav>'+(r.tier==='record'?'<p class="muted">'+(r.ocr?'Text recognized by OCR from a scanned original with no text layer; quotes may carry recognition errors. ':'Text extracted from the eLibrary original ')+'(SHA-256 <code>'+esc(r.sha256.slice(0,16))+'…</code>). Download the original from the official source.</p>':'');
  const readings=curated.length?'<h2 id="findings">'+evidenceHeading+'</h2>'+ (local.length>3?'<nav class="contents" aria-label="Section readings">'+local.map(c=>'<a href="#'+pin(c.title)+'">'+esc(c.title)+'</a>').join('')+'</nav>':'')+claims:'';
  // Other parties' views stay off this page's text: a reader sees what THIS document says. They are listed
@@ -213,7 +230,7 @@ for(const r of catalog){
  const runHeads=paginated?runningHeads(pages):new Set();
  const full=pages.map(p=>{
    let body='',at=0;while(count<sections.length && sections[count].p===p.page){let s=sections[count];body+=esc(span(p.text,at,s.at))+'<span id="section-'+(count+1)+'"></span>';at=s.at;count++;}
-   body+=esc(span(p.text,at));if(paginated)body=tidyPage(body,runHeads);return '<section id="p-'+p.page+'"><h2>'+(paginated?'PDF page '+p.page:'Document text')+(pdf&&paginated?' <a class="pdf-page" href="'+pdf+'#page='+p.page+'">Open this page in the original PDF</a>':'')+'</h2><pre>'+ ((!paginated?noteLinks(body):body)||'[No extractable text on this page.]')+'</pre></section>';
+   body+=esc(span(p.text,at));if(paginated)body=tidyPage(body,runHeads,p.page);return '<section id="p-'+p.page+'"><h2>'+(paginated?'PDF page '+p.page:'Document text')+(pdf&&paginated?' <a class="pdf-page" href="'+pdf+'#page='+p.page+'">Open this page in the original PDF</a>':'')+'</h2><pre>'+ ((!paginated?noteLinks(body):body)||'[No extractable text on this page.]')+'</pre></section>';
  }).join('');
  emit(r.slug+'/text.html',frame(r.title+' · full text',description,summary+'<nav class="tools" aria-label="Source material"><a href="./">Back to sections and commentary</a>'+originals+'</nav>'+(!paginated?'<p>Word notes use stable document IDs, such as [fn:8], which can differ from printed footnote numbers.</p>':'')+full,r.slug+'/text.html'));
  guide.push({...r,topics:overviewTopics,count:curated.length,viewpoints:docVoices.length});
