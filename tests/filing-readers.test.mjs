@@ -75,6 +75,17 @@ test('transcription footnotes: every mark and back-link resolves, and identifier
   for(const [,a] of full.matchAll(/href="#((?:fn|fnref)-\d+-\d+)"/g)){links++;assert.ok(ids.has(a),r.slug+' #'+a);}
  }
  assert.ok(links>1000,'footnote links were generated ('+links+')');
+ // Notes whose number sits alone on its line, text below ("4  \nThe cities of Anaheim…"), or is fused to
+ // the text ("7IRAS Filing"), still link: these documents linked none before.
+ for(const s of ['filing-er27-506-caiso-large-loads','protest-er27-25-acp-srea','report-el26-68-spp']){
+  const h=read(s+'/text.html'),marks=(h.match(/<sup>/g)||[]).length,linked=(h.match(/class="fnref"/g)||[]).length;
+  assert.ok(marks>20&&linked>=marks*0.95,s+': '+linked+' of '+marks+' footnote marks linked');
+ }
+ // A bare number inside body text ("findings on cost recovery \n7 \nagreement") is not a note; the real note 7 is.
+ assert.match(read('rec-20261116-5346/text.html'),/id="fn-410-7"><a class="fnback"[^>]*>7<\/a>\s*Id\. at P 8\./);
+ // A quoted ellipsis before a mark is not a table-of-contents leader.
+ assert.match(read('e-2-pjm-el25-49-002/text.html'),/\. \. \. \.”<a class="fnref" id="fnref-22-65"/);
+ assert.match(read('rec-20260903-5204/text.html'),/id="fn-3-7"><a class="fnback"[^>]*>7<\/a>IRAS Filing/);
  // Moody's "Baa3": a digit inside a word with no note on the page is not a footnote mark (PR #42 review).
  const zgia=read('filing-er26-3552-miso-zgia-attachment-2/text.html');
  assert.ok(zgia.includes('Baa3')&&!/Baa(?:<a[^>]*>)?<sup>3/.test(zgia));

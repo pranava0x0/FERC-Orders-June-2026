@@ -67,14 +67,18 @@ const startsItem=l=>/^\s*(?:<[^>]+>)*\s*(?:[•▪◦●■‒–—-]\s|\(?[0-9
 // 3. A number stuck to the end of a word ("customers.72") is a footnote mark. When the footnote's text
 //    is found lower on the same page (a line starting "72 "), the mark links to it and it links back.
 // 4. Web addresses in the text become links.
-const MARK=/([a-z]{2}(?:[.,;:)”’]|&quot;|&#39;|\.&quot;|\.”)?)(\d{1,3})(?=\s|$)/g;
+// Glue before a mark: a lowercase word, an all-caps word ("FERC,10", "SCADA452"), a closing paren, or a
+// dot run ("Tariff....28"), then optional punctuation. Only the lowercase form is raised without a note
+// found on the page; the wider forms become marks only when their note is found.
+const MARK=/((?:[a-z]{2}|[A-Z]{2,}|\)|\.\.|\. \.)(?:[.,;:?)”’]|&quot;|&#39;|\.&quot;|\.”)?)(\d{1,3})(?=\s|$)/g;
+const PLAIN_MARK=/[a-z]{2}(?:[.,;:)”’]|&quot;|&#39;|\.&quot;|\.”)$/;
 const URL_RE=/(https?:\/\/[^\s<>"]*[^\s<>".,;:)\]])/;
 function inline(h,pg,found){
  const linked=new Set();
  return h.split(/(<[^>]+>)/).map((t,i)=>i%2?t:t.split(URL_RE).map((u,j)=>j%2?'<a href="'+u+'">'+u+'</a>':u.replace(MARK,(m,w,n)=>{
   // No note found on this page: raise it only after punctuation ("loads.74"), never inside a bare
   // identifier like Moody's "Baa3", where the digit is part of the word.
-  if(!found.has(n))return /[a-z]$/.test(w)?m:w+'<sup>'+n+'</sup>';
+  if(!found.has(n))return PLAIN_MARK.test(w)?w+'<sup>'+n+'</sup>':m;
   const id=linked.has(n)?'':' id="fnref-'+pg+'-'+n+'"';linked.add(n);
   return w+'<a class="fnref"'+id+' href="#fn-'+pg+'-'+n+'" aria-label="Footnote '+n+'"><sup>'+n+'</sup></a>';
  })).join('')).join('');
@@ -83,7 +87,13 @@ function tidyPage(html,heads,pg){
  const lines=html.split('\n'),out=[];
  const full=(()=>{const ls=lines.map(plainLen).filter(n=>n>40).sort((a,b)=>a-b);return ls.length?ls[Math.floor(ls.length*0.75)]:80;})();
  const marks=new Set([...html.matchAll(MARK)].map(m=>m[2])),found=new Set();
- const fnAt=(l,i)=>{const m=l.replace(/<[^>]+>/g,'').match(/^\s*(\d{1,3})\s+\S/);return m&&marks.has(m[1])&&!found.has(m[1])&&i>=lines.length*0.25?m[1]:null;};
+ // Some PDFs set a note's number on its own line with the text on the next ("2\nPJM Reliability…").
+ // Join them, but only for a number that is a mark on this page and a next line that starts with text.
+ for(let i=Math.ceil(lines.length*0.25);i<lines.length-1;i++){
+  const m=lines[i].replace(/<[^>]+>/g,'').match(/^\s*(\d{1,3})\s*$/);
+  if(m&&marks.has(m[1])&&/^\s*(?:<[^>]+>)*\s*(?:[A-Z“"‘'(§]|\d+\s+\S)/.test(lines[i+1])){lines[i]=m[1]+' '+lines[i+1].replace(/^\s+/,'');lines.splice(i+1,1);}
+ }
+ const fnAt=(l,i)=>{const m=l.replace(/<[^>]+>/g,'').match(/^\s*(\d{1,3})(?:\s+\S|(?=[A-Z“"(§]))/);return m&&marks.has(m[1])&&!found.has(m[1])&&i>=lines.length*0.25?m[1]:null;};
  let para='',merged=0,top=true,inFn=false;
  const flush=gap=>{if(para){out.push(para+(inFn?'</span>':'')+(merged>1&&gap&&!inFn?'\n':''));para='';merged=0;inFn=false;}};
  for(let i=0;i<lines.length;i++){
@@ -108,7 +118,8 @@ function tidyPage(html,heads,pg){
   if((!inFn&&n<full*0.8)||!plainLen(next)||startsItem(next)||fnAt(next,i+1))flush(plainLen(next)>0);
  }
  flush(false);
- return inline(out.join('\n').replace(/(?:\s*\.){4,}\s*/g,' … ').replace(/\n{3,}/g,'\n\n').replace(/^\n+/,''),pg,found);
+ // Marks are linked before dot leaders collapse, so a quoted ellipsis before a mark (". . . .”65") survives.
+ return inline(out.join('\n').replace(/\n{3,}/g,'\n\n').replace(/^\n+/,''),pg,found).replace(/(?:[ \t]*\.){4,}[ \t]*(?=\d|$)/gm,' … ');
 }
 function span(t,a,b){return /[\uD800-\uDBFF]/.test(t)?Array.from(t).slice(a,b).join(''):t.slice(a,b);}
 function sourceFragment(pages,s){
