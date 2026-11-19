@@ -468,7 +468,7 @@ test("every extracted directive quote appears verbatim in the saved full order t
   assert.equal(hits, total, `all ${total} directive-quote segments are verbatim in the full text`);
 });
 
-test("deployed site (docs/) ships only the order PDFs and links comments via eLibrary", () => {
+test("deployed site (docs/) ships only the order PDFs and the table-cited originals, and links comments via eLibrary", () => {
   // GitHub Pages publishes only docs/. Comment PDFs live in sources/comments/files/ (committed to
   // the repo, not deployed); the only PDFs allowed under docs/ are the six §206 orders, which are
   // served because the inline #page= citations open them. Keeps the published payload small and
@@ -479,8 +479,20 @@ test("deployed site (docs/) ships only the order PDFs and links comments via eLi
   });
   const docsRoot = join(here, "..", "docs");
   const pdfs = walk(docsRoot).filter((p) => p.toLowerCase().endsWith(".pdf"));
-  const stray = pdfs.filter((p) => !p.includes("/docs/orders/"));
-  assert.equal(stray.length, 0, `no non-order PDFs under docs/ (found: ${stray.map((p) => p.split("/docs/")[1]).join(", ")})`);
+  // The one other exception: originals the reform comparison table cites, under docs/originals/, so its
+  // page links can open the same page of the source PDF. Exactly those, no more.
+  const cited = new Set();
+  JSON.stringify(JSON.parse(readFileSync(join(here, "..", "sources/filings/reform-matrix.json"), "utf8")), (k, v) => { if (v && v.slug && v.pg) cited.add(v.slug); return v; });
+  const citedPdfs = new Set();
+  for (const slug of cited) {
+    const doc = JSON.parse(readFileSync(join(docsRoot, "reading", slug, "source.json"), "utf8")).document;
+    if (/\.pdf$/i.test(doc.file)) citedPdfs.add(doc.file.split("/").pop());
+  }
+  assert.ok(citedPdfs.size > 0, "the comparison table cites at least one original PDF");
+  const served = pdfs.filter((p) => p.includes("/docs/originals/")).map((p) => p.split("/").pop());
+  assert.deepEqual([...served].sort(), [...citedPdfs].sort(), "docs/originals/ holds exactly the PDFs the comparison table cites");
+  const stray = pdfs.filter((p) => !p.includes("/docs/orders/") && !p.includes("/docs/originals/"));
+  assert.equal(stray.length, 0, `no other PDFs under docs/ (found: ${stray.map((p) => p.split("/docs/")[1]).join(", ")})`);
   assert.ok(pdfs.length >= 6, `the six order PDFs are present under docs/orders/ (found ${pdfs.length})`);
 
   // the deployed JS must not href/src a repo-only comment file (it would 404 on Pages)

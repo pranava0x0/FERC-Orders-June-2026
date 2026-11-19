@@ -12,7 +12,8 @@ __pycache__/
 
 # Source PDFs and raw HTML snapshots are large / re-derivable — keep extracted text only.
 # Exceptions (committed): the six order PDFs under docs/orders/ — the ONLY PDFs GitHub Pages serves,
-# needed for the inline #page= citations — and the DOE §403 letter the accuracy tests pin.
+# needed for the inline #page= citations — the originals the reform comparison table cites, under
+# docs/originals/ (same reason; tests/data.test.mjs pins the exact set), and the DOE §403 letter the accuracy tests pin.
 sources/archived/*
 !sources/archived/fact-sheet.html
 !sources/archived/press-release.html
@@ -21,6 +22,7 @@ sources/archived/*
 *.pdf
 *.docx
 !docs/orders/*.pdf
+!docs/originals/*.pdf
 !sources/videos/hearings/*.pdf
 !sources/pdf/doe-403-large-loads-letter.pdf
 # RM26-4 comment bodies (PDF/DOCX) are committed alongside their extracted text, metadata, and

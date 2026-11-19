@@ -70,3 +70,13 @@ blockquote{border-left-color:var(--blue)}
 .toc li.sub{padding-left:1.1rem}
 .toc li a{display:inline-flex;align-items:center;min-height:44px}
 .toc li .meta{white-space:nowrap}
+h2 .pdf-page{font:400 .95rem/1.4 system-ui,sans-serif;margin-left:.6rem;white-space:nowrap}
+@media (pointer:coarse){h2 .pdf-page{display:inline-flex;align-items:center;min-height:44px}}
+pre .rh{color:var(--muted);font-size:.8em}
+pre sup{font-size:.7em;line-height:0;color:var(--muted)}
+section>pre{max-width:80ch}
+pre .fn{font-size:.85em;color:var(--muted)}
+pre .fnback{font-weight:600;margin-right:.35em}
+pre .fnref{text-decoration:none}
+pre .fn:target{background:#fff3c4;color:var(--ink)}
+@media (pointer:coarse){pre .fnref,pre .fnback{position:relative;padding:14px 12px;margin:-14px -12px}}

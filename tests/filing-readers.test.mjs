@@ -62,9 +62,20 @@ test('every reform-matrix bullet quotes its reading’s page verbatim, and SPP i
    // The reader's text.html holds each PDF page in <section id="p-N"><pre>…</pre>.
    const m2=read(x.slug+'/text.html').match(new RegExp('<section id="p-'+x.pg+'">[\\s\\S]*?<pre>([\\s\\S]*?)</pre>'));
    assert.ok(m2,rto+' '+k+': no page '+x.pg+' in '+x.slug);
-   const page=m2[1].replace(/&lt;/g,'<').replace(/&gt;/g,'>').replace(/&quot;/g,'"').replace(/&#39;/g,"'").replace(/&amp;/g,'&');
+   const page=m2[1].replace(/<[^>]+>/g,'').replace(/&lt;/g,'<').replace(/&gt;/g,'>').replace(/&quot;/g,'"').replace(/&#39;/g,"'").replace(/&amp;/g,'&');
    assert.ok(norm(page).includes(norm(x.quote)),rto+' '+k+': quote not on p. '+x.pg+': '+x.quote.slice(0,50));
   }
  }
  assert.ok(Object.values(m.SPP).every(c=>c===null));
+});
+test('transcription footnotes: every mark and back-link resolves, and identifiers keep their digits',()=>{
+ let links=0;
+ for(const r of catalog){
+  const full=read(r.slug+'/text.html'),ids=new Set([...full.matchAll(/ id="([^"]+)"/g)].map(x=>x[1]));
+  for(const [,a] of full.matchAll(/href="#((?:fn|fnref)-\d+-\d+)"/g)){links++;assert.ok(ids.has(a),r.slug+' #'+a);}
+ }
+ assert.ok(links>1000,'footnote links were generated ('+links+')');
+ // Moody's "Baa3": a digit inside a word with no note on the page is not a footnote mark (PR #42 review).
+ const zgia=read('filing-er26-3552-miso-zgia-attachment-2/text.html');
+ assert.ok(zgia.includes('Baa3')&&!/Baa(?:<a[^>]*>)?<sup>3/.test(zgia));
 });
