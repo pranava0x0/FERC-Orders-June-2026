@@ -67,10 +67,11 @@ const startsItem=l=>/^\s*(?:<[^>]+>)*\s*(?:[•▪◦●■‒–—-]\s|\(?[0-9
 // 3. A number stuck to the end of a word ("customers.72") is a footnote mark. When the footnote's text
 //    is found lower on the same page (a line starting "72 "), the mark links to it and it links back.
 // 4. Web addresses in the text become links.
-// Glue before a mark: a lowercase word, an all-caps word ("FERC,10", "SCADA452"), a closing paren, or a
+// Glue before a mark: a lowercase word, an all-caps word followed by punctuation ("FERC,10"; never a bare
+// "CO2" or "H2", where the digit is part of the name), a closing paren, or a
 // dot run ("Tariff....28"), then optional punctuation. Only the lowercase form is raised without a note
 // found on the page; the wider forms become marks only when their note is found.
-const MARK=/((?:[a-z]{2}|[A-Z]{2,}|\)|\.\.|\. \.)(?:[.,;:?)”’]|&quot;|&#39;|\.&quot;|\.”)?)(\d{1,3})(?=\s|$)/g;
+const MARK=/((?:(?:[a-z]{2}|\)|\.\.|\. \.)(?:[.,;:?)”’]|&quot;|&#39;|\.&quot;|\.”)?|[A-Z]{2,}(?:[.,;:?)”’]|&quot;|&#39;|\.&quot;|\.”)))(\d{1,3})(?=\s|$)/g;
 const PLAIN_MARK=/[a-z]{2}(?:[.,;:)”’]|&quot;|&#39;|\.&quot;|\.”)$/;
 const URL_RE=/(https?:\/\/[^\s<>"]*[^\s<>".,;:)\]])/;
 function inline(h,pg,found){

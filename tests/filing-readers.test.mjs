@@ -88,6 +88,8 @@ test('transcription footnotes: every mark and back-link resolves, and identifier
  // A page-number footer that matches a note number does not displace the note (PR #43 review).
  assert.match(read('rec-20250423-5125/text.html'),/id="fn-2-2"><a class="fnback"[^>]*>2<\/a>\s*18 C\.F\.R\. § 385\.213/);
  assert.match(read('filing-20260812-5036/text.html'),/id="fn-1-1"><a class="fnback"/);
+ // A chemical formula is not a mark, even when a note 2 sits on the page (PR #43 review).
+ assert.ok(read('rec-20250423-5162-2/text.html').includes('CO2 and water savings'));
  // A quoted ellipsis before a mark is not a table-of-contents leader.
  assert.match(read('e-2-pjm-el25-49-002/text.html'),/\. \. \. \.”<a class="fnref" id="fnref-22-65"/);
  assert.match(read('rec-20260903-5204/text.html'),/id="fn-3-7"><a class="fnback"[^>]*>7<\/a>IRAS Filing/);
