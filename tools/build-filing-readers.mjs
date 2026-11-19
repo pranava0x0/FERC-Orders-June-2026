@@ -72,7 +72,9 @@ const URL_RE=/(https?:\/\/[^\s<>"]*[^\s<>".,;:)\]])/;
 function inline(h,pg,found){
  const linked=new Set();
  return h.split(/(<[^>]+>)/).map((t,i)=>i%2?t:t.split(URL_RE).map((u,j)=>j%2?'<a href="'+u+'">'+u+'</a>':u.replace(MARK,(m,w,n)=>{
-  if(!found.has(n))return w+'<sup>'+n+'</sup>';
+  // No note found on this page: raise it only after punctuation ("loads.74"), never inside a bare
+  // identifier like Moody's "Baa3", where the digit is part of the word.
+  if(!found.has(n))return /[a-z]$/.test(w)?m:w+'<sup>'+n+'</sup>';
   const id=linked.has(n)?'':' id="fnref-'+pg+'-'+n+'"';linked.add(n);
   return w+'<a class="fnref"'+id+' href="#fn-'+pg+'-'+n+'" aria-label="Footnote '+n+'"><sup>'+n+'</sup></a>';
  })).join('')).join('');

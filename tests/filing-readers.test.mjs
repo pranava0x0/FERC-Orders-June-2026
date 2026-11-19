@@ -68,3 +68,14 @@ test('every reform-matrix bullet quotes its reading’s page verbatim, and SPP i
  }
  assert.ok(Object.values(m.SPP).every(c=>c===null));
 });
+test('transcription footnotes: every mark and back-link resolves, and identifiers keep their digits',()=>{
+ let links=0;
+ for(const r of catalog){
+  const full=read(r.slug+'/text.html'),ids=new Set([...full.matchAll(/ id="([^"]+)"/g)].map(x=>x[1]));
+  for(const [,a] of full.matchAll(/href="#((?:fn|fnref)-\d+-\d+)"/g)){links++;assert.ok(ids.has(a),r.slug+' #'+a);}
+ }
+ assert.ok(links>1000,'footnote links were generated ('+links+')');
+ // Moody's "Baa3": a digit inside a word with no note on the page is not a footnote mark (PR #42 review).
+ const zgia=read('filing-er26-3552-miso-zgia-attachment-2/text.html');
+ assert.ok(zgia.includes('Baa3')&&!/Baa(?:<a[^>]*>)?<sup>3/.test(zgia));
+});

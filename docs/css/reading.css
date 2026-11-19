@@ -79,3 +79,4 @@ pre .fn{font-size:.85em;color:var(--muted)}
 pre .fnback{font-weight:600;margin-right:.35em}
 pre .fnref{text-decoration:none}
 pre .fn:target{background:#fff3c4;color:var(--ink)}
+@media (pointer:coarse){pre .fnref,pre .fnback{position:relative;padding:14px 12px;margin:-14px -12px}}
