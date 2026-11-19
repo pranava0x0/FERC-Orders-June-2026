@@ -22,6 +22,8 @@ function emit(name,data){const p=join(out,name);if(existsSync(p)&&readFileSync(p
 if(!all['compliance-er26-3515-pjm']?.length||!all['refiling-er27-454-pjm-backstop']?.length||!voices.length)throw Error('Missing PJM readings or public perspectives');
 for(const k of ['pjm-sections.json','new-sections.json'])if(!Object.keys(seed(k)).length)throw Error('Empty section file '+k);
 for(const s of Object.keys(all))if(!bySlug.has(s))throw Error('No original for readings: '+s);
+// Name the publisher a source link actually goes to: eLibrary for FERC filings, the host otherwise.
+const sourceHost=u=>{const h=new URL(u).hostname.replace(/^www\./,'');return h==='elibrary.ferc.gov'?'FERC eLibrary':h;};
 const verifyUrl=s=>{if(!/^https?:\/\//.test(s))throw Error('invalid citation: '+s);return s};
 for(const v of voices){verifyUrl(v.url);if(!['direct','related'].includes(v.relation)||!['state','commissioner','coverage','party'].includes(v.kind)||!v.text||!v.locator)throw Error('invalid perspective '+v.title);for(const k of v.slugs)if(!bySlug.has(k))throw Error('unknown perspective document '+k);}
 const css=readFileSync(join(root,'docs/css/reading.css'));
@@ -144,7 +146,7 @@ for(const r of catalog){
  const summary='<p class="meta">'+esc(r.docket)+' · '+esc(r.issued)+(byline?' · '+esc(byline):'')+'</p><h1>'+esc(r.title)+'</h1>';
  // A record-tier document keeps its original on eLibrary only; the page names the hash the text came from.
  const pdf=servedPdf.get(r.slug);
- const originals='<a href="'+esc(r.url)+'">Official source (FERC eLibrary)</a>'+(pdf?'<a href="'+pdf+'">Original PDF</a>':r.tier==='record'?'':'<a href="'+raw+'">Archived original</a>');
+ const originals='<a href="'+esc(r.url)+'">Official source ('+esc(sourceHost(r.url))+')</a>'+(pdf?'<a href="'+pdf+'">Original PDF</a>':r.tier==='record'?'':'<a href="'+raw+'">Archived original</a>');
  const sourceNav='<nav class="tools" aria-label="Source material">'+originals+'<a href="text.html">Full text</a><a href="source.json">Page data (JSON)</a></nav>'+(r.tier==='record'?'<p class="muted">'+(r.ocr?'Text recognized by OCR from a scanned original with no text layer; quotes may carry recognition errors. ':'Text extracted from the eLibrary original ')+'(SHA-256 <code>'+esc(r.sha256.slice(0,16))+'…</code>). Download the original from the official source.</p>':'');
  const readings=curated.length?'<h2 id="findings">'+evidenceHeading+'</h2>'+ (local.length>3?'<nav class="contents" aria-label="Section readings">'+local.map(c=>'<a href="#'+pin(c.title)+'">'+esc(c.title)+'</a>').join('')+'</nav>':'')+claims:'';
  // Other parties' views stay off this page's text: a reader sees what THIS document says. They are listed
