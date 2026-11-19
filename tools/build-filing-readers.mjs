@@ -87,13 +87,19 @@ function tidyPage(html,heads,pg){
  const lines=html.split('\n'),out=[];
  const full=(()=>{const ls=lines.map(plainLen).filter(n=>n>40).sort((a,b)=>a-b);return ls.length?ls[Math.floor(ls.length*0.75)]:80;})();
  const marks=new Set([...html.matchAll(MARK)].map(m=>m[2])),found=new Set();
+ // A note block sits at the bottom of the page, so when a number starts several lines (testimony line
+ // numbers, list items, then the real note), only its LAST such line on the page can be the note.
+ const noteNum=(l,i)=>{const m=l.replace(/<[^>]+>/g,'').match(/^\s*(\d{1,3})(?:\s*$|\s+\S|(?=[A-Z“"(§]))/);return m&&marks.has(m[1])&&i>=lines.length*0.25?m[1]:null;};
+ const lastStart=()=>{const at=new Map();lines.forEach((l,i)=>{const n=noteNum(l,i);if(n)at.set(n,i);});return at;};
  // Some PDFs set a note's number on its own line with the text on the next ("2\nPJM Reliability…").
  // Join them, but only for a number that is a mark on this page and a next line that starts with text.
- for(let i=Math.ceil(lines.length*0.25);i<lines.length-1;i++){
+ let last=lastStart();
+ for(let i=lines.length-2;i>=Math.ceil(lines.length*0.25);i--){
   const m=lines[i].replace(/<[^>]+>/g,'').match(/^\s*(\d{1,3})\s*$/);
-  if(m&&marks.has(m[1])&&/^\s*(?:<[^>]+>)*\s*(?:[A-Z“"‘'(§]|\d+\s+\S)/.test(lines[i+1])){lines[i]=m[1]+' '+lines[i+1].replace(/^\s+/,'');lines.splice(i+1,1);}
+  if(m&&marks.has(m[1])&&last.get(m[1])===i&&/^\s*(?:<[^>]+>)*\s*(?:[A-Z“"‘'(§]|\d+\s+\S)/.test(lines[i+1])){lines[i]=m[1]+' '+lines[i+1].replace(/^\s+/,'');lines.splice(i+1,1);}
  }
- const fnAt=(l,i)=>{const m=l.replace(/<[^>]+>/g,'').match(/^\s*(\d{1,3})(?:\s+\S|(?=[A-Z“"(§]))/);return m&&marks.has(m[1])&&!found.has(m[1])&&i>=lines.length*0.25?m[1]:null;};
+ last=lastStart();
+ const fnAt=(l,i)=>{const n=noteNum(l,i);return n&&!/^\s*\d{1,3}\s*$/.test(l.replace(/<[^>]+>/g,''))&&!found.has(n)&&last.get(n)===i?n:null;};
  let para='',merged=0,top=true,inFn=false;
  const flush=gap=>{if(para){out.push(para+(inFn?'</span>':'')+(merged>1&&gap&&!inFn?'\n':''));para='';merged=0;inFn=false;}};
  for(let i=0;i<lines.length;i++){

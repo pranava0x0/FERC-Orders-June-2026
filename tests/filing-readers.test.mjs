@@ -83,6 +83,8 @@ test('transcription footnotes: every mark and back-link resolves, and identifier
  }
  // A bare number inside body text ("findings on cost recovery \n7 \nagreement") is not a note; the real note 7 is.
  assert.match(read('rec-20261116-5346/text.html'),/id="fn-410-7"><a class="fnback"[^>]*>7<\/a>\s*Id\. at P 8\./);
+ // Testimony line number 5 ("5\nQ. …") is not note 5; the note at the foot of the page is (PR #43 review).
+ assert.match(read('rec-20261116-5257-3/text.html'),/id="fn-7-5"><a class="fnback"[^>]*>5<\/a>\s*OSC at P 59/);
  // A quoted ellipsis before a mark is not a table-of-contents leader.
  assert.match(read('e-2-pjm-el25-49-002/text.html'),/\. \. \. \.”<a class="fnref" id="fnref-22-65"/);
  assert.match(read('rec-20260903-5204/text.html'),/id="fn-3-7"><a class="fnback"[^>]*>7<\/a>IRAS Filing/);
