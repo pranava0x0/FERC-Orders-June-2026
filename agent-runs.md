@@ -706,3 +706,13 @@ Main loop (Claude Opus 5.5): 65-sheet sweep, SPP applicant search in Chrome, 15 
 | general-purpose | Claude Opus 5.5 | Round-2 review, four lenses | 144,923 | 32 | no must-fix; two regex should-fixes, fixed |
 
 Main loop (Claude Opus 5.5): stance plumbing through readers, record data and the Filings row; curation queue; tests; nav question. The expert review was worth its cost: the drafter's stances read plausibly and two were wrong against the filings. Round 2 found regex cases round 1's fix missed; procedure is now defined once and tested with titles. Waste: a meta-label edit that silently failed to apply (a replace with no assert) and shipped blank labels until review.
+
+## 2026-11-21 · Backlog sweep (branch backlog-sweep)
+| Agent | Model | Task | Tokens | Tool uses | Result |
+|---|---|---|---|---|---|
+| general-purpose | Claude Sonnet 5.5 | Stances and quotes for the 11 older LARS positions | 127,215 | 16 | 11 entries, all quotes passed the page check; flagged Google and Bloom as judgment calls |
+
+Main loop (Claude Opus 5.5): LARS side precedence, CSS dedupe checked by computed-style diff, `#discourse`, PR 17
+leftovers, em-dash test, `#filings/q=`, bin-name casing (66 renames + validator), word-start search, backlog prune
+(44 done or stale entries removed). Several backlog items were already done in code and only the entry was stale:
+check the code before building.

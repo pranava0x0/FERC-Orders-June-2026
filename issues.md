@@ -838,3 +838,12 @@ Format: date · area · description · root cause (code/test/data/source) · sta
   requests alone ("REQUEST FOR ACTION BY NOVEMBER 23"), and the Filings tab listed them as responses. Fixed:
   procedure is judged by filer and title in the readers, the app's role line and `tools/curation-queue.mjs`; orphan
   discussion pages are deleted. Regression tests in `tests/positions.test.mjs`. Status: Fixed.
+
+- **2026-11-21 · Filings find box · "atc" matched "match"** (code). The find box matched any substring, and since
+  #45 put read positions into the search text, a three-letter filer name hit common words: "ATC" listed DTE's
+  LARS comment and four CAISO letters ("matches") above ATC's own proceeding (nav budget, phone 3 to 3.88). Fixed:
+  each typed word matches from the start of a word. Status: Fixed.
+- **2026-11-21 · Filings · two hand-set sides contradicted the filings' text** (data). tenets.json had Google's LARS
+  protest as "mixed" (it asks FERC to reject or accept and suspend) and the consumer advocates' protest as
+  "against" (it protests specific provisions, not the whole filing). A read stance now sets the side, and
+  `build-record-data` stops when tenets.json disagrees with one. Status: Fixed.

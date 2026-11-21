@@ -2112,13 +2112,14 @@
     panel.classList.toggle("fg-filtering", active);
     var box = panel.querySelector("#fg-q");
     if (box && box.value.trim().toLowerCase() !== filingQuery) box.value = filingQuery;
-    // Every typed word must appear: "google lars" finds Google's filing in the LARS proceeding.
-    var words = q ? q.split(/\s+/).filter(Boolean) : [];
+    // Every typed word must appear: "google lars" finds Google's filing in the LARS proceeding. A word
+    // matches from the start of a word, so "atc" finds ATC and not every summary that says "match".
+    var words = q ? q.split(/\s+/).filter(Boolean).map(function (w) { return new RegExp("(?:^|[^a-z0-9])" + w.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")); }) : [];
     panel.querySelectorAll(".fgroup").forEach(function (g) {
       var n = 0;
       g.querySelectorAll(".fdoc").forEach(function (d) {
         var on = (!filingTheme || (" " + d.getAttribute("data-themes") + " ").indexOf(" " + filingTheme + " ") >= 0 && (filingKw || !d.hasAttribute("data-kw"))) &&
-          (!q || words.every(function (w) { return d.getAttribute("data-q").indexOf(w) >= 0; }));
+          (!q || words.every(function (w) { return w.test(d.getAttribute("data-q")); }));
         d.hidden = !on; if (on) n++;
       });
       g.hidden = n === 0; shown += n; if (n) groupsShown++;
