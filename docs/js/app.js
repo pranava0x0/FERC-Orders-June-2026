@@ -2088,6 +2088,7 @@
   }
   var FQ_MIN = 2;          // a one-letter query matches nearly every document
   var filingTheme = "", filingQuery = "", filingKw = false;
+  function filingQueryHash() { return filingQuery.length >= FQ_MIN ? "q=" + encodeURIComponent(filingQuery) : ""; }
   // The theme chip and the typed query are one filter: a document shows when it passes both. Matching
   // proceedings open so the documents are on the page; clearing the filter folds back the ones it opened
   // (marked data-auto), except one the reader has a document open in. Quoted points load when a document opens, or for a theme, where
@@ -2173,6 +2174,17 @@
   function routeFiling(rest) {
     var panel = panelFor("filings");
     var bits = String(rest || "").split("/");
+    // "#filings/q=google%20lars" is a shared search: the same words in the box, the same matches.
+    if (/^q=/.test(rest || "")) {
+      var typed = "";
+      try { typed = decodeURIComponent(String(rest).slice(2)); } catch (e) { typed = String(rest).slice(2); }
+      filingTheme = ""; filingKw = false; filingQuery = typed.trim().toLowerCase();
+      applyTheme(panel, "");
+      filingHash = filingQueryHash();
+      var findBox = panel.querySelector(".fg-find"); if (findBox) show(findBox, { block: "start" });
+      if (history.replaceState) history.replaceState(null, "", "#filings" + (filingHash ? "/" + filingHash : ""));
+      return;
+    }
     if (bits[0] === "theme") {
       filingQuery = "";                      // a theme address shows that theme alone, whatever was typed before
       filingKw = bits[2] === "all";
@@ -2216,13 +2228,19 @@
       else if (t && t.closest(".fg-clear")) { filingQuery = ""; k = ""; }
       else { var b = t && t.closest(".th-chips .who-chip"); if (!b) return; filingKw = false; k = b.getAttribute("data-theme"); }
       applyTheme(panel, k);
-      filingHash = filingTheme ? "theme/" + filingTheme + (filingKw ? "/all" : "") : "";
+      filingHash = filingTheme ? "theme/" + filingTheme + (filingKw ? "/all" : "") : filingQueryHash();
       if (history.replaceState) history.replaceState(null, "", "#filings" + (filingHash ? "/" + filingHash : ""));
     });
     var box = panel.querySelector("#fg-q"), qTimer = null;
     if (box) box.addEventListener("input", function () {
       clearTimeout(qTimer);
-      qTimer = setTimeout(function () { filingQuery = box.value.trim().toLowerCase(); applyTheme(panel, filingTheme); }, 120);
+      qTimer = setTimeout(function () {
+        filingQuery = box.value.trim().toLowerCase(); applyTheme(panel, filingTheme);
+        // A theme keeps its own address; a search on its own gets one, so a filtered list can be shared.
+        if (filingTheme) return;
+        filingHash = filingQueryHash();
+        if (history.replaceState) history.replaceState(null, "", "#filings" + (filingHash ? "/" + filingHash : ""));
+      }, 120);
     });
     // Opening a proceeding or document writes its address, so the URL and the trail always match the page.
     panel.addEventListener("toggle", function (ev) {
@@ -2450,7 +2468,7 @@
     } else if (tab === "filings" && rest) {
       if (!rendered.filings) pendingFiling = rest;               // wireFilings consumes and clears it
       // Already rendered: settle the route before activate() writes the hash, or the URL keeps the old one.
-      else if (document.getElementById("fg-" + String(rest).split("/")[0]) || /^theme\//.test(rest)) filingHash = rest;
+      else if (document.getElementById("fg-" + String(rest).split("/")[0]) || /^(?:theme\/|q=)/.test(rest)) filingHash = rest;
       activate("filings", focus);
       if (rendered.filings) routeFiling(rest);
     } else if (tab === "commissioners") {
