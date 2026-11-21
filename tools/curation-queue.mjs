@@ -25,7 +25,7 @@ export const WATCH = ["miso-lars", "isone-large-load", "pjm-large-load", "pjm-to
 
 export const FERC = /^(?:secretary of the commission|ferc\b|federal energy regulatory commission|office of energy market regulation)/i;
 // The motion itself is procedure; an answer supporting or opposing a pause or more time is a position on the case.
-export const PROCEDURE = /^(?:(?:joint |expedited |emergency |conditional )*motion|request)\b[^.]*\b(?:extension|abeyance|shortened|expedited action)\b|\berrata\b|^notice\b(?!.*\b(?:protest|comments?|answer)\b)|^(?:motion to intervene|notice of intervention|doc-less motion)(?!.*\b(?:comments?|protest|answer|clarification|rehearing)\b)/i;
+export const PROCEDURE = /^(?:(?:joint |expedited |emergency |conditional )*motion|request)\b(?! for leave)(?!.*\b(?:rehearing|clarification|protest|answer)\b)[^.]*\b(?:extension|abeyance|shortened|expedited action)\b|\berrata\b|^notice\b(?!.*\b(?:protest|comments?|answer)\b)|^(?:motion to intervene|notice of intervention|doc-less motion)(?!.*\b(?:comments?|protest|answer|clarification|rehearing)\b)/i;
 // eLibrary types many protests and rehearing requests as "filing", "request" or "motion", so read the title too.
 const RESPONSE = /protest|comments|answer|rehearing|brief|statement of position|clarification|motion to rescind/i;
 // Filings from individuals are counted but not queued: a policy choice, since the site curates organizations' positions.

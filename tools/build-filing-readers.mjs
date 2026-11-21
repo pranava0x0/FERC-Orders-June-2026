@@ -179,7 +179,8 @@ for(const r of catalog){
 }
 // Positions read for this site lead each docket's page; keyword excerpts follow for everything else.
 const positionsIn=k=>voices.filter(v=>v.stance!=='procedural'&&docketKey(byAccession.get(voiceAcc(v))||{})===k);
-const positionCard=v=>{const own=byAccession.get(voiceAcc(v));return '<article class="finding"><h3><a href="'+own.slug+'/">'+esc(v.speaker)+'</a>: '+esc(v.title)+'</h3><p class="meta">'+(v.stance?esc(STANCE_LABEL[v.stance])+' · ':'')+esc(own.docket)+' · '+esc(own.issued)+'</p><p>'+esc(v.text)+'</p>'+(v.quote?'<blockquote>'+esc(v.quote)+' <cite><a href="'+own.slug+'/text.html#p-'+v.quote_page+'">PDF p. '+v.quote_page+'</a></cite></blockquote>':'')+'</article>';};
+// The title already names the filer ("Geronimo says…"), so the filer goes in the byline, not the heading.
+const positionCard=v=>{const own=byAccession.get(voiceAcc(v));return '<article class="finding"><h3><a href="'+own.slug+'/">'+esc(v.title)+'</a></h3><p class="meta">'+esc(v.speaker)+' · '+(v.stance?esc(STANCE_LABEL[v.stance])+' · ':'')+esc(own.docket)+' · '+esc(own.issued)+'</p><p>'+esc(v.text)+'</p>'+(v.quote?'<blockquote>'+esc(v.quote)+' <cite><a href="'+own.slug+'/text.html#p-'+v.quote_page+'">PDF p. '+v.quote_page+'</a></cite></blockquote>':'')+'</article>';};
 for(const k of new Set([...filingThread.keys(),...voices.map(v=>docketKey(byAccession.get(voiceAcc(v))||{})).filter(Boolean)])){
  const topicsInDocket=filingThread.get(k)||new Map(),staked=positionsIn(k);
  if(!staked.length&&!topicsInDocket.size)continue;

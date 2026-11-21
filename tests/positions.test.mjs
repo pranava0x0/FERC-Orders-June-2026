@@ -59,10 +59,10 @@ test("a joint filer's name comes from its position, not eLibrary's run-together 
 test("the discussion page leads with positions and drops procedure-only dockets", () => {
   const html = read("docs", "reading", "discussion-er27-25.html");
   assert.match(html, /<h2>Positions read for this site<\/h2>/);
-  assert.match(html, /Asks FERC to reject · ER27-25-000/);
+  assert.match(html, /Geronimo Power · Asks FERC to reject · ER27-25-000/);
   const cards = html.slice(html.indexOf('id="positions"'), html.indexOf("</section>", html.indexOf('id="positions"'))).match(/<article /g) || [];
   assert.ok(cards.length >= 9, `only ${cards.length} positions on the LARS page`);
-  assert.doesNotMatch(html, /<p class="meta">\s*·/, "a position card has an empty stance label");
+  assert.doesNotMatch(html, /<p class="meta">\s*·| · · /, "a position card has an empty label");
   assert.throws(() => read("docs", "reading", "discussion-er27-526.html"), /ENOENT/, "an extension motion alone made a discussion page");
   assert.match(execFileSync(process.execPath, ["tools/build-filing-readers.mjs", "--check"], { cwd: ROOT, encoding: "utf8" }), /Readers verified/);
 });
@@ -77,4 +77,9 @@ test("procedure means the motion itself, not a party's answer about it", async (
   assert.ok(!proc("Motion to Intervene and Request for Clarification of Talen Energy Corporation"));
   assert.ok(!proc("Answer of the Organization of MISO States in support of the motion for abeyance"));
   assert.ok(!proc("Notice of Intervention and Protest of the Example Commission"));
+  for (const t of ["Motion for Leave to Answer and Answer of X to Motion for Extension of Time",
+    "Motion for Leave to Answer and Answer of X to the Motion for Abeyance and Request for Shortened Answer Period",
+    "Request for Rehearing and Request for Expedited Action", "Request for Clarification and for Extension of Time",
+    "Request for Rehearing of Order Granting Abeyance", "Motion to Protest and for Extension of Time"]) assert.ok(!proc(t), t);
+  assert.ok(proc("Motion for Abeyance of Southwest Power Pool, Inc."));
 });

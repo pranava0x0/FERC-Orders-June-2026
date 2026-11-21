@@ -1909,7 +1909,10 @@
     }
     // The title is the surer signal for what a document does: "filing" and "request" cover protests, appeals and letters.
     var tt = d && d.title || "";
-    if (k !== "answer" && k !== "order") for (var r = 0; r < TITLE_ROLE.length; r++) if (TITLE_ROLE[r][0].test(tt)) return TITLE_ROLE[r][1];
+    // A reply's title names the filing it answers ("Comments in support of SPP's request for abeyance"), so its
+    // words describe that filing, not this one. Answers go to the answer branch; comments keep their type.
+    if (/^(?:answer|motion for leave to answer)\b/i.test(tt) && k !== "order") k = "answer";
+    if (k !== "answer" && k !== "order" && !/^comments?\b/i.test(tt)) for (var r = 0; r < TITLE_ROLE.length; r++) if (TITLE_ROLE[r][0].test(tt)) return TITLE_ROLE[r][1];
     if (k === "answer" && d) {
       // Read the title first: it names what the answer responds to. "Motion for Leave to Answer and" is procedure.
       var title = (d.title || "").replace(/^motion for leave to answer and (?:second )?/i, "");
