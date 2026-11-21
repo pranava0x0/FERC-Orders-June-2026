@@ -38,8 +38,6 @@ test("the queue treats requests for more time and FERC notices as procedure", ()
   for (const acc of ["20261119-5279", "20261118-5011", "20261118-3051", "20261118-3050"]) {
     assert.ok(!all.some((r) => r.accession === acc), `${acc} counted as a response`);
   }
-  const miso = q.find((x) => x.id === "miso-large-load");
-  assert.equal(miso.total, 0, "MISO's Nov 16 proceeding has only an extension motion and an individual's comments");
 });
 
 test("every response to MISO's LARS filing shows which side it takes", () => {
@@ -48,7 +46,7 @@ test("every response to MISO's LARS filing shows which side it takes", () => {
   assert.ok(responses.length >= 20, `only ${responses.length} LARS responses`);
   for (const d of responses) assert.ok(d.side || d.stance, `${d.filer} (${d.accession}) shows no side`);
   const nipsco = g.docs.find((d) => d.accession === "20261022-5130");
-  assert.equal(nipsco.stance, "supports the proposal");
+  assert.equal(nipsco.stance, "supports LARS");
   assert.ok(nipsco.position && nipsco.position.quote, "a read position ships its quote to the Filings row");
 });
 
@@ -62,6 +60,21 @@ test("the discussion page leads with positions and drops procedure-only dockets"
   const html = read("docs", "reading", "discussion-er27-25.html");
   assert.match(html, /<h2>Positions read for this site<\/h2>/);
   assert.match(html, /Asks FERC to reject · ER27-25-000/);
+  const cards = html.slice(html.indexOf('id="positions"'), html.indexOf("</section>", html.indexOf('id="positions"'))).match(/<article /g) || [];
+  assert.ok(cards.length >= 9, `only ${cards.length} positions on the LARS page`);
+  assert.doesNotMatch(html, /<p class="meta">\s*·/, "a position card has an empty stance label");
   assert.throws(() => read("docs", "reading", "discussion-er27-526.html"), /ENOENT/, "an extension motion alone made a discussion page");
   assert.match(execFileSync(process.execPath, ["tools/build-filing-readers.mjs", "--check"], { cwd: ROOT, encoding: "utf8" }), /Readers verified/);
+});
+
+test("procedure means the motion itself, not a party's answer about it", async () => {
+  const { proceduralFiling } = await import("../tools/curation-queue.mjs");
+  const proc = (title, filer = "Some Party") => proceduralFiling({ title, filer });
+  assert.ok(proc("Expedited Motion for a Nine-Day Extension of Comment Deadline of Constellation Energy Generation, LLC"));
+  assert.ok(proc("Motion of Community Organizations and Clean Energy Advocates for a 30-day extension of time"));
+  assert.ok(proc("Errata Notice Extending Comment Period re PECO Energy Company", "SECRETARY OF THE COMMISSION, FERC"));
+  assert.ok(!proc("Preliminary Answer of PJM Interconnection L.L.C. Opposing Fast-Track Processing and Motion for Extension of Time"));
+  assert.ok(!proc("Motion to Intervene and Request for Clarification of Talen Energy Corporation"));
+  assert.ok(!proc("Answer of the Organization of MISO States in support of the motion for abeyance"));
+  assert.ok(!proc("Notice of Intervention and Protest of the Example Commission"));
 });

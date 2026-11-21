@@ -6,11 +6,11 @@
 // curated when sources/filings/perspectives.json has an entry whose URL carries its eLibrary accession, or
 // when it has a full reading of its own (sources/filings/documents/<slug>.json).
 //
-//   node tools/curation-queue.mjs                 replies to the Nov 13–19 filings and LARS, then a tally of the rest
+//   node tools/curation-queue.mjs                 the proceedings in WATCH, then a tally of the rest
 //   node tools/curation-queue.mjs --all           every proceeding, listed in full
 //   node tools/curation-queue.mjs --check a,b     exit 1 if proceeding a or b has an uncurated response
 //
-// REFRESH.md runs this after each ingest: new replies to the Nov 13–19 filings get a position (stance,
+// REFRESH.md runs this after each ingest: new replies in a watched proceeding get a position (stance,
 // plain summary, one verbatim quote with its PDF page) before the refresh ships.
 import { existsSync, readFileSync } from "node:fs";
 import { join, dirname } from "node:path";
@@ -23,19 +23,25 @@ const read = (...p) => JSON.parse(readFileSync(join(ROOT, ...p), "utf8"));
 export const WATCH = ["miso-lars", "isone-large-load", "pjm-large-load", "pjm-tos-large-load", "miso-large-load",
   "caiso-large-load", "nyiso-large-load", "spp-large-load", "sc-pjm", "sc-miso", "sc-spp", "sc-caiso", "sc-isone", "sc-nyiso"];
 
-const FERC = /^(?:secretary of the commission|ferc\b|federal energy regulatory commission|office of energy market regulation)/i;
-const PROCEDURE = /\bextension\b|\berrata\b|\babeyance\b|^notice\b|^(?:motion to intervene|notice of intervention|doc-less motion)(?!.*\b(?:comments?|protest|answer)\b)/i;
-const RESPONSE = /protest|comments|answer|rehearing|brief|statement of position|clarification/i;
+export const FERC = /^(?:secretary of the commission|ferc\b|federal energy regulatory commission|office of energy market regulation)/i;
+// The motion itself is procedure; an answer supporting or opposing a pause or more time is a position on the case.
+export const PROCEDURE = /^(?:(?:joint |expedited |emergency |conditional )*motion|request)\b[^.]*\b(?:extension|abeyance|shortened|expedited action)\b|\berrata\b|^notice\b(?!.*\b(?:protest|comments?|answer)\b)|^(?:motion to intervene|notice of intervention|doc-less motion)(?!.*\b(?:comments?|protest|answer|clarification|rehearing)\b)/i;
+// eLibrary types many protests and rehearing requests as "filing", "request" or "motion", so read the title too.
+const RESPONSE = /protest|comments|answer|rehearing|brief|statement of position|clarification|motion to rescind/i;
+// Filings from individuals are counted but not queued: a policy choice, since the site curates organizations' positions.
+// Shared with tools/build-filing-readers.mjs, so the queue and the discussion pages agree on what is procedure.
+export const proceduralFiling = (r) => FERC.test(r.filer || "") || PROCEDURE.test(r.title || "");
 const INDIVIDUAL = /^individual\b/i;
 
 export function queue() {
   const catalog = read("docs", "reading", "catalog.json");
   const groups = read("sources", "filings", "proceedings.json").groups;
   const curated = new Set(read("sources", "filings", "perspectives.json").map((v) => /accession_number=([\d-]+)/.exec(v.url || "")?.[1]).filter(Boolean));
-  const groupOf = (r) => groups.find((g) => (g.match || []).some((m) => String(r.docket || "").startsWith(m)));
+  // "ER27-25" must not claim "ER27-250-000": a match ends at a dash or at the end of the docket number.
+  const groupOf = (r) => groups.find((g) => (g.match || []).some((m) => { const d = String(r.docket || ""); return d === m || d.startsWith(m + "-"); }));
   const out = new Map(groups.map((g) => [g.id, { id: g.id, title: g.short || g.title, total: 0, individual: 0, open: [] }]));
   for (const r of catalog) {
-    if (r.parent || !r.accession || !RESPONSE.test(r.kind || "") || FERC.test(r.filer || "") || PROCEDURE.test(r.title || "")) continue;
+    if (r.parent || !r.accession || !(RESPONSE.test(r.kind || "") || RESPONSE.test(r.title || "")) || proceduralFiling(r)) continue;
     const g = groupOf(r);
     if (!g) continue;
     const q = out.get(g.id);

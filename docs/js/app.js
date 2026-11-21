@@ -1892,7 +1892,7 @@
   // An answer can respond to FERC's order or to another party; the type alone does not say which, so read
   // the document's own title and summary, and fall back to the neutral "Answer".
   var TITLE_ROLE = [[/petition for review/i, "Court appeal"], [/rehearing/i, "Asks FERC to reconsider"], [/clarification/i, "Asks FERC to clarify"],
-    [/extension of (?:time|(?:the )?comment)|\bextension\b[^.]{0,60}\b(?:deadline|comment period)|\d+-day extension/i, "Asks for more time"], [/\babeyance\b/i, "Asks FERC to pause the case"], [/deficien/i, "FERC asks for more information"],
+    [/^(?:(?:joint |expedited |emergency )*motion|request)\b[^.]*\bextension\b/i, "Asks for more time"], [/\babeyance\b/i, "Asks FERC to pause the case"], [/deficien/i, "FERC asks for more information"],
     [/\blimited protest\b/i, "Opposes in part"], [/\bprotest\b/i, "Opposes"], [/informational report/i, "Report to FERC"]];
   var FERC_FILER = /^(?:secretary of the commission|ferc\b|federal energy regulatory commission|(?:commissioners|chair(?:man)?) and immediate staff|office of energy market regulation)/i;
   // The grid operators and their transmission owners: a bare "filing" from one of them is its own proposal.
@@ -1943,7 +1943,7 @@
     // Topics link to the theme filter, so the label does something. Themes matched by keyword in an
     // unread document say so, and their link includes the keyword matches.
     var kw = d.themesFrom === "text", role = kindRole(d.kind, d), side = sideText(d, role, g);
-    // A read position says more than the document type: "Opposes · opposes the proposal in part" says it twice.
+    // For a read position, the stance replaces a bare "Opposes" or "Comments" type; a reply keeps its type.
     if (d.position && /^(?:Opposes|Comments$)/.test(role) && side) { role = side.charAt(0).toUpperCase() + side.slice(1); side = ""; }
     var tags = (d.themes || []).length ? '<span class="fd-topics">' + (kw ? "Topics (keyword match): " : "Topics: ") + d.themes.map(function (t) {
       return '<a href="#filings/theme/' + esc(t) + (kw ? "/all" : "") + '">' + esc(themeLabel(R, t)) + "</a>";

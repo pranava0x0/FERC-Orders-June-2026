@@ -5298,11 +5298,11 @@
    ]
   },
   {
-   "id": "filed-7e2debf2fd",
+   "id": "filed-bd27ff77aa",
    "kind": "filed",
    "who": "Northern Indiana Public Service Company",
    "title": "NIPSCO backs LARS and cites 3,000 to 8,000 MW of inquiries",
-   "text": "NIPSCO asked FERC to accept MISO’s proposal effective December 2, 2026. It said it is considering requests to add between 3,000 and 8,000 MW of load, that the standard queue was not designed for paired load and generation, and that LARS agreements would be executed in 120 days.",
+   "text": "NIPSCO asked FERC to accept MISO’s proposal effective December 2, 2026. It said it is considering requests to add between 3,000 and 8,000 MW of load, that the standard queue was not designed for paired load and generation, and that LARS would yield interconnection agreements in 120 days.",
    "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261022-5130",
    "locator": "PDF pp. 1, 4–9",
    "docs": [
@@ -5321,10 +5321,10 @@
    ]
   },
   {
-   "id": "filed-6ba14aff79",
+   "id": "filed-0ddccbeb8f",
    "kind": "filed",
    "who": "Base Electron, Corp.",
-   "title": "Base Electron asks MISO to confirm how the 150% cap is measured",
+   "title": "Base Electron supports LARS and asks MISO to confirm how the 150% cap is measured",
    "text": "Base Electron supported timely acceptance and did not ask FERC to delay or condition LARS. It asked for confirmation that the 150% limit on interconnection service is measured against the load’s full expected peak, including planned later phases, not its first phase.",
    "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261023-5088",
    "locator": "PDF pp. 2–4",
@@ -5342,11 +5342,11 @@
    "themes": []
   },
   {
-   "id": "filed-34d0a66a57",
+   "id": "filed-be8cbecb9f",
    "kind": "filed",
    "who": "MISO Transmission Owners",
-   "title": "Transmission owners call LARS narrowly tailored and urge acceptance",
-   "text": "The transmission owners asked FERC to accept LARS effective December 2, 2026. They said it would yield an agreement in an estimated 120 days, is limited to three study cycles a year with ten applications per cycle, and keeps LARS requests out of the standard queue studies.",
+   "title": "Transmission owners support LARS as an appropriately tailored tool",
+   "text": "The transmission owners asked FERC to accept LARS effective December 2, 2026. They said it would yield an agreement in an estimated 120 days, is limited to three study cycles a year with ten applications per cycle, and keeps LARS requests out of the standard queue studies. The group lists Southern Minnesota Municipal Power Agency and NIPSCO among its members; both also filed separately, and SMMPA protested one part of LARS.",
    "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261023-5143",
    "locator": "PDF pp. 3, 5, 8–10",
    "docs": [
@@ -5386,11 +5386,11 @@
    "themes": []
   },
   {
-   "id": "filed-8b517a9425",
+   "id": "filed-3ff5cd1efb",
    "kind": "filed",
    "who": "Southern Minnesota Municipal Power Agency and WPPI Energy",
    "title": "Municipal utilities protest the zone-wide eligibility rule",
-   "text": "The two municipal power suppliers protested only the rule that any generator and load in the same Local Resource Zone can pair. They said it departs from the Show Cause Order’s two-substation example and excludes close pairs in different zones. They asked FERC to reject that scope and to condition acceptance on a later finding that MISO addressed cost allocation and transparency.",
+   "text": "The two municipal power suppliers protested one aspect of LARS, the rule that any generator and load in the same Local Resource Zone can pair. They said it departs from the Show Cause Order’s two-substation example and excludes close pairs in different zones. They asked FERC to reject that scope and to condition acceptance on a later finding that MISO addressed cost allocation and transparency.",
    "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261023-5191",
    "locator": "PDF pp. 2, 4–6, 10",
    "docs": [
@@ -5409,11 +5409,11 @@
    ]
   },
   {
-   "id": "filed-851bd5cd61",
+   "id": "filed-b9b4e41c9c",
    "kind": "filed",
    "who": "Geronimo Power",
    "title": "Geronimo says utility gatekeeping makes LARS unduly discriminatory",
-   "text": "Geronimo supported coordinated study in principle but said a generator cannot enter LARS without the transmission owner’s sign-off on its point of interconnection and a utility sponsor for the application. It also said virtual power purchase agreements and co-located projects may be shut out. It asked FERC to reject LARS without prejudice to a revised filing.",
+   "text": "Geronimo supported coordinated study in principle but said a generator cannot enter LARS without the transmission owner’s sign-off on its point of interconnection and a utility sponsor for the application. It also said MISO’s wording could exclude generators selling under virtual power purchase agreements and co-located generation and load. It asked FERC to reject LARS without prejudice to a revised filing.",
    "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261023-5198",
    "locator": "PDF pp. 3–7, 14–17",
    "docs": [
@@ -5424,7 +5424,8 @@
    ],
    "groups": [
     "miso-lars",
-    "pjm-colocation"
+    "pjm-colocation",
+    "sc-miso"
    ],
    "date": null,
    "themes": [
@@ -5454,11 +5455,11 @@
    "themes": []
   },
   {
-   "id": "filed-3d1bbd58dc",
+   "id": "filed-4025c1fb9c",
    "kind": "filed",
    "who": "Geronimo Power",
    "title": "Geronimo says MISO’s answer leaves the discrimination concerns unaddressed",
-   "text": "Geronimo said MISO’s answer gave no response on virtual power purchase agreements or co-location and did not justify the roles of load-serving entities and transmission owners. It said a transmission owner could also remove a project by changing the point of interconnection. It again asked FERC to reject LARS without prejudice to a revised filing.",
+   "text": "Geronimo said MISO’s answer gave only a generic response on virtual power purchase agreements and did not address co-location and did not justify the roles of load-serving entities and transmission owners. It said a transmission owner could also remove a project by changing the point of interconnection. It again asked FERC to reject LARS without prejudice to a revised filing.",
    "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261118-5238",
    "locator": "PDF pp. 2–10",
    "docs": [
@@ -5478,11 +5479,11 @@
    ]
   },
   {
-   "id": "filed-d975bec2c9",
+   "id": "filed-35e021a0b9",
    "kind": "filed",
    "who": "Southern Minnesota Municipal Power Agency and WPPI Energy",
    "title": "Municipal utilities say MISO’s answer does not justify the zone-wide scope",
-   "text": "Answering MISO’s November 9 answer, the two suppliers said MISO’s “maximum flexibility” rationale does not show the zonal scope meets the Show Cause Order. They said cost-shifting protections rest on future filings, and repeated that FERC should reject the geographic scope and condition acceptance rather than delay LARS.",
+   "text": "Answering MISO’s November 9 answer, the two suppliers said MISO’s “maximum flexibility” rationale does not show the zonal scope meets the Show Cause Order. They said cost-shifting protections rest on MISO’s separate Nov 16 filings, not the LARS tariff, and repeated that FERC should reject the geographic scope and condition acceptance rather than delay LARS.",
    "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261119-5278",
    "locator": "PDF pp. 3–5, 7–11",
    "docs": [
