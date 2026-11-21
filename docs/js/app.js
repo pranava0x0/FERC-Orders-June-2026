@@ -2088,6 +2088,8 @@
   }
   var FQ_MIN = 2;          // a one-letter query matches nearly every document
   var filingTheme = "", filingQuery = "", filingKw = false;
+  // The one search predicate: the document list and the theme chip counts must agree.
+  function matchesWords(d, words) { return words.every(function (w) { return w.test(d.getAttribute("data-q")); }); }
   function filingQueryHash() { return filingQuery.length >= FQ_MIN ? "q=" + encodeURIComponent(filingQuery) : ""; }
   // The theme chip and the typed query are one filter: a document shows when it passes both. Matching
   // proceedings open so the documents are on the page; clearing the filter folds back the ones it opened
@@ -2119,7 +2121,7 @@
       var n = 0;
       g.querySelectorAll(".fdoc").forEach(function (d) {
         var on = (!filingTheme || (" " + d.getAttribute("data-themes") + " ").indexOf(" " + filingTheme + " ") >= 0 && (filingKw || !d.hasAttribute("data-kw"))) &&
-          (!q || words.every(function (w) { return w.test(d.getAttribute("data-q")); }));
+          (!q || matchesWords(d, words));
         d.hidden = !on; if (on) n++;
       });
       g.hidden = n === 0; shown += n; if (n) groupsShown++;
@@ -2151,7 +2153,7 @@
     }
     // A chip's number is what tapping it would show, so it counts against the typed query.
     // Same word-by-word test as the filter above, so a count never disagrees with what the chip shows.
-    var docs = [].slice.call(panel.querySelectorAll(".fdoc")).filter(function (d) { return words.every(function (w) { return d.getAttribute("data-q").indexOf(w) >= 0; }); });
+    var docs = [].slice.call(panel.querySelectorAll(".fdoc")).filter(function (d) { return matchesWords(d, words); });
     var hasTheme = function (d, k) { return (" " + d.getAttribute("data-themes") + " ").indexOf(" " + k + " ") >= 0; };
     panel.querySelectorAll(".th-chips .who-chip").forEach(function (c) {
       var k = c.getAttribute("data-theme"), num = c.querySelector(".mono");
