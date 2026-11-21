@@ -1,0 +1,1411 @@
+--- PAGE 1 ---
+November 18, 2026 
+ 
+The Honorable Debbie-Anne A. Reese 
+Secretary 
+Federal Energy Regulatory Commission 
+888 First Street, N.E. 
+Washington, D.C.  20426 
+ 
+Re: 
+Southwest Power Pool, Inc., Docket No. ER27-____-000 
+Submission of Tariff Revisions to Enhance Transmission Service 
+Provisions for High Impact Large Loads and Clarify Interconnection 
+and Market Registration Requirements for Non-Transmission Facilities 
+in Response to Show Cause Order; Related to Docket No. EL26-68-000 
+ 
+Dear Secretary Reese:  
+ 
+ 
+Pursuant to Section 205 of the Federal Power Act (“FPA”), 16 U.S.C. § 824d, 
+and Section 35.13 of the Federal Energy Regulatory Commission’s (“Commission”) 
+Regulations, 18 C.F.R. § 35.13, Southwest Power Pool, Inc. ("SPP"), as authorized by 
+its independent Board of Directors, submits revisions to its Open Access Transmission 
+Tariff (“Tariff”)1 in response to the Commission’s June 18, 2026, order instituting a 
+proceeding under FPA Section 206 in Docket No. EL26-68-000 (“Show Cause 
+Order”).2 The proposed revisions fall into two related sets. The first set (the “HILL 
+Transmission Service Revisions”): (1) requires SPP to evaluate alternative 
+transmission technologies when studying transmission service for High Impact Large 
+Loads (“HILLs”);3 (2) memorializes the ongoing operational requirements applicable 
+ 
+1  
+Southwest Power Pool, Inc., Open Access Transmission Tariff, Sixth Revised Volume 
+No. 1.  References in this filing to "Tariff" refer to the version of SPP’s Tariff currently 
+in effect. "Proposed Tariff" refers to a version reflecting the revisions proposed in this 
+filing. All capitalized terms not otherwise defined in this filing shall have the 
+definitions assigned by the Tariff. 
+2  
+Sw. Power Pool, Inc., 195 FERC ¶ 61,213 (2026) (“Show Cause Order”). 
+3  
+Tariff, Part I, Section 1, Definition of High Impact Large Load (“A new commercial 
+or industrial load, or increase in commercial or industrial load, at a single site 
+connected through one or more shared Points of Interconnection (POIs) or delivery 
+points, where such load is either (1) 10 MW or more if connected to the Transmission 
+System at a voltage level less than or equal to 69 kV; or (2) 50 MW or more if 
+connected to the Transmission System at a voltage level greater than 69 kV. An 
+Electric Storage Resource is not considered a HILL. A load may be categorized as a 
+HILL after the initial effective date of Attachment BA of the Tariff.  High Impact Large 
+Loads must register as such in accordance with Attachment AE of the Tariff and follow 
+the processes specified in Attachment BA of the Tariff.”).
+--- PAGE 2 ---
+The Honorable Debbie-Anne A. Reese 
+November 18, 2026 
+Page 2 
+ 
+to HILLs in the pro forma transmission service agreements; and (3) provides 
+transparency regarding the Network Upgrades, and associated costs, needed to serve 
+HILLs. The second set (the “Non-Transmission Facility Revisions”): (1) defines a new 
+term, “Non-Transmission Facility,” that replaces the undefined “non-jurisdictional” 
+terminology; (2) clarifies the interconnection study requirements for generation 
+interconnecting to Non-Transmission Facilities, including Behind-The-Meter 
+Generation and on-site co-located generation; and (3) clarifies which party is 
+responsible for market registration when a Resource fails or refuses to register in the 
+Integrated Marketplace. Together, the HILL Transmission Service Revisions and the 
+Non-Transmission Facility Revisions are referred to as the “Large Load Revisions.” 
+Because both sets address how large loads, and the generation that serves them, connect 
+to and use the Transmission System, SPP submits them in a single filing so the 
+Commission can evaluate them together. As directed by the Show Cause Order, SPP 
+states explicitly that this proposal is submitted under FPA Section 205, and SPP 
+explains below which of the Commission’s Show Cause Order directives this filing 
+addresses, how it resolves them, and, in Sections IV and V, how the proposal avoids 
+disrupting existing commercial arrangements and why the requested effective date is 
+reasonable.4 
+ 
+SPP respectfully requests that the Commission issue an order finding the 
+proposed revisions just and reasonable and not unduly discriminatory or preferential, 
+accepting them effective February 16, 2027, and finding that they resolve the concerns 
+identified in Directive (1)(a), the transparency component of Directive (1)(b), and the 
+clarity, interconnection, and market participation components of Directive (1)(c) of the 
+Show Cause Order. 
+ 
+I. 
+SUMMARY OF FILING  
+In the Show Cause Order, the Commission commended SPP’s “bold and 
+proactive steps” to integrate large loads.5 The Commission recognized that SPP’s HILL 
+process already provides an enhanced study framework for Eligible Customers taking 
+transmission service on behalf of large loads.6 Given those enhancements, the 
+Commission stated that it expects SPP will be able to demonstrate that it has resolved 
+several of the concerns the Commission has identified regarding a lack of clarity and 
+consistency in other regions’ tariffs.7 The Commission nonetheless found that the HILL 
+process lacks two components: (1) provisions requiring the evaluation of alternative 
+transmission technologies; and (2) pro forma service agreement provisions 
+ 
+4 
+Show Cause Order at P 32. 
+5  
+Id. at P 2.  
+6  
+Id.; see also id. at P 43. 
+7  
+Id.
+--- PAGE 3 ---
+The Honorable Debbie-Anne A. Reese 
+November 18, 2026 
+Page 3 
+ 
+memorializing ongoing operational requirements.8 The Commission also preliminarily 
+found that the Tariff does not require centralized, accessible data on the Network 
+Upgrades and associated costs needed to serve large loads,9 and that the Tariff lacks 
+sufficient clarity and consistency regarding the rates, terms, and conditions of service 
+that apply to interconnection customers serving co-located load, including how those 
+customers may use SPP’s generator interconnection processes, the scope of SPP’s 
+study of co-location arrangements, and the responsibilities of the entities involved.10  
+The Large Load Revisions close each of these gaps, as summarized below: 
+ 
+Show Cause 
+Order directive 
+Commission’s concern 
+Tariff revision 
+HILL Transmission Service Revisions (RR808) 
+Directive (1)(a), 
+first component (PP 
+44–45) 
+Evaluation of alternative 
+transmission technologies 
+in all instances, without a 
+customer request, and a 
+clear demonstration in the 
+study report if traditional 
+Network Upgrades are 
+selected 
+New provisions in Attachment 
+BA, Section 2.1.3.4 requiring 
+every HILL Delivery Point 
+Study (“HDPS”) to evaluate 
+grid-enhancing technologies 
+(“GETs”) and requiring the 
+HDPS report to explain the 
+results of that evaluation 
+Directive (1)(a), 
+second component 
+(P 46) 
+Pro forma transmission 
+service agreement 
+provisions memorializing 
+ongoing HILL operational 
+requirements 
+New Section 6.0 of the 
+Attachment A Firm Point-to-
+Point Service Agreement and 
+new Section 3.0 of the 
+Attachment F Network 
+Integration Transmission 
+Service (“NITS”) Agreement, 
+which bind the Transmission 
+Customer or Network Customer 
+to Attachment BA, Section 2.2. 
+Both agreements also gain 
+fields to identify delivery points 
+that include a HILL 
+Directive (1)(b), 
+transparency 
+component (PP 52–
+58) 
+Data in a single location 
+on SPP’s website, 
+searchable and filterable, 
+on Network Upgrades 
+Attachment O, Section V 
+requires the SPP Transmission 
+Expansion Plan (“STEP”) to be 
+publicly available in a 
+ 
+8  
+Id. at PP 35, 43. 
+9  
+Id. 
+9  
+Id. at PP 52, 58. 
+10  
+Id. at PP 75–76, 78–79.
+--- PAGE 4 ---
+The Honorable Debbie-Anne A. Reese 
+November 18, 2026 
+Page 4 
+ 
+Show Cause 
+Order directive 
+Commission’s concern 
+Tariff revision 
+needed to serve large 
+loads and their costs 
+searchable and filterable format. 
+Attachment BA, Section 2.1.3.6 
+requires the Host Transmission 
+Owner to provide the Network 
+Upgrades and costs for HILL 
+delivery points for inclusion in 
+the STEP 
+Non-Transmission Facility Revisions (RR805) 
+Directive (1)(c), 
+clarity component 
+(PP 75–76) 
+Clear, consistent 
+terminology identifying 
+the facilities to which co-
+located and Behind-The-
+Meter Generation connect 
+New defined term “Non-
+Transmission Facility” in 
+Attachment V, Section 1, 
+Attachment AY, Section II, and 
+Attachment BB, Section 1. 
+Revised definitions of 
+“Affected System 
+Interconnection Customer,” 
+“Affected System Study,” and 
+“Transmission System” 
+Directive (1)(c), 
+interconnection 
+component (PP 76, 
+78–80) 
+When generation on 
+facilities outside the 
+Transmission System is 
+subject to SPP’s 
+interconnection study 
+requirements 
+Attachment V, Section 9.1 and 
+Attachment AY, Section V.9.1 
+point to the study requirements 
+and criteria in Business Practice 
+7250, Section 6. Attachment 
+BB, Section 3.1.3(4) routes 
+High Impact Large Load 
+Generation Assessment 
+(“HILLGA”) requests on Non-
+Transmission Facilities to that 
+same process 
+Directive (1)(c), 
+market 
+participation 
+component (P 76) 
+When such generation 
+must register in the 
+Integrated Marketplace, 
+and who is responsible 
+Attachment AE, Section 2.2(6) 
+identifies the party under whose 
+name an unexecuted service 
+agreement will be filed when a 
+Resource fails or refuses to 
+register, including the Market 
+Participant representing the load 
+for Behind-The-Meter 
+Generation 
+ 
+This filing is one part of SPP’s comprehensive response to the Show Cause 
+Order. The other directives are addressed in separate filings, as discussed in Section 
+III.E below.
+--- PAGE 5 ---
+The Honorable Debbie-Anne A. Reese 
+November 18, 2026 
+Page 5 
+ 
+II. 
+BACKGROUND 
+A. 
+The HILL Process  
+ 
+On January 14, 2026, the Commission accepted SPP's Tariff revisions 
+establishing the HILL study process in Attachment BA and the HILLGA process in 
+Attachment BB.11 Those revisions (1) defined HILLs as a new category of load; (2) 
+established enhanced study requirements for HILLs, including the HDPS, to enable 
+SPP to assess the reliability impacts of a HILL on the Transmission System; and (3) 
+imposed ongoing operational requirements on HILLs to ensure the continued reliable 
+operation of the Transmission System. Those operational requirements, in Attachment 
+BA, Section 2.2, include: compliance with non-conforming load requirements; real-
+time telemetry; remote disconnect capability; a ramp-rate limitation; phasor 
+measurement unit installation; ride-through requirements; and a prohibition on 
+withdrawals without appropriate transmission service.12 The Commission found the 
+HILL process to be “a just and reasonable approach for integrating transmission 
+customers’ new large loads onto SPP’s transmission system in a reliable manner.”13 
+ 
+B. 
+Generator Interconnections to Facilities Outside the Transmission 
+System  
+ 
+Attachments V and AY of the Tariff govern interconnection to SPP’s 
+Transmission System.14 Those Attachments also include Affected System Study 
+procedures for proposed interconnections to other transmission systems that may affect 
+SPP’s Transmission System.15 Some generation is Behind-The-Meter Generation, co-
+located on-site, or connected to distribution or other facilities that are not part of the 
+Transmission System. SPP currently addresses that type of generation through 
+Business Practice 7250, which uses "non-jurisdictional" terminology. The Tariff does 
+not define that term or use it consistently. As a result, the Tariff does not clearly state 
+when such generation will be studied for its impact on the Transmission System, by 
+whom, or through which study process. Nor does it identify the responsible party when 
+such generation fails to register in the Integrated Marketplace and is not subject to an 
+interconnection agreement with the Transmission Provider or a Transmission Owner. 
+ 
+ 
+ 
+ 
+11  
+Sw. Power Pool, Inc., 194 FERC ¶ 61,031 (2026) (“HILL Order”). 
+12  
+Tariff, Attachment BA, Section 2.2. 
+13  
+HILL Order at P 61. 
+14  
+Tariff, Attachments V and AY. 
+15 
+Tariff, Attachment V, Section 9; Tariff, Attachment AY, Section V.9.
+--- PAGE 6 ---
+The Honorable Debbie-Anne A. Reese 
+November 18, 2026 
+Page 6 
+ 
+C. 
+The Show Cause Order  
+ 
+For purposes of the Show Cause Order, the Commission adopted SPP’s 
+definition of “large load.”16 The Commission preliminarily found that the Tariff 
+appears unjust and unreasonable in four categories. The Commission directed SPP and 
+the Transmission Owners either to show cause why the Tariff remains just and 
+reasonable or to explain what changes would remedy the identified concerns.17 The 
+Commission strongly encouraged SPP to address these issues through FPA Section 205 
+filings.18 
+ 
+D.  
+Abeyance  
+ 
+On August 3, 2026, SPP moved to hold Docket No. EL26-68-000 in abeyance 
+through November 20, 2026, so SPP could develop Section 205 filings through its 
+stakeholder process.19 SPP described the anticipated content of those filings in its 
+Abeyance Motion, including the revisions submitted here.20 On August 14, 2026, the 
+Commission granted the Abeyance Motion and set a due date of November 20, 2026, 
+for SPP’s response to the Show Cause Order.21  
+ 
+E. 
+Stakeholder Process and Approval  
+ 
+The HILL Transmission Service Revisions (RR808) were reviewed and 
+approved without opposition through SPP’s robust stakeholder process, including 
+meetings of the Project Cost Working Group (“PCWG”) on September 28, 2026;22 
+ 
+16  
+Show Cause Order at n.2. 
+17  
+Id. at P 3. 
+18  
+Id. at P 32. 
+19  
+Joint Movants’ Amended Motion to Hold Section 206 Proceeding in Abeyance of 
+Southwest Power Pool, Inc., et al., Docket No. EL26-68-000 (Aug. 3, 2026) 
+(“Abeyance Motion”). 
+20  
+Id. at Section IV. 
+21  
+Sw. Power Pool, Inc., 196 FERC ¶ 61,128 (2026) (“Abeyance Order”). 
+22  
+See PCWG Minutes, dated September 28, 2026, at Agenda Item 2A posted at: 
+https://spp.org/documents/77912/pcwg%20special%20meeting%20minutes%202026
+0928.pdf. The PCWG provides stakeholder input, oversight and accountability that 
+allows for a transparent review of transmission project cost variances. The PCWG 
+evaluates projects that exceed allowable variance levels and provides quarterly reports 
+to stakeholders.
+--- PAGE 7 ---
+The Honorable Debbie-Anne A. Reese 
+November 18, 2026 
+Page 7 
+ 
+Transmission Working Group (“TWG”) on September 29, 2026;23 Economic Studies 
+Working Group (“ESWG”) on October 1, 2026;24 Regional Tariff Working Group 
+(“RTWG”) on October 7, 2026;25 Market Working Group (“MWG”) on October 7, 
+ 
+23  
+See TWG Minutes, dated September 29, 2026, at Agenda Item 5 posted at: 
+https://www.spp.org/documents/77977/twg%20meeting%20minutes%202026
+0929.pdf. The TWG develops and oversees regional and interregional transmission 
+planning processes, including generator interconnection and long-term transmission 
+service study processes. The TWG reviews proposed transmission interconnections 
+and coordinates transmission planning activities to develop SPP’s Integrated 
+Transmission Plan and Transmission Expansion Plan. 
+24  
+See ESWG & TWG Joint Meeting Minutes, dated September 30-October 1, 2026, at 
+Agenda Item 10 posted at: 
+ 
+https://www.spp.org/documents/77985/joint%20eswg-
+twg%20meeting%20minutes%2020260930-1001.pdf. The ESWG advises and assists 
+SPP staff in determining the appropriate data, planning methods and processes for 
+developing and evaluating economic transmission expansion options for the SPP 
+region.     
+25  
+See RTWG Approval, dated October 7, 2026, at RR808 Recommendation Report  
+posted at: https://www.spp.org/spp-documents-filings/?id=21069 (contained in zip file 
+“RR808 (SIR879) Transmission Service to Hill Impact Large Load”). The RTWG 
+develops, implements and oversees SPP’s Open Access Transmission Tariff. The 
+RTWG provides input on regulatory or implementation issues not specifically covered 
+by the tariff and issues where there may be conflicting or differing interpretations of 
+the tariff.
+--- PAGE 8 ---
+The Honorable Debbie-Anne A. Reese 
+November 18, 2026 
+Page 8 
+ 
+2026;26 Operating Reliability Working Group (“ORWG”) on October 8, 2026;27 and 
+the Markets and Operations Policy Committee (“MOPC”) on October 13-14, 2026.28  
+ 
+The Non-Transmission Facility Revisions (RR805) were also reviewed and 
+approved through SPP’s stakeholder process, including meetings of the Generation 
+Interconnection Advisory Group (“GIAG”) on September 16, 2026;29 ESWG on 
+ 
+26  
+See MWG Approval, dated October 7, 2026, at RR808 Recommendation Report posted 
+at: https://www.spp.org/spp-documents-filings/?id=21069 (contained in zip file 
+“RR808 (SIR879) Transmission Service to Hill Impact Large Load”). The MWG 
+develops and oversees policies and procedures related to the Market Protocols that 
+define SPP’s wholesale markets, including energy and operating reserve, congestion 
+management, congestion hedging, demand response and market power mitigation. The 
+MWG proposes changes to the SPP Tariff and other governing documents to 
+implement suggested market changes. 
+27  
+See ORWG Approval, dated October 8, 2026, at RR808 Recommendation Report 
+posted at: https://www.spp.org/spp-documents-filings/?id=21069 (contained in zip file 
+“RR808 (SIR879) Transmission Service to Hill Impact Large Load”). The ORWG 
+develops and oversees policies and procedures related to the reliable and secure 
+operation of the Bulk Electric System within SPP’s Reliability Coordinator, Balancing 
+Authority and Reserve Sharing Group footprints. The ORWG ensures these operating 
+policies are consistent with North American Electric Reliability Corporation and 
+regional reliability standards. 
+28  
+See MOPC Meeting Minutes, dated October 13-14, 2026, at Agenda Item 3.c posted 
+at: https://www.spp.org/spp-documents-filings/?id=532303. The MOPC consists of a 
+representative officer or employee from each SPP Member and reports to the SPP 
+Board of Directors. Its responsibilities include recommending modifications to the 
+Tariff. See Southwest Power Pool, Inc., Bylaws, First Revised Volume No. 4 
+("Bylaws") at Section 6.1.  
+29  
+See GIAG Meeting Minutes, dated September 16, 2026, at Agenda Item 2b posted at: 
+https://spp.org/documents/77873/giag%20meeting%20minutes%2020260916.pdf. 
+The GIAG shares information and gathers feedback related to SPP’s generation 
+interconnection (GI) studies. The GIAG relies on the collective knowledge of 
+interested GI customers and stakeholders to assist in developing recommendations to 
+improve SPP’s GI services.
+--- PAGE 9 ---
+The Honorable Debbie-Anne A. Reese 
+November 18, 2026 
+Page 9 
+ 
+September 21, 2026;30 TWG on September 21, 2026;31 MWG on October 7, 2026;32 
+the RTWG on October 7, 2026;33 and MOPC on October 13-14, 2026.34  
+ 
+While SPP recognizes that stakeholder approval does not by itself cause a filing 
+to be just and reasonable, SPP requests that the Commission extend appropriate 
+deference to SPP’s stakeholder process, consistent with Commission precedent.35 
+ 
+30  
+See ESWG & TWG Joint Meeting Minutes, dated September 21, 2026, at Agenda Item 
+3 
+posted 
+at: 
+https://spp.org/documents/77884/joint%20eswg-
+twg%20meeting%20minutes%2020260921.pdf. The ESWG advises and assists SPP 
+staff in determining the appropriate data, planning methods and processes for 
+developing and evaluating economic transmission expansion options for the SPP 
+region. The TWG develops and oversees regional and interregional transmission 
+planning processes, including generator interconnection and long-term transmission 
+service study processes. The TWG reviews proposed transmission interconnections 
+and coordinates transmission planning activities to develop SPP’s Integrated 
+Transmission Plan and Transmission Expansion Plan.  
+31  
+Id.  
+32  
+See MWG Approval, dated October 7, 2026, at RR805 Recommendation Report posted 
+at: https://www.spp.org/spp-documents-filings/?id=21069 (contained in zip file 
+“RR805 (SIR879) Non-Transmission Facilities”). The MWG develops and oversees 
+policies and procedures related to the Market Protocols that define SPP’s wholesale 
+markets, including energy and operating reserve, congestion management, congestion 
+hedging, demand response and market power mitigation. The MWG proposes changes 
+to the SPP Tariff and other governing documents to implement suggested market 
+changes. 
+33  
+See RTWG Approval, dated October 7, 2026, at RR805 Recommendation Report  
+posted at: https://www.spp.org/spp-documents-filings/?id=21069 (contained in zip file 
+“RR805 (SIR879) Non-Transmission Facilities”). The RTWG develops, implements 
+and oversees SPP’s Open Access Transmission Tariff. The RTWG provides input on 
+regulatory or implementation issues not specifically covered by the tariff and issues 
+where there may be conflicting or differing interpretations of the tariff. 
+34  
+See MOPC Meeting Minutes, dated October 13-14, 2026, at Agenda Item 3.b posted 
+at: https://www.spp.org/spp-documents-filings/?id=532303. The MOPC consists of a 
+representative officer or employee from each SPP Member and reports to the SPP 
+Board of Directors. Its responsibilities include recommending modifications to the 
+Tariff. See Southwest Power Pool, Inc., Bylaws, First Revised Volume No. 4 
+("Bylaws") at Section 6.1.  
+35   
+The Commission has previously recognized that provisions approved through regional 
+transmission organization stakeholder processes are due deference. See Sw. Power 
+Pool, Inc., 127 FERC ¶ 61,283, at P 33 (2009) (noting that the Commission “accord[s] 
+an appropriate degree of deference to RTO stakeholder processes”); New Eng. Power 
+Pool, 105 FERC ¶ 61,300, at P 34 (2003) (Commission approval of transmission cost
+--- PAGE 10 ---
+The Honorable Debbie-Anne A. Reese 
+November 18, 2026 
+Page 10 
+ 
+ 
+III. 
+DESCRIPTION OF AND JUSTIFICATION FOR THE LARGE LOAD 
+REVISIONS 
+ 
+The Large Load Revisions respond to the gaps the Commission identified and 
+build on a framework the Commission has already found just and reasonable. They 
+apply uniformly to all similarly situated customers and advance the Commission’s 
+stated objectives of protecting consumers from unnecessary costs, safeguarding 
+reliability, and improving transparency and consistency for customers, Transmission 
+Owners, Market Participants, and federal and state regulators. III.A through III.C 
+describe the HILL Transmission Service Revisions, Section III.D describes the Non-
+Transmission Facility Revisions, and Section III.E identifies the directives SPP is 
+addressing in separate filings. 
+ 
+Under FPA Section 205, SPP must show that its proposal is just and reasonable. 
+It need not show that the proposal is the only reasonable approach or that it is more 
+reasonable than the alternatives.36 As Commissioner LaCerte observed, FPA Section 
+205 provides a “relatively capacious standard” under which the Commission may 
+accept a broad range of proposals shown to be just and reasonable and not unduly 
+discriminatory or preferential.37 The Large Load Revisions meet that standard. For each 
+concern the Commission identified, SPP: 
+ 
+1. places in the Tariff the binding obligation the Commission found missing; 
+2. ties that obligation to an existing process the Commission has already accepted 
+(the HDPS, the pro forma service agreements, the STEP, the Affected System 
+Study framework, and the Attachment AE registration requirements) instead of 
+creating a parallel process; and 
+3. places implementation details, such as technology-specific evaluation methods 
+and size- and impact-based study thresholds, in Business Practices that are 
+developed and revised through SPP's stakeholder process. 
+ 
+allocation proposal based upon an extensive and thorough stakeholder process); Policy 
+Statement Regarding Regional Transmission Groups, 1991-1996 FERC Stats. & 
+Regs., Regs. Preambles ¶ 30,976, at 30,872 (1993) (the Commission will afford the 
+appropriate degree of deference to the stakeholder approval process). The 
+Commission’s deference to RTO stakeholder processes has been upheld by the courts. 
+See Pub. Serv. Comm’n of Wis. v. FERC, 545 F.3d 1058, 1062-63 (D.C. Cir. 2008) 
+(noting that the Commission often gives weight to RTO proposals that reflect the 
+position of the majority of the RTO’s stakeholders) (quoting Am. Elec. Power Serv. 
+Corp. v. Midwest Indep. Transmission Sys. Operator, Inc., 122 FERC ¶ 61,083, at P 
+172 (2008)). 
+36  
+See, e.g., Cities of Bethany v. FERC, 727 F.2d 1131, 1136 (D.C. Cir. 1984); OXY USA, 
+Inc. v. FERC, 64 F.3d 679, 692 (D.C. Cir. 1995). 
+37  
+Show Cause Order (LaCerte, Comm’r, concurring) at P 6.
+--- PAGE 11 ---
+The Honorable Debbie-Anne A. Reese 
+November 18, 2026 
+Page 11 
+ 
+ 
+This structure follows the Commission's rule of reason. Under that policy, a 
+tariff must include practices that significantly affect rates, terms, and conditions of 
+service, are realistically susceptible of specification, and are not so generally 
+understood in contractual arrangements that stating them would be superfluous. 
+Implementation details that do not meet that test may be placed in business practices.38 
+The Large Load Revisions divide the material along that line. The Tariff sets out each 
+binding obligation and references the applicable Business Practices that govern how 
+SPP carries it out. The Business Practices supply the technical and procedural detail 
+needed to carry out obligations the Tariff imposes. The Commission applied this same 
+standard in the Show Cause Order itself, focusing on responsibilities that “may 
+significantly affect rates and are realistically susceptible of specification.”39 
+ 
+A. 
+Evaluation of Alternative Transmission Technologies (Directive 
+(1)(a), First Component) 
+ 
+ 
+1. 
+Commission Concern 
+ 
+The Commission preliminarily found that the Tariff lacks clear and consistent 
+provisions requiring the evaluation of alternative transmission technologies as potential 
+solutions to accommodate a request for transmission service on behalf of a large load.40 
+The Commission noted three points: (1) these technologies can often add capacity on 
+existing lines within one to three years; (2) large load development timelines frequently 
+outpace traditional Network Upgrades; and (3) when large load driven Network 
+Upgrade costs are rolled into transmission revenue requirements, other transmission 
+customers may bear a portion of those costs.41 The Commission directed SPP to address 
+provisions that would (1) require the evaluation of alternative transmission 
+technologies “in all instances, without the need for a request from the Eligible 
+Customer”; and (2) if traditional Network Upgrades are selected, include in the study 
+report a sufficiently clear demonstration of why those technologies are not feasible or 
+ 
+38  
+City of Cleveland v. FERC, 773 F.2d 1368, 1376 (D.C. Cir. 1985); Hecate Energy 
+Greene Cnty., 3 LLC v. FERC, 72 F.4th 1307, 1312 (D.C. Cir. 2023); Prior Notice & 
+Filing Requirements Under Part II of the Fed. Power Act, 64 FERC ¶ 61,139, at 61,989 
+(1993); see also Show Cause Order at P 76 & n.150. 
+39  
+Show Cause Order at P 76 & n.150. 
+40  
+Show Cause Order at P 44; see also id. at P 35. 
+41  
+Id.
+--- PAGE 12 ---
+The Honorable Debbie-Anne A. Reese 
+November 18, 2026 
+Page 12 
+ 
+would not result in lower costs or a faster timeline.42 The Commission emphasized that 
+it was “not mandating the use of alternative transmission technologies.”43 
+ 
+ 
+ 
+2. 
+Proposed Revisions 
+ 
+SPP proposes to add the following to Attachment BA, Section 2.1.3.4:  
+ 
+The HDPS will evaluate the appropriateness of the use 
+of grid enhancing technologies (“GETs”) as described in 
+the SPP Business Practices. The Transmission Provider 
+will determine whether one or more GETs should be 
+identified as a solution(s) to needs determined in the 
+HDPS, consistent with Good Utility Practice, Applicable 
+Reliability Standards, and other Applicable Laws and 
+Regulations. The HDPS report will include an 
+explanation of the results of the Transmission Provider’s 
+evaluation of GETs.44 
+This revision addresses the Commission’s concerns regarding evaluation of 
+alternative transmission technologies as potential solutions to accommodate a request 
+for transmission service on behalf of a large load. First, Section 2.1.3.4 of Attachment 
+BA of the Proposed Tariff requires evaluation of GETs in all instances.45 Under 
+Attachment BA, SPP performs an HDPS for every requested HILL delivery point 
+change.46 The proposed new language says the HDPS “will evaluate” GETs, making 
+the evaluation mandatory for every HDPS study.47 The evaluation of GETs, therefore, 
+does not depend on a request from the Transmission Customer or Network Customer.48 
+Because the Commission adopted the HILL definition as its definition of “large load,” 
+the evaluation covers every transmission service request within the scope of the Show 
+Cause Order.49 
+ 
+ 
+42  
+Id. at P 45. 
+43  
+Id. 
+44  
+Proposed Tariff, Attachment BA, Section 2.1.3.4. 
+45  
+Id. 
+46  
+Tariff, Attachment BA, Section 2.1.3.4. 
+47  
+Proposed Tariff, Attachment BA, Section 2.1.3.4.  
+48  
+Id.  
+49  
+Show Cause Order at n.2.
+--- PAGE 13 ---
+The Honorable Debbie-Anne A. Reese 
+November 18, 2026 
+Page 13 
+ 
+Second, the evaluation covers the technologies the Commission identified. In 
+footnote 14, the Show Cause Order lists the alternative transmission technologies the 
+Commission had in mind: static synchronous compensators, static VAR compensators, 
+advanced power flow control devices, transmission switching, synchronous 
+condensers, voltage source converters, advanced conductors, tower lifting, and 
+dynamic line ratings.50 SPP Business Practice 7850, referenced in Attachment BA, 
+evaluates each of these nine technologies and explains how SPP applies them to the 
+types of constraints that large loads typically create.51 Although the Proposed Tariff 
+uses the term “GETs,” Business Practice 7850 applies that term to all nine technologies 
+the Commission identified, including advanced conductors and tower lifting, so the 
+evaluation is not limited to a narrower set of grid-enhancing devices. The Commission 
+likewise noted that it has referred to these technologies as GETs.52 The HDPS 
+evaluation uses models and study tools capable of representing the applicable 
+characteristics of each technology identified in Business Practice 7850, consistent with 
+the Commission's direction that the evaluation use models capable of accurately 
+accounting for advanced transmission technologies.53 Depending on the constraint 
+identified, SPP uses steady-state power flow, short-circuit, RMS/transient stability, 
+and, when necessary, electromagnetic transient ("EMT") analyses. SPP uses PSS®E 
+and TSAT™ for power flow and RMS dynamic studies, and PSCAD™ for detailed 
+EMT studies. Each technology is represented in a way that fits it: 
+ 
+• 
+Reactive supports including synchronous condenser, static synchronous 
+compensators, and static VAR compensators; advanced power flow control, 
+and VSC-HVDC facilities: power flow, short circuit, and dynamic models;  
+• 
+Transmission switching: topology changes 
+• 
+Advanced conductors and tower lifting: updated equipment parameters and 
+ratings 
+• 
+Dynamic line ratings: condition-dependent thermal ratings 
+ 
+The models and analyses used in a given HDPS depend on the identified 
+constraint, the validated model data and supporting technical information available, and 
+the level of detail needed to determine whether the technology provides reliable 
+mitigation. Where sufficient validated models or supporting data are unavailable, the 
+HDPS report will explain how that limitation affected the evaluation. 
+ 
+ 
+50  
+Id. at n.14. 
+51  
+See Business Practice 7850, Section A. 
+52  
+Show Cause Order at n.14. 
+53  
+Id. at P 45.
+--- PAGE 14 ---
+The Honorable Debbie-Anne A. Reese 
+November 18, 2026 
+Page 14 
+ 
+Third, Section 2.1.3.4 of Attachment BA of the Proposed Tariff requires that 
+the HDPS report include an explanation of the results of SPP’s GETs evaluation.54 
+Business Practice 7850 requires each HDPS report to explain the results for each 
+identified technology and provides a model format that documents, technology by 
+technology, whether the technology was selected, was less cost-effective than the 
+selected mitigation, could not resolve the identified constraint, or was screened out for 
+a stated technical reason.55 This provides the Eligible Customer the transparency the 
+Commission called for in the Show Cause Order.56 Specifically, where SPP selects 
+traditional Network Upgrades, the HDPS report will explain, technology by 
+technology, whether the alternative technology would not resolve the identified 
+reliability need, would not result in lower costs, or would not provide a faster timeline. 
+ 
+Finally, the revisions respect engineering judgment and do not mandate GETs. 
+As the Commission directed, the revisions require evaluation, not deployment.57 Under 
+the proposed language, SPP selects a GET only when doing so is consistent with Good 
+Utility Practice, Applicable Reliability Standards, and other Applicable Laws and 
+Regulations.58 This protects reliability for existing customers while ensuring cost-
+effective, faster solutions are not overlooked and is consistent with the Commission’s 
+statement that it is not mandating the use of alternative transmission technologies, as 
+well as the goal, articulated in Commissioner See’s concurrence, of respecting 
+transmission providers’ engineering judgments while protecting against unnecessary 
+upgrade costs.59 By requiring SPP to consider lower-cost and faster-to-deploy 
+alternatives before selecting traditional Network Upgrades, the proposed revision also 
+addresses the Commission’s concern that large load driven Network Upgrade costs 
+rolled into transmission revenue requirements may be borne in part by other 
+transmission customers. 
+ 
+ 
+ 
+54  
+Proposed Tariff, Attachment BA, Section 2.1.3.4. 
+55  
+Business Practice 7850, Section C. 
+56  
+Show Cause Order at P 45. 
+57  
+Id. 
+58  
+Proposed Tariff, Attachment BA, Section 2.1.3.4. 
+59  
+Show Cause Order at P 45.
+--- PAGE 15 ---
+The Honorable Debbie-Anne A. Reese 
+November 18, 2026 
+Page 15 
+ 
+B. 
+Pro Forma Service Agreement Provisions Memorializing Ongoing 
+Operational Requirements (Directive (1)(a), Second Component) 
+ 
+ 
+ 
+1. 
+Commission Concern  
+ 
+ 
+The Commission found that, although the Tariff includes ongoing operational 
+requirements for HILLs, the HILL process does not include pro forma provisions in a 
+transmission service agreement that memorialize them.60 Without such provisions, the 
+Commission was concerned that SPP “may be unable to enforce ongoing operational 
+requirements.”61 
+ 
+ 
+ 
+2. 
+Proposed Revisions  
+ 
+SPP proposes the following revisions addressing the Commission’s concerns 
+with respect to operational requirements. Section 6.0 of Attachment A of the Proposed 
+Tariff (Form of Service Agreement for Firm Point-to-Point Transmission Service) 
+provides that, if any portion of the load receiving Firm Point-to-Point Transmission 
+Service under the Service Agreement is a HILL, the Transmission Customer must 
+satisfy the Additional Requirements for High Impact Large Loads in Attachment BA, 
+Section 2.2 for each HILL.62 The Specifications for Long-Term Firm Point-to-Point 
+Transmission Service add a field to identify which Point(s) of Delivery include 
+HILLs.63 Similarly, new Section 3.0 of the Specifications for Network Integration 
+Transmission Service (Attachment 1 to the Network Integration Transmission Service 
+Agreement in Attachment F of the Proposed Tariff), provides that, if any portion of the 
+Network Customer’s Network Load listed in Appendix 3 is a HILL, the Network 
+Customer must satisfy the Additional Requirements for HILLs for each such load as 
+required by Attachment BA, Section 2.2.64 Appendix 3 (Delivery Points) adds a column 
+showing whether each delivery point includes a HILL and, if so, the effective date.65 
+SPP incorporates the Attachment BA, Section 2.2 requirements by reference rather than 
+restating them. The requirements therefore stay uniform across all customers, and any 
+future Commission-accepted change to Attachment BA, Section 2.2 flows 
+automatically into every service agreement without amending each one. 
+ 
+60  
+Id. at P 46. 
+61  
+Id.  
+62  
+Proposed Tariff, Attachment A, Section 6.0. 
+63  
+Id. at Specifications for Long-Term Firm Point-To-Point Transmission Service, 
+Section 4.0.  
+64  
+Proposed Tariff, Attachment F, Attachment 1 (Specifications for Network Integration 
+Transmission Service), Section 3.0. 
+65  
+Id. at Appendix 3.
+--- PAGE 16 ---
+The Honorable Debbie-Anne A. Reese 
+November 18, 2026 
+Page 16 
+ 
+ 
+These revisions address the Commission’s concerns by making the Attachment 
+BA, Section 2.2 operational requirements an express contractual obligation of the 
+Transmission Customer or Network Customer in every pro forma transmission service 
+agreement covering a HILL. SPP can therefore enforce those requirements both under 
+the Tariff and under the executed agreement. This directly resolves the Commission’s 
+concern that, without such provisions, SPP “may be unable to enforce ongoing 
+operational requirements,” and preserves the real-time safeguards the Commission 
+relied on when it accepted the HILL process.66 The new delivery point identification 
+fields also make it clear which delivery points carry HILL obligations, and from what 
+date. This removes any ambiguity about the scope of the customer’s obligations and 
+improves SPP’s visibility into where HILLs are on the system.  
+ 
+C. 
+Transparency Regarding Large Load Driven Network Upgrades 
+and Costs (Directive (1)(b), Transparency Component) 
+ 
+ 
+1. 
+Commission Concern 
+ 
+The Commission preliminarily found that the Tariff “appears to be unjust and 
+unreasonable or unduly discriminatory or preferential because it does not contain 
+provisions requiring the provision of data on SPP’s website in a single location, and in 
+an easily accessible format that is searchable and allows users to filter the data, on 
+transmission service requested by Eligible Customers on behalf of large loads, for 
+Network Upgrades evaluated in the local transmission planning process that are needed 
+to provide transmission service to Eligible Customers on behalf of those large loads, 
+and the costs for those Network Upgrades.”67 The Commission acknowledged that SPP 
+already reports Network Upgrade information generally.68 Its concern was that this 
+reporting is primarily aggregated and not required by the Tariff.69 The Commission 
+directed SPP to explain whether the Tariff remains just and reasonable without 
+provisions that would require SPP and the Transmission Owners to publicly post and 
+regularly update data that details:  (1) the aggregate amounts of proposed large load 
+additions (including by transmission pricing zone), (2) the planned Network Upgrades 
+needed to provide transmission service to Eligible Customers on behalf of large loads, 
+ 
+66  
+Show Cause Order at P 46; HILL Order at P 63. 
+67  
+Show Cause Order at P 52; see also id. at PP 54, 56, & n.126. The Commission 
+emphasized that its concern with transparency regarding Network Upgrades needed to 
+provide transmission service to Eligible Customers on behalf of large loads, as well as 
+the costs of such upgrades, is limited to Network Upgrades planned through the local 
+transmission planning process.  
+68  
+Id. at P 55. 
+69  
+Id.
+--- PAGE 17 ---
+The Honorable Debbie-Anne A. Reese 
+November 18, 2026 
+Page 17 
+ 
+identified by type of equipment and Network Upgrade (e.g. new substation, 
+reconductoring, a new high-voltage transmission line) for each transmission service 
+request, and (3) cost estimates for those Network Upgrades.70  
+ 
+ 
+2. 
+Proposed Revisions  
+ 
+SPP proposes two revisions. First, new language in Section V of Attachment O 
+requires the SPP Transmission Expansion Plan (STEP) to be “publicly available on the 
+Transmission Provider’s website, in a searchable and filterable format, containing non-
+confidential information.”71 Second, new language in Section 2.1.3.6 of Attachment 
+BA requires the Host Transmission Owner to provide SPP with the Network Upgrades 
+and costs identified in the Load Connection Study Report and the HILL Supplemental 
+Connection Report for each HILL delivery point, for inclusion in the STEP report.72 
+The STEP already includes Network Upgrades required under the Attachment AQ and 
+Attachment AX study processes, through which HILL delivery points are studied, 
+together with the supplemental HILL studies under Attachment BA.73  
+ 
+These revisions directly respond to the Commission’s concerns. First, the 
+Attachment BA revision addresses the Commission’s transparency concerns regarding 
+Network Upgrades evaluated in the local transmission planning process by requiring 
+the Host Transmission Owner, who identifies these facilities through the HILL 
+Supplemental Connection Report, to report them and their costs to SPP for inclusion in 
+the STEP. This targets exactly the category of upgrades the Commission identified: the 
+Commission limited its transparency concern to Network Upgrades planned through 
+the local transmission planning process, and the Host Transmission Owner is the entity 
+that identifies those facilities.74 Second, the Attachment O revision makes the STEP, a 
+single, Tariff-mandated repository on SPP’s website, searchable and filterable. SPP will 
+document the Network Upgrades reported by Host Transmission Owners under 
+Attachment BA in both the STEP report and the STEP's Appendix 1 spreadsheet, which 
+SPP already posts on its website.75 Together, these revisions give state regulators, 
+transmission customers, and other stakeholders the means to identify which Network 
+Upgrades are driven by large loads and what they cost. The revisions limit public 
+ 
+70  
+Id. at P 58. 
+71  
+Proposed Tariff, Attachment O, Section V.  
+72  
+Proposed Tariff, Attachment BA, Section 2.1.3.6. 
+73  
+Tariff, Attachment O, Sections I and V. 
+74  
+Show Cause Order at P 56 & n.126. 
+75  
+See, e.g., SPP, 2026 SPP Transmission Expansion Plan (STEP), posted at: 
+https://spp.org/Documents/76727/2026%20SPP%20Transmission%20Expansion%20
+(STEP)%20Plan.zip.
+--- PAGE 18 ---
+The Honorable Debbie-Anne A. Reese 
+November 18, 2026 
+Page 18 
+ 
+posting to non-confidential information, consistent with the Tariff and current practice. 
+This responds to the Commission’s direction that SPP mitigate confidentiality concerns 
+while still providing the necessary transparency.76 
+D. 
+Co-Location and Behind-The-Meter Generation (Directive (1)(c), 
+Clarity, Interconnection, and Market Participation Components) 
+ 
+1. 
+Commission Concern  
+ 
+The Commission preliminarily found that the Tariff lacks sufficient clarity and 
+consistency regarding the rates, terms, and conditions of service that apply to 
+interconnection customers serving co-located load,77 including how those customers 
+may use SPP’s generator interconnection processes, the scope of SPP’s study of co-
+location arrangements, and the responsibilities of the entities involved. The 
+Commission also raised concerns about transmission and ancillary service rates for 
+Eligible Customers taking service on behalf of co-located load and load with Behind-
+The-Meter Generation.78 This filing provides clarity and addresses the interconnection 
+and market participation components of that concern. SPP addresses the transmission 
+service component, including transmission and ancillary service rates for co-located 
+load, in its response in Docket No. EL26-68-000, as described in Section III.E. The 
+Commission specifically invited SPP to explain how its existing HILLGA process may 
+already clarify some of these requirements or may be modified to provide such clarity. 
+The Non-Transmission Facility Revisions do both.79 
+ 
+2.  
+Proposed Revisions  
+ 
+ 
+ 
+a. 
+Defining Non-Transmission Facilities  
+ 
+SPP proposes to add the following defined term to Attachment V, Section 1 and 
+Attachment AY, Section II: 
+ 
+Non-Transmission Facility shall mean a facility within 
+the SPP Region that is not included as part of the 
+ 
+76  
+Show Cause Order at P 58.  
+77 
+The Show Cause Order defines co-located load as a configuration that refers to end-
+use customer load that is physically connected to the facilities of an existing or planned 
+generating facility on the interconnection customer’s side of the point of 
+interconnection to the RTO/ISO’s transmission system. In the Show Cause Order, the 
+Commission uses the term co-location arrangement when referring to both the co-
+located load and the associated generating facility. See id. at P 70. 
+78  
+Id. at PP 75–80. 
+79  
+Id. at P 76.
+--- PAGE 19 ---
+The Honorable Debbie-Anne A. Reese 
+November 18, 2026 
+Page 19 
+ 
+Transmission System or does not meet the criteria for a 
+transmission facility under Attachment AI.80 
+Attachment BB, Section 1 incorporates this definition by reference, along with 
+the definitions of “Affected System Interconnection Customer” and “Affected System 
+Study.”81 SPP also proposes to revise the definitions of “Affected System 
+Interconnection Customer” and “Affected System Study” in Attachments V and AY to 
+expressly include interconnection requests for generating facilities “to a Non-
+Transmission Facility” that may cause the need for Affected System Network Upgrades 
+on, or that have an impact on, SPP’s Transmission System.82 Finally, SPP proposes to 
+revise the definition of “Transmission System” in Attachments V and AY to mean “the 
+facilities used by the Transmission Provider to provide transmission service under Part 
+II, Part III, Part IV, and Part VII of the Tariff.”83 
+ 
+These revisions supply the clear terminology the Commission sought. First, the 
+new defined term replaces the undefined and inconsistently used “non-jurisdictional” 
+terminology with an objective, Tariff-based standard tied to the Transmission System 
+and the transmission facility criteria in Attachment AI. Second, by bringing Non-
+Transmission Facilities within the Affected System definitions, the revisions make 
+clear that generation interconnecting to those facilities, including Behind-The-Meter 
+Generation and on-site co-located generation, falls within SPP’s existing Affected 
+System Study framework when it may affect the Transmission System. Third, the 
+revised Transmission System definition ties that term to the facilities SPP uses to 
+provide transmission service under the Tariff, so the boundary between the 
+Transmission System and Non-Transmission Facilities is clear. Together, these 
+revisions give Interconnection Customers, Transmission Owners, and Market 
+Participants a consistent vocabulary across the Tariff and SPP’s Business Practices. 
+ 
+ 
+ 
+b. 
+Interconnection Study Requirements  
+ 
+SPP proposes to revise Attachment V, Section 9.1 and Attachment AY, Section 
+V.9.1 to direct readers to Business Practice 7250 for the study requirements that apply 
+when an Affected System Interconnection Customer seeks to interconnect to a Non-
+Transmission Facility, or to other facilities not covered by a transmission provider's 
+open access transmission tariff.84 The revised sections also point to the criteria in 
+Business Practice 7250 that SPP uses to decide whether such a request must be studied 
+ 
+80 
+Proposed Tariff, Attachment V, Section 1; Attachment AY, Section II. 
+81 
+Proposed Tariff, Attachment BB, Section 1. 
+82 
+Proposed Tariff, Attachment V, Section 1; Attachment AY, Section II. 
+83 
+Id. 
+84  
+Proposed Tariff, Attachment V, Section 9.1; Attachment AY, Section V.9.1.
+--- PAGE 20 ---
+The Honorable Debbie-Anne A. Reese 
+November 18, 2026 
+Page 20 
+ 
+in the Interconnection Cluster Study under Attachment AY or in the Affected System 
+Study process detailed in Section 9 of Attachment AY.85 
+ 
+SPP also proposes to revise Attachment BB, Section 3.1.3(4). Under the 
+revision, a customer requesting a generator interconnection to a Non-Transmission 
+Facility as part of a HILLGA Request must follow the procedures in Section 6 of 
+Business Practice 7250.86 
+ 
+Business Practice 7250, Section 6, sets out the study framework referenced in 
+the Tariff:87 
+ 
+Notification. When a Transmission Owner becomes aware of an 
+interconnection request of 5 MW or greater to a Non-Transmission Facility, it must 
+notify SPP. The Transmission Owner must also notify SPP of modifications to 
+existing or planned generation on Non-Transmission Facilities, regardless of size, 
+if they may materially impact the Transmission System. 
+SPP evaluation. For interconnection requests of 5 MW or more that may 
+impact the Transmission System, SPP will evaluate any identified impacts to ensure 
+continued reliability of the Transmission System. It will do so even though those 
+requests are not subject to Attachments V or AY. 
+Study pathways. Business Practice 7250 establishes five study pathways based 
+on the size of the request and its injection or impact on the Transmission System. 
+ 
+Pathway 
+Interconnections to Non-
+Transmission Facilities 
+Study 
+Naming Convention 
+1 
+10 MW or greater with 1 MW 
+or greater injection/impact 
+DISIS/ICS 
+Affected System 
+Generator 
+Interconnection (ASGI) 
+2 
+10 MW or greater with less 
+than 1 MW injection/impact 
+90-Day Affected 
+System Study 
+Non-Transmission 
+Facility Interconnection 
+(NTF) 
+3 
+10 MW or greater with less 
+than 1 MW injection/impact 
+under system intact conditions 
+with proposed load 
+90-Day High Impact 
+Large Load Generator 
+Assessment 
+Non-Transmission 
+Facility-High Impact 
+Large Load Generator 
+Assessment (NTF-
+HILLGA) 
+4 
+Less than 10 MW with 1 MW 
+or greater injection/impact 
+90-Day Affected 
+System Study 
+Non-Transmission 
+Facility Interconnection 
+(NTF) 
+5 
+Less than 10 MW with less 
+than 1 MW injection/impact 
+TO SIS accepted if no 
+injection/impact, or 90-
+Day Affected System 
+Study 
+Non-Transmission 
+Facility Interconnection 
+(NTF) 
+ 
+85  
+Id.  
+86 
+Proposed Tariff, Attachment BB, Section 3.1.3(4). 
+87 
+Business Practice 7250, Section 6.
+--- PAGE 21 ---
+The Honorable Debbie-Anne A. Reese 
+November 18, 2026 
+Page 21 
+ 
+ 
+Applicability. Section 6 expressly applies to Behind-The-Meter Generation, 
+on-site co-located generation, and generation connected to Non-Transmission 
+Facilities. 
+Responsibilities. Section 6 describes the respective study, notification, and 
+agreement responsibilities of the Transmission Owner and SPP. That includes the 
+requirement that Network Upgrades identified on the Transmission System be 
+completed before the Generating Facility operates, unless SPP has approved other 
+mitigations. 
+ 
+These revisions address the Commission’s interconnection concerns. First, the 
+Tariff now expressly states that interconnection requests to Non-Transmission 
+Facilities are evaluated under SPP’s Affected System Study framework. It also 
+identifies where the applicable study criteria are found. Second, Business Practice 7250 
+gives objective, size- and impact-based thresholds that determine whether a request is 
+studied, which study applies, and who performs it. Generation that is behind the meter 
+or co-located therefore cannot fall outside the Tariff’s study framework merely because 
+the facility it connects to is not part of the Transmission System. Third, the NTF-
+HILLGA pathway gives interconnection customers a defined route to pair Behind-The-
+Meter Generation with a HILL. This links SPP’s co-location framework to the HILL 
+process the Commission has already found just and reasonable.88 Finally, the revisions 
+preserve reliability. Generation that could inject onto, or otherwise affect, the 
+Transmission System is identified and studied, and any necessary Network Upgrades 
+are completed before operation. The framework also responds to the Commission’s 
+concern about the scope of the analyses SPP performs to evaluate co-location 
+arrangements. Business Practice 7250 requires Transmission Owner studies to include 
+thermal, voltage, and short-circuit analyses. It adds stability evaluations above 
+specified size thresholds and allows SPP to perform stability analysis for NTF-
+HILLGA requests within 90 days.89 
+ 
+ 
+ 
+c. 
+Market Registration Responsibilities  
+ 
+SPP proposes to revise Attachment AE, Section 2.2(6) to provide that a failure 
+or refusal to register a Resource will result in the Transmission Provider filing an 
+unexecuted version of the service agreement specified in Attachment AH with the 
+Commission under the name of the Market Participant or other entity that owns the 
+Resource or, in the case of Behind-The-Meter Generation, under the name of the 
+Market Participant representing the load where the Resource is connected.90 
+ 
+ 
+88 
+HILL Order at PP 61, 64. 
+89  
+Show Cause Order at P 78; Business Practice 7250, Section 6.1. 
+90 
+Proposed Tariff, Attachment AE, Section 2.2(6).
+--- PAGE 22 ---
+The Honorable Debbie-Anne A. Reese 
+November 18, 2026 
+Page 22 
+ 
+Business Practice 7250, Section 6.1 further confirms that, although generation 
+interconnecting to Non-Transmission Facilities is not subject to Attachments V or AY, 
+generating facilities on Non-Transmission Facilities that are 10 MW or greater are 
+subject to the registration requirements in Attachment AE.91 
+ 
+Although the Tariff currently requires registration of Behind-The-Meter 
+Generation that is 10 MW or greater, the existing failure-to-register provision in 
+Attachment AE, Section 2.2(6) contemplates filing an unexecuted service agreement 
+under the name of the generation interconnection customer under an interconnection 
+agreement with the Transmission Provider or the applicable Transmission Owner. That 
+provision does not account for Resources that may not be subject to an interconnection 
+agreement with the Transmission Provider or a Transmission Owner, such as Behind-
+The-Meter Generation and generation interconnected to Non-Transmission Facilities. 
+These revisions address the Commission's market participation concern by extending 
+the provision to those situations and assigning responsibility to an entity with a Tariff-
+based relationship to the Resource. During stakeholder review, SPP considered making 
+the Transmission Owner or the Transmission Customer responsible. Either may be an 
+appropriate party in some circumstances, but neither would reliably capture the 
+appropriate party in all of them. In many cases, the entity that owns or controls the 
+Non-Transmission Facility is not a Transmission Customer under the Tariff, and the 
+Transmission Owner may have no control over, or contractual relationship with, the 
+owner of the Non-Transmission Facility or the Resource. Naming the Resource owner 
+or, for Behind-The-Meter Generation, the Market Participant representing the host load 
+places the registration obligation, and the consequences of failing to meet it, on the 
+party best positioned to comply. This gives the Commission clarity about when, and by 
+whom, co-located generation and Behind-The-Meter Generation must be registered in 
+the Integrated Marketplace, consistent with the Commission's emphasis on a common 
+and consistent understanding of entities' responsibilities relevant to co-location 
+arrangements.92 
+ 
+ 
+ 
+d. 
+Additional Clarifying Revisions  
+ 
+SPP also proposes two related clarifying revisions to the Affected System Study 
+provisions. First, Attachment V, Section 9.1 and Attachment AY, Section V.9.1 now 
+refer generally to any party with which SPP has an effective joint operating agreement 
+or coordination agreement, rather than only MISO or AECI. The terms of that 
+agreement will govern.93 Second, Attachment V, Section 9.8 and Attachment AY, 
+Section V.9.8 replace the mandatory post-study meeting requirement. Instead, within 
+ten Business Days after SPP posts the Affected System Study Report, Affected System 
+Interconnection Customers may submit questions or request a meeting through SPP’s 
+ 
+91 
+Business Practice 7250, Section 6.1. 
+92  
+Show Cause Order at P 76. 
+93 
+Proposed Tariff, Attachment V, Section 9.1; Attachment AY, Section V.9.1.
+--- PAGE 23 ---
+The Honorable Debbie-Anne A. Reese 
+November 18, 2026 
+Page 23 
+ 
+Request Management System (“RMS”).94 These revisions are consistent with the 
+revisions described above, which expand on which entities qualify as Affected System 
+Interconnection Customers. They also give those customers a transparent, documented 
+channel for engaging with SPP on study results. 
+ 
+E. 
+Directives Addressed in Separate Filings  
+ 
+This filing does not address the remaining Show Cause Order directives. SPP 
+is addressing them in the following separate filings:  
+ 
+• the Large Load Safe Harbor Revisions;   
+• the Price Adaptive Load Service (PALS); and 
+• 
+SPP’s response to the Show Cause Order in Docket No. EL26-68-000, 
+which addresses, among other things, transmission and ancillary service 
+rates for co-located load. 
+ 
+ 
+SPP respectfully requests that the Commission consider this filing together with 
+the above filings as SPP’s response to the Show Cause Order. 
+ 
+IV. 
+PROTECTION OF EXISTING COMMERCIAL ARRANGEMENTS  
+ 
+The Show Cause Order directs that any Section 205 filing explain how the 
+proposal will avoid disrupting existing commercial arrangements and identify a 
+reasonable effective date.95 The Large Load Revisions are designed to apply 
+prospectively and with minimal disruption. Because the requested effective date is 90 
+days after this filing, parties to agreements that are nearing completion will have a 
+reasonable period to finalize them before the revisions take effect. The revisions apply 
+as follows: 
+ 
+• GETs evaluation. The new HDPS requirement will apply to HILL delivery 
+point requests submitted on or after the effective date. HDPS for requests 
+submitted before the effective date will finish under the existing scope, so 
+ongoing studies are not delayed or re-performed. 
+• Service agreement provisions. Transmission Customers taking service on 
+behalf of HILLs are already bound by Attachment BA, Section 2.2 under the 
+Tariff. The new pro forma provisions memorialize existing obligations and do 
+not create new substantive requirements. They will apply to service agreements 
+executed or amended on or after the effective date. Existing service agreements 
+covering HILLs will be conformed at their next amendment. 
+• Transparency. The searchable, filterable STEP format and the Host 
+Transmission Owner reporting obligation will be implemented beginning with 
+ 
+94 
+Proposed Tariff, Attachment V, Section 9.8; Attachment AY, Section V.9.8. 
+95  
+Show Cause Order at PP 5, 32, 92.
+--- PAGE 24 ---
+The Honorable Debbie-Anne A. Reese 
+November 18, 2026 
+Page 24 
+ 
+the first STEP update following the effective date. Neither imposes new 
+obligations on Eligible Customers or affects pending agreements. 
+• Definitions. The new “Non-Transmission Facility” definition and conforming 
+revisions replace inconsistent terminology. The revised Transmission System 
+definition is not intended to change which facilities are part of the Transmission 
+System, and these revisions do not alter existing interconnection or 
+transmission service agreements. 
+• Study requirements. The Business Practice 7250, Section 6 study pathways 
+will apply to interconnection requests to Non-Transmission Facilities for which 
+the Transmission Owner notifies SPP on or after the effective date. Studies 
+already in progress will finish under the existing scope, so ongoing studies are 
+not delayed or re-performed. 
+• Market Registration. Resources are already required to register under 
+Attachment AE. The revisions identify the party under whose name an 
+unexecuted service agreement will be filed if a Resource fails or refuses to 
+register. They do not affect Resources that are already registered. 
+• Affected System Study communications. The RMS-based question and 
+meeting process will apply to Affected System Study Reports posted on or after 
+the effective date. 
+V. 
+EFFECTIVE DATE  
+ 
+ 
+For all the reasons discussed in this transmittal letter, SPP requests that the 
+Commission accept the proposed revisions to the Tariff to become effective February 
+16, 2027, which is not less than 60 days nor more than 120 days after the date of this 
+filing, consistent with Section 35.3(a)(1) of the Commission’s regulations.96 
+ 
+VI. 
+ADDITIONAL INFORMATION 
+ 
+A. 
+Documents submitted with this filing: 
+ 
+In addition to this Transmittal Letter, SPP provides with this filing Clean 
+and Redlined Tariff revisions under the Sixth Revised Volume No. 1.97 
+ 
+B. 
+Service: 
+ 
+SPP has electronically served a copy of this filing on all its Members, 
+Transmission Customers and Market Participants. A complete copy of 
+this filing will be posted on the SPP web site, www.spp.org, and is also 
+being served on all affected state commissions. 
+ 
+96  
+18 C.F.R. § 35.3(a)(1).
+--- PAGE 25 ---
+The Honorable Debbie-Anne A. Reese 
+November 18, 2026 
+Page 25 
+ 
+ 
+C. 
+Requisite agreements: 
+ 
+There are none.  
+ 
+D. 
+Communications 
+Correspondence and communications with respect to this filing should 
+be sent to, and SPP requests the Secretary to include on the official 
+service list, the following:98 
+ 
+Justin A. Hinton 
+Senior Attorney 
+Southwest Power Pool, Inc. 
+201 Worthen Drive 
+Little Rock, AR 72223 
+Telephone: (501) 482-2468 
+jhinton@spp.org 
+ 
+Meredith Powell 
+Senior Attorney 
+Southwest Power Pool, Inc. 
+201 Worthen Drive 
+Little Rock, AR 72223 
+Telephone: (501) 482-2507 
+mpowell@spp.org 
+ 
+Tessie Kentner 
+Director & Associate General Counsel 
+Southwest Power Pool, Inc. 
+201 Worthen Drive 
+Little Rock, AR 72223 
+Telephone: (501) 688-1782 
+tkentner@spp.org  
+ 
+ 
+ 
+ 
+98  
+Pursuant to Commission Rule 101(e), 18 C.F.R. § 385.101(e), SPP requests waiver of 
+Rule 203(b)(3), 18 C.F.R. § 385.203(b)(3), in order to permit more than two persons 
+to be included on the service list.
+--- PAGE 26 ---
+The Honorable Debbie-Anne A. Reese 
+November 18, 2026 
+Page 26 
+ 
+VII. 
+CONCLUSION 
+ 
+For these reasons, SPP respectfully requests that the Commission accept the 
+Large Load Revisions, effective February 16, 2027. SPP further requests that the 
+Commission find that this filing resolves the concerns identified in Directive (1)(a), the 
+transparency component of Directive (1)(b), and the clarity, interconnection, and 
+market participation components of Directive (1)(c) of the Show Cause Order. 
+ 
+Respectfully submitted, 
+ 
+/s/ Meredith Powell  
+Justin A. Hinton 
+Meredith Powell 
+Southwest Power Pool, Inc. 
+201 Worthen Drive 
+Little Rock, AR  72223-4936 
+  
+Attorneys for  
+Southwest Power Pool, Inc.

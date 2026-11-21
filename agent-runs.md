@@ -688,3 +688,11 @@ session ran past 500K context, which made late turns slow. Evaluation: the readi
 it (both verified by script afterwards); the commentary search was the right call to make once and stop, since
 the record had nothing yet. The biggest waste was layout churn on Now (brief pinned, then unpinned) from acting
 on an instruction before confirming it.
+
+## 2026-11-21 · data refresh (SPP's filings, comment dates)
+| Agent | Model | Task | Tokens | Tool uses | Result |
+|---|---|---|---|---|---|
+| general-purpose | Claude Sonnet 5.5 | SPP reform-matrix cells from three transmittals | 185,789 | 21 | 20 bullets, matrix quote test passes |
+
+Main loop (Claude Opus 5.5): 65-sheet sweep, SPP applicant search in Chrome, 15 accessions captured and ingested, data.js and proceedings updates, one ingester bug fixed. One agent was the right size: the matrix needed ~94 pages read that the main loop did not need in context. Waste: a full-text eLibrary search that ORs words (two calls, unusable) and a sweep wrapped in a missing `timeout` command.
+

@@ -11174,6 +11174,81 @@
   ]
  },
  {
+  "accession": "20261118-3050",
+  "dockets": [
+   "ER27-517-000"
+  ],
+  "filed": "2026-11-18",
+  "filer": "SECRETARY OF THE COMMISSION, FERC",
+  "description": "Errata Notice Extending Comment Period re New York Independent System Operator, Inc. under ER27-517.",
+  "title": "Errata Notice Extending Comment Period re New York Independent System Operator, Inc",
+  "kind": "comments",
+  "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261118-3050",
+  "files": [
+   {
+    "label": "ER27-517-000 Errata.docx",
+    "bytes": 36859,
+    "sha256": "452cb67442b66f77ce37cc5a774d85ed3150e93a1f1ce24b4a89cb4d49b5c4ca",
+    "text": "sources/filings/text/20261118-3050_001.txt",
+    "pages": null
+   }
+  ]
+ },
+ {
+  "accession": "20261118-3051",
+  "dockets": [
+   "ER27-520-000"
+  ],
+  "filed": "2026-11-18",
+  "filer": "SECRETARY OF THE COMMISSION, FERC",
+  "description": "Errata Notice Extending Comment Period re PECO Energy Company under ER27-520.",
+  "title": "Errata Notice Extending Comment Period re PECO Energy Company",
+  "kind": "comments",
+  "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261118-3051",
+  "files": [
+   {
+    "label": "ER27-520-000 Errata.docx",
+    "bytes": 36799,
+    "sha256": "44a0f73296780341cdc961038990256d7b2e1fb7c3af05b889ff0645fe3c3e11",
+    "text": "sources/filings/text/20261118-3051_001.txt",
+    "pages": null
+   }
+  ]
+ },
+ {
+  "accession": "20261118-3090",
+  "dockets": [
+   "ER27-521-000",
+   "ER27-522-000",
+   "ER27-523-000",
+   "ER27-526-000",
+   "ER27-527-000",
+   "ER27-528-000",
+   "ER27-529-000",
+   "ER27-530-000",
+   "ER27-531-000",
+   "ER27-532-000",
+   "ER27-533-000",
+   "ER27-534-000",
+   "ER27-535-000"
+  ],
+  "filed": "2026-11-18",
+  "filer": "SECRETARY OF THE COMMISSION, FERC",
+  "description": "Combined Notice of Filings #1, November 18, 2026: This notice contains information concerning multiple filings received by FERC.",
+  "title": "Combined Notice of Filings #1, November 18, 2026: This notice contains information concerning multiple filings received by FERC",
+  "kind": "filing",
+  "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261118-3090",
+  "files": [
+   {
+    "label": "CNF111826.docx",
+    "bytes": 36750,
+    "sha256": "8ec8fdc5e5fc891b8cb759775a60a4897d2be41a66f289851b05ab4abae079fa",
+    "text": "sources/filings/text/20261118-3090_001.txt",
+    "pages": null
+   }
+  ]
+ },
+ {
   "accession": "20261118-5011",
   "dockets": [
    "ER27-526-000"
@@ -11191,6 +11266,350 @@
     "sha256": "2c164f112a35f8f102d1d6351c6933eed505fa296fbe3c3d9d6e6f5088c63637",
     "text": "sources/filings/text/20261118-5011_001.txt",
     "pages": 8
+   }
+  ]
+ },
+ {
+  "accession": "20261118-5238",
+  "dockets": [
+   "ER27-25-000"
+  ],
+  "filed": "2026-11-18",
+  "filer": "GERONIMO POWER, LLC",
+  "description": "Motion for Leave to Answer and Answer of Geronimo Power, LLC to the answer of Midcontinent Independent System Operator, Inc. filed on 11/09/2026 under ER27-25.",
+  "title": "Motion for Leave to Answer and Answer of Geronimo Power, LLC to the answer of Midcontinent Independent System Operator, Inc. filed on 11/09/2026",
+  "kind": "answer",
+  "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261118-5238",
+  "files": [
+   {
+    "label": "Geronimo Power - LARS Answer.pdf",
+    "bytes": 242736,
+    "sha256": "0b429cdcee2bd78d622188c40ba8ef017995e1bc2e38e139b45e734803918105",
+    "text": "sources/filings/text/20261118-5238_001.txt",
+    "pages": 11
+   }
+  ]
+ },
+ {
+  "accession": "20261118-5252",
+  "dockets": [
+   "ER27-559-000"
+  ],
+  "filed": "2026-11-18",
+  "filer": "Southwest Power Pool, Inc.",
+  "description": "Southwest Power Pool, Inc. submits tariff filing per 35.13(a)(2)(iii: Enhance Transmission Service for HILLs and Non-Transmission Facilities to be effective 2/16/2027 under ER27-559 Filing Type : 10",
+  "title": "Enhance Transmission Service for HILLs and Non-Transmission Facilities",
+  "kind": "tariff filing",
+  "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261118-5252",
+  "files": [
+   {
+    "label": "RR 805 and 808_Transmittal Letter.pdf",
+    "bytes": 784442,
+    "sha256": "f098c035ca6677e3d6f7454ead1335ba2954559e6dbb0b7325675c804d0095cd",
+    "text": "sources/filings/text/20261118-5252_001.txt",
+    "pages": 26
+   },
+   {
+    "label": "Clean8548-99bf9681-18cc-4c1d-86ea-49479bfb0960.pdf",
+    "bytes": 434225,
+    "sha256": "02ed5dc08feaa626fe87d276ce32264c0938829195852a996d5bc726cac4a75e",
+    "skipped": "tariff sheet or service list; read it on eLibrary"
+   },
+   {
+    "label": "Marked8548-8ff63015-9496-45e5-a063-0b443e512b0f.pdf",
+    "bytes": 445557,
+    "sha256": "118f805214ae5fb80a358d6ef6c880dcd452586b0dcdd701c574f486ab237fb8",
+    "skipped": "tariff sheet or service list; read it on eLibrary"
+   },
+   {
+    "label": "FERC GENERATED TARIFF FILING.PDF",
+    "bytes": 1889711,
+    "sha256": "56d2ffe0451bc8a664aedcf5584445b1326d5935c02f49fe11656d81891ce0be",
+    "skipped": "tariff sheet or service list; read it on eLibrary"
+   }
+  ]
+ },
+ {
+  "accession": "20261118-5286",
+  "dockets": [
+   "EL25-49-000",
+   "EL26-67-000",
+   "ER26-1479-000",
+   "ER26-3537-000"
+  ],
+  "filed": "2026-11-18",
+  "filer": "PJM Interconnection L.L.C",
+  "description": "PJM Interconnection L.L.C. submits Notice of Filing related to the 11/16/2026 Proposal to Address Operational Requirements for Large Computational Load and Establish an Annual Transmission Service Reporting Requirement et al. under ER17-522 et al.",
+  "title": "PJM Interconnection L.L.C. submits Notice of Filing related to the 11/16/2026 Proposal to Address Operational Requirements for Large Computational Load and…",
+  "kind": "notice",
+  "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261118-5286",
+  "files": [
+   {
+    "label": "2026.11.18 - Letter of Notice Regarding November 16 2026 filings.pdf",
+    "bytes": 198683,
+    "sha256": "7b718bbd5b04efb0aa369237a3f5b269947bcb26508ea6a8e0fe044f6e198e85",
+    "text": "sources/filings/text/20261118-5286_001.txt",
+    "pages": 3
+   }
+  ]
+ },
+ {
+  "accession": "20261119-3138",
+  "dockets": [
+   "ER26-3591-001",
+   "ER27-559-000",
+   "ER27-577-000"
+  ],
+  "filed": "2026-11-19",
+  "filer": "SECRETARY OF THE COMMISSION - FERC",
+  "description": "Combined Notice of Filings #1, November 19, 2026: This notice contains information concerning multiple filings received by FERC.",
+  "title": "Combined Notice of Filings #1, November 19, 2026: This notice contains information concerning multiple filings received by FERC",
+  "kind": "filing",
+  "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261119-3138",
+  "files": [
+   {
+    "label": "CNF111926.docx",
+    "bytes": 36170,
+    "sha256": "e9003e51019730f6c9e19e733e1b69baf794f14bc3b6dd5ed8717a027bf658a6",
+    "text": "sources/filings/text/20261119-3138_001.txt",
+    "pages": null
+   }
+  ]
+ },
+ {
+  "accession": "20261119-5133",
+  "dockets": [
+   "EL26-67-000"
+  ],
+  "filed": "2026-11-19",
+  "filer": "Individual No Affiliation",
+  "description": "Comments of Olabanji John Ogunyemi in response to the 06/18/2026 Show Cause Order under EL26-67.",
+  "title": "Comments of Olabanji John Ogunyemi in response to the 06/18/2026 Show Cause Order",
+  "kind": "comments",
+  "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261119-5133",
+  "files": [
+   {
+    "label": "FERC_EL26-67_Comments.pdf",
+    "bytes": 66001,
+    "sha256": "1472e04642aaa1c39875872ec08a6695693373c06c0b40ddd997650bda889f5f",
+    "text": "sources/filings/text/20261119-5133_001.txt",
+    "pages": 5
+   }
+  ]
+ },
+ {
+  "accession": "20261119-5176",
+  "dockets": [
+   "ER26-3591-001"
+  ],
+  "filed": "2026-11-19",
+  "filer": "Southwest Power Pool, Inc.",
+  "description": "Southwest Power Pool, Inc. submits tariff filing per 35.17(b): Deficiency Response - Modify the CHILL Policy to Accommodate Planned Outages to be effective 12/31/9998 under ER26-3591 Filing Type : 180",
+  "title": "Deficiency Response - Modify the CHILL Policy to Accommodate Planned Outages",
+  "kind": "tariff filing",
+  "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261119-5176",
+  "files": [
+   {
+    "label": "RR 768 Deficiency Response in ER26-3591.pdf",
+    "bytes": 510695,
+    "sha256": "84c133175b25609d8dbbb16d8084a589ca3b20f2d22ce5dc7e01cdd2f0097841",
+    "text": "sources/filings/text/20261119-5176_001.txt",
+    "pages": 9
+   },
+   {
+    "label": "Marked8551-01fecdc0-33df-453c-beb5-771bd241ba7f.pdf",
+    "bytes": 64209,
+    "sha256": "744544c079c395f2998a252e80aba7d6e610804626c250e6c93b2f5f6d3725b4",
+    "skipped": "tariff sheet or service list; read it on eLibrary"
+   },
+   {
+    "label": "Clean8551-9a8264a7-a3a8-4be5-89c7-a4d8783dd54a.pdf",
+    "bytes": 63591,
+    "sha256": "df8a7ccbfd90f0e25d6ae6b7d761e078b8f26279c2e311db1904b806a4abed12",
+    "skipped": "tariff sheet or service list; read it on eLibrary"
+   },
+   {
+    "label": "FERC GENERATED TARIFF FILING.PDF",
+    "bytes": 132857,
+    "sha256": "c61e0970a8352efcac985a206321bbea12236b756c16bb83b1ac870a3729376b",
+    "skipped": "tariff sheet or service list; read it on eLibrary"
+   }
+  ]
+ },
+ {
+  "accession": "20261119-5227",
+  "dockets": [
+   "ER27-577-000"
+  ],
+  "filed": "2026-11-19",
+  "filer": "Southwest Power Pool, Inc.",
+  "description": "Southwest Power Pool, Inc. submits tariff filing per 35.13(a)(2)(iii: Revisions to Establish Load Safe Harbor Limit for Delivery Point Costs to be effective 2/17/2027 under ER27-577 Filing Type : 10",
+  "title": "Revisions to Establish Load Safe Harbor Limit for Delivery Point Costs",
+  "kind": "tariff filing",
+  "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261119-5227",
+  "files": [
+   {
+    "label": "RR814_Transmittal Letter.pdf",
+    "bytes": 645263,
+    "sha256": "a9d06721aaa6c18506f16fdf94be2a484143016f8de7ad23629b192c06fdb244",
+    "text": "sources/filings/text/20261119-5227_001.txt",
+    "pages": 24
+   },
+   {
+    "label": "Marked8555-77fef473-4d34-4813-a29e-0c4732c9c819.pdf",
+    "bytes": 262547,
+    "sha256": "8e5df2d96bee660b98cf098218c6cdcc0ba71936d1f190f52dc26f5722799af9",
+    "skipped": "tariff sheet or service list; read it on eLibrary"
+   },
+   {
+    "label": "Exhibit No. SPP-0001- Affidavit of Natasha Henderson.pdf",
+    "bytes": 434969,
+    "sha256": "94447c5280fb16605921fa3a6a6b8305f7ac5dc38085327959ac9438dedbc2f3",
+    "text": "sources/filings/text/20261119-5227_004.txt",
+    "pages": 4
+   },
+   {
+    "label": "Exhibit No. SPP-0002- Affidavit of Don Frerking.pdf",
+    "bytes": 387219,
+    "sha256": "d795f04d6b99c0aaf5406d83c54d3e225da3b72fafff2918a35d67df71f84dd7",
+    "text": "sources/filings/text/20261119-5227_005.txt",
+    "pages": 4
+   },
+   {
+    "label": "FERC GENERATED TARIFF FILING.PDF",
+    "bytes": 1591825,
+    "sha256": "47ba95d0c6dfff59352bc3f222e0a8e54a66d79d17b1932247036549c5017676",
+    "skipped": "tariff sheet or service list; read it on eLibrary"
+   },
+   {
+    "label": "Clean8555-cce6861a-4d57-4993-9976-d4b92b427b5f.pdf",
+    "skipped": "failed"
+   }
+  ]
+ },
+ {
+  "accession": "20261119-5243",
+  "dockets": [
+   "ER27-578-000"
+  ],
+  "filed": "2026-11-19",
+  "filer": "Southwest Power Pool, Inc.",
+  "description": "Southwest Power Pool, Inc. submits tariff filing per 35.13(a)(2)(iii: Revisions to Add Price Adaptive Load Service to be effective 12/31/9998 under ER27-578 Filing Type : 10",
+  "title": "Revisions to Add Price Adaptive Load Service",
+  "kind": "tariff filing",
+  "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261119-5243",
+  "files": [
+   {
+    "label": "RR 791 PALS_Transmittal Letter.pdf",
+    "bytes": 981082,
+    "sha256": "fd746390ce38150a129e6d3cedafdaa59f663094d589efd750b37dedce33c3cc",
+    "text": "sources/filings/text/20261119-5243_001.txt",
+    "pages": 44
+   },
+   {
+    "label": "Clean Tariff.pdf",
+    "bytes": 1359537,
+    "sha256": "ac9dca73f8acf244c6753af0a9e84457b5a5f5d2b19fa7203225288014d7f80f",
+    "skipped": "tariff sheet or service list; read it on eLibrary"
+   },
+   {
+    "label": "Marked Tariff.pdf",
+    "bytes": 1461192,
+    "sha256": "69c8477a54f8775219e32eba76e408f04f2b165c68b7e50f1909d4292e1fd742",
+    "skipped": "tariff sheet or service list; read it on eLibrary"
+   },
+   {
+    "label": "FERC GENERATED TARIFF FILING.PDF",
+    "bytes": 16621802,
+    "sha256": "43aeff0495179ab0495afbe97b7e12e371d820da2c10feea90763fbcd80a1711",
+    "skipped": "tariff sheet or service list; read it on eLibrary"
+   }
+  ]
+ },
+ {
+  "accession": "20261119-5278",
+  "dockets": [
+   "ER27-25-000"
+  ],
+  "filed": "2026-11-19",
+  "filer": "Southern Minnesota Municipal Power AgencyWPPI Energy",
+  "description": "Motion for Leave to Answer and Answer of Southern Minnesota Municipal Power Agency et al. to the 11/09/2026 Motion for Leave to Answer filed by the Midcontinent Independent System Operator, Inc. under ER27-25.",
+  "title": "Motion for Leave to Answer and Answer of Southern Minnesota Municipal Power Agency et al. to the 11/09/2026 Motion for Leave to Answer filed by the…",
+  "kind": "answer",
+  "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261119-5278",
+  "files": [
+   {
+    "label": "ER27-25 Midwest TDUs Answer.pdf",
+    "bytes": 225748,
+    "sha256": "a0d14fe34419594a906674df6f55ca562f582bc0ea680e04c80d89695d4f5ca9",
+    "text": "sources/filings/text/20261119-5278_001.txt",
+    "pages": 12
+   }
+  ]
+ },
+ {
+  "accession": "20261119-5279",
+  "dockets": [
+   "ER27-508-000",
+   "ER27-513-000",
+   "ER27-521-000"
+  ],
+  "filed": "2026-11-19",
+  "filer": "Constellation Energy Generation, LLC",
+  "description": "Expedited Motion for a Nine-Day Extension of Comment Deadline of Constellation Energy Generation, LLC under ER27-513 et al.",
+  "title": "Expedited Motion for a Nine-Day Extension of Comment Deadline of Constellation Energy Generation, LLC",
+  "kind": "comments",
+  "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261119-5279",
+  "files": [
+   {
+    "label": "ER27-513 motion to extend-CEG.pdf",
+    "bytes": 123845,
+    "sha256": "e1d5c02ce1ce9c0e4ad14b7ce365ec31d2e3804fb0833327a5927fbe5d0ed93c",
+    "text": "sources/filings/text/20261119-5279_001.txt",
+    "pages": 3
+   }
+  ]
+ },
+ {
+  "accession": "20261120-3078",
+  "dockets": [
+   "ER27-578-000"
+  ],
+  "filed": "2026-11-20",
+  "filer": "SECRETARY OF THE COMMISSION, FERC",
+  "description": "Combined Notice of Filings #1, November 20, 2026: This notice contains information concerning multiple filings received by FERC.",
+  "title": "Combined Notice of Filings #1, November 20, 2026: This notice contains information concerning multiple filings received by FERC",
+  "kind": "filing",
+  "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261120-3078",
+  "files": [
+   {
+    "label": "CNF112026.docx",
+    "bytes": 42660,
+    "sha256": "47efdd42236efe9f2ff135efbbeda4dc64739acebfa072777b8481bdcfaa82ba",
+    "text": "sources/filings/text/20261120-3078_001.txt",
+    "pages": null
+   }
+  ]
+ },
+ {
+  "accession": "20261120-5248",
+  "dockets": [
+   "EL26-70-000",
+   "ER27-526-000"
+  ],
+  "filed": "2026-11-20",
+  "filer": "Individual No Affiliation",
+  "description": "Comments of Olabanji John Ogunyemi on the Midcontinent Independent System Operator, Inc.’s 11/16/2026 Large Load filing and the 06/18/2026 Show Cause Order under ER27-526 et al.",
+  "title": "Comments of Olabanji John Ogunyemi on the Midcontinent Independent System Operator, Inc.’s 11/16/2026 Large Load filing and the 06/18/2026 Show Cause Order",
+  "kind": "comments",
+  "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261120-5248",
+  "files": [
+   {
+    "label": "FERC_ER27-526_MISO_Comments__.pdf",
+    "bytes": 64297,
+    "sha256": "61133000c8d5f286067cd44fe0d705f8cd718a8aab226c744432fbed6224e978",
+    "text": "sources/filings/text/20261120-5248_001.txt",
+    "pages": 5
    }
   ]
  }

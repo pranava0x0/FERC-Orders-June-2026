@@ -1,6 +1,6 @@
 {
- "note": "Bullets per operator and reform from the Nov 13 and Nov 16, 2026 filings, each citing a reading and page with a verbatim quote. `by` names a filer other than the operator (its transmission owners, or one owner as an example). null means SPP has not filed; its response is due Nov 20, 2026.",
- "asOf": "2026-11-18",
+ "note": "Bullets per operator and reform from the Nov 13 and Nov 16, 2026 filings, each citing a reading and page with a verbatim quote. `by` names a filer other than the operator (its transmission owners, or one owner as an example). SPP filed Nov 18 and 19, 2026 in ER27-559, ER27-577 and ER27-578.",
+ "asOf": "2026-11-21",
  "cells": {
   "PJM": {
    "study": [
@@ -204,11 +204,136 @@
    ]
   },
   "SPP": {
-   "study": null,
-   "cost": null,
-   "colo": null,
-   "flex": null,
-   "proximate": null
+   "study": [
+    {
+     "t": "Every HILL delivery point study must evaluate grid-enhancing technologies, with no customer request needed",
+     "slug": "rec-20261118-5252",
+     "pg": 12,
+     "quote": "The proposed new language says the HDPS “will evaluate” GETs, making the evaluation mandatory for every HDPS study."
+    },
+    {
+     "t": "Study report explains the GETs result technology by technology when traditional upgrades are chosen",
+     "slug": "rec-20261118-5252",
+     "pg": 14,
+     "quote": "Business Practice 7850 requires each HDPS report to explain the results for each identified technology"
+    },
+    {
+     "t": "PALS study report due within 90 days of all parties agreeing to study assumptions",
+     "slug": "rec-20261119-5243",
+     "pg": 15,
+     "quote": "SPP will send a study report to the Transmission Customer and Host Transmission Owner within ninety (90) Calendar Days of all parties"
+    },
+    {
+     "t": "PALS host TO deposit of up to $10,000, plus a $2,000 non-refundable application fee",
+     "slug": "rec-20261119-5243",
+     "pg": 15,
+     "quote": "the Host Transmission Owner may require an advance deposit equal to the estimated study cost or $10,000, whichever is less."
+    }
+   ],
+   "cost": [
+    {
+     "t": "Customer pays upgrade costs above the lesser of $25 million or $500,000 per MW requested",
+     "slug": "rec-20261119-5227",
+     "pg": 10,
+     "quote": "The LSHL will require Transmission Customers to pay for any Network Upgrade costs identified in the SPP transmission service process that exceed the lesser of $25 million or $500,000 per MW of transmission service requested."
+    },
+    {
+     "t": "Directly assigned costs recovered through a TO revenue requirement for no more than 40 years",
+     "slug": "rec-20261119-5227",
+     "pg": 10,
+     "quote": "The directly assigned amount will be recovered as a Transmission Owner-calculated revenue requirement, based on the Transmission Owner’s standard revenue requirement methodology, for no more than forty (40) years."
+    },
+    {
+     "t": "Security is tied to the directly assigned amount and falls as upgrade assets depreciate",
+     "slug": "rec-20261119-5227",
+     "pg": 10,
+     "quote": "The level of required security will be tied to the amount of direct assignment and will be reduced as the associated Network Upgrade assets depreciate."
+    },
+    {
+     "t": "The $500,000 per MW limit sits between historical 75th and 95th percentile delivery point costs",
+     "slug": "rec-20261119-5227",
+     "pg": 11,
+     "quote": "The value of the proposed per-MW limit falls between those system-wide investment measures and between the historical 75th and 95th percentiles for delivery point requests."
+    }
+   ],
+   "colo": [
+    {
+     "t": "New Non-Transmission Facility term puts behind-the-meter and on-site co-located generation under Affected System Study",
+     "slug": "rec-20261118-5252",
+     "pg": 19,
+     "quote": "the revisions make clear that generation interconnecting to those facilities, including Behind-The-Meter Generation and on-site co-located generation, falls within SPP’s existing Affected System Study framework when it may affect the Transmission System."
+    },
+    {
+     "t": "Unregistered behind-the-meter generation is filed under the Market Participant representing the host load",
+     "slug": "rec-20261118-5252",
+     "pg": 21,
+     "quote": "in the case of Behind-The-Meter Generation, under the name of the Market Participant representing the load where the Resource is connected."
+    },
+    {
+     "t": "PALS is available to customers serving load with behind-the-meter generation",
+     "slug": "rec-20261119-5243",
+     "pg": 19,
+     "quote": "It also makes PALS available to Eligible Customers serving load with Behind-The-Meter Generation, a category of Eligible Load identified in the Show Cause Order."
+    },
+    {
+     "t": "Transmission and ancillary service rates for co-located load are left to SPP's EL26-68 response",
+     "slug": "rec-20261118-5252",
+     "pg": 18,
+     "quote": "SPP addresses the transmission service component, including transmission and ancillary service rates for co-located load, in its response in Docket No. EL26-68-000, as described in Section III.E."
+    }
+   ],
+   "flex": [
+    {
+     "t": "PALS is non-firm service for one to ten years, not tied to Network Upgrades",
+     "slug": "rec-20261119-5243",
+     "pg": 3,
+     "quote": "PALS is available for renewable terms of one to ten years and is not tied to the construction of Network Upgrades."
+    },
+    {
+     "t": "PAL bids capped at $25/MWh; dispatched to 0 MW when the price exceeds $25",
+     "slug": "rec-20261119-5243",
+     "pg": 31,
+     "quote": "If the LMP at the PAL Settlement Location is above $25, then the PAL will receive Dispatch Instructions for a 0 MW withdrawal."
+    },
+    {
+     "t": "Firm service and CHILLS rank ahead of PALS when the system is constrained",
+     "slug": "rec-20261119-5243",
+     "pg": 11,
+     "quote": "In the event the Transmission System is constrained or under Emergency Conditions, all firm transmission service and CHILLS will have higher priority than any PALS."
+    },
+    {
+     "t": "PALS billed hourly on actual use, capped at the monthly point-to-point price",
+     "slug": "rec-20261119-5243",
+     "pg": 26,
+     "quote": "The PALS is billed only on an hourly basis when the Transmission Customer takes the service, but the PALS charges will be capped at the monthly Point-To-Point Transmission Service price."
+    }
+   ],
+   "proximate": [
+    {
+     "t": "Business Practice 7250 sets five study pathways by request size and injection or impact",
+     "slug": "rec-20261118-5252",
+     "pg": 20,
+     "quote": "Business Practice 7250 establishes five study pathways based on the size of the request and its injection or impact on the Transmission System."
+    },
+    {
+     "t": "SPP studies system impacts of generation on non-transmission facilities at 5 MW or more",
+     "slug": "rec-20261118-5252",
+     "pg": 20,
+     "quote": "SPP will evaluate any identified impacts to ensure continued reliability of the Transmission System. It will do so even though those requests are not subject to Attachments V or AY."
+    },
+    {
+     "t": "Behind-the-meter or co-located generation cannot escape the study framework by where it connects",
+     "slug": "rec-20261118-5252",
+     "pg": 21,
+     "quote": "Generation that is behind the meter or co-located therefore cannot fall outside the Tariff’s study framework merely because the facility it connects to is not part of the Transmission System."
+    },
+    {
+     "t": "Studies cover thermal, voltage and short-circuit analyses, plus stability above size thresholds",
+     "slug": "rec-20261118-5252",
+     "pg": 21,
+     "quote": "Business Practice 7250 requires Transmission Owner studies to include thermal, voltage, and short-circuit analyses. It adds stability evaluations above specified size thresholds"
+    }
+   ]
   },
   "CAISO": {
    "study": [

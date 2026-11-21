@@ -1244,6 +1244,71 @@
         "20260820-5187",
         "20261112-5098"
       ]
+    },
+    {
+      "docket": "ER27-559-000",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=ER27-559&sub_docket=000",
+      "scope": "related",
+      "status": "sheet listed in full on Nov 21; rows not individually reviewed",
+      "totalRows": 4,
+      "rowsRead": 4,
+      "classificationCounts": {
+        "for review": 2,
+        "documentless": 2
+      },
+      "recordAccessions": []
+    },
+    {
+      "docket": "ER27-577-000",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=ER27-577&sub_docket=000",
+      "scope": "related",
+      "status": "sheet listed in full on Nov 21; rows not individually reviewed",
+      "totalRows": 3,
+      "rowsRead": 3,
+      "classificationCounts": {
+        "for review": 2,
+        "documentless": 1
+      },
+      "recordAccessions": []
+    },
+    {
+      "docket": "ER27-578-000",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=ER27-578&sub_docket=000",
+      "scope": "related",
+      "status": "sheet listed in full on Nov 21; rows not individually reviewed",
+      "totalRows": 3,
+      "rowsRead": 3,
+      "classificationCounts": {
+        "for review": 2,
+        "documentless": 1
+      },
+      "recordAccessions": []
+    },
+    {
+      "docket": "ER26-3591-000",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=ER26-3591&sub_docket=000",
+      "scope": "related",
+      "status": "sheet listed in full on Nov 21; rows not individually reviewed",
+      "totalRows": 11,
+      "rowsRead": 11,
+      "classificationCounts": {
+        "for review": 3,
+        "documentless": 8
+      },
+      "recordAccessions": []
+    },
+    {
+      "docket": "ER26-3591-001",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=ER26-3591&sub_docket=001",
+      "scope": "related",
+      "status": "sheet listed in full on Nov 21; rows not individually reviewed",
+      "totalRows": 2,
+      "rowsRead": 2,
+      "classificationCounts": {
+        "for review": 2,
+        "documentless": 0
+      },
+      "recordAccessions": []
     }
   ],
   "records": {

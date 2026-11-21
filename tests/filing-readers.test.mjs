@@ -51,7 +51,7 @@ test('record-tier filings keep a hash for every original and a reason for every 
  }
 });
 
-test('every reform-matrix bullet quotes its reading’s page verbatim, and SPP is empty until it files',()=>{
+test('every reform-matrix bullet quotes its reading’s page verbatim, and SPP is filled like the others',()=>{
  const m=JSON.parse(readFileSync(new URL('../../sources/filings/reform-matrix.json',base),'utf8')).cells,norm=s=>s.replace(/\s+/g,' ').trim();
  const cells=Object.entries(m).flatMap(([rto,row])=>Object.entries(row).map(([k,c])=>[rto,k,c])).filter(([, ,c])=>c);
  assert.ok(cells.length>=25,'matrix is nearly empty');
@@ -66,7 +66,7 @@ test('every reform-matrix bullet quotes its reading’s page verbatim, and SPP i
    assert.ok(norm(page).includes(norm(x.quote)),rto+' '+k+': quote not on p. '+x.pg+': '+x.quote.slice(0,50));
   }
  }
- assert.ok(Object.values(m.SPP).every(c=>c===null));
+ assert.ok(Object.values(m.SPP).every(c=>Array.isArray(c)&&c.length>=2),'SPP row is filled');
 });
 test('transcription footnotes: every mark and back-link resolves, and identifiers keep their digits',()=>{
  let links=0;
