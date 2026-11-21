@@ -69,6 +69,17 @@ export function build() {
   // Earlier hand-curated document entries (filer names, sides, publisher PDF links) win over the catalog.
   const curated = new Map();
   for (const g of filings.groups) for (const d of g.docs) curated.set(d.slug, { ...d, group: g.id });
+  // A position read for this site (sources/filings/perspectives.json) belongs to the responder's own filing,
+  // found by the eLibrary accession in its URL. Its stance becomes the filing's side, so a reply's side is
+  // read from its text, not guessed from its type. The quote is checked by tools/build-filing-readers.mjs.
+  const positions = new Map();
+  for (const v of readJSON("sources", "filings", "perspectives.json")) {
+    const acc = /accession_number=([\d-]+)/.exec(v.url || "")?.[1];
+    if (!acc || !v.stance || v.stance === "procedural") continue;
+    if (positions.has(acc)) throw Error("two positions with a stance for one filing, " + acc + ": keep one");
+    positions.set(acc, { speaker: v.speaker, title: v.title, text: v.text, stance: v.stance, locator: v.locator, ...(v.quote ? { quote: v.quote, pg: v.quote_page } : {}),
+      target: v.target || (v.slugs.some((x) => /^(?:order-|e-\d)/.test(x)) ? "FERC’s order" : "the proposal") });
+  }
   const SC = { "EL26-67": "sc-pjm", "EL26-68": "sc-spp", "EL26-69": "sc-nyiso", "EL26-70": "sc-miso", "EL26-71": "sc-caiso", "EL26-72": "sc-isone" };
   const byId = new Map(proceedings.map((g) => [g.id, { ...g, docs: [] }]));
   const groupOf = (c) => {
@@ -97,12 +108,15 @@ export function build() {
     if (r) { readings++; points += r.points.length; useAnchors(r.throughLine.anchors); }
     const doc = {
       slug: c.slug, accession: c.accession || cur.accession || null, date: cur.date || c.issued,
-      filer: (r && r.filer) || cur.filer || filerLabel(list) || (c.slug.startsWith("pjm-") ? "PJM" : /^S\. Hrg/.test(c.docket) ? "Senate Energy and Natural Resources Committee" : c.docket),
+      filer: (r && r.filer) || cur.filer || positions.get(c.accession)?.speaker || filerLabel(list) || (c.slug.startsWith("pjm-") ? "PJM" : /^S\. Hrg/.test(c.docket) ? "Senate Energy and Natural Resources Committee" : c.docket),
       ...(list.length > 2 ? { filers: list } : {}),
       kind: (r && r.kind) || cur.kind || c.kind, title: c.title, docket: c.docket, pages: c.pages ?? cur.pages ?? null,
       // A curated side wins; otherwise a title that says "in support of" or "in opposition to" (or is a
       // protest) states the side itself. Anything else stays unlabeled rather than guessed.
-      ...(cur.side ? { side: cur.side } : titleSide(c.title) ? { side: titleSide(c.title), sideFrom: "title" } : titleStance(c.title) ? { stance: titleStance(c.title) } : {}),
+      // A hand-set side still wins the label, but the read position always reaches the row.
+      ...(positions.has(c.accession) ? { position: positions.get(c.accession) } : {}),
+      ...(!cur.side && positions.has(c.accession) ? { stance: stanceText(positions.get(c.accession)), side: STANCE_SIDE[positions.get(c.accession).stance] } : {}),
+      ...(cur.side ? { side: cur.side } : positions.has(c.accession) ? {} : titleSide(c.title) ? { side: titleSide(c.title), sideFrom: "title" } : titleStance(c.title) ? { stance: titleStance(c.title) } : {}),
       ...(cur.pdfUrl || dm.source_url ? { pdfUrl: cur.pdfUrl || dm.source_url } : {}),
       url: c.url || null,
       ...(r ? { summary: r.summary, ask: r.ask ?? null, npoints: r.points.length, link: r.throughLine, themes: r.themes, ...(r.figures?.length ? { figures: r.figures } : {}) } : {}),
@@ -148,6 +162,14 @@ function reformMatrix() {
   return existsSync(f) ? JSON.parse(readFileSync(f, "utf8")).cells : null;
 }
 
+// The side, named against what the position is about: the position's own `target` ("LARS"), else FERC's order
+// or the proposal. A reply to the operator's answer still argues about the proposal.
+const STANCE_SIDE = { "supports": "for", "supports with changes": "mixed", "opposes in part": "mixed", "opposes": "against", "asks FERC to reject": "against" };
+function stanceText(p) {
+  const what = p.target;
+  return { "supports": "supports " + what, "supports with changes": "supports " + what + " with changes", "opposes in part": "opposes " + what + " in part",
+    "opposes": "opposes " + what, "asks FERC to reject": "asks FERC to reject " + what }[p.stance];
+}
 // A filing that is itself a protest opposes the filing it protests: that side is safe to show.
 function titleSide(t) {
   return /^(?:(?:joint |limited )?protest|(?:comments|motion to intervene) and (?:limited )?protest)\b/i.test(t || "") ? "against" : null;

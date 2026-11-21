@@ -307,6 +307,25 @@ verified with disappears, and the failure is silent: reporting just stops.
 After a refresh that adds URLs, optionally inspect one new URL in Search Console and hit **Request
 indexing** to put it in the priority crawl queue (quota is roughly 10 per day).
 
+### Positions on new replies (added 2026-11-21)
+
+After every ingest, list the responses nobody has read yet:
+
+```bash
+node tools/curation-queue.mjs            # replies to the Nov 13–19 filings, LARS and the show cause dockets
+node tools/curation-queue.mjs --all      # every proceeding
+```
+
+Each reply in a watched proceeding (`WATCH` in the tool) gets an entry in `sources/filings/perspectives.json`
+before the refresh ships: `slugs` (the filing it responds to), `theme`, `title`, `speaker`, `kind`, `relation`,
+`text` (two or three plain sentences on what it supports or opposes and its specific ask), `url` (the reply's own
+eLibrary accession), `locator`, `stance` (`supports`, `supports with changes`, `opposes in part`, `opposes`,
+`asks FERC to reject`, `procedural`) and `quote` + `quote_page` (one verbatim sentence from the reply).
+`build-filing-readers` fails if the quote is not on that page of the reply's reading. `tests/positions.test.mjs`
+fails while any watched reply is unread, so a refresh that ingests one is not done until it is read.
+Requests for more time, errata, abeyance motions and FERC notices are procedure and never enter the queue.
+The stance becomes the reply's side on the Filings row and leads its docket's discussion page.
+
 ## Gotchas learned the hard way
 
 - **A green `verify-quotes` run does not mean YOUR quote was checked.** The sweep enumerates named
@@ -455,6 +474,7 @@ indexing** to put it in the priority crawl queue (quota is roughly 10 per day).
 - **A timeline event can point at the document it reports.** `doc: "<group>/<slug>"` on a timeline entry or a spotlight link makes the Now tab link straight to the reading. A test resolves every `doc` against `record-data.js`, so a renamed slug fails the build.
 
 ### 2026-11-21
+- **Positions are read, not keyword-matched.** The discussion pages had shown only keyword excerpts, and an extension motion's "REQUEST FOR ACTION BY NOVEMBER 23" made the whole ER27-526 page. Procedure now stays off those pages; `tools/curation-queue.mjs` lists the replies to read. eLibrary's types mislead: FERC's errata notices are "comments" from the Secretary, and extension motions are "comments" too. Judge by filer and title.
 
 - **A promised response can be split across dockets, and the letters say so.** SPP's three §205 transmittals each end with a "Directives Addressed in Separate Filings" section naming the others and a fourth piece, "SPP's response to the Show Cause Order in Docket No. EL26-68-000". Read that section before calling a respondent's answer complete. The applicant search (Southwest Power Pool, Nov 18–21, 16 results) found the three; the 65-sheet sweep could not, since the dockets were new.
 - **Combined notices are not the last word on comment dates.** Two errata notices on Nov 18 (20261118-3050, -3051) moved NYISO's ER27-517 to Dec 14 and the PJM TOs' ER27-520 to Jan 15. Errata rows sit on the affected docket's sheet, not in the combined notice; scan for "Errata Notice Extending Comment Period".

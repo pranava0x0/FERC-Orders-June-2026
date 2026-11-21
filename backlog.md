@@ -672,3 +672,8 @@ Recommended next steps, in order:
   the newest documents in 1 to 3.
 - **Low (2026-11-18): tag reform keys on the remaining Nov 16 transmission owner filings** (NYTOs ER27-529, LSPGNY
   ER27-518, the 15 California TOs) once their readings exist, so the crosswalk counts them.
+- **Medium (2026-11-21): read the remaining positional filings outside the watched proceedings.** `node tools/curation-queue.mjs`
+  counts them: PJM co-location 147 of 148 unread, governance 75, registry 59, backstop 48, MISO IRR 8, ZGIA 5, ATC 5.
+  Mostly settled history; work in chunks per proceeding with the same position format.
+- **Low (2026-11-21): add a stance to the 128 positions written before stances existed.** Only entries with a stance
+  set a Filings row's side; older LARS rows still get theirs from tenets or the title.

@@ -696,3 +696,13 @@ on an instruction before confirming it.
 
 Main loop (Claude Opus 5.5): 65-sheet sweep, SPP applicant search in Chrome, 15 accessions captured and ingested, data.js and proceedings updates, one ingester bug fixed. One agent was the right size: the matrix needed ~94 pages read that the main loop did not need in context. Waste: a full-text eLibrary search that ORs words (two calls, unusable) and a sweep wrapped in a missing `timeout` command.
 
+
+## 2026-11-21 · LARS positions and the replies queue (PR 45)
+| Agent | Model | Task | Tokens | Tool uses | Result |
+|---|---|---|---|---|---|
+| general-purpose | Claude Sonnet 5.5 | Draft 9 LARS positions with verified quotes | 163,575 | 19 | 9 entries; 4 needed fixes (stance, quotes) |
+| general-purpose | Claude Opus 5.5 | Power-expert review of positions and queue | 177,254 | 17 | 16 findings; 6 must-fix, all fixed |
+| general-purpose | Claude Opus 5.5 | Code, UX and prose review | 139,846 | 25 | 19 findings; blank-label bug, regex scope, test that would fail after curation |
+| general-purpose | Claude Opus 5.5 | Round-2 review, four lenses | 144,923 | 32 | no must-fix; two regex should-fixes, fixed |
+
+Main loop (Claude Opus 5.5): stance plumbing through readers, record data and the Filings row; curation queue; tests; nav question. The expert review was worth its cost: the drafter's stances read plausibly and two were wrong against the filings. Round 2 found regex cases round 1's fix missed; procedure is now defined once and tested with titles. Waste: a meta-label edit that silently failed to apply (a replace with no assert) and shipped blank labels until review.

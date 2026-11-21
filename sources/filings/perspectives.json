@@ -1713,5 +1713,158 @@
     "text": "Answering Senator Cotton, LaCerte said beneficiaries should pay for the new infrastructure and states should hold hyperscalers to their commitments in retail rates. He did not specify a PJM cost formula.",
     "url": "https://www.govinfo.gov/content/pkg/CHRG-119shrg64322/pdf/CHRG-119shrg64322.pdf#page=79",
     "locator": "PDF pp. 79–80, printed pp. 75–76"
+  },
+  {
+    "slugs": [
+      "filing-er27-25-miso-lars"
+    ],
+    "theme": "Study time",
+    "title": "NIPSCO backs LARS and cites 3,000 to 8,000 MW of inquiries",
+    "speaker": "Northern Indiana Public Service Company",
+    "kind": "party",
+    "relation": "direct",
+    "text": "NIPSCO asked FERC to accept MISO’s proposal effective December 2, 2026. It said it is considering requests to add between 3,000 and 8,000 MW of load, that the standard queue was not designed for paired load and generation, and that LARS would yield interconnection agreements in 120 days.",
+    "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261022-5130",
+    "locator": "PDF pp. 1, 4–9",
+    "stance": "supports",
+    "quote": "NIPSCO supports MISO’s LARS Proposal",
+    "quote_page": 6,
+    "target": "LARS"
+  },
+  {
+    "slugs": [
+      "filing-er27-25-miso-lars"
+    ],
+    "theme": "Generator access",
+    "title": "Base Electron supports LARS and asks MISO to confirm how the 150% cap is measured",
+    "speaker": "Base Electron, Corp.",
+    "kind": "party",
+    "relation": "direct",
+    "text": "Base Electron supported timely acceptance and did not ask FERC to delay or condition LARS. It asked for confirmation that the 150% limit on interconnection service is measured against the load’s full expected peak, including planned later phases, not its first phase.",
+    "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261023-5088",
+    "locator": "PDF pp. 2–4",
+    "stance": "supports",
+    "quote": "Base Electron supports timely acceptance of MISO’s LARS Tariff proposal",
+    "quote_page": 2,
+    "target": "LARS"
+  },
+  {
+    "slugs": [
+      "filing-er27-25-miso-lars"
+    ],
+    "theme": "Study time",
+    "title": "Transmission owners support LARS as an appropriately tailored tool",
+    "speaker": "MISO Transmission Owners",
+    "kind": "party",
+    "relation": "direct",
+    "text": "The transmission owners asked FERC to accept LARS effective December 2, 2026. They said it would yield an agreement in an estimated 120 days, is limited to three study cycles a year with ten applications per cycle, and keeps LARS requests out of the standard queue studies. The group lists Southern Minnesota Municipal Power Agency and NIPSCO among its members; both also filed separately, and SMMPA protested one part of LARS.",
+    "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261023-5143",
+    "locator": "PDF pp. 3, 5, 8–10",
+    "stance": "supports",
+    "quote": "The MISO Transmission Owners support MISO’s LARS Filing",
+    "quote_page": 4,
+    "target": "LARS"
+  },
+  {
+    "slugs": [
+      "filing-er27-25-miso-lars"
+    ],
+    "theme": "Generator access",
+    "title": "Data center group backs LARS but wants independent generators to apply directly",
+    "speaker": "Data Center Coalition",
+    "kind": "party",
+    "relation": "direct",
+    "text": "The coalition supported approving LARS but objected that every application must come through the load-serving entity, which keeps third-party generators from applying directly. It asked FERC to encourage MISO to let generators with demonstrated commercial pairings apply directly, or to add transparency on how utilities select applications.",
+    "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261023-5183",
+    "locator": "PDF pp. 6–7",
+    "stance": "supports with changes",
+    "quote": "DCC supports approval of the proposed LARS framework, but requests FERC encourage MISO to consider improvements for independent generator access",
+    "quote_page": 7,
+    "target": "LARS"
+  },
+  {
+    "slugs": [
+      "filing-er27-25-miso-lars"
+    ],
+    "theme": "Eligible pairs",
+    "title": "Municipal utilities protest the zone-wide eligibility rule",
+    "speaker": "Southern Minnesota Municipal Power Agency and WPPI Energy",
+    "kind": "party",
+    "relation": "direct",
+    "text": "The two municipal power suppliers protested one aspect of LARS, the rule that any generator and load in the same Local Resource Zone can pair. They said it departs from the Show Cause Order’s two-substation example and excludes close pairs in different zones. They asked FERC to reject that scope and to condition acceptance on a later finding that MISO addressed cost allocation and transparency.",
+    "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261023-5191",
+    "locator": "PDF pp. 2, 4–6, 10",
+    "stance": "opposes in part",
+    "quote": "MISO’s Filing does not come close to justifying a departing from the Show Cause Order’s approach by substituting a geographic scope that is both overinclusive and underinclusive",
+    "quote_page": 5,
+    "target": "LARS"
+  },
+  {
+    "slugs": [
+      "filing-er27-25-miso-lars"
+    ],
+    "theme": "Generator access",
+    "title": "Geronimo says utility gatekeeping makes LARS unduly discriminatory",
+    "speaker": "Geronimo Power",
+    "kind": "party",
+    "relation": "direct",
+    "text": "Geronimo supported coordinated study in principle but said a generator cannot enter LARS without the transmission owner’s sign-off on its point of interconnection and a utility sponsor for the application. It also said MISO’s wording could exclude generators selling under virtual power purchase agreements and co-located generation and load. It asked FERC to reject LARS without prejudice to a revised filing.",
+    "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261023-5198",
+    "locator": "PDF pp. 3–7, 14–17",
+    "stance": "asks FERC to reject",
+    "quote": "Geronimo Power urges the Commission to reject LARS on the basis that it has not been shown to be just, reasonable, and not unduly discriminatory or preferential",
+    "quote_page": 5,
+    "target": "LARS"
+  },
+  {
+    "slugs": [
+      "filing-er27-25-miso-lars"
+    ],
+    "theme": "Eligible pairs",
+    "title": "Invenergy asks that merchant DC lines be eligible for LARS",
+    "speaker": "Invenergy Transmission",
+    "kind": "party",
+    "relation": "direct",
+    "text": "Invenergy said LARS fits FERC and DOE goals but that its definitions appear to admit only generating facilities. It asked FERC to direct MISO, on compliance, to clarify that merchant high voltage direct current lines and generation connected to them can participate, and attached a tariff redline.",
+    "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261023-5200",
+    "locator": "PDF pp. 1–5",
+    "stance": "supports with changes",
+    "quote": "Invenergy therefore respectfully requests that the Commission direct MISO, on compliance, to revise the proposed Tariff to clarify that MHVDC transmission lines are eligible to participate in the LARS process",
+    "quote_page": 5,
+    "target": "LARS"
+  },
+  {
+    "slugs": [
+      "answer-er27-25-miso"
+    ],
+    "theme": "Generator access",
+    "title": "Geronimo says MISO’s answer leaves the discrimination concerns unaddressed",
+    "speaker": "Geronimo Power",
+    "kind": "party",
+    "relation": "direct",
+    "text": "Geronimo said MISO’s answer gave only a generic response on virtual power purchase agreements and did not address co-location and did not justify the roles of load-serving entities and transmission owners. It said a transmission owner could also remove a project by changing the point of interconnection. It again asked FERC to reject LARS without prejudice to a revised filing.",
+    "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261118-5238",
+    "locator": "PDF pp. 2–10",
+    "stance": "asks FERC to reject",
+    "quote": "Geronimo Power urges the Commission to reject LARS without prejudice to MISO submitting a revised proposal that addresses the significant issues identified by Geronimo Power and other parties in this proceeding",
+    "quote_page": 2,
+    "target": "LARS"
+  },
+  {
+    "slugs": [
+      "answer-er27-25-miso"
+    ],
+    "theme": "Eligible pairs",
+    "title": "Municipal utilities say MISO’s answer does not justify the zone-wide scope",
+    "speaker": "Southern Minnesota Municipal Power Agency and WPPI Energy",
+    "kind": "party",
+    "relation": "direct",
+    "text": "Answering MISO’s November 9 answer, the two suppliers said MISO’s “maximum flexibility” rationale does not show the zonal scope meets the Show Cause Order. They said cost-shifting protections rest on MISO’s separate Nov 16 filings, not the LARS tariff, and repeated that FERC should reject the geographic scope and condition acceptance rather than delay LARS.",
+    "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261119-5278",
+    "locator": "PDF pp. 3–5, 7–11",
+    "stance": "opposes in part",
+    "quote": "the inclusion in LARS of pairs of generation and load that do not reduce the need for Network Upgrades (e.g., those not electrically proximate) risks crowding out those pairs that do create greater efficiencies",
+    "quote_page": 7,
+    "target": "LARS"
   }
 ]

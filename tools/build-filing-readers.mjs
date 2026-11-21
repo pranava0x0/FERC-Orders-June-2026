@@ -1,11 +1,13 @@
 // Rebuild the HTML reading room from the per-document source index and reviewed evidence.
 // node tools/build-filing-readers.mjs [--check]
 import {filerList} from './build-record-data.mjs';
-import {existsSync, readFileSync,writeFileSync,copyFileSync,mkdirSync} from 'node:fs';
+import {existsSync, readFileSync,writeFileSync,copyFileSync,mkdirSync,readdirSync,unlinkSync} from 'node:fs';
 import {basename,dirname,join} from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {createHash} from 'node:crypto';
 import {loadData} from './build-seo.mjs';
+// FERC's own notices and requests for more time are procedure, not positions, whatever eLibrary's type says.
+import {proceduralFiling} from './curation-queue.mjs';
 const root=join(dirname(fileURLToPath(import.meta.url)),'..'), out=join(root,'docs/reading');
 const read=p=>JSON.parse(readFileSync(p,'utf8')), seed=f=>read(join(root,'sources/filings',f));
 const catalog=read(join(out,'catalog.json')), groups=seed('tenets.json').groups;
@@ -26,6 +28,18 @@ for(const s of Object.keys(all))if(!bySlug.has(s))throw Error('No original for r
 const sourceHost=u=>{const h=new URL(u).hostname.replace(/^www\./,'');return h==='elibrary.ferc.gov'?'FERC eLibrary':h;};
 const verifyUrl=s=>{if(!/^https?:\/\//.test(s))throw Error('invalid citation: '+s);return s};
 for(const v of voices){verifyUrl(v.url);if(!['direct','related'].includes(v.relation)||!['state','commissioner','coverage','party'].includes(v.kind)||!v.text||!v.locator)throw Error('invalid perspective '+v.title);for(const k of v.slugs)if(!bySlug.has(k))throw Error('unknown perspective document '+k);}
+// A position's stance and its quote are optional. A quote is the responder's own words and must appear on
+// the cited page of the responder's reading, so a stance never rests on a paraphrase alone.
+const STANCE_LABEL={'supports':'Supports','supports with changes':'Supports with changes','opposes in part':'Opposes in part','opposes':'Opposes','asks FERC to reject':'Asks FERC to reject','procedural':'Procedural'};
+const byAccession=new Map();for(const r of catalog)if(r.accession&&!r.parent&&!byAccession.has(r.accession))byAccession.set(r.accession,r);
+const voiceAcc=v=>{try{return new URL(v.url).searchParams.get('accession_number');}catch{return null;}};
+for(const v of voices){
+ if(v.stance!==undefined&&!STANCE_LABEL[v.stance])throw Error('invalid stance "'+v.stance+'" in '+v.title);
+ if(v.quote===undefined)continue;
+ const own=byAccession.get(voiceAcc(v));if(!own)throw Error('position quote has no reading: '+v.title);
+ const pg=read(join(out,own.slug,'source.json')).pages[(v.quote_page||0)-1];
+ if(!pg||!norm(pg.text).includes(norm(v.quote)))throw Error(own.slug+' position quote not on PDF p. '+v.quote_page+': '+v.quote.slice(0,80));
+}
 const css=readFileSync(join(root,'docs/css/reading.css'));
 const ver=createHash('sha256').update(css).digest('hex').slice(0,10);
 function frame(title,desc,content,sub='',extra=''){
@@ -149,12 +163,12 @@ const filingThread=new Map();
 const docketKey=r=>/^[A-Z]{2}\d{2}-\d+/.exec(r.docket)?.[0];
 const threadHref=(k,t)=>'discussion-'+k.toLowerCase()+'.html'+(t?'#'+slug(t):'');
 for(const r of catalog){
- const k=docketKey(r);if(!k||r.parent||!/(protest|comments|rehearing|statement of position|motion for leave to answer)/i.test(r.kind))continue;
+ const k=docketKey(r);if(!k||r.parent||proceduralFiling(r)||!/(protest|comments|rehearing|statement of position|motion for leave to answer)/i.test(r.kind))continue;
  const entries=filingThread.get(k)||new Map();
  for(const pg of read(join(out,r.slug,'source.json')).pages){
   const text=pg.text.replace(/\s+/g,' '),sentences=text.match(/[^.!?]+(?:[.!?](?=\s|$)|$)/g)||[];
   for(const sent of sentences){
-   const str=sent.trim();if(str.length<65||str.length>560||/respectfully submitted|certificate of service|\.{3}|^\d+\s+See /i.test(str)||!(/\b(?:should|would|requests?|asks?|supports?|opposes?|objects?|argues?|recommends?|concerned)\b/i.test(str)))continue;
+   const str=sent.trim();if(str.length<65||str.length>560||/respectfully submitted|certificate of service|request for action by|\.{3}|^\d+\s+See /i.test(str)||!(/\b(?:should|would|requests?|asks?|supports?|opposes?|objects?|argues?|recommends?|concerned)\b/i.test(str)))continue;
    for(const [topic] of salient(str)){
     if(!entries.has(topic))entries.set(topic,new Map());
     const byDoc=entries.get(topic);if(!byDoc.has(r.slug))byDoc.set(r.slug,{r,pg:pg.page,text:str});
@@ -163,9 +177,16 @@ for(const r of catalog){
  }
  if(entries.size)filingThread.set(k,entries);
 }
-for(const [k,topicsInDocket] of filingThread){
+// Positions read for this site lead each docket's page; keyword excerpts follow for everything else.
+const positionsIn=k=>voices.filter(v=>v.stance!=='procedural'&&docketKey(byAccession.get(voiceAcc(v))||{})===k);
+// The title already names the filer ("Geronimo says…"), so the filer goes in the byline, not the heading.
+const positionCard=v=>{const own=byAccession.get(voiceAcc(v));return '<article class="finding"><h3><a href="'+own.slug+'/">'+esc(v.title)+'</a></h3><p class="meta">'+esc(v.speaker)+' · '+(v.stance?esc(STANCE_LABEL[v.stance])+' · ':'')+esc(own.docket)+' · '+esc(own.issued)+'</p><p>'+esc(v.text)+'</p>'+(v.quote?'<blockquote>'+esc(v.quote)+' <cite><a href="'+own.slug+'/text.html#p-'+v.quote_page+'">PDF p. '+v.quote_page+'</a></cite></blockquote>':'')+'</article>';};
+for(const k of new Set([...filingThread.keys(),...voices.map(v=>docketKey(byAccession.get(voiceAcc(v))||{})).filter(Boolean)])){
+ const topicsInDocket=filingThread.get(k)||new Map(),staked=positionsIn(k);
+ if(!staked.length&&!topicsInDocket.size)continue;
+ const positions=staked.length?'<section id="positions"><h2>Positions read for this site</h2><p>Each is a plain summary of one filing, checked against its pages. Where a stance is given, it is what the filing asks FERC to do with the proposal.</p>'+staked.map(positionCard).join('')+'</section>':'';
  const body=[...topicsInDocket].sort(([a],[b])=>a.localeCompare(b)).map(([topic,byDoc])=>'<section id="'+slug(topic)+'"><h2>'+esc(topic)+'</h2>'+[...byDoc.values()].map(({r,pg,text})=>'<article class="finding"><h3><a href="'+r.slug+'/">'+esc(r.filer||r.title)+'</a></h3><p class="meta">'+esc(r.docket)+' · '+esc(r.issued)+'</p><blockquote>'+esc(text)+' <cite><a href="'+r.slug+'/text.html#p-'+pg+'">'+(r.pages?'PDF p. '+pg:'Source text')+'</a></cite></blockquote></article>').join('')+'</section>').join('');
- emit(threadHref(k),frame(k+' comments by topic','Topic-matched excerpts from filed comments and protests.','<h1>'+esc(k)+': the filed comments</h1><p>These passages match a topic and a request or argument in the same sentence. A filing can quote another party. Read its page before attributing a position.</p>'+body,threadHref(k)));
+ emit(threadHref(k),frame(k+' comments by topic','Topic-matched excerpts from filed comments and protests.','<h1>'+esc(k)+': the filed comments</h1>'+positions+(topicsInDocket.size?(staked.length?'<h2>Other passages, matched by topic</h2>':'')+'<p>These passages match a topic and a request or argument in the same sentence. A filing can quote another party. Read its page before attributing a position.</p>':'')+body,threadHref(k)));
 }
 function discussion(k,text){
  const e=filingThread.get(k);if(!e)return '';
@@ -279,4 +300,7 @@ const missing=Object.entries(coverage.records).filter(([,v])=>!v.slug||!bySlug.h
 const coveragePage='<h1>What the archive covers</h1><p class="intro">'+esc(coverage.scope)+'</p><p>Checked through '+esc(coverage.asOf)+'. '+catalog.length+' originals in the reading room. PDF page numbers count from the first physical page; Word documents have no fixed pagination.</p><h2>Docket sheets</h2><ul class="directory">'+coverage.dockets.map(d=>'<li><a href="'+esc(d.sourceUrl)+'">'+esc(d.docket)+'</a><span>'+esc(d.status)+' · '+d.rowsRead+' of '+d.totalRows+' rows</span></li>').join('')+'</ul><h2>Records without a local original</h2><p>'+missing.length+' listed records. A docket entry establishes that a document was filed; it cannot establish what the document says.</p><ul class="directory">'+missing.map(([acc,v])=>'<li><a href="'+esc(v.sourceUrl)+'">'+esc(acc+' · '+v.description)+'</a><span>'+esc(v.status)+(v.reason?' · '+esc(v.reason):'')+'</span></li>').join('')+'</ul>';
 emit('coverage.html',frame('Archive coverage','Dockets checked, original documents acquired and source gaps.',coveragePage,'coverage.html'));
 emit('index.html',frame('The filing record','FERC orders, filings, comments and responses by proceeding.',cover+'<p><a href="positions.html">Who said what: testimony, filings and reporting by issue</a> · <a href="coverage.html">Coverage and missing originals</a></p><h2>Inside PJM’s filings</h2>'+nav(leads)+'<h2>Browse the record</h2>'+nav(names.map(n=>'<a href="#group-'+slug(n)+'">'+esc(n)+'</a>'))+names.map(name=>'<section id="group-'+slug(name)+'"><h2>'+esc(name)+'</h2><ul class="directory">'+linksFor(grouped.get(name))+'</ul></section>').join('')));
+// A docket left with no positions and no excerpts gets no page; an old one is removed (or fails --check).
+const emittedThreads=new Set([...filingThread.keys(),...voices.map(v=>docketKey(byAccession.get(voiceAcc(v))||{})).filter(Boolean)].filter(k=>positionsIn(k).length||filingThread.has(k)).map(k=>threadHref(k)));
+for(const f of readdirSync(out))if(/^discussion-.*\.html$/.test(f)&&!emittedThreads.has(f)){if(check)throw Error('orphan '+f);unlinkSync(join(out,f));writes.push(f);}
 console.log(check?'Readers verified':'Readers built',catalog.length,'originals,',guide.reduce((a,b)=>a+b.count,0),'page-cited readings;',writes.length,'files changed');

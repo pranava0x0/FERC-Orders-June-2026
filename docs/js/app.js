@@ -1892,8 +1892,8 @@
   // An answer can respond to FERC's order or to another party; the type alone does not say which, so read
   // the document's own title and summary, and fall back to the neutral "Answer".
   var TITLE_ROLE = [[/petition for review/i, "Court appeal"], [/rehearing/i, "Asks FERC to reconsider"], [/clarification/i, "Asks FERC to clarify"],
-    [/extension of time/i, "Asks for more time"], [/\babeyance\b/i, "Asks FERC to pause the case"], [/deficien/i, "FERC asks for more information"],
-    [/\bprotest\b/i, "Opposes"], [/informational report/i, "Report to FERC"]];
+    [/^(?:(?:joint |expedited |emergency )*motion|request)\b[^.]*\bextension\b/i, "Asks for more time"], [/\babeyance\b/i, "Asks FERC to pause the case"], [/deficien/i, "FERC asks for more information"],
+    [/\blimited protest\b/i, "Opposes in part"], [/\bprotest\b/i, "Opposes"], [/informational report/i, "Report to FERC"]];
   var FERC_FILER = /^(?:secretary of the commission|ferc\b|federal energy regulatory commission|(?:commissioners|chair(?:man)?) and immediate staff|office of energy market regulation)/i;
   // The grid operators and their transmission owners: a bare "filing" from one of them is its own proposal.
   var OPERATOR_FILER = /^(?:PJM|MISO\b|Midcontinent Independent|Southwest Power Pool|SPP\b|California Independent|CAISO\b|ISO New England|New York Independent|NYISO\b|American Transmission Company)/i;
@@ -1909,7 +1909,10 @@
     }
     // The title is the surer signal for what a document does: "filing" and "request" cover protests, appeals and letters.
     var tt = d && d.title || "";
-    if (k !== "answer" && k !== "order") for (var r = 0; r < TITLE_ROLE.length; r++) if (TITLE_ROLE[r][0].test(tt)) return TITLE_ROLE[r][1];
+    // A reply's title names the filing it answers ("Comments in support of SPP's request for abeyance"), so its
+    // words describe that filing, not this one. Answers go to the answer branch; comments keep their type.
+    if (/^(?:answer|motion for leave to answer)\b/i.test(tt) && k !== "order") k = "answer";
+    if (k !== "answer" && k !== "order" && !/^comments?\b/i.test(tt)) for (var r = 0; r < TITLE_ROLE.length; r++) if (TITLE_ROLE[r][0].test(tt)) return TITLE_ROLE[r][1];
     if (k === "answer" && d) {
       // Read the title first: it names what the answer responds to. "Motion for Leave to Answer and" is procedure.
       var title = (d.title || "").replace(/^motion for leave to answer and (?:second )?/i, "");
@@ -1935,18 +1938,24 @@
         (d.ask ? '<p class="fd-ask"><span>Asks FERC to</span> ' + esc(d.ask.replace(/^\w/, function (c) { return c.toLowerCase(); })) + "</p>" : "") +
         linkLine(R, d.link, "fd-link") +
         '<ol class="pts" data-slug="' + esc(d.slug) + '"><li class="pts-wait">' + d.npoints + " key points, loading…</li></ol>"
+      : d.position
+      // A position read for this site: what the filer argues, in our words, then one sentence in theirs.
+      ? '<p class="fd-sum">' + esc(d.position.text) + "</p>" +
+        (d.position.quote ? '<blockquote class="fd-pq">“' + esc(d.position.quote) + '” <a href="reading/' + esc(d.slug) + "/text.html#p-" + esc(d.position.pg) + '">PDF p. ' + esc(d.position.pg) + "</a></blockquote>" : "")
       : '<p class="fd-sum na">Not yet read for this site. ' + esc(d.title) + "</p>";
     // Topics link to the theme filter, so the label does something. Themes matched by keyword in an
     // unread document say so, and their link includes the keyword matches.
     var kw = d.themesFrom === "text", role = kindRole(d.kind, d), side = sideText(d, role, g);
+    // For a read position, the stance replaces a bare "Opposes" or "Comments" type; a reply keeps its type.
+    if (d.position && /^(?:Opposes|Comments$)/.test(role) && side) { role = side.charAt(0).toUpperCase() + side.slice(1); side = ""; }
     var tags = (d.themes || []).length ? '<span class="fd-topics">' + (kw ? "Topics (keyword match): " : "Topics: ") + d.themes.map(function (t) {
       return '<a href="#filings/theme/' + esc(t) + (kw ? "/all" : "") + '">' + esc(themeLabel(R, t)) + "</a>";
     }).join(", ") + "</span>" : "";
-    var hay = [d.filer, (d.filers || []).join(" "), d.kind, d.title, d.docket, d.accession, g.title, g.short, d.summary].join(" ").toLowerCase();
+    var hay = [d.filer, (d.filers || []).join(" "), d.kind, d.title, d.docket, d.accession, g.title, g.short, d.summary, d.position && d.position.title, d.position && d.position.text, d.stance].join(" ").toLowerCase();
     return '<details class="fdoc" id="fd-' + esc(d.slug) + '" data-themes="' + esc((d.themes || []).join(" ")) + '"' + (kw ? " data-kw" : "") + ' data-q="' + esc(hay) + '"><summary>' +
       '<span class="fd-date mono">' + esc(fmtISO(d.date)) + '</span><span class="fd-who">' + esc(d.filer) + '</span><span class="fd-kind">' + esc(role) +
       (side ? ' · <span class="fd-side side-' + esc(d.side || "stance") + '">' + esc(side) + "</span>" : "") + "</span>" +
-      (d.summary ? '<span class="fd-tease">' + esc(d.summary) + "</span>" : '<span class="fd-unread">' + (d.themesFrom === "text" ? "not yet read · themes matched by keyword" : "not yet read") + "</span>") + "</summary>" +
+      (d.summary || d.position ? '<span class="fd-tease">' + esc(d.summary || d.position.title) + "</span>" : '<span class="fd-unread">' + (d.themesFrom === "text" ? "not yet read · themes matched by keyword" : "not yet read") + "</span>") + "</summary>" +
       '<div class="fd-body">' + body + '<p class="fd-tools">' + tags +
       '<a href="reading/' + esc(d.slug) + '/">Read the document</a>' +
       (d.accession ? '<a href="' + esc(eli(d.accession)) + '" target="_blank" rel="noopener noreferrer">eLibrary ' + esc(d.accession) + "</a>" : d.url ? '<a href="' + esc(d.url) + '" target="_blank" rel="noopener noreferrer">Source</a>' : "") +

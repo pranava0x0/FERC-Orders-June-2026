@@ -833,3 +833,8 @@ Format: date · area · description · root cause (code/test/data/source) · sta
 ### 2026-11-21 · record tier · tariff sheets ingested as readings
 - **Area:** `tools/ingest-record-tier.py`. **What:** SPP's clean and redline tariff sheets (`Clean8548-….pdf`, `Marked8551-….pdf`) were kept as readings. **Root cause:** code bug; `\bclean\b` does not match before a digit. **Status:** Fixed in the Nov 21 refresh commit; the filter now uses letter lookarounds.
 
+- **2026-11-21 · discussion pages · procedure shown as positions** (code). eLibrary types FERC's errata notices and
+  extension motions as "comments", so `build-filing-readers` built ER27-508 and ER27-526 pages from extension
+  requests alone ("REQUEST FOR ACTION BY NOVEMBER 23"), and the Filings tab listed them as responses. Fixed:
+  procedure is judged by filer and title in the readers, the app's role line and `tools/curation-queue.mjs`; orphan
+  discussion pages are deleted. Regression tests in `tests/positions.test.mjs`. Status: Fixed.
