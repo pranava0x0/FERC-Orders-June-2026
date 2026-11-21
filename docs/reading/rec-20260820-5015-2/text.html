@@ -358,7 +358,7 @@ PJM ELCC / RRS Model Evaluation
 14
 FPR) for the 2027/2028 Delivery Year is 0.9260.12 This means that the total procured quantity of effective capacity is equal to 92.6% of the 50/50 system peak load.
 
-Calculating the capacity accreditation value of resources using LOLP models is becoming increasingly common among utilities and RTOs throughout North America.<sup>13</sup> Specifically, the marginal effective load carrying capability (“marginal ELCC”) metric is an application of LOLP modeling that represents the quantity of “perfect” capacity that could be replaced or avoided by a resource while providing equivalent system reliability. Another (mathematically identical) conceptualization of marginal ELCC is availability of a resource during “critical hours,” defined as hours where additional energy will improve system reliability. For example, if a 100 MW resource has an ELCC of 50 MW, that means that 100 MW of this resource could displace the need for 50 MW of perfect capacity with no impact on system reliability. ELCC values are often expressed in percentage terms by dividing by the nameplate capacity; in this example, the ELCC of the resource would be 50%. Because ELCCs rely on the identification of critical hours that impact reliability, LOLP modeling is inherently necessary.
+Calculating the capacity accreditation value of resources using LOLP models is becoming increasingly common among utilities and RTOs throughout North America.<a class="fnref" id="fnref-17-13" href="#fn-17-13" aria-label="Footnote 13"><sup>13</sup></a> Specifically, the marginal effective load carrying capability (“marginal ELCC”) metric is an application of LOLP modeling that represents the quantity of “perfect” capacity that could be replaced or avoided by a resource while providing equivalent system reliability. Another (mathematically identical) conceptualization of marginal ELCC is availability of a resource during “critical hours,” defined as hours where additional energy will improve system reliability. For example, if a 100 MW resource has an ELCC of 50 MW, that means that 100 MW of this resource could displace the need for 50 MW of perfect capacity with no impact on system reliability. ELCC values are often expressed in percentage terms by dividing by the nameplate capacity; in this example, the ELCC of the resource would be 50%. Because ELCCs rely on the identification of critical hours that impact reliability, LOLP modeling is inherently necessary.
 
 The figure below illustrates how LOLP models calculate both the capacity requirement and ELCC values. Specifically, LOLP models identify which hours are “critical” to system reliability. The total capacity requirement is equal to the average system need (load + required operating reserves) during those hours. Capacity accreditation (i.e., marginal ELCC) is equal to average resource availability during those hours.
 
@@ -366,20 +366,7 @@ Figure 2: Stylized Illustration of Capacity Requirement and Capacity Accreditati
 
 12  <a href="https://www.pjm.com/-/media/DotCom/committees-groups/committees/mrc/2025/20250723/20250723-item-04---1-">https://www.pjm.com/-/media/DotCom/committees-groups/committees/mrc/2025/20250723/20250723-item-04---1-</a> 2027-2028-bra-fpr-and-irm---presentation.pdf
 
-13
- For
-example,
-see
-slide
-12
-of
-“ELCC
-Concepts
-and
-Considerations
-for
-Implementation”
-<a href="https://www.nyiso.com/documents/20142/24172725/NYISO%20ELCC_210820_August%2030%20Presentation.pdf">https://www.nyiso.com/documents/20142/24172725/NYISO%20ELCC_210820_August%2030%20Presentation.pdf</a></pre></section><section id="p-18"><h2>PDF page 18</h2><pre>Overview of Loss-of-Load-Probability Modeling and Best Practices
+<span class="fn" id="fn-17-13"><a class="fnback" href="#fnref-17-13" aria-label="Back to footnote 13 mark">13</a> For example, see slide 12 of “ELCC Concepts and Considerations for Implementation” <a href="https://www.nyiso.com/documents/20142/24172725/NYISO%20ELCC_210820_August%2030%20Presentation.pdf">https://www.nyiso.com/documents/20142/24172725/NYISO%20ELCC_210820_August%2030%20Presentation.pdf</a></span></pre></section><section id="p-18"><h2>PDF page 18</h2><pre>Overview of Loss-of-Load-Probability Modeling and Best Practices
 PJM ELCC / RRS Model Evaluation
 15
 One strength of an ELCC-based approach lies in the use of a common benchmark (“perfect capacity”) against which the impacts of all resources can be measured. In “Redefining Resource Adequacy for Modern Power Systems,” the authors espouse the principle that “there is no such thing as perfect capacity,” elaborating: “Future resource adequacy analysis should explicitly recognize that all resources have limitations based on weather- dependence, potential for outages, flexibility constraints, and common points of failure.”<a class="fnref" id="fnref-18-14" href="#fn-18-14" aria-label="Footnote 14"><sup>14</sup></a> By measuring each resource’s impact on system reliability relative to this common benchmark, an ELCC-based approach is well-suited to achieve an aspirational level of technological agnosticism, placing all resources on a level playing field that accounts for the various constraints and limits on their availability.
@@ -1323,7 +1310,7 @@ A strength of a marginal ELCC approach lies in the use of a common benchmark (�
 In theory, each resource in an electricity system has a distinct and unique marginal ELCC value that reflects its specific operating characteristics and limitations. In practice, it is</pre></section><section id="p-49"><h2>PDF page 49</h2><pre>Evaluation of PJM Model Design
 PJM ELCC / RRS Model Evaluation
 46
-impractical to calculate individual marginal ELCCs due to both data availability and computational tractability.<sup>34</sup> To address this issue, it is common practice to group similar resources together into “resource classes” and calculate marginal ELCCs for the entire group. Market operators then commonly differentiate resources within each class based on a simple heuristic such as average capacity factor during high reliability risk hours. PJM Approach
+impractical to calculate individual marginal ELCCs due to both data availability and computational tractability.<a class="fnref" id="fnref-49-34" href="#fn-49-34" aria-label="Footnote 34"><sup>34</sup></a> To address this issue, it is common practice to group similar resources together into “resource classes” and calculate marginal ELCCs for the entire group. Market operators then commonly differentiate resources within each class based on a simple heuristic such as average capacity factor during high reliability risk hours. PJM Approach
 
 PJM calculates marginal ELCC values for a defined set of “resource classes,” listed below.  Onshore Wind
 
@@ -1348,10 +1335,7 @@ PJM calculates marginal ELCC values for a defined set of “resource classes,”
  Oil-Fired Combustion Turbine
 For each resource class, PJM calculates a marginal ELCC value that represents the incremental improvement to reliability that would be achieved by adding a small or “marginal” quantity of that resource class. All measurements for incremental improvement to reliability are performed on a system that has been calibrated (by scaling load) to the 0.1 LOLE days/year reliability target. The metric for measuring incremental improvements to reliability due to adding a resource to this system is measured in terms of MWh of reduction in Expected Unserved Energy. All resource class marginal ELCC values are measured in a relative % to how much the additional of an equivalent amount of a perfect resource would marginally improve system reliability. This calculation process is outlined in the figure below.
 
-34
- Pg
-42,
-<a href="https://www.ethree.com/wp-content/uploads/2025/08/E3_Critical-Periods-Reliability-Framework_White-">https://www.ethree.com/wp-content/uploads/2025/08/E3_Critical-Periods-Reliability-Framework_White-</a> Paper.pdf</pre></section><section id="p-50"><h2>PDF page 50</h2><pre>Evaluation of PJM Model Design
+<span class="fn" id="fn-49-34"><a class="fnback" href="#fnref-49-34" aria-label="Back to footnote 34 mark">34</a> Pg 42, <a href="https://www.ethree.com/wp-content/uploads/2025/08/E3_Critical-Periods-Reliability-Framework_White-">https://www.ethree.com/wp-content/uploads/2025/08/E3_Critical-Periods-Reliability-Framework_White-</a> Paper.pdf</span></pre></section><section id="p-50"><h2>PDF page 50</h2><pre>Evaluation of PJM Model Design
 PJM ELCC / RRS Model Evaluation
 47
 Figure 21  I                JM’  Resource Class Marginal ELCC Calculation
@@ -2057,9 +2041,10 @@ Low implementation effort given that PJM has already built this
 functionality to test impacts as part of Package C
 Consideration 4: Use more temporal granularity to model capability and deliverability of unlimited resources
 
-PJM currently limits the deliverability and resulting modeled availability of “unlimited” resources to their ICAP rating in all hours, with additional de-rates applied based on ambient conditions. As described earlier in this report, the ICAP rating of unlimited resources is the lesser of each resource’s Summer Net Capability and its Capacity Interconnection Rights (CIRs),45  both of which are tied to summer peak conditions. However, the PJM ELCC/RRS
+PJM currently limits the deliverability and resulting modeled availability of “unlimited” resources to their ICAP rating in all hours, with additional de-rates applied based on ambient conditions. As described earlier in this report, the ICAP rating of unlimited resources is the lesser of each resource’s Summer Net Capability and its Capacity Interconnection Rights (CIRs),<a class="fnref" id="fnref-74-45" href="#fn-74-45" aria-label="Footnote 45"><sup>45</sup></a>  both of which are tied to summer peak conditions. However, the PJM ELCC/RRS
 
-<span class="fn" id="fn-74-44"><a class="fnback" href="#fnref-74-44" aria-label="Back to footnote 44 mark">44</a>  See PJM Executive Summary and ELCCSTF Presentation on PJM Package C: <a href="https://www.pjm.com/-">https://www.pjm.com/-</a> /media/DotCom/committees-groups/task-forces/elccstf/2025/20250711/20250711-item-03---pjm-proposal--- executive-summary.pdf and <a href="https://www.pjm.com/-/media/DotCom/committees-groups/task-">https://www.pjm.com/-/media/DotCom/committees-groups/task-</a> forces/elccstf/2025/20250522/20250522-item-02---elcc-accreditation-methodology-update-on-sensitivity-analyses-- -pjm-presentation.pdf 45 For more information on Capacity Interconnection Rights (CIR), see page 22 of PJM Manual 21b</span></pre></section><section id="p-75"><h2>PDF page 75</h2><pre>Considerations for Improvement
+<span class="fn" id="fn-74-44"><a class="fnback" href="#fnref-74-44" aria-label="Back to footnote 44 mark">44</a>  See PJM Executive Summary and ELCCSTF Presentation on PJM Package C: <a href="https://www.pjm.com/-">https://www.pjm.com/-</a> /media/DotCom/committees-groups/task-forces/elccstf/2025/20250711/20250711-item-03---pjm-proposal--- executive-summary.pdf and <a href="https://www.pjm.com/-/media/DotCom/committees-groups/task-">https://www.pjm.com/-/media/DotCom/committees-groups/task-</a> forces/elccstf/2025/20250522/20250522-item-02---elcc-accreditation-methodology-update-on-sensitivity-analyses-- -pjm-presentation.pdf</span>
+<span class="fn" id="fn-74-45"><a class="fnback" href="#fnref-74-45" aria-label="Back to footnote 45 mark">45</a> For more information on Capacity Interconnection Rights (CIR), see page 22 of PJM Manual 21b</span></pre></section><section id="p-75"><h2>PDF page 75</h2><pre>Considerations for Improvement
 PJM ELCC / RRS Model Evaluation
 72
 Model simulates unlimited resources across all hours of the year, not just summer peaks. Unlimited resources generally have higher availability outside of summer peak conditions due to colder ambient temperatures. Capping resource availability at ICAP, therefore, under-represents the potential deliverability and resulting modeled availability of unlimited resources in periods outside of summer peak conditions. To more fully and accurately represent the availability of unlimited resources, PJM could consider representing potential deliverability and resulting modeled availability with more temporal granularity, specifically on a “seasonal” or “daily” basis. These options are both described and illustrated below. Seasonal Granularity

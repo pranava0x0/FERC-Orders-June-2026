@@ -75,6 +75,30 @@ test('transcription footnotes: every mark and back-link resolves, and identifier
   for(const [,a] of full.matchAll(/href="#((?:fn|fnref)-\d+-\d+)"/g)){links++;assert.ok(ids.has(a),r.slug+' #'+a);}
  }
  assert.ok(links>1000,'footnote links were generated ('+links+')');
+ // Notes whose number sits alone on its line, text below ("4  \nThe cities of Anaheim…"), or is fused to
+ // the text ("7IRAS Filing"), still link: these documents linked none before.
+ for(const s of ['filing-er27-506-caiso-large-loads','protest-er27-25-acp-srea','report-el26-68-spp']){
+  const h=read(s+'/text.html'),marks=(h.match(/<sup>/g)||[]).length,linked=(h.match(/class="fnref"/g)||[]).length;
+  assert.ok(marks>20&&linked>=marks*0.95,s+': '+linked+' of '+marks+' footnote marks linked');
+ }
+ // A bare number inside body text ("findings on cost recovery \n7 \nagreement") is not a note; the real note 7 is.
+ assert.match(read('rec-20261116-5346/text.html'),/id="fn-410-7"><a class="fnback"[^>]*>7<\/a>\s*Id\. at P 8\./);
+ // Testimony line number 5 ("5\nQ. …") is not note 5; the note at the foot of the page is (PR #43 review).
+ assert.match(read('rec-20261116-5257-3/text.html'),/id="fn-7-5"><a class="fnback"[^>]*>5<\/a>\s*OSC at P 59/);
+ // A page-number footer that matches a note number does not displace the note (PR #43 review).
+ assert.match(read('rec-20250423-5125/text.html'),/id="fn-2-2"><a class="fnback"[^>]*>2<\/a>\s*18 C\.F\.R\. § 385\.213/);
+ assert.match(read('filing-20260812-5036/text.html'),/id="fn-1-1"><a class="fnback"/);
+ // A chemical formula is not a mark, even when a note 2 sits on the page (PR #43 review).
+ assert.ok(read('rec-20250423-5162-2/text.html').includes('CO2 and water savings'));
+ // A continuation line that starts with a note's number ("136 FERC ¶ 61,051", "50 MW threshold)") is not that note.
+ assert.match(read('e-8-miso-el26-70-000/text.html'),/id="fn-31-136"><a class="fnback"[^>]*>136<\/a>\s*See, e\.g\./);
+ assert.match(read('pjm-september-iras-answer/text.html'),/id="fn-15-50"><a class="fnback"[^>]*>50<\/a>\s*IMM Comments/);
+ // A wrapped identifier or URL piece that starts with a note's number ("10A.2", "20DL/NERC…") is not that note.
+ assert.match(read('rec-20261116-5329/text.html'),/id="fn-4-10"><a class="fnback"[^>]*>10<\/a>\s*See Ex\. No\. LSC-100/);
+ assert.match(read('e-9-spp-el26-68-000/text.html'),/id="fn-8-20"><a class="fnback"[^>]*>20<\/a>\s*Id\. P 12/);
+ // A quoted ellipsis before a mark is not a table-of-contents leader.
+ assert.match(read('e-2-pjm-el25-49-002/text.html'),/\. \. \. \.”<a class="fnref" id="fnref-22-65"/);
+ assert.match(read('rec-20260903-5204/text.html'),/id="fn-3-7"><a class="fnback"[^>]*>7<\/a>IRAS Filing/);
  // Moody's "Baa3": a digit inside a word with no note on the page is not a footnote mark (PR #42 review).
  const zgia=read('filing-er26-3552-miso-zgia-attachment-2/text.html');
  assert.ok(zgia.includes('Baa3')&&!/Baa(?:<a[^>]*>)?<sup>3/.test(zgia));
