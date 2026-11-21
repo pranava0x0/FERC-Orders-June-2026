@@ -2138,7 +2138,7 @@
     });
     panel.querySelectorAll(".fg-mkt").forEach(function (el) { el.hidden = !active; });
     // A search that leaves one document opens it: the answer, not a list of one.
-    if (q && shown === 1) { var only1 = panel.querySelector(".fdoc:not([hidden])"); if (only1 && !only1.open) only1.open = true; }
+    if (q && shown === 1) { var only1 = panel.querySelector(".fdoc:not([hidden])"); if (only1 && !only1.open) { only1.setAttribute("data-auto-open", ""); only1.open = true; } }
     // A search or theme filter looks across every pane, not only the open one.
     // While filtering, every pane shows and the bar steps aside; clearing the filter restores the picked pane.
     var bar = panel.querySelector(".st-bar");
@@ -2269,6 +2269,8 @@
       // bare tab). Toggle events arrive after applyTheme returns, so a flag set around those opens would
       // already be cleared here. A document is only ever opened by the reader, so it always gets its address.
       if (filtering && isGroup) return;
+      // A search's single match is opened by applyTheme, not the reader: the address stays the search.
+      if (el.hasAttribute("data-auto-open")) { el.removeAttribute("data-auto-open"); if (filtering) return; }
       // A proceeding with one document has nothing to choose between: open the document too.
       var only = isGroup ? g.querySelectorAll(".fdoc") : [];
       if (only.length === 1 && !only[0].open) { only[0].open = true; return; }
