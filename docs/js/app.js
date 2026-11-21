@@ -2421,7 +2421,9 @@
   function parseHash() {
     var h = (location.hash || "").replace(/^#/, "");
     var slash = h.indexOf("/");
-    return slash < 0 ? { tab: h, rest: "" } : { tab: h.slice(0, slash), rest: h.slice(slash + 1) };
+    var p = slash < 0 ? { tab: h, rest: "" } : { tab: h.slice(0, slash), rest: h.slice(slash + 1) };
+    if (p.tab === "discourse") p.tab = "news"; // the tab is labeled Discourse; its id predates the label
+    return p;
   }
   // Switch tabs from the hash/router, routing the Comments sub-state through the comments module.
   function goTab(tab, rest, focus) {

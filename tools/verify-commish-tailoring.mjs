@@ -127,7 +127,13 @@ function rawOf(item) {
 // header text rather than by page number. Exported so a rot-guard test can check each KNOWN_OCR_NOISE
 // entry still matches something real — an entry that matches nothing is either stale (the underlying
 // text changed) or was never real to begin with, and either way should not silently keep suppressing.
+// Parsed once per order: callers ask per commissioner, and each order's text is ~200 KB.
+const spanCache = new Map();
 export function statementSpans(item) {
+  if (!spanCache.has(item)) spanCache.set(item, parseSpans(item));
+  return spanCache.get(item);
+}
+function parseSpans(item) {
   const text = rawOf(item);
   const re = /([A-Z]+),\s*(?:Chairman|Commissioner),\s*concurring:?/g;
   const hits = [...text.matchAll(re)].map((m) => ({ key: m[1].toLowerCase(), idx: m.index, end: m.index + m[0].length }));
