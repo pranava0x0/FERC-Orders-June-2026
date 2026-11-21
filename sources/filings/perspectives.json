@@ -442,7 +442,11 @@
     "text": "The commissions backed a 120-day joint study. They said studying the load and its generator together could avoid duplicating network upgrades; the limit of ten pairs per period made it manageable. They wanted a permanent process so projects could plan and finance construction.",
     "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261023-5073",
     "locator": "PDF pp. 2–3",
-    "match": "about 120 days"
+    "match": "about 120 days",
+    "stance": "supports",
+    "quote": "The Southern Regulators support MISO’s filing to establish the LARS process and respectfully request that the Commission accept it.",
+    "quote_page": 1,
+    "target": "LARS"
   },
   {
     "slugs": [
@@ -456,7 +460,11 @@
     "text": "Arkansas expressly agreed with the Mississippi and Louisiana commissions’ comments and asked FERC to accept MISO’s tariff changes. It did not offer its own numerical estimate of costs or queue delays.",
     "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261023-5180",
     "locator": "Comments of the Arkansas PSC, concluding paragraph (unpaginated)",
-    "match": "about 120 days"
+    "match": "about 120 days",
+    "stance": "supports",
+    "quote": "The APSC supports MISO’s filing to establish the LARS process, and agrees with the comments made by the Mississippi Public Service Commission and the Louisiana Public Service Commission.",
+    "quote_page": 1,
+    "target": "LARS"
   },
   {
     "slugs": [
@@ -470,21 +478,29 @@
     "text": "The joint protesters asked how the study would prevent costs shifting to other customers. They warned that related MISO proposals could exempt about 30 GW of existing load from some reliability requirements; 30 GW was not the size of the proposed LARS study queue.",
     "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261023-5197",
     "locator": "PDF pp. 1, 3–4, 6",
-    "match": "cost-shifting agreement"
+    "match": "cost-shifting agreement",
+    "stance": "opposes in part",
+    "quote": "the Joint Protestors pray the Commission reject MISO’s proposed Tariff grandfathering exemptions to ensure Large Load customers bear the cost and risk of all costs",
+    "quote_page": 11,
+    "target": "LARS"
   },
   {
     "slugs": [
       "filing-er27-25-miso-lars"
     ],
     "theme": "Generator access",
-    "title": "Google backs co-study but wants safeguards for independent bids",
+    "title": "Google backs co-study but asks FERC to hold LARS until cost protections are filed",
     "speaker": "Google",
     "kind": "party",
     "relation": "direct",
-    "text": "Google supported studying loads and generators together but questioned the separate assumptions used in the ordinary queue. It wanted cost protections and a way for independent generators to participate without discrimination by the serving utility.",
+    "text": "Google supported studying a load and its paired generation together, but said MISO filed LARS ahead of its cost-shifting protections. It asked FERC to reject LARS with guidance to refile alongside those protections or, in the alternative, accept and suspend it until they can be weighed together. It also wanted independent generators able to participate without discrimination by the serving utility.",
     "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261023-5177",
     "locator": "PDF pp. 2–3, 6–9",
-    "match": "only the transmission customer"
+    "match": "only the transmission customer",
+    "stance": "asks FERC to reject",
+    "quote": "the Commission should either reject LARS with guidance indicating that it needs to be filed concurrently with procedures to prevent cross-subsidization",
+    "quote_page": 3,
+    "target": "LARS"
   },
   {
     "slugs": [
@@ -498,7 +514,11 @@
     "text": "Bloom backed the study but challenged its 200 MW entry threshold. It proposed letting transmission-connected loads of at least 50 MW participate and asked FERC not to delay the requested start date.",
     "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261023-5195",
     "locator": "PDF pp. 1, 4–5",
-    "match": "one point of withdrawal"
+    "match": "one point of withdrawal",
+    "stance": "supports with changes",
+    "quote": "LARS should therefore apply to loads of 50 MW or more that connect to the Transmission System.",
+    "quote_page": 4,
+    "target": "LARS"
   },
   {
     "slugs": [
@@ -512,7 +532,11 @@
     "text": "The trade associations said studying accelerated projects without other generators already waiting could leave later studies with fewer feasible connections and higher costs. They objected to a permanent parallel route without a cap on total capacity.",
     "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261023-5176",
     "locator": "PDF pp. 2, 21, 27",
-    "match": "double-allocated headroom"
+    "match": "double-allocated headroom",
+    "stance": "asks FERC to reject",
+    "quote": "the Clean Energy Trades respectfully request that the Commission reject MISO’s LARS proposal.",
+    "quote_page": 30,
+    "target": "LARS"
   },
   {
     "slugs": [
@@ -526,7 +550,11 @@
     "text": "The protesters asked FERC to reject the proposal or clarify that an applicant meeting all published requirements could not lose access at the transmission customer’s discretion.",
     "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261023-5181",
     "locator": "PDF pp. 1–2, 13",
-    "match": "double-allocated headroom"
+    "match": "double-allocated headroom",
+    "stance": "asks FERC to reject",
+    "quote": "SEIA and United respectfully request that the Commission reject the LARS proposal, on the grounds that the proposal is unduly discriminatory",
+    "quote_page": 2,
+    "target": "LARS"
   },
   {
     "slugs": [
@@ -539,7 +567,11 @@
     "relation": "direct",
     "text": "The advocates warned that two study tracks using different assumptions could count the same unused transmission capacity twice. They challenged assigning upgrade costs to existing customers based on agreements whose terms FERC had not seen.",
     "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261023-5163",
-    "locator": "PDF p. 18"
+    "locator": "PDF p. 18",
+    "stance": "asks FERC to reject",
+    "quote": "For the reasons explained below, the Commission should reject the LARS proposal.",
+    "quote_page": 1,
+    "target": "LARS"
   },
   {
     "slugs": [
@@ -553,7 +585,11 @@
     "text": "The utilities backed the readiness requirements because a speculative project could occupy one of a limited number of study slots. They argued the joint model could identify cheaper combined upgrades.",
     "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261023-5096",
     "locator": "PDF pp. 2–3",
-    "match": "five-year pairing contract"
+    "match": "five-year pairing contract",
+    "stance": "supports",
+    "quote": "AECS and Consumers Energy respectfully request that the Commission accept the LARS Proposal.",
+    "quote_page": 2,
+    "target": "LARS"
   },
   {
     "slugs": [
@@ -567,7 +603,11 @@
     "text": "The utilities said some ordinary MISO study cycles had taken four years or more. They supported the 120-day path and argued that its cap of ten load-generator pairs per study period would keep it workable.",
     "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261023-5035",
     "locator": "PDF pp. 2–3, 5",
-    "match": "about 120 days"
+    "match": "about 120 days",
+    "stance": "supports",
+    "quote": "the Entergy Operating Companies and Cleco Power respectfully request that the Commission accept MISO’s LARS filing.",
+    "quote_page": 6,
+    "target": "LARS"
   },
   {
     "slugs": [
@@ -581,7 +621,11 @@
     "text": "DTE supported the pairing rules and minimum commitment as evidence of a lasting commercial relationship. It also said the tariff allowed the interconnection customer to participate even though the transmission customer submits the application.",
     "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261023-5161",
     "locator": "PDF pp. 2–3",
-    "match": "five-year pairing contract"
+    "match": "five-year pairing contract",
+    "stance": "supports",
+    "quote": "DTE Electric supports the LARS filing and respectfully requests that the Commission accept the filing as proposed.",
+    "quote_page": 2,
+    "target": "LARS"
   },
   {
     "slugs": [

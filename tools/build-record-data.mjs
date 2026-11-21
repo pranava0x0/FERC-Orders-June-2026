@@ -113,10 +113,9 @@ export function build() {
       kind: (r && r.kind) || cur.kind || c.kind, title: c.title, docket: c.docket, pages: c.pages ?? cur.pages ?? null,
       // A curated side wins; otherwise a title that says "in support of" or "in opposition to" (or is a
       // protest) states the side itself. Anything else stays unlabeled rather than guessed.
-      // A hand-set side still wins the label, but the read position always reaches the row.
-      ...(positions.has(c.accession) ? { position: positions.get(c.accession) } : {}),
-      ...(!cur.side && positions.has(c.accession) ? { stance: stanceText(positions.get(c.accession)), side: STANCE_SIDE[positions.get(c.accession).stance] } : {}),
-      ...(cur.side ? { side: cur.side } : positions.has(c.accession) ? {} : titleSide(c.title) ? { side: titleSide(c.title), sideFrom: "title" } : titleStance(c.title) ? { stance: titleStance(c.title) } : {}),
+      // A read position (quote-checked) sets the label; a hand-set side must agree with it.
+      ...(positions.has(c.accession) ? { position: positions.get(c.accession), stance: stanceText(positions.get(c.accession)), side: sideOf(positions.get(c.accession), cur) } : {}),
+      ...(positions.has(c.accession) ? {} : cur.side ? { side: cur.side } : titleSide(c.title) ? { side: titleSide(c.title), sideFrom: "title" } : titleStance(c.title) ? { stance: titleStance(c.title) } : {}),
       ...(cur.pdfUrl || dm.source_url ? { pdfUrl: cur.pdfUrl || dm.source_url } : {}),
       url: c.url || null,
       ...(r ? { summary: r.summary, ask: r.ask ?? null, npoints: r.points.length, link: r.throughLine, themes: r.themes, ...(r.figures?.length ? { figures: r.figures } : {}) } : {}),
@@ -162,6 +161,12 @@ function reformMatrix() {
   return existsSync(f) ? JSON.parse(readFileSync(f, "utf8")).cells : null;
 }
 
+// A read stance sets the side; a hand-set side in tenets.json that disagrees is a stale label, so the build stops.
+function sideOf(p, cur) {
+  const side = STANCE_SIDE[p.stance];
+  if (cur.side && side && cur.side !== side) throw Error(`${cur.slug}: tenets.json side "${cur.side}" disagrees with its read stance "${p.stance}"`);
+  return side || cur.side;
+}
 // The side, named against what the position is about: the position's own `target` ("LARS"), else FERC's order
 // or the proposal. A reply to the operator's answer still argues about the proposal.
 const STANCE_SIDE = { "supports": "for", "supports with changes": "mixed", "opposes in part": "mixed", "opposes": "against", "asks FERC to reject": "against" };

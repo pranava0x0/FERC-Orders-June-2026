@@ -45,6 +45,11 @@ test("every response to MISO's LARS filing shows which side it takes", () => {
   const responses = g.docs.filter((d) => d.filer !== "MISO" && !/^Individual/i.test(d.filer) && d.kind !== "filing");
   assert.ok(responses.length >= 20, `only ${responses.length} LARS responses`);
   for (const d of responses) assert.ok(d.side || d.stance, `${d.filer} (${d.accession}) shows no side`);
+  // A party's own comments or protest carries a stance read from its text, so the list reads one way.
+  // (An answer to another party's motion can be labeled by its title instead.)
+  const own = responses.filter((d) => !/answer/i.test(d.kind));
+  assert.ok(own.length >= 18, `only ${own.length} LARS comments and protests`);
+  for (const d of own) assert.ok(d.position && /LARS/.test(d.stance || ""), `${d.filer} (${d.accession}): "${d.stance || d.side}" is not a read stance on LARS`);
   const nipsco = g.docs.find((d) => d.accession === "20261022-5130");
   assert.equal(nipsco.stance, "supports LARS");
   assert.ok(nipsco.position && nipsco.position.quote, "a read position ships its quote to the Filings row");

@@ -3634,11 +3634,11 @@
    ]
   },
   {
-   "id": "filed-eedf95ead6",
+   "id": "filed-42a5f62312",
    "kind": "filed",
    "who": "Google",
-   "title": "Google backs co-study but wants safeguards for independent bids",
-   "text": "Google supported studying loads and generators together but questioned the separate assumptions used in the ordinary queue. It wanted cost protections and a way for independent generators to participate without discrimination by the serving utility.",
+   "title": "Google backs co-study but asks FERC to hold LARS until cost protections are filed",
+   "text": "Google supported studying a load and its paired generation together, but said MISO filed LARS ahead of its cost-shifting protections. It asked FERC to reject LARS with guidance to refile alongside those protections or, in the alternative, accept and suspend it until they can be weighed together. It also wanted independent generators able to participate without discrimination by the serving utility.",
    "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261023-5177",
    "locator": "PDF pp. 2–3, 6–9",
    "docs": [
@@ -3648,7 +3648,8 @@
     }
    ],
    "groups": [
-    "miso-lars"
+    "miso-lars",
+    "sc-miso"
    ],
    "date": null,
    "themes": [
