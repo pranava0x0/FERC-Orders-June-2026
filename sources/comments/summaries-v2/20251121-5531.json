@@ -164,7 +164,7 @@
     },
     {
       "key": "aq:threshold",
-      "name": "MW Threshold Too Low",
+      "name": "MW threshold too low",
       "stance": "oppose",
       "description": "IECA argues the proposed 20 MW threshold is too low: for speed-to-market, expedited review should apply to all loads regardless of size; for reliability purposes, the 20 MW floor is inconsequential and a 100 MW floor is more meaningful.",
       "quote_ids": [
@@ -174,7 +174,7 @@
     },
     {
       "key": "aq:jointstudy",
-      "name": "Joint Load and Generation Study",
+      "name": "Joint load and generation study",
       "stance": "support",
       "description": "IECA fully supports simultaneous interconnection studies covering both a Data Center and its associated generation resource as offsetting loads, viewing this as the core mechanism for expedited approvals and efficient grid buildout.",
       "quote_ids": [

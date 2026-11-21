@@ -151,7 +151,7 @@
   "bins": [
     {
       "key": "aq:threshold",
-      "name": "Raise Threshold to 100 MW",
+      "name": "Raise threshold to 100 MW",
       "stance": "support",
       "description": "Alliant Energy supports raising the applicability threshold from 20 MW to at least 100 MW. A 20 MW floor would pull in smaller, less impactful loads, creating backlogs and defeating the ANOPR's efficiency goals. A higher threshold focuses limited study resources on the largest, most grid-impactful projects.",
       "quote_ids": [

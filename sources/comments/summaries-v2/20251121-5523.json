@@ -169,7 +169,7 @@
     },
     {
       "key": "aq:threshold",
-      "name": "MW Threshold Too Low",
+      "name": "MW threshold too low",
       "stance": "mixed",
       "description": "The filer supports a size threshold in principle but argues the 20 MW figure in the ANOPR is well below existing state benchmarks of 70 to 75 MW. A voltage threshold might make an MW floor unnecessary; if one is kept, it should be set higher and include anti-evasion rules for incremental load additions.",
       "quote_ids": [
@@ -229,7 +229,7 @@
     },
     {
       "key": "aq:upgradecost",
-      "name": "Full Upgrade Cost Responsibility",
+      "name": "Full upgrade cost responsibility",
       "stance": "support",
       "description": "The filing supports assigning 100 percent of attributed network upgrade costs to the interconnecting load, consistent with generator interconnection rules. Any crediting mechanism should be limited to upgrades that provide general system-wide benefit, not used to subsidize large loads at ratepayer expense.",
       "quote_ids": [
@@ -250,7 +250,7 @@
     },
     {
       "key": "pr:cost",
-      "name": "Cost Causation and Ratepayer Protection",
+      "name": "Cost causation and ratepayer protection",
       "stance": "support",
       "description": "The filer consistently applies the principle that large loads must bear costs they cause and must not shift costs to existing ratepayers. This covers network upgrade responsibility, deposit stringency, load forecast accuracy, and limits on any crediting mechanism.",
       "quote_ids": [

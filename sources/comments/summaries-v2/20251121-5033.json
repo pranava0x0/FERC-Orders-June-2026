@@ -144,7 +144,7 @@
     },
     {
       "key": "aq:jurisdiction",
-      "name": "State Jurisdiction Must Be Preserved",
+      "name": "State jurisdiction must be preserved",
       "stance": "oppose",
       "description": "The APSC warns that assigning large-load interconnection authority to FERC blurs the line between retail service and transmission, conflicts with Arkansas's vertically integrated utility model, and creates uncertainty about the obligation to serve. FERC should act only as a backstop where regional processes fail.",
       "quote_ids": [
@@ -157,7 +157,7 @@
     },
     {
       "key": "aq:threshold",
-      "name": "100 MW Minimum Threshold",
+      "name": "100 MW minimum threshold",
       "stance": "support",
       "description": "If FERC proceeds, the APSC recommends a minimum load threshold of no less than 100 MW to limit federal rule scope to genuinely large loads.",
       "quote_ids": [

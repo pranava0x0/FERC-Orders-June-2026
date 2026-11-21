@@ -173,7 +173,7 @@
   "bins": [
     {
       "key": "aq:jurisdiction",
-      "name": "Limit Federal Jurisdictional Reach",
+      "name": "Limit federal jurisdictional reach",
       "stance": "oppose",
       "description": "EEI opposes expanding Commission jurisdiction over large load interconnection service, arguing that cooperative federalism and state authority are the appropriate framework. EEI contends there is no evidence of utility discrimination against large loads and that jurisdictional expansion would trigger litigation and leave reliability and resource adequacy questions unanswered.",
       "quote_ids": [
@@ -242,7 +242,7 @@
     },
     {
       "key": "topic:cooperative-federalism",
-      "name": "Cooperative Federalism Framework",
+      "name": "Cooperative federalism framework",
       "stance": "support",
       "description": "EEI consistently frames cooperative federalism as the central organizing principle for large load interconnection policy. EEI cites broad commenter agreement and the FPA's design to argue that durable reform requires collaboration between FERC and state regulators, not federal preemption.",
       "quote_ids": [

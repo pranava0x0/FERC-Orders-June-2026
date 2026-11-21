@@ -169,7 +169,7 @@
     },
     {
       "key": "aq:threshold",
-      "name": "Raise Threshold to 100 MW",
+      "name": "Raise threshold to 100 MW",
       "stance": "oppose",
       "description": "Entergy opposes the proposed 20 MW threshold as too low. A 20 MW threshold would quadruple the number of qualifying loads in Entergy territories, create administrative overload, and invite speculative projects. Entergy recommends at least 100 MW, consistent with thresholds used by the White House EO, Georgia PSC, and other state programs.",
       "quote_ids": [
@@ -226,7 +226,7 @@
     },
     {
       "key": "pr:study",
-      "name": "Joint Load-Generation Study",
+      "name": "Joint load-generation study",
       "stance": "mixed",
       "description": "Entergy supports the principle that load and generation additions should be studied together for efficiency, but opposes applying a uniform federal study process and requires that hybrid loads be studied on a gross rather than net basis to capture actual reliability impacts.",
       "quote_ids": [

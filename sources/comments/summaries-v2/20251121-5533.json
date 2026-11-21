@@ -144,7 +144,7 @@
   "bins": [
     {
       "key": "aq:jurisdiction",
-      "name": "Preserve State Retail Jurisdiction",
+      "name": "Preserve state retail jurisdiction",
       "stance": "mixed",
       "description": "AES supports FERC acting within its clear authority over transmission-level cost recovery but warns that asserting jurisdiction over historically state-jurisdictional retail interconnection processes would create disputes that delay, rather than speed, large-load connections. Retail electric service agreements are state-jurisdictional regardless of voltage level.",
       "quote_ids": [
@@ -250,7 +250,7 @@
     },
     {
       "key": "rg:pjm",
-      "name": "PJM Show Cause Record",
+      "name": "PJM show cause record",
       "stance": "neutral",
       "description": "AES flags that co-location and transmission charge questions are already before FERC in the PJM show cause proceeding and urges any new rules to account for that record to avoid inconsistent outcomes.",
       "quote_ids": [
