@@ -35,7 +35,7 @@ OUT = SRC / "record-tier.json"
 ELI = "https://elibrary.ferc.gov/eLibrary/filelist?accession_number="
 # Tariff sheets duplicate the transmittal's explanation at hundreds of pages each; the eLibrary copy
 # remains the source for them. A file is skipped only when its accession keeps at least one other file.
-SKIP = re.compile(r"\b(?:clean|redline[ds]?|marked)\b|FERC GENERATED TARIFF|certificate of service|^Clean Tariff|^Marked Tariff", re.I)
+SKIP = re.compile(r"(?<![a-z])(?:clean|redline[ds]?|marked)(?![a-z])|FERC GENERATED TARIFF|certificate of service|^Clean Tariff|^Marked Tariff", re.I)
 WORDS = re.compile(r"[A-Za-z]{3,}")
 TOPIC = re.compile(r"large[- ]load|show cause|co-locat|EL2[56]-(?:49|6[7-9]|7[0-2])|\bOSC\b", re.I)
 

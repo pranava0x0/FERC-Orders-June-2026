@@ -1,0 +1,2324 @@
+--- PAGE 1 ---
+November 19, 2026 
+ 
+The Honorable Debbie-Anne A. Reese 
+Secretary 
+Federal Energy Regulatory Commission 
+888 First Street, N.E. 
+Washington, D.C.  20426 
+ 
+Re: 
+Southwest Power Pool, Inc., Docket No. ER27-____-000 
+Submission of Tariff Revisions to Add the Price Adaptive Load Service; 
+Related to Docket No. EL26-68-000 
+ 
+Dear Secretary Reese:  
+ 
+ 
+Pursuant to Section 205 of the Federal Power Act (“FPA”), 16 U.S.C. § 824d, 
+and Section 35.13 of the Federal Energy Regulatory Commission’s (“Commission”) 
+Regulations, 18 C.F.R. § 35.13, Southwest Power Pool, Inc. ("SPP"), as authorized by 
+its independent Board of Directors, submits revisions to its Open Access Transmission 
+Tariff (“Tariff”)1 to establish Price Adaptive Load Service (“PALS”)2, a non-firm 
+transmission service paired with a new market participation model that enables a Price 
+Adaptive Load (“PAL”)3 to participate as fully dispatchable demand in both the Day-
+Ahead Market and Real-Time Balancing Market (“RTBM”). SPP submits this filing 
+under Section 205, as the Commission encouraged, in response to the Commission’s 
+June 18, 2026, order instituting a proceeding under FPA Section 206 in Docket No. 
+EL26-68-000 (“Show Cause Order”).4 As explained in Section III.B.10, this filing 
+resolves the Show Cause Order’s directive that SPP explain whether its Tariff remains 
+ 
+1  
+Southwest Power Pool, Inc., Open Access Transmission Tariff, Sixth Revised Volume 
+No. 1.  References in this filing to "Tariff" refer to the version of SPP’s Tariff currently 
+in effect. "Proposed Tariff" refers to a version reflecting the revisions proposed in this 
+filing. All capitalized terms not otherwise defined in this filing shall have the 
+definitions assigned by the Tariff. 
+2  
+Proposed Tariff, Part I, Section 1, Definition of Price Adaptive Load Service (“A type 
+of transmission service available to serve a Price Adaptive Load at a delivery point, in 
+whole or in part,  as described in Attachment BG and Part VIII of the Tariff.”).  
+3  
+Proposed Tariff, Part I, Section 1, Definition of Price Adaptive Load (“A commercial 
+or industrial load, or a portion of a commercial or industrial load, at a delivery point 
+that is eligible to connect to the Transmission System and receive PALS as defined in 
+Attachment BG and Part VIII of the Tariff.”)." 
+4  
+Sw. Power Pool, Inc., 195 FERC ¶ 61,213 (2026).
+--- PAGE 2 ---
+The Honorable Debbie-Anne A. Reese 
+November 19, 2026 
+Page 2 
+ 
+just and reasonable without a non-firm contract demand transmission service for 
+Eligible Customers taking service on behalf of flexible large loads and Eligible Load. 
+ 
+SPP requests that the Commission issue an order in this docket as soon as 
+practicable, but not later than February 17, 2027, which is approximately 90 days after 
+submission of this filing. SPP requests an effective date of “12/31/9998”5 for the Tariff 
+Records submitted in this filing to allow SPP staff to develop, test, and implement the 
+necessary software changes. SPP will submit a filing with the Commission specifying 
+a precise effective date prior to implementation. SPP will work as quickly as practicable 
+to technologically implement the Tariff revisions proposed herein. As of the date of 
+this filing, implementation is targeted for the second quarter of 2028. 
+ 
+As discussed in Section VI below, SPP respectfully requests waiver of the 120-
+day prior-notice limitation in Section 35.3(a)(1) of the Commission’s regulations.6    
+   
+I. 
+SUMMARY OF FILING 
+The Show Cause Order commended SPP’s “bold and proactive steps” to 
+integrate large loads. It recognized that SPP’s High Impact Large Load (“HILL”) 
+process already provides an enhanced study framework for Eligible Customers taking 
+transmission service on behalf of large loads.7 The Commission nonetheless 
+preliminarily found that “SPP’s Tariff appears to be unjust and unreasonable because 
+it does not include transmission services that reflect Eligible Customers taking 
+transmission service on behalf of flexible large loads that are willing and able to limit 
+their use of the transmission system under certain conditions.”8  The Commission 
+directed:   
+ 
+SPP should explain whether the Tariff remains just and 
+reasonable without the transmission services described by the 
+Commission in the [PJM Interconnection, L.L.C. (“PJM”)] Co-
+Location Order[9], with regional variation as appropriate, being 
+available to Eligible Customers taking transmission service on 
+behalf of Eligible Load, or propose appropriate Tariff revisions. 
+ 
+5  
+See, e.g., Implementation Guide for Electronic Filing of Parts 35, 154, 284, 300, and 
+341 Tariff Filings at 10 (Nov. 14, 2016) (“If the effective date is not known at the time 
+of the filing, such as the effective date is contingent on FERC approval . . . the date of 
+12/31/9998 must be used.”).   
+6  
+18 C.F.R. § 35.3(a)(1). 
+7  
+Show Cause Order at P 2. 
+8  
+Show Cause Order at P 86. 
+9  
+PJM Interconnection, L.L.C., 193 FERC ¶ 61,217 (2025) (“PJM Co-Location Order”).
+--- PAGE 3 ---
+The Honorable Debbie-Anne A. Reese 
+November 19, 2026 
+Page 3 
+ 
+Specifically, SPP should explain whether the Tariff remains just 
+and reasonable without (1) an interim non-firm network 
+transmission service while Network Upgrades are being 
+constructed (i.e., interim NITS) and (2) permanent firm and non-
+firm contract demand transmission services (transmission 
+service up to a specified MW quantity, i.e., the contract level, on 
+a firm or non-firm basis).10 
+ 
+With this filing, SPP is proposing the addition of PALS to the Tariff to address 
+the Commission’s specific concern that the Tariff “does not include transmission 
+services that reflect Eligible Customers taking transmission service on behalf of 
+flexible large loads that are willing and able to limit their use of the transmission system 
+under certain conditions.” PALS is a flexible transmission service that allows 
+Transmission Customers to limit their use of the Transmission System. Under PALS, 
+a PAL’s withdrawals are governed by the price-sensitive PAL Energy Bids11 its Market 
+Participant submits, which are subject to a uniform $25/MWh cap that protects other 
+customers from substantially high energy prices and from utilizing resources for PALS 
+loads that are otherwise intended to serve firm load. PALS is available for renewable 
+terms of one to ten years and is not tied to the construction of Network Upgrades. PALS 
+is SPP’s regional variation on the Non-Firm Contract Demand transmission service 
+described in the PJM Co-Location Order, tailored to SPP’s Integrated Marketplace and 
+SPP’s transmission services. Like the Commission’s Non-Firm Contract Demand 
+transmission service, PALS limits service to a specified MW quantity (the PALS 
+Capacity). It is curtailed before firm service, imposes penalties for unreserved use, 
+carries no resource adequacy obligation, and requires control technologies or protection 
+systems that keep withdrawals within approved levels. 
+  
+This filing is one part of SPP’s comprehensive response to the Show Cause 
+Order. The collective filings addressing the Show Cause Order’s remaining directives 
+are identified in Section V. Section III.B.11 explains how PALS avoids disrupting 
+existing commercial arrangements, as the Show Cause Order requires. 
+ 
+II. 
+BACKGROUND 
+A. 
+The HILL Process Filings 
+ 
+The need and ideas that form the basis for SPP’s proposal for PALS grew from 
+SPP’s work to integrate and accommodate new large loads. The present filing is the 
+ 
+10  
+Show Cause Order at P 83.  
+11  
+Proposed Tariff, Attachment AE, Section 1.1, Definition of PAL Energy Bid (“A 
+proposal by a Market Participant associated with a Price Adaptive Load to purchase a 
+price sensitive amount of Energy at a specified location and period of time in the Day-
+Ahead Market or the Real-Time Balancing Market.”).
+--- PAGE 4 ---
+The Honorable Debbie-Anne A. Reese 
+November 19, 2026 
+Page 4 
+ 
+third major filing as a result of that work. The first filing occurred October 24, 2025, 
+when SPP submitted Tariff revisions to add the HILL study process and a High Impact 
+Large Load Generation Assessment (“HILLGA”).12 The Commission accepted the 
+HILL Filing on January 14, 2026, with an effective date of January 15, 2026.13 The 
+Commission found that “SPP has shown that unprecedented growth in large loads in 
+the SPP region presents significant and unique operational and planning 
+challenges[,]”14 and that the “proposed HILL and HILLGA processes are a just and 
+reasonable and not unduly discriminatory or preferential approach to addressing these 
+challenges, while maintaining the reliable operation of SPP’s transmission system.”15 
+ 
+On February 10, 2026, SPP submitted Tariff revisions to add Conditional High 
+Impact Large Load Service (“CHILLS”).16 CHILLS allows a HILL, or a portion of a 
+HILL, to receive up to seven years of non-firm transmission service when firm service 
+is unavailable because the Transmission Customer lacks sufficient Designated 
+Resources or because Network Upgrades are not yet complete. CHILLS serves as a 
+bridge that allows a HILL to begin operating, when sufficient capacity is available, 
+while it awaits firm service. The Commission accepted the provisions in a series of 
+orders.17 
+ 
+This PALS filing is SPP’s third filing stemming from its initiative to integrate 
+and accommodate new large loads. PALS is a novel approach to non-firm transmission 
+service intended to serve loads that do not seek a bridge to firm service but have a 
+business case for a non-firm transmission product. Unlike CHILLS, PALS is not 
+limited to HILLs and is not tied to the completion of Network Upgrades or the addition 
+of Designated Resources. Instead, PALS is designed for flexible, price-sensitive loads. 
+PALS does not require supporting Resources, will not cause Network Upgrades to be 
+identified or constructed, and uses a rate design based on the rates for hourly Non-Firm 
+Point-To-Point Transmission Service. 
+ 
+ 
+ 
+12  
+Submission of Tariff Revisions to Add the High Impact Large Load Processes and 
+High Impact Large Load Generation Assessment of Southwest Power Pool, Inc., 
+Docket No. ER26-247-000 (October 24, 2025) (“HILL Filing”). 
+ 
+13  
+Sw. Power Pool, Inc., 194 FERC ¶ 61,031 (2026) (“HILL/HILLGA Order”). 
+14  
+HILL/HILLGA Order at P 60. 
+15  
+Id. 
+16  
+Submission of Tariff Revisions to Add Conditional High Impact Large Load Service 
+of Southwest Power Pool, Inc., Docket No. ER26-1323-000 (February 10, 2026). 
+17  
+Sw. Power Pool, Inc., 195 FERC ¶ 61,196 (2026); Sw. Power Pool, Inc., Letter Order, 
+Docket No. ER26-1323-002 (Oct. 26, 2026).
+--- PAGE 5 ---
+The Honorable Debbie-Anne A. Reese 
+November 19, 2026 
+Page 5 
+ 
+B. 
+Show Cause Order in Docket No. EL26-68 
+ 
+In the Show Cause Order, the Commission adopted SPP’s HILL definition as 
+its definition of “large load.”18 It then preliminarily found that the Tariff appears unjust 
+and unreasonable in four categories. The Commission directed SPP and the 
+Transmission Owners either to show cause why the Tariff remains just and reasonable 
+or to explain what changes would remedy the identified concerns.19 The Commission 
+strongly encouraged SPP to address these issues through FPA Section 205 filings.20 
+ 
+The Commission also noted that “SPP’s PALS proposal is currently under 
+development in its stakeholder process, and we encourage SPP to consider whether 
+PALS would address our concern….”21  The Commission also explained that Eligible 
+Customers that are willing and able to limit their use of the transmission system should 
+be able to choose a transmission service that aligns their charges with the benefits they 
+receive.22 
+ 
+SPP submitted an informational report on July 20, 2026, describing the status 
+of PALS and SPP's other large load initiatives.23 On August 3, 2026, SPP and certain 
+Transmission Owners moved to hold the Section 206 proceeding in abeyance through 
+November 20, 2026, to allow SPP to complete its stakeholder process, and identified 
+PALS as one of the Section 205 filings SPP would submit in response.24 This filing 
+fulfills that commitment. SPP is concurrently submitting additional FPA Section 205 
+filings that address the Commission’s remaining concerns, as identified in Section V 
+below.  
+ 
+C.  
+Stakeholder Engagement and Approval 
+ 
+Starting in late 2025, SPP staff began working on the PALS proposal. SPP met 
+with SPP stakeholder groups over thirty separate times to discuss PALS proposal and 
+for the ultimate approval of the proposed Tariff revisions presented herein.  
+ 
+18  
+Show Cause Order at n.2. 
+19  
+Id. at P 3. 
+20  
+Id. at P 32. 
+21  
+Id. at P 84. 
+22  
+Id. at PP 83-84, 86-87. 
+23  
+Informational Report of Southwest Power Pool, Inc., Docket No. EL26-68-000 (July 
+20, 2026). 
+24  
+Joint Movants’ Amended Motion to Hold Section 206 Proceeding in Abeyance, Docket 
+No. EL26-68-000 (August 3, 2026).
+--- PAGE 6 ---
+The Honorable Debbie-Anne A. Reese 
+November 19, 2026 
+Page 6 
+ 
+ 
+ The proposed Tariff revisions were reviewed and approved through the SPP’s 
+robust stakeholder process, including meetings of the: Market Working Group 
+(“MWG”) on August 18, 2026;25 Operating Reliability Working Group (“ORWG”) on 
+September 2, 2026;26 Supply Adequacy Working Group (“SAWG”) on September 23, 
+2026;27 Regional Tariff Working Group (“RTWG”) on September 24, 2026;28 and the 
+ 
+25  
+See MWG Minutes, dated August 18-19, 2026, at Agenda Item 11 posted at: 
+https://www.spp.org/documents/77583/mwg%20minutes%2020260818-19.pdf. The 
+MWG develops and oversees policies and procedures related to the Market Protocols 
+that define SPP’s wholesale markets, including energy and operating reserve, 
+congestion management, congestion hedging, demand response and market power 
+mitigation. The MWG proposes changes to the SPP Tariff and other governing 
+documents to implement suggested market changes. 
+26  
+See ORWG Meeting Minutes, dated September 2, 2026, at Agenda Item 7 posted at: 
+https://www.spp.org/documents/77750/orwg%20meeting%20minutes%2020260902.
+pdf. The ORWG develops and oversees policies and procedures related to the reliable 
+and secure operation of the Bulk Electric System within SPP’s Reliability Coordinator, 
+Balancing Authority and Reserve Sharing Group footprints. The ORWG ensures these 
+operating policies are consistent with North American Electric Reliability Corporation 
+and regional reliability standards. 
+27  
+See SAWG Meeting Minutes, dated September 23, 2026, at Agenda Item 4 posted at: 
+https://www.spp.org/documents/78101/sawg%20meeting%20minutes%2020260923-
+24.pdf. The SAWG develops and oversees policies and procedures related to reliable 
+supply adequacy within the SPP footprint. This includes ensuring that these policies 
+and procedures meet the compliance obligations of North American Electric Reliability 
+Corporation reliability standards.  
+28  
+See  RTWG Minutes, dated September 24, 2026, at Agenda Item 9b posted at: 
+https://www.spp.org/documents/77942/rtwg%20meeting%20minutes%2020260924.p
+df. The RTWG develops, implements and oversees SPP’s Open Access Transmission 
+Tariff. The RTWG provides input on regulatory or implementation issues not 
+specifically covered by the tariff and issues where there may be conflicting or differing 
+interpretations of the tariff.
+--- PAGE 7 ---
+The Honorable Debbie-Anne A. Reese 
+November 19, 2026 
+Page 7 
+ 
+Transmission Working Group ("TWG")29 and Economic Studies Working Group 
+(“ESWG”)30 on September 30, 2026.31  
+ 
+The proposed revisions were approved by the Markets and Operations Policy 
+Committee (“MOPC”) on October 13, 2026,32 and the SPP Board of Directors on 
+November 17, 2026.33 
+ 
+The Cost Allocation Working Group (“CAWG”) on October 1, 2026, 34 and the 
+RSC on November 16,  2026,35 approved changes to SPP’s Open Access Transmission 
+Tariff  Business Practices, Business Practice 8100, related to these Tariff revisions. 
+ 
+29  
+The TWG develops and oversees regional and interregional transmission planning 
+processes, including generator interconnection and long-term transmission service 
+study processes. The TWG reviews proposed transmission interconnections and 
+coordinates transmission planning activities to develop SPP’s Integrated Transmission 
+Plan and Transmission Expansion Plan.  
+30  
+The ESWG advises and assists SPP staff in determining the appropriate data, planning 
+methods and processes for developing and evaluating economic transmission 
+expansion options for the SPP region.     
+31  
+See ESWG & TWG Joint Meeting Minutes, dated September 30, 2026, at Agenda Item 
+3 posted at: 
+ https://www.spp.org/documents/77985/joint%20eswg-
+twg%20meeting%20minutes%2020260930-1001.pdf.  
+32  
+See MOPC Meeting Minutes, dated October 13-14, 2026, at Agenda Item 3.e posted 
+at: https://www.spp.org/spp-documents-filings/?id=532303. The MOPC consists of a 
+representative officer or employee from each SPP Member and reports to the SPP 
+Board of Directors. Its responsibilities include recommending modifications to the 
+Tariff. See Southwest Power Pool, Inc., Bylaws, First Revised Volume No. 4 
+("Bylaws") at Section 6.1.  
+33  
+See Board of Directors & Members Committee Meeting Materials, dated November 
+17, 2026, at Agenda Item 3.2.4 and 7.1 posted at: 
+  https://www.spp.org/spp-
+documents-filings/?id=18449. The meeting minutes will be posted that this location 
+when they become available. 
+ 
+34 
+See CAWG Meeting Minutes, dated October 1, 2026, at Agenda Item 8 posted at: 
+https://www.spp.org/documents/77976/cawg%20minutes%2020261001.pdf. 
+The 
+CAWG reports to the Regional State Committee (“RSC”) and assists the RSC in 
+addressing matters for which the RSC has primary responsibility as defined in Section 
+7.2 of the SPP Bylaws. In addition, the CAWG assists the RSC in addressing any other 
+issues as requested by the RSC.  
+35  
+See RSC Meeting Materials, dated November 16, 2026, at Agenda Item 6.D posted at:  
+https://www.spp.org/spp-documents-filings/?id=20623. The meeting minutes will be 
+posted at this location when they become available. The RSC provides collective state
+--- PAGE 8 ---
+The Honorable Debbie-Anne A. Reese 
+November 19, 2026 
+Page 8 
+ 
+ 
+While SPP recognizes that stakeholder approval does not by itself cause a filing 
+to be just and reasonable, SPP requests that the Commission extend appropriate 
+deference to the wishes of SPP’s stakeholders, consistent with Commission 
+precedent.36 
+ 
+III. 
+DESCRIPTION OF AND JUSTIFICATION FOR PROPOSED TARIFF 
+REVISIONS  
+ 
+A. 
+Overview 
+ 
+During the development of the CHILLS, there was stakeholder desire for a 
+long-term transmission service product that would provide flexibility in how and when 
+transmission customers could use the SPP Transmission System. CHILLS, although a 
+non-firm, long-term transmission service product, requires the Transmission Customer 
+to obtain and pay for transmission service based on a MW amount of reserved 
+transmission capacity. SPP and its stakeholders developed the PALS to allow loads, 
+not just HILLs, to obtain a long-term, non-firm dispatchable load service and 
+ 
+regulatory agency input on matters of regional importance related to the development 
+and operation of bulk electric transmission. The SPP RSC is comprised of retail 
+regulatory commissioners from agencies in Arkansas, Arizona, Colorado, Iowa, 
+Kansas, Louisiana, Minnesota, Missouri, Montana, Nebraska, New Mexico, North 
+Dakota, Oklahoma, South Dakota, Texas, Utah and Wyoming. The RSC’s approved 
+the following motion: “The Regional State Committee approves the revisions to 
+Business Practice 8100 proposed in RR791 - Price Adaptive Load Service. The 
+Regional State Committee recommends the Board of Directors support policies to 
+reliably maximize utilization of the transmission system and consider the 
+recommendation of the Cost Allocation Working Group relating to RR791 - Price 
+Adaptive Load Service.” 
+36   
+The Commission has previously recognized that provisions approved through regional 
+transmission organization stakeholder processes are due deference. See Sw. Power 
+Pool, Inc., 127 FERC ¶ 61,283, at P 33 (2009) (noting that the Commission “accord[s] 
+an appropriate degree of deference to RTO stakeholder processes”); New Eng. Power 
+Pool, 105 FERC ¶ 61,300, at P 34 (2003) (Commission approval of transmission cost 
+allocation proposal based upon an extensive and thorough stakeholder process); Policy 
+Statement Regarding Regional Transmission Groups, 1991-1996 FERC Stats. & 
+Regs., Regs. Preambles ¶ 30,976, at 30,872 (1993) (the Commission will afford the 
+appropriate degree of deference to the stakeholder approval process). The 
+Commission’s deference to RTO stakeholder processes has been upheld by the courts. 
+See Pub. Serv. Comm’n of Wis. v. FERC, 545 F.3d 1058, 1062-63 (D.C. Cir. 2008) 
+(noting that the Commission often gives weight to RTO proposals that reflect the 
+position of the majority of the RTO’s stakeholders) (quoting Am. Elec. Power Serv. 
+Corp. v. Midwest Indep. Transmission Sys. Operator, Inc., 122 FERC ¶ 61,083, at P 
+172 (2008)).
+--- PAGE 9 ---
+The Honorable Debbie-Anne A. Reese 
+November 19, 2026 
+Page 9 
+ 
+withdrawal based on the real-time pricing. PALS will allow Transmission Customers 
+the ability to utilize non-firm transmission service designed for price-sensitive loads to 
+pay for service on a per MW basis based on actual usage and not based on the reserved 
+capacity amount. 
+ 
+To establish the rates, terms, and conditions of PALS, SPP proposes a new Part 
+VIII of the Tariff (Sections 54 through 61), a new Schedule 16, and a new Attachment 
+BG, which contains the study process for PALS, a Sample Request For a Price 
+Adaptive Load Delivery Point Initial Assessment, a pro forma PALS Service 
+Agreement ("PALSA"), and a pro forma PALS Operating Agreement. SPP also 
+proposes revisions to Attachment AE to establish the PAL market participation model, 
+and numerous conforming revisions throughout the Tariff. 
+ 
+SPP proposes new definitions for PAL, PALS, PALS Capacity, PALS 
+Operating Agreement, PAL Upper Operating Tolerance, PALS Usage, and PALS 
+Usage Limit. Similar to CHILL and CHILLS, PALS is the transmission service, and a 
+PAL is the load that takes the service. The PALS Capacity is the maximum amount of 
+Energy SPP agrees to transmit, the PALS Usage is the amount delivered, and the PALS 
+Usage Limit reflects the four different paths possible for limiting withdrawals by PALs.  
+ 
+PALS is designed to accommodate flexible, price-sensitive loads that are 
+willing to withdraw from the Transmission System only when the transmission 
+capacity is available. PALS is a new transmission service product, similar to CHILLS, 
+that will help expedite the connection of new loads on the Transmission System. As 
+described and justified below, the PALS proposal is just and reasonable and not unduly 
+discriminatory or preferential. 
+ 
+B. 
+Price Adaptive Load Service 
+ 
+1. General Terms and Conditions of PALS37 
+ 
+ 
+To provide the rates, terms, and conditions of this new type of long-term non-
+firm transmission service, SPP proposes a new Part VIII of the Tariff, a new Schedule 
+16, and a new Attachment BG.38 PALS is the transfer of energy to designated Point(s) 
+of Delivery to serve the PAL of a Transmission Customer or a Network Customer.39 
+PALS is “as available” transmission service that will be provided by SPP using the 
+transfer capability that is in excess of the capability needed to serve Native Load 
+ 
+37  
+This section is intended to provide a general overview of the Tariff revisions proposed 
+in this filing. Each requirement or characteristic of PALS discussed in this section is 
+discussed in detail in subsequent sections. 
+38  
+Proposed Tariff, Part VIII, Sections 54-61, Schedule 16, and Attachment BG. 
+39  
+Proposed Tariff, Part VIII, Preamble.
+--- PAGE 10 ---
+The Honorable Debbie-Anne A. Reese 
+November 19, 2026 
+Page 10 
+ 
+Customers,40 Network Customers, other Transmission Customers taking Long-Term 
+Service and Short-Term Firm Point-To-Point Transmission Service,41 CHILLS, and 
+customers under other transmission tariffs or agreements taking network or Firm Point-
+to-Point Transmission Service42 from the Transmission Owner(s).43 A Transmission 
+Customer seeking PALS will take conditional transmission service based on the excess 
+capacity available on the current topology of the Transmission System to serve the 
+PAL. 
+ 
+Under Part VIII of the Proposed Tariff, PALS will be available for a minimum 
+term of one (1) year and a maximum term of ten (10) years.44 This term will provide 
+PALS customers with significant flexibility based on their needs, but will also allow 
+SPP to ensure that the changing topology of the SPP Transmission System can reliably 
+accommodate the PALS request after ten (10) years. After the termination of PALS, 
+Transmission Customers cannot withdraw energy from the Transmission System for 
+the PAL without obtaining firm transmission service under other processes in the Tariff 
+or unless a renewed term is granted by SPP under Attachment BG.45 If the PALS 
+customer does not use the PALS for a period of one (1) year, SPP has the ability to 
+terminate the service.46  
+ 
+ 
+40  
+Tariff, Part I, Section 1, Definition of Native Load Customers (“The wholesale and 
+retail power customers of the Transmission Owner(s) on whose behalf the 
+Transmission Owner(s), by statute, franchise, regulatory requirement, or contract, has 
+(have) undertaken an obligation to construct or operate the Transmission Owner's(s') 
+system(s) to meet the reliable electric needs of such customers.  In addition, Native 
+Load Customers also may include the customers of the Federal Government on whose 
+behalf the Government, by policy, statute, regulatory requirement, or contract, delivers 
+Federal capacity and energy to meet all or a portion of the reliable electric needs of 
+such customers.”) 
+41  
+Tariff Part I, Section 1, Definition of Short-Term Point-To-Point Transmission Service 
+(“Firm Point-To-Point Transmission Service under Part II of the Tariff with a term of 
+less than one year.”). 
+42  
+Tariff, Part I, Section 1, Definition of Firm Point-to-Point Transmission Service 
+(“Transmission Service under this Tariff that is reserved and/or scheduled between 
+specified Points of Receipt and Delivery pursuant to Part II of this Tariff.”). 
+43  
+Proposed Tariff, Part VIII, Section 54.2. 
+44  
+Proposed Tariff, Part VIII, Section 54.1. 
+45  
+Id. 
+46  
+Id.
+--- PAGE 11 ---
+The Honorable Debbie-Anne A. Reese 
+November 19, 2026 
+Page 11 
+ 
+Through the execution of a PALSA, Transmission Customers accept PALS 
+with full realization that such service is subject to availability and to Curtailment47 or 
+Interruption48 on a non-discriminatory basis in the event the Transmission System is 
+constrained, under any situation that threatens reliability or other unforeseen 
+conditions.49 The Proposed Tariff also requires the Transmission Customer to fully 
+respond to a Load Shedding50 or Curtailment directive for the PAL delivery point 
+limited by the average Setpoint Instruction51 plus the PAL Upper Operating 
+Tolerance52.53 In the event the Transmission System is constrained or under Emergency 
+Conditions, all firm transmission service and CHILLS will have higher priority than 
+any PALS.54 PALS will have equal priority to hourly Non-Firm Point-To-Point 
+Transmission Service.55 The priority of PALS appropriately ranks behind all firm 
+service and CHILLS because PALS  is  non-firm transmission service and PALS is  not 
+a bridge to a long-term firm transmission service like CHILLS. Transmission 
+Customers with firm service are responsible for the costs of any needed Network 
+Upgrades and required to have Resources that support that service, unlike PALS. The 
+equal priority of PALS and hourly Non-Firm Point-To-Point Transmission Service is 
+ 
+47  
+Tariff, Part I, Section 1, Definition of Curtailment (“A reduction in firm or non-firm 
+transmission service in response to a transmission capacity shortage as a result of 
+system reliability conditions.”). 
+48  
+Tariff, Part I, Section 1, Definition of Interruption (“A reduction in non-firm 
+transmission service due to economic reasons pursuant to Section 14.7.”). 
+49  
+Proposed Tariff, Part VIII, Section 58.1. 
+50  
+Proposed Tariff, Part I, Section 1, Definition of Load Shedding (“The systematic 
+reduction of system demand by temporarily decreasing load in response to 
+Transmission System or area capacity shortages, system instability, or voltage control 
+considerations under Part III, Part VII, or Part VIII of the Tariff.”). 
+51  
+Proposed Tariff, Attachment AE, Section 1.1, Definition of Setpoint Instruction (“The 
+Real-Time desired Megawatt output signal calculated for a specific Resource or Price 
+Adaptive Load by SPP’s control system for a specified period.”). 
+52  
+Proposed Tariff, Attachment AE, Section 1.1, Definition of PAL Upper Operating 
+Tolerance (“The Megawatt range of a Price Adaptive Load’s withdrawal above its 
+average Setpoint Instruction over the Dispatch Interval within which it will not be 
+subject to charges associated with deviating from its Setpoint Instruction”). 
+53  
+Proposed Tariff, Part VIII, Section 58. 
+54  
+Proposed Tariff, Part VIII, Section 54.2. 
+55  
+Id.
+--- PAGE 12 ---
+The Honorable Debbie-Anne A. Reese 
+November 19, 2026 
+Page 12 
+ 
+appropriate because PALS Usage56 is billed on hourly increments similar to hourly 
+Non-Firm Point-To-Point Transmission Service capacity. 
+ 
+ 
+Although Network Upgrades will not be identified for construction to establish 
+a delivery point for the sole purpose of PALS, the Transmission Customer and Host 
+Transmission Owner may still be required to ensure construction of facilities that 
+enable the provision of PALS. The determination of such upgrades will be determined 
+in the PAL Connection Study (“PALCS”) under Attachment BG,57 with the costs for 
+such facilities being directly assigned to the PALS customer.  Further, the Transmission 
+Customer is responsible for constructing, maintaining, and operating facilities on its 
+side of the delivery point for SPP to reliably deliver energy from the Transmission 
+System to the PAL delivery point.58  
+ 
+Transmission Customers will also take PALS under the Tariff with the 
+knowledge that PALS is not available for resale, redirection, reassignment, or transfer 
+of service.59 PALS is provided at the fixed location on the Transmission System that 
+was studied. Therefore, redirection is not appropriate. Furthermore, resale and 
+reassignment apply only to Point-To-Point Transmission Service60 and therefore will 
+not apply to PALS. Lastly, since PALS is available only to entities entitled to serve 
+retail electric load under state regulatory authority, resale, and reassignment are not 
+needed for these types of Transmission Customers. 
+ 
+ 
+Section 54.4 of the Proposed Tariff provides that the Transmission Customer 
+must not withdraw energy from the Transmission System at the PAL delivery point in 
+excess of  PALS Usage Limit.61 The Transmission Customer will be billed for its PALS 
+Usage under the terms of Schedules 11 and 16 of the Tariff62 and will be subject to 
+ 
+56  
+Proposed Tariff, Part I, Section 1, Definition of PALS Usage (“Amount of kilowatts 
+delivered at the PALS delivery point provided pursuant to Part VIII of the Tariff.”). 
+57  
+Proposed Tariff, Attachment BG, Section 3.1. 
+58  
+Proposed Tariff, Part VIII, Sections 57.4 and 60.1. 
+59  
+Proposed Tariff, Part VIII, Section 54.5. 
+60  
+Tariff, Part I, Section 1, Definition of Point-To-Point Transmission Service (“The 
+reservation and transmission of capacity and energy on either a firm or non-firm basis 
+from the Point(s) of Receipt to the Point(s) of Delivery under Part II of the Tariff.”). 
+61  
+Proposed Tariff, Part I, Section 1, Definition of PALS Usage Limit (“For any five-
+minute interval within an hour, the lowest of the following: (1) the applicable average 
+Setpoint Instruction plus the PAL Upper Operating Tolerance; (2) the PALS Capacity; 
+(3) the Curtailment limit; or (4) the Interruption limit.”) 
+62  
+Proposed Tariff, Part VIII, Section 54.4.
+--- PAGE 13 ---
+The Honorable Debbie-Anne A. Reese 
+November 19, 2026 
+Page 13 
+ 
+additional unreserved use charges under Schedules 8 and 11 for any period when the 
+additional service exceeds its PALS Usage Limit.63 Schedule 8 is used for this purpose 
+because Schedule 16 applies only hourly and monthly rates, with the latter used solely 
+for the purpose of capping the monthly charge under Section 2 of Schedule 16.  In order 
+for PALS to have as strong a disincentive against unreserved use of the Transmission 
+System as currently applies to Non-Firm Point-To-Point Transmission Service, the 
+Schedule 8 rates are utilized to apply the daily, weekly, and monthly rates of that 
+service schedule. This is appropriate because the hourly rates under Schedule 16 are 
+identical to the hourly rates under Schedule 8. Finally, Transmission Customers taking 
+PALS will be responsible for any real power losses,64 as set forth in Appendix 1 to 
+Attachment M65 of the Tariff, for the PALS Usage amount, which is inclusive of any 
+load exceeding the PALS Usage Limit.66  
+ 
+2. 
+Obtaining PALS67 
+ 
+A Transmission Customer requesting PALS must submit an application, 
+including all information required pursuant to the SPP Credit Policy set out in 
+Attachment X.68 PALS applications should be submitted by entering the information 
+listed in Section 57.1 of Part VIII of the Proposed Tariff on SPP’s Open Access Same-
+Time Information System (“OASIS”).69  
+ 
+ 
+63  
+Id. 
+64  
+Proposed Tariff, Part VIII, Section 55.3; see also Proposed Tariff, Attachment M, 
+Section VI (Transmission Loss Determination – Price Adaptive Load Service). 
+65  
+Tariff, Attachment M. Attachment M describes the loss compensation procedure used 
+to quantify real power losses for which the Transmission Customer or Network 
+Customer is responsible when taking service under the Tariff.  Appendix 1 to 
+Attachment M is a schedule showing the real power loss factors for the provision of 
+transmission service across each Zone on the Transmission System.   
+66  
+Proposed Tariff, Part VIII, Section 55.3. 
+67  
+See generally, Proposed Tariff, Part VIII; see also Proposed Tariff, Part VIII, Section 
+56.1 (outlining the conditions required of Transmission Customers taking PALS). 
+68  
+Proposed Tariff, Part VIII. Section 57.1. 
+69  
+Tariff, Part I, Section 1, Definition of Open Access Same-Time Information System 
+(OASIS) (“The information system and Internet location where the Transmission 
+Provider posts the information required by 18 C.F.R. § 37 of the Commission's 
+regulations, and where the Transmission Provider may also post the information 
+required to be posted on its Internet website by 18 C.F.R. § 358 of the Commission’s 
+regulations.”).
+--- PAGE 14 ---
+The Honorable Debbie-Anne A. Reese 
+November 19, 2026 
+Page 14 
+ 
+When a Transmission Customer applies for PALS, it must specify the amount 
+of PALS Capacity for the term of service (one (1) to ten (10) years).70 To evaluate a 
+request for PALS, SPP requires the Transmission Customer to submit information 
+regarding all of its existing loads and Resources that are currently receiving firm 
+transmission service.71 This information enables SPP to fully assess impacts to the 
+Transmission System associated with granting PALS to an existing Transmission 
+Customer. 
+ 
+A Transmission Customer must also provide timely written notice of material 
+changes in any information provided in its application relating to the PALS, its 
+transmission system, or other aspects of its facilities or operations affecting SPP’s 
+ability to provide reliable service.72 This information will enable SPP to continue 
+planning for safe and reliable transmission service.  
+ 
+The time requirements for submitting and evaluating PALS requests are set out 
+in Attachment P of the Tariff, as for other transmission service.73 SPP will respond to 
+all Completed Applications as soon as practicable and on a non-discriminatory basis, 
+including applications from a Transmission Owner’s own merchant function.74 
+ 
+3.  
+PALS Study Processes 
+ 
+ 
+Attachment BG outlines the study processes required for a PAL delivery point 
+to be connected to the Transmission System. To establish or modify a PAL delivery 
+point pursuant to Attachment BG, the Transmission Customer must request, in writing, 
+a PAL Delivery Point Limitations Assessment (“PDPLA”).75 The request must contain 
+the information included in “Sample Request For a Price Adaptive Load Delivery Point 
+Initial Assessment” attached as Addendum 1 to Attachment BG of the Proposed 
+Tariff.76 
+ 
+ 
+70  
+Proposed Tariff, Part VIII, Sections 54.1 and 57.1(vi). 
+71  
+Proposed Tariff, Part VIII, Section 57.1. 
+72  
+Proposed Tariff, Part VIII, Section 55.2. 
+73 
+Proposed Tariff, Part VIII, Section 57.2. 
+74 
+Proposed Tariff, Part VIII, Section 57.5. 
+75  
+Proposed Tariff, Attachment BG, Section 1.0.   
+76  
+Id.
+--- PAGE 15 ---
+The Honorable Debbie-Anne A. Reese 
+November 19, 2026 
+Page 15 
+ 
+ 
+Attachment BG makes clear that a Transmission Customer may not make a 
+request for PALS for Critical Loads, as defined in Attachment AE of the Tariff.77 If the 
+PALS delivery point qualifies as a HILL, the delivery point must also satisfy the HILL 
+requirements outlined in Attachment BA of this Tariff.78 CHILLS and PALS cannot be 
+taken at the same delivery point.79 
+ 
+ 
+ 
+Requirements related to the Host Transmission Owner’s performance of the 
+PALCS are outlined in Section 3.1 of Attachment BG of the Proposed Tariff. The 
+procedures, deposits, and timelines of the PALCS in Attachment BG are consistent 
+with the load connection studies outlined in Attachments AQ, AX, BA, and BC.80  
+ 
+Under the PALCS agreement, the Host Transmission Owner may require an 
+advance deposit equal to the estimated study cost or $10,000, whichever is less.81 
+Before SPP performs the PDPLA, the Transmission Customer or Network Customer 
+must execute a PDPLA agreement. That agreement commits it to pay a $2,000 non-
+refundable application fee, adjusted every three years for inflation using the Consumer 
+Price Index for All Urban Consumers, plus the actual cost of the PDPLA.82 A scoping 
+call among the customer, SPP, and the Host Transmission Owner will be held within 
+ten (10) Calendar Days after the executed agreements and any required deposit are 
+received.83 The application fee and inflation adjustment is consistent with other 
+transmission service study processes. 
+ 
+ 
+Pursuant to proposed Attachment BG, SPP will perform an assessment of the 
+impact of the requested delivery point configuration change on the Transmission 
+System and, if requested by the Transmission Customer, will provide information 
+detailing the limitations of the Transmission System in supporting any PAL.84 SPP will 
+send a study report to the Transmission Customer and Host Transmission Owner within 
+ninety (90) Calendar Days of all parties (SPP, Host Transmission Owner, and the 
+ 
+77  
+Id. at Section 2.0. 
+78  
+Id. 
+79  
+Id. 
+80  
+See Tariff, Attachments AQ, AX, BA, and BC. 
+81 
+Proposed Tariff, Attachment BG, Section 3.1. 
+82 
+Proposed Tariff, Attachment BG, Section 3.2. 
+83 
+Id. 
+84  
+Proposed Tariff, Attachment BG, Section 3.2.
+--- PAGE 16 ---
+The Honorable Debbie-Anne A. Reese 
+November 19, 2026 
+Page 16 
+ 
+Transmission Customer) agreeing to study assumptions, unless a reason is given by 
+SPP for the delay in providing the study report.85  
+ 
+PDPLA study results are valid for one (1) year after the study report is 
+delivered, or for a shorter period if the Host Transmission Owner’s PALCS agreement 
+requires it. SPP will close the PDPLA billing period within thirty (30) Calendar Days 
+after the last study report is delivered.86 Setting an expiration date ensures that a 
+PALSA is based on a reasonably current assessment of the Transmission System. The 
+Transmission Customer and the Host Transmission Owner must agree in writing on 
+each party’s responsibility for engineering, design, construction, and cost of the 
+facilities identified in the PALCS.87 
+ 
+4. 
+Results of PALS Study Process 
+ 
+After SPP completes the PALS study process outlined in Attachment BG, SPP 
+will determine the PALS Capacity that will be granted for the PALS.88 If SPP 
+determines that there will not be adequate transfer capability to satisfy the full amount 
+of requested PALS Capacity due to considerations on the Transmission System or any 
+third-party systems, SPP will offer the portion of the requested PALS Capacity that can 
+be accommodated without addition of any network facilities.89   
+ 
+SPP and the Transmission Owner will not be responsible for making 
+arrangements for any necessary engineering, permitting, or construction of 
+transmission or distribution facilities on the system(s) of any other third-party entity or 
+for obtaining any regulatory approval for such facilities.90 Nonetheless, SPP and the 
+affected Transmission Owner(s) will undertake reasonable efforts to assist the 
+Transmission Customer in obtaining such arrangements, including providing required 
+information or data pursuant to Good Utility Practice.91 
+ 
+The costs of constructing, operating, maintaining, or retiring a PALS delivery 
+point, other than any required Network Upgrades, will be recovered under the Tariff, 
+ 
+85  
+Id. 
+86 
+Proposed Tariff, Attachment BG, Section 3.3. 
+87 
+Proposed Tariff, Attachment BG, Section 4.0. 
+88  
+Proposed Tariff, Part VIII, Section 57.7. 
+89  
+Id. 
+90  
+Proposed Tariff, Part VIII, Section 59.1. 
+91  
+Id.
+--- PAGE 17 ---
+The Honorable Debbie-Anne A. Reese 
+November 19, 2026 
+Page 17 
+ 
+including Attachment BG, and Commission policy.92 If a design changes because 
+facilities cannot be sited or constructed as proposed, or if new statutory or regulatory 
+requirements or other circumstances beyond SPP’s or the Transmission Owner’s 
+control significantly affect costs, a revised good faith estimate is required.93 These 
+provisions mirror the corresponding provisions for CHILLS in Part VII, Sections 49.2 
+and 49.3 of the Tariff. 
+ 
+5. 
+PAL Service Agreement 
+ 
+ 
+As part of this filing, SPP is proposing a new pro forma service agreement for 
+PALS, which is attached as Addendum 2 of Attachment BG to the Proposed Tariff.94 
+The PALSA is modeled after the current Non-Firm Point-To-Point Transmission 
+Service Agreement (Attachment B)95 and the Network Integration Transmission 
+Service (“NITS”)96 Agreement (Attachment F).97 The PALSA includes language that 
+is similar to the Attachment B and Attachment F service agreements, such as: (1) the 
+parties’ names; (2) a statement that the Transmission Customer completed an 
+application pursuant to the Tariff requirements; (3) a statement that an authorized agent 
+has requested PALS; (4) a statement that the authorized agent agrees to take PALS 
+subject to the provisions of the Tariff; (5) the delivery points of the PALS and the 
+location of the load; (6) applicable Tariff-authorized transmission and ancillary service 
+charges; and (7) requirements for power losses.98 Unlike other service agreements for 
+firm transmission service, the PALSA provides that the Transmission Customer will 
+receive the delivery of energy subject to availability and to Curtailment, Interruption, 
+or load shed under the terms of the Tariff, including Section 58 of Part VIII and 
+Attachment BG of the Proposed Tariff.99 Section 11.0 of the PALSA also requires the 
+Transmission Customer to have control technologies and/or protection systems, while 
+may include a special protection scheme, to keep withdrawals within the PALS Usage 
+ 
+92 
+Proposed Tariff, Part VIII, Section 59.2. 
+93 
+Proposed Tariff, Part VIII, Section 59.3. 
+94  
+Proposed Tariff, Attachment BG, Addendum 2. 
+95  
+Tariff, Attachment B. 
+96  
+Tariff, Part I, Section 1, Definition of Network Integration Transmission Service (“The 
+transmission service provided under Part III of the Tariff.”). 
+97  
+Tariff, Attachment F. 
+98  
+Proposed Tariff, Attachment BG, Addendum 2. 
+99  
+Proposed Tariff, Attachment BG, Addendum 2, Section 6.0.
+--- PAGE 18 ---
+The Honorable Debbie-Anne A. Reese 
+November 19, 2026 
+Page 18 
+ 
+Limit, Curtailment limit, and Interruption limit.100 This requirement is consistent with 
+the Show Cause Order.101 The PALSA contains an appendix that provides information 
+regarding PAL delivery points and the amount of PALS Capacity studied.102 
+ 
+ 
+The PALSA outlines the rights and responsibilities of the parties and specifies 
+which Tariff sections apply to the Transmission Customer for SPP’s provision of 
+energy at the PALS delivery point. Importantly, Section 17.0 of the PALSA requires 
+that each PAL have a separate metered quantity, apart from any firm load served at the 
+same point of delivery, and that any generation located at the same point of delivery 
+will be metered separately from the PAL and separately from any firm load at the same 
+point of delivery. The separately metered quantities are necessary as PALS is neither 
+NITS nor Point-To-Point Transmission Service and must be billed differently and 
+distinctly from other transmission service taken at the same delivery point. Although 
+Transmission Customers are required to take the same type of transmission service at 
+the same point of delivery, providing PALS at potentially the same location as other 
+service is necessary to accommodate the unique needs of large loads for a new type of 
+non-firm, conditional transmission service.  
+ 
+Section 17.0 also describes how Transmission Customers will be charged in 
+instances where both Network Load and PALS load are located at the same point of 
+delivery as Behind-The-Meter Generation. Section 17.0 states: 
+ 
+For instances where both Network Load and PALS load are 
+located at the same point of delivery with Behind-The-Meter 
+Generation, as defined in Attachment AE of the Tariff, the 
+Network Load must be adjusted to (1) add the hourly output 
+of any Behind-The-Meter Generation that is located on the 
+Network Load side of the Network Integration Transmission 
+Service (“NITS”) meter and is not behind a PALS meter, and 
+(2) subtract the positive (inflow, or PALS load) or negative 
+(outflow) amount registered on any PALS meter located 
+behind the NITS meter.103   
+ 
+This provision accounts for Behind-The-Meter Generation so that all generation 
+and load are properly reflected in transmission settlements and no load reported for 
+NITS is netted.  The Network Load amount will be adjusted to add the MW amount of 
+ 
+100  
+Proposed Tariff, Part VIII, Section 56.1(g); Attachment BG, Addendum 2, Section 
+11.0. 
+101  
+Show Cause Order at PP 83, 87. 
+102  
+Proposed Tariff, Attachment BG, Addendum 2, Appendix 1. 
+103  
+Proposed Tariff, Attachment BG, Addendum 2, Section 17.0.
+--- PAGE 19 ---
+The Honorable Debbie-Anne A. Reese 
+November 19, 2026 
+Page 19 
+ 
+Behind-The-Meter Generation that is displacing Network Load.104  This treatment is 
+consistent with SPP’s existing practice of no netting Behind-The-Meter Generation in 
+determining NITS charges. It also makes PALS available to Eligible Customers serving 
+load with Behind-The-Meter Generation, a category of Eligible Load identified in the 
+Show Cause Order.105 
+ 
+After SPP provides the PDPLA study report to the Transmission Customer and 
+determines that the customer is eligible to receive PALS, the Transmission Customer 
+may request that SPP update or provide a new PALSA106 for the studied PAL delivery 
+point. After SPP and the Transmission Customer execute the PALSA, SPP will submit 
+the PALSA to the Commission in compliance with applicable Commission 
+regulations.107 Concurrently with the submittal of the PALSA, a transmission service 
+request will be entered into SPP's OASIS to reflect necessary service and the PALS 
+Capacity levels for billing purposes.108 
+ 
+The PALSA also addresses termination. Service ends at the end of the term 
+stated in the agreement, or earlier if the Tariff is terminated, the customer requests 
+termination, or other transmission service is established for the PAL. SPP may 
+terminate the PALSA if PALS is not used for one (1) year. After termination, the 
+customer may not take capacity above the level of any other transmission service it 
+holds at the delivery point.109 The PALSA may not be assigned, resold, or transferred, 
+consistent with Part VIII, Section 54.5 of the Tariff.110 It also requires the customer to 
+take Ancillary Services under Schedules 1, 1-A1, and 2 through 6.111 
+ 
+ 
+ 
+104  
+Id. 
+105  
+Show Cause Order at n.140. 
+106  
+Proposed Tariff, Attachment BG, Addendum 2. 
+107  
+Proposed Tariff, Attachment BG, Section 5.0.  
+108  
+Id. 
+109 
+Proposed Tariff, Attachment BG, Addendum 2, Section 9.0. 
+110 
+Id. at Section 14.0. 
+111 
+Id. at Section 20.0.
+--- PAGE 20 ---
+The Honorable Debbie-Anne A. Reese 
+November 19, 2026 
+Page 20 
+ 
+6. 
+PALS Operating Agreement 
+ 
+ 
+The PALS Operating Agreement,112 in Addendum 3 to Attachment BG, is 
+substantially similar to the pro forma Operating Agreement for CHILLS (“CHILLS 
+Operating Agreement”) in Addendum 2 to Attachment BA of the Tariff).113 Similar to 
+the CHILLS Operating Agreement, the PALS Operating Agreement outlines the terms 
+and conditions under which SPP, the Host Transmission Owner, and the Transmission 
+Customer will coordinate, describes how the Host Transmission Owner and the 
+Transmission Customer will operate their respective systems, and specifies the 
+equipment that will be installed and operated.114 The PALS Operating Agreement is 
+necessary for coordination among SPP, the Transmission Customer, and the Host 
+Transmission Owner to ensure the safe and reliable operation of the Transmission 
+System.  
+ 
+7. 
+Additional Provisions Under Part VIII of the Proposed Tariff  
+ 
+ 
+Prior to the SPP providing the PALS Service Commencement Date,115 SPP, the 
+affected Transmission Owner(s), and the Transmission Customer, or a third party, must 
+complete installation of all equipment specified under the PALS Operating Agreement 
+consistent with Good Utility Practice and any additional requirements reasonably and 
+consistently imposed to ensure the reliable operation of the Transmission System.116 
+SPP and the affected Transmission Owner(s) are required to exercise reasonable 
+efforts, in coordination with the Transmission Customer, to complete such 
+arrangements as soon as practicable, taking into consideration the Service 
+Commencement Date.117 
+ 
+ 
+112  
+Proposed Tariff, Part I, Section 1, Definition of PALS Operating Agreement (“An 
+executed agreement that contains the terms and conditions under which the 
+Transmission Customer or Network Customer will operate its facilities and the 
+technical and operational matters associated with the implementation of PALS under 
+Part VIII of the Tariff.”). 
+113  
+Compare Proposed Tariff, Attachment BG, Addendum 3 with Tariff, Attachment BA, 
+Addendum 2. 
+114  
+Proposed Tariff, Attachment BG, Addendum 3. 
+115  
+Tariff, Part I, Section 1, Definition of Service Commencement Date (“The date the 
+Transmission Provider begins to provide service pursuant to the terms of an executed 
+Service Agreement, or the date the Transmission Provider begins to provide service in 
+accordance with Section 15.3 or Section 29.1 under the Tariff.”). 
+116  
+Proposed Tariff, Part VIII, Section 57.3. 
+117  
+Id.
+--- PAGE 21 ---
+The Honorable Debbie-Anne A. Reese 
+November 19, 2026 
+Page 21 
+ 
+SPP or its agent must have access to the metering data needed for measurement 
+and billing under the PALSA.118 Unless otherwise agreed, the customer must maintain 
+a power factor within the range SPP specifies in consultation with the Transmission 
+Owners, as set out in the PALS Operating Agreement.119 
+ 
+8. 
+Load Shedding and Curtailments related to PALS 
+ 
+ 
+As previously stated, PALS is subject to Curtailment on a non-discriminatory 
+basis in the event the Transmission System is constrained or under Emergency 
+Conditions.120 SPP reserves the right to curtail (or cause to be curtailed), in whole or in 
+part, PALS for any reliability conditions that threaten to impair or degrade the 
+reliability of the Transmission System or the systems directly or indirectly 
+interconnected with the Transmission System.121 Prior to the PALS Service 
+Commencement Date, SPP, in coordination with the affected Transmission Owner(s) 
+and the Transmission Customer, will establish Load Shedding and Curtailment 
+processes pursuant to the PALS Operating Agreement, as described above, with the 
+objective of responding when an Emergency Condition or other unforeseen condition 
+threatens to impair or degrade the reliability of the Transmission System or systems 
+interconnected with the Transmission System.122 The parties, including the affected 
+Transmission Owner(s), will implement Load Shedding and Curtailment processes 
+during any period when SPP determines that such system conditions exist and actions 
+are necessary to alleviate said conditions.123 SPP will notify all affected Transmission 
+Customers and Transmission Owners of any scheduled Curtailment in a timely manner 
+or as soon as practical in instances when it is impractical to provide advance notice.124 
+ 
+ 
+Additionally, during any period when SPP determines that a transmission 
+constraint exists on the Transmission System, and such constraint may impair the 
+reliability of the Transmission System, SPP will take whatever actions, consistent with 
+Good Utility Practice and Attachment BG of the Proposed Tariff, that are reasonably 
+necessary to maintain the reliability of the Transmission System.125 To the extent SPP 
+ 
+118 
+Proposed Tariff, Part VIII, Section 60.2. 
+119 
+Proposed Tariff, Part VIII, Section 60.3. 
+120  
+Proposed Tariff, Part VIII, Section 54.2. 
+121  
+Proposed Tariff, Part VIII, Section 58.1. 
+122  
+Id. 
+123  
+Id. 
+124  
+Id. 
+125  
+Proposed Tariff, Part VIII, Section 58.2.
+--- PAGE 22 ---
+The Honorable Debbie-Anne A. Reese 
+November 19, 2026 
+Page 22 
+ 
+determines that the reliability of the Transmission System can be maintained by 
+curtailing a PAL, SPP will initiate procedures consistent with the PALS Operating 
+Agreement to curtail PALS as described in Attachment AE.126 
+ 
+When SPP implements least-cost redispatch to relieve a transmission constraint, 
+all Transmission Customers and Network Customers, including PALS customers, pay 
+their share of redispatch costs through settlement of the Energy and Operating Reserve 
+Markets under Attachment AE.127 If SPP determines that deliveries must be curtailed, 
+the parties will curtail them in accordance with the PALS Operating Agreement.128 
+ 
+ 
+To the extent that a system contingency exists on the Transmission System and 
+SPP determines that it is necessary for the affected Transmission Owner(s) and 
+Transmission Customers to shed load, the parties must shed load in accordance with 
+the procedures of the PALS Operating Agreement.129 
+ 
+ 
+If the Transmission Customer fails to fully respond to established Load 
+Shedding and Curtailment procedures or to cease or reduce service in response to a 
+directive by SPP, the Transmission Customer will pay any applicable charges and the 
+penalty as described in Section 54.4 of Part VIII of the Proposed Tariff and as discussed 
+in further detail below.130  
+  
+9. 
+Rates for PALS, Failure to Curtail PALS, and Exceedance of 
+PALS Capacity 
+ 
+ 
+Because PALS charges, while similar to those for hourly Non-Firm Point-To-
+Point Transmission Service, differ from other transmission charges in the Tariff, SPP 
+proposes a new schedule, Schedule 16, to outline charges related to PALS.131 The 
+Transmission Customer must compensate SPP for the PALS up to the monthly sum of 
+the applicable charges outlined in Schedule 16, in addition to any other applicable 
+charges specified in the Tariff.132 Specifically, the Transmission Customer must pay 
+ 
+126  
+Id. 
+127 
+Proposed Tariff, Part VIII, Section 58.3. 
+128 
+Proposed Tariff, Part VIII, Section 58.4. 
+129  
+Proposed Tariff, Part VIII, Section 58.5. 
+130  
+Proposed Tariff, Part VIII, Section 58.6. 
+131  
+Proposed Tariff, Schedule 16. 
+132  
+Id.; see also Proposed Tariff, Part VIII, Section 61.
+--- PAGE 23 ---
+The Honorable Debbie-Anne A. Reese 
+November 19, 2026 
+Page 23 
+ 
+the zonal rate (per kilowatt) based upon the Zone133 where the PAL is located.134 The 
+zonal rate will be the hourly rate applicable to Non-Firm Point-To-Point Transmission 
+Service for the specific on-peak or off-peak hour of the PALS Usage.135 For each hour, 
+the hourly charge will be calculated using kilowatts of the PALS Usage, subject to other 
+provisions in Schedule 16.136   
+ 
+The application of hourly Non-Firm Point-To-Point Transmission Service rates 
+is appropriate because it addresses the expected dynamic use of the Transmission 
+System by the PAL. Charging the rate applicable to the specific on-peak or off-peak 
+hour for the PALS Usage appropriately aligns with the Transmission Customer’s 
+authorization to utilize the Transmission System in each hour. Capping the monthly 
+PALS charge at the monthly Non-Firm Point-To-Point Transmission Service rate 
+multiplied by the maximum hourly PALS Usage in that month further aligns PALS 
+with Non-Firm Point-To-Point Transmission Service.137 
+ 
+PALS customers also pay the Base Plan Zonal Charge, Subregional Charge, 
+and Region-wide Charge under Schedule 11. Each is assessed hourly at the applicable 
+Non-Firm Point-To-Point Transmission Service rate for the specific on-peak or off-
+peak hour of PALS Usage.138 Each of these charges is capped for the month at the 
+applicable monthly rate multiplied by the maximum hourly PALS Usage in that month, 
+which matches the cap on the Schedule 16 transmission charge.139 Schedule 11 
+revenues from PALS are credited against Transmission Owners’ annual transmission 
+ 
+133  
+Tariff, Part I, Section 1, Definition of Zone (“The geographic area of the facilities of a 
+Transmission Owner or a specific combination of Transmission Owners as specified 
+in Schedules 7, 8, and 9.”).  
+134  
+Proposed Tariff, Schedule 16, Section 1. 
+135  
+Id. 
+136  
+Id. 
+137  
+Tariff, Part I, Section 1, Definition of Non-Firm Point-To-Point Transmission Service 
+(“Point-To-Point Transmission Service under the Tariff that is reserved and scheduled 
+on an as-available basis and is subject to Curtailment or Interruption as set forth in 
+Section 14.7 under Part II of this Tariff.  Non-Firm Point-To-Point Transmission 
+Service is available on a stand-alone basis for periods ranging from one hour to one 
+month.”). 
+138 
+Proposed Tariff, Schedule 11, Section VI; Schedule 16, Section 7. 
+139 
+Proposed Tariff, Schedule 16, Section 7.
+--- PAGE 24 ---
+The Honorable Debbie-Anne A. Reese 
+November 19, 2026 
+Page 24 
+ 
+revenue requirements in the same way as Point-To-Point Transmission Service and 
+CHILLS revenues.140 
+ 
+If the Transmission Customer exceeds its PALS Usage Limit at any delivery 
+point, the Transmission Customer must pay, in addition to the charges for all of the 
+PALS Usage, one-hundred percent (100%) of the Non-Firm Point-To-Point 
+Transmission Service charges under Schedules 8 and 11 for the period when the 
+additional service was used, as detailed in Proposed Section 54.4.141 SPP will 
+compensate the Transmission Owners for service and allocate penalty revenues in the 
+manner as described in Section 54.4 of the Proposed Tariff.142 The application of 
+Schedule 8 and Schedule 11 charges is appropriate because unreserved use at a PALS 
+delivery point will be monitored and charged at a time granularity similar to Non-Firm 
+Point-To-Point Transmission Service. An excess of one (1) hour or less will be billed 
+at the charge for weekday deliveries.143 Repeated daily use of unreserved capacity 
+within a seven-day period will increase the duration of the period to a weekly duration 
+and multiple instances of unreserved use during more than one seven-day period during 
+a calendar month will increase the duration of the period to a month.144  
+ 
+Transmission Customers taking PALS will be responsible for any real power 
+losses.145 The delivery loss factors are set forth in Appendix 1 to Attachment M of the 
+Tariff146 and will be applied to the PALS Usage amount, including any load exceeding 
+the PALS Usage Limit.147 This reflects the fact that PALS is served and metered at the 
+delivery point of the load, similar in this regard to Network Load.  
+ 
+The treatment of PALS unreserved use under these Proposed Tariff provisions 
+aligns with the treatment of Non-Firm Point-To-Point Transmission Service unreserved 
+use. Revenues received for unreserved use of the Transmission System will be 
+distributed pursuant to the provisions of Section 54.4 of Part VIII of the Proposed 
+ 
+140 
+Proposed Tariff, Schedule 11, Section II.A. 
+141  
+Proposed Tariff, Part VIII, Section 54.4. 
+142  
+Proposed Tariff, Part VIII, Section 58.6. 
+143  
+Proposed Tariff, Part VIII, Section 54.4. 
+144  
+Proposed Tariff, Part VIII, Section 54.4. 
+145  
+Proposed Tariff, Part VIII. Section 55.3; see also Proposed Tariff, Attachment M, 
+Section VI. 
+146  
+Tariff, Attachment M, Appendix 1. 
+147  
+Proposed Tariff, Part VIII. Section 55.3; see also Proposed Tariff, Attachment M, 
+Section VI.
+--- PAGE 25 ---
+The Honorable Debbie-Anne A. Reese 
+November 19, 2026 
+Page 25 
+ 
+Tariff. Consistent with other unreserved use charges outlined in the Tariff, the 
+Transmission Customer receiving PALS must purchase losses pursuant to Section 55.3 
+of the Proposed Tariff for amounts exceeding the PALS Usage Limit.148 These 
+unreserved use charges reflect that the PAL is to use only the PALS Capacity that was 
+studied through the transmission service process described in Attachment BG and is to 
+appropriately respond to Curtailment or Load Shedding directives from SPP. 
+ 
+ 
+Proposed Schedule 16 also outlines other charges that are applicable to PALS 
+which are consistent with similar charges applicable to other transmission service 
+types, such as Redispatch Costs specified in Attachment K and applicable Wholesale 
+Distribution Service Charges.149 
+ 
+10. 
+PALS Satisfies the Show Cause Order’s Non-Firm Contract 
+Demand Directive, With Appropriate Regional Variation 
+ 
+ 
+The Show Cause Order directed SPP to explain “whether the Tariff remains just 
+and reasonable without (1) an interim non-firm network transmission service while 
+Network Upgrades are being constructed (i.e., interim NITS) and (2) permanent firm 
+and non-firm contract demand transmission services (transmission service up to a 
+specified MW quantity, i.e., the contract level, on a firm or non-firm basis).”150  PALS 
+responds to the non-firm element of the second part of that directive. It establishes a 
+non-firm service that serves the same purpose as the non-firm contract demand (“Non-
+Firm Contract Demand”) transmission service the Commission required of PJM, with 
+regional variations appropriate to SPP. SPP addresses interim NITS and firm contract 
+demand service in the separate filings identified in Section V. 
+ 
+ 
+In the PJM Co-Location Order, the Commission “establish[ed] a new Non-Firm 
+Contract Demand transmission service to be offered to Eligible Customers taking 
+service on behalf of Co-Located Loads.”151 The following are requirements the 
+Commission established for the Non-Firm Contract Demand service: 
+ 
+• “We find that the new Non-Firm Contract Demand transmission service must 
+be available during normal operations and curtailed during emergency 
+operations (i.e., it will be curtailed before existing firm transmission services 
+and the new Firm Contract Demand Transmission Service).”152 
+ 
+148  
+Proposed Tariff, Part VIII, Sections 54.4 and 55.3. 
+149  
+Proposed Tariff, Schedule 16, Sections 3 and 6. 
+150  
+Show Cause Order at P 83. 
+151  
+PJM Co-Location Order at P 214. 
+152  
+Id. at 215.
+--- PAGE 26 ---
+The Honorable Debbie-Anne A. Reese 
+November 19, 2026 
+Page 26 
+ 
+• “Reservations under this service would be available only when there is available 
+transmission capacity, similar to existing non-firm transmission service options 
+in the Tariff.”153 
+• “Reservations for this service shall be available for terms ranging from one hour 
+to one month, consistent with the terms available for Non-Firm PTPS in the 
+PJM Tariff.”154 
+• “[S]hould the Eligible Customer taking the Non-Firm Contract Demand 
+transmission service on behalf of the Co-Located Load make unreserved use of 
+the transmission system by withdrawing energy in excess of its transmission 
+service reservation, PJM must apply a penalty rate in such circumstances.”155 
+• “The new Non-Firm Contract Demand transmission service will not include a 
+charge for generation capacity. Because it is non-firm transmission service, 
+PJM will not have an obligation to serve Eligible Customers taking this new 
+Non-Firm Contract Demand transmission service on behalf of Co-Located 
+Loads; thus, unlike Network Load, Co-Located Loads on whose behalf Eligible 
+Customers are taking Non-Firm Contract Demand transmission service would 
+not be considered for resource adequacy planning purposes.”156 
+ 
+Similar to the Non-Firm Contract Demand, the PALs will be available during 
+normal operation and will be curtailed during emergency operations. Also, PALS will 
+be as-available, similar to hourly Non-Firm Point-to-Point Transmission Service 
+available in the Tariff. PALS customers will also be charged for any unreserved use of 
+the transmission system, including above the PALS capacity or failure to not curtail 
+when directed by SPP. Lastly, PALS will not be required to bring any supported 
+generation to support load and as such the load will not be included in any SPP resource 
+adequacy planning process.  
+ 
+Unlike Non-Firm Contract Demand, PALS is not a reserved capacity 
+transmission product. PALS is flexible to allow the PALS customer to withdraw from 
+the Transmission System, on an as-available basis, and only pay when it withdraws, 
+instead of paying for the reservation. The PALS is billed only on an hourly basis when 
+the Transmission Customer takes the service, but the PALS charges will be capped at 
+the monthly Point-To-Point Transmission Service price.  
+ 
+The Show Cause Order expressly contemplated “regional variation as 
+appropriate.” PALS gives Eligible Customers serving flexible loads a non-firm 
+transmission service up to a specified MW quantity (the PALS Capacity). It therefore 
+ 
+153  
+Id. 
+154  
+Id. 
+155  
+Id. at 217. 
+156  
+PJM Co-Location Order at P 218.
+--- PAGE 27 ---
+The Honorable Debbie-Anne A. Reese 
+November 19, 2026 
+Page 27 
+ 
+supplies the service the Commission found lacking in the Tariff, adapted to SPP’s 
+market design. With PALS in place, the Tariff is just and reasonable with respect to 
+non-firm contract demand service.  
+ 
+As described in SPP’s responsive filing in EL26-68-000, SPP’s Tariff remains 
+just and reasonable without the remaining transmission service products outlined in the 
+PJM Co-Location Order, either because existing or concurrently proposed Tariff 
+provisions provide comparable service or because regional differences warrant a 
+different approach. 
+ 
+ 
+11. 
+PALS Will Not Disrupt Existing Commercial Arrangements 
+ 
+The Show Cause Order directs that any Section 205 filing explain how the 
+proposal will avoid disrupting existing commercial arrangements and identify a 
+reasonable effective date that accommodates them.157 PALS satisfies this requirement. 
+PALS is a new, voluntary service option. It does not modify any existing service 
+agreement, transmission service reservation, or pending study request, and it does not 
+alter the terms of existing transmission service processes (i.e. NITS, Point-To-Point 
+Transmission Service, CHILLS, HILLS). No existing customer is required to convert 
+to PALS, and Eligible Customers with agreements nearing completion are free to 
+proceed under existing Tariff process. Because PALS is an as-available service with 
+priority equal to hourly Non-Firm Point-To-Point Transmission Service, it does not 
+reduce the Available Transfer Capability available to firm customers or CHILLS. As 
+discussed in Section VI, PALS will apply prospectively once SPP implements the 
+necessary system changes, currently targeted for the second quarter of 2028. 
+ 
+C. 
+SPP Integrated Marketplace Requirement for PALS 
+ 
+1. PALS Integrated Marketplace Overview 
+ 
+PALS combines a new form of non-firm transmission service with a new 
+framework for dispatchable load participation in SPP’s Integrated Marketplace. To 
+reflect the price sensitivity and operational flexibility that distinguish PALs from 
+conventional load, SPP proposes revisions to Attachment AE that allow PALs to submit 
+a different form of Energy Bids and to receive Dispatch Instructions. The proposed 
+market rules also establish appropriate bidding parameters, operating limits, settlement 
+requirements, and consequences for deviations from SPP’s instructions. 
+ 
+Currently, in the Integrated Marketplace, all load (except for CHILLs) to be 
+served by the market uses the same processes. In the Day-Ahead Market, the Market 
+Participants submit the MW quantity and location of physical load through use of 
+ 
+157  
+Show Cause Order at P 32.
+--- PAGE 28 ---
+The Honorable Debbie-Anne A. Reese 
+November 19, 2026 
+Page 28 
+ 
+Demand Bids158 and can also submit Virtual Energy Bids.159 These Demand Bids and 
+Virtual Energy Bids may be fixed or price sensitive. After the Day-Ahead Market, SPP 
+uses a load forecast to determine the amount of load to be served for the Reliability 
+Unit Commitment (“RUC”) processes and the RTBM.160 Because SPP uses a forecast 
+for the RUC processes and the RTBM, there is currently not a way for market processes 
+to distinguish between non-firm loads based on price sensitivity, as there is in the Day-
+Ahead Market. In order for price-sensitive loads to have that price-sensitivity reflected 
+in the RTBM, they must register and participate as Demand Response and must also 
+reserve firm transmission service.  
+ 
+PALs are distinct from Demand Response. Unlike PALs, Demand Response is 
+provided by loads with existing firm service that voluntarily curtail energy withdrawals 
+and relinquish their previously contracted firm right to consume energy. Such 
+participation is contingent upon meeting applicable program requirements, including 
+confirmation of Resource Adequacy where required. PALS, like CHILLS, is not a firm 
+service. PALs will pay different transmission rates, will not have transmission built to 
+serve them, and do not require adequate Resources to serve them on a firm basis. Unlike 
+Demand Response, compensating PALs for reducing withdrawals that they have no 
+firm right to take would pay them for forgoing service they never purchased.  
+ 
+2. PALS Energy Bids 
+ 
+SPP proposes to define the PAL Energy Bid Curve as Megawatt and dollars per 
+Megawatt-hour with up to ten (10) price/quantity pairs.161 These are the same 
+limitations on Energy Offer Curves and Demand Bid Curves used in the Day-Ahead 
+Market.  This allows PALs the ability to economically participate in the market and to 
+reflect their flexibility via the PAL Energy Bid Curve submitted. 
+ 
+For PALS, SPP proposes to allow PALs to enter PAL Energy Bids and have 
+that price sensitivity function in both the Day-Ahead Market and the RTBM. PAL 
+Energy Bids include the following parameters:  (1) PAL Energy Bid Curve, (2) 
+ 
+158  
+Tariff, Attachment AE, Section 1.1, Definition of Demand Bid (“A proposal by a 
+Market Participant associated with a physical load to purchase a fixed or price sensitive 
+amount of Energy at a specified location and period of time in the Day-Ahead 
+Market.”). 
+159  
+Tariff, Attachment AE, Section 1.1, Definition of Virtual Energy Bid (“A proposal by 
+a Market Participant to purchase Energy at a specified price, Settlement Location and 
+period of time in the Day-Ahead Market that is not associated with a physical load.”). 
+160  
+Tariff, Attachment AE, Section 3.1.2(1). 
+161  
+Proposed Tariff, Attachment AE, Section 1.1.
+--- PAGE 29 ---
+The Honorable Debbie-Anne A. Reese 
+November 19, 2026 
+Page 29 
+ 
+Withdrawal Ramp Rate,162  (3) Maximum Daily Withdrawal,163 (4) Maximum 
+Withdrawal Limit,164 (5) RTBM Maximum Withdrawal Limit165 (RTBM only), and (6) 
+Intra-Interval Maximum Withdrawal Limit166 (RTBM only).167 These inputs in the new 
+Section 4.3.4 of Attachment AE give SPP insight into the behavior and abilities of the 
+PAL in a way that will allow SPP to economically dispatch it.  
+ 
+A bid cap is necessary because PALs differ from other loads served by the 
+Transmission System. PALs do not directly fund Network Upgrades or bring 
+supporting Resources, and the Transmission System is not planned or expanded to 
+serve them. Absent a bid cap, however, the market optimization would treat PAL 
+Energy Bids like any other demand. When PAL withdrawals cause a transmission 
+constraint to bind in a given interval, the optimization could redispatch Resources 
+around that constraint, potentially at significant cost, to keep serving the PAL. The cost 
+of that redispatch shows up as congestion and raises Locational Marginal Prices 
+(“LMP”) for firm loads that are responsible for directly assigned costs related to 
+Network Upgrades needed to establish the transmission service. A bid cap prevents this 
+by limiting PAL withdrawals when LMPs exceed the established cap, so PALs 
+consume energy only when the system can serve them while containing the costs to 
+firm load customers. In this respect, PALS is most comparable to Non-Firm Point-To-
+Point Transmission Service, which is also as-available, does not directly fund Network 
+Upgrades, and upon which PALS rates are based. Non-Firm Point-To-Point 
+ 
+162  
+Proposed Tariff, Attachment AE, Section 1.1, Definition of Withdrawal Ramp Rate 
+(“A Bid parameter for PALs consisting of a curve specifying the maximum 
+MW/minute ramp rates used for dispatching the PAL in the direction of increasing 
+withdrawal.”). 
+163  
+Proposed Tariff, Attachment AE, Section 1.1, Definition of Maximum Daily 
+Withdrawal (“A daily parameter for PALs specifying the maximum total withdrawal 
+across an Operating Day in Megawatt hours.”). 
+164  
+Proposed Tariff, Attachment AE, Section 1.1, Definition of Maximum Withdrawal 
+Limit (“A Bid parameter for Price Adaptive Load specifying the maximum Megawatt 
+quantity a Price Adaptive Load is willing to consume in a specific Operating Hour.”). 
+165  
+Proposed Tariff, Attachment AE, Section 1.1, Definition of RTBM Maximum 
+Withdrawal Limit (“A Real-Time Bid parameter for a Price Adaptive Load that 
+establishes the maximum withdrawal dispatch in the RTBM for a specific Dispatch 
+Interval.”). 
+166  
+Proposed Tariff, Attachment AE, Section 1.1, Definition of Intra-Interval Maximum 
+Withdrawal Limit (“A continuously updateable Bid for PALS parameter specifying the 
+Real-Time maximum withdrawal MW limit used in the calculation of the Setpoint 
+Instruction.”). 
+167  
+Proposed Tariff, Attachment AE, Section 4.3.4.
+--- PAGE 30 ---
+The Honorable Debbie-Anne A. Reese 
+November 19, 2026 
+Page 30 
+ 
+Transmission Service, however, is granted only when SPP determines that transmission 
+capacity is available, which limits its effect on LMPs. Because PALs are instead 
+dispatched economically by the market, the bid cap serves a comparable function, 
+allowing SPP to realize the operational and efficiency benefits of flexible load 
+participation while protecting other loads from the costs of serving load without 
+supporting transmission or generation.  
+ 
+SPP proposes to cap the high end of PAL Energy Bid Curves at $25/MWh.168 
+As discussed below, SPP selected this level based on simulations of PAL participation 
+under a range of bid caps and on stakeholders' preference for an initially conservative 
+bid cap. 
+ 
+The proposed fixed $25 bid cap is just and reasonable. Because PALs represent 
+a new load participation model in the Integrated Marketplace, no historical operational 
+experience or market data currently exists to support a more dynamic or formula-based 
+approach. Under these circumstances, a fixed bid cap provides transparency, certainty,  
+and administrative simplicity as SPP integrates PALs into market operations and gains 
+experience with their performance and impacts. 
+ 
+To ensure the bid cap remains appropriate over time, SPP will review the bid 
+cap, at minimum, annually.169 As operational experience and market data become 
+available, SPP will evaluate whether modifications to the bid cap are warranted, 
+including the potential adoption of a formula-based methodology in the future. 
+ 
+SPP bases its proposed $25 bid cap on simulation information that balances 
+several different interests. SPP sought to balance protection of load from high LMPs, 
+protect reliability, increase transmission revenues, prevent excessive wear from 
+Resource start-ups, limit utilization of emissions permit constrained or duration limited 
+resources, more fully use available wind generation, reduce make whole payments, and 
+allow PALs to have a load factor that allows them to be viable. Using historical SPP 
+market data, SPP compared a base case with no PALs against scenarios in which PALs 
+participated under fixed bid caps ranging from $20 to $35.170  
+ 
+The simulation results indicate that a $25 bid cap captures the system benefits 
+of PAL participation while limiting the impact on other customers. For example, the 
+ 
+168  
+Proposed Tariff, Attachment AE, Section 4.3.4.1. 
+169  
+See Revision Request 791, Proposed Market Protocols, Section 4.2.3.4.1, available at: 
+https://www.spp.org/spp-documents-filings/?id=21069. 
+170  
+The simulations modeled 10 PALs, each 200 MW, at Settlement Locations with 
+historically low LMPs. Each simulation covered seven consecutive days (the 10th 
+through the 16th) of every other month beginning in February 2025, or 42 days in total, 
+to capture seasonal and weekday/weekend dynamics.
+--- PAGE 31 ---
+The Honorable Debbie-Anne A. Reese 
+November 19, 2026 
+Page 31 
+ 
+additional wind generation dispatched in the RTBM relative to the base case increased 
+from the $20 to the $25 scenario but did not increase further at higher bid caps. Gas-
+fired Resource start-ups also declined relative to the base case, with most of the 
+reduction occurring at or below the $25 bid cap. At the same time, a $25 bid cap allows 
+meaningful PAL participation. Raising the cap from $20 to $25 increased the PAL load 
+factor in the RTBM from 45 percent to 60 percent, the largest increase of any step 
+studied, which supports the viability of PALs as a service. In contrast, price impacts to 
+other customers rose more quickly above $25: the average RTBM LMP increased by 
+$0.20/MWh between the $20 and $25 scenarios, but by $0.80/MWh between the $25 
+and $30 scenarios. Taken together, these results indicate that a $25 bid cap strikes a 
+just and reasonable balance among the interests described above. 
+ 
+The proposed $25 bid cap is also not unduly discriminatory. It applies uniformly 
+to every PAL, and PALs are not similarly situated to loads that are not subject to it. 
+Firm loads must be supported by accredited capacity and receive firm service; CHILLs 
+must have supporting generation in commercial operation. PALs have no Resource 
+Adequacy obligation and are added without supporting generation. All else equal, 
+adding load without adding supply raises LMPs for existing customers. The cap 
+confines PAL withdrawals to the highly price-elastic portion of SPP's supply curve, 
+where added demand has the least price impact. 
+ 
+PALS represents a different approach to non-firm load than CHILLS and is 
+designed for loads with price-flexibility central to their business case. CHILLS is a 
+bridge to firm service, so the approach to when to reduce service to CHILLs is more 
+reliability centered. The approach to PALS is a capped economically centered approach 
+with additional limits for reliability.  
+ 
+3. Dispatch, Settlement, and Uninstructed Load Deviation 
+ 
+SPP will use the PAL Energy Bids to issue Dispatch Instructions for the PAL. 
+If the LMP at the PAL Settlement Location is above $25, then the PAL will receive 
+Dispatch Instructions for a 0 MW withdrawal. Under other conditions, the PAL may 
+be instructed to withdraw some or all of the MW up to their Maximum Withdrawal 
+Limit, depending on its PAL Energy Bid Curve. In the Integrated Marketplace, PALs 
+that are outside of their Operating Tolerance may be assessed an Uninstructed Load 
+Deviation (“ULD”)171 charge, as well as be assessed RUC make whole payment 
+distribution. ULD charges and RUC make whole payment distribution are market 
+charges, and work within the market. Separately, because PALS is a transmission 
+service, a PAL that withdraws more than its PALS Usage Limit, including during a 
+ 
+171  
+Proposed Tariff, Attachment AE, Section 1.1, Definition of Uninstructed Load 
+Deviation (“The Megawatt quantity by which a PAL’s Reported Load in a Dispatch 
+Interval deviates from the instruction issued by the local transmission operator or 
+Transmission Provider.”).
+--- PAGE 32 ---
+The Honorable Debbie-Anne A. Reese 
+November 19, 2026 
+Page 32 
+ 
+Curtailment, will be assessed unreserved use charges, as discussed in Section III.B.9 
+above.  
+ 
+PALs are subject to ULD charges for any Dispatch Interval in which their 
+withdrawal falls outside the PAL Upper Operating Tolerance or PAL Lower Operating 
+Tolerance172.173 The PAL Upper Operating Tolerance is based on the greater of the 
+PAL’s Dispatch Instruction for the current Dispatch Interval and its Dispatch 
+Instruction for the previous Dispatch Interval.174 The PAL Lower Operating Tolerance 
+is based on the PAL’s RTBM Maximum Withdrawal Limit. If the applicable value is 
+fifty (50) MW or less, the tolerance is 10 percent of that value; if it exceeds fifty (50) 
+MW, the tolerance is 5 percent of that value, with a 5 MW floor and a 20 MW ceiling.175 
+These operating tolerances use the same percentages, MW breakpoints, floor, and 
+ceiling that apply to Resources, applied to values specific to the PAL participation 
+model. As with Resources, the tolerances balance a PAL's ability to precisely follow 
+its Dispatch Instructions against the need to reduce uncertainty in balancing the system. 
+Because the PAL Upper Operating Tolerance is based on the PAL's Dispatch 
+Instructions, a PAL's allowable withdrawal is measured relative to its dispatch, so when 
+SPP dispatches a PAL down, the withdrawal permitted within tolerance decreases 
+accordingly. This ensures the tolerance accommodates limited deviations from dispatch 
+and cannot be used to sustain withdrawals the market has not dispatched.  
+ 
+The penalty for ULD is intended to provide a significant deterrent for failing to 
+operate within the established operating tolerance. Over-withdrawal will be charged at 
+a bounded LMP (floored at $50/MWh and capped at $2,000/MWh) multiplied by a 
+deviation factor that increases from 2.0 to 5.0 as the deviation outside of the operating 
+tolerance grows relative to PALS Capacity; under-withdrawal is charged at the absolute 
+value of the LMP.176 The lower bound is intended to maintain the deterrence factor 
+during low, or even negative, LMPs.177 The upper bound is equal to the hard cap on 
+Energy Offers that can set LMP.178  
+ 
+The value of the deviation factor is calculated as the ULD MW quantity for a 
+Dispatch Interval divided by the PALS Capacity, and that result is then multiplied by 
+ 
+172  
+Proposed Tariff, Attachment AE, Section 1.1, Definition of PAL Lower Operating 
+Tolerance (“The Megawatt range of a Price Adaptive Load’s withdrawal below its 
+average Setpoint Instruction over the Dispatch Interval within which it will not be 
+subject to charges associated with deviating from its Setpoint Instruction.”). 
+173  
+Proposed Tariff, Attachment AE, Sections 6.7.1 and 6.7.3. 
+174  
+Proposed Tariff, Attachment AE, Section 6.7.3(1)(a). 
+175  
+Proposed Tariff, Attachment AE, Section 6.7.3(1)(b). 
+176  
+Proposed Tariff, Attachment AE, Section 8.6.49. 
+177  
+Proposed Tariff, Attachment AE, Section 8.6.49(1)(b)(i). 
+178  
+Proposed Tariff, Attachment AE, Section 8.6.49(1)(b)(iii).
+--- PAGE 33 ---
+The Honorable Debbie-Anne A. Reese 
+November 19, 2026 
+Page 33 
+ 
+100. If the result of the calculation is: (1) less than or equal to twenty five percent 
+(25%), a deviation factor of 2.0 will apply; or (2) greater than twenty-five 25%, but less 
+than or equal to fifty percent (50%), a deviation factor of 3.0 will apply; or (3) greater 
+than fifty (50%), but less than or equal to seventy-five percent, a deviation factor of 4.0 
+will apply; or (4) greater than seventy-five (75%), a deviation factor of 5.0 will apply. 
+The result is a range of penalty values from $100/MWh to $10,000 MWh. Using an 
+LMP-based driver ensures that the ULD charge is proportional to the locational value 
+of the energy being withdrawn and reflects underlying market scarcity, with higher 
+LMPs resulting in higher charges. 
+ 
+ULD charges are credited to other Asset Owners on a load ratio share basis, 
+excluding Asset Owners charged ULD.179 It is just and reasonable and not unduly 
+discriminatory to exclude Asset Owners charged ULD as it would dilute the deterrence 
+impact of the charge to give some of the money back to the Asset Owners who are 
+paying the charge. Distribution of ULD charges will help compensate other loads for 
+increased LMPs and these charges give PALs a strong financial incentive to follow 
+dispatch and ensure that other Market Participants do not bear the cost of PAL 
+deviations. Because PALS is a transmission service, failure to curtail when directed 
+may constitute a Tariff violation, which carries additional penalties that incent PALs to 
+follow SPP’s instructions.  
+ 
+ 
+SPP also proposes to assign RUC make whole payment distribution for PALs 
+that incur ULD. When Resources are committed after the Day-Ahead Market, they are 
+provided a RUC make whole payment if they do not cover the costs submitted in their 
+Offer through the market. RUC make whole payment distribution funds RUC make 
+whole payments, assigning a proportionate share of the total RUC make whole 
+payments to Asset Owners that drive the need for RUC make whole payments. SPP 
+proposes to assign RUC make whole payment MW in three possible instances for 
+PALs. 
+ 
+First, SPP proposes to assign RUC make whole payment distribution deviation 
+MW to ULD MW if the PAL operated outside of its operating tolerances.180 This 
+provision assigns a share of RUC make whole payment distribution for PALs that are 
+not following their Dispatch Instructions. Doing so is just and reasonable and not 
+unduly discriminatory because a PAL that does not follow its economic dispatch is not 
+operating consistent with the least-cost operation of the market, which increases costs 
+to the market. 
+ 
+ 
+ 
+ 
+ 
+179  
+Proposed Tariff, Attachment AE, Section 8.6.50. 
+180  
+Proposed Tariff, Attachment AE, Section 8.6.7(A)(2)(i).
+--- PAGE 34 ---
+The Honorable Debbie-Anne A. Reese 
+November 19, 2026 
+Page 34 
+ 
+Second, SPP proposes to assign RUC make whole payment distribution to the:  
+ 
+positive difference between the PAL Day-Ahead Market cleared 
+withdrawal quantity and the RTBM Maximum Withdrawal 
+Limit, provided that: (i) [t]he PAL’s RTBM Maximum 
+Withdrawal Limit is less than the PAL’s Maximum Withdrawal 
+Limit used in the Day-Ahead Market by more than the PAL 
+Lower Operating Tolerance calculated in Section 6.7.3 of [] 
+Attachment AE; (ii) [t]he RTBM Maximum Withdrawal Limit is 
+less than the Day-Ahead Market cleared withdrawal amount; and 
+(iii) [t]he  PAL received a Dispatch Instruction greater than or 
+equal to the RTBM Maximum Withdrawal for at least one 
+Dispatch Interval in the hour.181 
+ 
+Third, SPP proposes to assign RUC make whole payment distribution: 
+ 
+For PALs that cleared withdrawals in the Day-Ahead Market 
+and that experienced a Setpoint Instruction decrease caused by 
+the application of their Intra‑Interval Maximum Withdrawal 
+Limit, the absolute value of the difference between the PAL’s 
+actual withdrawal and the PAL’s economic operating point.  The 
+PAL’s economic operating point is the MW withdrawal where 
+the cost on the PAL’s current Dispatch Interval Energy Bid 
+curve first exceeds the Real-Time DLMP for that PAL.182 
+ 
+These changes assign RUC make whole payment distribution for MWs where 
+a parameter of the PAL Energy Bid causes the PAL to deviate in Real-Time from the 
+economically optimal point. These changes are just and reasonable and not unduly 
+discriminatory as they assign a share of RUC make whole payments to Asset Owners 
+whose PAL Energy Bids are causing deviations that contribute to differences in Real-
+Time from the Day-Ahead Market. 
+ 
+SPP’s proposal is a just and reasonable approach that creates a significant 
+financial penalty for non-compliance under similar conditions to those already in the 
+SPP Tariff. When PALs do not follow their dispatch, they can increase LMPs for other 
+participants and negatively impact reliability. SPP anticipates a similar approach to 
+calculating charges for CHILLs that do not follow instructions to reduce load. 
+ 
+ 
+ 
+ 
+ 
+181  
+Proposed Tariff, Attachment AE, Section 8.6.7(A)(2)(j). 
+182  
+Proposed Tariff, Attachment AE, Section 8.6.7(A)(2)(k).
+--- PAGE 35 ---
+The Honorable Debbie-Anne A. Reese 
+November 19, 2026 
+Page 35 
+ 
+4. Other Tariff Provisions 
+ 
+In addition, PALs must submit real-time telemetry and five-minute revenue-
+quality meter data for the PAL.183  
+ 
+To ensure accurate settlement of both transmission and market charges, SPP 
+proposes to require that PALs register at a load Settlement Location that contains only 
+PAL load, and that PAL Meter Data Submittal Locations not be aggregated with those 
+of non-PAL load.184 Because many settlement calculations are performed at the 
+Settlement Location level and PALs are settled differently than other loads, PAL load 
+must be kept separate at that level. In addition, multiple PAL Meter Data Submittal 
+Locations may be aggregated into a single PAL Settlement Location only if the PALs 
+are at the same physical and electrically equivalent point on the Transmission 
+System.185 Because PALs are dispatched and may be subject to penalties for failing to 
+follow Dispatch Instructions, they are more similarly situated to Resources than to other 
+loads. Dispatch and the application of ULD both require location-specific LMPs and 
+metering to be correctly reflected in the market and settled. 
+ 
+SPP's Tariff revisions clarify which requirements govern when a PAL also 
+meets the definition of a HILL. For ramp rates, the PAL requirements supersede the 
+HILL requirements, which removes any ambiguity and avoids applying two sets of 
+ramp limits to the same load.186 PAL is given precedence because it is the more 
+specialized participation model, with its own ramp rate requirements. Similarly, a PAL 
+that is also a HILL is exempt from the Non-Conforming Load forecast requirements.187 
+Because PALs are dispatched by the market and excluded from SPP's load forecasts, 
+the information SPP needs is already provided through the PAL's bid parameters. 
+ 
+In the execution of the Security Constrained Unit Commitment (“SCUC”) 
+process that is part of the RUC processes, the market clearing engine minimizes 
+commitment cost and not production cost as the Day-Ahead Market SCUC does. 
+Therefore, in the RUC processes, the incremental benefits from meeting PAL Energy 
+Bids are not considered just as the Incremental Energy Offers above minimum for 
+Resources are not considered.188 The effect of this provision is to reduce the ability of 
+PAL Real-Time Energy Bids to drive RUC commitment decisions. This provision does 
+not apply to the Day-Ahead Market or the Security Constrained Economic Dispatch. 
+This provision is consistent with the greater reliability emphasis for RUC processes.  
+ 
+183  
+Proposed Tariff, Attachment AE, Section 2.26. 
+184  
+Proposed Tariff, Attachment AE, Section 2.2(3). 
+185  
+Proposed Tariff, Attachment AE, Section 2.2(3). 
+186  
+Proposed Tariff, Attachment AE, Sections 2.22(4); 2.26(2)(c). 
+187  
+Proposed Tariff, Attachment AE, Section 2.22(1). 
+188  
+Proposed Tariff, Attachment AE, Sections 5.2.2(1); 6.1.2(1).
+--- PAGE 36 ---
+The Honorable Debbie-Anne A. Reese 
+November 19, 2026 
+Page 36 
+ 
+ 
+Finally, SPP proposes a number of conforming changes to Attachment AE to 
+accommodate the existence of PAL Energy Bids in market processes.  This includes 
+additions to inputs (including limits on PALs consistent with the ability to curtail for 
+any reliability conditions that threaten to impair or degrade the reliability of the 
+Transmission System or the systems directly or indirectly interconnected with the 
+Transmission System), execution, results, and pricing for various market processes. 
+SPP clarifies that PALs are not included in a load deviation charge exemption for 
+Emergency Conditions, as PALs receive Dispatch Instructions and are differently 
+situated from other loads.  
+ 
+These provisions are just and reasonable and not unduly discriminatory as they 
+are needed for SPP to include the right information for PALs in its market processes 
+and to settle PALs correctly. 
+ 
+IV. 
+ADDITIONAL TARIFF REVISIONS 
+ 
+ 
+The majority of Proposed Tariff revisions are outlined above. SPP proposes the 
+following revisions, not specifically discussed above, to the Tariff to effectuate the 
+addition of the PALS.  
+ 
+1. 
+Part I, Section 1 (Definitions) 
+ 
+ 
+SPP proposes the following changes to the definitions in the main body of the 
+Tariff.189  
+ 
+First, SPP adds the definition for Part VIII of the Tariff to reference Sections 
+54 through 61 pertaining to PALS in conjunction with the applicable Common Service 
+Provisions of Part I and appropriate Schedules and Attachments. 
+ 
+Second, SPP adds a reference to Part VIII of the Tariff to the following 
+definitions: Load Shedding, Point(s) of Delivery, Point(s) of Receipt, Transmission 
+Customer, and Transmission System. 
+ 
+Third, SPP proposes to add references to Dispatch Instruction and Setpoint 
+Instruction to point to the defined terms within Attachment AE of the Tariff. 
+ 
+ 
+ 
+189  
+See generally Tariff, Part I.
+--- PAGE 37 ---
+The Honorable Debbie-Anne A. Reese 
+November 19, 2026 
+Page 37 
+ 
+ 
+Fourth, SPP adds the following sentence in the definition of Resource: “A 
+Resource does not include load participating as a Price Adaptive Load, or a Reliability 
+Registered Demand Response Program as defined in Attachment AA of this Tariff190.” 
+ 
+2. 
+Part III (Network Integration Transmission Service) 
+ 
+ 
+SPP proposes revisions to Sections 34.1, 34.2, and 34.3 of  Part III of the Tariff 
+describing the Monthly Demand Charge to incorporate references to new Schedule 16 
+revenue. 
+ 
+ 
+ 
+3. 
+Schedules 
+ 
+SPP proposes revisions to Schedules 1, 1-A, 11, and 12 of the Tariff to 
+incorporate references to PALS.191 SPP also proposes a revision to Schedule 1-A of the 
+Tariff to specifically state that billing determinants for PALS are as provided in 
+Schedule 16.192 Schedule 2 is modified to specify that Transmission Customers and 
+Network Customers taking PALS will be assessed Schedule 2 charges for each kilowatt 
+of service in a manner consistent with Schedule 16.193 In addition, SPP proposes 
+revisions to Schedule 11 to provide that Transmission and Network Customers taking 
+PALS will be assessed Base Plan Zonal Charges, Subregional Charges, and Region-
+wide Charges for each kilowatt of service in a manner consistent with Schedule 16.194  
+SPP also adds a new Section VI to Schedule 11, setting out the Base Plan Zonal Charge, 
+Region-wide Charge, and Subregional Charge for PALS, and revises Section II.A to 
+credit PALS revenue received under Section VI.195 
+ 
+4. 
+Attachment H 
+ 
+Attachment H of the Tariff outlines the Annual Transmission Revenue 
+Requirement for NITS. SPP proposes revisions to Attachment H to incorporate 
+references to revenues under new Schedule 16.196 
+ 
+ 
+190  
+“Reliability Registered Demand Response Program” is a newly defined term pending 
+before the Commission in Docket No. ER26-2249. If the Commission does not accept 
+the filing in Docket No. ER26-2249, SPP will make a clean-up filing with the 
+Commission to appropriately change this definition of “Resource”.  
+191  
+See generally Proposed Tariff, Schedules 1, 1-A, 11, and 12. 
+192  
+Proposed Tariff, Schedule 1-A. 
+193  
+Proposed Tariff, Schedule 2. 
+194  
+Proposed Tariff, Schedule 11. 
+195 
+Proposed Tariff, Schedule 11, Sections II.A and VI. 
+196  
+Proposed Tariff, Attachment H.
+--- PAGE 38 ---
+The Honorable Debbie-Anne A. Reese 
+November 19, 2026 
+Page 38 
+ 
+5. 
+Attachment L 
+ 
+Attachment L, Section II.C currently outlines the distribution of Point-To-Point 
+Transmission Service revenues associated with the Zonal Annual Transmission 
+Revenue Requirements. SPP proposes adding PALS to this section so the PALS 
+revenue under Schedule 16 will be distributed in proportion to the owner-specific Zonal 
+Annual Transmission Revenue Requirements in the Zone where the service is 
+delivered.197 In addition, SPP revises Section III.A of Attachment L to add references 
+to PALS.198 
+ 
+6. 
+Attachment M 
+ 
+SPP adds Section VI to Attachment M, providing that the Transmission 
+Customer or Network Customer is responsible for real power losses associated with 
+PALS under Schedule 16, and that losses associated with settlement in the Integrated 
+Marketplace are accounted for under Attachment AE.199 
+ 
+7. 
+Attachment O 
+ 
+Attachment O, Section I provides an overview of SPP’s transmission planning 
+process. SPP proposes a revision to this section to include a reference to the Attachment 
+BG process as proposed in this filing.200  
+ 
+8. 
+Attachment T 
+ 
+Attachment T includes the rate sheets for Point-To-Point Transmission Service 
+for all applicable Transmission Owners.201 SPP proposes to add references to Schedule 
+16 revenues in each of the separate rate sheets.202 These proposed changes are 
+necessary to appropriately adjust the Point-To-Point Transmission Service rates for any 
+revenues received for Schedule 16 charges. 
+ 
+9. 
+Attachment AE 
+  
+ 
+SPP proposes revisions to Section 1.1 of Attachment AE to modify and add 
+definitions:203 
+ 
+197  
+Proposed Tariff, Attachment L, Section II.C. 
+198  
+Proposed Tariff, Attachment L, Section III.A. 
+199 
+Proposed Tariff, Attachment M, Section VI. 
+200  
+Proposed Tariff, Attachment O, Section I. 
+201  
+Tariff, Attachment T. 
+202  
+Proposed Tariff, Attachment T. 
+203  
+See generally Proposed Tariff, Attachment AE, Section 1.1.
+--- PAGE 39 ---
+The Honorable Debbie-Anne A. Reese 
+November 19, 2026 
+Page 39 
+ 
+ 
+ 
+ 
+a. 
+SPP adds a reference to PAL Energy Bid in the definition of Bid. 
+ 
+b. 
+SPP modifies the Demand Bid defined term to include the 
+sentence: “Demand Bids do not include PAL Energy Bids.” 
+ 
+c. 
+SPP adds a reference to PAL in the definition of Dispatch 
+Instruction. 
+ 
+d. 
+SPP revises the definition of Operating Tolerance to add 
+references to PAL and ULD:  
+“The Megawatt range of a Resource’s or Price Adaptive Load’s 
+actual output above and below its average Setpoint Instruction 
+over the Dispatch Interval within which it will not be subject to 
+charges associated with Uninstructed Resource Deviation or 
+Uninstructed Load Deviation.” 
+ 
+e. 
+SPP adds new definitions PAL, PALS, and PALS Capacity to 
+refer to the defined term in Part I of the Tariff. 
+ 
+f. 
+SPP adds new defined terms PAL Energy Bid, PAL Energy Bid 
+Curve, PAL Lower Operating Tolerance, and PAL Upper 
+Operating Tolerance, as described in Section III.C above. 
+ 
+g. 
+SPP revises the definition of Setpoint Instruction to include 
+Price Adaptive Loads. 
+ 
+h. 
+SPP adds new defined term Uninstructed Load Deviation 
+Adjusted Real-Time Load Ratio Share: “The Real-Time Load 
+Ratio Share that excludes all withdrawal MWs for each Asset 
+Owner that has a ULD charge.” 
+ 
+ 
+SPP proposes the following revisions to various sections of Attachment AE: 
+ 
+a. 
+Section 2.2(2) is revised to add a reference to PAL in several 
+locations.204 
+ 
+b. 
+Section 2.11.1 is revised to specify that Billable Metered Load 
+associated with a PAL will be excluded from the calculation of 
+a Market Participant’s maximum hourly Billable Metered 
+Load.205 
+ 
+204  
+Proposed Tariff, Attachment AE, Section 2.2(2). 
+205  
+Proposed Tariff, Attachment AE, Section 2.11.1(A)(1).
+--- PAGE 40 ---
+The Honorable Debbie-Anne A. Reese 
+November 19, 2026 
+Page 40 
+ 
+ 
+c. 
+Section 4.3 is revised to reference PAL Energy Bids. SPP also 
+specifies that PAL Energy Bids may only be submitted at load 
+Settlement Locations where a PAL is registered.206 
+ 
+d. 
+Sections 5.1.1, 5.2.1, 6.1.1, and 6.2.1.1 are revised to add 
+references to PAL Energy Bids and to include Transmission 
+Provider limits on the ability to provide PALS in the list of 
+inputs.207 
+ 
+e. 
+SPP adds references to PAL Energy Bids in Section 5.1.2.208 
+ 
+f. 
+Section 5.1.3 is revised to add cleared PAL Energy Bids to the 
+list of Day-Ahead market results.209 
+ 
+g. 
+SPP adds a reference to PAL’s Maximum Withdrawal Limit in 
+Sections 5.2.2 and 6.1.2.210 
+ 
+h. 
+Sections 6.2.1.2 is revised to add a reference to RTBM 
+Maximum Withdrawal Limits (for PALs only) and to include 
+Transmission Provider limits on the ability to provide PALS in 
+the list of inputs.211 
+ 
+i. 
+SPP removes the word “Resource” in regards to Dispatch 
+Instructions in Section 6.2.2 because PALs will also follow 
+Dispatch Instructions.212 In Section 6.2.3, SPP modifies 
+subsection (1)(a) to state “Dispatch Instructions for Resources 
+and PALs.”213 
+ 
+j. 
+Section 6.3 is revised to add references to PAL, and to specify 
+that for PALs, the RTBM Dispatch Instruction will be replaced 
+with the Intra-Interval Maximum Withdrawal Limit value 
+submitted pursuant to Section 4.3.4(6) of Attachment AE, when 
+ 
+206  
+Proposed Tariff, Attachment AE, Section 4.3. 
+207  
+Proposed Tariff, Attachment AE, Sections 5.1.1; 5.2.1; 6.1.1; 6.2.1.1. 
+208  
+Proposed Tariff, Attachment AE, Section 5.1.2. 
+209  
+Proposed Tariff, Attachment AE, Section 5.1.3. 
+210  
+Proposed Tariff, Attachment AE, Section 5.2.2(3)(b); 6.1.2(3)(b). 
+211  
+Proposed Tariff, Attachment AE, Section 6.2.1.2. 
+212  
+Proposed Tariff, Attachment AE, Section 6.2.2(2). 
+213  
+Proposed Tariff, Attachment AE, Section 6.2.3(1)(a).
+--- PAGE 41 ---
+The Honorable Debbie-Anne A. Reese 
+November 19, 2026 
+Page 41 
+ 
+the Intra-Interval Maximum Withdrawal Limit constrains the 
+RTBM Dispatch Instruction.214 
+ 
+k. 
+Section 6.4.1.2 is revised to specify that PALs will be excluded 
+from load deviation exemptions.215 
+ 
+l. 
+Sections 8.5.1, 8.5.25, and 8.6.1 are revised to add a reference to 
+cleared PAL Energy Bids.216 
+ 
+m. 
+Section 8.5.10 is revised to add a reference to cleared PAL 
+Energy Bids, and to clarify that Export Interchange Transaction 
+Bids and Virtual Energy Bids are cleared.217 
+ 
+10. 
+Attachment AG 
+ 
+ 
+Section 4.2 of Attachment AG of the Tariff specifies the data and information 
+that the Market Monitor will review and analyze. SPP adds PAL curtailments and PAL 
+Energy Bids to the list.218 
+ 
+ 
+ 
+11. 
+Attachment BA 
+ 
+ 
+SPP proposes revisions to Section 1 of Attachment BA of the Tariff to add 
+references to Attachment BC, Attachment BG, and Part VIII of the Tariff.219 SPP also 
+adds references to Attachment BG and Part VIII of the Tariff throughout Section 2 of 
+Attachment BA.220 Finally, SPP specifies that the HILL Delivery Point Study 
+(“HDPS”), if requested by the Transmission Customer or Network Customer, will 
+include information detailing the limitations of the Transmission System in supporting 
+any PAL that may be requested.221 
+ 
+ 
+214  
+Proposed Tariff, Attachment AE, Section 6.3(1)(a). 
+215  
+Proposed Tariff, Attachment AE, Section 6.4.1.2. 
+216  
+Proposed Tariff, Attachment AE, Section 8.5.1; 8.5.25; 8.6.1. 
+217  
+Proposed Tariff, Attachment AE, Section 8.5.10(2). 
+218  
+Proposed Tariff, Attachment AG, Section 4.2. 
+219  
+Proposed Tariff, Attachment BA, Section 1. 
+220  
+Proposed Tariff, Attachment BA, Section 2. 
+221  
+Proposed Tariff, Attachment BA, Section 2.1.3.4.
+--- PAGE 42 ---
+The Honorable Debbie-Anne A. Reese 
+November 19, 2026 
+Page 42 
+ 
+V. 
+SHOW CAUSE ORDER DIRECTIVES ADDRESSED IN SEPARATE 
+FILINGS 
+This filing does not address the remaining Show Cause Order directives. SPP 
+is addressing them as follows:  
+ 
+• the Large Load Safe Harbor Revisions, filed in Docket No. ER27-577-
+000;  
+• the HILL Transmission Service Revisions and the Non-Transmission 
+Facility Revisions in Docket No. ER27-559-000; and 
+• 
+SPP’s response to the Show Cause Order in Docket No. EL26-68-000, 
+which addresses, among other things, transmission and ancillary service 
+rates for co-located load. 
+ 
+ 
+SPP respectfully requests that the Commission consider this filing together with 
+the above filings as SPP’s response to the Show Cause Order. 
+ 
+VI. 
+EFFECTIVE DATE AND REQUEST FOR WAIVER 
+ 
+ 
+SPP is requesting an effective date of “12/31/9998” for the Tariff Records 
+included with this filing. The expected effective date of the Tariff revisions included 
+herein is currently in the second quarter of 2028, which is more than 120 days after 
+filing. Therefore, SPP requests waiver of the Commission’s notice requirements.222  
+Good cause exists for the proposed revisions to be effective in the second quarter of 
+2028 in accordance with the Commission’s waiver of notice requirement codified in 
+Section 35.11 of the Commission’s regulations223 because SPP will need a number of 
+months to develop, test, and implement the software system changes for the Tariff 
+revisions proposed herein. The length of time needed for the software changes is 
+primarily driven by the markets and settlements changes. SPP requests the Commission 
+issue an order by February 17, 2027, to allow SPP sufficient time to make the necessary 
+software changes prior to implementation. The requested effective date also 
+accommodates existing commercial arrangements, as discussed in Section III.B.11, 
+because PALS applies prospectively and does not alter any existing agreement. 
+ 
+ 
+ 
+222  
+18 C.F.R. § 35.3(a)(1). 
+223  
+18 C.F.R. § 35.11.
+--- PAGE 43 ---
+The Honorable Debbie-Anne A. Reese 
+November 19, 2026 
+Page 43 
+ 
+VII. 
+ADDITIONAL INFORMATION 
+ 
+A. 
+Documents submitted with this filing: 
+ 
+In addition to this Transmittal Letter, SPP provides with this filing Clean 
+and Redlined Tariff revisions under the Sixth Revised Volume No. 1.224 
+ 
+B. 
+Service: 
+ 
+SPP has electronically served a copy of this filing on all its Members, 
+Transmission Customers and Market Participants. A complete copy of 
+this filing will be posted on the SPP web site, www.spp.org, and is also 
+being served on all affected state commissions. 
+ 
+C. 
+Requisite agreements: 
+ 
+There are none.  
+ 
+D. 
+Communications 
+Correspondence and communications with respect to this filing should 
+be sent to, and SPP requests the Secretary to include on the official 
+service list, the following:225 
+ 
+Emon O. Mahony 
+Senior Attorney 
+Southwest Power Pool, Inc. 
+201 Worthen Drive 
+Little Rock, AR 72223 
+Telephone: (501) 482-2506 
+emahony@spp.org 
+ 
+Christopher M. Nolen 
+Associate General Counsel 
+Southwest Power Pool, Inc. 
+201 Worthen Drive 
+Little Rock, AR 72223 
+Telephone: (501) 614-3200 
+cnolen@spp.org  
+ 
+224  
+1 Definitions D, 1 Definitions L, and Attachment BA, Section 2 attached to this filing 
+contain language in italics being included in the Large Load Safe Harbor Revisions 
+and/or the HILL Transmission Service Revisions and the Non-Transmission Facility 
+Revisions. In addition, certain other tariff records contained in this filing include 
+language in italics indicating revisions pending before the Commission in the 
+following proceedings: Docket Nos. ER26-2249, ER26-3720, ER27-313, and ER27-
+432. In the event that revisions in any of these proceedings are not accepted by the 
+Commission, SPP commits to submit a clean-up filing to remove the language from 
+the Tariff. 
+225  
+Pursuant to Commission Rule 101(e), 18 C.F.R. § 385.101(e), SPP requests waiver of 
+Rule 203(b)(3), 18 C.F.R. § 385.203(b)(3), in order to permit more than two persons 
+to be included on the service list.
+--- PAGE 44 ---
+The Honorable Debbie-Anne A. Reese 
+November 19, 2026 
+Page 44 
+ 
+Justin A. Hinton 
+Senior Attorney 
+Southwest Power Pool, Inc. 
+201 Worthen Drive 
+Little Rock, AR 72223 
+Telephone: (501) 482-2468 
+jhinton@spp.org 
+ 
+ 
+VIII. CONCLUSION 
+ 
+ 
+For all of the foregoing reasons, SPP respectfully requests that the Commission- 
+issue an order accepting the Tariff revisions proposed herein as soon as practicable but 
+not later than February 17, 2027. SPP will submit a filing with the Commission 
+specifying a precise effective date when that date is known and not less than seven days 
+before that date. 
+ 
+Respectfully submitted, 
+ 
+/s/ Justin A. Hinton 
+Justin A. Hinton 
+Emon O. Mahony 
+Southwest Power Pool, Inc. 
+201 Worthen Drive 
+Little Rock, AR  72223-4936 
+  
+Attorneys for  
+Southwest Power Pool, Inc.

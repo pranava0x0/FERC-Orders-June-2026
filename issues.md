@@ -829,3 +829,7 @@ Format: date · area · description · root cause (code/test/data/source) · sta
   eLibrary (20251208-5344, 20260325-5230 IMM reply brief, 20260414-5247, 20260624-5017, 20260821-5290 EKPC protest);
   20250423-5217 (ACEG, co-location) timed out twice. **Root cause:** source-side (restricted) and environment (timeout).
   **Status:** Open for 20250423-5217 (retry); the five restricted files are a known structural gap, do not re-fetch.
+
+### 2026-11-21 · record tier · tariff sheets ingested as readings
+- **Area:** `tools/ingest-record-tier.py`. **What:** SPP's clean and redline tariff sheets (`Clean8548-….pdf`, `Marked8551-….pdf`) were kept as readings. **Root cause:** code bug; `\bclean\b` does not match before a digit. **Status:** Fixed in the Nov 21 refresh commit; the filter now uses letter lookarounds.
+

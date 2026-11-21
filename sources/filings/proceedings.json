@@ -51,7 +51,7 @@
     "EL26-68"
    ],
    "about": "The E-9 order asks whether SPP’s tariff stays just and reasonable without large-load rules on the five reforms. Everything filed in EL26-68 since June 18: the 30-day report, abeyance requests and the order granting them, answers and comments.",
-   "status": null,
+   "status": "SPP answered on Nov 18 and 19 with three section 205 filings in new dockets, ER27-559, ER27-577 and ER27-578. Its letters say a response in this docket covers transmission and ancillary service rates for co-located load; it was not on this sheet through Nov 20.",
    "link": {
     "relation": "responds",
     "anchors": [
@@ -328,10 +328,11 @@
    "short": "SPP CHILLS",
    "docket": "ER27-432",
    "match": [
-    "ER27-432"
+    "ER27-432",
+    "ER26-3591"
    ],
-   "about": "SPP proposed revenue credits for conditional large-load service in its western zones, then corrected one rate sheet on Nov 10.",
-   "status": "Filed Nov 6 and amended Nov 10, 2026.",
+   "about": "SPP proposed revenue credits for conditional large-load service in its western zones, then corrected one rate sheet on Nov 10. A separate Aug 24 filing (ER26-3591) changes the CHILL policy for planned outages; FERC found it deficient Oct 21 and SPP answered Nov 19.",
+   "status": "ER27-432 filed Nov 6 and amended Nov 10, 2026. ER26-3591 deficiency response filed Nov 19.",
    "link": {
     "relation": "parallel",
     "anchors": [
@@ -444,7 +445,7 @@
     "ER27-520"
    ],
    "about": "The PJM Transmission Owners filed rates, a pro forma cost recovery agreement and a cost allocation method for upgrades serving large and co-located loads. PJM’s own companion filings are separate.",
-   "status": "Filed Nov 16, 2026. Comments are due Dec 7 at 5 p.m. Eastern. The Maryland Office of People’s Counsel and the PJM Power Providers Group moved to intervene Nov 17.",
+   "status": "Filed Nov 16, 2026. A Nov 18 errata notice moved comments from Dec 7 to Jan 15, 2027 at 5 p.m. Eastern, matching PJM’s ER27-531.",
    "link": {
     "relation": "responds",
     "anchors": [
@@ -466,7 +467,7 @@
     "ER27-522"
    ],
    "about": "PJM filed a 12-month Fast Energization Process that studies generators and large loads together, three new transmission services, a 50 MW cap on netting behind-the-meter generation, and, in a second filing, ride-through and operating requirements for large computational loads.",
-   "status": "Filed Nov 16, 2026. PJM asked for a 60-day comment period on ER27-531; FERC had not set comment dates in the records read. The Maryland Office of People’s Counsel, the PJM Power Providers Group and the Market Monitor moved to intervene in ER27-531 Nov 17.",
+   "status": "Filed Nov 16, 2026. FERC’s Nov 18 notice sets comments due Jan 15, 2027 on ER27-531 and Dec 7 on ER27-522, at 5 p.m. Eastern.",
    "link": {
     "relation": "responds",
     "anchors": [
@@ -489,7 +490,7 @@
     "ER27-527"
    ],
    "about": "MISO and its transmission owners filed a Large Load Project Review study process, two cost recovery agreements, a large-load dashboard and two new services. A separate MISO filing creates GRITS, a permanent firm and non-firm contract demand service that cannot start before 2029.",
-   "status": "Filed Nov 16, 2026. MISO asked for a 30-day comment period on ER27-526; FERC had not set comment dates in the records read.",
+   "status": "Filed Nov 16, 2026. FERC’s Nov 18 notice sets comments due Dec 16 on ER27-526 and Dec 7 on ER27-527, at 5 p.m. Eastern. Community and clean energy groups asked Nov 18 for 30 more days on ER27-526.",
    "link": {
     "relation": "responds",
     "anchors": [
@@ -525,7 +526,7 @@
     "ER27-535"
    ],
    "about": "CAISO filed a 50 MW large-load definition, co-location disclosure and a Flexible Interim Load Interconnection service, then refiled the same documents under a different filing code (ER27-532). Fifteen California transmission owners filed their own tariff revisions in separate dockets, where deposits, security and cost recovery sit.",
-   "status": "Filed Nov 16, 2026. Comments are due Dec 7 at 5 p.m. Eastern under FERC’s Nov 16 notice; CAISO had asked for 30 days.",
+   "status": "Filed Nov 16, 2026. Comments are due Dec 7 on ER27-506 and on most transmission owners’ filings, Dec 9 on ER27-506-001 and Dec 16 on ER27-532, at 5 p.m. Eastern. Constellation asked Nov 19 for nine more days on the PG&E, SCE and SDG&E filings.",
    "link": {
     "relation": "responds",
     "anchors": [
@@ -548,7 +549,7 @@
     "ER27-518"
    ],
    "about": "NYISO filed Large Load Integration Procedures, Firm and Non-Firm Withdrawal Service in place of the three PJM-style services, and market rules for large loads. The New York transmission owners (ER27-529) and LS Power Grid New York (ER27-518) filed cost recovery terms separately.",
-   "status": "Filed Nov 16, 2026. Comments are due Dec 7 at 5 p.m. Eastern under FERC’s Nov 16 notice; NYISO had asked for 28 days and for the show cause case to stay in abeyance.",
+   "status": "Filed Nov 16, 2026. A Nov 18 errata notice moved comments on ER27-517 from Dec 7 to Dec 14 at 5 p.m. Eastern. The New York transmission owners’ ER27-529 comments are due Dec 7.",
    "link": {
     "relation": "responds",
     "anchors": [
@@ -557,6 +558,27 @@
      "e-12-timely-study-window"
     ],
     "text": "NYISO’s section 205 answer to the E-12 show cause order, with the transmission owners’ companion filings."
+   }
+  },
+  {
+   "id": "spp-large-load",
+   "kind": "related",
+   "title": "SPP large-load tariff revisions",
+   "short": "SPP large loads",
+   "docket": "ER27-559-000",
+   "match": [
+    "ER27-559",
+    "ER27-577",
+    "ER27-578"
+   ],
+   "about": "SPP filed three sets of tariff changes it says answer E-9: transmission service and operating rules for High Impact Large Loads (ER27-559), a Load Safe Harbor Limit on network upgrade costs (ER27-577), and Price Adaptive Load Service, a non-firm service for loads that bid as dispatchable demand (ER27-578).",
+   "status": "Filed Nov 18 and 19, 2026. Comments are due Dec 9 on ER27-559 and Dec 10 on ER27-577 and ER27-578, at 5 p.m. Eastern.",
+   "link": {
+    "relation": "responds",
+    "anchors": [
+     "e-9-show-cause"
+    ],
+    "text": "SPP’s section 205 answer to the E-9 show cause order, filed in three new dockets two days before its Nov 20 deadline."
    }
   },
   {

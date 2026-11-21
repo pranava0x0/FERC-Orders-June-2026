@@ -1173,6 +1173,51 @@ window.FERC_DATA = (function () {
       published: "2026-10-29", captured: "2026-11-15",
       note: "Posted for the Nov 5 special Members Committee and dated Oct 29; 12 pages. Page 1 says when PJM expects to file and that the number and structure of the filings may change. Text in sources/news-evidence.json.",
     },
+    spp1118: {
+      label: "SPP, High Impact Large Load transmission service revisions in ER27-559-000", short: "SPP filing", org: "Southwest Power Pool", tier: "secondary",
+      url: "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261118-5252", published: "2026-11-18", captured: "2026-11-21",
+      note: "Transmittal letter read in full (26 pages); FERC eLibrary accession 20261118-5252. Page text in sources/filings/text/20261118-5252_001.txt; the tariff sheets are on the eLibrary file list.",
+    },
+    spp1119lshl: {
+      label: "SPP, Load Safe Harbor Limit revisions in ER27-577-000", short: "SPP filing", org: "Southwest Power Pool", tier: "secondary",
+      url: "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261119-5227", published: "2026-11-19", captured: "2026-11-21",
+      note: "Transmittal letter read in full (24 pages) with two affidavits; FERC eLibrary accession 20261119-5227. Page text in sources/filings/text/20261119-5227_001.txt.",
+    },
+    spp1119pals: {
+      label: "SPP, Price Adaptive Load Service revisions in ER27-578-000", short: "SPP filing", org: "Southwest Power Pool", tier: "secondary",
+      url: "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261119-5243", published: "2026-11-19", captured: "2026-11-21",
+      note: "Transmittal letter read in full (44 pages); FERC eLibrary accession 20261119-5243. Page text in sources/filings/text/20261119-5243_001.txt.",
+    },
+    cnf1118: {
+      label: "FERC combined notice #1, 20261118-3090", short: "FERC combined notice", org: "FERC", tier: "ferc",
+      url: "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261118-3090", published: "2026-11-18", captured: "2026-11-21",
+      note: "Read against the original. Comment dates, 5 p.m. Eastern: PJM ER27-531 Jan 15, 2027 and ER27-522 Dec 7; MISO ER27-526 Dec 16 and ER27-527 Dec 7; CAISO ER27-506-001 Dec 9 and ER27-532 Dec 16; New York Transmission Owners ER27-529 Dec 7; California transmission owners Dec 7 or Dec 16 by docket.",
+    },
+    cnf1119: {
+      label: "FERC combined notice #1, 20261119-3138", short: "FERC combined notice", org: "FERC", tier: "ferc",
+      url: "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261119-3138", published: "2026-11-19", captured: "2026-11-21",
+      note: "Read against the original. Comments on SPP’s ER27-559 are due Dec 9 and on ER27-577 Dec 10, 5 p.m. Eastern.",
+    },
+    cnf1120: {
+      label: "FERC combined notice #1, 20261120-3078", short: "FERC combined notice", org: "FERC", tier: "ferc",
+      url: "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261120-3078", published: "2026-11-20", captured: "2026-11-21",
+      note: "Read against the original. Comments on SPP’s ER27-578 are due Dec 10, 5 p.m. Eastern.",
+    },
+    errata1118: {
+      label: "FERC errata notices extending comment periods, 20261118-3050 and 20261118-3051", short: "FERC errata notices", org: "FERC", tier: "ferc",
+      url: "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261118-3050", published: "2026-11-18", captured: "2026-11-21",
+      note: "Read against the originals. The Nov 16 combined notice’s Dec 7 date is corrected to Dec 14 for NYISO’s ER27-517 (20261118-3050) and to Jan 15, 2027 for the PJM Transmission Owners’ ER27-520 (20261118-3051).",
+    },
+    ceg1119: {
+      label: "Constellation, expedited motion for a nine-day extension, ER27-513, ER27-508 and ER27-521", short: "Constellation motion", org: "Constellation Energy Generation", tier: "secondary",
+      url: "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261119-5279", published: "2026-11-19", captured: "2026-11-21",
+      note: "Read against the original; FERC eLibrary accession 20261119-5279. Asks to move the Dec 7 comment date on the PG&E, SCE and SDG&E filings by nine days.",
+    },
+    elibrary1121: {
+      label: "FERC eLibrary docket sheets and SPP applicant search, read Nov 21", short: "FERC docket sheets", org: "FERC eLibrary",
+      tier: "secondary", url: "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=EL26-68&sub_docket=000",
+      undated: true, captured: "2026-11-21", note: "Nov 17 to Nov 21: all rows checked on 65 sheets (168 new rows, none missing against the baseline), plus an eLibrary general search by applicant for Southwest Power Pool, Nov 18 to Nov 21 (16 results), which found ER27-559, ER27-577 and ER27-578. Nothing new on the six show cause sheets except two comments by an individual and PJM’s Nov 18 notice of its filings.",
+    },
     pjmmc1118: {
       label: "Members Committee agenda, Nov 18, 2026 (as of Nov 11)", short: "PJM agenda", org: "PJM Interconnection", tier: "secondary",
       url: "https://www.pjm.com/-/media/DotCom/committees-groups/committees/mc/2026/20261118/20261118-agenda.pdf",
@@ -1217,7 +1262,7 @@ window.FERC_DATA = (function () {
     },
     spotlight: {
       title: "What did the grid operators file on Nov 16?",
-      answer: "PJM, MISO, CAISO and NYISO each filed large-load tariff rules under section 205 in new dockets, and PJM’s transmission owners filed the cost terms. Each says its filing answers its June order. PJM would study generators and large loads together in one 12-month process. MISO adds a project review with a $250,000 fee. CAISO offers interim service to flexible loads. NYISO offers firm and non-firm withdrawal service. SPP’s response is due Nov 20.",
+      answer: "PJM, MISO, CAISO and NYISO each filed large-load tariff rules under section 205 in new dockets, and PJM’s transmission owners filed the cost terms. Each says its filing answers its June order. PJM would study generators and large loads together in one 12-month process. MISO adds a project review with a $250,000 fee. CAISO offers interim service to flexible loads. NYISO offers firm and non-firm withdrawal service. SPP followed with three filings on Nov 18 and 19.",
       links: [
         { label: "PJM", group: "pjm-large-load", doc: "filing-er27-531-pjm-large-loads", source: "pjm1116", page: 1 },
         { label: "PJM transmission owners", group: "pjm-tos-large-load", doc: "filing-er27-520-pjm-tos-large-loads", source: "pjmtos1116", page: 1 },
@@ -1226,7 +1271,7 @@ window.FERC_DATA = (function () {
         { label: "NYISO", group: "nyiso-large-load", doc: "filing-er27-517-nyiso-large-loads", source: "nyiso1116", page: 1 },
       ],
     },
-    newsCapture: "2026-11-17",
+    newsCapture: "2026-11-21",
     // Newest Discourse sweep (themes, media lines, reception, voices). Distinct from newsCapture, the
     // filings and proceedings cutoff, so a commentary-only sweep never overstates when dockets were checked.
     commentaryCapture: "2026-11-12",
@@ -1237,7 +1282,7 @@ window.FERC_DATA = (function () {
       "On October 23, 2025, the Department of Energy invoked its rarely used § 403 authority to direct FERC to open a rulemaking on connecting large loads (data centers, AI, advanced manufacturing) to the interstate grid (Docket RM26-4-000), and asked for final action by April 30, 2026.",
       "Rather than run a multi-year rulemaking, FERC answered on June 18, 2026 with six tailored § 206 show cause orders, one to each RTO/ISO. Each makes a threshold finding that the region’s tariff may be unjust and unreasonable for lack of clear, consistent large-load rules, then puts the market on a 30/60-day clock to defend the status quo or file a fix across the same five reform categories.",
       "The through-line is cost causation made visible: the large load that triggers a network upgrade should bear its cost and spare ordinary ratepayers, with new transparency into how those costs are identified and allocated. The same morning, FERC issued Item E-2 (EL25-49-002), the order on rehearing that finalizes the rates and terms for the three new transmission services its PJM co-location proceeding created, the same services the six orders extend to every other region.",
-      "Where it stands on November 17, 2026: five of the six respondents have filed tariffs they say answer their orders, each in a new section 205 docket rather than the show cause docket. ISO-NE filed on Nov 13 in ER27-484-000 (comments due Dec 4). On Nov 16 PJM filed in ER27-531-000 and ER27-522-000, the PJM Transmission Owners in ER27-520-000, MISO in ER27-526-000 and ER27-527-000, CAISO in ER27-506-000 and NYISO in ER27-517-000. Comments on the CAISO, NYISO and PJM Transmission Owners filings are due Dec 7; PJM’s and MISO’s comment dates were not yet read. SPP’s response is due Nov 20. Valley Electric asked on Nov 13 to be dropped from CAISO’s order.",
+      "Where it stands on November 21, 2026: all six respondents have filed tariffs they say answer their orders, each in a new section 205 docket rather than the show cause docket. ISO-NE filed on Nov 13 in ER27-484-000 (comments due Dec 4). On Nov 16 PJM filed in ER27-531-000 and ER27-522-000, the PJM Transmission Owners in ER27-520-000, MISO in ER27-526-000 and ER27-527-000, CAISO in ER27-506-000 and NYISO in ER27-517-000. SPP filed last, on Nov 18 and 19, in ER27-559-000, ER27-577-000 and ER27-578-000; its letters also promise a response in EL26-68 itself on co-location rates, which was not on that docket’s sheet through Nov 20. Comments are due Dec 7 on CAISO’s, PJM’s ride-through (ER27-522) and MISO’s GRITS (ER27-527) filings; Dec 9 and 10 on SPP’s; Dec 14 on NYISO’s; Dec 16 on MISO’s ER27-526; and Jan 15, 2027 on PJM’s ER27-531 and the PJM Transmission Owners’ ER27-520. Valley Electric asked on Nov 13 to be dropped from CAISO’s order.",
       "The Timeline tab holds the dated record: the August 3 and August 9 answer periods, the August 14 abeyance orders, the August 17 partial co-location compliance, the August 21 governance comments and backstop protests, and everything since. Each entry cites the document it was read from.",
     ],
   };
@@ -1272,11 +1317,11 @@ window.FERC_DATA = (function () {
       what: "Six show cause orders on one 60-day clock. Each RTO or ISO must defend its tariff or file a fix.",
       whySeparate: "This is the main proceeding the site tracks. The other lanes run beside it, each on its own clock.",
       status: {
-        asOf: "2026-11-17",
-        line: "Five of the six respondents have filed. ISO-NE filed Nov 13 in ER27-484 (comments due Dec 4). On Nov 16 PJM filed in ER27-531 and ER27-522, the PJM Transmission Owners in ER27-520, MISO and its transmission owners in ER27-526 and ER27-527, CAISO in ER27-506 (refiled as ER27-532) with fifteen California transmission owners in their own dockets, and NYISO in ER27-517 with the New York Transmission Owners and LS Power Grid New York. Every filing went to a new ER docket. PJM says it “has responded fully to the Large Load Show Cause Order” and asks FERC to close the section 206 side; the others ask much the same. FERC’s first Nov 16 notice sets Dec 7 for comments on the CAISO, NYISO and PJM Transmission Owners’ filings, though NYISO asked for 28 days and CAISO for 30. The notice covering PJM’s and MISO’s filings was not read; PJM asked for 60 days and MISO for 30. SPP’s response is due Nov 20. Valley Electric asked Nov 13 to be dropped from CAISO’s order. NERC petitioned Nov 16 for large-load reliability standards (RD27-3).",
+        asOf: "2026-11-21",
+        line: "All six respondents have filed. ISO-NE filed Nov 13 in ER27-484 (comments due Dec 4). On Nov 16 PJM filed in ER27-531 and ER27-522, the PJM Transmission Owners in ER27-520, MISO and its transmission owners in ER27-526 and ER27-527, CAISO in ER27-506 (refiled as ER27-532) with fifteen California transmission owners in their own dockets, and NYISO in ER27-517 with the New York Transmission Owners and LS Power Grid New York. SPP filed last, two days before its Nov 20 deadline: transmission service and operating rules for High Impact Large Loads (ER27-559, Nov 18), a Load Safe Harbor Limit of $500,000 per MW with a $25 million cap on upgrade costs spread to all customers (ER27-577), and Price Adaptive Load Service, a non-firm service for loads that bid as dispatchable demand (ER27-578), both Nov 19. SPP asks FERC to read the three together with a response in EL26-68 itself, which its letters say covers transmission and ancillary service rates for co-located load. That response was not on the EL26-68 sheet through Nov 20. Every filing went to a new ER docket, and nothing new is on the six show cause sheets. PJM says it “has responded fully to the Large Load Show Cause Order” and asks FERC to close the section 206 side; the others ask much the same. FERC’s Nov 16 and Nov 18 notices set comment dates from Dec 7 to Jan 15, 2027; two Nov 18 errata notices moved NYISO’s ER27-517 to Dec 14 and the PJM Transmission Owners’ ER27-520 to Jan 15. Requests for more time are pending on MISO’s ER27-526 and three California transmission owners’ filings. NERC petitioned Nov 16 for large-load reliability standards (RD27-3).",
       },
-      next: { date: "2026-11-20", label: "SPP’s show cause response (due last)", dateNote: "SPP received 95 days of abeyance rather than 90; the other five were due Nov 16" },
-      src: ["fercPR", "fercFS", "elibrary0803", "elibrary0809", "elibrary0823", "abeyance0814", "rehearing0921", "rehearing0921x4", "elibrary1008", "pjmto1009", "isone1009", "caisodfp0924", "udive1005", "misolars1002", "llorder1009", "elibrary1020", "appa1028", "pjmmc1028", "pjmmc1105", "pjmrbp1029", "udive1026", "elibrary1030", "elibrary1102", "elibrary1110", "cebadcc1002", "itipjm1105", "pjmceo1105", "isone1113", "cnf1113", "vea1113", "pjmmatrix1029", "misolars1109", "elibrary1115"],
+      next: { date: "2026-12-04", label: "Comments due on ISO-NE’s filing (ER27-484)", dateNote: "the first of the comment dates, from FERC’s Nov 13 combined notice; the rest run from Dec 7 to Jan 15, 2027" },
+      src: ["fercPR", "fercFS", "elibrary0803", "elibrary0809", "elibrary0823", "abeyance0814", "rehearing0921", "rehearing0921x4", "elibrary1008", "pjmto1009", "isone1009", "caisodfp0924", "udive1005", "misolars1002", "llorder1009", "elibrary1020", "appa1028", "pjmmc1028", "pjmmc1105", "pjmrbp1029", "udive1026", "elibrary1030", "elibrary1102", "elibrary1110", "cebadcc1002", "itipjm1105", "pjmceo1105", "isone1113", "cnf1113", "vea1113", "pjmmatrix1029", "misolars1109", "elibrary1115", "esearch1117", "spp1118", "spp1119lshl", "spp1119pals", "cnf1118", "cnf1119", "errata1118", "elibrary1121"],
     },
     e2: {
       label: "PJM co-location: EL25-49",
@@ -1285,11 +1330,11 @@ window.FERC_DATA = (function () {
       what: "The PJM co-location proceeding that created the three new transmission services the six orders extend to every other region.",
       whySeparate: "A different docket with its own compliance clock, which has tracked the §206 clock closely: both were reset to Nov 16, 2026 on the same day, by separate FERC actions.",
       status: {
-        asOf: "2026-11-18",
-        line: "PJM and the PJM Transmission Owners made their co-location compliance filings on Nov 16, inside their §205 filings. PJM’s ER27-531-000 refiles the compliance changes, including a 50 MW cap on netting retail behind-the-meter generation, and PJM moved the same day to withdraw its Aug 17 partial compliance filing. The transmission owners say ER27-520-000 also complies with the co-location order; its rates for the three new services largely repeat the ones FERC approved. Comments on ER27-520 are due Dec 7; the comment date on ER27-531 was not yet on its sheet on Nov 18. The fight has also moved to court: Vistra Corp. (Oct 22, Case No. 26-3635) and Exelon Corp. and others (Oct 27) petitioned the U.S. Court of Appeals for the Third Circuit for review of four orders in this proceeding, issued Dec 18, 2025, Feb 20, 2026, June 18, 2026 and Aug 20, 2026. That is known from the docket-sheet descriptions; the petitions were not read. No Commission order since the Aug 14 extension.",
+        asOf: "2026-11-21",
+        line: "PJM and the PJM Transmission Owners made their co-location compliance filings on Nov 16, inside their §205 filings. PJM’s ER27-531-000 refiles the compliance changes, including a 50 MW cap on netting retail behind-the-meter generation, and PJM moved the same day to withdraw its Aug 17 partial compliance filing. The transmission owners say ER27-520-000 also complies with the co-location order; its rates for the three new services largely repeat the ones FERC approved. Comments on both are due Jan 15, 2027: FERC’s Nov 18 notice set that date for ER27-531, and a Nov 18 errata notice moved ER27-520 from Dec 7 to match. The fight has also moved to court: Vistra Corp. (Oct 22, Case No. 26-3635) and Exelon Corp. and others (Oct 27) petitioned the U.S. Court of Appeals for the Third Circuit for review of four orders in this proceeding, issued Dec 18, 2025, Feb 20, 2026, June 18, 2026 and Aug 20, 2026. That is known from the docket-sheet descriptions; the petitions were not read. No Commission order since the Aug 14 extension.",
       },
-      next: { date: "2026-12-07", label: "Comments due on the PJM Transmission Owners’ filing (ER27-520)", dateNote: "from FERC’s Nov 16 combined notice; the comment date on PJM’s own filing (ER27-531) was not read" },
-      src: ["e2", "elibrary0803", "elibrary0809", "elibrary0823", "elibrary1008", "pjmto1009", "pjmans1014", "elibrary1020", "elibrary1030", "elibrary1102", "elibrary1115", "pjm1116", "pjmtos1116"],
+      next: { date: "2027-01-15", label: "Comments due on PJM’s ER27-531 and the PJM Transmission Owners’ ER27-520", dateNote: "5 p.m. Eastern, from FERC’s Nov 18 combined notice and errata notice" },
+      src: ["e2", "elibrary0803", "elibrary0809", "elibrary0823", "elibrary1008", "pjmto1009", "pjmans1014", "elibrary1020", "elibrary1030", "elibrary1102", "elibrary1115", "pjm1116", "pjmtos1116", "cnf1118", "errata1118"],
     },
     gov: {
       label: "PJM governance: AD26-7",
@@ -1299,10 +1344,10 @@ window.FERC_DATA = (function () {
       whySeparate: "Runs outside the §206 clock. Its September deadlines decide who controls PJM’s follow-through filings.",
       aka: "Also referred to in shorthand as the Swett technical conference, after the chairman who convened it.",
       status: {
-        asOf: "2026-11-15",
-        line: "The Members Committee votes on Nov 18. Its agenda, posted Nov 11, says “The committee will be asked to approve/endorse the proposed OA, Tariff and RAA revisions as a package at this meeting.” The revisions put the term sheet the Members endorsed on Sept 30 into governing-document language: §205 rights over the energy-market schedules with a jump-ball rule for competing Member filings, 30 days’ notice of market-design filings, a permanent planning committee and an independence clause. PJM posted the redlines on Oct 13 and walked stakeholders through them on Oct 16. The states opposed the sheet. They wrote the Board on Sept 29 that if it passed they would “forcefully oppose it before the Commission and beyond.” Nothing says yet whether the Board will file the Members’ package, its own, or neither. Commissioner LaCerte told Utility Dive, in an interview published Nov 11, that PJM has “a stakeholder process there that has been proven to be detrimental to improvements in PJM” and that states should have “an appropriate-sized role in governance.” FERC has not acted on the Sept 30 vote. The AD26-7 sheet was read in full on Nov 15, and its newest row is PJM’s Oct 1 informational filing.",
+        asOf: "2026-11-21",
+        line: "The Members Committee met Nov 18; no voting result for the governance package had been posted by Nov 21. Its agenda, posted Nov 11, says “The committee will be asked to approve/endorse the proposed OA, Tariff and RAA revisions as a package at this meeting.” The revisions put the term sheet the Members endorsed on Sept 30 into governing-document language: §205 rights over the energy-market schedules with a jump-ball rule for competing Member filings, 30 days’ notice of market-design filings, a permanent planning committee and an independence clause. PJM posted the redlines on Oct 13 and walked stakeholders through them on Oct 16. The states opposed the sheet. They wrote the Board on Sept 29 that if it passed they would “forcefully oppose it before the Commission and beyond.” Nothing says yet whether the Board will file the Members’ package, its own, or neither. Commissioner LaCerte told Utility Dive, in an interview published Nov 11, that PJM has “a stakeholder process there that has been proven to be detrimental to improvements in PJM” and that states should have “an appropriate-sized role in governance.” FERC has not acted on the Sept 30 vote. The AD26-7 sheet was read in full on Nov 15, and its newest row is PJM’s Oct 1 informational filing.",
       },
-      next: { date: "2026-11-18", label: "Members Committee vote on the governance revisions as a package", dateNote: "from the Nov 18 agenda as posted Nov 11; a Members vote is advisory until the Board decides what to file at FERC" },
+      next: { date: null, label: "No dated step. Watch for the Nov 18 voting result and for what the Board files at FERC" },
       src: ["frAD267", "udgov", "elibrary0803", "elibrary0809", "frgov0804", "elibrary0823", "pjmvote0930", "opsi0929", "elibrary1008", "pjmmc1016", "fr1014", "elibrary1020", "pjmmc1028", "elibrary1030", "elibrary1102", "pjmmc1118", "udive1111", "elibrary1115"],
     },
     rm264: {
@@ -1880,16 +1925,17 @@ window.FERC_DATA = (function () {
       src: ["esearch1117"],
     },
     {
-      date: "Nov 18, 2026", iso: "2026-11-18", kind: "deadline", track: "gov",
-      title: "PJM’s Members Committee votes on the governance revisions",
-      body: "The agenda, posted Nov 11, says “The committee will be asked to approve/endorse the proposed OA, Tariff and RAA revisions as a package at this meeting.” Those revisions write the Members’ Sept 30 term sheet into PJM’s governing documents. A Members vote is advisory until the Board decides what to file at FERC. The same agenda lists a stakeholder discussion with the Board that covers “the new large load initiatives”.",
+      date: "Nov 18, 2026", iso: "2026-11-18", kind: "milestone", track: "gov",
+      title: "PJM’s Members Committee takes up the governance revisions",
+      body: "No voting result had been posted by Nov 21. The agenda, posted Nov 11, says “The committee will be asked to approve/endorse the proposed OA, Tariff and RAA revisions as a package at this meeting.” Those revisions write the Members’ Sept 30 term sheet into PJM’s governing documents. A Members vote is advisory until the Board decides what to file at FERC. The same agenda lists a stakeholder discussion with the Board that covers “the new large load initiatives”.",
       src: ["pjmmc1118"],
     },
     {
-      date: "Nov 20, 2026", iso: "2026-11-20", kind: "deadline", track: "sc6",
-      title: "SPP’s show cause response is due",
-      body: "The last of the six. SPP’s abeyance ran 95 days rather than 90, to Nov 20, pending its stakeholder process and a §205 filing. Answers are due Dec 21.",
-      src: ["abeyance0814"],
+      date: "Nov 19, 2026", iso: "2026-11-19", kind: "milestone", track: "sc6",
+      title: "SPP files its large-load reforms in three new dockets",
+      body: "SPP, the last of the six, files under §205 a day ahead of its Nov 20 deadline. ER27-559-000 (Nov 18) adds transmission service and operating rules for High Impact Large Loads of 50 MW or more and interconnection rules for non-transmission facilities, effective Feb 16, 2027. ER27-577-000 caps how much of a load’s network upgrade cost all customers pay at $500,000 per MW, with a $25 million aggregate cap; the rest is assigned to the load. ER27-578-000 creates Price Adaptive Load Service, a non-firm service for loads that bid as dispatchable demand in SPP’s markets. Each letter asks FERC to consider the three, together with a response in EL26-68 itself on co-location rates, as SPP’s response to the show cause order. That last piece was not on the EL26-68 sheet through Nov 20. Comments are due Dec 9 and Dec 10.",
+      doc: "spp-large-load/rec-20261118-5252",
+      src: ["spp1118", "spp1119lshl", "spp1119pals", "cnf1119", "cnf1120"],
     },
     {
       date: "Nov 30, 2026", iso: "2026-11-30", kind: "deadline", track: "context",
@@ -1906,9 +1952,21 @@ window.FERC_DATA = (function () {
     },
     {
       date: "Dec 7, 2026", iso: "2026-12-07", kind: "deadline", track: "e2",
-      title: "Comments due on the Nov 16 filings in FERC’s first notice",
-      body: "FERC’s Nov 16 combined notice sets 5 p.m. Eastern on Dec 7 for comments on the PJM Transmission Owners’ filing (ER27-520), CAISO’s (ER27-506), NYISO’s (ER27-517), LS Power Grid New York’s (ER27-518) and the California transmission owners’ filings through ER27-515. NYISO had asked for 28 days and CAISO for 30. The comment date on PJM’s and MISO’s own filings was not read.",
-      src: ["cnf1116"],
+      title: "Comments due on most of the Nov 16 filings",
+      body: "FERC’s Nov 16 and Nov 18 combined notices set 5 p.m. Eastern on Dec 7 for comments on CAISO’s filing (ER27-506), LS Power Grid New York’s (ER27-518), the New York Transmission Owners’ (ER27-529), PJM’s ride-through filing (ER27-522), MISO’s GRITS filing (ER27-527) and most California transmission owners’ filings. Two Nov 18 errata notices moved NYISO’s ER27-517 to Dec 14 and the PJM Transmission Owners’ ER27-520 to Jan 15, 2027. Constellation asked Nov 19 for nine more days on the PG&E, SCE and SDG&E filings.",
+      src: ["cnf1116", "cnf1118", "errata1118", "ceg1119"],
+    },
+    {
+      date: "Dec 9, 2026", iso: "2026-12-09", kind: "deadline", track: "sc6",
+      title: "Comments due on SPP’s large-load filings",
+      body: "FERC’s Nov 19 and Nov 20 combined notices set 5 p.m. Eastern on Dec 9 for comments on ER27-559 and on Dec 10 for ER27-577 and ER27-578.",
+      src: ["cnf1119", "cnf1120"],
+    },
+    {
+      date: "Dec 14, 2026", iso: "2026-12-14", kind: "deadline", track: "sc6",
+      title: "Comments due on NYISO’s large-load filing",
+      body: "A Nov 18 errata notice corrects the Nov 16 combined notice and moves the comment date on ER27-517 from Dec 7 to 5 p.m. Eastern on Dec 14.",
+      src: ["errata1118"],
     },
     {
       date: "Dec 16, 2026", iso: "2026-12-16", kind: "deadline", track: "sc6",
@@ -1940,6 +1998,12 @@ window.FERC_DATA = (function () {
       title: "Backstop paper-hearing initial briefs, as extended",
       body: "FERC's Oct 23 notice moved the EL26-108 initial briefs from Nov 13, 2026 to 5 p.m. on Jan 11, 2027, and reply briefs to Jan 26, 2027. PJM has asked FERC to act on its ER27-454 refiling, substantively identical to the ER27-330 filing it recoded, by Jan 29, 2027.",
       src: ["fercnotice1023", "pjmrbp1029"],
+    },
+    {
+      date: "Jan 15, 2027", iso: "2027-01-15", kind: "deadline", track: "e2",
+      title: "Comments due on PJM’s Fast Energization filing and the PJM Transmission Owners’ cost terms",
+      body: "FERC’s Nov 18 combined notice sets 5 p.m. Eastern on Jan 15, 2027 for comments on ER27-531, the 60 days PJM asked for. A Nov 18 errata notice moved the PJM Transmission Owners’ ER27-520 from Dec 7 to the same day. MISO’s ER27-526 comments are due Dec 16; community and clean energy groups asked FERC on Nov 18 to move them to Jan 15 too.",
+      src: ["cnf1118", "errata1118"],
     },
   ];
 
@@ -2022,7 +2086,7 @@ window.FERC_DATA = (function () {
   // `reg` = region-specific findings stated in the order.
   const dockets = [
     {
-      item: "E-7", rto: "PJM", rtoFull: "PJM Interconnection, L.L.C.", docket: "EL26-67-000", next: { iso: "2026-12-07", what: "Comments due on the PJM transmission owners’ filing (ER27-520). FERC has not set dates for PJM’s own ER27-531." }, url: "e7", pdf: "orders/e-7-pjm-el26-67-000.pdf",
+      item: "E-7", rto: "PJM", rtoFull: "PJM Interconnection, L.L.C.", docket: "EL26-67-000", next: { iso: "2026-12-07", what: "Comments due on PJM’s ride-through filing (ER27-522). Comments on ER27-531 and the transmission owners’ ER27-520 are due Jan 15, 2027." }, url: "e7", pdf: "orders/e-7-pjm-el26-67-000.pdf",
       region: "Mid-Atlantic / 13 states + DC", cite: "195 FERC ¶ 61,211", pages: 114,
       respondents: "PJM + 45 named transmission owners",
       // The Aug 14, 2026 order that stopped this docket's clock. Text committed at
@@ -2062,7 +2126,7 @@ window.FERC_DATA = (function () {
       respondentList: ["AEP Appalachian Transmission Company, Inc.", "AEP Indiana Michigan Transmission Company, Inc.", "AEP Kentucky Transmission Company, Inc.", "AEP Ohio Transmission Company, Inc.", "AEP West Virginia Transmission Company, Inc.", "Allegheny Electric Cooperative, Inc.", "American Transmission Systems, Incorporated", "Appalachian Power Company", "Atlantic City Electric Company", "Baltimore Gas and Electric Company", "Commonwealth Edison Company", "Commonwealth Edison Company of Indiana, Inc.", "Dayton Power and Light Company", "Delmarva Power & Light Company", "Duke Energy Kentucky, Inc.", "Duke Energy Ohio, Inc.", "Duquesne Light Company", "Essential Power Rock Springs, LLC", "Hudson Transmission Partners, LLC", "Indiana Michigan Power Company", "Jersey Central Power & Light Company", "Kentucky Power Company", "Keystone Appalachian Transmission Company", "Kingsport Power Company", "Linden VFT, LLC", "Mid-Atlantic Interstate Transmission, LLC", "Monongahela Power Company", "Neptune Regional Transmission System, LLC", "NextEra Energy Transmission MidAtlantic Indiana, Inc.", "Ohio Power Company", "Ohio Valley Electric Corporation", "Old Dominion Electric Cooperative", "PECO Energy Company", "PPL Electric Utilities Corporation", "The Potomac Edison Company", "Potomac Electric Power Company", "Public Service Electric and Gas Company", "Rockland Electric Company", "Silver Run Electric, LLC", "Trans-Allegheny Interstate Line Company", "Transource West Virginia, LLC", "UGI Utilities, Inc.", "Virginia Electric and Power Company", "Wabash Valley Power Association, Inc.", "Wheeling Power Company"],
     },
     {
-      item: "E-8", rto: "MISO", rtoFull: "Midcontinent Independent System Operator, Inc.", docket: "EL26-70-000", next: { iso: null, what: "Clean-energy and community groups asked FERC on Nov 18 to move the ER27-526 comment deadline to Jan 15, 2027. No ruling yet." }, url: "e8", pdf: "orders/e-8-miso-el26-70-000.pdf",
+      item: "E-8", rto: "MISO", rtoFull: "Midcontinent Independent System Operator, Inc.", docket: "EL26-70-000", next: { iso: "2026-12-07", what: "Comments due on GRITS (ER27-527). Comments on ER27-526 are due Dec 16; clean-energy and community groups asked FERC on Nov 18 to move that to Jan 15, 2027." }, url: "e8", pdf: "orders/e-8-miso-el26-70-000.pdf",
       region: "15 states, Midwest + South", cite: "195 FERC ¶ 61,212", pages: 115,
       respondents: "MISO + 30 named transmission owners",
       // The Aug 14, 2026 order that stopped this docket's clock. Text committed at
@@ -2102,7 +2166,7 @@ window.FERC_DATA = (function () {
       respondentList: ["AEP Indiana Michigan Transmission Company, Inc.", "ALLETE, Inc.", "Ameren Illinois Company", "Ameren Transmission Company of Illinois", "American Transmission Company, LLC", "Cleco Power LLC", "Duke Energy Indiana, LLC", "Entergy Arkansas, LLC", "Entergy Louisiana, LLC", "Entergy Mississippi, LLC", "Entergy New Orleans, LLC", "Entergy Texas, Inc.", "GridLiance Heartland LLC", "Indianapolis Power & Light Company", "International Transmission Company", "ITC Midwest LLC", "Michigan Electric Transmission Company, LLC", "MidAmerican Energy Company", "Montana-Dakota Utilities Company", "Northern Indiana Public Service Company LLC", "Northern States Power Company, a Minnesota Corporation", "Northern States Power Company, a Wisconsin Corporation", "Northwestern Wisconsin Electric Company", "Otter Tail Power Company", "Pioneer Transmission, LLC", "Republic Transmission, LLC", "Southern Indiana Gas & Electric Company", "Union Electric Company", "Wabash Valley Power Association, Inc.", "Wolverine Power Supply Cooperative, Inc."],
     },
     {
-      item: "E-9", rto: "SPP", rtoFull: "Southwest Power Pool, Inc.", docket: "EL26-68-000", next: { iso: "2026-11-20", what: "SPP’s show cause response is due." }, url: "e9", pdf: "orders/e-9-spp-el26-68-000.pdf",
+      item: "E-9", rto: "SPP", rtoFull: "Southwest Power Pool, Inc.", docket: "EL26-68-000", next: { iso: "2026-12-09", what: "Comments due on SPP’s ER27-559 (Dec 10 on ER27-577 and ER27-578)." }, url: "e9", pdf: "orders/e-9-spp-el26-68-000.pdf",
       region: "Central U.S., 14+ states", cite: "195 FERC ¶ 61,213", pages: 92,
       respondents: "SPP + 22 named transmission owners",
       // The Aug 14, 2026 order that stopped this docket's clock. Text committed at
@@ -2224,7 +2288,7 @@ window.FERC_DATA = (function () {
       respondentList: ["Central Maine Power Company", "The Connecticut Light and Power Company", "Fitchburg Gas and Electric Light Company", "Green Mountain Power Corporation", "Maine Electric Power Company", "The Narragansett Electric Company", "New England Power Company", "New Hampshire Transmission, LLC", "NSTAR Electric Company", "Public Service Company of New Hampshire", "The United Illuminating Company", "Unitil Energy Systems, Inc.", "Vermont Electric Cooperative, Inc.", "Vermont Electric Power Company, Inc.", "Vermont Transco LLC", "Versant Power"],
     },
     {
-      item: "E-12", rto: "NYISO", rtoFull: "New York Independent System Operator, Inc.", docket: "EL26-69-000", next: { iso: "2026-12-07", what: "Comments due on NYISO’s filing (ER27-517)." }, url: "e12", pdf: "orders/e-12-nyiso-el26-69-000.pdf",
+      item: "E-12", rto: "NYISO", rtoFull: "New York Independent System Operator, Inc.", docket: "EL26-69-000", next: { iso: "2026-12-14", what: "Comments due on NYISO’s filing (ER27-517), moved from Dec 7 by a Nov 18 errata notice." }, url: "e12", pdf: "orders/e-12-nyiso-el26-69-000.pdf",
       region: "New York State", cite: "195 FERC ¶ 61,216", pages: 119,
       respondents: "NYISO + 9 named New York transmission owners",
       // The Aug 14, 2026 order that stopped this docket's clock. Text committed at
@@ -2593,7 +2657,7 @@ window.FERC_DATA = (function () {
     // accession below was read directly off its own docket sheet. Keep a respondent's filed answer
     // separate from another respondent’s intention to file under section 205.
     filings: {
-      asOf: "2026-11-17",
+      asOf: "2026-11-21",
       steps: ["report", "abeyance", "showcause"],
       note: "Observed filings only. An empty cell means our checks found nothing, which is not proof nothing was filed. Every report and abeyance cell below is confirmed against its own eLibrary accession. Every abeyance motion was GRANTED on Aug 14, 2026, so the show-cause column is upcoming again, now against Nov 16 (Nov 20 for SPP) rather than Aug 17; each cell's gist carries the granting order's accession and reporter citation. A show-cause cell marked Signaled rests on the respondent's own written statement of what it will file (its source is cited in the cell), not on anything observed on the docket. Every show-cause response so far was filed in a new §205 docket, not in the show cause docket, and is marked Filed here because the respondent says it answers its order: ISO-NE on Nov 13 (ER27-484-000), and PJM, MISO, CAISO and NYISO on Nov 16. Their transmittal letters were read on Nov 17 and their docket sheets listed on Nov 18. SPP’s response is due Nov 20. Morongo’s Aug 12 answer in CAISO’s docket remains on file.",
       rows: [
@@ -2619,9 +2683,9 @@ window.FERC_DATA = (function () {
           src: ["esearch1117", "cnf1116"], accession: "20261116-5179", reader: "filing-er27-506-caiso-large-loads", verified_at: "2026-11-17",
         },
         {
-          docket: "EL26-68-000", step: "showcause", status: "signaled", date: "2026-08-14",
-          gist: "SPP's abeyance runs to Nov 20, 2026, 95 days, “pending completion of SPP’s stakeholder proceedings and submittal of an FPA section 205 filing,” as the Aug 14 letter order records.",
-          src: ["abeyance0814"],
+          docket: "EL26-68-000", step: "showcause", status: "filed-verified", date: "2026-11-18",
+          gist: "SPP filed under §205 in three new dockets, two days before its Nov 20 deadline: High Impact Large Load transmission service and operating rules (ER27-559-000, Nov 18, effective Feb 16, 2027), a Load Safe Harbor Limit of $500,000 per MW with a $25 million cap on upgrade costs spread to all customers (ER27-577-000, Nov 19), and Price Adaptive Load Service, a non-firm dispatchable-demand service (ER27-578-000, Nov 19). It asks FERC to consider the three, together with a response in EL26-68 itself on co-location rates, as its response; that piece was not on the EL26-68 sheet through Nov 20. Comments are due Dec 9 and Dec 10.",
+          src: ["spp1118", "spp1119lshl", "spp1119pals", "cnf1119", "cnf1120"], accession: "20261118-5252", reader: "rec-20261118-5252", verified_at: "2026-11-21",
         },
         {
           docket: "EL26-69-000", step: "showcause", status: "filed-verified", date: "2026-11-16",
