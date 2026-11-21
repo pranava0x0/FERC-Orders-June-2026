@@ -9,7 +9,7 @@ import assert from "node:assert/strict";
 import { readdirSync, readFileSync, existsSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
-import { validate, VOCAB } from "../tools/validate-summaries.mjs";
+import { validate, VOCAB, binCaseCollisions } from "../tools/validate-summaries.mjs";
 import { buildPageIndex, pageForQuote } from "../tools/stamp-comment-pages.mjs";
 
 const here = dirname(fileURLToPath(import.meta.url));
@@ -22,6 +22,10 @@ test("every v2 summary is valid: verbatim quotes, controlled vocab, lenses = uni
   const failures = [];
   for (const f of files) { const r = validate(f); if (r.errs.length) failures.push(`${r.acc}: ${r.errs.join("; ")}`); }
   assert.equal(failures.length, 0, "invalid summaries:\n" + failures.join("\n"));
+});
+
+test("a bin name has one spelling across the corpus (casing drift splits one position in two)", () => {
+  assert.deepEqual(binCaseCollisions(), []);
 });
 
 test("summary corpus meets its count floor (append-only — never silently drops)", () => {

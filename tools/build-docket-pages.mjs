@@ -62,13 +62,16 @@ function loadRegionComments(item, root) {
   // `slug` (not `key`) on purpose: the JSON's own top-level `key` is already "rg:<slug>" (its full lens
   // id), so spreading it in would silently shadow ours and double the "rg:" prefix wherever we build a
   // deep link.
-  return existsSync(path) ? { slug: key, ...JSON.parse(readFileSync(path, "utf8")) } : null;
+  if (!existsSync(path)) return null;
+  const region = { slug: key, ...JSON.parse(readFileSync(path, "utf8")) };
+  // No letters means nothing to show: a heading over an empty list reads as a broken page.
+  return region.letters?.length ? region : null;
 }
 
 // Pick up to `n` representative letters, preferring one of each stance before repeating (so a 3-support/
 // 1-oppose docket doesn't show 3 support quotes and miss the one dissent) and falling back to filing
 // order once every stance present is covered.
-function pickRepresentative(letters, n = 4) {
+export function pickRepresentative(letters, n = 4) {
   const byStance = { support: [], oppose: [], mixed: [], neutral: [] };
   for (const l of letters) (byStance[l.stance] || byStance.neutral).push(l);
   const picked = [];

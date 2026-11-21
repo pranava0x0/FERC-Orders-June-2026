@@ -222,7 +222,7 @@
     },
     {
       "key": "aq:protection",
-      "name": "System Protection Requirements",
+      "name": "System protection requirements",
       "stance": "support",
       "description": "Vistra supports transmission providers' authority to require circuit breakers, telemetry, and other system protection measures at co-located facilities to ensure they operate within their requested injection and withdrawal rights.",
       "quote_ids": [

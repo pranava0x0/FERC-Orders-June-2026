@@ -216,7 +216,7 @@
     },
     {
       "key": "aq:jurisdiction",
-      "name": "FERC Authority Over Load Interconnection",
+      "name": "FERC authority over load interconnection",
       "stance": "support",
       "description": "Constellation supports FERC jurisdiction over large load interconnections at transmission-level POIs, arguing that jurisdiction over an existing generator's POI necessarily extends to load connected there.",
       "quote_ids": [
@@ -238,7 +238,7 @@
     },
     {
       "key": "aq:jointstudy",
-      "name": "Joint Study of Load and Generation",
+      "name": "Joint study of load and generation",
       "stance": "support",
       "description": "Constellation supports studying load and generation together under ANOPR Principle 3. The LCEP proposal operationalizes joint study by building on already-completed studies at existing POIs, reducing the need for new network upgrade analyses.",
       "quote_ids": [
@@ -259,7 +259,7 @@
     },
     {
       "key": "pr:study",
-      "name": "Streamlined Study Process",
+      "name": "Streamlined study process",
       "stance": "support",
       "description": "Constellation supports reforming interconnection study processes to build on existing studies at existing POIs. LCEP would confirm that already-studied thermal conditions remain valid rather than conducting full new studies, reducing time and cost.",
       "quote_ids": [

@@ -2088,6 +2088,9 @@
   }
   var FQ_MIN = 2;          // a one-letter query matches nearly every document
   var filingTheme = "", filingQuery = "", filingKw = false;
+  // The one search predicate: the document list and the theme chip counts must agree.
+  function matchesWords(d, words) { return words.every(function (w) { return w.test(d.getAttribute("data-q")); }); }
+  function filingQueryHash() { return filingQuery.length >= FQ_MIN ? "q=" + encodeURIComponent(filingQuery) : ""; }
   // The theme chip and the typed query are one filter: a document shows when it passes both. Matching
   // proceedings open so the documents are on the page; clearing the filter folds back the ones it opened
   // (marked data-auto), except one the reader has a document open in. Quoted points load when a document opens, or for a theme, where
@@ -2111,13 +2114,14 @@
     panel.classList.toggle("fg-filtering", active);
     var box = panel.querySelector("#fg-q");
     if (box && box.value.trim().toLowerCase() !== filingQuery) box.value = filingQuery;
-    // Every typed word must appear: "google lars" finds Google's filing in the LARS proceeding.
-    var words = q ? q.split(/\s+/).filter(Boolean) : [];
+    // Every typed word must appear: "google lars" finds Google's filing in the LARS proceeding. A word
+    // matches from the start of a word, so "atc" finds ATC and not every summary that says "match".
+    var words = q ? q.split(/\s+/).filter(Boolean).map(function (w) { return new RegExp("(?:^|[^a-z0-9])" + w.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")); }) : [];
     panel.querySelectorAll(".fgroup").forEach(function (g) {
       var n = 0;
       g.querySelectorAll(".fdoc").forEach(function (d) {
         var on = (!filingTheme || (" " + d.getAttribute("data-themes") + " ").indexOf(" " + filingTheme + " ") >= 0 && (filingKw || !d.hasAttribute("data-kw"))) &&
-          (!q || words.every(function (w) { return d.getAttribute("data-q").indexOf(w) >= 0; }));
+          (!q || matchesWords(d, words));
         d.hidden = !on; if (on) n++;
       });
       g.hidden = n === 0; shown += n; if (n) groupsShown++;
@@ -2134,7 +2138,7 @@
     });
     panel.querySelectorAll(".fg-mkt").forEach(function (el) { el.hidden = !active; });
     // A search that leaves one document opens it: the answer, not a list of one.
-    if (q && shown === 1) { var only1 = panel.querySelector(".fdoc:not([hidden])"); if (only1 && !only1.open) only1.open = true; }
+    if (q && shown === 1) { var only1 = panel.querySelector(".fdoc:not([hidden])"); if (only1 && !only1.open) { only1.setAttribute("data-auto-open", ""); only1.open = true; } }
     // A search or theme filter looks across every pane, not only the open one.
     // While filtering, every pane shows and the bar steps aside; clearing the filter restores the picked pane.
     var bar = panel.querySelector(".st-bar");
@@ -2149,7 +2153,7 @@
     }
     // A chip's number is what tapping it would show, so it counts against the typed query.
     // Same word-by-word test as the filter above, so a count never disagrees with what the chip shows.
-    var docs = [].slice.call(panel.querySelectorAll(".fdoc")).filter(function (d) { return words.every(function (w) { return d.getAttribute("data-q").indexOf(w) >= 0; }); });
+    var docs = [].slice.call(panel.querySelectorAll(".fdoc")).filter(function (d) { return matchesWords(d, words); });
     var hasTheme = function (d, k) { return (" " + d.getAttribute("data-themes") + " ").indexOf(" " + k + " ") >= 0; };
     panel.querySelectorAll(".th-chips .who-chip").forEach(function (c) {
       var k = c.getAttribute("data-theme"), num = c.querySelector(".mono");
@@ -2173,6 +2177,17 @@
   function routeFiling(rest) {
     var panel = panelFor("filings");
     var bits = String(rest || "").split("/");
+    // "#filings/q=google%20lars" is a shared search: the same words in the box, the same matches.
+    if (/^q=/.test(rest || "")) {
+      var typed = "";
+      try { typed = decodeURIComponent(String(rest).slice(2)); } catch (e) { typed = String(rest).slice(2); }
+      filingTheme = ""; filingKw = false; filingQuery = typed.trim().toLowerCase();
+      applyTheme(panel, "");
+      filingHash = filingQueryHash();
+      var findBox = panel.querySelector(".fg-find"); if (findBox) show(findBox, { block: "start" });
+      if (history.replaceState) history.replaceState(null, "", "#filings" + (filingHash ? "/" + filingHash : ""));
+      return;
+    }
     if (bits[0] === "theme") {
       filingQuery = "";                      // a theme address shows that theme alone, whatever was typed before
       filingKw = bits[2] === "all";
@@ -2216,13 +2231,19 @@
       else if (t && t.closest(".fg-clear")) { filingQuery = ""; k = ""; }
       else { var b = t && t.closest(".th-chips .who-chip"); if (!b) return; filingKw = false; k = b.getAttribute("data-theme"); }
       applyTheme(panel, k);
-      filingHash = filingTheme ? "theme/" + filingTheme + (filingKw ? "/all" : "") : "";
+      filingHash = filingTheme ? "theme/" + filingTheme + (filingKw ? "/all" : "") : filingQueryHash();
       if (history.replaceState) history.replaceState(null, "", "#filings" + (filingHash ? "/" + filingHash : ""));
     });
     var box = panel.querySelector("#fg-q"), qTimer = null;
     if (box) box.addEventListener("input", function () {
       clearTimeout(qTimer);
-      qTimer = setTimeout(function () { filingQuery = box.value.trim().toLowerCase(); applyTheme(panel, filingTheme); }, 120);
+      qTimer = setTimeout(function () {
+        filingQuery = box.value.trim().toLowerCase(); applyTheme(panel, filingTheme);
+        // A theme keeps its own address; a search on its own gets one, so a filtered list can be shared.
+        if (filingTheme) return;
+        filingHash = filingQueryHash();
+        if (history.replaceState) history.replaceState(null, "", "#filings" + (filingHash ? "/" + filingHash : ""));
+      }, 120);
     });
     // Opening a proceeding or document writes its address, so the URL and the trail always match the page.
     panel.addEventListener("toggle", function (ev) {
@@ -2248,6 +2269,8 @@
       // bare tab). Toggle events arrive after applyTheme returns, so a flag set around those opens would
       // already be cleared here. A document is only ever opened by the reader, so it always gets its address.
       if (filtering && isGroup) return;
+      // A search's single match is opened by applyTheme, not the reader: the address stays the search.
+      if (el.hasAttribute("data-auto-open")) { el.removeAttribute("data-auto-open"); if (filtering) return; }
       // A proceeding with one document has nothing to choose between: open the document too.
       var only = isGroup ? g.querySelectorAll(".fdoc") : [];
       if (only.length === 1 && !only[0].open) { only[0].open = true; return; }
@@ -2421,7 +2444,9 @@
   function parseHash() {
     var h = (location.hash || "").replace(/^#/, "");
     var slash = h.indexOf("/");
-    return slash < 0 ? { tab: h, rest: "" } : { tab: h.slice(0, slash), rest: h.slice(slash + 1) };
+    var p = slash < 0 ? { tab: h, rest: "" } : { tab: h.slice(0, slash), rest: h.slice(slash + 1) };
+    if (p.tab === "discourse") p.tab = "news"; // the tab is labeled Discourse; its id predates the label
+    return p;
   }
   // Switch tabs from the hash/router, routing the Comments sub-state through the comments module.
   function goTab(tab, rest, focus) {
@@ -2448,7 +2473,7 @@
     } else if (tab === "filings" && rest) {
       if (!rendered.filings) pendingFiling = rest;               // wireFilings consumes and clears it
       // Already rendered: settle the route before activate() writes the hash, or the URL keeps the old one.
-      else if (document.getElementById("fg-" + String(rest).split("/")[0]) || /^theme\//.test(rest)) filingHash = rest;
+      else if (document.getElementById("fg-" + String(rest).split("/")[0]) || /^(?:theme\/|q=)/.test(rest)) filingHash = rest;
       activate("filings", focus);
       if (rendered.filings) routeFiling(rest);
     } else if (tab === "commissioners") {

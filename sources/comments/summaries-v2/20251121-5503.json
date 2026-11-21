@@ -169,7 +169,7 @@
     },
     {
       "key": "aq:threshold",
-      "name": "20 MW Threshold Too Low",
+      "name": "20 MW threshold too low",
       "stance": "oppose",
       "description": "The CPUC rejects any federal threshold over retail load but argues that if one is set it must be far above 20 MW, which would sweep in small commercial and industrial loads not intended to be covered. The 20 MW figure appears borrowed from generator interconnection rather than actual data center load profiles in California.",
       "quote_ids": [

@@ -61,6 +61,19 @@ test("tenet copy carries no em dashes and no AI-register words", () => {
   }
 });
 
+test("data.js prose carries no em dashes outside verbatim quotes and source titles", () => {
+  // design-notes.md Voice rule. A quote (q, t) or a source's own title (label) is copied as written.
+  const lines = read("docs", "js", "data.js").split("\n");
+  const code = lines.map((l, i) => [i + 1, l.replace(/^\s*(?:\/\/|\/?\*).*$/, "").replace(/\s\/\/ .*$/, "")]).filter(([, l]) => l.includes("—"));
+  for (const [n, l] of code) assert.match(l, /\b(?:q|t|label): "[^"]*—/, `data.js:${n} em dash in site prose: ${l.trim().slice(0, 120)}`);
+});
+
+test("the Filings list and its theme chip counts use one search predicate", () => {
+  const app = read("docs", "js", "app.js");
+  assert.equal((app.match(/matchesWords\(d, words\)/g) || []).length, 3, "the definition, the list and the chip recount");
+  assert.doesNotMatch(app, /data-q"\)\.indexOf\(w\)/, "a regex word passed to indexOf matches nothing");
+});
+
 test("index.html has a tab and a panel for every route app.js knows", () => {
   const html = read("docs", "index.html");
   const app = read("docs", "js", "app.js");

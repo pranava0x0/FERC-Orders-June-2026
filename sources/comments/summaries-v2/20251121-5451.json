@@ -209,7 +209,7 @@
     },
     {
       "key": "pr:colo",
-      "name": "Co-location with Existing Generation",
+      "name": "Co-location with existing generation",
       "stance": "mixed",
       "description": "ECA sees co-location as a useful tool that can reduce delivery infrastructure costs, but warns that withdrawing existing generation from the market tightens supply and raises prices for other customers. ECA asks the Commission to require market and consumer impact studies beyond reliability-only analyses.",
       "quote_ids": [
@@ -238,7 +238,7 @@
     },
     {
       "key": "aq:deposits",
-      "name": "Study Deposits and Readiness Requirements",
+      "name": "Study deposits and readiness requirements",
       "stance": "support",
       "description": "ECA endorses financial commitments, readiness requirements, and withdrawal penalties as tools to discipline load forecasts and deter speculative or duplicative interconnection requests.",
       "quote_ids": [
@@ -266,7 +266,7 @@
     },
     {
       "key": "aq:expedited",
-      "name": "Expedited Interconnection for Flexible Loads",
+      "name": "Expedited interconnection for flexible loads",
       "stance": "support",
       "description": "ECA strongly supports faster interconnection for loads providing curtailment or flexibility. It proposes an added guideline requiring interconnection processes to be completed within two years under normal circumstances, with a faster track for flexible loads.",
       "quote_ids": [

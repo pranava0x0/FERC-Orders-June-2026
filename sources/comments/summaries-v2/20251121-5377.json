@@ -157,7 +157,7 @@
   "bins": [
     {
       "key": "pr:cost",
-      "name": "Large Loads Pay Full Upgrade Costs",
+      "name": "Large loads pay full upgrade costs",
       "stance": "support",
       "description": "Buckeye argues that data centers drive massive transmission investments that, if the load fails to materialize or sustain, will be stranded on uninvolved wholesale customers. Buckeye supports ANOPR Principle 8 requiring large loads to pay 100% of network upgrade costs upfront, with a crediting mechanism only if designed to protect other customers. Fallback options -- holding the host utility responsible or requiring retail protections to flow into wholesale rates -- are also supported.",
       "quote_ids": [

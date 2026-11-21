@@ -156,7 +156,7 @@
     },
     {
       "key": "aq:threshold",
-      "name": "20 MW Threshold Too Low",
+      "name": "20 MW threshold too low",
       "stance": "oppose",
       "description": "The proposed 20 MW threshold lacks an evidentiary basis and could clog the process with small entities, discourage industrial expansion, and conflict with state retail tariffs. Any threshold should rest on evidence distinguishing large load profiles from ordinary load.",
       "quote_ids": [
@@ -195,7 +195,7 @@
     },
     {
       "key": "pr:cost",
-      "name": "Cost Causation and Ratepayer Protection",
+      "name": "Cost causation and ratepayer protection",
       "stance": "support",
       "description": "The final rule must uphold cost causation principles and ensure that large load infrastructure costs are not shifted onto existing retail customers. It should include requirements to deter speculative projects, fairly allocate costs, and enhance transparency.",
       "quote_ids": [

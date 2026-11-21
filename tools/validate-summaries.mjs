@@ -153,6 +153,20 @@ export function validate(file) {
   return { acc: s.accession, errs, lowQuotes };
 }
 
+// One position, one name: two bins named alike except for casing ("20 MW threshold too low" and
+// "20 MW Threshold Too Low") render as two positions. Returns each set of spellings that collide.
+export function binCaseCollisions(dir = DIR) {
+  const byKey = new Map();
+  for (const f of readdirSync(dir).filter((x) => x.endsWith(".json"))) {
+    for (const b of JSON.parse(readFileSync(join(dir, f), "utf8")).bins || []) {
+      const k = b.name.toLowerCase();
+      if (!byKey.has(k)) byKey.set(k, new Set());
+      byKey.get(k).add(b.name);
+    }
+  }
+  return [...byKey.values()].filter((v) => v.size > 1).map((v) => [...v]);
+}
+
 // resolve a CLI argument (an accession or a filename) to the summary file in summaries-v2/
 function fileForArg(arg) {
   if (arg.endsWith(".json")) return arg;
@@ -171,6 +185,7 @@ if (fileURLToPath(import.meta.url) === process.argv[1]) {
     if (r.errs.length || r.lowQuotes.length) console.log(`${status} ${r.acc}: ${r.errs.join("; ") || ""}${r.lowQuotes.length ? " low-coverage quotes " + JSON.stringify(r.lowQuotes) : ""}`);
     if (r.errs.length) bad++; else if (r.lowQuotes.length) warn++;
   }
+  if (!arg) for (const c of binCaseCollisions()) { console.log(`FAIL bin name spelled ${c.length} ways: ${c.map((x) => JSON.stringify(x)).join(", ")} (use one, sentence case)`); bad++; }
   console.log(`\n${files.length} summaries checked, ${bad} with errors, ${warn} with low-coverage quotes.`);
   process.exit(bad ? 1 : 0);
 }
