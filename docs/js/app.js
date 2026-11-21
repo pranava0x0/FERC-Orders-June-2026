@@ -1948,7 +1948,7 @@
     var tags = (d.themes || []).length ? '<span class="fd-topics">' + (kw ? "Topics (keyword match): " : "Topics: ") + d.themes.map(function (t) {
       return '<a href="#filings/theme/' + esc(t) + (kw ? "/all" : "") + '">' + esc(themeLabel(R, t)) + "</a>";
     }).join(", ") + "</span>" : "";
-    var hay = [d.filer, (d.filers || []).join(" "), d.kind, d.title, d.docket, d.accession, g.title, g.short, d.summary].join(" ").toLowerCase();
+    var hay = [d.filer, (d.filers || []).join(" "), d.kind, d.title, d.docket, d.accession, g.title, g.short, d.summary, d.position && d.position.title, d.position && d.position.text, d.stance].join(" ").toLowerCase();
     return '<details class="fdoc" id="fd-' + esc(d.slug) + '" data-themes="' + esc((d.themes || []).join(" ")) + '"' + (kw ? " data-kw" : "") + ' data-q="' + esc(hay) + '"><summary>' +
       '<span class="fd-date mono">' + esc(fmtISO(d.date)) + '</span><span class="fd-who">' + esc(d.filer) + '</span><span class="fd-kind">' + esc(role) +
       (side ? ' · <span class="fd-side side-' + esc(d.side || "stance") + '">' + esc(side) + "</span>" : "") + "</span>" +
