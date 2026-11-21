@@ -78,14 +78,18 @@ now cost 1 where they cost a short scroll before; the next deadline is answered 
 
 **2026-11-18, ANOPR commenter search on the overview:** a "Find a commenter" box on the ANOPR overview hands off to the All comments filter, saving the tap through that subtab (Constellation question 5.93 to 4.93 on a phone, 1.00 lower at every size). Tried and rejected: routing MISO responses through the Now page's filing link, which is cheaper on tablet and desktop but costs more on a phone. Phone 37.5, tablet 29.9, desktop 29.0.
 
+**2026-11-21, positions on replies:** a reply read for this site shows its stance in place of FERC's document
+type ("Supports the proposal with changes") and opens to a plain summary and one quote with its page. New
+question: who supports or opposes MISO's LARS filing (phone 4.62, tablet 3.87, desktop 4.71).
+
 ## Gaps: questions the site cannot answer yet
 
 Each needs data before it needs a route. When one becomes answerable, it gets a question in
 `nav-questions.json` and a baseline.
 
-- **Who supports or opposes each operator's filing?** Rows now show a plain role ("Opposes", "Asks FERC to
-  pause the case", "Replies to another filing") instead of FERC's type. A reply's side still needs a stance
-  read from its text.
+- **Who supports or opposes each operator's filing?** Answered for MISO's LARS filing (every response
+  shows its side, read from its text; question `lars-sides`). The Nov 13–19 filings have no substantive
+  replies yet; `tools/curation-queue.mjs` lists each one as it arrives, and a test fails until it is read.
 - **What stage is each market at?** Status is prose today. It needs a per-market stage record that the
   market page and the home table both read.
 - **Comment deadlines for every Nov 16 filing in one place.** They are scattered across proceeding status lines.

@@ -130,6 +130,28 @@
    ]
   },
   {
+   "id": "lars-sides",
+   "q": "Who supports or opposes MISO's LARS filing?",
+   "steps": [
+    [
+     "Filings tab",
+     "#tab-filings"
+    ],
+    [
+     "MISO subtab",
+     "#st-filings-miso"
+    ],
+    [
+     "MISO LARS proceeding",
+     "#fg-miso-lars > summary"
+    ]
+   ],
+   "leaf": [
+    "#fg-miso-lars[open] .fd-secw[data-sec=\"response\"] .fd-side",
+    "supports|opposes|reject"
+   ]
+  },
+  {
    "id": "search-filer",
    "q": "Has FERC acted on ATC's large-load filing?",
    "steps": [

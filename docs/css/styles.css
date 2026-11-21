@@ -1113,7 +1113,7 @@ a.cm-hm-cell:focus-visible { outline: 2px solid var(--accent); outline-offset: 1
   display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: 0; text-transform: none;
   border-radius: 4px; padding: 1px 6px; margin-right: 8px; vertical-align: 2px; border: 1px solid currentColor;
 }
-.fd-side { font-weight: 600; }
+.fd-side { font-weight: 600; display: inline-block; max-width: 100%; }
 .side-for { color: var(--support, var(--ok)); }
 .side-against { color: var(--oppose, var(--deadline)); }
 .side-mixed { color: var(--mixed, var(--warn)); }
@@ -1343,6 +1343,8 @@ a.trackpill:hover { border-color: var(--accent); color: var(--accent-ink); }
 .pts li::before { counter-increment: pt; content: counter(pt); position: absolute; left: 0; top: 8px; font-size: 12px; font-weight: 700; color: var(--accent-ink); background: var(--accent-wash); border-radius: 50%; width: 20px; height: 20px; display: grid; place-items: center; }
 .pt { font-weight: 600; font-size: 14.5px; }
 .pts blockquote { margin: 3px 0 0; padding: 0 0 0 10px; border-left: 2px solid var(--rule-strong); color: var(--text-secondary); font-size: 14px; font-style: italic; }
+.fd-pq { margin: 0 0 8px; padding: 0 0 0 10px; border-left: 2px solid var(--rule-strong); color: var(--text-secondary); font-size: 14px; font-style: italic; }
+.fd-pq a { font-style: normal; white-space: nowrap; }
 .pq-pg { font-style: normal; font-size: 12.5px; margin-left: 4px; }
 .fd-tools { display: flex; flex-wrap: wrap; gap: 4px 14px; align-items: center; margin-top: 8px; font-size: 13.5px; }
 .fd-tools .mono { color: var(--text-muted); }
